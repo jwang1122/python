@@ -132,9 +132,34 @@ class Game:
     def __init__(self):
         self.players = []
         self.dealer = Dealer()
+        self.table = {}
+        self.buildDecisionTable()
+
+    def playerIncreaseWin(self, player):
+        player.increaseWin()
+
+    def dealerIncreaseWin(self, player):
+        self.dealer.increaseWin()
+
+    def noBodyWIn(self, player):
+        pass
+
+    def buildDecisionTable(self):
+        for i in range(10, 30): # player total
+            for j in range(16, 30): # dealer tota
+                if (i>21):
+                    self.table[str(i)+":"+str(j)] = self.dealerIncreaseWin
+                if j>21 and i<=21:
+                    self.table[str(i)+":"+str(j)] = self.playerIncreaseWin
+                if i<=21 and j<21 and i>j:
+                    self.table[str(i)+":"+str(j)] = self.playerIncreaseWin
+                if i<21 and j<=21 and j>i:
+                    self.table[str(i)+":"+str(j)] = self.dealerIncreaseWin
+                if i == j:
+                    self.table[str(i)+":"+str(j)] = self.noBodyWIn
 
     def addPlayer(self, player):
-        self.players.append(player)
+        self.players.append(player) 
 
     def dealCardToAllPlayers(self):
         count = 0
@@ -154,24 +179,12 @@ class Game:
             p.cleanHand()
         self.dealer.cleanHand()
 
-    def isDealerWin(self, playerTotal, dealerTotal):
-        if (playerTotal>21 and dealerTotal<=21) or (playerTotal<21 and  dealerTotal<=21 and playerTotal<dealerTotal):
-            return True
-        return False
-
-    def isPlayerWin(self, playerTotal, dealerTotal):
-        if (playerTotal<=21 and dealerTotal>21) or (playerTotal<=21 and  dealerTotal<21 and playerTotal>dealerTotal):
-            return True
-        return False
-
     def determineWiner(self):
         dealerTotal = self.dealer.getHandValue()
         for player in self.players:
             playerTotal = player.getHandValue()
-            if self.isDealerWin(playerTotal, dealerTotal):
-                self.dealer.increaseWin()
-            if self.isPlayerWin(playerTotal, dealerTotal):
-                player.increaseWin()
+            p = self.table.get(str(playerTotal)+":"+str(dealerTotal), self.noBodyWIn)
+            p(player)
 
     def showResults(self):
         for p in self.players:
