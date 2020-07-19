@@ -154,21 +154,30 @@ class Game:
             p.cleanHand()
         self.dealer.cleanHand()
 
+    def isDealerWin(self, playerTotal, dealerTotal):
+        if (playerTotal>21 and dealerTotal<=21) or (playerTotal<21 and  dealerTotal<=21 and playerTotal<dealerTotal):
+            return True
+        return False
+
+    def isPlayerWin(self, playerTotal, dealerTotal):
+        if (playerTotal<=21 and dealerTotal>21) or (playerTotal<=21 and  dealerTotal<21 and playerTotal>dealerTotal):
+            return True
+        return False
+
+    def noOneWin(self, playerTotal, dealerTotal):
+        if (playerTotal>21 and dealerTotal>21) or playerTotal == dealerTotal:
+            return True
+        return False
+
     def determineWiner(self):
         dealerTotal = self.dealer.getHandValue()
-        for p in self.players:
-            playerTotal = p.getHandValue()
-            if playerTotal>21 and dealerTotal<=21:
+        for player in self.players:
+            playerTotal = player.getHandValue()
+            if self.isDealerWin(playerTotal, dealerTotal):
                 self.dealer.increaseWin()
-            elif playerTotal<=21 and dealerTotal>21:
-                p.increaseWin()
-            elif (playerTotal>21 and dealerTotal>21) or playerTotal == dealerTotal:
-                pass
-            elif playerTotal<dealerTotal:
-                self.dealer.increaseWin()
-            else:
-                p.increaseWin()
-                
+            if self.isPlayerWin(playerTotal, dealerTotal):
+                player.increaseWin()
+
     def showResults(self):
         for p in self.players:
             print(p)
