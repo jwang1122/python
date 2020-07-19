@@ -1,0 +1,6 @@
+2020-07-08 14:38:24,716 INFO [WANG] - the area with radius 1 is 3.141592653589793.::logging1.py::11
+2020-07-08 14:38:24,717 ERROR [WANG] - Error: The radius cannot be neigative, but r=-2.::logging1.py::13
+2020-07-08 14:38:24,717 ERROR [WANG] - Error: The radius must be a real number, but r=(3+4j)::logging1.py::13
+2020-07-08 14:38:24,717 ERROR [WANG] - Error: The radius must be a real number, but r=hello::logging1.py::13
+2020-07-08 14:38:24,717 INFO [WANG] - the area with radius 3.4 is 36.316811075498.::logging1.py::11
+2020-07-08 14:38:24,717 ERROR [WANG] - Error: The radius must be a real number, but r=None::logging1.py::13
