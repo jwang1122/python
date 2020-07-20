@@ -149,6 +149,17 @@ class Game:
         pass
 
     def buildDecisionTable(self):
+        # self.table = {
+        #     (10,16), self.dealerIncreaseWin,
+        #     (10,17), self.dealerIncreaseWin,
+
+        #     (21, 16), self.playerIncreaseWin,
+        #     (21, 17), self.playerIncreaseWin,
+        #     (21, 18), self.playerIncreaseWin,
+        #     (21, 19), self.playerIncreaseWin,
+        #     (21, 20), self.playerIncreaseWin,
+        #     (21, 21), self.playerIncreaseWin
+        # }
         for i in range(10, 30): # player total
             for j in range(16, 30): # dealer tota
                 if (i>21):
