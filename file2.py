@@ -18,3 +18,5 @@ while(flag):
         flag = False
         file1.close()
         print('')
+
+print("Done.")

@@ -9,9 +9,9 @@ def fileread(filaname):
 
 def filewrite(filename, line):
     file1 = open(filename, 'a')
-    file1.write(f"\nprint('{line}')")
+    file1.write(f"\n    print('{line}')")
     file1.close()
 
 if(__name__ == '__main__'):
     print(fileread("circle.py"))
-    filewrite("circle.py", "Hello, world.")
+    filewrite("circle.py", "Hello, John.")

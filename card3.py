@@ -1,6 +1,6 @@
 """
 Multi-players vs Dealer Black Jack Card Game
-with decision table
+with decision table to get rid of if-else
 """
 import random
 

@@ -1,6 +1,5 @@
 """
-Multi-players vs Dealer Black Jack Card Game
-use function to get rid of if-else
+Multi-Players vs Dealer Black Jack Card Game
 """
 import random
 
@@ -87,7 +86,7 @@ class Player:
             return False
         elif value <= 10:
             return True
-        answer = input(f"{self.name}: Do you want to hit? (y/n)")
+        answer = input(f"{self.name}: Do you want to hit? (y/n) ")
         return True if answer == 'y' else False
 
     def cleanHand(self):
@@ -140,80 +139,76 @@ class Game:
     def addPlayer(self, player):
         self.players.append(player)
 
+    def addAllPlayers(self):
+        morePlayer = True
+        while morePlayer:
+            name = input("please enter player's name: ")
+            player = Player(name)
+            self.addPlayer(player)
+            answer = input("More player? (y/n) ")
+            if answer != "y":
+                morePlayer = False
+
+    def cleanAllPlayersHand(self):
+        for player in self.players:
+            player.cleanHand()
+
     def dealCardToAllPlayers(self):
-        count = 0
-        while count<2:
-            for p in self.players:
-                p.addCardToHand(self.dealer.deal())
-            self.dealer.addCardToHand(self.dealer.deal())
-            count += 1
+        for player in self.players:
+            player.addCardToHand(self.dealer.deal())
 
-    def showAllPlayerHand(self):
-        for p in self.players:
-            print(p.showHand())
-        print(self.dealer.showHand())
-
-    def cleanAllPlayerHand(self):
-        for p in self.players:
-            p.cleanHand()
-        self.dealer.cleanHand()
-
-    def isDealerWin(self, playerTotal, dealerTotal):
-        if (playerTotal>21 and dealerTotal<=21) or (playerTotal<21 and  dealerTotal<=21 and playerTotal<dealerTotal):
-            return True
-        return False
-
-    def isPlayerWin(self, playerTotal, dealerTotal):
-        if (playerTotal<=21 and dealerTotal>21) or (playerTotal<=21 and  dealerTotal<21 and playerTotal>dealerTotal):
-            return True
-        return False
+    def showAllPlayersHand(self):
+       for player in self.players:
+           print(player.showHand())
 
     def determineWinner(self):
         dealerTotal = self.dealer.getHandValue()
         for player in self.players:
             playerTotal = player.getHandValue()
-            if self.isDealerWin(playerTotal, dealerTotal):
+
+            if playerTotal>21 and dealerTotal<=21:
                 self.dealer.increaseWin()
-            if self.isPlayerWin(playerTotal, dealerTotal):
+            elif playerTotal<=21 and dealerTotal>21:
+                player.increaseWin()
+            elif playerTotal>21 and dealerTotal>21:
+                pass
+            elif playerTotal<dealerTotal:
+                self.dealer.increaseWin()
+            elif playerTotal == dealerTotal:
+                pass
+            else:
                 player.increaseWin()
 
-    def showResults(self):
-        for p in self.players:
-            print(p)
+    def showResult(self):
+        for player in self.players:
+            print(player)
         print(self.dealer)
 
-    def addPlayers(self):
-        morePlayer = True
-        while morePlayer:
-            name = input("Please enter player's name: ")
-            player = Player(name)
-            self.addPlayer(player)
-            answer = input("More player? (y/n) ")
-            if answer != 'y':
-                morePlayer = False
-
     def play(self):
-        self.addPlayers()
+        self.addAllPlayers()
         gameOver = False
         while not gameOver:
             self.dealer.shuffle()
-            self.cleanAllPlayerHand()
+            self.cleanAllPlayersHand()
+            self.dealer.cleanHand()
             
             self.dealCardToAllPlayers()
-            self.showAllPlayerHand()
-
-            for p in self.players:
-                hit = p.hit()
+            self.dealer.addCardToHand(self.dealer.deal())
+            self.dealCardToAllPlayers()
+            self.dealer.addCardToHand(self.dealer.deal())
+            self.showAllPlayersHand()
+            print(self.dealer.showHand())
+            for player in self.players:
+                hit = player.hit()
                 while hit:
-                    p.addCardToHand(self.dealer.deal())
-                    print(p.showHand())
-                    hit = p.hit()
+                    player.addCardToHand(self.dealer.deal())
+                    print(player.showHand())
+                    hit = player.hit()
             while self.dealer.hit():
                 self.dealer.addCardToHand(self.dealer.deal())
-
             self.determineWinner()
-            self.showResults()
-
+            self.showResult()
+ 
             answer = input("Do you want to play again? (y or n) ").lower()
             if answer != 'y':
                 gameOver = True
@@ -223,9 +218,30 @@ if __name__ == '__main__':
     game = Game()
     game.play()
 
-    # game.addPlayer()
-    # for p in game.players:
-    #     print(p)
+    # game.addAllPlayers()
+    # print(game.players)
+
+    # c1 = Card("A", "Clubs")
+    # print(c1)
+    # print(c1.getValue())
+    # c1 = Card("10", "Hearts")
+    # print(c1)
+
+    # b1 = BlackJackCard("A","Spades")
+    # print(b1)
+    # print(b1.getValue())    
+    # b1 = BlackJackCard("J","Spades")
+    # print(b1)
+    # print(b1.getValue())
+
+    # john = Player("John")
+    # b1 = BlackJackCard("2","Spades")
+    # b2 = BlackJackCard("J","Hearts")
+    # b3 = BlackJackCard("4","Clubs")
+    # john.addCardToHand(b1)
+    # john.addCardToHand(b2)
+    # john.addCardToHand(b3)
+    # print(john.showHand())
 
     # dealer = Dealer()
     # b1 = BlackJackCard("2","Spades")
