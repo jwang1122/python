@@ -1,3 +1,7 @@
+"""
+Multi-players vs Dealer Black Jack Card Game
+with decision table
+"""
 import random
 
 class Card:

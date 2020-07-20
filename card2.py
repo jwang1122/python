@@ -1,3 +1,7 @@
+"""
+Multi-players vs Dealer Black Jack Card Game
+without if-else
+"""
 import random
 
 class Card:
