@@ -63,7 +63,7 @@ class Snowman:
         Use given pen1 = Turtle() draw a circle with radius = self.leg
         as snowman leg, after the drawing, turtle point to right.
         """
-        pen1.pu()
+        pen1.penup()
         pen1.goto(self.bottomX, self.bottomY)
         pen1.down()
         pen1.color('black','white')

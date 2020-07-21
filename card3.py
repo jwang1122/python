@@ -87,7 +87,7 @@ class Player:
             return False
         elif value <= 10:
             return True
-        answer = input(f"{self.name}: Do you want to hit? (y/n)")
+        answer = input(f"{self.name}: Do you want to hit? (y/n) ").lower()
         return True if answer == 'y' else False
 
     def cleanHand(self):
@@ -124,9 +124,8 @@ class Dealer(Player):
         for c in self.hand:
             if count != len(self.hand):
                 output += str(c) + ", "
-            else:
-                output += "Hidden]"
             count += 1
+        output += "Hidden]"
         return output
 
     def shuffle(self):
@@ -149,17 +148,6 @@ class Game:
         pass
 
     def buildDecisionTable(self):
-        # self.table = {
-        #     (10,16): self.dealerIncreaseWin,
-        #     (10,17): self.dealerIncreaseWin,
-
-        #     (21, 16): self.playerIncreaseWin,
-        #     (21, 17): self.playerIncreaseWin,
-        #     (21, 18): self.playerIncreaseWin,
-        #     (21, 19): self.playerIncreaseWin,
-        #     (21, 20): self.playerIncreaseWin,
-        #     (21, 21): self.playerIncreaseWin
-        # }
         for i in range(10, 30): # player total
             for j in range(16, 30): # dealer tota
                 if (i>21):
@@ -194,11 +182,12 @@ class Game:
             p.cleanHand()
         self.dealer.cleanHand()
 
-    def determineWiner(self):
+    def determineWinner(self):
         dealerTotal = self.dealer.getHandValue()
         for player in self.players:
             playerTotal = player.getHandValue()
-            self.table.get(str(playerTotal)+":"+str(dealerTotal))(player)
+            key = str(playerTotal)+":"+str(dealerTotal)
+            self.table.get(key)(player)
 
     def showResults(self):
         for p in self.players:
@@ -233,7 +222,7 @@ class Game:
             while self.dealer.hit():
                 self.dealer.addCardToHand(self.dealer.deal())
 
-            self.determineWiner()
+            self.determineWinner()
             self.showResults()
 
             answer = input("Do you want to play again? (y or n) ").lower()

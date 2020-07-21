@@ -175,11 +175,15 @@ class Game:
             p.cleanHand()
         self.dealer.cleanHand()
 
-    def determineWiner(self):
+    def determineWinner(self):
         dealerTotal = self.dealer.getHandValue()
         for player in self.players:
             playerTotal = player.getHandValue()
-            self.getAction(decisionTable.get(str(playerTotal)+":"+str(dealerTotal)))(player)
+            # self.getAction(decisionTable.get(str(playerTotal)+":"+str(dealerTotal)))(player)
+            key = str(playerTotal)+":"+str(dealerTotal)
+            whowin = decisionTable.get(key)
+            f = self.getAction(whowin)
+            f(player)
 
     def showResults(self):
         for p in self.players:
@@ -214,7 +218,7 @@ class Game:
             while self.dealer.hit():
                 self.dealer.addCardToHand(self.dealer.deal())
 
-            self.determineWiner()
+            self.determineWinner()
             self.showResults()
 
             answer = input("Do you want to play again? (y or n) ").lower()

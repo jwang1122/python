@@ -15,3 +15,7 @@ with open('students.csv', 'r') as student:
     dictReader = csv.DictReader(student)
     for row in dictReader:
         print(row)
+        id = row.get("ID")
+        print(id)
+        first = row["First name"]
+        print(first)
