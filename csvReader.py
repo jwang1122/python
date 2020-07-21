@@ -1,13 +1,17 @@
 import csv
 
-with open('students.csv', 'r') as covid_19:
+with open('./data/data_minimal.csv', 'r') as covid_19:
     csv_reader = csv.reader(covid_19)
 #    next(csv_reader)
+    count = 0
     for line in csv_reader:
         print(line) # return each line as list
-#        print(line[0])
+        print(line[0])
+        count += 1
+        if count > 10:
+            break
 
-with open('students.csv', 'r') as covid19:
-    dictReader = csv.DictReader(covid19)
+with open('students.csv', 'r') as student:
+    dictReader = csv.DictReader(student)
     for row in dictReader:
-        print(row["First name"])
+        print(row)

@@ -3,6 +3,7 @@ Multi-players vs Dealer Black Jack Card Game
 with decision table to get rid of if-else
 """
 import random
+from cardDecision import decisionTable
 
 class Card:
     def __init__(self, face, suit):
@@ -85,7 +86,7 @@ class Player:
         value = self.getHandValue()
         if value >= 20:
             return False
-        elif value <= 10:
+        if value <= 10:
             return True
         answer = input(f"{self.name}: Do you want to hit? (y/n)")
         return True if answer == 'y' else False
@@ -124,9 +125,8 @@ class Dealer(Player):
         for c in self.hand:
             if count != len(self.hand):
                 output += str(c) + ", "
-            else:
-                output += "Hidden]"
             count += 1
+        output += "Hidden]"
         return output
 
     def shuffle(self):
@@ -137,7 +137,6 @@ class Game:
         self.players = []
         self.dealer = Dealer()
         self.table = {}
-        self.buildDecisionTable()
 
     def playerIncreaseWin(self, player):
         player.increaseWin()
@@ -148,30 +147,12 @@ class Game:
     def noBodyWIn(self, player):
         pass
 
-    def buildDecisionTable(self):
-        # self.table = {
-        #     (10,16): self.dealerIncreaseWin,
-        #     (10,17): self.dealerIncreaseWin,
-
-        #     (21, 16): self.playerIncreaseWin,
-        #     (21, 17): self.playerIncreaseWin,
-        #     (21, 18): self.playerIncreaseWin,
-        #     (21, 19): self.playerIncreaseWin,
-        #     (21, 20): self.playerIncreaseWin,
-        #     (21, 21): self.playerIncreaseWin
-        # }
-        for i in range(10, 30): # player total
-            for j in range(16, 30): # dealer tota
-                if (i>21):
-                    self.table[str(i)+":"+str(j)] = self.dealerIncreaseWin
-                if j>21 and i<=21:
-                    self.table[str(i)+":"+str(j)] = self.playerIncreaseWin
-                if i<=21 and j<21 and i>j:
-                    self.table[str(i)+":"+str(j)] = self.playerIncreaseWin
-                if i<21 and j<=21 and j>i:
-                    self.table[str(i)+":"+str(j)] = self.dealerIncreaseWin
-                if i == j:
-                    self.table[str(i)+":"+str(j)] = self.noBodyWIn
+    def getAction(self, key):
+        switcher = {
+            "dealer":self.dealerIncreaseWin,
+            "player":self.playerIncreaseWin
+        }
+        return switcher.get(key)
 
     def addPlayer(self, player):
         self.players.append(player) 
@@ -198,7 +179,7 @@ class Game:
         dealerTotal = self.dealer.getHandValue()
         for player in self.players:
             playerTotal = player.getHandValue()
-            self.table.get(str(playerTotal)+":"+str(dealerTotal))(player)
+            self.getAction(decisionTable.get(str(playerTotal)+":"+str(dealerTotal)))(player)
 
     def showResults(self):
         for p in self.players:
