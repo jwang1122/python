@@ -11,6 +11,10 @@ def area(*args, mod="circle"):
         width = args[0]
         height = args[1]
         return width*height
+    elif len(args)==2 and mod=="triangle":
+        side = args[0]
+        height = args[1]
+        return side*height/2.0
     else:
         return "Unsupported area calculation on mod: %s."%mod
 
@@ -24,5 +28,7 @@ if __name__ == '__main__':
     side=3.2
     height=2
     a = area(side, height, mod="triangle")
+    print(a)
+    a = area(2,mod="hexagon")
     print(a)
     print("Done.")

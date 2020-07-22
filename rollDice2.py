@@ -19,16 +19,16 @@ for i in range(tests):
     sum = 0
     dice1 = random.randint(min, max)
     dice2 = random.randint(min, max)
-    dice3 = random.randint(min, max)
-    dice4 = random.randint(min, max)
-    dice5 = random.randint(min, max)
-    dice6 = random.randint(min, max)
-    dice7 = random.randint(min, max)
-    sum = dice1 + dice2 + dice3 + dice4 + dice5 + dice6 + dice7
-    if (sum < 20):
-        count += 1
-    # if(dice1 != dice2):
-    #     count+=1
+    # dice3 = random.randint(min, max)
+    # dice4 = random.randint(min, max)
+    # dice5 = random.randint(min, max)
+    # dice6 = random.randint(min, max)
+    # dice7 = random.randint(min, max)
+    # sum = dice1 + dice2 + dice3 + dice4 + dice5 + dice6 + dice7
+    # if (sum <= 10):
+    #     count += 1
+    if(dice1 != dice2):
+        count+=1
 
 print(f"posibility for {tests} is {count / float(tests)}")
 # print("Correct answer is ", 5/6.)

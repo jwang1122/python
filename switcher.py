@@ -17,8 +17,7 @@ def numbers_to_strings(argument):
 
 if __name__ == '__main__':
     # print(type(switcher))
-    f = switcher.get(1)    
-    y = one(11)
+    f = switcher.get(2)    
     x = f(10) # one(10)
     print(x)
     # print(numbers_to_strings(2))

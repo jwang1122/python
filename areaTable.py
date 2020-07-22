@@ -24,6 +24,9 @@ def triangleArea(args):
     height = args[1]
     return side*height/2
 
+def diamondArea(args):
+    return 0
+
 def unsupportedArea(mod):
     print("Unsupported area calculation mod: [%s] ..." %mod)
     return 0
@@ -33,5 +36,6 @@ areaTable = {
     "circle":circleArea,
     "square":squareArea,
     "rectangle":rectangleArea,
-    "triangle":triangleArea
+    "triangle":triangleArea,
+    "diamond":diamondArea
 }

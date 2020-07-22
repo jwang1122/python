@@ -18,7 +18,8 @@ print("17. %s is %d years old." % person)
 
 pi = 3.1415926
 print("20. pi is %4.3f" % pi)
+print(f"21. pi is {pi:4.3f}")
 
-data = ("John", "Doe", 53.44)
+data = ("John", "Doe", 53.446826374)
 format_string = "23. Hello %s %s. Your current balance is $%5.2f"
 print(format_string % data)
