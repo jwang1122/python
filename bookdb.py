@@ -96,12 +96,17 @@ if __name__ == '__main__':
     ]
     db = BookDB('mydb','mongodb://localhost:27017')
     # insert initial book sets
-    # db.addBooks(all_books)
+    db.addBooks(all_books)
+
     # get all books from mongodb
-    books = db.getBooks()
-    for book in books:
-        print(book)
-    # book = db.getBook("5ee95435aebd4e3da5b95b17")
+    # books = db.getBooks()
+    # for book in books:
+    #     print(book)
+    # print(len(books))
+
+    # test update service
+    # _id = "4b35bc139cd04ea4b0bbf5d36025d33d"
+    # book = db.getBook(_id)
     # book["price"]=100.99
-    # db.update(book)
+    # db.update(_id, book)
     # print(book)
