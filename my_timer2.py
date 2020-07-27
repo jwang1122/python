@@ -20,6 +20,7 @@ def display_info(name, age):
     print(f"20: display_info()... run with arguments: ({name}, {age})")
     return age
 
-# Call the function as usual, because we use the decorator @my_timer
-x = display_info("John", 23)
-print(x)
+if __name__ == '__main__':
+    # Call the function as usual, because we use the decorator @my_timer
+    x = display_info("John", 23)
+    print(x)
