@@ -10,6 +10,7 @@ print(cars)
 cars.sort(key=lambda s: len(s))
 print(cars)
 
+
 cars.sort(key=lambda s: len(s), reverse=True)
 print(cars)
 
@@ -26,3 +27,6 @@ cars = [
 
 cars.sort(key=myFunc, reverse=True)
 print(cars)
+
+
+
