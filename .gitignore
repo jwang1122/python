@@ -1,0 +1,9 @@
+play/
+env/
+out/
+*.pyc
+.DS_Store
+__pycache__/
+
+*.db
+.vscode/
