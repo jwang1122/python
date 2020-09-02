@@ -8,7 +8,7 @@ Supported services:
 """
 from flask import Flask, jsonify, request
 import json
-# from flask_cors import CORS
+from flask_cors import CORS
 from bookdb import * 
 import uuid
 
@@ -17,7 +17,7 @@ DEBUG = True
 
 # instantiate the app
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 app.config.from_object(__name__)
 db = BookDB('mydb','mongodb://localhost:27017')
 
