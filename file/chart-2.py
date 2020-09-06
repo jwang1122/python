@@ -13,7 +13,7 @@ texasConfirmed = []
 texasDeath = []
 
 first = True
-with open('data_minimal.csv', 'r') as covid_19:
+with open('./data/data_minimal.csv', 'r') as covid_19:
     reader = csv.reader(covid_19)
     for row in covid_19:
 #        print(row)
@@ -54,15 +54,17 @@ labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
 ax.set(xlim=[datetime.strptime('2020-03-04','%Y-%m-%d'),datetime.strptime('2020-04-04','%Y-%m-%d')], xlabel='Date', ylabel='Confirmed',
        title='Coronavirus Report')
+plt.legend(loc=2)
 
 ax2=fig.add_subplot(1,2,2)
 ax2.plot(x,z,c='r',marker='*',ls='-',label='New York')
 ax2.plot(x,texasDeath,c='g',marker='v',ls='-',label='Texas')
 labels2 = ax2.get_xticklabels()
-plt.setp(labels2, rotation=90, horizontalalignment='right')
-ax2.set(xlim=[datetime.strptime('2020-03-04','%Y-%m-%d'),datetime.strptime('2020-04-04','%Y-%m-%d')], xlabel='Date', ylabel='Confirmed',
+plt.setp(labels2, rotation=45, horizontalalignment='right')
+ax2.set(xlim=[datetime.strptime('2020-03-04','%Y-%m-%d'),datetime.strptime('2020-04-04','%Y-%m-%d')], xlabel='Date', ylabel='Death',
        title='Coronavirus Report')
 
 ax.locator_params(axis='y', nbins=7)
 plt.legend(loc=2)
+
 plt.show()
