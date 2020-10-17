@@ -1,5 +1,7 @@
 """
 plot covid data that defined in csv file data_minimal.csv.
+    - [Online data](https://open-covid-19.github.io/data/data_minimal.csv)
+
 """
 import pandas as pd 
 import matplotlib.pyplot as plt
