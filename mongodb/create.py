@@ -1,6 +1,8 @@
 from pymongo import MongoClient
 import uuid
 
+# CRUD: Create, Retrieve, Update, Delete
+
 book = {
     "_id": uuid.uuid4().hex,
     "title": "White Fragility: Why It's So Hard for White People to Talk About Racism",
