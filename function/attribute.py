@@ -1,4 +1,6 @@
-# function names can be attributed. re
+""" 
+function names can be attributed. 
+"""
 def f(x):
     f.count = getattr(f, 'count', 0) + 1
     return 'Returned message: Dynamically add attribute to a function'

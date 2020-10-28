@@ -1,3 +1,6 @@
+"""
+Define constructor with keyword argument.
+"""
 class Robot:
     def __init__(self, name=None):
         self.name = name
@@ -9,8 +12,9 @@ class Robot:
         else:
             print("Hi, I am a robot without name yet.")
 
-x = Robot("John Wang")
-x.say_hi()
+if __name__ == '__main__':
+    x = Robot("John Wang")
+    x.say_hi()
 
-x = Robot()
-x.say_hi()
+    x = Robot()
+    x.say_hi()

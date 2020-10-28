@@ -26,7 +26,7 @@ if __name__ == "__main__":
     print(x.__dict__)     # call built-in function defined in the Robot class
     print(Robot.__dict__)
 
-print(getattr(x, 'name','John')) # call built-in function __
+print(getattr(x, 'name','John')) # call built-in function __getAttribute__()
 
 
 z = getattr(x,'energy')

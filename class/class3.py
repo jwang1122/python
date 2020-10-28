@@ -1,3 +1,9 @@
+"""
+__init__(self) function ==> Constructor, or object Factory
+Define both attribute and function inside the class
+
+public attribute self.name
+"""
 class Robot:
     def __init__(self, name):
         self.name = name
@@ -9,3 +15,4 @@ class Robot:
 
 x = Robot("John Wang")
 x.say_hi()
+print(x.name)   # Directly access the attribute
