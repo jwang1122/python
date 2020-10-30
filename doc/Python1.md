@@ -111,6 +111,25 @@ npm start
 [Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
 ---
 ## 2020-07-27
+* Fix Catalina /data/db issue
+    - mkdir /usr/local/var/log/mongodb
+    - mkdir /usr/local/var/mongodb
+    - copy mongod.conf > /usr/local/etc
+    - mongod --config /usr/local/etc/mongod.conf
+```conf
+systemLog:
+  destination: file
+  path: /usr/local/var/log/mongodb/mongo.log
+  logAppend: true
+storage:
+  dbPath: /usr/local/var/mongodb
+net:
+  bindIp: 127.0.0.1
+```
+```
+brew tap mongodb/brew
+brew install mongodb-community@4.2
+```
 * Mongo DB
     - retrieve.py
     - update.py
@@ -324,35 +343,11 @@ ls
 
 locate ·，enter，space，tab，：，“”，‘’，up-arrow，left-arrow
 
-### Software Installation
-
-* 下载 VSCode
->Google search: vs code download
-Search result: Download Visual Studio Code - Mac, Linux, Windows
-[VSCode Download Website](https://code.visualstudio.com/Download)
-> File: VSCode-darwin-stable.zip
-
-* 下载 Python
->Google search: python download
-Search result: Download Python | Python.org
-[Python Download Website](https://www.python.org/downloads/)
-
-* 安装 Git
->Google search: git downloads
-Search result: Git - Downloads 
-
-[Git Download](https://git-scm.com/downloads)
-```
-brew install git
-ls -la /usr/local 
-sudo chown -R wangqianjiang:wheel /usr/local
-brew link git
-```
 ### Getting start
 ```
 mkdir workspace
 cd workspace
-mkdir python
+mkdir python1
 ```
 use text editor: NotePad.exe
 ```py
