@@ -1,5 +1,6 @@
 """
 Define functions in function, scope of attribute
+https://www.javatpoint.com/python-decorator
 """
 def scope_test():
     def do_local():
@@ -22,5 +23,7 @@ def scope_test():
     do_global()
     print("After global assignment:", spam)
 
-scope_test()
-print("In global scope:", spam)
+if(__name__ == "__main__"):
+
+    scope_test()
+    print("In global scope:", spam)
