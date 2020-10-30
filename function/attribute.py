@@ -2,7 +2,7 @@
 function names can be attributed. 
 """
 def f(x):
-    f.count = getattr(f, 'count', 0) + 1
+    f.count = getattr(f, 'count', 0) + 1 # create an attribute to function
     return 'Returned message: Dynamically add attribute to a function'
 
 z = f("Hello")
