@@ -1,10 +1,5 @@
 # 华夏中文学校2020-05-29 Python 暑期班 level1 （11:30-01:30pm）
 
-[Class Salible](https://www.javatpoint.com/python-tutorial)
-[Python Tutorial](https://docs.python.org/3/tutorial/)
-
-![Python Keywords](images/keywords.png)
-
 ## 2020-10-07
 * check homework
 GuessNumber.py from Ethan
@@ -321,29 +316,28 @@ Enter(Return)
 
 ---
 ## 2020-07-06
-* installation check
-```sh
-python --version
-git --version
-code --version
-```
+
 
 * Famillar with your keyboard
-```
-mkdir workspace
-ls
-cd workspace
-mkdir python
-cd python
-ls
-```
 
 ![keyboard](./images/keyboard-windows.jpg)
 ![Apple keyboard](./images/keyboard-apple.jpg)
 
 locate ·，enter，space，tab，：，“”，‘’，up-arrow，left-arrow
 
-### Getting start
+## Getting start
+* install softwares needed
+
+[refer to ](pythonInstall.md) python installation file.
+
+* check installation
+* installation check
+```sh
+python --version
+git --version
+code --version
+```
+* build working folders
 ```
 mkdir workspace
 cd workspace
@@ -360,6 +354,14 @@ save to first.py
 ```
 python first.py
 ```
+
+## References
+[Class Salible](https://www.javatpoint.com/python-tutorial)
+
+[Python Tutorial](https://docs.python.org/3/tutorial/)
+
+![Python Keywords](images/keywords.png)
+
 
 ## Email Address
 Inact.audreyxy@gmail.com;

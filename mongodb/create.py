@@ -5,10 +5,10 @@ import uuid
 
 book = {
     "_id": uuid.uuid4().hex,
-    "title": "White Fragility: Why It's So Hard for White People to Talk About Racism",
-    "author": "Robin DiAngelo",
+    "title": "Introduction of Java",
+    "author": "John Wang",
     "read": False,
-    "price": 11.69,
+    "price": 12.69,
     "rating": 5
 }
 
