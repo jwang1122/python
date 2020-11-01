@@ -1,43 +1,17 @@
 # 华夏中文学校2020-05-29 Python 暑期班 level1 （11:30-01:30pm）
 
-## 2020-10-07
-* check homework
-GuessNumber.py from Ethan
-Homework3.py from Jessie
-drawperfactriangle.py from Eliott Zhang // file name, input n
+## sqlite
+* sqlite0.py > create connection
+* sqlite1.py
+* sqlite2.py
 
-[w3Schools](https://www.w3schools.com/)
-
-## QuickType to generate python class from json
-[QuickType website](https://quicktype.io/)
-```
-quicktype ./data/student.json -o student.py
-```
-## 2020-07-30
-* OOP  
-    [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
-    [Python Classes]()
-    ![OOP concept](./images/classDefine.png)
-    - class book, __init__, __repr__
-    - class student.py constructor, __repr__ abstraction
-    ![class abstract](./images/classAbstraction.png)
-    - user.py, User, SubUser inheritence testUser
-    - person, teacher, student inheritence
-    ![Person<Student](./images/student.png)
-* sqlite
-    - sqlite0.py > create connection
-    - sqlite1.py
-    - sqlite2.py
-
-    - sqlite4.py
-    - sqlite5.py
-    - sqlite6.py
-    - sqlite7.py > build relational data
-    - sqlite8.py > show relation between project and task
+* sqlite4.py
+* sqlite5.py
+* sqlite6.py
+* sqlite7.py > build relational data
+* sqlite8.py > show relation between project and task
 
 ---
-## 2020-07-29
-* Fix issue last class
 
 ## Review
     - Markdown document
@@ -51,14 +25,6 @@ quicktype ./data/student.json -o student.py
     - application web server
     - react JS front end GUI server
 
-## Function
-    - math1.py (circle area, rectangule area, triangle area)
-    - defineFunction.py (help(sum))
-    - keywordArgs.py
-    - practice: define a function with keyword arguments 
-        -(createList.py parseString(str, sep=','))
-    - defaultValue.py
-    - ask.pys
 ## OOP  
     ![OOP concept](./images/classDefine.png)
     - class book, __init__, __repr__
@@ -67,6 +33,9 @@ quicktype ./data/student.json -o student.py
     - user.py, User, SubUser inheritence testUser
     - person, teacher, student inheritence
     ![Person<Student](./images/student.png)
+    [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
+    [Python Classes]()
+ 
 ## class
 * class0.py - pass class, instance and class level attributes
 * Person.py
@@ -114,6 +83,15 @@ npm start
     ![First time run Postman](images/postman.png)
 * start app4.py, test POST, UPDATE, DELETE methods
 ---
+
+## Function
+    - math1.py (circle area, rectangule area, triangle area)
+    - defineFunction.py (help(sum))
+    - keywordArgs.py
+    - practice: define a function with keyword arguments 
+        -(createList.py parseString(str, sep=','))
+    - defaultValue.py
+    - ask.pys
 
 ## Prime
     - prime0.py > straight forward
@@ -335,6 +313,14 @@ python first.py
 [MongoDB Tutorial](https://www.w3schools.com/python/python_mongodb_insert.asp)
 
 [Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
+
+[w3Schools](https://www.w3schools.com/)
+
+## QuickType to generate python class from json
+[QuickType website](https://quicktype.io/)
+```
+quicktype ./data/student.json -o student.py
+```
 
 ---
 
