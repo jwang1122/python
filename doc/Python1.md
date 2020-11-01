@@ -39,7 +39,7 @@ quicktype ./data/student.json -o student.py
 ## 2020-07-29
 * Fix issue last class
 
-* Review
+## Review
     - Markdown document
     - ball game
     - draw snowman
@@ -51,7 +51,7 @@ quicktype ./data/student.json -o student.py
     - application web server
     - react JS front end GUI server
 
-* Function
+## Function
     - math1.py (circle area, rectangule area, triangle area)
     - defineFunction.py (help(sum))
     - keywordArgs.py
@@ -59,7 +59,7 @@ quicktype ./data/student.json -o student.py
         -(createList.py parseString(str, sep=','))
     - defaultValue.py
     - ask.pys
-* OOP  
+## OOP  
     ![OOP concept](./images/classDefine.png)
     - class book, __init__, __repr__
     - class student.py constructor, __repr__ abstraction
@@ -73,15 +73,8 @@ quicktype ./data/student.json -o student.py
 * bookdb.py
 * create a class snowman.py > drawSnowMan.py > shapes.py
 ---
-## 2020-07-28
-* Install Postman
-    [Download Website](https://www.postman.com/downloads/)
-    ![Web Application](./images/PythonWebApp.png)
-* app server
-    - app4.py (get data from mongodb)
-    - postman
 
-* install npm
+## install npm
 [Download and install node](https://nodejs.org/en/download/)
 ![Download image](./images/nodeDownload.png)
     - windows File: node-v12.18.3-x64.msi
@@ -98,51 +91,28 @@ npm install -g create-react-app
 create-react-app --version
 create-react-app reactproject2
 ```
-* Install ReactJs on MacOS
+* get reactjs project from github
 ```
+git clone https://github.com/jwang1122/reactjs.git
+```
+* Install ReactJs on MacOS
+
 ```
 sudo npx create-react-app wang-app
 sudo chown -R wangqianjiang wang-app
 cd wang-app
 npm start
 ```
-```
-[Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
----
-## 2020-07-27
-* Fix Catalina /data/db issue
-    - mkdir /usr/local/var/log/mongodb
-    - mkdir /usr/local/var/mongodb
-    - copy mongod.conf > /usr/local/etc
-    - mongod --config /usr/local/etc/mongod.conf
-```conf
-systemLog:
-  destination: file
-  path: /usr/local/var/log/mongodb/mongo.log
-  logAppend: true
-storage:
-  dbPath: /usr/local/var/mongodb
-net:
-  bindIp: 127.0.0.1
-```
-```
-brew tap mongodb/brew
-brew install mongodb-community@4.2
-```
-* Mongo DB
-    - retrieve.py
-    - update.py
-    - delete.py
-    - bookdb.py
+
+## App server
+* app1.py > ping-pong
+* app2.py > <html>
+* app3.py > display hardcoded books
+* app4.py > display books from mongodb, postman > test service
 * Install Postman
     [Download Website](https://www.postman.com/downloads/)
     ![First time run Postman](images/postman.png)
-
-## App server
-    - app1.py > ping-pong
-    - app2.py > <html>
-    - app3.py > display hardcoded books
-    - app4.py > display books from mongodb, postman > test service
+* start app4.py, test POST, UPDATE, DELETE methods
 ---
 
 ## Prime
@@ -259,11 +229,11 @@ brew install mongodb-community@4.2
     - if-else.py  
     - Infinit loop while True: > input("Continue? (y/n)")
     - [Practice]:
-        ```output
-        2, 4, 6, 8, 10
-        1, 3, 5, 7, 9
+```output
+2, 4, 6, 8, 10
+1, 3, 5, 7, 9
 
-        ```
+```
 
 ## Data Type
 * ![Data Type](./images/DataType.png)
@@ -364,6 +334,9 @@ python first.py
 
 [MongoDB Tutorial](https://www.w3schools.com/python/python_mongodb_insert.asp)
 
+[Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
+
+---
 
 ## Email Address
 Inact.audreyxy@gmail.com;
