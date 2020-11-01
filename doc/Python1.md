@@ -132,11 +132,12 @@ brew install mongodb-community@4.2
     - bookdb.py
 * Install Postman
     [Download Website](https://www.postman.com/downloads/)
+    ![First time run Postman](images/postman.png)
 * App server
     - app1.py > ping-pong
     - app2.py > <html>
-    - app3.py > display books
-    - app4.py > postman > test service
+    - app3.py > display hardcoded books
+    - app4.py > display books from mongodb, postman > test service
 ---
 ## 2020-07-23
 * Prime
@@ -147,7 +148,6 @@ brew install mongodb-community@4.2
     - prime4.py > define function rangePrime(x,y)
 * Mongo DB
 
-[MongoDB Tutorial](https://www.w3schools.com/python/python_mongodb_insert.asp)
 
     - install MongoDB
     [download website](https://www.mongodb.com/try/download/community?tck=docs_server)
@@ -284,7 +284,7 @@ brew install mongodb-community@4.2
 
 ---
 
-## 2020-07-07
+## Using Markdown 
 * turn in homework to GitHub
 
 * Markdown md文件的制作，制作课堂笔记
@@ -296,9 +296,12 @@ brew install mongodb-community@4.2
     - 显示图形
     - 显示链接
 
-* Familiar with your keyboard
+* [Reference to pythonInstall.md](pythonInstall.md)
+
+## Familiar with your keyboard
 ![windows keyboard](./images/keyboard-windows.jpg)
 ![Apple keyboard](./images/keyboard-apple.jpg)
+```
 space
 :
 ctrl+c
@@ -310,23 +313,20 @@ shift+tab
 Enter(Return)
 "
 `
+upArrow: bring previous command back
+downArrow: bring next command back
+leftArrow: move cursor to left in DOS window
+rightArrow: move cursor to right in DOS window
+```
+
 * Hello World
     - hello.py
     - helloHim.py
 
 ---
-## 2020-07-06
-
-
-* Famillar with your keyboard
-
-![keyboard](./images/keyboard-windows.jpg)
-![Apple keyboard](./images/keyboard-apple.jpg)
-
-locate ·，enter，space，tab，：，“”，‘’，up-arrow，left-arrow
 
 ## Getting start
-* install softwares needed
+* √ install softwares needed
 
 [refer to ](pythonInstall.md) python installation file.
 
@@ -361,6 +361,8 @@ python first.py
 [Python Tutorial](https://docs.python.org/3/tutorial/)
 
 ![Python Keywords](images/keywords.png)
+
+[MongoDB Tutorial](https://www.w3schools.com/python/python_mongodb_insert.asp)
 
 
 ## Email Address
