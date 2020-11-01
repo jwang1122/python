@@ -67,7 +67,11 @@ quicktype ./data/student.json -o student.py
     - user.py, User, SubUser inheritence testUser
     - person, teacher, student inheritence
     ![Person<Student](./images/student.png)
-
+## class
+* class0.py - pass class, instance and class level attributes
+* Person.py
+* bookdb.py
+* create a class snowman.py > drawSnowMan.py > shapes.py
 ---
 ## 2020-07-28
 * Install Postman
@@ -133,71 +137,66 @@ brew install mongodb-community@4.2
 * Install Postman
     [Download Website](https://www.postman.com/downloads/)
     ![First time run Postman](images/postman.png)
-* App server
+
+## App server
     - app1.py > ping-pong
     - app2.py > <html>
     - app3.py > display hardcoded books
     - app4.py > display books from mongodb, postman > test service
 ---
-## 2020-07-23
-* Prime
+
+## Prime
     - prime0.py > straight forward
     - prime1.py > optimized by half
     - prime2.py > define function isPrime()
     - prime3.py > calculate range(40-50)
     - prime4.py > define function rangePrime(x,y)
-* Mongo DB
 
+## Mongo DB
 
-    - install MongoDB
-    [download website](https://www.mongodb.com/try/download/community?tck=docs_server)
-    Download File Name: mongodb-windows-x86_64-4.4.1-signed.msi
-    
-    - install MongoDB Compass
-    - NoSQL - MongoDB -> 
-    SQL: Structured Query Language
-    [What is SQL?](https://www.w3schools.com/sql/sql_intro.asp)
-    - create.py > create book db
-    - retrieve.py
-    - update.py
-    - delete.py
-    - bookdb.py
+[Install MongoDB](MongoDB.md)
+* NoSQL - MongoDB -> 
+* SQL: Structured Query Language
+[What is SQL?](https://www.w3schools.com/sql/sql_intro.asp)
+
+* create0.py > create book and save it to mongodb
+* create1.py > create more than one document at once
+* retrieve0.py > retrieve one book from mongodb
+* retrieve1.py > retrieve all books from mongodb
+* retrieve2.py > retrieve some books based on condition from mongodb
+* update.py > update one document 
+* delete.py > delete one document
+* bookdb.py > create a class include all CRUD process.
 ---
-## 2020-07-22
-* plot
-    - plot3.py
-    - [Practice]: plot sin(x) and cos(x) in the same chart > plot4.py
-    - China-vs-USA.py
+
+## plot
+* plot0.py
+* plot1.py
+* plot2.py
+* plot3.py
+* [Practice]: plot sin(x) and cos(x) in the same chart > plot4.py
+* China-vs-USA.py
     - [Online data](https://open-covid-19.github.io/data/data.csv)
     - [Online data](https://open-covid-19.github.io/data/data_minimal.csv)
-    - [Practice]
+    - [Homework] Choose different two states, plot the data
+
 ---
-## 2020-07-21
-* file access
-    - file5.py
-    - csvReader.py
-* snowman continue
-    - create a class snowman.py > drawSnowMan.py
-* ploy
-    - plot0.py
-    - plot1.py
-    - plot2.py
----
-## 2020-07-20
-* check homework snowcouple
-    - demo draw_snowman.py
     
-* file read
-    - file0.py (write to file)
-    - file1.py (write to existing file)
-    - file2.py (with open, auto close)
-    - file3.py (dump json)
-    - file4.py (pandas read csv)
-    - file5.py ()
-* plot
+## File access
+* file0.py (write to file)
+* file1.py (read and write to existing file)
+* file2.py (with open, auto close)
+* file3.py (dump json, write to json file)
+* file3a.py (read json from file)
+* file3b.py (read json from string)
+* file4.py (pandas read csv)
+* file5.py (read csv file, and plot the data)
+* file6.py (write dict to csv file)
+* readJson.py
+* csvReader.py
     
 ---
-## 2020-07-16
+## Terminal Games
 * Check homework
 * roll dice
     - dice.py
@@ -206,32 +205,40 @@ brew install mongodb-community@4.2
 * guess number
     - guessNumber.py
 
-* draw snow man
-    - ![Snow Couple](./images/snowCouple.png)
-    - demo draw_snowman.py
-    - shapes.py
-    - testShapes.py
-    - drawSun.py
-    - homework> draw snowcouple
----
-## 2020-07-15
-* ball game
-    - ~~ball1.py~~
-    - ball2.py ~ ball10.py
+## draw snow man
+* ![Snow Couple](./images/snowCouple.png)
+* demo draw_snowman.py
+* shapes.py
+* testShapes.py
+* drawSun.py
+* homework> draw snowcouple
 
 ---
-## 2020-07-14
-* turtle
-    - turtle1.py ~ turtle5.py
 
-* ball game
-    - ball1.py ~ ball10.py
+## turtle
+* turtle1.py 
+* turtle2.py 
+* turtle3.py 
+* turtle4.py 
+* turtle5.py
+## ball game
+* ball1.py [Display a ball at center of the screen.]
+* ball2.py 
+* ball3.py 
+* ball4.py 
+* ball5.py 
+* ball6.py 
+* ball7.py 
+* ball8.py 
+* ball9.py 
+* ball10.py [Final version of ball game.]
 
 ---
 ## 2020-07-13
 * check homework
     - yichen > 17 > Google Search: Roman Numerals >
-* Loop
+
+## Loop
     - forLoop1.py
     - forBreak.py
     - forContinue.py
@@ -246,7 +253,8 @@ brew install mongodb-community@4.2
         ```
     - loop string
     - forElse.py
-* If-Else
+
+## If-Else
     - ifelse.py
     - if-else.py  
     - Infinit loop while True: > input("Continue? (y/n)")
@@ -256,32 +264,24 @@ brew install mongodb-community@4.2
         1, 3, 5, 7, 9
 
         ```
----
-## 2020-07-09
-* Data Type
-    - ![Data Type](./images/DataType.png)
-    - set > setTest.py
-    - dict > dictTest.py
----
-## 2020-07-08
 
-* Python playground and help document
-    - python >>> help(print) (positional arguments, keyword arguments)
-    - [Practice]: different print statements
-    - print.py
-    - [Practice]: Homework
+## Data Type
+* ![Data Type](./images/DataType.png)
+* python terminal
+* int, float, complex > floatTest.py
+* str > strTest.py
+* tuple > tupleTest.py
+* list > listTest.py
+* set > setTest.py
+* dict > dictTest.py
+
+## Python playground and help document
+* python >>> help(print) (positional arguments, keyword arguments)
+* [Practice]: different print statements
+* hello/print.py
+* hello/print-string.py
+* [Practice]: Homework
     
-
-* Data Type
-    - ![Data Type](./images/DataType.png)
-    - python terminal
-    - int, float, complex > floatTest.py
-    - str > strTest.py
-    - tuple > tupleTest.py
-    - list > listTest.py
-    - set > setTest.py
-    - dict > dictTest.py
-
 ---
 
 ## Using Markdown 

@@ -16,7 +16,8 @@ fp.close()
   
 # Opening file 
 fp = open("mylogs.log", "r") 
-fp.read(8) 
+line = fp.read(8) 
+print(line)
   
 # Print the position of handle 
 print(fp.tell()) 
