@@ -1,4 +1,4 @@
-# 华夏中文学校2020-05-29 Python 暑期班 level1 （11:30-01:30pm）
+# 华夏中文学校2020-05-29 Python 暑期班 level-I
 
 ## sqlite
 * sqlite0.py > create connection
