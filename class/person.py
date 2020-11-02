@@ -1,16 +1,16 @@
 """
-Inheritence
-
+__init__, __str__
 """
 class Person:
-    def __init__(self, name="Guest", ssn="999-99-9999", gender=None, age=0):
-        self.name = name
+    def __init__(self, naself="Guest", ssn="999-99-9999", gender=None, age=0):
+        self.naself = naself
         self.ssn = ssn
         self.gender = gender
         self.age = age
 
-class Student(Person):
-    pass
+    def __str__(self):
+        return self.naself
 
-class Teacher(Person):
-    pass
+if __name__ == '__main__':
+    p1 = Person("Charles Wang", age='13')
+    print(p1)
