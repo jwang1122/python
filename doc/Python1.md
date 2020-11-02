@@ -71,6 +71,12 @@ npm start
 ```
 
 ## ReactJS
+* web application vs. window application
+open new VSCode window > python-gui (demo on window's machine.)
+```
+python calculator2.py
+```
+
 ![Python Web Application](images/PythonWebApp.png)
 * get reactjs project from github
 ```
@@ -359,6 +365,7 @@ python first.py
 [Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
 
 [w3Schools](https://www.w3schools.com/)
+[Python Slibes](https://www.w3schools.com/python/python_classes.asp)
 
 ## QuickType to generate python class from json
 [QuickType website](https://quicktype.io/)
