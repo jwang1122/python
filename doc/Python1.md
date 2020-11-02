@@ -1,4 +1,4 @@
-# 华夏中文学校2020-05-29 Python 暑期班 level-I
+# 华夏中文学校 Python level-I
 
 ## sqlite
 * sqlite0.py > create connection
@@ -39,19 +39,6 @@
 
 classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
 
-```py
-class User:
-    pass
-```
-* assign fields to an instance of User
-
-[Python Classes](https://www.w3schools.com/python/python_classes.asp)
- 
-## class
-* class0.py - pass class, instance and class level attributes
-* person.py
-* bookdb.py
-* create a class snowman.py > drawSnowMan.py > shapes.py
 ---
 
 ## install npm
@@ -99,11 +86,27 @@ cd ../book-app
 npm start
 ```
 
+## class
+```py
+class User:
+    pass
+```
+* √ assign fields to an instance of User
+
+[Python Classes](https://www.w3schools.com/python/python_classes.asp)
+ 
+* √ class0.py - pass class, instance and class level attributes
+* person.py 
+* bookdb.py
+* create a class snowman.py > drawSnowMan.py > shapes.py
+
 ## App server
 * app1.py > ping-pong
 * app2.py > <html>
 * app3.py > display hardcoded books
 * app4.py > display books from mongodb, postman > test service
+* getJson.py > load books from given website url
+
 ```py
 class User:
     pass
@@ -116,22 +119,6 @@ class User:
     ![First time run Postman](images/postman.png)
 * start app4.py, test POST, UPDATE, DELETE methods
 ---
-
-## Function
-    - math1.py (circle area, rectangule area, triangle area)
-    - defineFunction.py (help(sum))
-    - keywordArgs.py
-    - practice: define a function with keyword arguments 
-        -(createList.py parseString(str, sep=','))
-    - defaultValue.py
-    - ask.pys
-
-## Prime
-    - prime0.py > straight forward
-    - prime1.py > optimized by half
-    - prime2.py > define function isPrime()
-    - prime3.py > calculate range(40-50)
-    - prime4.py > define function rangePrime(x,y)
 
 ## Mongo DB
 
@@ -151,17 +138,40 @@ class User:
 * bookdb.py > create a class include all CRUD process.
 ---
 
+## Function
+* math1.py (circle area, rectangule area, triangle area)
+* defineFunction.py (help(sum))
+* keywordArgs.py
+* practice: define a function with keyword arguments 
+    - (createList.py parseString(str, sep=','))
+* defaultValue.py
+* ask.pys
+* attribute.py
+* optionalPositionalArgs.py
+* innerFunction0.py
+* innerFUnction1.py
+
+## Prime
+* prime0.py > straight forward
+* prime1.py > optimized by half
+* prime2.py > define function isPrime()
+* prime3.py > calculate range(40-50)
+* prime4.py > define function rangePrime(x,y)
+
 ## plot
 * plot0.py
 * plot1.py
 * plot2.py
 * plot3.py
+* plot-student-csv.py
 * [Practice]: plot sin(x) and cos(x) in the same chart > plot4.py
 * China-vs-USA.py
     - [Online data](https://open-covid-19.github.io/data/data.csv)
     - [Online data](https://open-covid-19.github.io/data/data_minimal.csv)
     - [Homework] Choose different two states, plot the data
-
+* covid-19/covid0.py
+* covid-19/covid1.py
+* covid-19/covid2.py
 ---
     
 ## File access
@@ -269,7 +279,7 @@ class User:
 ## Using Markdown 
 * turn in homework to GitHub
 
-* Markdown md文件的制作，制作课堂笔记
+* √ Markdown md文件的制作，制作课堂笔记
 ![好记性不如烂笔头儿](./images/烂笔头儿.png)
     - add Markdown Extension
     - 显示标题，子标题 #, ##
