@@ -26,21 +26,43 @@
     - react JS front end GUI server
 
 ## OOP  
-    ![OOP concept](./images/classDefine.png)
-    - class book, __init__, __repr__
-    - class student.py constructor, __repr__ abstraction
-    ![class abstract](./images/classAbstraction.png)
-    - user.py, User, SubUser inheritence testUser
-    - person, teacher, student inheritence
-    ![Person<Student](./images/student.png)
-    [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
-    [Python Classes]()
+![OOP concept](./images/classDefine.png)
+- class book, __init__, __repr__
+- class student.py constructor, __repr__ abstraction
+![class abstract](./images/classAbstraction.png)
+- user.py, User, SubUser inheritence testUser
+- person, teacher, student inheritence
+![Person<Student](./images/student.png)
+[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
+[Python Classes]()
  
 ## class
 * class0.py - pass class, instance and class level attributes
-* Person.py
-* bookdb.py
 * create a class snowman.py > drawSnowMan.py > shapes.py
+* class1.py > dynamically assign instance attribute and access it from outside function
+* class2.py > define internal function
+* class3.py > __init__(self) and internal function
+* class4.py > use keyword argument in __init__(self)
+* class5.py > understand __str__, __repr__, and __len__()
+* class6.py > protected attribute and private attribute
+* class7.py > getter/setter
+* person.py > inheritance
+* personTest.py > understand class name <module_name>.<class_name>
+* bookdb.py > used in app4.py
+* polygon.py; ask student implement __str__(self)
+* student.py; using class level method
+*
+
+## install and using QuickType
+* install
+```
+npm intall -g quicktype
+quicktype --version
+```
+* generate python code based on Json
+```
+quicktype ./data/student.json -o student.py
+```
 ---
 
 ## install npm
@@ -316,8 +338,25 @@ python first.py
 
 [w3Schools](https://www.w3schools.com/)
 
+[4 Attempts at Packaging Python as an Executable](https://tryexceptpass.org/article/package-python-as-executable/)
+
+
+[Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)
+
+[Python and PyQt: Building a GUI Desktop Calculator](https://realpython.com/python-pyqt-gui-calculator/)
+
 ## QuickType to generate python class from json
+
 [QuickType website](https://quicktype.io/)
+
+* QuickType Installation
+
+```
+npm install -g quicktype
+quicktype --version
+```
+
+* Python code generation
 ```
 quicktype ./data/student.json -o student.py
 ```

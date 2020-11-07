@@ -6,7 +6,7 @@
 #
 #     result = student_from_dict(json.loads(json_string))
 
-from typing import Any, List, TypeVar, Callable, Type, cast
+from typing import Any, TypeVar, Type, cast
 
 
 T = TypeVar("T")
@@ -17,9 +17,9 @@ def from_str(x: Any) -> str:
     return x
 
 
-def from_list(f: Callable[[Any], T], x: Any) -> List[T]:
-    assert isinstance(x, list)
-    return [f(y) for y in x]
+def from_int(x: Any) -> int:
+    assert isinstance(x, int) and not isinstance(x, bool)
+    return x
 
 
 def to_class(c: Type[T], x: Any) -> dict:
@@ -27,49 +27,41 @@ def to_class(c: Type[T], x: Any) -> dict:
     return cast(Any, x).to_dict()
 
 
-class StudentElement:
-    firstname: str
-    lastname: str
-    id: int
-
-    def __init__(self, firstname: str, lastname: str, id: int) -> None:
-        self.firstname = firstname
-        self.lastname = lastname
-        self.id = id
-
-    @staticmethod
-    def from_dict(obj: Any) -> 'StudentElement':
-        assert isinstance(obj, dict)
-        firstname = from_str(obj.get("firstname"))
-        lastname = from_str(obj.get("lastname"))
-        id = int(from_str(obj.get("id")))
-        return StudentElement(firstname, lastname, id)
-
-    def to_dict(self) -> dict:
-        result: dict = {}
-        result["firstname"] = from_str(self.firstname)
-        result["lastname"] = from_str(self.lastname)
-        result["id"] = from_str(str(self.id))
-        return result
-
-
 class Student:
-    students: List[StudentElement]
+    first_name: str
+    last_name: str
+    id: int
+    gender: str
+    age: int
 
-    def __init__(self, students: List[StudentElement]) -> None:
-        self.students = students
+    def __init__(self, first_name: str, last_name: str, id: int, gender: str, age: int) -> None:
+        self.first_name = first_name
+        self.last_name = last_name
+        self.id = id
+        self.gender = gender
+        self.age = age
 
     @staticmethod
     def from_dict(obj: Any) -> 'Student':
         assert isinstance(obj, dict)
-        students = from_list(StudentElement.from_dict, obj.get("students"))
-        return Student(students)
+        first_name = from_str(obj.get("first_name"))
+        last_name = from_str(obj.get("last_name"))
+        id = int(from_str(obj.get("id")))
+        gender = from_str(obj.get("gender"))
+        age = from_int(obj.get("age"))
+        return Student(first_name, last_name, id, gender, age)
 
     def to_dict(self) -> dict:
         result: dict = {}
-        result["students"] = from_list(lambda x: to_class(StudentElement, x), self.students)
+        result["first_name"] = from_str(self.first_name)
+        result["last_name"] = from_str(self.last_name)
+        result["id"] = from_str(str(self.id))
+        result["gender"] = from_str(self.gender)
+        result["age"] = from_int(self.age)
         return result
 
+    def __str__(self):
+        return f"{self.id}: {self.first_name} {self.last_name}"
 
 def student_from_dict(s: Any) -> Student:
     return Student.from_dict(s)
