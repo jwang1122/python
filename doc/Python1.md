@@ -28,7 +28,6 @@
 ---
 ## OOP  
 ![OOP concept](./images/classDefine.png)
-<<<<<<< HEAD
 - class book, __init__, __repr__
 - class student.py constructor, __repr__ abstraction
 ![class abstract](./images/classAbstraction.png)
@@ -65,17 +64,6 @@ quicktype --version
 ```
 quicktype ./data/student.json -o student.py
 ```
-=======
-* book.py > __init__, __str__
-* student.py constructor, __repr__ abstraction
-![class abstract](./images/classAbstraction.png)
-
-* user.py, User, SubUser inheritence testUser
-* person, teacher, student inheritence
-![Person<Student](./images/student.png)
-
->>>>>>> 834fc26eea5de66866e58e0323936b2792214d7f
----
 
 ## install npm
 [Download and install node](https://nodejs.org/en/download/)
@@ -419,16 +407,13 @@ python first.py
 [w3Schools](https://www.w3schools.com/)
 [Python Slibes](https://www.w3schools.com/python/python_classes.asp)
 
-<<<<<<< HEAD
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
-=======
 [4 Attempts at Packaging Python as an Executable](https://tryexceptpass.org/article/package-python-as-executable/)
 
 
 [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)
 
 [Python and PyQt: Building a GUI Desktop Calculator](https://realpython.com/python-pyqt-gui-calculator/)
->>>>>>> 4ec1413cb61c33fece3828e7db78c5bbfe68fcfb
 
 ## QuickType to generate python class from json
 
