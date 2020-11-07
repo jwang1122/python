@@ -1,74 +1,48 @@
-import math;
+import math
 
-def add(x,y):
-    print("%d + %d = %d" % (x,y,x+y))
+x = math.sqrt(64)
 
-def addList(x):
-    sum = 0;
-    result = "";
-    for s in x:
-        sum += s
-        result += str(s) + '+'
-    result = result[:len(result)-1]
-    print(f"{result}={sum}")
-    
-    # for v in x:
-    #     sum += v
-    #     print(v, end="+")
-    # print("=%d" %sum)
+print(x)
 
-    # result = ""
-    # size = len(x)
-    # for i in range(size):
-    #     sum += x[i]
-    #     if (size-1==i):
-    #         result += str(x[i])
-    #     else:
-    #         result += (str(x[i]) + "+")
-    # print(f"{result}={sum}")
+x = math.ceil(1.4)
+y = math.floor(1.4)
 
-def sub(x,y):
-    print("%d - %d = %d" % (x,y,x-y))
+print(x) # returns 2
+print(y) # returns 1
 
-
-def converter(s):
-    D=500
-    C=100
-    L=50
-    X=10
-    V=5
-    I=1
-    sum = 0
-    for i in s:
-        if(i=="D"): sum += D
-        if(i=="C"): sum += C
-        if(i=="L"): sum += L
-        if(i=="X"): sum += X
-        if(i=="V"): sum += V
-        if(i=="I"): sum += I
-
-def prime(x):
-    """
-    Any natural number that is not divisible by any other number 
-    except 1 and itself called Prime Number in Python.
-
-    return True if x is a prime number, return False otherwise.
-    """
-    flag = True
-
-    for i in range(2, (x//2 + 1)):
-        if(x % i == 0):
-            flag = False
-            break
-
-    return flag and x != 1
-
-def rangePrime(x,y):
-    """
-    return list of prime numbers between x and y.
-    """
-    list1 = []
-    for i in range (x,y+1):
-        if (prime(i)):
-            list1.append(i)
-    return list1
+print(math.pi)
+print(math.degrees(math.pi/2.0))
+print(math.radians(90))
+print(math.sin(math.pi/2.0))
+print(math.cos(math.pi/4.0))
+print(math.asin(1))
+print(math.acos(0))
+print("20:",math.comb(3,2)) #number of combinations of choosing 2 from 3 distinct elements without considering the order of elements.
+print("21:",math.perm(3,2))
+print(math.copysign(-4, 5))
+p = (1,1)
+q = (4,5)
+print(math.dist(p,q))
+p = (1,1,1)
+q = (4,4,4)
+print(math.dist(p,q))
+print(math.erf(5))
+print(math.exp(1))
+print(math.expm1(1))
+print(math.fabs(-2.341))
+print(math.fmod(3.2,2.1))
+x = [1.1,2.2,3.3]
+print(math.fsum(x))
+print(math.gcd(36,6))
+print(math.isfinite(1234567890))
+print(math.tan(math.pi/2))
+print(math.isinf(math.tan(math.pi/2)))
+print(math.isnan(3))
+print(math.isqrt(12))
+print(math.ldexp(5,2))
+print(math.log(3, 10))
+print(math.pow(10, 0.47712125471966244))
+print(math.log10(3))
+print(math.modf(5.25))
+print(math.remainder(3,14))
+print(math.sqrt(16))

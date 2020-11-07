@@ -1,4 +1,4 @@
-# 华夏中文学校2020-05-29 Python 暑期班 level-I
+# 华夏中文学校 Python level-I
 
 ## sqlite
 * sqlite0.py > create connection
@@ -14,19 +14,21 @@
 ---
 
 ## Review
-    - Markdown document
-    - ball game
-    - draw snowman
-    - plot
-    - covid_19
-    - debug python code
-    - database access (CRUD)
-    - Postman to test web service
-    - application web server
-    - react JS front end GUI server
+* Markdown document
+* ball game
+* draw snowman
+* plot
+* covid_19
+* debug python code
+* database access (CRUD)
+* Postman to test web service
+* application web server
+* react JS front end GUI server
 
+---
 ## OOP  
 ![OOP concept](./images/classDefine.png)
+<<<<<<< HEAD
 - class book, __init__, __repr__
 - class student.py constructor, __repr__ abstraction
 ![class abstract](./images/classAbstraction.png)
@@ -63,6 +65,19 @@ quicktype --version
 ```
 quicktype ./data/student.json -o student.py
 ```
+=======
+* book.py > __init__, __str__
+* student.py constructor, __repr__ abstraction
+![class abstract](./images/classAbstraction.png)
+
+* user.py, User, SubUser inheritence testUser
+* person, teacher, student inheritence
+![Person<Student](./images/student.png)
+[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
+
+classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
+
+>>>>>>> 834fc26eea5de66866e58e0323936b2792214d7f
 ---
 
 ## install npm
@@ -78,14 +93,13 @@ Google Search: install reactjs on windows 10
 ```
 node --version
 npm --version
-npm install -g create-react-app
-create-react-app --version
-create-react-app reactproject2
 ```
-* get reactjs project from github
-```
-git clone https://github.com/jwang1122/reactjs.git
-```
+~~npm install -g create-react-app~~
+
+~~create-react-app --version~~
+
+~~create-react-app reactproject2~~
+
 * Install ReactJs on MacOS
 
 ```
@@ -95,37 +109,67 @@ cd wang-app
 npm start
 ```
 
+## ReactJS
+* web application vs. window application
+open new VSCode window > python-gui (demo on window's machine.)
+```
+python calculator2.py
+```
+
+![Python Web Application](images/PythonWebApp.png)
+* get reactjs project from github
+```
+git clone https://github.com/jwang1122/reactjs.git
+```
+* start the application
+open new VSCode > ~/workspace/reactjs
+
+```
+cd server
+python app.py
+cd ../book-app
+npm start
+```
+
+## class
+```py
+class User:
+    pass
+```
+* √ assign fields to an instance of User
+
+[Python Classes](https://www.w3schools.com/python/python_classes.asp)
+ 
+* √ class0.py - pass class, instance and class level attributes
+* person.py 
+* bookdb.py
+* create a class snowman.py > drawSnowMan.py > shapes.py
+
 ## App server
 * app1.py > ping-pong
 * app2.py > <html>
 * app3.py > display hardcoded books
 * app4.py > display books from mongodb, postman > test service
+* getJson.py > load books from given website url
+
+```py
+class User:
+    pass
+```
+* assign fields to an instance of User
+* person.py > __init__, __str__
+* bookdb.py
 * Install Postman
     [Download Website](https://www.postman.com/downloads/)
     ![First time run Postman](images/postman.png)
 * start app4.py, test POST, UPDATE, DELETE methods
 ---
 
-## Function
-    - math1.py (circle area, rectangule area, triangle area)
-    - defineFunction.py (help(sum))
-    - keywordArgs.py
-    - practice: define a function with keyword arguments 
-        -(createList.py parseString(str, sep=','))
-    - defaultValue.py
-    - ask.pys
-
-## Prime
-    - prime0.py > straight forward
-    - prime1.py > optimized by half
-    - prime2.py > define function isPrime()
-    - prime3.py > calculate range(40-50)
-    - prime4.py > define function rangePrime(x,y)
-
 ## Mongo DB
 
 [Install MongoDB](MongoDB.md)
 * NoSQL - MongoDB -> 
+    - [collection](images/collections.png)
 * SQL: Structured Query Language
 [What is SQL?](https://www.w3schools.com/sql/sql_intro.asp)
 
@@ -139,17 +183,40 @@ npm start
 * bookdb.py > create a class include all CRUD process.
 ---
 
+## Function
+* math1.py (circle area, rectangule area, triangle area)
+* defineFunction.py (help(sum))
+* keywordArgs.py
+* practice: define a function with keyword arguments 
+    - (createList.py parseString(str, sep=','))
+* defaultValue.py
+* ask.pys
+* attribute.py
+* optionalPositionalArgs.py
+* innerFunction0.py
+* innerFUnction1.py
+
+## Prime
+* prime0.py > straight forward
+* prime1.py > optimized by half
+* prime2.py > define function isPrime()
+* prime3.py > calculate range(40-50)
+* prime4.py > define function rangePrime(x,y)
+
 ## plot
 * plot0.py
 * plot1.py
 * plot2.py
 * plot3.py
+* plot-student-csv.py
 * [Practice]: plot sin(x) and cos(x) in the same chart > plot4.py
 * China-vs-USA.py
     - [Online data](https://open-covid-19.github.io/data/data.csv)
     - [Online data](https://open-covid-19.github.io/data/data_minimal.csv)
     - [Homework] Choose different two states, plot the data
-
+* covid-19/covid0.py
+* covid-19/covid1.py
+* covid-19/covid2.py
 ---
     
 ## File access
@@ -257,7 +324,7 @@ npm start
 ## Using Markdown 
 * turn in homework to GitHub
 
-* Markdown md文件的制作，制作课堂笔记
+* √ Markdown md文件的制作，制作课堂笔记
 ![好记性不如烂笔头儿](./images/烂笔头儿.png)
     - add Markdown Extension
     - 显示标题，子标题 #, ##
@@ -337,6 +404,7 @@ python first.py
 [Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
 
 [w3Schools](https://www.w3schools.com/)
+[Python Slibes](https://www.w3schools.com/python/python_classes.asp)
 
 [4 Attempts at Packaging Python as an Executable](https://tryexceptpass.org/article/package-python-as-executable/)
 
