@@ -111,6 +111,13 @@ class User:
 * person.py 
 * √ bookdb.py
 * create a class snowman.py > drawSnowMan.py > shapes.py
+## QuickType
+* install quicktype
+```
+npm install -g quicktype
+quicktype --version
+```
+* generate code 
 
 ## App server
 * app1.py > ping-pong
