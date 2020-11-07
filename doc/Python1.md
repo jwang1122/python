@@ -35,9 +35,6 @@
 * user.py, User, SubUser inheritence testUser
 * person, teacher, student inheritence
 ![Person<Student](./images/student.png)
-[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
-
-classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
 
 ---
 
@@ -93,6 +90,8 @@ npm start
 ```
 
 ## class
+classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
+
 ```py
 class User:
     pass
@@ -102,8 +101,15 @@ class User:
 [Python Classes](https://www.w3schools.com/python/python_classes.asp)
  
 * √ class0.py - pass class, instance and class level attributes
+* class1.py
+* class2.py
+* class3.py
+* class4.py
+* class5.py
+* class6.py
+* class7.py
 * person.py 
-* bookdb.py
+* √ bookdb.py
 * create a class snowman.py > drawSnowMan.py > shapes.py
 
 ## App server
@@ -366,6 +372,8 @@ python first.py
 
 [w3Schools](https://www.w3schools.com/)
 [Python Slibes](https://www.w3schools.com/python/python_classes.asp)
+
+[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
 
 ## QuickType to generate python class from json
 [QuickType website](https://quicktype.io/)
