@@ -3,7 +3,6 @@ from sqlite3 import Error
 from pprint import pprint
 import uuid
 
-
 class BookDB:
     def __init__(self, dbname, url=None):
         self.dbname = dbname
@@ -39,6 +38,50 @@ class BookDB:
         self.conn.commit()
         return book.get('_id')
 
+    # Retrieve one
+    def getBook(self, _id):
+        """
+        Retrieve a book from database by _id
+        """
+        db = self.getBookDB()
+        book=None
+        try:
+            value = (_id,)
+            db.execute('select * from books where _id=?',value)
+            book = self.getBookFromList(db.fetchone())
+        except Exception as e:
+            print(e)
+        return book
+
+    # Update
+    def update(self, _id, book):
+        """
+        Update one record in database
+        """
+        oldBook = self.delete(_id)
+        db = self.getBookDB()
+        book = self.updateBook(oldBook, book)
+        value = self.getValueFromBook(book)
+        db.execute('INSERT INTO books VALUES (?,?,?,?,?)', value)
+        self.conn.commit()
+        return _id
+
+    # Delete
+    def delete(self, book_id):
+        """
+        Delete a book by _id
+        """
+        book = self.getBook(book_id)
+        db = self.getBookDB()
+        t = (book_id,)
+        db.execute('delete from books where _id=?',t)
+        self.conn.commit()
+        return book
+        
+    def updateBook(self, oldBook, newBook):
+        newBook['_id'] = oldBook['_id']
+        return newBook
+
     def getBookFromList(self, row):
         book = {
             "_id": row[0],
@@ -64,7 +107,7 @@ class BookDB:
         conn = None
         try:
             conn = sqlite3.connect(db_file)
-            print(sqlite3.version)
+            # print(sqlite3.version)
         except Error as e:
             print(e)
         return conn
@@ -89,7 +132,7 @@ if __name__ == '__main__':
     books = bookdb.getBooks()
     pprint(books)
 
-    # test create
+    # test create one
     book = {
         "title": "Introduction of Java",
         "price": 12.69,
@@ -98,5 +141,16 @@ if __name__ == '__main__':
     }
     bookdb.create(book)
 
+    # test retrieve one
+    book = bookdb.getBook('f93aae2f45c14da093f45e02c2837857')
+    pprint(book)
+    
+    # test delete one
+    deletedBook = bookdb.delete('4bec09b0b5204ff7a45bc897c6f30225')
+    pprint(deletedBook)
+
+    # test update
+    book['author'] = 'Ailian Wang'
+    bookdb.update('f93aae2f45c14da093f45e02c2837857', book)
 
     print("Done.")
