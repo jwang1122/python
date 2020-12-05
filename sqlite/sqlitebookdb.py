@@ -32,7 +32,6 @@ class BookDB:
         Create a book in database
         """
         db = self.getBookDB()
-        book['_id'] = uuid.uuid4().hex
         value = self.getValueFromBook(book)
         db.execute('INSERT INTO books VALUES (?,?,?,?,?)', value)
         self.conn.commit()
@@ -58,12 +57,9 @@ class BookDB:
         """
         Update one record in database
         """
-        oldBook = self.delete(_id)
-        db = self.getBookDB()
-        book = self.updateBook(oldBook, book)
-        value = self.getValueFromBook(book)
-        db.execute('INSERT INTO books VALUES (?,?,?,?,?)', value)
-        self.conn.commit()
+        book["_id"] = _id
+        self.delete(_id)
+        self.create(book)
         return _id
 
     # Delete
@@ -134,6 +130,7 @@ if __name__ == '__main__':
 
     # test create one
     book = {
+        "_id":uuid.uuid4().hex,
         "title": "Introduction of Java",
         "price": 12.69,
         "author": "John Wang",
