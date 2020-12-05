@@ -58,7 +58,7 @@ class BookDB:
         """
         db = self.getBookDB()
         result = db.find_one_and_delete({'_id':book_id})
-        return book_id
+        return result
         
     def addBooks(self, all_books):
         bookdb = self.getBookDB()
