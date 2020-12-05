@@ -5,8 +5,11 @@
 * sqlite1.py
 * sqlite2.py
 * install DB browser for SQLite
+
 [SQLite GUI Download Website](https://sqlitebrowser.org/dl/)
-[SQLite Browser for MacOS](https://www.macupdate.com/app/mac/38584/db-browser-for-sqlite)
+
+[SQLite Browser for MacOS](https://sqlitebrowser.org/blog/macos-installer-rebuilt-for-3-11-1/)
+
 File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 ![Runing Image]()
 * sqlite4.py
@@ -54,7 +57,7 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 * √ person.py > inheritance
 * personTest.py > understand class name <module_name>.<class_name>
 * √ bookdb.py > used in app4.py
-* polygon.py; ask student implement __str__(self)
+* polygon.py; ask student implement __repr__(self)
 * student.py; using class level method
 *
 
