@@ -278,7 +278,7 @@ python -m turtledemo
 * turtle6.py; avoid turtle move out of window
 * turtle7.py; display card on turtle screen
 * turtle8.py; draw star
-* turtle9.py;
+* turtle9.py; draw half circle
 * shapes.py; triangle, rectangle, line, circle
 * testShapes.py; test all functions defined in shapes.py
 * drawSun.py; drawing a sun and house by using shapes.py

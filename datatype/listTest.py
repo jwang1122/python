@@ -14,8 +14,20 @@ print(l)
 l1 = [i for i in range(20) if i%2==1]
 print(l)
 
-l = [False]*4 # create a default boolean list
+l = [False]*6 # create a default boolean list
 print(l)
+
+fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+print(f"The number of apples is {fruits.count('apple')}.")
+print(f"The number of tangerine is {fruits.count('tangerine')}.")
+print(f"The index of banana is {fruits.index('banana')}.")
+print(f"The index of next banana is {fruits.index('banana', 4)}.")
+fruits.reverse() # reverse function does NOT return anything
+print(fruits)
+fruits.sort()
+print(fruits)
+print(fruits.pop())
+print(fruits)
 
 # modify list
 l[4] = "hello"
