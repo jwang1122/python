@@ -1,10 +1,11 @@
 from enum import Enum
 """
+class Inheritance
 Class level function
 Class level attribute
 """
 
-class Mood(Enum):
+class Mood(Enum): # Mood class inherites from Enum class
     FUNKY = 1
     HAPPY = 3
 
