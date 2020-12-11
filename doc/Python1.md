@@ -199,6 +199,7 @@ class User:
 ## Function
 * math1.py (circle area, rectangule area, triangle area)
 * defineFunction.py (help(sum))
+* collision.py; use / to avoid collision
 * keywordArgs.py
 * practice: define a function with keyword arguments 
     - (createList.py parseString(str, sep=','))
@@ -282,10 +283,13 @@ python -m turtledemo
 * shapes.py; triangle, rectangle, line, circle
 * testShapes.py; test all functions defined in shapes.py
 * drawSun.py; drawing a sun and house by using shapes.py
+    - assign homework draw snow couple
+
+    ![Snow Couple](./images/snowCouple.png)
 
 ## ball game
 * ball1.py [Display a ball at center of the screen.]
-* ball2.py 
+* ball2.py []
 * ball3.py 
 * ball4.py 
 * ball5.py 
@@ -301,11 +305,17 @@ python -m turtledemo
     - yichen > 17 > Google Search: Roman Numerals >
 
 ## Loop
-    - forLoop1.py
-    - forBreak.py
-    - forContinue.py
-    - forNested1.py
-    - while.py
+* forLoop1.py
+* forBreak.py
+* forContinue.py
+* forNested1.py; print right triangle
+* forNested2.py; print Horizontal triangle
+* forNested3.py；print diamond
+* forNested4.py; define function for n
+* forElse.py
+* for1.py; generator
+* for2.py; more generator
+* while.py
     - [Practice]: 
         ```output
         We're on time 0
@@ -314,7 +324,9 @@ python -m turtledemo
         We're on time 3
         ```
     - loop string
-    - forElse.py
+* whileElse.py
+* guessNumber.py
+    - assign homework to modify guessNumber.py for two players
 
 ## If-Else
     - ifelse.py
