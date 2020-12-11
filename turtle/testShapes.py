@@ -20,4 +20,6 @@ pen1.begin_fill()
 drawTriangle(pen1, 150, 150, 30, 100)
 pen1.end_fill()
 
+pen1.hideturtle()
+
 mainloop()

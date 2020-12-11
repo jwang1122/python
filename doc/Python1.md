@@ -266,11 +266,23 @@ class User:
 ---
 
 ## turtle
-* turtle1.py 
-* turtle2.py 
-* turtle3.py 
-* turtle4.py 
-* turtle5.py
+
+```
+python -m turtledemo
+```
+* turtle1.py; display turtle pen 
+* turtle2.py; basic turtle move 
+* turtle3.py; mouse click on turtle 
+* turtle4.py; random move on click 
+* turtle5.py; avoid turtle move out of window
+* turtle6.py; avoid turtle move out of window
+* turtle7.py; display card on turtle screen
+* turtle8.py; draw star
+* turtle9.py;
+* shapes.py; triangle, rectangle, line, circle
+* testShapes.py; test all functions defined in shapes.py
+* drawSun.py; drawing a sun and house by using shapes.py
+
 ## ball game
 * ball1.py [Display a ball at center of the screen.]
 * ball2.py 
