@@ -3,6 +3,7 @@ access none public attributes, getter, setter and property
 
 protected attribute: self._name
 private attribute: self.__energy
+define property related to accessing functions (name)
 """
 
 class Robot:
@@ -50,5 +51,5 @@ if __name__ == '__main__':
     x.name = "Charles"
     print("47:",x.name)
 
-    del x.name
-    print(x._name)
+    # del x.name
+    # print(x._name)

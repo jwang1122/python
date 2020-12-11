@@ -1,18 +1,17 @@
-import sqlite3
-from sqlite6 import *
+from sqlite6 import create_connection
 import uuid
 
 if __name__ == '__main__':
-    database = "book.db"
+    database = "sqlitebook.db"
 
     conn = create_connection(database)
     try:
         c = conn.cursor()
-        books = [(uuid.uuid4().hex, 'Python - I', 10.88, 'John Wang', True),
-                    (uuid.uuid4().hex, 'Python - II', 7.55, 'Elle Fu', False),
-                    (uuid.uuid4().hex, 'Python - III', 12.00, 'Alex Liang', False),
+        books = [(uuid.uuid4().hex, 'Python - I', 'John Wang', True, 10.88,3),
+                    (uuid.uuid4().hex, 'Python - II', 'Elle Fu', False, 7.55,5),
+                    (uuid.uuid4().hex, 'Python - III', 'Alex Liang', False, 12.00,4),
                     ]
-        c.executemany('INSERT INTO books VALUES (?,?,?,?,?)', books)
+        c.executemany('INSERT INTO books VALUES (?,?,?,?,?,?)', books)
         conn.commit()
     except Exception as error:
         print("Error:",error)

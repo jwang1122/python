@@ -6,18 +6,28 @@
 * sqlite2.py
 * install DB browser for SQLite
 
+Google Search: DB Browser for Sqlite
+
 [SQLite GUI Download Website](https://sqlitebrowser.org/dl/)
 
 [SQLite Browser for MacOS](https://sqlitebrowser.org/blog/macos-installer-rebuilt-for-3-11-1/)
 
 File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
-![Runing Image]()
+![Runing Image](images/sqlite.png)
 * sqlite4.py
 * sqlite5.py
 * sqlite6.py
 * sqlite7.py > build relational data
 * sqlite8.py > show relation between project and task
 
+![projects - tasks](images/projects-tasks.png)
+
+* review bookdb.py
+* sqlite9.py > create books table
+* sqlite10.py > insert data into books table
+* sqlitebookdb.py > build CRUD
+* app5.py > use sqlitebookdb.py to provide service
+    use Postman to check the service.
 ---
 
 ## Review
@@ -42,7 +52,7 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 - person, teacher, student inheritence
 ![Person<Student](./images/student.png)
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
-[Python Classes]()
+[Python Classes](https://docs.python.org/3/tutorial/classes.html)
  
 ## class
 * √ class0.py - pass class, instance and class level attributes
@@ -73,11 +83,10 @@ quicktype ./data/student.json -o student.py
 ```
 * book.py > __init__, __str__
 * student.py constructor, __repr__ abstraction
-![class abstract](./images/classAbstraction.png)
 
 * user.py, User, SubUser inheritence testUser
 * person, teacher, student inheritence
-![Person<Student](./images/student.png)
+
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
 
 classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes

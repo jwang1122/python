@@ -22,7 +22,7 @@ class BookDB:
                 book = self.getBookFromList(row)
                 bookList.append(book)
         except Exception as e:
-            print(e)
+            print("sqlitebookdb-25:", e)
 
         return bookList
 
@@ -74,10 +74,6 @@ class BookDB:
         self.conn.commit()
         return book
         
-    def updateBook(self, oldBook, newBook):
-        newBook['_id'] = oldBook['_id']
-        return newBook
-
     def getBookFromList(self, row):
         book = {
             "_id": row[0],
@@ -136,18 +132,18 @@ if __name__ == '__main__':
         "author": "John Wang",
         "read": False,
     }
-    bookdb.create(book)
+    # bookdb.create(book)
 
     # test retrieve one
     book = bookdb.getBook('f93aae2f45c14da093f45e02c2837857')
     pprint(book)
     
     # test delete one
-    deletedBook = bookdb.delete('4bec09b0b5204ff7a45bc897c6f30225')
-    pprint(deletedBook)
+    # deletedBook = bookdb.delete('4bec09b0b5204ff7a45bc897c6f30225')
+    # pprint(deletedBook)
 
     # test update
     book['author'] = 'Ailian Wang'
-    bookdb.update('f93aae2f45c14da093f45e02c2837857', book)
+    # bookdb.update('f93aae2f45c14da093f45e02c2837857', book)
 
     print("Done.")
