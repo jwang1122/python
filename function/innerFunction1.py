@@ -2,18 +2,18 @@
 Define functions in function, scope of attribute
 https://www.javatpoint.com/python-decorator
 """
-def scope_test():
+def Scope_test():
     def do_local():
-        spam = "local spam"
+        spam = "local spam" # parent function assignment will not override this value
         print(f"Local variable: {spam}")
 
     def do_nonlocal():
         nonlocal spam
-        spam = "nonlocal spam"
+        spam = "nonlocal spam" # this is parent variable assignment
 
     def do_global():
         global spam
-        spam = "global spam"
+        spam = "global spam" # global variable assignment, will not change local variable
 
     spam = "test spam"
     do_local()
@@ -26,4 +26,4 @@ def scope_test():
 if(__name__ == "__main__"):
 
     scope_test()
-    print("In global scope:", spam)
+    print("In global scope:", spam) # global variable

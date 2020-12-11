@@ -1,4 +1,4 @@
-from person import *
+from personInheritance import *
 
 s = Student("student")
 print(type(s))
