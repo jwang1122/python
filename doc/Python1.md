@@ -1,6 +1,64 @@
 # 华夏中文学校 Python level-I
 
-## sqlite
+## Table of Contents
+[Familiar with your keyboard](#Familiar-with-your-keyboard)
+
+[Getting start](#Getting-start)
+
+[Using Markdown](#Using-Markdown)
+
+[If-Else](#If-Else)
+
+[Data Type](#Data-Type)
+
+[Python playground](#Python-playground-and-help-document)
+
+[print](#print)
+
+[Loop](#Loop)
+
+[Prime](#Prime)
+
+[Turtle](#Turtle)
+
+[draw snow man](#draw-snow-man)
+
+[Ball Game](#ball-game)
+
+[File access](#File-access)
+
+[Function](#Function)
+
+[Plot](#plot)
+
+[App server](#App-server)
+
+[Mongo DB](#Mongo-DB)
+
+[ReactJS](#ReactJS)
+
+[install npm](#install-npm)
+
+[OOP](#OOP)
+
+[Class](#class)
+
+[QuiteType](#install-and-using-QuickType)
+
+[Review](#Review)
+
+[Sqlite](#Sqlite)
+
+[References](#References)
+
+## print
+* print.py
+* input.py
+* guessNumber.py
+* dice.py
+* dice2.py
+
+## Sqlite
 * sqlite0.py > create connection
 * sqlite1.py
 * sqlite2.py
@@ -34,6 +92,7 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 * Markdown document
 * ball game
 * draw snowman
+* file access (read/write plain text, csv, json)
 * plot
 * covid_19
 * debug python code
@@ -55,9 +114,20 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 [Python Classes](https://docs.python.org/3/tutorial/classes.html)
  
 ## class
-* √ class0.py - pass class, instance and class level attributes
-*  create a class snowman.py > drawSnowMan.py > shapes.py
-* √ class1.py > dynamically assign instance attribute and access it from outside function
+```py
+class User:
+    pass
+```
+* assign fields to an instance of User
+
+[Python Classes](https://www.w3schools.com/python/python_classes.asp)
+ 
+* person.py 
+* bookdb.py
+* create a class snowman.py > drawSnowMan.py > shapes.py
+* class0.py - pass class, instance and class level attributes
+* create a class snowman.py > drawSnowMan.py > shapes.py
+* class1.py > dynamically assign instance attribute and access it from outside function
 * √ class2.py > define internal function
 * √ class3.py > __init__(self) and internal function
 * √ class4.py > use keyword argument in __init__(self)
@@ -93,7 +163,7 @@ classes are foundmantal tools to any object oriented programing language, think 
 
 ---
 
-## √ install npm
+## install npm
 [Download and install node](https://nodejs.org/en/download/)
 ![Download image](./images/nodeDownload.png)
     - windows File: node-v12.18.3-x64.msi
@@ -122,7 +192,7 @@ cd wang-app
 npm start
 ```
 
-## √ ReactJS
+## ReactJS
 * web application vs. window application
 open new VSCode window > python-gui (demo on window's machine.)
 ```
@@ -144,20 +214,6 @@ cd ../book-app
 npm start
 ```
 
-## class
-```py
-class User:
-    pass
-```
-* √ assign fields to an instance of User
-
-[Python Classes](https://www.w3schools.com/python/python_classes.asp)
- 
-* √ class0.py - pass class, instance and class level attributes
-* person.py 
-* bookdb.py
-* create a class snowman.py > drawSnowMan.py > shapes.py
-
 ## App server
 * app1.py > ping-pong
 * app2.py > <html>
@@ -165,12 +221,6 @@ class User:
 * app4.py > display books from mongodb, postman > test service
 * getJson.py > load books from given website url
 
-```py
-class User:
-    pass
-```
-* assign fields to an instance of User
-* person.py > __init__, __str__
 * bookdb.py
 * Install Postman
     [Download Website](https://www.postman.com/downloads/)
@@ -299,17 +349,12 @@ python -m turtledemo
 * ball9.py 
 * ball10.py [Final version of ball game.]
 
----
-## 2020-07-13
-* check homework
-    - yichen > 17 > Google Search: Roman Numerals >
-
 ## Loop
 * forLoop1.py
 * forBreak.py
 * forContinue.py
 * forNested1.py; print right triangle
-* forNested2.py; print Horizontal triangle
+* forNested2.py; print Equilatera triangle
 * forNested3.py；print diamond
 * forNested4.py; define function for n
 * forElse.py
@@ -400,7 +445,7 @@ rightArrow: move cursor to right in DOS window
 ---
 
 ## Getting start
-* √ install softwares needed
+* install softwares needed
 
 [refer to ](pythonInstall.md) python installation file.
 
