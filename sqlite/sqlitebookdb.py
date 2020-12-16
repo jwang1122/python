@@ -33,7 +33,7 @@ class BookDB:
         """
         db = self.getBookDB()
         value = self.getValueFromBook(book)
-        db.execute('INSERT INTO books VALUES (?,?,?,?,?)', value)
+        db.execute('INSERT INTO books VALUES (?,?,?,?,?,?)', value)
         self.conn.commit()
         return book.get('_id')
 
@@ -78,9 +78,10 @@ class BookDB:
         book = {
             "_id": row[0],
             "title": row[1],
-            "price": row[2],
-            "author": row[3],
-            "read": row[4],
+            "author": row[2],
+            "read": row[3],
+            "price": row[4],
+            "rating": row[5],
         }
         return book
 
@@ -88,9 +89,10 @@ class BookDB:
         value = []
         value.append(book['_id'])
         value.append(book['title'])
-        value.append(book['price'])
         value.append(book['author'])
         value.append(book['read'])
+        value.append(book['price'])
+        value.append(book['rating'])
         return value
 
     @classmethod

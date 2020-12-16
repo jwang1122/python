@@ -7,27 +7,31 @@
 
 [Using Markdown](#Using-Markdown)
 
+[print](#print)
+
+[Turtle](#Turtle)
+
+[draw snow man](#draw-snow-man)
+
 [If-Else](#If-Else)
 
 [Data Type](#Data-Type)
 
 [Python playground](#Python-playground-and-help-document)
 
-[print](#print)
-
 [Loop](#Loop)
 
+[Simple Math](#simple-math)
+
+[Function](#Function)
+
+[Dice](#Dice)
+
 [Prime](#Prime)
-
-[Turtle](#Turtle)
-
-[draw snow man](#draw-snow-man)
 
 [Ball Game](#ball-game)
 
 [File access](#File-access)
-
-[Function](#Function)
 
 [Plot](#plot)
 
@@ -52,11 +56,16 @@
 [References](#References)
 
 ## print
-* print.py
+* hello.py; getting start with Python > hello.ReadMe.md
+* print.py; hello/print.py
+* helloHim.py; intruduce input() function
+* print-string.py; 
 * input.py
 * guessNumber.py
-* dice.py
-* dice2.py
+* dice.py; introduce random module, dice/dice1.py
+* dice2.py; figure out possibility, understand how computer do things
+* prime1.py; ./prime/prime1.py
+* prime1.py ~ prim7.py; treat computer as humanbeen, do it right
 
 ## Sqlite
 * sqlite0.py > create connection
@@ -75,6 +84,9 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 * sqlite4.py
 * sqlite5.py
 * sqlite6.py
+
+![Relation between Project and tasks](./images/entity.png)
+
 * sqlite7.py > build relational data
 * sqlite8.py > show relation between project and task
 
@@ -87,6 +99,16 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 * app5.py > use sqlitebookdb.py to provide service
     use Postman to check the service.
 ---
+
+## Simple math
+* math0.py
+* math1.py
+* math10.py
+* solution.py
+
+![Triangular Number](./images/triangularNumber.png)
+* solution1.py
+* circle.py
 
 ## Review
 * Markdown document
@@ -134,7 +156,7 @@ class User:
 * √ class5.py > understand __str__, __repr__, and __len__()
 * √ class6.py > protected attribute and private attribute
 * √ class7.py > getter/setter
-* √ person.py > inheritance
+* √ personInheritance.py > inheritance
 * personTest.py > understand class name <module_name>.<class_name>
 * √ bookdb.py > used in app4.py
 * polygon.py; ask student implement __repr__(self)
@@ -177,11 +199,14 @@ Google Search: install reactjs on windows 10
 node --version
 npm --version
 ```
-~~npm install -g create-react-app~~
+* create react js application
+```
+npm install -g create-react-app
 
-~~create-react-app --version~~
+create-react-app --version
 
-~~create-react-app reactproject2~~
+create-react-app reactproject2
+```
 
 * Install ReactJs on MacOS
 
@@ -261,7 +286,7 @@ npm start
 * innerFUnction1.py
 
 ## Prime
-* prime0.py > straight forward
+* prime0.py > straight forward, define function
 * prime1.py > optimized by half
 * prime2.py > define function isPrime()
 * prime3.py > calculate range(40-50)
@@ -311,7 +336,7 @@ npm start
 * demo draw_snowman.py
 * shapes.py
 * testShapes.py
-* drawSun.py
+* drawSun.py; add snow man in the picture.
 * homework> draw snowcouple
 
 ---
@@ -414,6 +439,8 @@ python -m turtledemo
     - 显示命令行
     - 显示图形
     - 显示链接
+
+![磨刀不误砍柴工](./images/磨刀.jpeg)
 
 * [Reference to pythonInstall.md](pythonInstall.md)
 

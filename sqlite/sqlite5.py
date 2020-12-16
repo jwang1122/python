@@ -1,4 +1,4 @@
-from sqlite2 import *
+from sqlite2 import create_connection
 """
 Delete record in database
 """
@@ -12,3 +12,5 @@ if __name__ == '__main__':
         print(row)
 
     conn.close()
+
+    print("Done.")

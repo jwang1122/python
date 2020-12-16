@@ -12,6 +12,9 @@ class Robot:
         self.__energy = energy  # private attribute
         print("__init__() has been called.")
 
+    def __repr__(self):
+        return self._name
+
     def say_hi(self):
         if self._name:
             print(f"Hi, I am {self._name}.")

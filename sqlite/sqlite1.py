@@ -1,9 +1,10 @@
 import sqlite3
 """
+CRUD: Create, Retreive, Update, Delete
 Insert many data row at once
 """
 
-conn = sqlite3.connect("mydb.db")
+conn = sqlite3.connect("pythonsqlite.db")
 c = conn.cursor()
 # Never do this -- insecure!
 # symbol = 'RHAT'
@@ -11,8 +12,8 @@ c = conn.cursor()
 
 # Do this instead
 t = ('RHAT',)
-c.execute('SELECT * FROM stocks WHERE symbol=?', t)
-print("12:",c.fetchone())
+c.execute('SELECT * FROM stocks WHERE symbol=?', t) # Retreive
+print("15:",c.fetchone())
 
 try:
     # Larger example that inserts many records at a time

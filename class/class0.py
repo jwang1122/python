@@ -29,4 +29,5 @@ if __name__ == "__main__":
 print(getattr(x, 'name','John')) # call built-in function __getAttribute__()
 
 
-z = getattr(x,'energy')
+z = getattr(x,'energy', 1000) # without default value, will raise Error
+print(z)

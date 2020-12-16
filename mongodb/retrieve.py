@@ -1,3 +1,6 @@
+"""
+Retrieve one book from mongoDB database.
+"""
 from pymongo import MongoClient
 from pprint import pprint
 import json
@@ -7,7 +10,7 @@ db = client['mydb']
 bookdb = db.books
 
 _id = '3806a683b8e04ac489dab50b026b4f6a'
-result = bookdb.find_one({'_id': _id})
+result = bookdb.find_one({'_id': _id}) # retrieve one book with given _id
 pprint(result)
 # file1 = open("book.json","a")
 # json.dump(result, file1)

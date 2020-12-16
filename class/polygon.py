@@ -1,3 +1,6 @@
+"""
+__init__()
+"""
 class Polygon:
     def __init__(self, sides, name):
         self.sides = sides

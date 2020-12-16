@@ -1,24 +1,41 @@
 """
-class attribute and function with class decorator
+inheritance
+__init__, __str__
 """
-
-
 class Person:
-    totalObjects = 0
-
     def __init__(self, name="Guest", ssn="999-99-9999", gender=None, age=0):
         self.name = name
         self.ssn = ssn
         self.gender = gender
         self.age = age
-        Person.totalObjects += 1
 
-    @classmethod
-    def showcount(cls): # cls class decorator representitive
-        print("Total objects: ",cls.totalObjects)
+    def __repr__(self):
+        return self.name
 
-p1 = Person("John")
-p2 = Person("Charles")
-p3 = Person("Ethan")
-print("Total objects", Person.totalObjects)
-Person.showcount()
+class Student(Person):
+    def __init__(self, name):
+        self.name = name
+
+class Teacher(Person):
+    pass
+
+class Employee(Person):
+    pass
+
+class Manager(Employee):
+    pass
+
+if __name__ == '__main__':
+    s = Student("student")
+    print(type(s))
+    print(s)
+    t = Teacher("teacher")
+    print(type(t))
+    print(t)
+    e = Employee("employee")
+    print(type(e))
+    print(e)
+    m = Manager("manager")
+    print(type(m))
+    print(m)
+

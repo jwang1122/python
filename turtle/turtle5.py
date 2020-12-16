@@ -35,5 +35,3 @@ def tap(x, y):
 john.onclick(tap)
 
 mainloop()
-
-exitonclick()

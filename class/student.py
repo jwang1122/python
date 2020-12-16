@@ -8,7 +8,7 @@ class Student(object):
         self.first_name = first_name
         self.last_name = last_name
 
-    def __str__(self):
+    def __repr__(self):
         return f"({self.first_name} {self.last_name})"
 
     @classmethod
@@ -29,3 +29,9 @@ print(s1)
 s = """{"first_name":"Charles", "last_name":"Johnson"}"""
 s2 = Student.from_json(s)
 print(s2)
+
+s3 = s1.from_string("Elle Fu")
+print(s3)
+
+s4 = Student("David", "Willaims")
+print(s4)

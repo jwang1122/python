@@ -1,5 +1,7 @@
-from sqlite6 import create_connection
-
+from sqlite6 import create_connection, create_table
+"""
+Create books table in sqlitebook.db database
+"""
 def main():
     database = "sqlitebook.db"
     

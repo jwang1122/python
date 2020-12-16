@@ -1,5 +1,5 @@
 import sqlite3
-from sqlite2 import *
+from sqlite2 import create_connection
 """
 Create relational data table by using primary key and foriener key fields
 """

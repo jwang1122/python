@@ -18,3 +18,4 @@ book = {
 book["_id"] = _id
 result = bookdb.insert_one(book)
 print(result.inserted_id)
+print("Done.")

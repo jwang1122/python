@@ -25,7 +25,10 @@ class Snowman:
         as snowman body. After the drawing,
         the turtle point to right direction.
         """
+        pen1.color('black','white')
+        pen1.begin_fill()
         drawCircle(pen1,self.bottomX, self.bottomY+2*self.leg, self.body)
+        pen1.end_fill()
 
     def drawHead(self, pen1):
         """
@@ -60,7 +63,10 @@ class Snowman:
         pen1.pu()
         pen1.goto(self.bottomX, self.bottomY)
         pen1.down()
+        pen1.color('black','white')
+        pen1.begin_fill()
         pen1.circle(self.leg)
+        pen1.end_fill()
 
     def drawArms(self, pen1):
         x = self.bottomX-self.body

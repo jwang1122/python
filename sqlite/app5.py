@@ -1,14 +1,6 @@
-"""
-Supported services:
-    * /books: (GET)get all books in MongoDB
-    * /books/<_id> (GET): get specific book with _id
-    * /books (POST) + book body: create a new book
-    * /books/<_id> (PUT) + book body: modify existing book
-    * /books/<_id> (DELETE) : remove a book with _id
-"""
 from flask import Flask, jsonify, request
 import json
-from flask_cors import CORS
+# from flask_cors import CORS
 from sqlitebookdb import * 
 import uuid
 
@@ -17,9 +9,9 @@ DEBUG = True
 
 # instantiate the app
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 app.config.from_object(__name__)
-db = BookDB('book.db')
+db = BookDB('sqlitebook.db')
 
 @app.route('/ping', methods=['GET'])
 def ping_pong():
@@ -29,7 +21,7 @@ def ping_pong():
 def all_books():
     response_object = {'status': 'success'}
     books = db.getBooks()
-    # print(books)
+    print(books)
     response_object['books'] = books
     return jsonify(response_object)
     
@@ -43,6 +35,7 @@ def create_book():
         'author': post_data.get('author'),
         'read': post_data.get('read'),
         'price': post_data.get('price'),
+        'rating': post_data.get('rating'),
     }
     id = db.create(book)
     response_object['message'] = 'Book added!'
