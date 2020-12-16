@@ -9,7 +9,9 @@
     - How to use GitHub to turn in homework
 * Using Markdown for class notes
 
-![好记性不如烂笔头儿](./images/烂笔头儿.png)
+    ![好记性不如烂笔头儿](./images/烂笔头儿.png)
+    - How to use Markdown to take class notes
+    - How to convert markdown document to pdf
 * print function
 * Turtle
     - Draw Snowman
@@ -30,6 +32,7 @@
 ![Python Data Type](./images/DataType.png)
 * Python playground and Help
 * Loop
+* Debug Python Code
 * Simple Math
 * Function
 * Small Games
@@ -54,7 +57,7 @@
 * Mongo DB NoSQL database access
     - Install MongoDB
     - Install MongoDB Compass
-    - CRUD: Create, Retrieve, Update, Delete operation
+    - CRUD: Create, Retrieve, Update, Delete operations
 
 ![MongoDB Compass](./images/compass.png)
 * ReactJS Concept
@@ -63,7 +66,8 @@
 
 ![Abstraction](./images/classDefine.png)
 * Build python class
-
-![Blackjack Card Game](./images/BlackJackCardGame.png)
-
-![Use class draw snow mans](./images/snowFamily.png)
+    - class relationship
+    
+    ![Blackjack Card Game](./images/BlackJackCardGame.png)
+    - Use class to draw snow family
+    ![Use class draw snow mans](./images/snowFamily.png)
