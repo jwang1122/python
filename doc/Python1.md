@@ -1,59 +1,104 @@
 # 华夏中文学校 Python level-I
 
-## Table of Contents
-[Familiar with your keyboard](#Familiar-with-your-keyboard)
+Table of Contents
+1. [Familiar with your keyboard](#Familiar-with-your-keyboard)
+1. [Getting start](#Getting-start)
+1. [Using Markdown](#Using-Markdown)
+1. [print](#print)
+1. [Turtle](#Turtle)
+1. [draw snow man](#draw-snow-man)
+1. [If-Else](#If-Else)
+1. [Data Type](#Data-Type)
+1. [Python playground](#Python-playground-and-help-document)
+1. [Loop](#Loop)
+1. [Simple Math](#simple-math)
+1. [Function](#Function)
+1. [Terminal Games](#Terminal-Games)
+1. [Dice](#Dice)
+1. [Prime](#Prime)
+1. [Ball Game](#ball-game)
+1. [File access](#File-access)
+1. [Plot](#plot)
+1. [App server](#App-server)
+1. [Mongo DB](#Mongo-DB)
+1. [ReactJS](#ReactJS)
+1. [install npm](#install-npm)
+1. [OOP](#OOP)
+1. [Class](#class)
+1. [QuiteType](#install-and-using-QuickType)
+1. [Review](#Review)
+1. [Sqlite](#Sqlite)
+1. [References](#References)
 
-[Getting start](#Getting-start)
+## Familiar with your keyboard
+![windows keyboard](./images/keyboard-windows.jpg)
+![Apple keyboard](./images/keyboard-apple.jpg)
+```
+space
+:
+ctrl+c
+Ctrl+v
+ctrl+/
+shift+downarrow
+tab
+shift+tab
+Enter(Return)
+"
+`
+upArrow: bring previous command back
+downArrow: bring next command back
+leftArrow: move cursor to left in DOS window
+rightArrow: move cursor to right in DOS window
+```
 
-[Using Markdown](#Using-Markdown)
+---
 
-[print](#print)
+## Using Markdown 
+* turn in homework to GitHub
 
-[Turtle](#Turtle)
+* √ Markdown md文件的制作，制作课堂笔记
+![好记性不如烂笔头儿](./images/烂笔头儿.png)
+    - add Markdown Extension
+    - 显示标题，子标题 #, ##
+    - 显示 tablet *，1
+    - 显示命令行
+    - 显示图形
+    - 显示链接
 
-[draw snow man](#draw-snow-man)
+![磨刀不误砍柴工](./images/磨刀.jpeg)
+* [Markdown Cheat Sheet](markdown-cheat-sheet.md)
+* [Reference to pythonInstall.md](pythonInstall.md)
 
-[If-Else](#If-Else)
 
-[Data Type](#Data-Type)
+## Getting start
+* install softwares needed
 
-[Python playground](#Python-playground-and-help-document)
+[refer to ](pythonInstall.md) python installation file.
 
-[Loop](#Loop)
-
-[Simple Math](#simple-math)
-
-[Function](#Function)
-
-[Dice](#Dice)
-
-[Prime](#Prime)
-
-[Ball Game](#ball-game)
-
-[File access](#File-access)
-
-[Plot](#plot)
-
-[App server](#App-server)
-
-[Mongo DB](#Mongo-DB)
-
-[ReactJS](#ReactJS)
-
-[install npm](#install-npm)
-
-[OOP](#OOP)
-
-[Class](#class)
-
-[QuiteType](#install-and-using-QuickType)
-
-[Review](#Review)
-
-[Sqlite](#Sqlite)
-
-[References](#References)
+* check installation
+* installation check
+```sh
+python --version
+git --version
+code --version
+```
+* build working folders
+```
+mkdir workspace
+cd workspace
+mkdir python1
+```
+use text editor: NotePad.exe
+```py
+print("Hello, world!")
+a = 4
+b = 5
+print(a+b)
+```
+save to first.py
+```
+python first.py
+```
 
 ## print
 * hello.py; getting start with Python > hello.ReadMe.md
@@ -67,37 +112,6 @@
 * prime1.py; ./prime/prime1.py
 * prime1.py ~ prim7.py; treat computer as humanbeen, do it right
 
-## Sqlite
-* sqlite0.py > create connection
-* sqlite1.py
-* sqlite2.py
-* install DB browser for SQLite
-
-Google Search: DB Browser for Sqlite
-
-[SQLite GUI Download Website](https://sqlitebrowser.org/dl/)
-
-[SQLite Browser for MacOS](https://sqlitebrowser.org/blog/macos-installer-rebuilt-for-3-11-1/)
-
-File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
-![Runing Image](images/sqlite.png)
-* sqlite4.py
-* sqlite5.py
-* sqlite6.py
-
-![Relation between Project and tasks](./images/entity.png)
-
-* sqlite7.py > build relational data
-* sqlite8.py > show relation between project and task
-
-![projects - tasks](images/projects-tasks.png)
-
-* review bookdb.py
-* sqlite9.py > create books table
-* sqlite10.py > insert data into books table
-* sqlitebookdb.py > build CRUD
-* app5.py > use sqlitebookdb.py to provide service
-    use Postman to check the service.
 ---
 
 ## Simple math
@@ -109,19 +123,6 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 ![Triangular Number](./images/triangularNumber.png)
 * solution1.py
 * circle.py
-
-## Review
-* Markdown document
-* ball game
-* draw snowman
-* file access (read/write plain text, csv, json)
-* plot
-* covid_19
-* debug python code
-* database access (CRUD)
-* Postman to test web service
-* application web server
-* react JS front end GUI server
 
 ---
 ## OOP  
@@ -308,19 +309,6 @@ npm start
 * covid-19/covid2.py
 ---
     
-## File access
-* file0.py (write to file)
-* file1.py (read and write to existing file)
-* file2.py (with open, auto close)
-* file3.py (dump json, write to json file)
-* file3a.py (read json from file)
-* file3b.py (read json from string)
-* file4.py (pandas read csv)
-* file5.py (read csv file, and plot the data)
-* file6.py (write dict to csv file)
-* readJson.py
-* csvReader.py
-    
 ---
 ## Terminal Games
 * Check homework
@@ -425,81 +413,67 @@ python -m turtledemo
 * hello/print.py
 * hello/print-string.py
 * [Practice]: Homework
+
+## File access
+* file0.py (write to file)
+* file1.py (read and write to existing file)
+* file2.py (with open, auto close)
+* file3.py (dump json, write to json file)
+* file3a.py (read json from file)
+* file3b.py (read json from string)
+* file4.py (pandas read csv)
+* file5.py (read csv file, and plot the data)
+* file6.py (write dict to csv file)
+* readJson.py
+* csvReader.py
     
----
-
-## Using Markdown 
-* turn in homework to GitHub
-
-* √ Markdown md文件的制作，制作课堂笔记
-![好记性不如烂笔头儿](./images/烂笔头儿.png)
-    - add Markdown Extension
-    - 显示标题，子标题 #, ##
-    - 显示 tablet *，1
-    - 显示命令行
-    - 显示图形
-    - 显示链接
-
-![磨刀不误砍柴工](./images/磨刀.jpeg)
-
-* [Reference to pythonInstall.md](pythonInstall.md)
-
-## Familiar with your keyboard
-![windows keyboard](./images/keyboard-windows.jpg)
-![Apple keyboard](./images/keyboard-apple.jpg)
-```
-space
-:
-ctrl+c
-Ctrl+v
-ctrl+/
-shift+downarrow
-tab
-shift+tab
-Enter(Return)
-"
-`
-upArrow: bring previous command back
-downArrow: bring next command back
-leftArrow: move cursor to left in DOS window
-rightArrow: move cursor to right in DOS window
-```
-
-* Hello World
-    - hello.py
-    - helloHim.py
+## Review
+* Markdown document
+* ball game
+* draw snowman
+* file access (read/write plain text, csv, json)
+* plot
+* covid_19
+* debug python code
+* database access (CRUD)
+* Postman to test web service
+* application web server
+* react JS front end GUI server
 
 ---
 
-## Getting start
-* install softwares needed
+## Sqlite
+* sqlite0.py > create connection
+* sqlite1.py
+* sqlite2.py
+* install DB browser for SQLite
 
-[refer to ](pythonInstall.md) python installation file.
+Google Search: DB Browser for Sqlite
 
-* check installation
-* installation check
-```sh
-python --version
-git --version
-code --version
-```
-* build working folders
-```
-mkdir workspace
-cd workspace
-mkdir python1
-```
-use text editor: NotePad.exe
-```py
-print("Hello, world!")
-a = 4
-b = 5
-print(a+b)
-```
-save to first.py
-```
-python first.py
-```
+[SQLite GUI Download Website](https://sqlitebrowser.org/dl/)
+
+[SQLite Browser for MacOS](https://sqlitebrowser.org/blog/macos-installer-rebuilt-for-3-11-1/)
+
+File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
+![Runing Image](images/sqlite.png)
+* sqlite4.py
+* sqlite5.py
+* sqlite6.py
+
+![Relation between Project and tasks](./images/entity.png)
+
+* sqlite7.py > build relational data
+* sqlite8.py > show relation between project and task
+
+![projects - tasks](images/projects-tasks.png)
+
+* review bookdb.py
+* sqlite9.py > create books table
+* sqlite10.py > insert data into books table
+* sqlitebookdb.py > build CRUD
+* app5.py > use sqlitebookdb.py to provide service
+    use Postman to check the service.
+
 
 ## References
 [Class Salible](https://www.javatpoint.com/python-tutorial)
