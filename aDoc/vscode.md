@@ -5,7 +5,7 @@
 1. [Setup Unit test](#Setup-Unit-test)
 1. [Setup Python Interpretor](#Setup-Python-Interpretor)
 1. [Create Virtual Environment](#Create-Virtual-Environment)
-1. [](#)
+1. [Check in GitHub](#Check-in-GitHub)
 1. [](#)
 
 ## Disable pylint check
@@ -64,3 +64,25 @@ python -m venv env
 ```
 ---
 [Table of Contents](#Table-of-Contents)
+
+## Check in GitHub
+* Cannot check in due to configure user.namd and user.email
+```
+git config user.name "jwang1122"
+git config user.email "jwang1122@gmail.com"
+```
+* add collaborator in the repository
+[GitHub repository](https://github.com/jwang1122/python1)
+
+> Settings > Options: Manage access > regular password > button: Invite a collaborator
+
+Ask collaborator open email > Review Invitation > Accept Invitation
+
+* Cannot push
+    pull first.
+```
+git pull
+```
+---
+[Table of Contents](#Table-of-Contents)
+
