@@ -1,6 +1,6 @@
 # 华夏中文学校 Python level-I
 
-Table of Contents
+## Table of Contents
 1. [Familiar with your keyboard](#Familiar-with-your-keyboard)
 1. [Getting start](#Getting-start)
 1. [Using Markdown](#Using-Markdown)
@@ -50,8 +50,8 @@ downArrow: bring next command back
 leftArrow: move cursor to left in DOS window
 rightArrow: move cursor to right in DOS window
 ```
-
 ---
+[Table of Contents](#Table-of-Contents)
 
 ## Using Markdown 
 * turn in homework to GitHub
@@ -68,7 +68,8 @@ rightArrow: move cursor to right in DOS window
 ![磨刀不误砍柴工](./images/磨刀.jpeg)
 * [Markdown Cheat Sheet](markdown-cheat-sheet.md)
 * [Reference to pythonInstall.md](pythonInstall.md)
-
+---
+[Table of Contents](#Table-of-Contents)
 
 ## Getting start
 * install softwares needed
@@ -99,6 +100,8 @@ save to first.py
 ```
 python first.py
 ```
+---
+[Table of Contents](#Table-of-Contents)
 
 ## print
 * hello.py; getting start with Python > hello.ReadMe.md
@@ -111,8 +114,8 @@ python first.py
 * dice2.py; figure out possibility, understand how computer do things
 * prime1.py; ./prime/prime1.py
 * prime1.py ~ prim7.py; treat computer as humanbeen, do it right
-
 ---
+[Table of Contents](#Table-of-Contents)
 
 ## Simple math
 * math0.py
@@ -123,8 +126,9 @@ python first.py
 ![Triangular Number](./images/triangularNumber.png)
 * solution1.py
 * circle.py
-
 ---
+[Table of Contents](#Table-of-Contents)
+
 ## OOP  
 ![OOP concept](./images/classDefine.png)
 - class book, __init__, __repr__
@@ -135,7 +139,9 @@ python first.py
 ![Person<Student](./images/student.png)
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
 [Python Classes](https://docs.python.org/3/tutorial/classes.html)
- 
+--- 
+[Table of Contents](#Table-of-Contents)
+
 ## class
 ```py
 class User:
@@ -163,8 +169,23 @@ class User:
 * polygon.py; ask student implement __repr__(self)
 * student.py; using class level method
 *
+---
+[Table of Contents](#Table-of-Contents)
 
 ## install and using QuickType
+[QuickType website](https://quicktype.io/)
+
+* QuickType Installation
+
+```
+npm install -g quicktype
+quicktype --version
+```
+
+* Python code generation
+```
+quicktype ./data/student.json -o student.py
+```
 * install
 ```
 npm intall -g quicktype
@@ -183,8 +204,8 @@ quicktype ./data/student.json -o student.py
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
 
 classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
-
 ---
+[Table of Contents](#Table-of-Contents)
 
 ## install npm
 [Download and install node](https://nodejs.org/en/download/)
@@ -217,6 +238,8 @@ sudo chown -R wangqianjiang wang-app
 cd wang-app
 npm start
 ```
+---
+[Table of Contents](#Table-of-Contents)
 
 ## ReactJS
 * web application vs. window application
@@ -239,6 +262,8 @@ python app.py
 cd ../book-app
 npm start
 ```
+---
+[Table of Contents](#Table-of-Contents)
 
 ## App server
 * app1.py > ping-pong
@@ -253,6 +278,7 @@ npm start
     ![First time run Postman](images/postman.png)
 * start app4.py, test POST, UPDATE, DELETE methods
 ---
+[Table of Contents](#Table-of-Contents)
 
 ## Mongo DB
 
@@ -271,6 +297,7 @@ npm start
 * delete.py > delete one document
 * bookdb.py > create a class include all CRUD process.
 ---
+[Table of Contents](#Table-of-Contents)
 
 ## Function
 * math1.py (circle area, rectangule area, triangle area)
@@ -285,6 +312,8 @@ npm start
 * optionalPositionalArgs.py
 * innerFunction0.py
 * innerFUnction1.py
+---
+[Table of Contents](#Table-of-Contents)
 
 ## Prime
 * prime0.py > straight forward, define function
@@ -292,6 +321,8 @@ npm start
 * prime2.py > define function isPrime()
 * prime3.py > calculate range(40-50)
 * prime4.py > define function rangePrime(x,y)
+---
+[Table of Contents](#Table-of-Contents)
 
 ## plot
 * plot0.py
@@ -308,8 +339,8 @@ npm start
 * covid-19/covid1.py
 * covid-19/covid2.py
 ---
+[Table of Contents](#Table-of-Contents)
     
----
 ## Terminal Games
 * Check homework
 * roll dice
@@ -318,6 +349,10 @@ npm start
     - [Practice]: circle.py > circle_area(r)
 * guess number
     - guessNumber.py
+* ball game
+    ball10.py
+---
+[Table of Contents](#Table-of-Contents)
 
 ## draw snow man
 * ![Snow Couple](./images/snowCouple.png)
@@ -326,8 +361,9 @@ npm start
 * testShapes.py
 * drawSun.py; add snow man in the picture.
 * homework> draw snowcouple
-
 ---
+[Table of Contents](#Table-of-Contents)
+
 
 ## turtle
 
@@ -349,6 +385,8 @@ python -m turtledemo
     - assign homework draw snow couple
 
     ![Snow Couple](./images/snowCouple.png)
+---
+[Table of Contents](#Table-of-Contents)
 
 ## ball game
 * ball1.py [Display a ball at center of the screen.]
@@ -361,6 +399,8 @@ python -m turtledemo
 * ball8.py 
 * ball9.py 
 * ball10.py [Final version of ball game.]
+---
+[Table of Contents](#Table-of-Contents)
 
 ## Loop
 * forLoop1.py
@@ -385,6 +425,8 @@ python -m turtledemo
 * whileElse.py
 * guessNumber.py
     - assign homework to modify guessNumber.py for two players
+---
+[Table of Contents](#Table-of-Contents)
 
 ## If-Else
     - ifelse.py
@@ -396,6 +438,8 @@ python -m turtledemo
 1, 3, 5, 7, 9
 
 ```
+---
+[Table of Contents](#Table-of-Contents)
 
 ## Data Type
 * ![Data Type](./images/DataType.png)
@@ -406,6 +450,8 @@ python -m turtledemo
 * list > listTest.py
 * set > setTest.py
 * dict > dictTest.py
+---
+[Table of Contents](#Table-of-Contents)
 
 ## Python playground and help document
 * python >>> help(print) (positional arguments, keyword arguments)
@@ -413,6 +459,8 @@ python -m turtledemo
 * hello/print.py
 * hello/print-string.py
 * [Practice]: Homework
+---
+[Table of Contents](#Table-of-Contents)
 
 ## File access
 * file0.py (write to file)
@@ -426,7 +474,9 @@ python -m turtledemo
 * file6.py (write dict to csv file)
 * readJson.py
 * csvReader.py
-    
+---
+[Table of Contents](#Table-of-Contents)
+
 ## Review
 * Markdown document
 * ball game
@@ -439,8 +489,8 @@ python -m turtledemo
 * Postman to test web service
 * application web server
 * react JS front end GUI server
-
 ---
+[Table of Contents](#Table-of-Contents)
 
 ## Sqlite
 * sqlite0.py > create connection
@@ -473,6 +523,8 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 * sqlitebookdb.py > build CRUD
 * app5.py > use sqlitebookdb.py to provide service
     use Postman to check the service.
+---
+[Table of Contents](#Table-of-Contents)
 
 
 ## References
@@ -495,24 +547,8 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)
 
 [Python and PyQt: Building a GUI Desktop Calculator](https://realpython.com/python-pyqt-gui-calculator/)
-
-## QuickType to generate python class from json
-
-[QuickType website](https://quicktype.io/)
-
-* QuickType Installation
-
-```
-npm install -g quicktype
-quicktype --version
-```
-
-* Python code generation
-```
-quicktype ./data/student.json -o student.py
-```
-
 ---
+[Table of Contents](#Table-of-Contents)
 
 ## Email Address
 Inact.audreyxy@gmail.com;
