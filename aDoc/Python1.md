@@ -1,5 +1,7 @@
 # 华夏中文学校 Python level-I
 
+**开课前要把所有用到的程序运行一遍**
+
 ## Table of Contents
 1. [Familiar with your keyboard](#Familiar-with-your-keyboard)
 1. [Getting start](#Getting-start)
@@ -11,12 +13,12 @@
 1. [Data Type](#Data-Type)
 1. [Python playground](#Python-playground-and-help-document)
 1. [Loop](#Loop)
+1. [Ball Game](#ball-game)
 1. [Simple Math](#simple-math)
 1. [Function](#Function)
 1. [Terminal Games](#Terminal-Games)
 1. [Dice](#Dice)
 1. [Prime](#Prime)
-1. [Ball Game](#ball-game)
 1. [File access](#File-access)
 1. [Plot](#plot)
 1. [App server](#App-server)
@@ -24,11 +26,13 @@
 1. [ReactJS](#ReactJS)
 1. [install npm](#install-npm)
 1. [OOP](#OOP)
-1. [Class](#class)
+1. [Python Class](#Python-class)
 1. [QuiteType](#install-and-using-QuickType)
 1. [Review](#Review)
-1. [Sqlite](#Sqlite)
 1. [References](#References)
+---
+[Table of Contents](#Table-of-Contents)
+
 
 ## Familiar with your keyboard
 ![windows keyboard](./images/keyboard-windows.jpg)
@@ -112,8 +116,12 @@ python first.py
 * guessNumber.py
 * dice.py; introduce random module, dice/dice1.py
 * dice2.py; figure out possibility, understand how computer do things
-* prime1.py; ./prime/prime1.py
-* prime1.py ~ prim7.py; treat computer as humanbeen, do it right
+---
+[Table of Contents](#Table-of-Contents)
+
+## Dice
+* dice.py; introduce random module, dice/dice1.py
+* dice2.py; figure out possibility, understand how computer do things
 ---
 [Table of Contents](#Table-of-Contents)
 
@@ -126,6 +134,8 @@ python first.py
 ![Triangular Number](./images/triangularNumber.png)
 * solution1.py
 * circle.py
+* prime1.py; ./prime/prime1.py
+* prime1.py ~ prim7.py; treat computer as humanbeen, do it right
 ---
 [Table of Contents](#Table-of-Contents)
 
@@ -142,7 +152,7 @@ python first.py
 --- 
 [Table of Contents](#Table-of-Contents)
 
-## class
+## Python class
 ```py
 class User:
     pass
@@ -528,25 +538,17 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 
 
 ## References
-[Class Salible](https://www.javatpoint.com/python-tutorial)
-
-[Python Tutorial](https://docs.python.org/3/tutorial/)
+1. [Class Salible](https://www.javatpoint.com/python-tutorial)
+1. [Python Tutorial](https://docs.python.org/3/tutorial/)
 
 ![Python Keywords](images/keywords.png)
-
-[MongoDB Tutorial](https://www.w3schools.com/python/python_mongodb_insert.asp)
-
-[Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
-
-[w3Schools](https://www.w3schools.com/)
-[Python Slibes](https://www.w3schools.com/python/python_classes.asp)
-
-[4 Attempts at Packaging Python as an Executable](https://tryexceptpass.org/article/package-python-as-executable/)
-
-
-[Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)
-
-[Python and PyQt: Building a GUI Desktop Calculator](https://realpython.com/python-pyqt-gui-calculator/)
+1. [MongoDB Tutorial](https://www.w3schools.com/python/python_mongodb_insert.asp)
+1. [Create a new reactjs app](https://reactjs.org/docs/create-a-new-react-app.html)
+1. [w3Schools](https://www.w3schools.com/)
+1. [Python Slibes](https://www.w3schools.com/python/python_classes.asp)
+1. [4 Attempts at Packaging Python as an Executable](https://tryexceptpass.org/article/package-python-as-executable/)
+1. [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)
+1. [Python and PyQt: Building a GUI Desktop Calculator](https://realpython.com/python-pyqt-gui-calculator/)
 ---
 [Table of Contents](#Table-of-Contents)
 
