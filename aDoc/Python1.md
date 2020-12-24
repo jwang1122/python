@@ -38,61 +38,47 @@
 ![windows keyboard](./images/keyboard-windows.jpg)
 ![Apple keyboard](./images/keyboard-apple.jpg)
 
-[Key name](https://www.computerhope.com/keys.htm)
-Key | Name
-|---|---|
-space | space
-:  | colon
-;  | semicolon
-,  | comma
-.  | dot, period)
-?  | question mark
-\# | pound, hashtag, number
-`  | back quote, grave accent
-$  | dollar sign
-\* | asterisk, star
-() | parenthesis
-\- | dash, hyphen, minus)
-_  | underscore
-{} | curly bracket
-[] | bracket, square bracket
-\|  | pipe, virtical bar
-\  | back slash
-/  | forward slash
+1. [Key name](https://www.computerhope.com/keys.htm)
 
+    Key | Name
+    |---|---|
+    space | space, empty space in editor
+    Enter | return, enter, new line in editor
+    :  | colon, key:value separator in dict
+    ,  | comma, list or tuple item separator, delimiter in csv file
+    .  | dot, period, instance function call()
+    \# | pound, hashtag, number, hold shift key click number 3, comments the line
+    `  | back quote, grave accent, command block in markdown
+    \* | asterisk, star, bullet point in markdown, math multiply operator
+    () | parenthesis, tuple, function definition and call
+    \- | dash, hyphen, minus math operator, command option python --version
+    _  | underscore, dunder function or variable, private or protected variables
+    {} | curly bracket, dict or set
+    [] | bracket, square bracket, list
+    \  | back slash, line continue, escape sequence
+    /  | forward slash, file name path fold dilimiter
+    \| | pipe, virtical bar, bitwise OR operator
+    &  | ampersand, and simple, bitwise AND operator
+    ^  | caret, circumflex, bitwise XOR operator
+    ?  | question mark, space holder in sqlit
+    $  | dollar sign
+    ;  | semicolon
+
+* combination keys
 ```
-space
-: (Colon)
-; (semicolon)
-, (Comma)
-. (Period, dot)
-? (Question mark)
-# (pound, hashtag, number)
-` (back quote, grave accent)
-$ (Dollar sign)
-* (Asterisk, star)
-() (Parenthesis)
-- (Hyphen, dash, minus)
-_ (underscore)
-{} (curly bracket)
-[] (bracket, square bracket)
-| (pipe, virtical bar)
-\ (Back slash)
-/ (Forward slash)
-
-ctrl+c
-Ctrl+v
-ctrl+/
-shift+downarrow
-tab
-shift+tab
-Enter(Return)
-"
-`
-upArrow: bring previous command back
-downArrow: bring next command back
-leftArrow: move cursor to left in DOS window
-rightArrow: move cursor to right in DOS window
+    ctrl+c
+    Ctrl+v
+    ctrl+/
+    shift+downarrow
+    tab
+    shift+tab
+```
+* Command line arrow key usage
+```
+    upArrow: bring previous command back
+    downArrow: bring next command back
+    leftArrow: move cursor to left in DOS window
+    rightArrow: move cursor to right in DOS window
 ```
 * Hight light block of code
 * Ctrl+c: copy
@@ -151,6 +137,14 @@ save to first.py
 ```
 python first.py
 ```
+* build virtual environment
+
+```
+python -m venv env
+```
+
+![Virtual Environment](./images/virtualEnvironment.png)
+
 ---
 [Table of Contents](#Table-of-Contents)
 
