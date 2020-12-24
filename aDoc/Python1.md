@@ -310,6 +310,8 @@ npm start
 [Table of Contents](#Table-of-Contents)
 
 ## Function
+
+![Built in functions](./images/builtinFunctions.png)
 * math1.py (circle area, rectangule area, triangle area)
 * defineFunction.py (help(sum))
 * collision.py; use / to avoid collision
@@ -455,7 +457,7 @@ python -m turtledemo
 * ![Data Type](./images/DataType.png)
 * python terminal
 * int, float, complex > floatTest.py
-* str > strTest.py
+* str > strTest.py; operation on string
 * tuple > tupleTest.py
 * list > listTest.py
 * set > setTest.py

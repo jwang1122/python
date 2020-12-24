@@ -21,5 +21,11 @@ print("20. pi is %4.3f" % pi)
 print(f"21. pi is {pi:4.3f}")
 
 data = ("John", "Doe", 53.446826374)
-format_string = "23. Hello %s %s. Your current balance is $%5.2f"
+format_string = "23. Hello %s %s. Your current balance is $%.2f"
 print(format_string % data)
+
+print("::".join("abc"))
+
+face = "A"
+suit = "Diamonds"
+print(" of ".join((face,suit)))
