@@ -126,10 +126,14 @@ python first.py
 [Table of Contents](#Table-of-Contents)
 
 ## Simple math
+./mymath
 * math0.py
 * math1.py
+* math2.py
 * math10.py
 * solution.py
+* circle.py
+* perfactNumber1.py
 
 ![Triangular Number](./images/triangularNumber.png)
 * solution1.py
@@ -324,6 +328,8 @@ npm start
 * optionalPositionalArgs.py
 * innerFunction0.py
 * innerFUnction1.py
+* [homework1](../function/homework1.md)
+* [homework2](../function/homework2.md)
 ---
 [Table of Contents](#Table-of-Contents)
 
