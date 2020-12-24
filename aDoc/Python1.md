@@ -37,9 +37,49 @@
 ## Familiar with your keyboard
 ![windows keyboard](./images/keyboard-windows.jpg)
 ![Apple keyboard](./images/keyboard-apple.jpg)
+
+[Key name](https://www.computerhope.com/keys.htm)
+Key | Name
+|---|---|
+space | space
+:  | colon
+;  | semicolon
+,  | comma
+.  | dot, period)
+?  | question mark
+\# | pound, hashtag, number
+`  | back quote, grave accent
+$  | dollar sign
+\* | asterisk, star
+() | parenthesis
+\- | dash, hyphen, minus)
+_  | underscore
+{} | curly bracket
+[] | bracket, square bracket
+\|  | pipe, virtical bar
+\  | back slash
+/  | forward slash
+
 ```
 space
-:
+: (Colon)
+; (semicolon)
+, (Comma)
+. (Period, dot)
+? (Question mark)
+# (pound, hashtag, number)
+` (back quote, grave accent)
+$ (Dollar sign)
+* (Asterisk, star)
+() (Parenthesis)
+- (Hyphen, dash, minus)
+_ (underscore)
+{} (curly bracket)
+[] (bracket, square bracket)
+| (pipe, virtical bar)
+\ (Back slash)
+/ (Forward slash)
+
 ctrl+c
 Ctrl+v
 ctrl+/
@@ -54,6 +94,13 @@ downArrow: bring next command back
 leftArrow: move cursor to left in DOS window
 rightArrow: move cursor to right in DOS window
 ```
+* Hight light block of code
+* Ctrl+c: copy
+* Ctrl+v: paste
+* Ctrl+/: toggle comments
+
+[Share Keyboard document](keyboard.md)
+
 ---
 [Table of Contents](#Table-of-Contents)
 
@@ -64,7 +111,7 @@ rightArrow: move cursor to right in DOS window
 ![好记性不如烂笔头儿](./images/烂笔头儿.png)
     - add Markdown Extension
     - 显示标题，子标题 #, ##
-    - 显示 tablet *，1
+    - 显示 bullet point *，1
     - 显示命令行
     - 显示图形
     - 显示链接
@@ -280,6 +327,15 @@ npm start
 [Table of Contents](#Table-of-Contents)
 
 ## App server
+* URL: Uniform Resource Locator
+    - https://www.google.com
+    - Protocal: http, https, ftp ...
+    - Host: www.google.com
+    - Port: number followed by :, default 80 for http, 443 for https
+    - Path: 
+    - Querystring: text after ?, key=value pair separated by &
+    - Fragment: text after #(hashtag), jump to certain section in the document 
+
 * app1.py > ping-pong
 * app2.py > <html>
 * app3.py > display hardcoded books
