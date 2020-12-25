@@ -38,6 +38,8 @@
 ![windows keyboard](./images/keyboard-windows.jpg)
 ![Apple keyboard](./images/keyboard-apple.jpg)
 
+[Share Keyboard document](keyboard.md)
+
 1. [Key name](https://www.computerhope.com/keys.htm)
 
     Key | Name
@@ -84,8 +86,6 @@
 * Ctrl+c: copy
 * Ctrl+v: paste
 * Ctrl+/: toggle comments
-
-[Share Keyboard document](keyboard.md)
 
 ---
 [Table of Contents](#Table-of-Contents)
@@ -610,26 +610,3 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 ---
 [Table of Contents](#Table-of-Contents)
 
-## Email Address
-Inact.audreyxy@gmail.com;
-wanghangyao@gmail.com;
-yutiyang@swbell.net;
-meijenho0407@gmail.com;
-xuelian.hu@outlook.com;
-xinlian.chang@gmail.com;
-libraluo@hotmail.com;
-ty7701@gmail.com;
-bing88us@yahoo.com;
-pagyy26@gmail.com;
-jzygeorgia@hotmail.com;
-lanachau@gmail.com;
-lanachau@gmail.com;
-milmil_22@hotmail.com;
-crystalchm@yahoo.com;
-crystalchm@yahoo.com;
-
-总校
-* Kayden Gao（高宇晨） 
-Katy
-* Robert Garcia
-* June Garcia
