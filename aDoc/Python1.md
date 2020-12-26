@@ -27,8 +27,8 @@
 1. [install npm](#install-npm)
 1. [OOP](#OOP)
 1. [Python Class](#Python-class)
-1. [QuiteType](#install-and-using-QuickType)
 1. [Review](#Review)
+1. Additional Topic: [QuiteType](#install-and-using-QuickType); 
 
 ---
 [Table of Contents](#Table-of-Contents)
@@ -228,41 +228,6 @@ class User:
 * polygon.py; ask student implement __repr__(self)
 * student.py; using class level method
 *
----
-[Table of Contents](#Table-of-Contents)
-
-## install and using QuickType
-[QuickType website](https://quicktype.io/)
-
-* QuickType Installation
-
-```
-npm install -g quicktype
-quicktype --version
-```
-
-* Python code generation
-```
-quicktype ./data/student.json -o student.py
-```
-* install
-```
-npm intall -g quicktype
-quicktype --version
-```
-* generate python code based on Json
-```
-quicktype ./data/student.json -o student.py
-```
-* book.py > __init__, __str__
-* student.py constructor, __repr__ abstraction
-
-* user.py, User, SubUser inheritence testUser
-* person, teacher, student inheritence
-
-[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
-
-classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
 ---
 [Table of Contents](#Table-of-Contents)
 
@@ -561,6 +526,41 @@ python -m turtledemo
 * Postman to test web service
 * application web server
 * react JS front end GUI server
+---
+[Table of Contents](#Table-of-Contents)
+
+## install and using QuickType
+[QuickType website](https://quicktype.io/)
+
+* QuickType Installation
+
+```
+npm install -g quicktype
+quicktype --version
+```
+
+* Python code generation
+```
+quicktype ./data/student.json -o student.py
+```
+* install
+```
+npm intall -g quicktype
+quicktype --version
+```
+* generate python code based on Json
+```
+quicktype ./data/student.json -o student.py
+```
+* book.py > __init__, __str__
+* student.py constructor, __repr__ abstraction
+
+* user.py, User, SubUser inheritence testUser
+* person, teacher, student inheritence
+
+[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
+
+classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
 ---
 [Table of Contents](#Table-of-Contents)
 
