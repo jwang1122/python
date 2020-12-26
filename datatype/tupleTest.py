@@ -17,3 +17,8 @@ print(tuplex)
 #insert tuple at give position [3]
 tuplex = tuplex[:3] + (9,8,7) + tuplex[3:]
 print(tuplex)
+
+a = (1,2,3)
+b = (4,5,6)
+c = tuple(zip(a, b))
+print(c)

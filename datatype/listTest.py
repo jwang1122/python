@@ -12,7 +12,18 @@ l = list(filter(lambda x: x%2==0, range(20)))
 print(l)
 
 l1 = [i for i in range(20) if i%2==1]
-print(l)
+print(l1)
+
+l1 = [i*4 for i in range(10)]
+print(l1)
+
+l1 = [i*3+j**2 for i in range(5) for j in range(3)]
+print(l1)
+
+A = (1,3,5,7)
+B = (2,4,6,8)
+l1 = [(a,b) for a in A for b in B]
+print(l1)
 
 l = [False]*6 # create a default boolean list
 print(l)
@@ -41,3 +52,13 @@ print(l)
 l.append(l1) # list in list
 print(l)
 
+faces = ('A', "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
+suits = ("SPADES", "CLUBS", "DIAMONDS", "HEARTS")
+cards = [(face, suit) for suit in suits for face in faces]
+print(cards)
+print(len(cards))
+
+a = (1,2,3)
+b = (4,5,6)
+c = list(zip(a, b))
+print(c)

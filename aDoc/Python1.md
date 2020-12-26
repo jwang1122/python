@@ -486,6 +486,22 @@ python -m turtledemo
 * tuple > tupleTest.py
 * list > listTest.py
 * set > setTest.py
+    we use set when the order and frequency of data is not matter
+    ```
+    python >>>
+    myset = set()
+    dir(myset)
+    help(myset.add)
+    myset.add(1)
+    myset.add("hello")
+    myset.add(1)
+    ```
+    second time use myset.add(1) will be ignored.
+    set do not contain duplicated element.
+    
+    ![Union of two set](./images/setUnion.png)
+
+    ![Intersection of two set](./images/setIntersection.png)    
 * dict > dictTest.py
 ---
 [Table of Contents](#Table-of-Contents)
