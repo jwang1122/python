@@ -17,3 +17,20 @@
 ---
 [Table of Contents](#Table-of-Contents)
 
+* YouTube Individual
+1. √ [Python Booleans](https://www.youtube.com/watch?v=9OK32jb_TdI)
+1. √ [Python Strings](https://www.youtube.com/watch?v=iAzShkKzpJo)
+1. [Python Tuple](https://www.youtube.com/watch?v=NI26dqhs2Rk&t=233s)
+1. [Python List](https://www.youtube.com/watch?v=AhSvKGTh28Q&t=266s)
+1. [Python Sets](https://www.youtube.com/watch?v=sBvaPopWOmQ)
+1. [Python Dict](https://www.youtube.com/watch?v=XCcpzWs-CI4&t=13s)
+1. [Python Dictionary](https://www.youtube.com/watch?v=XCcpzWs-CI4&t=26s)
+1. √ [Python Datatime](https://www.youtube.com/watch?v=RjMbCUpvIgw)
+1. √ [pyDoc](https://www.youtube.com/watch?v=URBSvqib0xw)
+1. [Python if-elif-else](https://www.youtube.com/watch?v=f4KOjWS_KZs)
+1. [Python Functions](https://www.youtube.com/watch?v=NE97ylAnrz4)
+1. [Python Text File](https://www.youtube.com/watch?v=4mX0uPQFLDU)
+1. [File](https://www.youtube.com/watch?v=4mX0uPQFLDU&t=41s)
+1. [Prime Numbers](https://www.youtube.com/watch?v=2p3kwF04xcA)
+1. [Python Prime Numbers](https://www.youtube.com/watch?v=2p3kwF04xcA&t=31s)
+1. [CSV Files](https://www.youtube.com/watch?v=Xi52tx6phRU)

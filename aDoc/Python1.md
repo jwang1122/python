@@ -5,35 +5,35 @@
 ## Table of Contents
 √ 
 
-1. [Familiar with your keyboard](#Familiar-with-your-keyboard)
-1. [Getting start](#Getting-start)
-1. [Using Markdown](#Using-Markdown)
+1. [Familiar with your keyboard](#familiar-with-your-keyboard)
+1. [Getting start](#getting-start)
+1. [Using Markdown](#using-markdown)
 1. [print](#print)
-1. [Turtle](#Turtle)
+1. [Turtle](#turtle)
 1. [draw snow man](#draw-snow-man)
-1. [If-Else](#If-Else)
-1. [Data Type](#Data-Type)
-1. [Python playground](#Python-playground-and-help-document)
-1. [Loop](#Loop)
+1. [If-Else](#if-else)
+1. [Data Type](#data-type)
+1. [Python playground](#python-playground-and-help-document)
+1. [Loop](#loop)
 1. [Ball Game](#ball-game)
 1. [Simple Math](#simple-math)
-1. [Function](#Function)
-1. [Terminal Games](#Terminal-Games)
-1. [Dice](#Dice)
+1. [Function](#function)
+1. [Terminal Games](#terminal-games)
+1. [Dice](#dice)
 1. [Prime](#Prime)
-1. [File access](#File-access)
+1. [File access](#file-access)
 1. [Plot](#plot)
-1. [App server](#App-server)
-1. [Mongo DB](#Mongo-DB)
-1. [ReactJS](#ReactJS)
+1. [App server](#app-server)
+1. [Mongo DB](#mongo-db)
+1. [ReactJS](#reactjs)
 1. [install npm](#install-npm)
-1. [OOP](#OOP)
-1. [Python Class](#Python-class)
-1. [Review](#Review)
-1. Additional Topic: [QuiteType](#install-and-using-QuickType); 
+1. [OOP](#oop)
+1. [Python Class](#python-class)
+1. [Review](#review)
+1. Additional Topic: [quitetype](#install-and-using-quicktype); 
 
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 
 ## Familiar with your keyboard
@@ -90,7 +90,7 @@
 * Ctrl+/: toggle comments
 
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Using Markdown 
 * turn in homework to GitHub
@@ -115,7 +115,7 @@
     installation file name: Greenshot-INSTALLER-1.2.10.6-RELEASE.exe
 * Basic operation    
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Getting start
 * install softwares needed
@@ -157,7 +157,7 @@ python -m venv env
 * familiar with VSCode.
     [VS code](vscode.md)
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## print
 * hello.py; getting start with Python > hello.ReadMe.md
@@ -169,13 +169,13 @@ python -m venv env
 * dice.py; introduce random module, dice/dice1.py
 * dice2.py; figure out possibility, understand how computer do things
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Dice
 * dice.py; introduce random module, dice/dice1.py
 * dice2.py; figure out possibility, understand how computer do things
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Simple math
 ./mymath
@@ -226,7 +226,7 @@ $$
 * prime1.py; ./prime/prime1.py
 * prime1.py ~ prim7.py; treat computer as humanbeen, do it right
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## OOP  
 ![OOP concept](./images/classDefine.png)
@@ -239,7 +239,7 @@ $$
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
 [Python Classes](https://docs.python.org/3/tutorial/classes.html)
 --- 
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Python class
 ```py
@@ -269,7 +269,7 @@ class User:
 * student.py; using class level method
 *
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## install npm
 [Download and install node](https://nodejs.org/en/download/)
@@ -303,7 +303,7 @@ cd wang-app
 npm start
 ```
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## ReactJS
 * web application vs. window application
@@ -327,7 +327,7 @@ cd ../book-app
 npm start
 ```
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## App server
 * URL: Uniform Resource Locator
@@ -351,7 +351,7 @@ npm start
     ![First time run Postman](images/postman.png)
 * start app4.py, test POST, UPDATE, DELETE methods
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Mongo DB
 
@@ -370,7 +370,7 @@ npm start
 * delete.py > delete one document
 * bookdb.py > create a class include all CRUD process.
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Function
 
@@ -412,7 +412,7 @@ $$
 * [homework1](../function/homework1.md)
 * [homework2](../function/homework2.md)
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Prime
 * prime0.py > straight forward, define function
@@ -421,7 +421,7 @@ $$
 * prime3.py > calculate range(40-50)
 * prime4.py > define function rangePrime(x,y)
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## plot
 * plot0.py
@@ -438,7 +438,7 @@ $$
 * covid-19/covid1.py
 * covid-19/covid2.py
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
     
 ## Terminal Games
 * Check homework
@@ -451,7 +451,7 @@ $$
 * ball game
     ball10.py
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## draw snow man
 * ![Snow Couple](./images/snowCouple.png)
@@ -461,7 +461,7 @@ $$
 * drawSun.py; add snow man in the picture.
 * homework> draw snowcouple
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 
 ## turtle
@@ -485,7 +485,7 @@ python -m turtledemo
 
     ![Snow Couple](./images/snowCouple.png)
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## ball game
 * ball1.py [Display a ball at center of the screen.]
@@ -499,7 +499,7 @@ python -m turtledemo
 * ball9.py 
 * ball10.py [Final version of ball game.]
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Loop
 * forLoop1.py
@@ -525,7 +525,7 @@ python -m turtledemo
 * guessNumber.py
     - assign homework to modify guessNumber.py for two players
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## If-Else
     - ifelse.py
@@ -538,7 +538,7 @@ python -m turtledemo
 
 ```
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Data Type
 * ![Data Type](./images/DataType.png)
@@ -571,11 +571,13 @@ python -m turtledemo
 * dict > dictTest.py
 
 [Basic date and time types](https://docs.python.org/3/library/datetime.html)
+
 * datetime1.py; other data type (datetime.date)
 * datetime2.py;
 * strftime() and strptime() Format Codes
+
 Directive |Meaning |Example
-|:---|---|---|
+|---|---|---|
 %a |Weekday as locale’s abbreviated name. |Sun, Mon, …, Sat (en_US);So, Mo, …, Sa (de_DE)
 %A |Weekday as locale’s full name. |Sunday, Monday, …, Saturday (en_US); Sonntag, Montag, …, Samstag (de_DE)
 %w |Weekday as a decimal number, where 0 is Sunday and 6 is Saturday. |0, 1, …, 6
@@ -608,7 +610,7 @@ Directive |Meaning |Example
 * datetime4.py; differences between datetime, date, time
   
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Python playground and help document
 * python >>> help(print) (positional arguments, keyword arguments)
@@ -617,7 +619,7 @@ Directive |Meaning |Example
 * hello/print-string.py
 * [Practice]: Homework
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## File access
 * file0.py (write to file)
@@ -632,7 +634,7 @@ Directive |Meaning |Example
 * readJson.py
 * csvReader.py
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Review
 * Markdown document
@@ -647,7 +649,7 @@ Directive |Meaning |Example
 * application web server
 * react JS front end GUI server
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## install and using QuickType
 [QuickType website](https://quicktype.io/)
@@ -682,7 +684,7 @@ quicktype ./data/student.json -o student.py
 
 classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)
 
 ## Sqlite
 * sqlite0.py > create connection
@@ -716,4 +718,4 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 * app5.py > use sqlitebookdb.py to provide service
     use Postman to check the service.
 ---
-[Table of Contents](#Table-of-Contents)
+[Table of Contents](#table-of-contents)

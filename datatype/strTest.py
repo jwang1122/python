@@ -5,6 +5,21 @@ String processing
 help(str)
 """
 f = inspect.currentframe()
+
+msg = "Meet me in python class."
+print(f"{inspect.getframeinfo(f).lineno}: {msg}")
+msg = 'Meet me in python class.'
+print(f"{inspect.getframeinfo(f).lineno}: {msg}")
+# advantage of using double quotation mark and single quotation
+msg = 'John said: "Glad to see you in my python class."'
+print(f"{inspect.getframeinfo(f).lineno}: {msg}")
+msg = 'I\'m looking for someone to share in an adventure.' # use escape sequence
+print(f"{inspect.getframeinfo(f).lineno}: {msg}")
+msg = "I'm looking for someone to share in an adventure." # use double quote instead
+print(f"{inspect.getframeinfo(f).lineno}: {msg}")
+msg = """John said: "I'm looking for someone who can help me." """ # string has both double and single quote
+print(f"{inspect.getframeinfo(f).lineno}: {msg}") # create string by using single, double even triple quotes.
+
 s = "this is\ta Test."
 print(f"{inspect.getframeinfo(f).lineno}: {s.capitalize()}")
 print(f"{inspect.getframeinfo(f).lineno}: {s.title()}")

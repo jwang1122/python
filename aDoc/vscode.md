@@ -3,12 +3,17 @@
 ## Table of Contents
 - [VS Code tricks](#vs-code-tricks)
   - [Table of Contents](#table-of-contents)
+  - [Convert Markdown to PDF](#convert-markdown-to-pdf)
   - [Disable pylint check](#disable-pylint-check)
   - [Setup Unit test](#setup-unit-test)
   - [Setup Python Interpretor](#setup-python-interpretor)
   - [Create Virtual Environment](#create-virtual-environment)
   - [Check in GitHub](#check-in-github)
 
+## Convert Markdown to PDF
+* Markdown Preview Enhanced
+* Right-click > Chrome (Puppeteer) > PDF
+  
 ## Disable pylint check
 Just hit Ctrl+Shift+P > Select linter > Disabled Linter
 
