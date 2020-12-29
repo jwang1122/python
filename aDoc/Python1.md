@@ -3,6 +3,7 @@
 **开课前要把所有用到的程序运行一遍**
 
 ## Table of Contents
+√ 
 1. [Familiar with your keyboard](#Familiar-with-your-keyboard)
 1. [Getting start](#Getting-start)
 1. [Using Markdown](#Using-Markdown)
@@ -92,7 +93,10 @@
 
 ## Using Markdown 
 * turn in homework to GitHub
-
+* VS Code Extension
+    - Markdown All in One
+    - Markdown Preview Enhanced
+    - Unicode LaTex
 * √ Markdown md文件的制作，制作课堂笔记
 ![好记性不如烂笔头儿](./images/烂笔头儿.png)
     - add Markdown Extension
@@ -178,7 +182,26 @@ python -m venv env
 * math10.py
 * solution.py
 * circle.py
+
+$$
+    area = r^2  \pi
+$$
 * perfactNumber1.py
+
+* Volumn of Sphere
+$$
+V = \frac 4 3 \pi  r^3
+$$
+
+* Volumn of Cylinder
+$$
+V = r^2 \pi \cdot h
+$$
+
+* Triangle area
+  $$
+  area = \frac 1 2 (b \cdot h)
+  $$
 
 ![Triangular Number](./images/triangularNumber.png)
 * solution1.py
@@ -335,6 +358,22 @@ npm start
 ## Function
 
 ![Built in functions](./images/builtinFunctions.png)
+* type following code in python playground.
+```py
+def f():
+    pass
+
+dir()
+
+f()
+
+f
+
+```
+
+$$
+area = \pi * r^2
+$$
 * math1.py (circle area, rectangule area, triangle area)
 * defineFunction.py (help(sum))
 * collision.py; use / to avoid collision
@@ -342,6 +381,8 @@ npm start
 * practice: define a function with keyword arguments 
     - (createList.py parseString(str, sep=','))
 * defaultValue.py
+* annotation1.py; wonderful use of keyword arguments 
+* annotation2.py; long large function
 * ask.pys
 * attribute.py
 * optionalPositionalArgs.py
@@ -481,6 +522,9 @@ python -m turtledemo
 ## Data Type
 * ![Data Type](./images/DataType.png)
 * python terminal
+* datatype.py; simple datatype, number, string, boolean
+
+    ![boolean conversion](./images/boolConversion.png)
 * int, float, complex > floatTest.py
 * str > strTest.py; operation on string
 * tuple > tupleTest.py

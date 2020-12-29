@@ -12,6 +12,8 @@
 1. [4 Attempts at Packaging Python as an Executable](https://tryexceptpass.org/article/package-python-as-executable/)
 1. [Python GUI Programming With Tkinter](https://realpython.com/python-gui-tkinter/)
 1. [Python and PyQt: Building a GUI Desktop Calculator](https://realpython.com/python-pyqt-gui-calculator/)
+
+1. [LaTex Symbles](https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols)
 ---
 [Table of Contents](#Table-of-Contents)
 
