@@ -4,6 +4,7 @@
 
 ## Table of Contents
 √ 
+
 1. [Familiar with your keyboard](#Familiar-with-your-keyboard)
 1. [Getting start](#Getting-start)
 1. [Using Markdown](#Using-Markdown)
@@ -43,29 +44,29 @@
 
 1. [Key name](https://www.computerhope.com/keys.htm)
 
-    Key | Name
-    |---|---|
-    space | space, empty space in editor
-    Enter | return, enter, new line in editor
-    :  | colon, key:value separator in dict
-    ,  | comma, list or tuple item separator, delimiter in csv file
-    .  | dot, period, instance function call()
-    \# | pound, hashtag, number, hold shift key click number 3, comments the line
-    `  | back quote, grave accent, command block in markdown
-    \* | asterisk, star, bullet point in markdown, math multiply operator
-    () | parenthesis, tuple, function definition and call
-    \- | dash, hyphen, minus math operator, command option python --version
-    _  | underscore, dunder function or variable, private or protected variables
-    {} | curly bracket, dict or set
-    [] | bracket, square bracket, list
-    \  | back slash, line continue, escape sequence
-    /  | forward slash, file name path fold dilimiter
-    \| | pipe, virtical bar, bitwise OR operator
-    &  | ampersand, and simple, bitwise AND operator
-    ^  | caret, circumflex, bitwise XOR operator
-    ?  | question mark, space holder in sqlit
-    $  | dollar sign
-    ;  | semicolon
+    | Key   | Name                                                                     |
+    | ----- | ------------------------------------------------------------------------ |
+    | space | space, empty space in editor                                             |
+    | Enter | return, enter, new line in editor                                        |
+    | :     | colon, key:value separator in dict                                       |
+    | ,     | comma, list or tuple item separator, delimiter in csv file               |
+    | .     | dot, period, instance function call()                                    |
+    | \#    | pound, hashtag, number, hold shift key click number 3, comments the line |
+    | `     | back quote, grave accent, command block in markdown                      |
+    | \*    | asterisk, star, bullet point in markdown, math multiply operator         |
+    | ()    | parenthesis, tuple, function definition and call                         |
+    | \-    | dash, hyphen, minus math operator, command option python --version       |
+    | _     | underscore, dunder function or variable, private or protected variables  |
+    | {}    | curly bracket, dict or set                                               |
+    | []    | bracket, square bracket, list                                            |
+    | \     | back slash, line continue, escape sequence                               |
+    | /     | forward slash, file name path fold dilimiter                             |
+    | \|    | pipe, virtical bar, bitwise OR operator                                  |
+    | &     | ampersand, and simple, bitwise AND operator                              |
+    | ^     | caret, circumflex, bitwise XOR operator                                  |
+    | ?     | question mark, space holder in sqlit                                     |
+    | $     | dollar sign                                                              |
+    | ;     | semicolon                                                                |
 
 * combination keys
 ```
@@ -202,6 +203,13 @@ $$
   $$
   area = \frac 1 2 (b \cdot h)
   $$
+
+* Triangular Number
+  $$
+  T_n = \sum_{k=1}^n k
+  $$
+
+  $T(n)=\frac {n(n+1)} 2$
 
 ![Triangular Number](./images/triangularNumber.png)
 * solution1.py
@@ -358,6 +366,10 @@ npm start
 ## Function
 
 ![Built in functions](./images/builtinFunctions.png)
+* define a function
+$$
+\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{arguments}\right) \underbrace {:}_{eol}
+$$
 * type following code in python playground.
 ```py
 def f():
