@@ -1,12 +1,13 @@
 # VS Code tricks
 
 ## Table of Contents
-1. [Disable pylint check](#Disable-pylint-check)
-1. [Setup Unit test](#Setup-Unit-test)
-1. [Setup Python Interpretor](#Setup-Python-Interpretor)
-1. [Create Virtual Environment](#Create-Virtual-Environment)
-1. [Check in GitHub](#Check-in-GitHub)
-1. [](#)
+- [VS Code tricks](#vs-code-tricks)
+  - [Table of Contents](#table-of-contents)
+  - [Disable pylint check](#disable-pylint-check)
+  - [Setup Unit test](#setup-unit-test)
+  - [Setup Python Interpretor](#setup-python-interpretor)
+  - [Create Virtual Environment](#create-virtual-environment)
+  - [Check in GitHub](#check-in-github)
 
 ## Disable pylint check
 Just hit Ctrl+Shift+P > Select linter > Disabled Linter

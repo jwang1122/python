@@ -154,6 +154,8 @@ python -m venv env
 
 ![Virtual Environment](./images/virtualEnvironment.png)
 
+* familiar with VSCode.
+    [VS code](vscode.md)
 ---
 [Table of Contents](#Table-of-Contents)
 
@@ -183,6 +185,13 @@ python -m venv env
 * math10.py
 * solution.py
 * circle.py
+* linear1.py
+  
+![Chicken & Rabbits](images/chickenRabbits.gif)
+* linear2.py
+* linear3.py
+* linear4.py
+* linear5.py
 
 $$
     area = r^2  \pi
