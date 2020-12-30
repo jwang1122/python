@@ -1,0 +1,9 @@
+Guido van Rossum, the creator of the Python programming language, 
+today announced that he has unretired and joined Microsoft’s 
+Developer Division.
+
+Van Rossum, who was last employed by Dropbox,  
+retired last October after six and a half years at the company. 
+Clearly, that retirement wasn’t meant to last. At Microsoft, 
+van Rossum says, he'll work to "make using Python better for sure 
+(and not just on Windows)."

@@ -29,7 +29,7 @@
 1. √ [Python Datatime](https://www.youtube.com/watch?v=RjMbCUpvIgw)
 1. √ [pyDoc](https://www.youtube.com/watch?v=URBSvqib0xw)
 1. √ [Python if-elif-else](https://www.youtube.com/watch?v=f4KOjWS_KZs)
-1. [Python Functions](https://www.youtube.com/watch?v=NE97ylAnrz4)
+1. √ [Python Functions](https://www.youtube.com/watch?v=NE97ylAnrz4)
 1. [Python Text File](https://www.youtube.com/watch?v=4mX0uPQFLDU)
 1. [File](https://www.youtube.com/watch?v=4mX0uPQFLDU&t=41s)
 1. [Prime Numbers](https://www.youtube.com/watch?v=2p3kwF04xcA)

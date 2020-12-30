@@ -395,10 +395,12 @@ f
 $$
 area = \pi * r^2
 $$
+
+if you don't return value from function, you will get None when you assign the value to a variable.
 * math1.py (circle area, rectangule area, triangle area)
 * defineFunction.py (help(sum))
-* collision.py; use / to avoid collision
-* keywordArgs.py
+* collision.py; use / to avoid collision, 
+* keywordArgs.py; positional arguments first
 * practice: define a function with keyword arguments 
     - (createList.py parseString(str, sep=','))
 * defaultValue.py
@@ -636,6 +638,11 @@ Directive |Meaning |Example
 [Table of Contents](#table-of-contents)
 
 ## File access
+
+Text Files | Binary Files
+|---       |---           |
+Plain Text, XML, HTML, JSON, Source Code, CSV |Compiled code, App data, Media files, images,audio, video
+
 * file0.py (write to file)
 * file1.py (read and write to existing file)
 * file2.py (with open, auto close)

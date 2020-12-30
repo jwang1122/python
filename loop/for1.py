@@ -75,3 +75,10 @@ print(transposed)
 
 transposed = list(zip(*matrix))
 print(transposed)
+
+for i in range(11):
+    if i == 0:
+        sum1 = 0
+    sum1 = sum1 + i
+
+print(sum1) # for loop does NOT block the sum1 variable.
