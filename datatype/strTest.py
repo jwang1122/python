@@ -117,6 +117,14 @@ print(
     f'{inspect.getframeinfo(f).lineno}: {"1234567123456".rindex("34")}'
 )  # index from right
 
+s1, s2 = 'abc', '123'
+print(f'{inspect.getframeinfo(f).lineno}: {s1 * 3}')
+print(f'{inspect.getframeinfo(f).lineno}: {s1 + s2}')
+print(f'{inspect.getframeinfo(f).lineno}: {s1 < s2}')
+print(f'{inspect.getframeinfo(f).lineno}: {s1 > s2}')
+print(f'{inspect.getframeinfo(f).lineno}: {s1 == s2}')
+print(f'{inspect.getframeinfo(f).lineno}: {s1 != s2}')
+
 import pandas as pd
 
 Data = {"Product": ["ABC", "XYZ"], "Price": ["250.88", "270.43"]}

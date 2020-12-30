@@ -30,7 +30,7 @@ for i in range(1, 101):
     squares.append(i**2)
 print(squares)
 
-# list conprehension
+# list Comprehension vs. For loop
 l1 = [i for i in range(20) if i%2==1]
 print(l1)
 
@@ -39,6 +39,9 @@ print(l1)
 
 remainders5 = [x**2 % 5 for x in range(1, 101)]
 print(remainders5)
+
+l1 = [letter for letter in "Hello World!"] # string is iterable
+print(l1)
 
 l1 = [i*3+j**2 for i in range(5) for j in range(3)]
 print(l1)
@@ -78,6 +81,7 @@ l.insert(0, "First")
 print(l)
 l.append(l1) # list in list
 print(l)
+
 
 faces = ('A', "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
 suits = ("SPADES", "CLUBS", "DIAMONDS", "HEARTS")
