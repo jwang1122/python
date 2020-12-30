@@ -20,8 +20,8 @@
 * YouTube Individual
 1. √ [Python Booleans](https://www.youtube.com/watch?v=9OK32jb_TdI)
 1. √ [Python Strings](https://www.youtube.com/watch?v=iAzShkKzpJo)
-1. [Python Tuple](https://www.youtube.com/watch?v=NI26dqhs2Rk&t=233s)
-1. [Python List](https://www.youtube.com/watch?v=AhSvKGTh28Q&t=266s)
+1. √ [Python Tuple](https://www.youtube.com/watch?v=NI26dqhs2Rk&t=233s)
+1. √ [Python List](https://www.youtube.com/watch?v=AhSvKGTh28Q&t=266s)
 1. [Python Sets](https://www.youtube.com/watch?v=sBvaPopWOmQ)
 1. [Python Dict](https://www.youtube.com/watch?v=XCcpzWs-CI4&t=13s)
 1. [Python Dictionary](https://www.youtube.com/watch?v=XCcpzWs-CI4&t=26s)
