@@ -42,9 +42,13 @@ print "Triangular number", n, "via formula:", n*(n+1)/2
 
 7. Sums of recprocals of factorials
 Compute the following value:
-```
-  1 + 1/1! + 1/2! + 1/3! + 1/4! + ... + 1/10!
-```
+
+$$
+e = \lim_{n=1}^{\infty} \left(1 + \frac 1 {n!}\right)
+$$
+
+$1+\frac 1 {1!}+\frac 1 {2!}+\frac 1 {3!}+\frac 1 {4!}+\frac 1 {5!}+\frac 1 {6!}+\frac 1 {7!}+\frac 1 {8!}+\frac 1 {9!}+\frac 1 {10!}$
+
 The value should be close to e (≈ 2.71828), the base of the natural logarithms.
 
 8. use for loop to print the following patten

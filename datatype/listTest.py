@@ -1,3 +1,17 @@
+"""
+list contains sequence of data separated by comma, surrounded by brackets.方数组
+tuple is sequence of data separated by comma, surrounded by parentheses。圆数组
+l = [2,3,5,7,9]
+t = (2,3,5,7,9)
+dir(l)
+dir(t)
+>>> import sys
+>>> sys.getsizeof(l)
+120 
+>>> sys.getsizeof(t)
+80
+"""
+
 # initial empty list
 l = []
 print(type(l))
@@ -11,14 +25,27 @@ print(l)
 l = list(filter(lambda x: x%2==0, range(20)))
 print(l)
 
+squares = []
+for i in range(1, 101):
+    squares.append(i**2)
+print(squares)
+
+# list conprehension
 l1 = [i for i in range(20) if i%2==1]
 print(l1)
 
 l1 = [i*4 for i in range(10)]
 print(l1)
 
+remainders5 = [x**2 % 5 for x in range(1, 101)]
+print(remainders5)
+
 l1 = [i*3+j**2 for i in range(5) for j in range(3)]
 print(l1)
+
+movies = [("Citizen Kane", 1941),("Spirited Away",2001),("It's a Wonderful Life",1946),("Gattaca",1997),("No Country for Old Men",2007),("Rear Window",1954),("The Lord of the Rings",2001),("Groundhog Day",1993),("Close Encounters of the Third Kind",1977),("The Royal Tenenbaums",2001),("The Aviator",2004),("Raiders of the Lost Ark",1981)]
+before2000 = [(title, year) for (title, year) in movies if year<2000]
+print("47:",before2000)
 
 A = (1,3,5,7)
 B = (2,4,6,8)

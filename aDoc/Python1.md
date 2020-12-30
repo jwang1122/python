@@ -550,6 +550,18 @@ python -m turtledemo
 * str > strTest.py; operation on string
 * tuple > tupleTest.py
 * list > listTest.py
+
+list | tuple
+|---|---|
+add data       | cannot be changed
+remove data    | cannot be changed
+change data    | immutable
+slow operation | made quickly
+
+* tupleList.py 
+    - create a list
+    [expr for val in collection]
+    [expr for val in collection if <condition>]
 * set > setTest.py
     we use set when the order and frequency of data is not matter
     ```
