@@ -6,6 +6,14 @@ help(str)
 """
 f = inspect.currentframe()
 
+temperatur = "45C"
+print(f"{inspect.getframeinfo(f).lineno}: {temperatur[:-1]}") # use index to parse string with unit
+print(f"{inspect.getframeinfo(f).lineno}: {temperatur[-1]}")
+print(f"{inspect.getframeinfo(f).lineno}: {'104F'[:-1]}")
+print(f"{inspect.getframeinfo(f).lineno}: {'104F'[-1]}")
+print(f"{inspect.getframeinfo(f).lineno}: {'12m/s'[:-3]}")
+print(f"{inspect.getframeinfo(f).lineno}: {'12m/s'[-3:]}")
+
 msg = "Meet me in python class."
 print(f"{inspect.getframeinfo(f).lineno}: {msg}")
 msg = 'Meet me in python class.'

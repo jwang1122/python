@@ -528,8 +528,10 @@ python -m turtledemo
 [Table of Contents](#table-of-contents)
 
 ## If-Else
-    - ifelse.py
-    - if-else.py  
+./if-else
+* if-else1.py
+* if-else2.py  
+* if-else3.py  
     - Infinit loop while True: > input("Continue? (y/n)")
     - [Practice]:
 ```output
