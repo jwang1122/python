@@ -1,5 +1,5 @@
 # Function defined outside the class
-def f1(self, x, y):
+def f1(self, x, y): # it has self argument
     return min(x, x+y)
 
 class C:
@@ -14,3 +14,4 @@ x = C()
 y = x.f(3,-2)
 print(y)
 print(x.h())
+print(f1(None, 2, 3))

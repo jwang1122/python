@@ -256,13 +256,25 @@ class User:
 * class0.py - pass class, instance and class level attributes
 * create a class snowman.py > drawSnowMan.py > shapes.py
 * class1.py > dynamically assign instance attribute and access it from outside function
-* √ class2.py > define internal function
-* √ class3.py > __init__(self) and internal function
-* √ class4.py > use keyword argument in __init__(self)
-* √ class5.py > understand __str__, __repr__, and __len__()
-* √ class6.py > protected attribute and private attribute
-* √ class7.py > getter/setter
-* √ personInheritance.py > inheritance
+* class2.py > define internal function
+* class3.py > __init__(self) and internal function
+* class4.py > use keyword argument in __init__(self)
+* class5.py > understand __str__, __repr__, and __len__()
+* class6.py > protected attribute and private attribute
+* class7.py > getter/setter
+* class8.py; inherite from Enum
+* class9.py; difference between __init__ and __new__
+* class10.py; override __new__() constructor
+* class11.py; issue caused by class level variables
+* class12.py; different object with different attributes
+* class13.py; class level variables
+* class14.py; define internal function by outside function, the benifit is use this outside function by more than one class.
+* class15.py; function call function
+* class16.py; multiple inheritance
+* class17.py; reverse given string
+* class18.py; define Website class
+* 
+* personInheritance.py > inheritance
 * personTest.py > understand class name <module_name>.<class_name>
 * √ bookdb.py > used in app4.py
 * polygon.py; ask student implement __repr__(self)

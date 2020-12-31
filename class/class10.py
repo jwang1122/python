@@ -11,5 +11,9 @@ class B(object): # different way to write __new__()
         return super(B, cls).__new__(Sample)
 
 if __name__ == '__main__':
-    print(A())
-    print(B())
+    a = A()
+    print(a)
+    print(type(a))
+    b = B()
+    print(b)
+    print(type(b))

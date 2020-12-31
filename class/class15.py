@@ -1,3 +1,6 @@
+"""
+class internal function call another internal function
+"""
 class Bag:
     def __init__(self):
         self.data = []

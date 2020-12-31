@@ -1,3 +1,6 @@
+"""
+class level variables
+"""
 class Warehouse:
     purpose = 'storage' # class level attributes
     region = 'west'

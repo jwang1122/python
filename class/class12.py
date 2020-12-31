@@ -1,3 +1,6 @@
+"""
+Different object can have differente attribute value.
+"""
 class Dog:
     def __init__(self, name):
         self.name = name
@@ -12,4 +15,7 @@ if __name__ == "__main__":
     buddy = Dog("Buddy")
     fido.add_trick("rool over")
     buddy.add_trick("play dead")
+    fido.add_trick("bark")
+    buddy.add_trick("bark")
     print(fido.tricks)
+    print(buddy.tricks)
