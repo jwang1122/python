@@ -11,6 +11,15 @@
 * Dynamic data structure:
   >It is a type of data structure where the size is allocated at the run time. Therefore, the maximum size is flexible.
 
+## Homeworks
+* datatypeHW1.md; use dict find month name
+* datatypeHW2.md; use dict find square of a integer
+* datatypeHW3.md; sum all integers in a list
+* datatypeHW4.md; multiply all integers in a list
+* datetypeHW5.md; find max number in a list
+* datatypeHW6.md; sort a list which contains tuple item by second tuple item.
+* datatypeHW7.md; remove duplicate number in the list
+* 
 ## Basic Data Type
 
 ![Python Data Type](../../images/DataType.png)

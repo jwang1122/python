@@ -1,0 +1,1 @@
+* Create two markdown files that one links to another.
