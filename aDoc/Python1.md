@@ -179,25 +179,37 @@ python -m venv env
 
 ## Simple math
 ./mymath
-* math0.py
-* math1.py
+
+![Built-in Functions](./images/builtinFunctions.png)
+* math0.py/ built-in functions, abs(), pow(), sum(), max(), min(), round()
+
+Square Root
+$$
+x=\sqrt x^2=x ^ \frac 1 2
+$$
+$$
+4=\sqrt {16}=16 ^ \frac 1 2
+$$
+* math1.py; functions defined in math module, sqrt(), ceil(), floor(), sin(), cos()
 * math2.py
 * math10.py
 * solution.py
+
+$$
+A=\pi r^2
+$$
+, where **A** is area of a circle, **r** is radius of the circle.
 * circle.py
-* linear1.py
+
+![赶集](./images/赶集.jpg)
+* linear1.py; 老头儿们买梨。
   
 ![Chicken & Rabbits](images/chickenRabbits.gif)
 * linear2.py
 * linear3.py
 * linear4.py
 * linear5.py
-
-$$
-    area = r^2  \pi
-$$
 * perfactNumber1.py
-
 * Volumn of Sphere
 $$
 V = \frac 4 3 \pi  r^3
