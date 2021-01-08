@@ -202,6 +202,8 @@ $$
 * circle.py
 
 ![赶集](./images/赶集.jpg)
+
+几个老头儿去赶集，上街见着一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
 * linear1.py; 老头儿们买梨。
   
 ![Chicken & Rabbits](images/chickenRabbits.gif)
