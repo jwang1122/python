@@ -156,6 +156,13 @@ python -m venv env
 
 * familiar with VSCode.
     [VS code](vscode.md)
+
+* convert python script to exe
+```
+pip install pyinstaller
+pyinstaller --onefile -w 'filename.py'
+```
+
 ---
 [Table of Contents](#table-of-contents)
 

@@ -12,3 +12,17 @@
 * 星期一 06:00 PM Python-I
 
 * 星期五 6:00PM AP Computer
+
+
+## All Students Email
+
+allenandrewchaffin@gmail.com;
+tutujh2008@gmail.com;
+littlefoolcat@gmail.com;
+p.ptian@gmail.com;
+hongxianzhang@yahoo.com;
+ayanselm@gmail.com;
+tguan@outlook.com;
+yliu10@slb.com;
+katherineyang@ymail.com;
+jiawanjunshi@hotmail.com;
