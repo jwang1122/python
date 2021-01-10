@@ -26,3 +26,6 @@ tguan@outlook.com;
 yliu10@slb.com;
 katherineyang@ymail.com;
 jiawanjunshi@hotmail.com;
+happyleejing@hotmail.com;
+risingch2012@gmail.com;
+minli2874@gmail.com;

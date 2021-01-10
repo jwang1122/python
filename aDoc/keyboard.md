@@ -17,7 +17,7 @@
     () | parenthesis, tuple, function definition and call
     \- | dash, hyphen, minus math operator, command option python --version
     _  | underscore, dunder function or variable, private or protected variables
-    {} | curly bracket, dict or set
+    {} | curly bracket, brace symbol，dict or set
     [] | bracket, square bracket, list
     \  | back slash, line continue, escape sequence
     /  | forward slash, file name path fold dilimiter
