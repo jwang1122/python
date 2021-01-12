@@ -6,31 +6,31 @@
 √ 
 
 1. [Familiar with your keyboard](#familiar-with-your-keyboard)
-1. [Getting start](#getting-start)
-1. [Using Markdown](#using-markdown)
-1. [print](#print)
-1. [Turtle](#turtle)
-1. [draw snow man](#draw-snow-man)
-1. [If-Else](#if-else)
-1. [Data Type](#data-type)
-1. [Python playground](#python-playground-and-help-document)
-1. [Loop](#loop)
-1. [Ball Game](#ball-game)
-1. [Simple Math](#simple-math)
-1. [Function](#function)
-1. [Terminal Games](#terminal-games)
-1. [Dice](#dice)
-1. [Prime](#Prime)
-1. [File access](#file-access)
-1. [Plot](#plot)
-1. [App server](#app-server)
-1. [Mongo DB](#mongo-db)
-1. [ReactJS](#reactjs)
-1. [install npm](#install-npm)
-1. [OOP](#oop)
-1. [Python Class](#python-class)
-1. [Review](#review)
-1. Additional Topic: [quitetype](#install-and-using-quicktype); 
+2. [Getting start](#getting-start)
+3. [Using Markdown](#using-markdown)
+4. [print](#print)
+5. [Turtle](#turtle)
+6. [draw snow man](#draw-snow-man)
+7. [If-Else](#if-else)
+8. [Data Type](#data-type)
+9. [Python playground](#python-playground-and-help-document)
+10. [Loop](#loop)
+11. [Ball Game](#ball-game)
+12. [Simple Math](#simple-math)
+13. [Function](#function)
+14. [Terminal Games](#terminal-games)
+15. [Dice](#dice)
+16. [Prime](#Prime)
+17. [File access](#file-access)
+18. [Plot](#plot)
+19. [App server](#app-server)
+20. [Mongo DB](#mongo-db)
+21. [ReactJS](#reactjs)
+22. [install npm](#install-npm)
+23. [OOP](#oop)
+24. [Python Class](#python-class)
+25. [Review](#review)
+26. Additional Topic: [quitetype](#install-and-using-quicktype); 
 
 ---
 [Table of Contents](#table-of-contents)
@@ -156,6 +156,13 @@ python -m venv env
 
 * familiar with VSCode.
     [VS code](vscode.md)
+
+* convert python script to exe
+```
+pip install pyinstaller
+pyinstaller --onefile -w 'filename.py'
+```
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -202,6 +209,8 @@ $$
 * circle.py
 
 ![赶集](./images/赶集.jpg)
+
+几个老头儿去赶集，上街见着一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
 * linear1.py; 老头儿们买梨。
   
 ![Chicken & Rabbits](images/chickenRabbits.gif)
