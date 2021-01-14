@@ -1,12 +1,12 @@
 # My Classes
 
 ## Weekend classes
-* 星期六 09:00 AM AP Computer 
-* 星期六 11:00 AM (成人课) Python-I
-* 星期六 01:00 PM Python-I
-* 星期六 3:00 PM Python-II
+* 星期六 09:00 AM AP Computer (1/9/2021)
+* 星期六 11:00 AM (成人课) Python-I (1/9/2021)
+* 星期六 01:00 PM Python-I (1/9/2021)
+* 星期六 3:00 PM Python-II (1/9/2021)
 
-* 星期日 11:00 AM Java Level1
+* 星期日 11:00 AM Java Level1 (1)
 
 ## Weekdays Classes
 * 星期一 06:00 PM Python-I
@@ -29,3 +29,4 @@ jiawanjunshi@hotmail.com;
 happyleejing@hotmail.com;
 risingch2012@gmail.com;
 minli2874@gmail.com;
+rwu30010658@gmail.com;
