@@ -3,7 +3,7 @@
 ## Weekend classes
 * 星期六 09:00 AM AP Computer (1/9/2021)
 * 星期六 11:00 AM (成人课) Python-I (1/9/2021)
-* 星期六 01:00 PM Python-I (1/9/2021) (Stopped on 1/16/2021)
+* 星期六 01:00 PM Python-I (1/9/2021) (Stopped on 1/16/2021) 1/23 停课
 * 星期六 3:00 PM Python-II (1/9/2021)
 
 * 星期日 11:00 AM Java Level1 (1)
