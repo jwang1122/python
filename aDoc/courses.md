@@ -9,7 +9,7 @@
 * 星期日 11:00 AM Java Level1 (1)
 
 ## Weekdays Classes
-* 星期一 06:00 PM Python-I
+* 星期一 06:00 PM Python-II
 
 * 星期五 6:00PM AP Computer
 
