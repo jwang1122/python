@@ -10,8 +10,9 @@
 
 ## Weekdays Classes
 * 星期一 06:00 PM Python-II
-
-* 星期五 6:00PM AP Computer
+* 星期二 06:00 PM Java-II? 
+* 
+* 星期五 6:00PM AP Computer Cancled
 
 
 ## All Students Email
