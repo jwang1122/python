@@ -41,20 +41,24 @@ class DrawGift:
         while self.index in self.winers:
             self.index = randint(0, self.size)
         self.trtl.clear()
-        print(self.index)
-        self.trtl.write(self.names[self.index],font=("Arial", 24, "bold"))
+        # print(self.index)
+        self.display()
         self.output.write(f"{self.index}, {self.names[self.index]}")
 
     def draw(self):
         self.trtl.clear()
         if self.flag:
-            self.trtl.write(self.names[self.index],font=("Arial", 24, "bold"))
-        time.sleep(0.1)
+            self.display()
+            time.sleep(0.1)
         self.index += 1
         if(self.index>=self.size):
             self.index = 0
         if(self.flag):
-            ontimer(self.draw, 10) 
+            ontimer(self.draw, 20) 
+
+    def display(self):
+        self.trtl.clear()
+        self.trtl.write(self.names[self.index],font=("Arial", 24, "bold"))
 
 test = DrawGift()
 onkey(test.stop, "space")
