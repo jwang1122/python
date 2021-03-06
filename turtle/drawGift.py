@@ -13,17 +13,17 @@ class DrawGift:
 
         self.screen=Screen()
         self.image = Turtle()
-        self.cow = './turtle/cow.gif'
+        self.cow = './turtle/holiday38_2.gif'
         self.screen.addshape(self.cow)
         self.image.shape(self.cow)
         self.trtl=Turtle()
-        title("华夏中文学校，农历新年游园会，云端乐翻天，正在抽奖...")
-        self.screen.setup(520,320)
+        title("华夏中文学校，家庭教育分享座谈会，正在抽奖...")
+        self.screen.setup(1125,842)
         self.screen.bgcolor('red')
         self.trtl.penup()
-        self.trtl.setpos(-250,60)
+        self.trtl.setpos(-200,260) #80
         self.trtl.pendown()
-        self.trtl.pencolor('white')
+        self.trtl.pencolor('#E83386') #'#770729' '#E83386'
         self.trtl.hideturtle()
         self.names = []
         with open("./turtle/names.txt") as f:
@@ -58,7 +58,7 @@ class DrawGift:
 
     def display(self):
         self.trtl.clear()
-        self.trtl.write(self.names[self.index],font=("Arial", 24, "bold"))
+        self.trtl.write(self.names[self.index],font=("Arial", 48, "bold"))
 
 test = DrawGift()
 onkey(test.stop, "space")

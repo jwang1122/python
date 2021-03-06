@@ -13,10 +13,10 @@ def draw(rad):
   
 # Main section 
 # tilt the shape to negative 45 
-turtle.seth(-45) 
+# turtle.seth(90) 
   
 # calling draw method 
-draw(100)
+draw(20)
 turtle.hideturtle()
 
 turtle.exitonclick()

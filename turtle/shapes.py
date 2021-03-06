@@ -50,4 +50,13 @@ def drawTriangle(pen1, x, y,angle,side):
     pen1.fd(side)
     pen1.left(120)
     
+def drawEllipse(pen1, x, y, radius, angle):
+    pen1.up()
+    pen1.goto(x,y)
+    pen1.down()
+    for i in range(2): 
+        # two arcs 
+        pen1.circle(radius,90) 
+        pen1.circle(radius//2,90) 
+    pen1.seth(angle)
 
