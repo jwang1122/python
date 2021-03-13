@@ -21,7 +21,7 @@ class DrawGift:
         self.screen.setup(1125,842)
         self.screen.bgcolor('red')
         self.trtl.penup()
-        self.trtl.setpos(-200,260) #80
+        self.trtl.setpos(-300,260) #80
         self.trtl.pendown()
         self.trtl.pencolor('#E83386') #'#770729' '#E83386'
         self.trtl.hideturtle()
