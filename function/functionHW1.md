@@ -3,3 +3,15 @@
 <div>
     <center><img src="triangleArea.png"/></center>
 </div>
+
+for given code below:
+
+```py
+b = 10
+h = 20
+area = triangleArea(b,h)
+```
+
+Expected result:
+
+The trianger area with base=10 and height=20 is 100.0.

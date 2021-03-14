@@ -2,7 +2,7 @@
 
 ```py
 def printNameAge(name, age):
-    pass
+    # your code
 ```
 
 printNameAge("John", 14)

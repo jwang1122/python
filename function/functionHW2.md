@@ -12,3 +12,6 @@ print(z)
 def mergeDict(x, y):
     pass
 ```
+
+Expected result:
+z = {'b': 2, 'c': 4, 'a': 1}

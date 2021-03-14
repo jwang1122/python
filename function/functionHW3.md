@@ -1,13 +1,13 @@
-# Define a function calculate area of triangle by given base and height
+# Define a function calculate area of circle by given radius
 
 ```py
-def triangle_area(base, height):
-    pass
+def circle_area(radius):
+    # your code here
 
-a = triangle_area(3, 4)
+r = 1
+a = circle_area(r)
 print(a)
 ```
 Expected result:
-```
-6
-```
+
+The circle area with radius=1 is 3.142
