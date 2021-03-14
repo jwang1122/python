@@ -73,15 +73,21 @@ print(fruits)
 # modify list
 l[4] = "hello"
 print(l)
-l = l[3:7]
-print(l)
+l1 = l[3:7]
+print(l1)
+l1 = fruits[::-1]
+print(fruits)
+print(l1)
 l.append(20)
 print(l)
 l.insert(0, "First")
 print(l)
 l.append(l1) # list in list
 print(l)
-
+l1 = [1,2,3]
+l2 = [4,5,6]
+l1.extend(l2)
+print(l1)
 
 faces = ('A', "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
 suits = ("SPADES", "CLUBS", "DIAMONDS", "HEARTS")

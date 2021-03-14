@@ -3,7 +3,7 @@
 for example: 
 Input a number: 6
 1 x 6 = 6
-2 x 6 =12
+2 x 6 = 12
 3 x 6 = 18
 4 x 6 = 24
 5 x 6 = 30
