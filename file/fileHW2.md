@@ -4,6 +4,7 @@
 
 Expected output:
 
+```
        #                   Name   Type 1  Type 2  ...  Sp. Def  Speed  Generation  Legendary
 0      1              Bulbasaur    Grass  Poison  ...       65     45           1      False
 1      2                Ivysaur    Grass  Poison  ...       80     60           1      False
@@ -18,3 +19,5 @@ Expected output:
 799  721              Volcanion     Fire   Water  ...       90     70           6       True
 
 [800 rows x 13 columns]
+
+```
