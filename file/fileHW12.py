@@ -15,6 +15,6 @@ with open(fname) as f:
     print(f"Number of lines in file {fname}: {count}")
 
 
-l = ["Janurary",'Feburary','March','April','May']
+l = ["January",'Febuary','March','April','May','June','July','August','September','October','Novenber',"December"]
 for i, x in enumerate(l):
     print(f"{i+1}: {x}")
