@@ -8,7 +8,7 @@ x = int(x)
 print(x)
 ```
 
-the above code will give you the following result:
+the above code will give you the following integer result:
 
 22222
 

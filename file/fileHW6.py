@@ -10,5 +10,8 @@ with open(filename) as pokemon:
 
 start = len(lines) - n
 output = lines[start:]
+count = start
 for line in output:
-    print(line)
+    count += 1
+    print(f"{count}: {line}")
+
