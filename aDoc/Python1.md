@@ -1,4 +1,4 @@
-# 华夏中文学校 Python level-I
+# Python level-I
 
 **开课前要把所有用到的程序运行一遍**
 
@@ -197,10 +197,10 @@ $$
 $$
 4=\sqrt {16}=16 ^ \frac 1 2
 $$
-* math1.py; functions defined in math module, sqrt(), ceil(), floor(), sin(), cos()
-* math2.py
-* math10.py
-* solution.py
+* [math1.py](../mymath/math1.py); functions defined in math module, sqrt(), ceil(), floor(), sin(), cos()
+* [math2.py](../mymath/math2.py)
+* [math2.py](../mymath/math10.py)
+* [solution.py](../mymath/solution.py)
 
 $$
 A=\pi r^2
@@ -210,7 +210,7 @@ $$
 
 ![赶集](./images/赶集.jpg)
 
-几个老头儿去赶集，上街见着一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
+几个老头儿去赶集，上街买了一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
 * linear1.py; 老头儿们买梨。
   
 ![Chicken & Rabbits](images/chickenRabbits.gif)
@@ -233,6 +233,8 @@ $$
   $$
   area = \frac 1 2 (b \cdot h)
   $$
+
+$$\cdots  $$
 
 * Triangular Number
   $$
