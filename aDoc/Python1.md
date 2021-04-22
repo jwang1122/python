@@ -8,16 +8,16 @@
 1. [Familiar with your keyboard](#familiar-with-your-keyboard)
 2. [Getting start](#getting-start)
 3. [Using Markdown](#using-markdown)
-4. [print](#print)
-5. [Turtle](#turtle)
-6. [draw snow man](#draw-snow-man)
-7. [If-Else](#if-else)
+4. [Python playground](#python-playground-and-help-document)
+5. [print](#print)
+6. [Turtle](#turtle)
+7. [draw snow man](#draw-snow-man)
 8. [Data Type](#data-type)
-9. [Python playground](#python-playground-and-help-document)
+9. [If-Else](#if-else-execution-control)
 10. [Loop](#loop)
-11. [Ball Game](#ball-game)
-12. [Simple Math](#simple-math)
-13. [Function](#function)
+11. [Function](#function)
+12. [Ball Game](#ball-game)
+13. [Simple Math](#simple-math)
 14. [Terminal Games](#terminal-games)
 15. [Dice](#dice)
 16. [Prime](#Prime)
@@ -166,6 +166,15 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
+## Python playground and help document
+* python >>> help(print) (positional arguments, keyword arguments)
+* [Practice]: different print statements
+* hello/print.py
+* hello/print-string.py
+* [Practice]: Homework
+---
+[Table of Contents](#table-of-contents)
+
 ## print
 * hello.py; getting start with Python > hello.ReadMe.md
 * print.py; hello/print.py
@@ -177,6 +186,7 @@ pyinstaller --onefile -w 'filename.py'
 * dice2.py; figure out possibility, understand how computer do things
 ---
 [Table of Contents](#table-of-contents)
+
 
 ## Dice
 * dice.py; introduce random module, dice/dice1.py
@@ -526,19 +536,20 @@ python -m turtledemo
 
 ## ball game
 * ball1.py [Display a ball at center of the screen.]
-* ball2.py []
-* ball3.py 
-* ball4.py 
-* ball5.py 
-* ball6.py 
-* ball7.py 
-* ball8.py 
-* ball9.py 
+* ball2.py [Display a ball at the screen bottom]
+* ball3.py [Use left/right arrow key to control the ball]
+* ball4.py [Use space key to fire the ball]
+* ball5.py [Move the ball gradually on fire.]
+* ball6.py [put ball back when it moves out of the screen]
+* ball7.py [Display bird and background.]
+* ball8.py [Move the bird from right to left.]
+* ball9.py [Move the bird back to start position once it is hitted.]
 * ball10.py [Final version of ball game.]
 ---
 [Table of Contents](#table-of-contents)
 
 ## Loop
+![Loop-Continue-Break](./images/Loop.svg)
 * forLoop1.py
 * forBreak.py
 * forContinue.py
@@ -564,22 +575,8 @@ python -m turtledemo
 ---
 [Table of Contents](#table-of-contents)
 
-## If-Else
-./if-else
-* if-else1.py
-* if-else2.py  
-* if-else3.py  
-    - Infinit loop while True: > input("Continue? (y/n)")
-    - [Practice]:
-```output
-2, 4, 6, 8, 10
-1, 3, 5, 7, 9
-
-```
----
-[Table of Contents](#table-of-contents)
-
 ## Data Type
+![Three Basics](./images/ThreeBasics.png)
 * ![Data Type](./images/DataType.png)
 * python terminal
 * simpleDataType.py; simple datatype, number, string, boolean
@@ -663,12 +660,19 @@ Directive |Meaning |Example
 ---
 [Table of Contents](#table-of-contents)
 
-## Python playground and help document
-* python >>> help(print) (positional arguments, keyword arguments)
-* [Practice]: different print statements
-* hello/print.py
-* hello/print-string.py
-* [Practice]: Homework
+## If-Else Execution Control
+![If-Else](./images/IfElse.svg)
+./if-else
+* if-else1.py
+* if-else2.py  
+* if-else3.py  
+    - Infinit loop while True: > input("Continue? (y/n)")
+    - [Practice]:
+```output
+2, 4, 6, 8, 10
+1, 3, 5, 7, 9
+
+```
 ---
 [Table of Contents](#table-of-contents)
 

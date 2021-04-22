@@ -21,6 +21,25 @@ Search result: Download Visual Studio Code - Mac, Linux, Windows
 
 double click the desktop icon, start VSCode.
 
+* Install extentions
+    * Python Extention
+    * Markdown All Extention
+    * Markdown to PDF Extention
+    * PDF Preview Extention
+
+* Setup Virture Environment
+```Windows
+python -m venv env
+./env/bin/activate.bat
+```
+
+```mac
+python -m venv env
+source env/bin/activate
+```
+    - close terminal, open new terminal
+    - Command Pallete ... > Python Select Interpreter
+
 ## Install Python
 We need Python interpretor installed in order to execute Python program.
 

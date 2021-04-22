@@ -7,11 +7,11 @@
 * 星期六 3:00 PM Python-II (1/9/2021)
 
 * 星期日 11:00 AM Java Level1 (1)
+* 星期日 2:00 - 4:00 PM Terry 1-on-1 start from 2021/04/18
 
 ## Weekdays Classes
 * 星期一 06:00 PM Python-II 
 * 星期二 06:00 PM Java-II? 
-* 
 * 星期五 6:00PM AP Computer Cancled
 
 
