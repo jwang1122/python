@@ -13,24 +13,25 @@
 6. [Turtle](#turtle)
 7. [draw snow man](#draw-snow-man)
 8. [Data Type](#data-type)
-9. [If-Else](#if-else-execution-control)
-10. [Loop](#loop)
-11. [Function](#function)
-12. [Ball Game](#ball-game)
-13. [Simple Math](#simple-math)
-14. [Terminal Games](#terminal-games)
-15. [Dice](#dice)
-16. [Prime](#Prime)
-17. [File access](#file-access)
-18. [Plot](#plot)
-19. [App server](#app-server)
-20. [Mongo DB](#mongo-db)
-21. [ReactJS](#reactjs)
-22. [install npm](#install-npm)
-23. [OOP](#oop)
-24. [Python Class](#python-class)
-25. [Review](#review)
-26. Additional Topic: [quitetype](#install-and-using-quicktype); 
+9. [Operators](#operators)
+10. [If-Else](#if-else-execution-control)
+11. [Loop](#loop)
+12. [Function](#function)
+13. [Ball Game](#ball-game)
+14. [Simple Math](#simple-math)
+15. [Terminal Games](#terminal-games)
+16. [Dice](#dice)
+17. [Prime](#Prime)
+18. [File access](#file-access)
+19. [Plot](#plot)
+20. [App server](#app-server)
+21. [Mongo DB](#mongo-db)
+22. [ReactJS](#reactjs)
+23. [install npm](#install-npm)
+24. [OOP](#oop)
+25. [Python Class](#python-class)
+26. [Review](#review)
+27. Additional Topic: [quitetype](#install-and-using-quicktype); 
 
 ---
 [Table of Contents](#table-of-contents)
@@ -417,50 +418,6 @@ npm start
 ---
 [Table of Contents](#table-of-contents)
 
-## Function
-
-![Built in functions](./images/builtinFunctions.png)
-* define a function
-$$
-\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{arguments}\right) \underbrace {:}_{eol}
-$$
-* type following code in python playground.
-```py
-def f():
-    pass
-
-dir()
-
-f()
-
-f
-
-```
-
-$$
-area = \pi * r^2
-$$
-
-if you don't return value from function, you will get None when you assign the value to a variable.
-* math1.py (circle area, rectangule area, triangle area)
-* defineFunction.py (help(sum))
-* collision.py; use / to avoid collision, 
-* keywordArgs.py; positional arguments first
-* practice: define a function with keyword arguments 
-    - (createList.py parseString(str, sep=','))
-* defaultValue.py
-* annotation1.py; wonderful use of keyword arguments 
-* annotation2.py; long large function
-* ask.pys
-* attribute.py
-* optionalPositionalArgs.py
-* innerFunction0.py
-* innerFUnction1.py
-* [homework1](../function/homework1.md)
-* [homework2](../function/homework2.md)
----
-[Table of Contents](#table-of-contents)
-
 ## Prime
 * prime0.py > straight forward, define function
 * prime1.py > optimized by half
@@ -548,35 +505,8 @@ python -m turtledemo
 ---
 [Table of Contents](#table-of-contents)
 
-## Loop
-![Loop-Continue-Break](./images/Loop.svg)
-* forLoop1.py
-* forBreak.py
-* forContinue.py
-* forNested1.py; print right triangle
-* forNested2.py; print Equilatera triangle
-* forNested3.py；print diamond
-* forNested4.py; define function for n
-* forElse.py
-* for1.py; generator
-* for2.py; more generator
-* while.py
-    - [Practice]: 
-        ```output
-        We're on time 0
-        We're on time 1
-        We're on time 2
-        We're on time 3
-        ```
-    - loop string
-* whileElse.py
-* guessNumber.py
-    - assign homework to modify guessNumber.py for two players
----
-[Table of Contents](#table-of-contents)
-
 ## Data Type
-![Three Basics](./images/ThreeBasics.png)
+![Three Basics](./images/LanguageBasics.svg)
 * ![Data Type](./images/DataType.png)
 * python terminal
 * simpleDataType.py; simple datatype, number, string, boolean
@@ -660,12 +590,135 @@ Directive |Meaning |Example
 ---
 [Table of Contents](#table-of-contents)
 
+## Operators
+./operator
+
+* Arithmetic Operators (+, -, *, /, %, **, //)
+* 
+[Arithmetic Operator](../operator/mathOperator.py)
+
+|Operator|Name    |Example|
+|---     |---     |---    |
+| +      |Addition|a + b  
+| -      |Subtraction | a - b
+| *      |Multiplication | a * b
+| /      |Division       | a / b
+| %      |Modulus        | a % b
+| **     |Exponentiation | a ** b
+| //     |Floor division | a // b
+
+* Bitwise Operators
+
+[bitwise sample code](../operator/bitwise.py)
+
+|Operator|Name    |Description|
+|---     |---     |---    |
+|&       |AND     |Sets each bit to 1 if both bits are 1
+|\|      |OR      |Sets each bit to 1 if one of two bits is 1
+|^       |XOR     |Sets each bit to 1 if only one of two bits is 1
+|~       |NOT     |Inverts all the bits
+|<<      |Zero fill left shift|Shift left by pushing zeros in from the right and let the leftmost bits fall off
+|>>      |Signed right shift  |Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+
+* Assignment Operators
+
+[Assignment sample code](../operator/assignment.py)
+
+|Operator|Example |Same As|
+|---     |---     |---    |
+|=       |x = 5   |x=5
+|+=      |x += 3  |x=x+3
+|-=      |x -= 4  |x=x-4
+|*=      |x *= 5  |x=x*5
+|/=      |x /= 4  |x=x/4
+|%=      |x %= 5  |x=x%5
+|//=     |x //= 3 |x=x//3
+|**=     |x **= 2 |x=x**2
+|&=      |x &= 4  |x=x&4
+|\|=     |x \|= 3 |x=x\|3
+|^=      |x ^= 4  |x=x^4
+|>>=     |x >>=3  |x=x>>3
+|<<=     |x <<=2  |x=x<<2
+
+* Comparison Operators
+
+[Comparison Sample code](../operator/comparison.py)
+
+|Operator|Name        |Example|
+|---     |---         |---    |
+|==      |Equal       |a == b
+|!=      |Not Equal   |a != b
+|<       |Less than   |a < b
+|>       |Greater than|a > b
+|>=      |Greater than or equal to|a >= b
+|<=      |Less than or equal to   |a <= b
+  
+* Logical Operators
+
+[Logical Sample code](../operator/logical.py)
+
+|Operator|Description        |Example|
+|---     |---         |---    |
+|and     |Returns True if both statements are true      |a<5 and a>10
+|or      |Returns True if one of the statements is true |x < 5 or x < 4
+|not     |Reverse the returns                           |not (x<10)
+
+* Identity Operators
+
+[Identity Sample Code](../operator/identity.py)
+
+|Operator|Description        |Example|
+|---     |---         |---    |
+|is      |Returns True if both variables are the same object    |a is b
+|is not  |Returns True if both variables are not the same object|a is not b
+
+* Membership Operators
+
+[Membership Sample Code](../operator/membership.py)
+
+|Operator|Description        |Example|
+|---     |---         |---    |
+|in      |	Returns True if a sequence with the specified value is present in the object|a in y
+|not in  |Returns True if a sequence with the specified value is not present in the object|x not in y
+
+* Ternary Operators
+
+[Ternary Sample Code](../operator/ternary.py)
+
+if-else Statement structure:
+```py
+value_if_true if condition else value_if_false
+```
+Statement example:
+```py
+a = 5
+s = "Hello" if a==5 else "A is not 5."
+```
+logical Statement:
+
+```py
+a=5
+b=11
+min1 = a<b and a or b
+print(min1)
+```
+tuple statement
+```py
+min1 = (b, a)[a < b]
+```
+
+
+---
+[Table of Contents](#table-of-contents)
+
 ## If-Else Execution Control
 ![If-Else](./images/IfElse.svg)
+
 ./if-else
-* if-else1.py
-* if-else2.py  
-* if-else3.py  
+* [Sample 1](../if-else/if-else1.py)
+* [Sample 2](../if-else/if-else2.py) 
+* [Sample 3](../if-else/if-else3.py)  
     - Infinit loop while True: > input("Continue? (y/n)")
     - [Practice]:
 ```output
@@ -673,6 +726,77 @@ Directive |Meaning |Example
 1, 3, 5, 7, 9
 
 ```
+---
+[Table of Contents](#table-of-contents)
+
+## Loop
+![Loop-Continue-Break](./images/Loop.svg)
+* forLoop1.py
+* forBreak.py
+* forContinue.py
+* forNested1.py; print right triangle
+* forNested2.py; print Equilatera triangle
+* forNested3.py；print diamond
+* forNested4.py; define function for n
+* forElse.py
+* for1.py; generator
+* for2.py; more generator
+* while.py
+    - [Practice]: 
+        ```output
+        We're on time 0
+        We're on time 1
+        We're on time 2
+        We're on time 3
+        ```
+    - loop string
+* whileElse.py
+* guessNumber.py
+    - assign homework to modify guessNumber.py for two players
+---
+[Table of Contents](#table-of-contents)
+
+## Function
+
+![Built in functions](./images/builtinFunctions.png)
+* define a function
+$$
+\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{arguments}\right) \underbrace {:}_{eol}
+$$
+* type following code in python playground.
+```py
+def f():
+    pass
+
+dir()
+
+f()
+
+f
+
+```
+
+$$
+area = \pi * r^2
+$$
+
+if you don't return value from function, you will get None when you assign the value to a variable.
+* math1.py (circle area, rectangule area, triangle area)
+* defineFunction.py (help(sum))
+* collision.py; use / to avoid collision, 
+* keywordArgs.py; positional arguments first
+* practice: define a function with keyword arguments 
+    - (createList.py parseString(str, sep=','))
+* defaultValue.py
+* annotation1.py; wonderful use of keyword arguments 
+* annotation2.py; long large function
+* ask.pys
+* attribute.py
+* optionalPositionalArgs.py
+* innerFunction0.py
+* innerFUnction1.py
+* [homework1](../function/homework1.md)
+* [homework2](../function/homework2.md)
 ---
 [Table of Contents](#table-of-contents)
 

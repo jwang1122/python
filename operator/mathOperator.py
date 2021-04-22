@@ -5,8 +5,8 @@ d = a - b
 e = a * b
 f = a / b
 
-print("08:", b % a)
-print("09:", 2**4)
+print("08:", b % a) # modulus
+print("09:", 2**4) # exponential
 # Floor Division
 print("11:", 9 // 2)  # 4
 print("12:", 11 // 3)  # 3
