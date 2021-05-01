@@ -14,3 +14,5 @@ b = np.array([[100],[32]])
 print(b)
 x = la.solve(a, b)
 print(x)
+
+there are 14 checken and 18 rabittes.

@@ -441,6 +441,10 @@ npm start
 * covid-19/covid0.py
 * covid-19/covid1.py
 * covid-19/covid2.py
+
+[Matplotlib Exercises and Solution](https://www.w3resource.com/graphics/matplotlib/basic/index.php)
+
+
 ---
 [Table of Contents](#table-of-contents)
     
@@ -505,8 +509,9 @@ python -m turtledemo
 ---
 [Table of Contents](#table-of-contents)
 
-## Data Type
 ![Three Basics](./images/LanguageBasics.svg)
+
+## Data Type
 * ![Data Type](./images/DataType.png)
 * python terminal
 * simpleDataType.py; simple datatype, number, string, boolean
@@ -765,6 +770,9 @@ $$
 $$
 * type following code in python playground.
 ```py
+def circleArea(radius):
+    return 3.141593 * radius**2
+
 def f():
     pass
 

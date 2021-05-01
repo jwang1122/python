@@ -58,6 +58,9 @@ print(bool(""))
 x = str(True)
 print(type(x), x)
 
+x = input("Please enter a number: ")
+x = int(x)
+
 x = int(True)
 print(type(x), x)
 x = int(False)

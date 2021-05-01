@@ -9,6 +9,7 @@ print(f'{inspect.getframeinfo(cf).lineno}: {math.sqrt(64)}')
 
 x = math.ceil(1.4)
 y = math.floor(1.4)
+z = math.floor(-1.4)
 
 print(f'{inspect.getframeinfo(cf).lineno}: {x}')
 print(f'{inspect.getframeinfo(cf).lineno}: {y}')
