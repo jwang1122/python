@@ -16,13 +16,17 @@ dir(t)
 l = []
 print(type(l))
 
+l = list()
+print(len(l))
+
 l = [1,2,3,4,5]
 print(l)
 
 l=list(range(10))
 print(l)
 
-l = list(filter(lambda x: x%2==0, range(20)))
+f = lambda x: x%2==0
+l = list(filter(f, range(20)))
 print(l)
 
 squares = []
@@ -95,7 +99,7 @@ cards = [(face, suit) for suit in suits for face in faces]
 print(cards)
 print(len(cards))
 
-a = (1,2,3)
-b = (4,5,6)
+a = [1,2,3]
+b = [4,5,6]
 c = list(zip(a, b))
 print(c)

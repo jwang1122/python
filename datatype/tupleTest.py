@@ -6,6 +6,12 @@ t = (1,4,9,16,25)
 dir(l)
 dir(t)
 """
+t1 = ()
+print(type(t1))
+
+t1 = tuple()
+print(len(t1))
+
 # create a tuple
 tuplex = (4, 6, 2, 8, 3, 1)
 print(tuplex)
