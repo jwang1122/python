@@ -1,13 +1,9 @@
 # Python level-I
 
-**开课前要把所有用到的程序运行一遍**
-
 ## Table of Contents
-√ 
-
 01. [Familiar with your keyboard](#familiar-with-your-keyboard)
-02. [Getting start](#getting-start)
-03. [Using Markdown](#using-markdown)
+02. [Using Markdown](#using-markdown)
+03. [Getting start](#getting-start)
 04. [Python playground](#python-playground-and-help-document)
 05. [print](#print)
 06. [Turtle](#turtle)
@@ -19,12 +15,12 @@
 12. [Function](#function)
 13. [Ball Game](#ball-game)
 14. [Simple Math](#simple-math)
-15. [Terminal Games](#terminal-games)
-16. [Dice](#dice)
-17. [Prime](#Prime)
+15. [Dice](#dice)
+16. [Prime](#Prime)
+17. [Terminal Games](#terminal-games)
 18. [File access](#file-access)
-19. [Python Class](#python-class)
-20. [Plot](#plot)
+19. [Plot](#plot)
+20. [Python Class](#python-class)
 21. [App server](#app-server)
 22. [Mongo DB](#mongo-db)
 23. [ReactJS](#reactjs)
@@ -32,6 +28,7 @@
 25. [OOP](#oop)
 26. [Review](#review)
 27. Additional Topic: [quitetype](#install-and-using-quicktype); 
+28. [Sqlite](#sqlite)
 
 ---
 [Table of Contents](#table-of-contents)
@@ -188,290 +185,6 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-
-## Dice
-* dice.py; introduce random module, dice/dice1.py
-* dice2.py; figure out possibility, understand how computer do things
----
-[Table of Contents](#table-of-contents)
-
-## Simple math
-./mymath
-
-![Built-in Functions](./images/builtinFunctions.png)
-* math0.py/ built-in functions, abs(), pow(), sum(), max(), min(), round()
-
-Square Root
-$$
-x=\sqrt x^2=x ^ \frac 1 2
-$$
-$$
-4=\sqrt {16}=16 ^ \frac 1 2
-$$
-* [math1.py](../mymath/math1.py); functions defined in math module, sqrt(), ceil(), floor(), sin(), cos()
-* [math2.py](../mymath/math2.py)
-* [math2.py](../mymath/math10.py)
-* [solution.py](../mymath/solution.py)
-
-$$
-A=\pi r^2
-$$
-, where **A** is area of a circle, **r** is radius of the circle.
-* circle.py
-
-![赶集](./images/赶集.jpg)
-
-几个老头儿去赶集，上街买了一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
-* linear1.py; 老头儿们买梨。
-  
-![Chicken & Rabbits](images/chickenRabbits.gif)
-* linear2.py
-* linear3.py
-* linear4.py
-* linear5.py
-* perfactNumber1.py
-* Volumn of Sphere
-$$
-V = \frac 4 3 \pi  r^3
-$$
-
-* Volumn of Cylinder
-$$
-V = r^2 \pi \cdot h
-$$
-
-* Triangle area
-  $$
-  area = \frac 1 2 (b \cdot h)
-  $$
-
-$$\cdots  $$
-
-* Triangular Number
-  $$
-  T_n = \sum_{k=1}^n k
-  $$
-
-  $T(n)=\frac {n(n+1)} 2$
-
-![Triangular Number](./images/triangularNumber.png)
-* solution1.py
-* circle.py
-* prime1.py; ./prime/prime1.py
-* prime1.py ~ prim7.py; treat computer as humanbeen, do it right
----
-[Table of Contents](#table-of-contents)
-
-## OOP  
-![OOP concept](./images/classDefine.png)
-- class book, __init__, __repr__
-- class student.py constructor, __repr__ abstraction
-![class abstract](./images/classAbstraction.png)
-- user.py, User, SubUser inheritence testUser
-- person, teacher, student inheritence
-![Person<Student](./images/student.png)
-[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
-[Python Classes](https://docs.python.org/3/tutorial/classes.html)
---- 
-[Table of Contents](#table-of-contents)
-
-## Python class
-```py
-class User:
-    pass
-```
-* assign fields to an instance of User
-
-[Python Classes](https://www.w3schools.com/python/python_classes.asp)
- 
-* person.py 
-* bookdb.py
-* create a class snowman.py > drawSnowMan.py > shapes.py
-* class0.py - pass class, instance and class level attributes
-* create a class snowman.py > drawSnowMan.py > shapes.py
-* class1.py > dynamically assign instance attribute and access it from outside function
-* class2.py > define internal function
-* class3.py > __init__(self) and internal function
-* class4.py > use keyword argument in __init__(self)
-* class5.py > understand __str__, __repr__, and __len__()
-* class6.py > protected attribute and private attribute
-* class7.py > getter/setter
-* class8.py; inherite from Enum
-* class9.py; difference between __init__ and __new__
-* class10.py; override __new__() constructor
-* class11.py; issue caused by class level variables
-* class12.py; different object with different attributes
-* class13.py; class level variables
-* class14.py; define internal function by outside function, the benifit is use this outside function by more than one class.
-* class15.py; function call function
-* class16.py; multiple inheritance
-* class17.py; reverse given string
-* class18.py; define Website class
-* 
-* personInheritance.py > inheritance
-* personTest.py > understand class name <module_name>.<class_name>
-* √ bookdb.py > used in app4.py
-* polygon.py; ask student implement __repr__(self)
-* student.py; using class level method
-*
----
-[Table of Contents](#table-of-contents)
-
-## install npm
-[Download and install node](https://nodejs.org/en/download/)
-![Download image](./images/nodeDownload.png)
-    - windows File: node-v12.18.3-x64.msi
-    - macos File: 
-* √ Install NodeJS & npm on windows 10
-[nodejs.org/en/](https://nodejs.org/en/)
-![install page](./images/nodeInstall.png)
-Google Search: install reactjs on windows 10
-[Step by step](https://www.liquidweb.com/kb/install-react-js-windows/) option 2
-```
-node --version
-npm --version
-```
-* create react js application
-```
-npm install -g create-react-app
-
-create-react-app --version
-
-create-react-app reactproject2
-```
-
-* Install ReactJs on MacOS
-
-```
-sudo npx create-react-app wang-app
-sudo chown -R wangqianjiang wang-app
-cd wang-app
-npm start
-```
----
-[Table of Contents](#table-of-contents)
-
-## ReactJS
-* web application vs. window application
-open new VSCode window > python-gui (demo on window's machine.)
-```
-python calculator2.py
-```
-
-![Python Web Application](images/PythonWebApp.png)
-* get reactjs project from github
-```
-git clone https://github.com/jwang1122/reactjs.git
-```
-* start the application
-open new VSCode > ~/workspace/reactjs
-
-```
-cd server
-python app.py
-cd ../book-app
-npm start
-```
----
-[Table of Contents](#table-of-contents)
-
-## App server
-* URL: Uniform Resource Locator
-    - https://www.google.com
-    - Protocal: http, https, ftp ...
-    - Host: www.google.com
-    - Port: number followed by :, default 80 for http, 443 for https
-    - Path: 
-    - Querystring: text after ?, key=value pair separated by &
-    - Fragment: text after #(hashtag), jump to certain section in the document 
-
-* app1.py > ping-pong
-* app2.py > <html>
-* app3.py > display hardcoded books
-* app4.py > display books from mongodb, postman > test service
-* getJson.py > load books from given website url
-
-* bookdb.py
-* Install Postman
-    [Download Website](https://www.postman.com/downloads/)
-    ![First time run Postman](images/postman.png)
-* start app4.py, test POST, UPDATE, DELETE methods
----
-[Table of Contents](#table-of-contents)
-
-## Mongo DB
-
-[Install MongoDB](MongoDB.md)
-* NoSQL - MongoDB -> 
-    - [collection](images/collections.png)
-* SQL: Structured Query Language
-[What is SQL?](https://www.w3schools.com/sql/sql_intro.asp)
-
-* create0.py > create book and save it to mongodb
-* create1.py > create more than one document at once
-* retrieve0.py > retrieve one book from mongodb
-* retrieve1.py > retrieve all books from mongodb
-* retrieve2.py > retrieve some books based on condition from mongodb
-* update.py > update one document 
-* delete.py > delete one document
-* bookdb.py > create a class include all CRUD process.
----
-[Table of Contents](#table-of-contents)
-
-## Prime
-* prime0.py > straight forward, define function
-* prime1.py > optimized by half
-* prime2.py > define function isPrime()
-* prime3.py > calculate range(40-50)
-* prime4.py > define function rangePrime(x,y)
----
-[Table of Contents](#table-of-contents)
-
-## plot
-* plot0.py
-* plot1.py
-* plot2.py
-* plot3.py
-* plot-student-csv.py
-* [Practice]: plot sin(x) and cos(x) in the same chart > plot4.py
-* China-vs-USA.py
-    - [Online data](https://open-covid-19.github.io/data/data.csv)
-    - [Online data](https://open-covid-19.github.io/data/data_minimal.csv)
-    - [Homework] Choose different two states, plot the data
-* covid-19/covid0.py
-* covid-19/covid1.py
-* covid-19/covid2.py
-
-[Matplotlib Exercises and Solution](https://www.w3resource.com/graphics/matplotlib/basic/index.php)
-
-
----
-[Table of Contents](#table-of-contents)
-    
-## Terminal Games
-* Check homework
-* roll dice
-    - dice.py
-    - [Practice]: add total value of 2 dices
-    - [Practice]: circle.py > circle_area(r)
-* guess number
-    - guessNumber.py
-* ball game
-    ball10.py
----
-[Table of Contents](#table-of-contents)
-
-## draw snow man
-* ![Snow Couple](./images/snowCouple.png)
-* demo draw_snowman.py
-* shapes.py
-* testShapes.py
-* drawSun.py; add snow man in the picture.
-* homework> draw snowcouple
----
-[Table of Contents](#table-of-contents)
-
-
 ## turtle
 
 ```
@@ -495,23 +208,21 @@ python -m turtledemo
 ---
 [Table of Contents](#table-of-contents)
 
-## ball game
-* ball1.py [Display a ball at center of the screen.]
-* ball2.py [Display a ball at the screen bottom]
-* ball3.py [Use left/right arrow key to control the ball]
-* ball4.py [Use space key to fire the ball]
-* ball5.py [Move the ball gradually on fire.]
-* ball6.py [put ball back when it moves out of the screen]
-* ball7.py [Display bird and background.]
-* ball8.py [Move the bird from right to left.]
-* ball9.py [Move the bird back to start position once it is hitted.]
-* ball10.py [Final version of ball game.]
+## draw snow man
+* ![Snow Couple](./images/snowCouple.png)
+* demo draw_snowman.py
+* shapes.py
+* testShapes.py
+* drawSun.py; add snow man in the picture.
+* homework> draw snowcouple
 ---
 [Table of Contents](#table-of-contents)
 
+## Data Type
+
 ![Three Basics](./images/LanguageBasics.svg)
 
-## Data Type
+
 * ![Data Type](./images/DataType.png)
 * python terminal
 * simpleDataType.py; simple datatype, number, string, boolean
@@ -808,6 +519,102 @@ if you don't return value from function, you will get None when you assign the v
 ---
 [Table of Contents](#table-of-contents)
 
+## ball game
+* ball1.py [Display a ball at center of the screen.]
+* ball2.py [Display a ball at the screen bottom]
+* ball3.py [Use left/right arrow key to control the ball]
+* ball4.py [Use space key to fire the ball]
+* ball5.py [Move the ball gradually on fire.]
+* ball6.py [put ball back when it moves out of the screen]
+* ball7.py [Display bird and background.]
+* ball8.py [Move the bird from right to left.]
+* ball9.py [Move the bird back to start position once it is hitted.]
+* ball10.py [Final version of ball game.]
+---
+[Table of Contents](#table-of-contents)
+
+## Simple math
+./mymath
+
+![Built-in Functions](./images/builtinFunctions.png)
+* math0.py/ built-in functions, abs(), pow(), sum(), max(), min(), round()
+
+Square Root
+$$
+x=\sqrt x^2=x ^ \frac 1 2
+$$
+$$
+4=\sqrt {16}=16 ^ \frac 1 2
+$$
+* [math1.py](../mymath/math1.py); functions defined in math module, sqrt(), ceil(), floor(), sin(), cos()
+* [math2.py](../mymath/math2.py)
+* [math2.py](../mymath/math10.py)
+* [solution.py](../mymath/solution.py)
+
+$$
+A=\pi r^2
+$$
+, where **A** is area of a circle, **r** is radius of the circle.
+* circle.py
+
+![赶集](./images/赶集.jpg)
+
+几个老头儿去赶集，上街买了一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
+* linear1.py; 老头儿们买梨。
+  
+![Chicken & Rabbits](images/chickenRabbits.gif)
+* linear2.py
+* linear3.py
+* linear4.py
+* linear5.py
+* perfactNumber1.py
+* Volumn of Sphere
+$$
+V = \frac 4 3 \pi  r^3
+$$
+
+* Volumn of Cylinder
+$$
+V = r^2 \pi \cdot h
+$$
+
+* Triangle area
+  $$
+  area = \frac 1 2 (b \cdot h)
+  $$
+
+$$\cdots  $$
+
+* Triangular Number
+  $$
+  T_n = \sum_{k=1}^n k
+  $$
+
+  $T(n)=\frac {n(n+1)} 2$
+
+![Triangular Number](./images/triangularNumber.png)
+* solution1.py
+* circle.py
+* prime1.py; ./prime/prime1.py
+* prime1.py ~ prim7.py; treat computer as humanbeen, do it right
+---
+[Table of Contents](#table-of-contents)
+
+## Dice
+* dice.py; introduce random module, dice/dice1.py
+* dice2.py; figure out possibility, understand how computer do things
+---
+[Table of Contents](#table-of-contents)
+
+## Prime
+* prime0.py > straight forward, define function
+* prime1.py > optimized by half
+* prime2.py > define function isPrime()
+* prime3.py > calculate range(40-50)
+* prime4.py > define function rangePrime(x,y)
+---
+[Table of Contents](#table-of-contents)
+
 ## File access
 
 Text Files | Binary Files
@@ -827,6 +634,200 @@ Plain Text, XML, HTML, JSON, Source Code, CSV |Compiled code, App data, Media fi
 * csvReader.py
 ---
 [Table of Contents](#table-of-contents)
+
+## plot
+* plot0.py
+* plot1.py
+* plot2.py
+* plot3.py
+* plot-student-csv.py
+* [Practice]: plot sin(x) and cos(x) in the same chart > plot4.py
+* China-vs-USA.py
+    - [Online data](https://open-covid-19.github.io/data/data.csv)
+    - [Online data](https://open-covid-19.github.io/data/data_minimal.csv)
+    - [Homework] Choose different two states, plot the data
+* covid-19/covid0.py
+* covid-19/covid1.py
+* covid-19/covid2.py
+
+[Matplotlib Exercises and Solution](https://www.w3resource.com/graphics/matplotlib/basic/index.php)
+
+---
+[Table of Contents](#table-of-contents)
+    
+## Python class
+```py
+class User:
+    pass
+```
+* assign fields to an instance of User
+
+[Python Classes](https://www.w3schools.com/python/python_classes.asp)
+ 
+* person.py 
+* bookdb.py
+* create a class snowman.py > drawSnowMan.py > shapes.py
+* [x] class0.py - pass class, instance and class level attributes
+* [x] create a class snowman.py > drawSnowMan.py > shapes.py
+* [x] class1.py > dynamically assign instance attribute and access it from outside function
+* [x] class2.py > define internal function
+* [x] class3.py > __init__(self) and internal function
+* [x] class4.py > use keyword argument in __init__(self)
+* [x] class5.py > understand __str__, __repr__, and __len__()
+* [ ] class6.py > protected attribute and private attribute
+* [ ] class7.py > getter/setter
+* [ ] class8.py; inherite from Enum
+* [ ] class9.py; difference between __init__ and __new__
+* [ ] class10.py; override __new__() constructor
+* [ ] class11.py; issue caused by class level variables
+* [ ] class12.py; different object with different attributes
+* [ ] class13.py; class level variables
+* [ ] class14.py; define internal function by outside function, the benifit is use this outside function by more than one class.
+* [ ] class15.py; function call function
+* [ ] class16.py; multiple inheritance
+* [ ] class17.py; reverse given string
+* [ ] class18.py; define Website class
+ 
+* [ ] personInheritance.py > inheritance
+* [ ] personTest.py > understand class name <module_name>.<class_name>
+* [ ] bookdb.py > used in app4.py
+* [ ] polygon.py; ask student implement __repr__(self)
+* [ ] student.py; using class level method
+* [ ] snowman.py & drawSnowMan.py; draw snowman with class
+---
+[Table of Contents](#table-of-contents)
+
+## OOP  
+![OOP concept](./images/classDefine.png)
+- class book, __init__, __repr__
+- class student.py constructor, __repr__ abstraction
+![class abstract](./images/classAbstraction.png)
+- user.py, User, SubUser inheritence testUser
+- person, teacher, student inheritence
+![Person<Student](./images/student.png)
+[YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
+[Python Classes](https://docs.python.org/3/tutorial/classes.html)
+--- 
+[Table of Contents](#table-of-contents)
+
+## install npm
+[Download and install node](https://nodejs.org/en/download/)
+![Download image](./images/nodeDownload.png)
+    - windows File: node-v12.18.3-x64.msi
+    - macos File: 
+* Install NodeJS & npm on windows 10
+[nodejs.org/en/](https://nodejs.org/en/)
+
+![install page](./images/nodeInstall.png)
+
+Google Search: install reactjs on windows 10
+
+[Step by step](https://www.liquidweb.com/kb/install-react-js-windows/) option 2
+
+```
+node --version
+npm --version
+```
+* create react js application
+```
+npm install -g create-react-app
+
+create-react-app --version
+
+create-react-app reactproject2
+```
+
+* Install ReactJs on MacOS
+
+```
+sudo npx create-react-app wang-app
+sudo chown -R wangqianjiang wang-app
+cd wang-app
+npm start
+```
+---
+[Table of Contents](#table-of-contents)
+
+## ReactJS
+* web application vs. window application
+open new VSCode window > python-gui (demo on window's machine.)
+```
+python calculator2.py
+```
+
+![Python Web Application](images/PythonWebApp.png)
+* get reactjs project from github
+```
+git clone https://github.com/jwang1122/reactjs.git
+```
+* start the application
+open new VSCode > ~/workspace/reactjs
+
+```
+cd server
+python app.py
+cd ../book-app
+npm start
+```
+---
+[Table of Contents](#table-of-contents)
+
+## App server
+* URL: Uniform Resource Locator
+    - https://www.google.com
+    - Protocal: http, https, ftp ...
+    - Host: www.google.com
+    - Port: number followed by :, default 80 for http, 443 for https
+    - Path: 
+    - Querystring: text after ?, key=value pair separated by &
+    - Fragment: text after #(hashtag), jump to certain section in the document 
+
+* app1.py > ping-pong
+* app2.py > <html>
+* app3.py > display hardcoded books
+* app4.py > display books from mongodb, postman > test service
+* getJson.py > load books from given website url
+
+* bookdb.py
+* Install Postman
+    [Download Website](https://www.postman.com/downloads/)
+    ![First time run Postman](images/postman.png)
+* start app4.py, test POST, UPDATE, DELETE methods
+---
+[Table of Contents](#table-of-contents)
+
+## Mongo DB
+
+[Install MongoDB](MongoDB.md)
+* NoSQL - MongoDB -> 
+    - [collection](images/collections.png)
+* SQL: Structured Query Language
+[What is SQL?](https://www.w3schools.com/sql/sql_intro.asp)
+
+* create0.py > create book and save it to mongodb
+* create1.py > create more than one document at once
+* retrieve0.py > retrieve one book from mongodb
+* retrieve1.py > retrieve all books from mongodb
+* retrieve2.py > retrieve some books based on condition from mongodb
+* update.py > update one document 
+* delete.py > delete one document
+* bookdb.py > create a class include all CRUD process.
+---
+[Table of Contents](#table-of-contents)
+
+## Terminal Games
+* Check homework
+* roll dice
+    - dice.py
+    - [Practice]: add total value of 2 dices
+    - [Practice]: circle.py > circle_area(r)
+* guess number
+    - guessNumber.py
+* ball game
+    ball10.py
+---
+[Table of Contents](#table-of-contents)
+
 
 ## Review
 * Markdown document

@@ -16,7 +16,7 @@ class A:
 
 if __name__ == '__main__':
     a = A()
-    print(a)
-    print(repr(a))
-    print(str(a))
-    print(len(a))
+    print(a) # use __str__ for readable
+    print(repr(a)) # use __repr__ for unambiguous
+    print(str(a)) # call __str__()
+    print(len(a)) # call __len__()
