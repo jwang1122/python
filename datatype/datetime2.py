@@ -14,3 +14,18 @@ today = datetime.datetime.today()
 delta = datetime.timedelta(hours=100)
 after100hours = today + delta
 print(after100hours)
+
+delta = datetime.timedelta(weeks=16)
+pythonBegin = datetime.date(2021,4,18)
+print(f"Python one-on-one start at: {pythonBegin}")
+pythonEnd = pythonBegin + delta
+print(f"one-on-one end at: {pythonEnd}")
+
+
+pythonBegin = datetime.date(2021,1,19)
+print(f"Python weekend class start at {pythonBegin}")
+today = datetime.date.today()
+print(f"today is {today}")
+diff = today - pythonBegin
+print(diff.days, " days passed.")
+print(int(diff.days/7) + 1, " weeks passed.")

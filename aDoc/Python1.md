@@ -8,12 +8,12 @@
   - [Getting start](#getting-start)
   - [playground and help document](#playground-and-help-document)
   - [print](#print)
-  - [turtle](#turtle)
-  - [draw snow man](#draw-snow-man)
   - [Data Type](#data-type)
   - [Operators](#operators)
   - [If-Else Execution Control](#if-else-execution-control)
   - [Loop](#loop)
+  - [turtle](#turtle)
+  - [draw snow man](#draw-snow-man)
   - [Function](#function)
   - [ball game](#ball-game)
   - [Simple math](#simple-math)
@@ -190,44 +190,9 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## turtle
-
-```
-python -m turtledemo
-```
-* turtle1.py; display turtle pen 
-* turtle2.py; basic turtle move 
-* turtle3.py; mouse click on turtle 
-* turtle4.py; random move on click 
-* turtle5.py; avoid turtle move out of window
-* turtle6.py; avoid turtle move out of window
-* turtle7.py; display card on turtle screen
-* turtle8.py; draw star
-* turtle9.py; draw half circle
-* shapes.py; triangle, rectangle, line, circle
-* testShapes.py; test all functions defined in shapes.py
-* drawSun.py; drawing a sun and house by using shapes.py
-    - assign homework draw snow couple
-
-    ![Snow Couple](./images/snowCouple.png)
----
-[Table of Contents](#table-of-contents)
-
-## draw snow man
-* ![Snow Couple](./images/snowCouple.png)
-* demo draw_snowman.py
-* shapes.py
-* testShapes.py
-* drawSun.py; add snow man in the picture.
-* homework> draw snowcouple
-
----
-[Table of Contents](#table-of-contents)
-
 ## Data Type
 
 ![Three Basics](./images/LanguageBasics.svg)
-
 
 * ![Data Type](./images/DataType.png)
 * python terminal
@@ -273,38 +238,40 @@ python -m turtledemo
 [Basic date and time types](https://docs.python.org/3/library/datetime.html)
 
 * datetime1.py; other data type (datetime.date)
-* datetime2.py;
+* datetime2.py; difference between two dates
 * strftime() and strptime() Format Codes
+* datetime3.py; convert string to date
+* datetime4.py; rocket launch date time.
 
-| Directive | Meaning                                                                                                                                                                          | Example                                                                      |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| %a        | Weekday as locale’s abbreviated name.                                                                                                                                            | Sun, Mon, …, Sat (en_US);So, Mo, …, Sa (de_DE)                               |
-| %A        | Weekday as locale’s full name.                                                                                                                                                   | Sunday, Monday, …, Saturday (en_US); Sonntag, Montag, …, Samstag (de_DE)     |
-| %w        | Weekday as a decimal number, where 0 is Sunday and 6 is Saturday.                                                                                                                | 0, 1, …, 6                                                                   |
-| %d        | Day of the month as a zero-padded decimal number.                                                                                                                                | 01, 02, …, 31                                                                |
-| %b        | Month as locale’s abbreviated name.                                                                                                                                              | Jan, Feb, …, Dec (en_US); Jan, Feb, …, Dez (de_DE)                           |
-| %B        | Month as locale’s full name.                                                                                                                                                     | January, February, …, December (en_US); Januar, Februar, …, Dezember (de_DE) |
-| %m        | Month as a zero-padded decimal number.                                                                                                                                           | 01, 02, …, 12                                                                |
-| %y        | Year without century as a zero-padded decimal number.                                                                                                                            | 00, 01, …, 99                                                                |
-| %Y        | Year with century as a decimal number.                                                                                                                                           | 0001, 0002, …, 2013, 2014, …, 9998, 9999                                     |
-| %H        | Hour (24-hour clock) as a zero-padded decimal number.                                                                                                                            | 00, 01, …, 23                                                                |
-| %I        | Hour (12-hour clock) as a zero-padded decimal number.                                                                                                                            | 01, 02, …, 12                                                                |
-| %p        | Locale’s equivalent of either AM or PM.                                                                                                                                          | AM, PM (en_US); am, pm (de_DE)                                               |
-| %M        | Minute as a zero-padded decimal number.                                                                                                                                          | 00, 01, …, 59                                                                |
-| %S        | Second as a zero-padded decimal number.                                                                                                                                          | 00, 01, …, 59                                                                |
-| %f        | Microsecond as a decimal number, zero-padded on the left.                                                                                                                        | 000000, 000001, …, 999999                                                    |
-| %z        | UTC offset in the form ±HHMM[SS[.ffffff]] (empty string if the object is naive).                                                                                                 | (empty), +0000, -0400, +1030, +063415, -030712.345216                        |
-| %Z        | Time zone name (empty string if the object is naive).                                                                                                                            | (empty), UTC, GMT                                                            |
-| %j        | Day of the year as a zero-padded decimal number.                                                                                                                                 | 001, 002, …, 366                                                             |
-| %U        | Week number of the year (Sunday as the first day of the week) as a zero padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0. | 00, 01, …, 53                                                                |
-| %W        | Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0.             | 00, 01, …, 53                                                                |
-| %c        | Locale’s appropriate date and time representation.                                                                                                                               | Tue Aug 16 21:30:00 1988 (en_US); Di 16 Aug 21:30:00 1988 (de_DE)            |
-| %x        | Locale’s appropriate date representation.                                                                                                                                        | 08/16/88 (None); 08/16/1988 (en_US); 16.08.1988 (de_DE)                      |
-| %X        | Locale’s appropriate time representation.                                                                                                                                        | 21:30:00 (en_US); 21:30:00 (de_DE)                                           |
-| %%        | A literal '%' character.                                                                                                                                                         | %                                                                            |
-| %G        | ISO 8601 year with century representing the year that contains the greater part of the ISO week (%V).                                                                            | 0001, 0002, …, 2013, 2014, …, 9998, 9999                                     |
-| %u        | ISO 8601 weekday as a decimal number where 1 is Monday.                                                                                                                          | 1, 2, …, 7                                                                   |
-| %V        | ISO 8601 week as a decimal number with Monday as the first day of the week. Week 01 is the week containing Jan 4.                                                                | 01, 02, …, 53                                                                |
+| Directive | Meaning | Example |
+| --------- |-----    |-------- |
+| %a        | Weekday as locale’s abbreviated name.| Sun, Mon, …, Sat (en_US);So, Mo, …, Sa (de_DE)                               |
+| %A        | Weekday as locale’s full name.| Sunday, Monday, …, Saturday (en_US); Sonntag, Montag, …, Samstag (de_DE)     |
+| %w        | Weekday as a decimal number, where 0 is Sunday and 6 is Saturday.          | 0, 1, …,6 |
+| %d        | Day of the month as a zero-padded decimal number. | 01, 02, …, 31 |
+| %b        | Month as locale’s abbreviated name. | Jan, Feb, …, Dec (en_US); Jan, Feb, …, Dez (de_DE)|
+| %B        | Month as locale’s full name.| January, February, …, December (en_US); Januar, Februar, …, Dezember (de_DE) |
+| %m        | Month as a zero-padded decimal number.| 01, 02, …, 12 |
+| %y        | Year without century as a zero-padded decimal number.| 00, 01, …, 99|
+| %Y        | Year with century as a decimal number. | 0001, 0002, …, 2013, 2014, …, 9998, 9999|
+| %H        | Hour (24-hour clock) as a zero-padded decimal number. | 00, 01, …, 23|
+| %I        | Hour (12-hour clock) as a zero-padded decimal number.| 01, 02, …, 12|
+| %p        | Locale’s equivalent of either AM or PM.| AM, PM (en_US); am, pm (de_DE)  |
+| %M        | Minute as a zero-padded decimal number.| 00, 01, …, 59|
+| %S        | Second as a zero-padded decimal number.| 00, 01, …, 59|
+| %f        | Microsecond as a decimal number, zero-padded on the left.| 000000, 000001, …, 999999|
+| %z        | UTC offset in the form ±HHMM[SS[.ffffff]] (empty string if the object is naive)| (empty), +0000, -0400, +1030, +063415, -030712.345216 |
+| %Z        | Time zone name (empty string if the object is naive).| (empty), UTC, GMT|
+| %j        | Day of the year as a zero-padded decimal number. | 001, 002, …, 366|
+| %U        | Week number of the year (Sunday as the first day of the week) as a zero padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0. | 00, 01, …, 53|
+| %W        | Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0.| 00, 01, …, 53|
+| %c        | Locale’s appropriate date and time representation.| Tue Aug 16 21:30:00 1988 (en_US); Di 16 Aug 21:30:00 1988 (de_DE) |
+| %x        | Locale’s appropriate date representation. | 08/16/88 (None); 08/16/1988 (en_US); 16.08.1988 (de_DE)|
+| %X        | Locale’s appropriate time representation. | 21:30:00 (en_US); 21:30:00 (de_DE) |
+| %%        | A literal '%' character.|  |
+| %G        | ISO 8601 year with century representing the year that contains the greater part of the ISO week (%V)| 0001, 0002, …, 2013, 2014, …, 9998, 9999|
+| %u        | ISO 8601 weekday as a decimal number where 1 is Monday.| 1, 2, …, 7  |
+| %V        | ISO 8601 week as a decimal number with Monday as the first day of the week. Week 01 is the week containing Jan 4.| 01, 02, …, 53 |
 
 * datetime3.py; convert string to datetime by strptime(string, format)
 * datetime4.py; differences between datetime, date, time
@@ -333,8 +300,8 @@ python -m turtledemo
 
 [bitwise sample code](../operator/bitwise.py)
 
-| Operator | Name                 | Description                                                                                             |
-| -------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
+| Operator | Name   |Description  |
+|--------  |---     |------------ |
 | &        | AND                  | Sets each bit to 1 if both bits are 1                                                                   |
 | \|       | OR                   | Sets each bit to 1 if one of two bits is 1                                                              |
 | ^        | XOR                  | Sets each bit to 1 if only one of two bits is 1                                                         |
@@ -356,7 +323,7 @@ python -m turtledemo
 | /=       | x /= 4  | x=x/4   |
 | %=       | x %= 5  | x=x%5   |
 | //=      | x //= 3 | x=x//3  |
-| **=      | x **= 2 | x=x**2  |
+| \**=     | x \**= 2| x=x**2  |
 | &=       | x &= 4  | x=x&4   |
 | \|=      | x \|= 3 | x=x\|3  |
 | ^=       | x ^= 4  | x=x^4   |
@@ -390,17 +357,17 @@ python -m turtledemo
 
 [Identity Sample Code](../operator/identity.py)
 
-| Operator | Description                                            | Example    |
-| -------- | ------------------------------------------------------ | ---------- |
-| is       | Returns True if both variables are the same object     | a is b     |
-| is not   | Returns True if both variables are not the same object | a is not b |
+| Operator | Description  | Example    |
+|--------  |------------- | ---------- |
+| is       | Returns True if both variables are the same object|a is b|
+| is not   | Returns True if both variables are not the same object |a is not b |
 
 * Membership Operators
 
 [Membership Sample Code](../operator/membership.py)
 
-| Operator | Description                                                                      | Example    |
-| -------- | -------------------------------------------------------------------------------- | ---------- |
+| Operator |Description    | Example    |
+| -------- | ------------- | ---------- |
 | in       | Returns True if a sequence with the specified value is present in the object     | a in y     |
 | not in   | Returns True if a sequence with the specified value is not present in the object | x not in y |
 
@@ -475,6 +442,40 @@ min1 = (b, a)[a < b]
 * whileElse.py
 * guessNumber.py
     - assign homework to modify guessNumber.py for two players
+
+---
+[Table of Contents](#table-of-contents)
+
+## turtle
+
+```
+python -m turtledemo
+```
+* turtle1.py; display turtle pen 
+* turtle2.py; basic turtle move 
+* turtle3.py; mouse click on turtle 
+* turtle4.py; random move on click 
+* turtle5.py; avoid turtle move out of window
+* turtle6.py; avoid turtle move out of window
+* turtle7.py; display card on turtle screen
+* turtle8.py; draw star
+* turtle9.py; draw half circle
+* shapes.py; triangle, rectangle, line, circle
+* testShapes.py; test all functions defined in shapes.py
+* drawSun.py; drawing a sun and house by using shapes.py
+    - assign homework draw snow couple
+
+    ![Snow Couple](./images/snowCouple.png)
+---
+[Table of Contents](#table-of-contents)
+
+## draw snow man
+* ![Snow Couple](./images/snowCouple.png)
+* demo draw_snowman.py
+* shapes.py
+* testShapes.py
+* drawSun.py; add snow man in the picture.
+* homework> draw snowcouple
 
 ---
 [Table of Contents](#table-of-contents)
