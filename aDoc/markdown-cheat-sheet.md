@@ -108,3 +108,6 @@ term
 
 <center><img src="images/application.png"/></center>
 
+## Table of contents
+
+Command Palette... > Markdown All in One: Create Table of Contents

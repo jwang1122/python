@@ -1,5 +1,13 @@
 # Python Class Software Installation
 
+## Table of Contents
+- [Python Class Software Installation](#python-class-software-installation)
+  - [Table of Contents](#table-of-contents)
+  - [Install VSCode](#install-vscode)
+  - [Install Python](#install-python)
+  - [Install Git](#install-git)
+
+
 ## Install VSCode
 VSCode is the python program editor we will use in our class.
 * 下载 VSCode
@@ -40,6 +48,9 @@ source env/bin/activate
     - close terminal, open new terminal
     - Command Pallete ... > Python Select Interpreter
 
+---
+[Table of Contents](#table-of-contents)
+
 ## Install Python
 We need Python interpretor installed in order to execute Python program.
 
@@ -69,6 +80,22 @@ double click the downloaded file,
 ```
 python --version
 ```
+
+* Setup Python interpreter in VS Code
+```DOS
+python -m venv env
+./env/bin/activate.bat
+```
+
+```MACOS
+python3 -m venv env
+source env/bin/activate
+```
+
+Command Palette...>Python: Select Interpreter
+
+---
+[Table of Contents](#table-of-contents)
 
 ## Install Git
 Git is very powerful source version control software nowaday, we will use it for our python source code version control and homework repository.
@@ -102,3 +129,5 @@ brew link git
 ```
 git --version
 ```
+---
+[Table of Contents](#table-of-contents)

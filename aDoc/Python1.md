@@ -1,34 +1,36 @@
 # Python level-I
 
 ## Table of Contents
-01. [Familiar with your keyboard](#familiar-with-your-keyboard)
-02. [Using Markdown](#using-markdown)
-03. [Getting start](#getting-start)
-04. [Python playground](#python-playground-and-help-document)
-05. [print](#print)
-06. [Turtle](#turtle)
-07. [draw snow man](#draw-snow-man)
-08. [Data Type](#data-type)
-09. [Operators](#operators)
-10. [If-Else](#if-else-execution-control)
-11. [Loop](#loop)
-12. [Function](#function)
-13. [Ball Game](#ball-game)
-14. [Simple Math](#simple-math)
-15. [Dice](#dice)
-16. [Prime](#Prime)
-17. [Terminal Games](#terminal-games)
-18. [File access](#file-access)
-19. [Plot](#plot)
-20. [Python Class](#python-class)
-21. [App server](#app-server)
-22. [Mongo DB](#mongo-db)
-23. [ReactJS](#reactjs)
-24. [install npm](#install-npm)
-25. [OOP](#oop)
-26. [Review](#review)
-27. Additional Topic: [quitetype](#install-and-using-quicktype); 
-28. [Sqlite](#sqlite)
+- [Python level-I](#python-level-i)
+  - [Table of Contents](#table-of-contents)
+  - [Familiar with your keyboard](#familiar-with-your-keyboard)
+  - [Using Markdown](#using-markdown)
+  - [Getting start](#getting-start)
+  - [playground and help document](#playground-and-help-document)
+  - [print](#print)
+  - [turtle](#turtle)
+  - [draw snow man](#draw-snow-man)
+  - [Data Type](#data-type)
+  - [Operators](#operators)
+  - [If-Else Execution Control](#if-else-execution-control)
+  - [Loop](#loop)
+  - [Function](#function)
+  - [ball game](#ball-game)
+  - [Simple math](#simple-math)
+  - [Dice](#dice)
+  - [Prime](#prime)
+  - [File access](#file-access)
+  - [plot](#plot)
+  - [Python class](#python-class)
+  - [OOP](#oop)
+  - [install npm](#install-npm)
+  - [ReactJS](#reactjs)
+  - [App server](#app-server)
+  - [Mongo DB](#mongo-db)
+  - [Terminal Games](#terminal-games)
+  - [Review](#review)
+  - [install and using QuickType](#install-and-using-quicktype)
+  - [Sqlite](#sqlite)
 
 ---
 [Table of Contents](#table-of-contents)
@@ -112,6 +114,7 @@
 
     installation file name: Greenshot-INSTALLER-1.2.10.6-RELEASE.exe
 * Basic operation    
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -164,12 +167,13 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## Python playground and help document
+## playground and help document
 * python >>> help(print) (positional arguments, keyword arguments)
 * [Practice]: different print statements
 * hello/print.py
 * hello/print-string.py
 * [Practice]: Homework
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -182,6 +186,7 @@ pyinstaller --onefile -w 'filename.py'
 * guessNumber.py
 * dice.py; introduce random module, dice/dice1.py
 * dice2.py; figure out possibility, understand how computer do things
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -215,6 +220,7 @@ python -m turtledemo
 * testShapes.py
 * drawSun.py; add snow man in the picture.
 * homework> draw snowcouple
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -233,12 +239,12 @@ python -m turtledemo
 * tuple > tupleTest.py
 * list > listTest.py
 
-list | tuple
-|---|---|
-add data       | cannot be changed
-remove data    | cannot be changed
-change data    | immutable
-slow operation | made quickly
+| list           | tuple             |
+| -------------- | ----------------- |
+| add data       | cannot be changed |
+| remove data    | cannot be changed |
+| change data    | immutable         |
+| slow operation | made quickly      |
 
 * tupleList.py 
     - create a list
@@ -270,35 +276,35 @@ slow operation | made quickly
 * datetime2.py;
 * strftime() and strptime() Format Codes
 
-Directive |Meaning |Example
-|---|---|---|
-%a |Weekday as locale’s abbreviated name. |Sun, Mon, …, Sat (en_US);So, Mo, …, Sa (de_DE)
-%A |Weekday as locale’s full name. |Sunday, Monday, …, Saturday (en_US); Sonntag, Montag, …, Samstag (de_DE)
-%w |Weekday as a decimal number, where 0 is Sunday and 6 is Saturday. |0, 1, …, 6
-%d |Day of the month as a zero-padded decimal number. |01, 02, …, 31
-%b |Month as locale’s abbreviated name. |Jan, Feb, …, Dec (en_US); Jan, Feb, …, Dez (de_DE)
-%B |Month as locale’s full name. |January, February, …, December (en_US); Januar, Februar, …, Dezember (de_DE)
-%m |Month as a zero-padded decimal number. |01, 02, …, 12
-%y |Year without century as a zero-padded decimal number. |00, 01, …, 99
-%Y |Year with century as a decimal number. |0001, 0002, …, 2013, 2014, …, 9998, 9999
-%H |Hour (24-hour clock) as a zero-padded decimal number. |00, 01, …, 23
-%I |Hour (12-hour clock) as a zero-padded decimal number. |01, 02, …, 12
-%p |Locale’s equivalent of either AM or PM. |AM, PM (en_US); am, pm (de_DE)
-%M |Minute as a zero-padded decimal number. |00, 01, …, 59
-%S |Second as a zero-padded decimal number. |00, 01, …, 59
-%f |Microsecond as a decimal number, zero-padded on the left. |000000, 000001, …, 999999
-%z |UTC offset in the form ±HHMM[SS[.ffffff]] (empty string if the object is naive). |(empty), +0000, -0400, +1030, +063415, -030712.345216
-%Z |Time zone name (empty string if the object is naive). |(empty), UTC, GMT
-%j |Day of the year as a zero-padded decimal number. |001, 002, …, 366
-%U |Week number of the year (Sunday as the first day of the week) as a zero padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0. |00, 01, …, 53
-%W |Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0. |00, 01, …, 53
-%c |Locale’s appropriate date and time representation. |Tue Aug 16 21:30:00 1988 (en_US); Di 16 Aug 21:30:00 1988 (de_DE)
-%x |Locale’s appropriate date representation. |08/16/88 (None); 08/16/1988 (en_US); 16.08.1988 (de_DE)
-%X |Locale’s appropriate time representation. |21:30:00 (en_US); 21:30:00 (de_DE)
-%% |A literal '%' character. |%
-%G |ISO 8601 year with century representing the year that contains the greater part of the ISO week (%V). |0001, 0002, …, 2013, 2014, …, 9998, 9999
-%u |ISO 8601 weekday as a decimal number where 1 is Monday. |1, 2, …, 7
-%V |ISO 8601 week as a decimal number with Monday as the first day of the week. Week 01 is the week containing Jan 4. |01, 02, …, 53
+| Directive | Meaning                                                                                                                                                                          | Example                                                                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| %a        | Weekday as locale’s abbreviated name.                                                                                                                                            | Sun, Mon, …, Sat (en_US);So, Mo, …, Sa (de_DE)                               |
+| %A        | Weekday as locale’s full name.                                                                                                                                                   | Sunday, Monday, …, Saturday (en_US); Sonntag, Montag, …, Samstag (de_DE)     |
+| %w        | Weekday as a decimal number, where 0 is Sunday and 6 is Saturday.                                                                                                                | 0, 1, …, 6                                                                   |
+| %d        | Day of the month as a zero-padded decimal number.                                                                                                                                | 01, 02, …, 31                                                                |
+| %b        | Month as locale’s abbreviated name.                                                                                                                                              | Jan, Feb, …, Dec (en_US); Jan, Feb, …, Dez (de_DE)                           |
+| %B        | Month as locale’s full name.                                                                                                                                                     | January, February, …, December (en_US); Januar, Februar, …, Dezember (de_DE) |
+| %m        | Month as a zero-padded decimal number.                                                                                                                                           | 01, 02, …, 12                                                                |
+| %y        | Year without century as a zero-padded decimal number.                                                                                                                            | 00, 01, …, 99                                                                |
+| %Y        | Year with century as a decimal number.                                                                                                                                           | 0001, 0002, …, 2013, 2014, …, 9998, 9999                                     |
+| %H        | Hour (24-hour clock) as a zero-padded decimal number.                                                                                                                            | 00, 01, …, 23                                                                |
+| %I        | Hour (12-hour clock) as a zero-padded decimal number.                                                                                                                            | 01, 02, …, 12                                                                |
+| %p        | Locale’s equivalent of either AM or PM.                                                                                                                                          | AM, PM (en_US); am, pm (de_DE)                                               |
+| %M        | Minute as a zero-padded decimal number.                                                                                                                                          | 00, 01, …, 59                                                                |
+| %S        | Second as a zero-padded decimal number.                                                                                                                                          | 00, 01, …, 59                                                                |
+| %f        | Microsecond as a decimal number, zero-padded on the left.                                                                                                                        | 000000, 000001, …, 999999                                                    |
+| %z        | UTC offset in the form ±HHMM[SS[.ffffff]] (empty string if the object is naive).                                                                                                 | (empty), +0000, -0400, +1030, +063415, -030712.345216                        |
+| %Z        | Time zone name (empty string if the object is naive).                                                                                                                            | (empty), UTC, GMT                                                            |
+| %j        | Day of the year as a zero-padded decimal number.                                                                                                                                 | 001, 002, …, 366                                                             |
+| %U        | Week number of the year (Sunday as the first day of the week) as a zero padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0. | 00, 01, …, 53                                                                |
+| %W        | Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0.             | 00, 01, …, 53                                                                |
+| %c        | Locale’s appropriate date and time representation.                                                                                                                               | Tue Aug 16 21:30:00 1988 (en_US); Di 16 Aug 21:30:00 1988 (de_DE)            |
+| %x        | Locale’s appropriate date representation.                                                                                                                                        | 08/16/88 (None); 08/16/1988 (en_US); 16.08.1988 (de_DE)                      |
+| %X        | Locale’s appropriate time representation.                                                                                                                                        | 21:30:00 (en_US); 21:30:00 (de_DE)                                           |
+| %%        | A literal '%' character.                                                                                                                                                         | %                                                                            |
+| %G        | ISO 8601 year with century representing the year that contains the greater part of the ISO week (%V).                                                                            | 0001, 0002, …, 2013, 2014, …, 9998, 9999                                     |
+| %u        | ISO 8601 weekday as a decimal number where 1 is Monday.                                                                                                                          | 1, 2, …, 7                                                                   |
+| %V        | ISO 8601 week as a decimal number with Monday as the first day of the week. Week 01 is the week containing Jan 4.                                                                | 01, 02, …, 53                                                                |
 
 * datetime3.py; convert string to datetime by strptime(string, format)
 * datetime4.py; differences between datetime, date, time
@@ -313,90 +319,90 @@ Directive |Meaning |Example
 * 
 [Arithmetic Operator](../operator/mathOperator.py)
 
-|Operator|Name    |Example|
-|---     |---     |---    |
-| +      |Addition|a + b  
-| -      |Subtraction | a - b
-| *      |Multiplication | a * b
-| /      |Division       | a / b
-| %      |Modulus        | a % b
-| **     |Exponentiation | a ** b
-| //     |Floor division | a // b
+| Operator | Name           | Example |
+| -------- | -------------- | ------- |
+| +        | Addition       | a + b   |
+| -        | Subtraction    | a - b   |
+| *        | Multiplication | a * b   |
+| /        | Division       | a / b   |
+| %        | Modulus        | a % b   |
+| **       | Exponentiation | a ** b  |
+| //       | Floor division | a // b  |
 
 * Bitwise Operators
 
 [bitwise sample code](../operator/bitwise.py)
 
-|Operator|Name    |Description|
-|---     |---     |---    |
-|&       |AND     |Sets each bit to 1 if both bits are 1
-|\|      |OR      |Sets each bit to 1 if one of two bits is 1
-|^       |XOR     |Sets each bit to 1 if only one of two bits is 1
-|~       |NOT     |Inverts all the bits
-|<<      |Zero fill left shift|Shift left by pushing zeros in from the right and let the leftmost bits fall off
-|>>      |Signed right shift  |Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+| Operator | Name                 | Description                                                                                             |
+| -------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
+| &        | AND                  | Sets each bit to 1 if both bits are 1                                                                   |
+| \|       | OR                   | Sets each bit to 1 if one of two bits is 1                                                              |
+| ^        | XOR                  | Sets each bit to 1 if only one of two bits is 1                                                         |
+| ~        | NOT                  | Inverts all the bits                                                                                    |
+| <<       | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off                        |
+| >>       | Signed right shift   | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off |
 
 
 * Assignment Operators
 
 [Assignment sample code](../operator/assignment.py)
 
-|Operator|Example |Same As|
-|---     |---     |---    |
-|=       |x = 5   |x=5
-|+=      |x += 3  |x=x+3
-|-=      |x -= 4  |x=x-4
-|*=      |x *= 5  |x=x*5
-|/=      |x /= 4  |x=x/4
-|%=      |x %= 5  |x=x%5
-|//=     |x //= 3 |x=x//3
-|**=     |x **= 2 |x=x**2
-|&=      |x &= 4  |x=x&4
-|\|=     |x \|= 3 |x=x\|3
-|^=      |x ^= 4  |x=x^4
-|>>=     |x >>=3  |x=x>>3
-|<<=     |x <<=2  |x=x<<2
+| Operator | Example | Same As |
+| -------- | ------- | ------- |
+| =        | x = 5   | x=5     |
+| +=       | x += 3  | x=x+3   |
+| -=       | x -= 4  | x=x-4   |
+| *=       | x *= 5  | x=x*5   |
+| /=       | x /= 4  | x=x/4   |
+| %=       | x %= 5  | x=x%5   |
+| //=      | x //= 3 | x=x//3  |
+| **=      | x **= 2 | x=x**2  |
+| &=       | x &= 4  | x=x&4   |
+| \|=      | x \|= 3 | x=x\|3  |
+| ^=       | x ^= 4  | x=x^4   |
+| >>=      | x >>=3  | x=x>>3  |
+| <<=      | x <<=2  | x=x<<2  |
 
 * Comparison Operators
 
 [Comparison Sample code](../operator/comparison.py)
 
-|Operator|Name        |Example|
-|---     |---         |---    |
-|==      |Equal       |a == b
-|!=      |Not Equal   |a != b
-|<       |Less than   |a < b
-|>       |Greater than|a > b
-|>=      |Greater than or equal to|a >= b
-|<=      |Less than or equal to   |a <= b
+| Operator | Name                     | Example |
+| -------- | ------------------------ | ------- |
+| ==       | Equal                    | a == b  |
+| !=       | Not Equal                | a != b  |
+| <        | Less than                | a < b   |
+| >        | Greater than             | a > b   |
+| >=       | Greater than or equal to | a >= b  |
+| <=       | Less than or equal to    | a <= b  |
   
 * Logical Operators
 
 [Logical Sample code](../operator/logical.py)
 
-|Operator|Description        |Example|
-|---     |---         |---    |
-|and     |Returns True if both statements are true      |a<5 and a>10
-|or      |Returns True if one of the statements is true |x < 5 or x < 4
-|not     |Reverse the returns                           |not (x<10)
+| Operator | Description                                   | Example        |
+| -------- | --------------------------------------------- | -------------- |
+| and      | Returns True if both statements are true      | a<5 and a>10   |
+| or       | Returns True if one of the statements is true | x < 5 or x < 4 |
+| not      | Reverse the returns                           | not (x<10)     |
 
 * Identity Operators
 
 [Identity Sample Code](../operator/identity.py)
 
-|Operator|Description        |Example|
-|---     |---         |---    |
-|is      |Returns True if both variables are the same object    |a is b
-|is not  |Returns True if both variables are not the same object|a is not b
+| Operator | Description                                            | Example    |
+| -------- | ------------------------------------------------------ | ---------- |
+| is       | Returns True if both variables are the same object     | a is b     |
+| is not   | Returns True if both variables are not the same object | a is not b |
 
 * Membership Operators
 
 [Membership Sample Code](../operator/membership.py)
 
-|Operator|Description        |Example|
-|---     |---         |---    |
-|in      |	Returns True if a sequence with the specified value is present in the object|a in y
-|not in  |Returns True if a sequence with the specified value is not present in the object|x not in y
+| Operator | Description                                                                      | Example    |
+| -------- | -------------------------------------------------------------------------------- | ---------- |
+| in       | Returns True if a sequence with the specified value is present in the object     | a in y     |
+| not in   | Returns True if a sequence with the specified value is not present in the object | x not in y |
 
 * Ternary Operators
 
@@ -424,7 +430,6 @@ tuple statement
 min1 = (b, a)[a < b]
 ```
 
-
 ---
 [Table of Contents](#table-of-contents)
 
@@ -442,6 +447,7 @@ min1 = (b, a)[a < b]
 1, 3, 5, 7, 9
 
 ```
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -469,6 +475,7 @@ min1 = (b, a)[a < b]
 * whileElse.py
 * guessNumber.py
     - assign homework to modify guessNumber.py for two players
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -516,6 +523,7 @@ if you don't return value from function, you will get None when you assign the v
 * innerFUnction1.py
 * [homework1](../function/homework1.md)
 * [homework2](../function/homework2.md)
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -530,6 +538,7 @@ if you don't return value from function, you will get None when you assign the v
 * ball8.py [Move the bird from right to left.]
 * ball9.py [Move the bird back to start position once it is hitted.]
 * ball10.py [Final version of ball game.]
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -597,12 +606,14 @@ $$\cdots  $$
 * circle.py
 * prime1.py; ./prime/prime1.py
 * prime1.py ~ prim7.py; treat computer as humanbeen, do it right
+
 ---
 [Table of Contents](#table-of-contents)
 
 ## Dice
 * dice.py; introduce random module, dice/dice1.py
 * dice2.py; figure out possibility, understand how computer do things
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -612,14 +623,15 @@ $$\cdots  $$
 * prime2.py > define function isPrime()
 * prime3.py > calculate range(40-50)
 * prime4.py > define function rangePrime(x,y)
+
 ---
 [Table of Contents](#table-of-contents)
 
 ## File access
 
-Text Files | Binary Files
-|---       |---           |
-Plain Text, XML, HTML, JSON, Source Code, CSV |Compiled code, App data, Media files, images,audio, video
+| Text Files                                    | Binary Files                                              |
+| --------------------------------------------- | --------------------------------------------------------- |
+| Plain Text, XML, HTML, JSON, Source Code, CSV | Compiled code, App data, Media files, images,audio, video |
 
 * file0.py (write to file)
 * file1.py (read and write to existing file)
@@ -632,6 +644,7 @@ Plain Text, XML, HTML, JSON, Source Code, CSV |Compiled code, App data, Media fi
 * file6.py (write dict to csv file)
 * readJson.py
 * csvReader.py
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -694,6 +707,7 @@ class User:
 * [ ] polygon.py; ask student implement __repr__(self)
 * [ ] student.py; using class level method
 * [ ] snowman.py & drawSnowMan.py; draw snowman with class
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -707,6 +721,7 @@ class User:
 ![Person<Student](./images/student.png)
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
 [Python Classes](https://docs.python.org/3/tutorial/classes.html)
+
 --- 
 [Table of Contents](#table-of-contents)
 
@@ -745,6 +760,7 @@ sudo chown -R wangqianjiang wang-app
 cd wang-app
 npm start
 ```
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -769,6 +785,7 @@ python app.py
 cd ../book-app
 npm start
 ```
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -793,6 +810,7 @@ npm start
     [Download Website](https://www.postman.com/downloads/)
     ![First time run Postman](images/postman.png)
 * start app4.py, test POST, UPDATE, DELETE methods
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -812,6 +830,7 @@ npm start
 * update.py > update one document 
 * delete.py > delete one document
 * bookdb.py > create a class include all CRUD process.
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -825,6 +844,7 @@ npm start
     - guessNumber.py
 * ball game
     ball10.py
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -841,6 +861,7 @@ npm start
 * Postman to test web service
 * application web server
 * react JS front end GUI server
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -876,6 +897,7 @@ quicktype ./data/student.json -o student.py
 [YouTube Classes](https://www.youtube.com/watch?v=apACNr7DC_s)
 
 classes are foundmantal tools to any object oriented programing language, think of class as template for creating object and related data and functions that do interesting things with that data. Python make it easy to create classes
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -910,5 +932,6 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 * sqlitebookdb.py > build CRUD
 * app5.py > use sqlitebookdb.py to provide service
     use Postman to check the service.
+
 ---
 [Table of Contents](#table-of-contents)
