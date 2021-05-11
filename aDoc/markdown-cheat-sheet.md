@@ -1,7 +1,30 @@
 # Markdown Cheat Sheet
 
 ## Table of Contents
-1. [Basic Syntax](#basic-syntax)
+- [Markdown Cheat Sheet](#markdown-cheat-sheet)
+  - [Table of Contents](#table-of-contents)
+  - [Basic Syntax](#basic-syntax)
+    - [Heading](#heading)
+    - [Bold](#bold)
+    - [Italic](#italic)
+    - [Blockquote](#blockquote)
+    - [Ordered List](#ordered-list)
+    - [Unordered List](#unordered-list)
+    - [Code](#code)
+    - [Horizontal Rule](#horizontal-rule)
+    - [Link](#link)
+    - [Image](#image)
+  - [Extended Syntax](#extended-syntax)
+    - [Table](#table)
+    - [Fenced Code Block](#fenced-code-block)
+    - [Footnote](#footnote)
+    - [Heading ID](#heading-id)
+    - [My Great Heading {#custom-id}](#my-great-heading-custom-id)
+    - [Definition List](#definition-list)
+    - [Strikethrough](#strikethrough)
+    - [Task List](#task-list)
+  - [Center Image](#center-image)
+  - [Create Table of contents](#create-table-of-contents)
 
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
@@ -108,6 +131,6 @@ term
 
 <center><img src="images/application.png"/></center>
 
-## Table of contents
+## Create Table of contents
 
 Command Palette... > Markdown All in One: Create Table of Contents

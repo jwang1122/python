@@ -665,6 +665,31 @@ $$\cdots  $$
 * covid-19/covid1.py
 * covid-19/covid2.py
 
+[Animations with Matplotlib](https://towardsdatascience.com/animations-with-matplotlib-d96375c5442c)
+
+  * movingSinWave.py
+  * growingCoil.py
+  * stockDynamic.py & stock.txt
+  * 3dAnimation.py
+
+[Download Magick](https://imagemagick.org/script/download.php)
+Install Magic by running file:
+
+ImageMagick-x86_64-pc-windows.exe
+
+after installation finished check the installation:
+
+```
+magick logo: logo.gif
+magick identify logo.gif
+magick logo.gif win:
+
+magick -delay 10 Volcano_*.png volcano.gif
+```
+The animated gif file will be created.
+
+![3D animation](../plot/volcano.gif)
+
 [Matplotlib Exercises and Solution](https://www.w3resource.com/graphics/matplotlib/basic/index.php)
 
 ---
@@ -977,6 +1002,8 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 - [ ] tkinter33.py; Button.bind and event
     [Bind & event](https://www.python-course.eu/tkinter_events_binds.php)
 - [ ] tkinter34.py; Mouse position (event.x, event.y)
+- [ ] tkinter35.py; Table
+- [ ] tkinter35.py; Pie chart
 
 <table border="1">
 <tr>
