@@ -31,6 +31,7 @@
   - [Review](#review)
   - [install and using QuickType](#install-and-using-quicktype)
   - [Sqlite](#sqlite)
+  - [tkinter GUI](#tkinter-gui)
 
 ---
 [Table of Contents](#table-of-contents)
@@ -936,3 +937,26 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 
 ---
 [Table of Contents](#table-of-contents)
+
+## tkinter GUI
+[tkinter documentation](https://docs.python.org/3/library/tk.html)
+- [ ] tkinter1.py; tkinter.TK() Open window
+- [ ] tkinter2.py; add Label
+- [ ] tkinter3.py; disable resize window
+- [ ] tkinter4.py; Exit Button
+- [ ] tkinter5.py; add line to Canvas
+- [ ] tkinter6.py; Button with command function
+- [ ] tkinter7.py; Combobox
+- [ ] tkinter8.py; Checkbutton
+- [ ] tkinter9.py; Spinbox
+- [ ] tkinter10.py; Text
+- [ ] tkinter11.py; Entry
+- [ ] tkinter12.py; Radiobutton
+- [ ] tkinter13.py; Radiobutton
+- [ ] tkinter14.py; ScrolledText
+- [ ] tkinter15.py; Progressbar
+- [ ] tkinter16.py; Disable button
+- [ ] tkinter17.py; Listbox
+- [ ] tkinter18.py; Listbox
+- [ ] tkinter19.py; Simpledialog
+
