@@ -959,4 +959,10 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 - [ ] tkinter17.py; Listbox
 - [ ] tkinter18.py; Listbox
 - [ ] tkinter19.py; Simpledialog
+- [ ] tkinter20.py; Inheritence from tkinter.Frame
+- [ ] tkinter21.py; Display resized image in frame
+- [ ] tkinter22.py; Select file from file explore
+- [ ] tkinter23.py; Read file and display contents in Scrolledtext
+- [ ] tkinter24.py; Read file and save contents in Scrolledtext to a file
+
 
