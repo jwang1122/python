@@ -940,6 +940,8 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 
 ## tkinter GUI
 [tkinter documentation](https://docs.python.org/3/library/tk.html)
+[tkinter course](https://www.python-course.eu/tkinter_menus.php)
+
 - [ ] tkinter1.py; tkinter.TK() Open window
 - [ ] tkinter2.py; add Label
 - [ ] tkinter3.py; disable resize window
@@ -964,5 +966,78 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 - [ ] tkinter22.py; Select file from file explore
 - [ ] tkinter23.py; Read file and display contents in Scrolledtext
 - [ ] tkinter24.py; Read file and save contents in Scrolledtext to a file
+- [ ] tkinter25.py; Menu
+- [ ] tkinter26.py; Layout management: pack()
+- [ ] tkinter27.py; Layout management: pack(fill=tk.X)
+- [ ] tkinter28.py; Layout management: pack(fill=tk.X, padx=10)
+- [ ] tkinter29.py; Layout management: pack(fill=tk.X, pady=10)
+- [ ] tkinter30.py; Layout management: pack(fill=tk.X, pady=10, side=tk.LEFT)
+- [ ] tkinter31.py; Layout management: place(x, y, width, height)
+- [ ] tkinter32.py; Layout management: grid(row, column)
+- [ ] tkinter33.py; Button.bind and event
+    [Bind & event](https://www.python-course.eu/tkinter_events_binds.php)
+- [ ] tkinter34.py; Mouse position (event.x, event.y)
 
-
+<table border="1">
+<tr>
+<th>Event</th>	<th>Description</th>
+<tr><td>
+Button	</td><td>A mouse button is pressed with the mouse pointer over the widget. The detail part specifies which button, e.g. The left mouse button is defined by the event "Button-1" the middle button by 'Button-2', and the rightmost mouse button by 'Button-3'.
+'Button-4' defines the scroll up event on mice with wheel support and and 'Button-5' the scroll down.
+If you press down a mouse button over a widget and keep it pressed, Tkinter will automatically "grab" the mouse pointer. Further mouse events like Motion and Release events will be sent to the current widget, even if the mouse is moved outside the current widget. The current position, relative to the widget, of the mouse pointer is provided in the x and y members of the event object passed to the callback. You can use ButtonPress instead of Button, or even leave it out completely: , , and '1' are all synonyms.</td>
+</tr>
+<tr>
+<td>Motion</td>
+<td>The mouse is moved with a mouse button being held down. To specify the left, middle or right mouse button use <B1-Motion>, <B2-Motion> and <B3-Motion> respectively. The current position of the mouse pointer is provided in the x and y members of the event object passed to the callback, i.e. event.x, event.y</td>
+</tr>
+<tr>
+<td>ButtonRelease</td>
+<td>Event, if a button is released. To specify the left, middle or right mouse button use 'ButtonRelease-1', 'ButtonRelease-2', and 'ButtonRelease-3' respectively. The current position of the mouse pointer is provided in the x and y members of the event object passed to the callback, i.e. event.x, event.y</td>
+</tr>
+<tr>
+<td>Double-Button</td>
+<td>Similar to the Button event, see above, but the button is double clicked instead of a single click. To specify the left, middle or right mouse button use 'Double-Button-1', 'Double-Button-2', and 'Double-Button-3' respectively.
+You can use Double or Triple as prefixes. Note that if you bind to both a single click ('Button-1') and a double click ('Double-Button-1'), both bindings will be called.</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>The mouse pointer entered the widget.
+Attention: This doesn't mean that the user pressed the Enter key!. <Return> is used for this purpose.</td>
+</tr>
+<tr>
+<td>Leave</td>
+<td>The mouse pointer left the widget.</td>
+</tr>
+<tr>
+<td>FocusIn</td>
+<td>Keyboard focus was moved to this widget, or to a child of this widget.</td>
+</tr>
+<tr>
+<td>FocusOut</td>
+<td>Keyboard focus was moved from this widget to another widget.</td>
+</tr>
+<tr>
+<td>Return</td>
+<td>The user pressed the Enter key. You can bind to virtually all keys on the keyboard: The special keys are Cancel (the Break key), BackSpace, Tab, Return(the Enter key), Shift_L (any Shift key), Control_L (any Control key), Alt_L (any Alt key), Pause, Caps_Lock, Escape, Prior (Page Up), Next (Page Down), End, Home, Left, Up, Right, Down, Print, Insert, Delete, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Num_Lock, and Scroll_Lock.</td>
+</tr>
+<tr>
+<td>Return</td>
+<td>The user pressed the Enter key. You can bind to virtually all keys on the keyboard: The special keys are Cancel (the Break key), BackSpace, Tab, Return(the Enter key), Shift_L (any Shift key), Control_L (any Control key), Alt_L (any Alt key), Pause, Caps_Lock, Escape, Prior (Page Up), Next (Page Down), End, Home, Left, Up, Right, Down, Print, Insert, Delete, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Num_Lock, and Scroll_Lock.</td>
+</tr>
+<tr>
+<td>Key</td>
+<td>The user pressed any key. The key is provided in the char member of the event object passed to the callback (this is an empty string for special keys).</td>
+</tr>
+<tr>
+<td>a</td>
+<td>The user typed an "a" key. Most printable characters can be used as is. The exceptions are space ('space') and less than ('less'). Note that 1 is a keyboard binding, while '1' is a button binding.</td>
+</tr>
+<tr>
+<td>Shift-Up</td>
+<td>The user pressed the Up arrow, while holding the Shift key pressed. You can use prefixes like Alt, Shift, and Control.</td>
+</tr>
+<tr>
+<td>Configure</td>
+<td>The size of the widget changed. The new size is provided in the width and height attributes of the event object passed to the callback. On some platforms, it can mean that the location changed.</td>
+</tr>
+</table>
