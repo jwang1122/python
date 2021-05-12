@@ -614,6 +614,9 @@ $$\cdots  $$
 * prime1.py; ./prime/prime1.py
 * prime1.py ~ prim7.py; treat computer as humanbeen, do it right
 
+More Exercises:
+[Exercises and Solutions](https://www.w3resource.com/python-exercises/math/index.php)
+
 ---
 [Table of Contents](#table-of-contents)
 
@@ -1104,3 +1107,6 @@ pip install PyOpenGL PyOpenGL_accelerate
 * [ ] opengl1.py; rotate Cube with edge lines only
 * [ ] opengl2.py; rotate Cube with colored surface and lines
 * [ ] opengl3.py; move Cube by arrow keys or mouse wheel
+* [ ] opengl4.py; move Cube by arrow keys or mouse wheel
+* [ ] opengl5.py; move Cube by arrow keys or mouse wheel
+* [ ] opengl6.py; move Cube by arrow keys or mouse wheel
