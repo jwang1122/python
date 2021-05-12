@@ -22,6 +22,9 @@ print(len(l))
 l = [1,2,3,4,5]
 print(l)
 
+for n in l: # list is iterable
+    print(n)
+
 l=list(range(10))
 print(l)
 

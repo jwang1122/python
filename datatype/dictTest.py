@@ -16,6 +16,9 @@ d1 = {
     6: "Saturday",
     7: "Sunday",
 }
+for n in d1: # dict is iterable
+    print(f"{inspect.getframeinfo(cf).lineno}: {n}")
+
 print(f"{inspect.getframeinfo(cf).lineno}: {d1[4]}")
 for key in d1.keys():
     print(f"{inspect.getframeinfo(cf).lineno}: {str(key)+'='+d1.get(key)}")

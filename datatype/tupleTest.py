@@ -16,6 +16,10 @@ print(len(t1))
 tuplex = (4, 6, 2, 8, 3, 1)
 print(tuplex)
 
+print("tuple is iterable...")
+for n in tuplex: # tuple is iterable
+    print(n)
+
 survey = (21, "China", True)
 print("Age: %d, Country: %s, Knows_python: %s" % survey)
 age, country, knows_python = survey  # assign more values in one line.

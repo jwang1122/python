@@ -29,3 +29,14 @@ print("::".join("abc"))
 face = "A"
 suit = "Diamonds"
 print(" of ".join((face,suit)))
+
+print(f"6 \u00F7 5 = {6/5}")
+print(f"6 \u00D7 5 = {6*5}")
+print(f"6 \u2265 5 is True.")
+print(f"6 \u2260 5 is True.")
+print(f"6 \u2264 5 is True.")
+print(f"6 \u2266 5 is True.")
+print(f"6 \u2267 5 is True.")
+print(f"误差在 \u00B10.5\u00B0C.")
+print(f"3 \u00f7 0 is \u221E.")
+

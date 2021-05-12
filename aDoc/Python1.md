@@ -32,6 +32,7 @@
   - [install and using QuickType](#install-and-using-quicktype)
   - [Sqlite](#sqlite)
   - [tkinter GUI](#tkinter-gui)
+  - [OpenGL](#opengl)
 
 ---
 [Table of Contents](#table-of-contents)
@@ -187,6 +188,10 @@ pyinstaller --onefile -w 'filename.py'
 * guessNumber.py
 * dice.py; introduce random module, dice/dice1.py
 * dice2.py; figure out possibility, understand how computer do things
+
+![Special Characters](images/specialUnicode.png)
+
+[Math Symbols](https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols)
 
 ---
 [Table of Contents](#table-of-contents)
@@ -668,11 +673,13 @@ $$\cdots  $$
 [Animations with Matplotlib](https://towardsdatascience.com/animations-with-matplotlib-d96375c5442c)
 
   * movingSinWave.py
+    ![Moving Sine Wave](../plot/../sine_wave.gif)
   * growingCoil.py
+    ![Drawing coil](../plot/../coil.gif)
   * stockDynamic.py & stock.txt
   * 3dAnimation.py
 
-[Download Magick](https://imagemagick.org/script/download.php)
+[Download ImageMagick](https://imagemagick.org/script/download.php)
 Install Magic by running file:
 
 ImageMagick-x86_64-pc-windows.exe
@@ -966,6 +973,18 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 ## tkinter GUI
 [tkinter documentation](https://docs.python.org/3/library/tk.html)
 [tkinter course](https://www.python-course.eu/tkinter_menus.php)
+[tkinter sample web](https://pythonlobby.com/introduction-to-python-gui-using-tkinter)
+
+|Basic Widgets|
+|---          |
+|Buttons      |
+|Labels       |
+|Frames       |
+|CheckBoxes   |
+|RadioButtons |
+|Entry        |
+|ComboBox     |
+
 
 - [ ] tkinter1.py; tkinter.TK() Open window
 - [ ] tkinter2.py; add Label
@@ -1003,7 +1022,10 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
     [Bind & event](https://www.python-course.eu/tkinter_events_binds.php)
 - [ ] tkinter34.py; Mouse position (event.x, event.y)
 - [ ] tkinter35.py; Table
-- [ ] tkinter35.py; Pie chart
+- [ ] tkinter36.py; Pie chart
+- [ ] tkinter37.py; page switch and animated chart
+- [ ] tkinter38.py; Notebook (tabs)
+- [ ] tkinter39.py; 
 
 <table border="1">
 <tr>
@@ -1068,3 +1090,17 @@ Attention: This doesn't mean that the user pressed the Enter key!. <Return> is u
 <td>The size of the widget changed. The new size is provided in the width and height attributes of the event object passed to the callback. On some platforms, it can mean that the location changed.</td>
 </tr>
 </table>
+
+## OpenGL
+
+Install PyOpenGL modules
+
+```
+pip install PyOpenGL PyOpenGL_accelerate
+```
+
+[OpenGL Tutorial](https://pythonprogramming.net/opengl-rotating-cube-example-pyopengl-tutorial/)
+
+* [ ] opengl1.py; rotate Cube with edge lines only
+* [ ] opengl2.py; rotate Cube with colored surface and lines
+* [ ] opengl3.py; move Cube by arrow keys or mouse wheel

@@ -76,6 +76,8 @@ print(set5)
 odds = set((1,3,5,7,9))
 evens = set((2,4,6,8,10))
 primes = set((2,3,5,7))
+for o in odds: # set is iterable
+    print(o)
 print(odds)
 print(evens.union(odds))
 print(odds.union(evens))

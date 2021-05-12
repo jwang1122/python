@@ -6,6 +6,9 @@ help(str)
 """
 f = inspect.currentframe()
 
+s = 'Hello'
+for c in s: # string is iterable
+    print(c)
 temperatur = "45C"
 print(f"{inspect.getframeinfo(f).lineno}: {temperatur[:-1]}") # use index to parse string with unit
 print(f"{inspect.getframeinfo(f).lineno}: {temperatur[-1]}")
