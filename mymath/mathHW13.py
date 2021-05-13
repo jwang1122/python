@@ -13,6 +13,6 @@ def discriminant():
         print(f"{a}x*x + {b}x + {c} = {(a*x1*x1+b*x1+c):.4f}")
     elif discriminant < 0:
         print(f'No Real Solutions. Discriminant value is: {discriminant} < 0')
-
+        print(f'Two complex solutions ({x1:.3f}, {x2:.3f})')
 
 discriminant()

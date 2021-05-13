@@ -2,5 +2,5 @@
 
 Expected result:
 
-Enter a integer number: 100
+Enter an integer number: 100
 The sum from 1 to 100 is 5050.

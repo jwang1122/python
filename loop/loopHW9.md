@@ -4,6 +4,6 @@ $$e=\sum_{n=0} ^\infty \frac 1 {n!} = 1 \cdot \frac 1 1 \cdot \frac 1 {1\cdot 2}
 
 Expected execution output:
 Enter any positive integer: 10
-The Euler's constant is 2.7182815255731922.
+The Euler's constant is 2.7182818011463845
 
 [Euler's Constant](https://www.mathsisfun.com/numbers/e-eulers-number.html)

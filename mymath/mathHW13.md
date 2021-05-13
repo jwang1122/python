@@ -7,6 +7,14 @@ $$ f(x) = ax^2 + bx +c $$
 $$ discriminant = b^2 - 4ac $$
 $$ x_1 = \frac {-b + \sqrt {discriminant} } {2a}$$
 $$ x_2 = \frac {-b - \sqrt {discriminant} } {2a}$$
+$$ x_{1,2} = \frac {-b \pm \sqrt {discriminant} } {2a}$$
+
+if discriminant=0, there will be only one solution: $x = - \frac b {2a}$
+
+if discriminat>0, there will be two real solutions.
+
+if discriminat<0, there will be two complex solutions.
+
 
 Expected output:
 
@@ -22,6 +30,7 @@ The a value: 4
 The b value: 3
 The c value: 2
 No Real Solutions. Discriminant value is: -23.0 < 0
+Two complex solutions (-0.375+0.599j, -0.375-0.599j)
 
 The a value: 3
 The b value: 6
