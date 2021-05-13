@@ -19,6 +19,7 @@ print(type(l))
 l = list()
 print(len(l))
 
+# Create list
 l = [1,2,3,4,5]
 print(l)
 
@@ -36,6 +37,10 @@ squares = []
 for i in range(1, 101):
     squares.append(i**2)
 print(squares)
+
+l = [range(4), range(10, 15)]
+l1 = [y for x in l for y in x] # flatten two list
+print(l1)
 
 # list Comprehension vs. For loop
 l1 = [i for i in range(20) if i%2==1]

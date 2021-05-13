@@ -19,6 +19,9 @@
   - [Simple math](#simple-math)
   - [Dice](#dice)
   - [Prime](#prime)
+  - [Linear Algebra](#linear-algebra)
+  - [Pandas DataFrame](#pandas-dataframe)
+  - [Statistics Functions](#statistics-functions)
   - [File access](#file-access)
   - [plot](#plot)
   - [Python class](#python-class)
@@ -576,16 +579,6 @@ $$
 , where **A** is area of a circle, **r** is radius of the circle.
 * circle.py
 
-![赶集](./images/赶集.jpg)
-
-几个老头儿去赶集，上街买了一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
-* linear1.py; 老头儿们买梨。
-  
-![Chicken & Rabbits](images/chickenRabbits.gif)
-* linear2.py
-* linear3.py
-* linear4.py
-* linear5.py
 * perfactNumber1.py
 * Volumn of Sphere
 $$
@@ -636,6 +629,63 @@ More Exercises:
 * prime2.py > define function isPrime()
 * prime3.py > calculate range(40-50)
 * prime4.py > define function rangePrime(x,y)
+
+## Linear Algebra
+![赶集](./images/赶集.jpg)
+
+几个老头儿去赶集，上街买了一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
+* linear1.py; 老头儿们买梨。
+  
+![Chicken & Rabbits](images/chickenRabbits.gif)
+* linear2.py
+* linear3.py
+* linear4.py
+* linear5.py
+
+## Pandas DataFrame
+* pandas1.py; create DataFrame from .csv file, and plot
+* pandas2.py; understand DataFrame
+* pandas3.py
+* pandas4.py
+* pandas5.py
+
+## Statistics Functions
+* statistics1.py; mean() & fmean()
+* statistics2.py; geometric_mean()
+    $$Geometric\_mean=(x_1 x_2 x_3 \dots x_n)^{\frac 1 n}$$
+* statistics3.py; harmonic_mean()
+    $$Harmonic\_mean = \frac n {\sum_{i=1}^n \frac 1 {x_i}}$$
+* statistics4.py; median(), median_low, median_high
+* statistics5.py;
+* statistics5.py;
+* statistics7.py; pstdv() Population standard diviation
+
+    $$\sigma = \sqrt {\frac 1 N \sum_{i=1}^N (x_i-\mu)^2}$$
+    , where
+    
+    $\sigma \to$ Population Standard Diviation
+
+    $N \to$ Total number of population elements
+
+    $\mu \to$ Population mean
+
+    Sample Variance Formula:
+    $$s ^2 = \frac 1 {n-1} \sum_{i=1}^n (x_i-\bar{x})^2$$
+   , where
+    
+    $s^2 \to$ sample variance
+    $x_i \to$ value of ith element
+
+    $n \to$ sample size
+
+    $\bar{x} \to$ sample mean
+
+* statistics8.py; stdev(), variance
+
+    $$\mu=\frac {\sum {x}} N$$
+    $$\bar {x} = \frac {\sum {x}} n$$
+    where N represent number of population, and n represent size of a sample.
+* statistics9.py; NormalDist class
 
 ---
 [Table of Contents](#table-of-contents)

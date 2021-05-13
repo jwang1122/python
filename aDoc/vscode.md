@@ -9,9 +9,10 @@
   - [Setup Python Interpretor](#setup-python-interpretor)
   - [Create Virtual Environment](#create-virtual-environment)
   - [Check in GitHub](#check-in-github)
+  - [Increase/decrease window characters](#increasedecrease-window-characters)
 
 ## Convert Markdown to PDF
-* Markdown Preview Enhanced
+* Extension: Markdown Preview Enhanced
 * Right-click > Chrome (Puppeteer) > PDF
   
 ## Disable pylint check
@@ -88,6 +89,12 @@ Ask collaborator open email > Review Invitation > Accept Invitation
     pull first.
 ```
 git pull
+```
+
+## Increase/decrease window characters
+
+```
+ctrl +/-
 ```
 ---
 [Table of Contents](#Table-of-Contents)

@@ -1,3 +1,6 @@
+"""
+Create paadas DataFrame from csv file
+"""
 import pandas
 
 data = pandas.read_csv('mymath/brain_size.csv', sep=';', na_values='.')
