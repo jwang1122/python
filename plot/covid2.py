@@ -50,19 +50,19 @@ y = newyorkConfirmed
 z = newyorkDeath
 
 ax=fig.add_subplot(121)
-ax.plot(x,y,c='r',marker='o',ls='-',label='New York')
-ax.plot(x,texasConfirmed,c='g',marker='v',ls='-',label='Texas')
+ax.plot(x,y,c='r',ls='-',label='New York')
+ax.plot(date2,texasConfirmed,c='g',ls='-',label='Texas')
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
-ax.set(xlim=[datetime.strptime('2020-03-04','%Y-%m-%d'),datetime.strptime('2020-04-04','%Y-%m-%d')], xlabel='Date', ylabel='Confirmed',
+ax.set(xlabel='Date', ylabel='Confirmed',
        title='Coronavirus Report')
 
 ax2=fig.add_subplot(1,2,2)
-ax2.plot(x,z,c='r',marker='*',ls='-',label='New York')
-ax2.plot(x,texasDeath,c='g',marker='v',ls='-',label='Texas')
+ax2.plot(x,z,c='r',ls='-',label='New York')
+ax2.plot(date2,texasDeath,c='g',ls='-',label='Texas')
 labels2 = ax2.get_xticklabels()
 plt.setp(labels2, rotation=45, horizontalalignment='right')
-ax2.set(xlim=[datetime.strptime('2020-03-04','%Y-%m-%d'),datetime.strptime('2020-04-04','%Y-%m-%d')], xlabel='Date', ylabel='Death',
+ax2.set(xlabel='Date', ylabel='Death',
        title='Coronavirus Report')
 
 ax.locator_params(axis='y', nbins=7)

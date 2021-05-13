@@ -1,5 +1,8 @@
 """
+plot covid data that defined in csv file data_minimal.csv.
+    - [Online data](https://open-covid-19.github.io/data/data_minimal.csv)
 parse covid-19 data New York vs Texas
+
 """
 import csv
 import matplotlib.pyplot as plt
@@ -42,12 +45,11 @@ y = newyorkConfirmed
 z = newyorkDeath
 
 ax=fig.add_subplot(111)
-ax.plot(x,y,c='r',marker='o',ls='-',label='New York')
-ax.plot(x,texasConfirmed,c='g',marker='v',ls='-',label='Texas')
+ax.plot(date1,y,c='r',marker='o',ls='-',label='New York')
+ax.plot(date2,texasConfirmed,c='g',marker='v',ls='-',label='Texas')
 labels = ax.get_xticklabels()
 plt.setp(labels, rotation=45, horizontalalignment='right')
-ax.set(xlim=[datetime.strptime('2020-03-04','%Y-%m-%d'),datetime.strptime('2020-04-04','%Y-%m-%d')], xlabel='Date', ylabel='Confirmed',
-       title='Coronavirus Report')
+ax.set( xlabel='Date', ylabel='Confirmed',title='Coronavirus Report')
 
 #ax.locator_params(axis='y', nbins=9)
 
