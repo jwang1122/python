@@ -4,12 +4,12 @@ while a < 10:
     a, b = a+1, a+b
 print()
 
-for n in range(10):
-    if(n % 2 == 0):
-        print(n, end=' ')
+# Use break to simulate do-while
+i = 1
+while True: # unconditional execution
+    print(i,'', end='')
+    i += 1
+    if i>5:
+        break
 print()
 
-for n in range(4, 10, 2):
-    if(n % 2 == 0):
-        print(n, end=' ')
-print()

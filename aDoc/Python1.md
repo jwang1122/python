@@ -446,6 +446,9 @@ min1 = (b, a)[a < b]
         ```
     - loop string
 * whileElse.py
+
+![Do-While](images/DoWhile.svg)
+
 * guessNumber.py
     - assign homework to modify guessNumber.py for two players
 
