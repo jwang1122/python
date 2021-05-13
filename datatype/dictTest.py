@@ -19,6 +19,9 @@ d1 = {
 for n in d1: # dict is iterable
     print(f"{inspect.getframeinfo(cf).lineno}: {n}")
 
+d2 = dict(filter(lambda elem: elem[1].startswith('T'), d1.items()))
+print(f"{inspect.getframeinfo(cf).lineno}: {d2}")
+
 print(f"{inspect.getframeinfo(cf).lineno}: {d1[4]}")
 for key in d1.keys():
     print(f"{inspect.getframeinfo(cf).lineno}: {str(key)+'='+d1.get(key)}")

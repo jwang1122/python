@@ -1028,7 +1028,7 @@ File: DB.Browser.for.SQLite-3.12.1-win64-v2.msi
 - [ ] tkinter36.py; Pie chart
 - [ ] tkinter37.py; page switch and animated chart
 - [ ] tkinter38.py; Notebook (tabs)
-- [ ] tkinter39.py; 
+- [ ] tkinter39.py; LabelFrame (titled frame)
 
 <table border="1">
 <tr>
