@@ -4,18 +4,18 @@ Some old man went shopping, there are some pears, if each man get one pear, ther
 be additional one leftover; if each man get two pears, they need two more. How many
 man and pears?
 
-two variables linear algebra
+two variables linear algebra, let
+x: the number of old man
+y: the number of pears
+
 x - y = -1
 2x -y = 2
-where x is the number of old man
-y is the number of pears
 """
 import numpy as np
 import scipy.linalg as la
 
 a = np.array([[1, -1], [2, -1]])
-print(a)
 b = np.array([[-1],[2]])
-print(b)
 x = la.solve(a, b)
 print(x)
+print(f"There are {x[0][0]:.0f} old man and {x[1][0]:.0f} pears.")

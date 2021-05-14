@@ -22,6 +22,7 @@
   - [Linear Algebra](#linear-algebra)
   - [Pandas DataFrame](#pandas-dataframe)
   - [Statistics Functions](#statistics-functions)
+  - [numpy module](#numpy-module)
   - [File access](#file-access)
   - [plot](#plot)
   - [Python class](#python-class)
@@ -631,6 +632,7 @@ More Exercises:
 * prime4.py > define function rangePrime(x,y)
 
 ## Linear Algebra
+
 ![赶集](./images/赶集.jpg)
 
 几个老头儿去赶集，上街买了一堆梨，一人一个多一个，一人两梨少两梨。问：几个老头儿几个梨？
@@ -686,6 +688,18 @@ More Exercises:
     $$\bar {x} = \frac {\sum {x}} n$$
     where N represent number of population, and n represent size of a sample.
 * statistics9.py; NormalDist class
+
+## numpy module
+[numpy module Tutorial](https://numpy.org/devdocs/user/tutorials_index.html)
+
+* numpy1.py; underatand numpy array
+* numpy2.py; plot sin(x) wave
+* numpy3.py; Arithmetic operators on arrays apply elementwise.
+* numpy4.py; 2D array and linear algebra solution
+* numpy5.py; Universal Functions
+* numpy6.py; Array Indexing, Slicing and Iterating
+* numpy7.py; image of the Mandelbrot fractal
+* numpy8.py; normalized histogram
 
 ---
 [Table of Contents](#table-of-contents)

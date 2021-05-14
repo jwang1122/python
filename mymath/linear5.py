@@ -13,9 +13,15 @@ x1+x2+x3+x4+x5=52
 x1 = 7
 x2 - x3 = 0
 x5 = 6
-x1 + 2*x2 + 3*x3 + 4*x4 +5*x5 = 181  
+1*x1 + 2*x2 + 3*x3 + 4*x4 +5*x5 = 181  
 """
 
 import numpy as np
 import scipy.linalg as la
 
+
+a = np.array([[1,1,1,1,1], [1,0,0,0,0], [0,1,-1,0,0], [0,0,0,0,1], [1,2,3,4,5]])
+b = np.array([[52], [7], [0], [6], [181]])
+x = la.solve(a, b)
+print(x)
+print(f"There are {x[3][0]:.0f} students made 4 corrects.")

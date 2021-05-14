@@ -9,10 +9,8 @@ import numpy as np
 import scipy.linalg as la
 
 a = np.array([[2, 4], [1, 1]])
-print(a)
 b = np.array([[100],[32]])
-print(b)
 x = la.solve(a, b)
 print(x)
 
-there are 14 checken and 18 rabittes.
+print(f"There are {x[0][0]:.0f} chicken and {x[1][0]:.0f} rabbits.")
