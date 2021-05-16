@@ -639,6 +639,9 @@ More Exercises:
 * linear1.py; 老头儿们买梨。
   
 ![Chicken & Rabbits](images/chickenRabbits.gif)
+
+鸡兔同笼：32个头，100 条腿，几只鸡，几只兔？
+
 * linear2.py
 * linear3.py
 * linear4.py
