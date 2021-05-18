@@ -5,8 +5,8 @@
   - [Table of Contents](#table-of-contents)
   - [Install VSCode](#install-vscode)
   - [Install extentions](#install-extentions)
-  - [Setup Virture Environment](#setup-virture-environment)
   - [Install Python](#install-python)
+  - [Setup Virture Environment](#setup-virture-environment)
   - [Install Git](#install-git)
   - [PIP install missing module](#pip-install-missing-module)
   - [Image utility (ImageMagick)](#image-utility-imagemagick)
@@ -70,10 +70,10 @@ double click the desktop icon, start VSCode.
       -engine:Engine
       +testDrive()
     }
-    class Vehical {
+    class Vehicle {
       -engine:Engien
     }
-    Vehical <-- Car:is relation 
+    Vehicle <|-- Car:is relation 
     TestDrive <|-- Car : inheritence
     <<interface>> TestDrive
     TestDrive: testDrive()
@@ -84,7 +84,7 @@ double click the desktop icon, start VSCode.
       +runTest()
     }
 
-    Car --* Engine : has relation
+    Vehicle --* Engine : has relation
     ```
     Type | Description
     ---  | ---
@@ -104,22 +104,6 @@ double click the desktop icon, start VSCode.
 * vscode-pdf; PDF preview
 * Jupyter; Python Notebook
 
-
-## Setup Virture Environment
-```Windows
-python -m venv env
-./env/bin/activate.bat
-```
-
-```mac
-python -m venv env
-source env/bin/activate
-```
-    - close terminal, open new terminal
-    - Command Pallete ... > Python Select Interpreter
-
----
-[Table of Contents](#table-of-contents)
 
 ## Install Python
 We need Python interpretor installed in order to execute Python program.
@@ -166,6 +150,24 @@ Command Palette...>Python: Select Interpreter
 
 ---
 [Table of Contents](#table-of-contents)
+
+## Setup Virture Environment
+For windows OS:
+```Windows
+python -m venv env
+./env/bin/activate.bat
+```
+For MacOS:
+```mac
+python -m venv env
+source env/bin/activate
+```
+    - close terminal, open new terminal
+    - Command Pallete ... > Python Select Interpreter
+
+---
+[Table of Contents](#table-of-contents)
+
 
 ## Install Git
 Git is very powerful source version control software nowaday, we will use it for our python source code version control and homework repository.
@@ -225,14 +227,14 @@ pip freeze
 ```
 
 ## Image utility (ImageMagick)
+ImageMagick utility application can convert from-to different image formats. Very useful for convert serise png file to gif file to create animation image.
+* [Download Website](https://imagemagick.org/script/download.php)
 * Installation file: ImageMagick-x86_64-pc-windows.exe
-
 * installed at C:\Program Files (x86)\ImageMagick-7.0.11-Q8
-
-```
-magick
-
-```
+* Check for success installation
+  ```
+  magick -version
+  ```
 
 * Conver images from png to gif, list of png file to one gif file
 ```

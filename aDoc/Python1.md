@@ -498,7 +498,7 @@ python -m turtledemo
 ![Built in functions](./images/builtinFunctions.png)
 * define a function
 $$
-\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{arguments}\right) \underbrace {:}_{eol}
+\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol}
 $$
 * type following code in python playground.
 ```py
@@ -807,8 +807,7 @@ class User:
 * [ ] class16.py; multiple inheritance
 * [ ] class17.py; reverse given string
 * [ ] class18.py; define Website class
-* [ ] class19.py; Inner or nested classes
-* [ ] class20.py; Car and Engine
+ 
 * [ ] personInheritance.py > inheritance
 * [ ] personTest.py > understand class name <module_name>.<class_name>
 * [ ] bookdb.py > used in app4.py
@@ -832,8 +831,6 @@ class User:
 
 --- 
 [Table of Contents](#table-of-contents)
-
-![Windows Application Vs. Web Application](./images/win_web.svg)
 
 ## install npm
 [Download and install node](https://nodejs.org/en/download/)
