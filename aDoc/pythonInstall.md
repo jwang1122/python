@@ -4,6 +4,8 @@
 - [Python Class Software Installation](#python-class-software-installation)
   - [Table of Contents](#table-of-contents)
   - [Install VSCode](#install-vscode)
+  - [Install extentions](#install-extentions)
+  - [Setup Virture Environment](#setup-virture-environment)
   - [Install Python](#install-python)
   - [Install Git](#install-git)
   - [PIP install missing module](#pip-install-missing-module)
@@ -31,13 +33,79 @@ Search result: Download Visual Studio Code - Mac, Linux, Windows
 
 double click the desktop icon, start VSCode.
 
-* Install extentions
-    * Python Extention
-    * Markdown All Extention
-    * Markdown to PDF Extention
-    * PDF Preview Extention
+## Install extentions
+* Python; for Running, Debugging, IntelliSense 
+* Markdown All in One; Markdown preview, Table of contents, Math Equation
+* Markdown Preview from Matt Bierner; better preview
+  ```mermaid
+  sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+      John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts<br/>trival...
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+  ```
+  [Mermaid Diagram](https://mermaid-js.github.io/mermaid/#/)
+  [Mermaid Diagram Github](https://github.com/mermaid-js/mermaid)
+    - Flow
+    ```mermaid
+    graph TD
+    A[Hard] --> |From sharp corner to round corner| B(Roud)
+    B --> |Make decision|C{Decision?}
+    C --> |Yes| D[If True run this block]
+    C --> |No | E[False run this block]
+    ```
+    - Class
+    ```mermaid
+    classDiagram
+    class Car{
+      -model:str
+      -manufacture:str
+      -year:str
+      -engine:Engine
+      +testDrive()
+    }
+    class Vehical {
+      -engine:Engien
+    }
+    Vehical <-- Car:is relation 
+    TestDrive <|-- Car : inheritence
+    <<interface>> TestDrive
+    TestDrive: testDrive()
 
-* Setup Virture Environment
+    class Engine{
+      -model:str
+      -size:str
+      +runTest()
+    }
+
+    Car --* Engine : has relation
+    ```
+    Type | Description
+    ---  | ---
+    <\|--| Inheritance
+    *--  | Composition
+    o--  | Aggregation
+    -->  | Association
+    --   | Link 
+
+    [class diagram document](https://github.com/mermaidjs/mermaidjs.github.io/blob/master/classDiagram.md)
+
+* Markdown to PDF; convert markdown to PDF
+* Pylance; source code format
+* Unicode Latex; Insert unicode 
+  Command Palette... > Unicode: Insert Math Symble > area = 𝛑r², 
+  7 ÷ 5 = 1.4, 3 + 5 = 8, 4 x 6 = 24, 7 - 3 = 4
+* vscode-pdf; PDF preview
+* Jupyter; Python Notebook
+
+
+## Setup Virture Environment
 ```Windows
 python -m venv env
 ./env/bin/activate.bat

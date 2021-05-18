@@ -1,6 +1,6 @@
 import pygame
 import time
-import turtule
+import turtle
 
 pygame.font.init()
 screen = pygame.display.set_mode((800,600))

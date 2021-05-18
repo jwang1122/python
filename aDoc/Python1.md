@@ -807,7 +807,8 @@ class User:
 * [ ] class16.py; multiple inheritance
 * [ ] class17.py; reverse given string
 * [ ] class18.py; define Website class
- 
+* [ ] class19.py; Inner or nested classes
+* [ ] class20.py; Car and Engine
 * [ ] personInheritance.py > inheritance
 * [ ] personTest.py > understand class name <module_name>.<class_name>
 * [ ] bookdb.py > used in app4.py
