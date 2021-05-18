@@ -6,6 +6,8 @@
   - [Install VSCode](#install-vscode)
   - [Install Python](#install-python)
   - [Install Git](#install-git)
+  - [PIP install missing module](#pip-install-missing-module)
+  - [Image utility (ImageMagick)](#image-utility-imagemagick)
 
 
 ## Install VSCode
@@ -124,6 +126,8 @@ sudo chown -R wangqianjiang:wheel /usr/local
 brew link git
 ```
 
+Some version of MACOS, you just check the git version, it will install git when there is no git installed.
+
 * Check the installation
 
 ```
@@ -131,3 +135,39 @@ git --version
 ```
 ---
 [Table of Contents](#table-of-contents)
+
+## PIP install missing module
+
+```
+c:/Users/12818/workspace/django/hello.py
+Traceback (most recent call last):
+  File "c:\Users\12818\workspace\django\hello.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+```
+Whenever you see ModuleNotFoundError: do the following
+
+```
+pip install pandas
+```
+
+check all modules that pip installed
+```
+pip freeze
+```
+
+## Image utility (ImageMagick)
+* Installation file: ImageMagick-x86_64-pc-windows.exe
+
+* installed at C:\Program Files (x86)\ImageMagick-7.0.11-Q8
+
+```
+magick
+
+```
+
+* Conver images from png to gif, list of png file to one gif file
+```
+magick F_*.png motion.gif
+magick pencil.png favicon.ico
+```

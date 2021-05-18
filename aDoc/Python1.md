@@ -832,6 +832,8 @@ class User:
 --- 
 [Table of Contents](#table-of-contents)
 
+![Windows Application Vs. Web Application](./images/win_web.svg)
+
 ## install npm
 [Download and install node](https://nodejs.org/en/download/)
 ![Download image](./images/nodeDownload.png)
