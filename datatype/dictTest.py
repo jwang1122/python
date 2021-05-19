@@ -79,7 +79,7 @@ print(f"{inspect.getframeinfo(cf).lineno}: {z1}")  # no duplication, take x
 x = {1: 11, 2: 22, 3: 33, 4: 44, 5: 55}
 print(f"{inspect.getframeinfo(cf).lineno}: {list(x.keys())}")
 print(f"{inspect.getframeinfo(cf).lineno}: {x.values()}")
-print(f"{inspect.getframeinfo(cf).lineno}: {x.items()}")
+print(f"{inspect.getframeinfo(cf).lineno}: {x.items()}") # items() return a list with tuple pair
 
 # dict comprehension
 y = {k:v*2 for (k, v) in x.items()} # create new dict y from existing dict x

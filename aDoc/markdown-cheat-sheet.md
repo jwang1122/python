@@ -1,8 +1,7 @@
 # Markdown Cheat Sheet
 
-## Table of Contents
+Table of Contents
 - [Markdown Cheat Sheet](#markdown-cheat-sheet)
-  - [Table of Contents](#table-of-contents)
   - [Basic Syntax](#basic-syntax)
     - [Heading](#heading)
     - [Bold](#bold)
