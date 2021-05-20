@@ -1,13 +1,17 @@
 """
-class level variables
+class internal function call another internal function
 """
-class Warehouse:
-    purpose = 'storage' # class level attributes
-    region = 'west'
+class Bag:
+    def __init__(self):
+        self.data = []
 
-w1=Warehouse()
-print(w1.purpose, w1.region)
+    def add(self, x):
+        self.data.append(x)
 
-w2=Warehouse()
-w2.region = 'east' # instance level attributes
-print(w2.purpose, w2.region) # instance level attribute is used first
+    def addtwice(self, x):
+        self.add(x)
+        self.add(x)
+
+x = Bag()
+x.addtwice("apple")
+print(x.data)

@@ -1,16 +1,36 @@
 """
-Python supports a form of multiple inheritanc.
+class inheritence, review class level attribute
 """
-class Base1:
-    def __init__(self, name):
-        self.name = name
-
-class Base2:
+class SuperClass:
+    classAttribute = 1
+    def __init__(self, a):
+        self.instance = a
+    
     def __repr__(self):
-        return self.name
+        return self.instance
 
-class Subclass(Base1, Base2):
-    pass
+    def superFunc(self):
+        SuperClass.classAttribute *=10
+        print(self.classAttribute)
 
-x = Subclass("Sub class")
-print(x)
+class SubClass(SuperClass):
+    def subFunc(self):
+        print(SuperClass.classAttribute)
+
+obj1 = SuperClass("Super1")
+print(obj1)
+obj1.superFunc()
+
+obj2 = SuperClass("Super2")
+print(obj2)
+obj2.superFunc()
+
+obj3 = SubClass("Sub3")
+print(obj3)
+obj3.subFunc()
+obj3.superFunc()
+
+obj4 = SubClass("Sub4")
+print(obj4)
+obj4.subFunc()
+obj4.superFunc()

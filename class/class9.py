@@ -1,39 +1,19 @@
-"""
-__new__(cls): construct the object
-__init__(self): initializing the object 
-"""
-class A:
+class Sample(object):
+    def __str__(self):
+        return "SAMPLE"
+
+class A(object):
     def __new__(cls):
-        print("A.__new__() is called.")
+        return Sample()
 
-class B:
-    def __init__(self):
-        print("B.__init__() is called.")
-
-class C:
-    def __init__(self):
-        print("C.__init__() is called.")
-
-    def __new__(cls): # override the __new__() function
-        print("C.__new__() is called.")
-        # return super(C, cls).__new__(cls)
-
-class D(object):
+class B(object): # different way to write __new__()
     def __new__(cls):
-        print("D.__new__() is called.")
-        return 99
-
-class E:
-    def __init__(self):
-        print('E.__init__() is called')
-        return 33
+        return super(B, cls).__new__(Sample)
 
 if __name__ == '__main__':
-    x = A()
-    y = B()
-    z = C()
-    print(z)
-    x = D()
-    print(x)
-    print(type(x))
-    # x = E()
+    a = A()
+    print(a)
+    print(type(a))
+    b = B()
+    print(b)
+    print(type(b))

@@ -1,14 +1,16 @@
-class Website:
-    def __init__(self,title, urlAddress):
-        self.title = title
-        self.__urlAddress = urlAddress
+"""
+Python supports a form of multiple inheritanc.
+"""
+class Base1:
+    def __init__(self, name):
+        self.name = name
 
-    def showTitle(self):
-        print(self.title)
+class Base2:
+    def __repr__(self):
+        return self.name
 
-    def getUrlAddress(self):
-        return self.__urlAddress
+class Subclass(Base1, Base2):
+    pass
 
-obj = Website('Python Basics', 'https://python.org/pythonbasics')
-obj.showTitle()
-print(obj.getUrlAddress())
+x = Subclass("Sub class")
+print(x)

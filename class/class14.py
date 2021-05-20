@@ -1,17 +1,22 @@
-# Function defined outside the class
-def f1(self, x, y): # it has self argument
-    return min(x, x+y)
+"""
+override __next__() function
+"""
+class Reverse:
+    """Iterator for looping over a sequence backwards."""
+    def __init__(self, data):
+        self.data = data
+        self.index = len(data)
 
-class C:
-    f = f1
+    def __iter__(self):
+        return self
 
-    def g(self):
-        return 'hello world'
+    def __next__(self):
+        if self.index == 0:
+            raise StopIteration
+        self.index = self.index - 1
+        return self.data[self.index]
 
-    h = g
-
-x = C()
-y = x.f(3,-2)
-print(y)
-print(x.h())
-print(f1(None, 2, 3))
+if __name__ == '__main__':
+    rev = Reverse('international')
+    for char in rev:
+        print(char, end='')

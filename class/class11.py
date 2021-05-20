@@ -1,11 +1,10 @@
 """
-Don't use class level variables for instance attributes.
+Different object can have differente attribute value.
 """
 class Dog:
-    tricks = [] # class level attribute
-
     def __init__(self, name):
         self.name = name
+        self.tricks = []
 
     def add_trick(self, trick):
         self.tricks.append(trick)
@@ -16,4 +15,7 @@ if __name__ == "__main__":
     buddy = Dog("Buddy")
     fido.add_trick("rool over")
     buddy.add_trick("play dead")
-    print(fido.tricks)
+    fido.add_trick("bark")
+    buddy.add_trick("bark")
+    print(f"what fido can do: {fido.tricks}")
+    print(f"what buddy can do: {buddy.tricks}")

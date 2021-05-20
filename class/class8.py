@@ -1,21 +1,39 @@
-from enum import Enum
 """
-class Inheritance
-Class level function
-Class level attribute
+__new__(cls): construct the object
+__init__(self): initializing the object 
 """
+class A:
+    def __new__(cls):
+        print("A.__new__() is called.")
 
-class Mood(Enum): # Mood class inherites from Enum class
-    FUNKY = 1
-    HAPPY = 3
+class B:
+    def __init__(self):
+        print("B.__init__() is called.")
 
-    def describe(self):
-        return self.name, self.value
+class C:
+    def __init__(self):
+        print("C.__init__() is called.")
 
-    @classmethod
-    def favorite_mood(cls):
-        return cls.HAPPY
+    def __new__(cls): # override the __new__() function
+        print("C.__new__() is called.")
+        # return super(C, cls).__new__(cls)
+
+class D(object):
+    def __new__(cls):
+        print("D.__new__() is called.")
+        return 99
+
+class E:
+    def __init__(self):
+        print('E.__init__() is called')
+        return 33
 
 if __name__ == '__main__':
-    print(Mood.favorite_mood()) # use class name call function
-    print(Mood.FUNKY.value) # use class name access attribute
+    x = A()
+    y = B()
+    z = C()
+    print(z)
+    x = D()
+    print(x)
+    print(type(x))
+    # x = E()
