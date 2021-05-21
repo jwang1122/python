@@ -15,3 +15,5 @@ class Bag:
 x = Bag()
 x.addtwice("apple")
 print(x.data)
+
+x.add()
