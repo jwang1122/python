@@ -19,6 +19,7 @@ class Class2:
         return a + 10
 
 class Class3:
+    
     def __init__(self):
         pass
 

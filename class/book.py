@@ -4,6 +4,7 @@ class Book:
         self.price = price
     
     def __str__(self):
+         
         return f"Title: '{self.title}' (Price: ${self.price})"
 
 if __name__ == '__main__':

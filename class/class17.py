@@ -30,5 +30,5 @@ if __name__ == '__main__':
     print(f"mood2: {mood2}")
     print(f"mood2.FUNKY: {mood2.FUNKY}")
     print(f"call mood2.favorite_mood(): {mood2.favorite_mood()}")
-
+    
     mood3 = Mood()
