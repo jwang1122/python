@@ -18,8 +18,7 @@ class Class2:
     def __call__(self, a): # make the instance callable
         return a + 10
 
-class Class3:
-    
+class Class3:   
     def __init__(self):
         pass
 

@@ -810,7 +810,7 @@ class User:
 * [ ] class19.py; nested class
 * [ ] class20.py; compisition vs. inheritence
 * [ ] class21.py; __init__ vs. __call__ (make instance callable)
- 
+* [ ] class22.py; @classmethod vs. @staticmethod
 * [ ] personInheritance.py > inheritance
 * [ ] personTest.py > understand class name <module_name>.<class_name>
 * [ ] bookdb.py > used in app4.py

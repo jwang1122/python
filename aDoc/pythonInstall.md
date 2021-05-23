@@ -51,7 +51,13 @@ double click the desktop icon, start VSCode.
     Bob-->>John: Jolly good!
   ```
   [Mermaid Diagram](https://mermaid-js.github.io/mermaid/#/)
+  
   [Mermaid Diagram Github](https://github.com/mermaid-js/mermaid)
+
+  [mermaid doc](https://www.diagrams.net/blog/mermaid-diagrams)
+
+  ![Mermaid Cheatsheet](images/mermaid.png)
+  
     - Flow
     ```mermaid
     graph TD
