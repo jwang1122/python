@@ -1,3 +1,6 @@
+"""
+override __new__()
+"""
 class Sample(object):
     def __str__(self):
         return "SAMPLE"

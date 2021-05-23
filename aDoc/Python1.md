@@ -787,26 +787,29 @@ class User:
 * person.py 
 * bookdb.py
 * create a class snowman.py > drawSnowMan.py > shapes.py
-* [x] class0.py - pass class, instance and class level attributes
-* [x] create a class snowman.py > drawSnowMan.py > shapes.py
-* [x] class1.py > dynamically assign instance attribute and access it from outside function
-* [x] class2.py > define internal function
-* [x] class3.py > __init__(self) and internal function
-* [x] class4.py > use keyword argument in __init__(self)
-* [x] class5.py > understand __str__, __repr__, and __len__()
+* [ ] create a class snowman.py > drawSnowMan.py > shapes.py
+* [ ] class0.py; simplest class
+* [ ] class1.py > dynamically assign instance attribute and access it from outside function
+* [ ] class2.py > define function inside class
+* [ ] class3.py > __init__(self) and internal function
+* [ ] class4.py > use keyword argument in __init__(self)
+* [ ] class5.py > understand __str__, __repr__, and __len__()
 * [ ] class6.py > protected attribute and private attribute
-* [ ] class7.py > getter/setter
-* [ ] class8.py; inherite from Enum
-* [ ] class9.py; difference between __init__ and __new__
-* [ ] class10.py; override __new__() constructor
-* [ ] class11.py; issue caused by class level variables
-* [ ] class12.py; different object with different attributes
-* [ ] class13.py; class level variables
-* [ ] class14.py; define internal function by outside function, the benifit is use this outside function by more than one class.
+* [ ] class7.py > getter/setter, and property
+* [ ] class8.py; difference between __init__ and __new__
+* [ ] class9.py; override __new__() constructor
+* [ ] class10.py; issue caused by class level variables
+* [ ] class11.py; different object with different attributes
+* [ ] class12.py; class level variables
+* [ ] class13.py; define internal function by outside function, the benifit is use this outside function by more than one class.
+* [ ] class14.py; override __next__()
 * [ ] class15.py; function call function
-* [ ] class16.py; multiple inheritance
-* [ ] class17.py; reverse given string
-* [ ] class18.py; define Website class
+* [ ] class16.py; inherite from Super class
+* [ ] class17.py; inherite from Enum 
+* [ ] class18.py; multiple inheritence
+* [ ] class19.py; nested class
+* [ ] class20.py; compisition vs. inheritence
+* [ ] class21.py; __init__ vs. __call__ (make instance callable)
  
 * [ ] personInheritance.py > inheritance
 * [ ] personTest.py > understand class name <module_name>.<class_name>
