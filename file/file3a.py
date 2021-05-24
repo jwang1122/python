@@ -5,4 +5,4 @@ with open('data/student.json') as f:
 
 print(type(students))
 print(students)
-print(students["student3"]["lastname"])
+print(students[1]["lastname"])
