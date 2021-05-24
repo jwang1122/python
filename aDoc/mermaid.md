@@ -126,6 +126,11 @@ graph TB
     PRODUCT-CATEGORY ||--|{ PRODUCT : contains
     PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
+.
+```mermaid
+erDiagram
+    Customer }|--|{ Address:has
+```
 ## Sequence Diagram
 ```mermaid
 sequenceDiagram
@@ -200,12 +205,11 @@ options
 }
 end
 commit
-branch newbranch
-checkout newbranch
+branch dev
+checkout dev
 commit
 commit
 checkout master
 commit
-commit
-merge newbranch
+merge dev
 ```

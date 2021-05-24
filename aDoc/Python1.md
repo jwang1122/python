@@ -729,6 +729,7 @@ More Exercises:
 [Table of Contents](#table-of-contents)
 
 ## plot
+[Matplotlib document](https://python.astrotech.io/matplotlib/_index.html)
 * plot0.py
 * plot1.py
 * plot2.py
