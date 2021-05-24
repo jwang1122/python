@@ -10,6 +10,7 @@
   - [Install Git](#install-git)
   - [PIP install missing module](#pip-install-missing-module)
   - [Image utility (ImageMagick)](#image-utility-imagemagick)
+  - [Errors](#errors)
 
 
 ## Install VSCode
@@ -260,3 +261,20 @@ ImageMagick utility application can convert from-to different image formats. Ver
 magick F_*.png motion.gif
 magick pencil.png favicon.ico
 ```
+
+## Errors
+* ModuleNotFoundError: No module named 'Observer'
+```
+pip install Observer
+```
+
+* pip update error
+```
+ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied: 'C:\\Users\\12818\\AppData\\Local\\Temp\\pip-uninstall-3u4ljles\\pip.exe'
+Check the permissions.
+```
+File Explore, go to
+
+C:\Users\12818\AppData\Local\Temp
+
+remove the folder 'pip-uninstall-3u4ljles'
