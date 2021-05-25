@@ -1,16 +1,26 @@
 # Python level-I
 
+## Class record
+* 星期日 2:00 - 4:00 PM Terry 1-on-1 start from 2021/04/18
+    - 2021-04-18
+    - 2021-04-25
+    - 2021-05-02 (收到 $350 5次，每次2小时）
+    - 2021-05-09 (期中考试，停课一次)
+    - 2021-05-16 
+    - 2021-05-25 3:00PM (论文停课，星期二补课一次)
+  
 ## Table of Contents
 - [Python level-I](#python-level-i)
+  - [Class record](#class-record)
   - [Table of Contents](#table-of-contents)
   - [Familiar with your keyboard](#familiar-with-your-keyboard)
   - [Using Markdown](#using-markdown)
   - [Getting start](#getting-start)
   - [playground and help document](#playground-and-help-document)
   - [print](#print)
-  - [Data Type](#data-type)
-  - [Operators](#operators)
-  - [If-Else Execution Control](#if-else-execution-control)
+  - [[x] Data Type](#x-data-type)
+  - [[x] Operators](#x-operators)
+  - [[x] If-Else Execution Control](#x-if-else-execution-control)
   - [Loop](#loop)
   - [turtle](#turtle)
   - [draw snow man](#draw-snow-man)
@@ -200,7 +210,7 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## Data Type
+## [x] Data Type
 
 ![Three Basics](./images/LanguageBasics.svg)
 
@@ -289,7 +299,7 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## Operators
+## [x] Operators
 ./operator
 
 * Arithmetic Operators (+, -, *, /, %, **, //)
@@ -340,7 +350,7 @@ pyinstaller --onefile -w 'filename.py'
 | >>=      | x >>=3  | x=x>>3  |
 | <<=      | x <<=2  | x=x<<2  |
 
-* Comparison Operators
+* [x] Comparison Operators
 
 [Comparison Sample code](../operator/comparison.py)
 
@@ -353,7 +363,7 @@ pyinstaller --onefile -w 'filename.py'
 | >=       | Greater than or equal to | a >= b  |
 | <=       | Less than or equal to    | a <= b  |
   
-* Logical Operators
+* [x] Logical Operators
 
 [Logical Sample code](../operator/logical.py)
 
@@ -363,7 +373,7 @@ pyinstaller --onefile -w 'filename.py'
 | or       | Returns True if one of the statements is true | x < 5 or x < 4 |
 | not      | Reverse the returns                           | not (x<10)     |
 
-* Identity Operators
+* [x] Identity Operators
 
 [Identity Sample Code](../operator/identity.py)
 
@@ -372,7 +382,7 @@ pyinstaller --onefile -w 'filename.py'
 | is       | Returns True if both variables are the same object|a is b|
 | is not   | Returns True if both variables are not the same object |a is not b |
 
-* Membership Operators
+* [x] Membership Operators
 
 [Membership Sample Code](../operator/membership.py)
 
@@ -381,7 +391,7 @@ pyinstaller --onefile -w 'filename.py'
 | in       | Returns True if a sequence with the specified value is present in the object     | a in y     |
 | not in   | Returns True if a sequence with the specified value is not present in the object | x not in y |
 
-* Ternary Operators
+* [x] Ternary Operators
 
 [Ternary Sample Code](../operator/ternary.py)
 
@@ -410,17 +420,16 @@ min1 = (b, a)[a < b]
 ---
 [Table of Contents](#table-of-contents)
 
-## If-Else Execution Control
+## [x] If-Else Execution Control
 ![If-Else](./images/IfElse.svg)
 
 ./if-else
-* [Response based on user input](../if-else/if-else1.py)
-* [Check the length of user input](../if-else/if-else2.py) 
-* [if-elif-else](../if-else/if-else3.py)  
+* [ ] [Response based on user input](../if-else/if-else1.py)
+* [ ] [Check the length of user input](../if-else/if-else2.py) 
+* [ ] [if-elif-else](../if-else/if-else3.py)  
     - Infinit loop while True: > input("Continue? (y/n)")
     - [Practice]:
-* [Ternary](../if-else/ternary.py)
-  
+
 ---
 [Table of Contents](#table-of-contents)
 
