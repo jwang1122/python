@@ -18,9 +18,9 @@
   - [Getting start](#getting-start)
   - [playground and help document](#playground-and-help-document)
   - [print](#print)
-  - [[x] Data Type](#x-data-type)
-  - [[x] Operators](#x-operators)
-  - [[x] If-Else Execution Control](#x-if-else-execution-control)
+  - [Data Type](#data-type)
+  - [Operators](#operators)
+  - [If-Else Execution Control](#if-else-execution-control)
   - [Loop](#loop)
   - [turtle](#turtle)
   - [draw snow man](#draw-snow-man)
@@ -210,7 +210,7 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## [x] Data Type
+## Data Type
 
 ![Three Basics](./images/LanguageBasics.svg)
 
@@ -299,11 +299,11 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## [x] Operators
+## Operators
 ./operator
 
-* Arithmetic Operators (+, -, *, /, %, **, //)
-* 
+* [x] Arithmetic Operators (+, -, *, /, %, **, //)
+
 [Arithmetic Operator](../operator/mathOperator.py)
 
 | Operator | Name           | Example |
@@ -316,7 +316,7 @@ pyinstaller --onefile -w 'filename.py'
 | **       | Exponentiation | a ** b  |
 | //       | Floor division | a // b  |
 
-* Bitwise Operators
+* [x] Bitwise Operators
 
 [bitwise sample code](../operator/bitwise.py)
 
@@ -330,7 +330,7 @@ pyinstaller --onefile -w 'filename.py'
 | >>       | Signed right shift   | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off |
 
 
-* Assignment Operators
+* [x] Assignment Operators
 
 [Assignment sample code](../operator/assignment.py)
 
@@ -420,7 +420,7 @@ min1 = (b, a)[a < b]
 ---
 [Table of Contents](#table-of-contents)
 
-## [x] If-Else Execution Control
+## If-Else Execution Control
 ![If-Else](./images/IfElse.svg)
 
 ./if-else
@@ -435,7 +435,7 @@ min1 = (b, a)[a < b]
 
 ## Loop
 ![Loop-Continue-Break](./images/Loop.svg)
-* forLoop1.py
+* [ ] forLoop1.py
 * forBreak.py
 * forContinue.py
 * forNested1.py; print right triangle
