@@ -15,6 +15,7 @@
   - [turtle](#turtle)
   - [draw snow man](#draw-snow-man)
   - [Function](#function)
+  - [Understande import](#understande-import)
   - [ball game](#ball-game)
   - [Simple math](#simple-math)
   - [Dice](#dice)
@@ -37,6 +38,7 @@
   - [Sqlite](#sqlite)
   - [tkinter GUI](#tkinter-gui)
   - [OpenGL](#opengl)
+  - [Python File Structure](#python-file-structure)
 
 ---
 [Table of Contents](#table-of-contents)
@@ -533,7 +535,14 @@ if you don't return value from function, you will get None when you assign the v
 * innerFUnction1.py
 * [homework1](../function/homework1.md)
 * [homework2](../function/homework2.md)
+  
+## Understande import
+When a module is imported by another script __name__ is set to the **name of the module**, but when you run a module directly __name__ is set to __main__. 
 
+```py
+if __name__ == '__main__':
+    a = 5
+```
 ---
 [Table of Contents](#table-of-contents)
 
@@ -1180,3 +1189,21 @@ pip install PyOpenGL PyOpenGL_accelerate
 * [ ] opengl4.py; move Cube by arrow keys or mouse wheel
 * [ ] opengl5.py; move Cube by arrow keys or mouse wheel
 * [ ] opengl6.py; move Cube by arrow keys or mouse wheel
+
+## Python File Structure
+[Import Rules](https://iq-inc.com/importerror-attempted-relative-import/)
+[File Structure](../structure/ReadMe.md)
+* ImportError
+* ModuleNotFoundError
+* Solution1
+* Solution2
+* package and module
+    each .py file is a module, bunch of files in a folder is package
+
+    A package is a mechanism to bundle one or more modules in a way that makes them easier to organize into logical groups. Packages also allow us to organize our modules into different folders. 
+
+    [Distributing Python Modules](https://docs.python.org/3/distributing/index.html)
+
+    any directory that has an __init__.py file and one or more modules is a package. 
+
+    The __init__.py file serves as both a marker for python that this is a package and also a place to execute any initialization code required to use the package. Typically __init__.py is just an empty file unless you need to do some form of advanced package initialization.

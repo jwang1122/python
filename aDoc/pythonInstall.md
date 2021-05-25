@@ -228,7 +228,7 @@ git --version
 
 ## PIP install missing module
 
-```
+```output
 c:/Users/12818/workspace/django/hello.py
 Traceback (most recent call last):
   File "c:\Users\12818\workspace\django\hello.py", line 1, in <module>
@@ -237,13 +237,23 @@ ModuleNotFoundError: No module named 'pandas'
 ```
 Whenever you see ModuleNotFoundError: do the following
 
-```
+```DOS
 pip install pandas
 ```
 
 check all modules that pip installed
-```
+```DOS
 pip freeze
+```
+
+```DOS
+pip install -r requirements.txt
+```
+Sample requirements.txt
+
+```output
+nose
+sphinx
 ```
 
 ## Image utility (ImageMagick)
