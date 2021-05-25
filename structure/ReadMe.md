@@ -1,13 +1,16 @@
-# Python File Structured
+# Python File Structure
+File location: C:\Users\12818\workspace\python-I\structure\ReadMe.md
 
-- [Python File Structured](#python-file-structured)
-  - [File Structured](#file-structured)
+- [Python File Structure](#python-file-structure)
+  - [File Structure](#file-structure)
   - [ModuleNotFoundError](#modulenotfounderror)
   - [ImportError:](#importerror)
   - [Solution (Get rid of from)](#solution-get-rid-of-from)
   - [Solution 2 (Change file structure)](#solution-2-change-file-structure)
+  - [Typical python package structure](#typical-python-package-structure)
+    - [import](#import)
 
-## File Structured
+## File Structure
 
 ```output
 python-I
@@ -100,3 +103,39 @@ print("About to do something from main.")
 doSomethingCool()
 ```
 
+## Typical python package structure
+
+```output
+.
+└── src/
+    ├── main.py
+    ├── utils/
+    │   ├── __init__.py
+    │   ├── util.py
+    │   └── shared/
+    │       ├── __init__.py
+    │       └── helpers.py
+    └── calculations/
+        ├── __init__.py
+        └── financials.py
+```
+### import
+```py
+# Main.py for doing cool things
+import utils.util
+print("About to do something cool!")
+utils.util.doSomethingCool()
+```
+
+```py
+# util.py
+from . shared import helpers
+def doSomethingCool():
+    print(helpers.doHelp("Doing something cool"))
+```
+
+```py
+# helpers.py
+def doHelp(x):
+    return "help {}".format(x)
+```

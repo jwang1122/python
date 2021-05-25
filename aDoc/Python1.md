@@ -1207,3 +1207,28 @@ pip install PyOpenGL PyOpenGL_accelerate
     any directory that has an __init__.py file and one or more modules is a package. 
 
     The __init__.py file serves as both a marker for python that this is a package and also a place to execute any initialization code required to use the package. Typically __init__.py is just an empty file unless you need to do some form of advanced package initialization.
+
+The better python project source code structure is showing below,
+
+```output
+.
+└── src/
+    ├── main.py
+    ├── PackageA/
+    │   ├── __init__.py
+    │   ├── logic.py
+    │   ├── SubPackageA1/
+    │   │   ├── __init__.py
+    │   │   └── util.py
+    │   └── SubPackageA2/
+    │       ├── __init__.py
+    │       └── otherUtil.py
+    └── PackageB/
+        ├── __init__.py
+        └── helpers.py
+```
+
+C:\Users\12818\workspace\python-I\testCircle.py
+
+testCircle.py; import mymath package, load __init__.py
+testShapes.py;

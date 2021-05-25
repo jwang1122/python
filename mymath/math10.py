@@ -47,7 +47,7 @@ def converter(s):
         if(i=="V"): sum += V
         if(i=="I"): sum += I
 
-def prime(x):
+def isPrime(x):
     """
     Any natural number that is not divisible by any other number 
     except 1 and itself called Prime Number in Python.
