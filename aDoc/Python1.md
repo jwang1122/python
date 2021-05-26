@@ -39,6 +39,9 @@
   - [tkinter GUI](#tkinter-gui)
   - [OpenGL](#opengl)
   - [Python File Structure](#python-file-structure)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
+    - [Recommendations](#recommendations)
 
 ---
 [Table of Contents](#table-of-contents)
@@ -1231,4 +1234,21 @@ The better python project source code structure is showing below,
 C:\Users\12818\workspace\python-I\testCircle.py
 
 testCircle.py; import mymath package, load __init__.py
+
 testShapes.py;
+
+### Advantages
+* Users do not need to know module names or remember, for instance, which function is in which module. They only need the package name and the function name. In the general store, all the products are on display with minimal signage. The customer doesn’t need to know which aisle to go down.
+* Users can access any functionality once the top-level package is imported. Everything is on display.
+* Tab-completion gives you everything with just example_pkg.<TAB>. Tab-completion is like the general store grocer who knows exactly where everything is and is happy to help.
+When new features are added to modules, you do not need to update any import statements; they will automatically be included. In the general store, there is no fancy signage to change. Just put a new item on the shelf.
+### Disadvantages
+* Requires that all functions and classes must be uniquely named (i.e., there are not functions called save() in both the foo and bar modules). You don’t want to confuse your customers by putting apples in two different bins.
+* If the package is large, it can add a lot to the namespace and (depending on a lot of factors) can slow things down. A general store can have a lot of little odds and ends that any individual customer might not want. That can might be overwhelming for your customers.
+* Requires a bit more effort and vigilance to keep some elements away from the user. For example, you might need to use underscores to keep functions from importing (e.g., _function_name()). Most general stores don’t have a big storage area where things like brooms and mops are kept; those items are visible to the customer. Even if it is unlikely that they would pick up a broom and start sweeping your floors, you might not want them to. In that case, you have to take extra steps to hide those supplies from view.
+### Recommendations
+* Use when it is hard to predict the workflow of a typical user (e.g., general packages like pandas or numpy). This is the “general” part of general store.
+Use when the user might frequently bounce around between different modules (e.g., the leiap package)
+* Use when function and class names are very descriptive and easy to remember and specifying the module names will not improve readability. If your products are familiar things like fruits and vegetables, you don’t need a lot of signage; customers will figure * things out quite easily.
+Use with just a few modules. If there are many modules, it can be more difficult for a new user to find the functionality they want in the docs. If your general store gets too big, customers won’t be able to find the things they want.
+* Use when objects might be added or removed frequently. It’s easy to add and remove products in the general store without disrupting the customer.

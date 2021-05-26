@@ -10,7 +10,7 @@ john.color("red")
 john.pensize(5)
 john.shapesize(3)
 john.forward(120)
-john.right(30)
+john.right(90)
 john.fd(50)
 
 exitonclick()

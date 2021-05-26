@@ -5,7 +5,7 @@ from random import *
 class DrawGift:
     def __init__(self):
         self.winers = set()
-        with open("./turtle/names.out") as win:
+        with open("./myturtle/names.out") as win:
             line = win.readline()
             if len(line)>=0:
                 l = line.split(',')

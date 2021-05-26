@@ -47,9 +47,18 @@ n..n - {where n>1}
 
 
 ## Class Diagram
+```html
+<style>
+    .cssClass > rect{
+        fill:#68cdfc;
+        stroke:#000000;
+        stroke-width:4px;
+    }
+</style>
+```
 ```mermaid
 classDiagram
-class Card{
+class Card:::rect {
     face:str
     suit:str
 }
@@ -65,28 +74,37 @@ class Player{
     getValue()
 }
 Player <|-- Dealer:Dealer is a player
-Deck o-- Card
+Deck "1" o-- "*" Card
 Dealer o-- Deck
+Student "1" --> "1..*" Course
 ```
 ## Graph Diagram
 * graph (Left-Right)
-    ```mermaid
-    graph LR;
-    A--> B & C & D;
-    B--> A & E;
+```mermaid
+graph LR;
+    classDef rect1 fill:#f9f,stroke:#333,stroke-width:4px;
+    classDef rect2 fill:#68cdfc,stroke:#333,stroke-width:2px;
+    A[fa:fa-twitter student]==> B>store] & C(teacher) & D[(fa:fa-ban parent)];
+    B--> A & E[/school/];
     C--> A & E;
     D--> A & E;
     E--> B & C & D;
-    ```
+    class A,C,D rect1
+    class B,E rect2
+```
 * Flowchart (Top-Bottom)
 ```mermaid
 graph TB
     A[Christmas] -->|Get money| B(Go shopping)
     B --> C{Let me think}
+    style C fill:#f3ac30,stroke:#333,stroke-width:3px
     B --> G[/Another/]
     C ==>|One| D[Laptop]
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
+    style D fill:#4adff6,stroke:#333,stroke-width:2px
+    style E fill:#4adff6,stroke:#333,stroke-width:2px
+    style F fill:#4adff6,stroke:#333,stroke-width:2px
 
     subgraph section
         C
@@ -106,6 +124,9 @@ graph TB
   SubGraph1Flow -- Choice1 --> DoChoice1
   SubGraph1Flow -- Choice2 --> DoChoice2
   end
+  style SubGraph1Flow fill:#f3ac30,stroke:#333,stroke-width:3px
+  style DoChoice1 fill:#4abff6,stroke:#333,stroke-width:3px
+  style DoChoice2 fill:#4abff6,stroke:#333,stroke-width:3px
 
   subgraph "Main Graph"
   Node1[Node 1] --> Node2[Node 2]
