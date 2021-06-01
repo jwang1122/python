@@ -6,7 +6,9 @@ import pandas
 data = pandas.read_csv('mymath/brain_size.csv', sep=';', na_values='.')
 
 print(f"(rows, columns): {data.shape}")
+print("Data columns: ")
 print(data.columns)
+print("Data Gender: ")
 print(data.Gender)
 
 x = data[data['Gender'] == 'Female']['VIQ'].mean()

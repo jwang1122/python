@@ -24,6 +24,9 @@ Table of Contents
     - [Task List](#task-list)
   - [Center Image](#center-image)
   - [Create Table of contents](#create-table-of-contents)
+  - [Markdown emotion icons](#markdown-emotion-icons)
+  - [mermaid diagram](#mermaid-diagram)
+  - [Udemy](#udemy)
 
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
@@ -133,3 +136,57 @@ term
 ## Create Table of contents
 
 Command Palette... > Markdown All in One: Create Table of Contents
+
+## Markdown emotion icons
+:+1: [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/)
+:heavy_check_mark: 正确
+:x: 错误
+:+1: 赞美
+:-1: 鄙视
+:smile: 微笑
+:cry: 哭泣
+:rose: 玫瑰
+:heart: 心爱
+:a: 字母
+:ok: 好
+:ballot_box_with_check: 正确
+:white_check_mark: 正确
+:arrow_right: 右箭头
+:arrow_forward: 开始
+:repeat: 反复
+:pushpin:
+:floppy_disk: 储存
+:bulb: 顿悟
+:memo: 记录
+:warning: 警告
+:fast_forward: 快进
+:rewind: 回放
+:copyright: 版权
+
+## mermaid diagram
+[Mermaid Samples](mermaid.md)
+```mermaid
+graph TB
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    style C fill:#f3ac30,stroke:#333,stroke-width:3px
+    B --> G[/Another/]
+    C ==>|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+    style D fill:#4adff6,stroke:#333,stroke-width:2px
+    style E fill:#4adff6,stroke:#333,stroke-width:2px
+    style F fill:#4adff6,stroke:#333,stroke-width:2px
+
+    subgraph section
+        C
+        D
+        E
+        F
+        G
+    end
+```
+## Udemy
+[Udemy](https://www.udemy.com/)
+username: wangchar@gmail.com
+password: Asdfjkl1Ude
