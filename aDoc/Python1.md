@@ -185,6 +185,28 @@ pyinstaller --onefile -w 'filename.py'
 
 ## playground and help document
 * python >>> help(print) (positional arguments, keyword arguments)
+```py
+(env) C:\Users\John\workspace\python-I>python
+Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 4+5
+9
+>>> 4+5*2-6
+8
+>>> # calculate rectangle area
+>>> print(4*6)
+24
+>>> # using variable
+>>> width=4 
+>>> height=6
+>>> area = width*height
+>>> area
+24
+>>>
+```
+* RULES for Variables:
+  - A variable name must start with a letter or underscore character
+  - 
 * [Practice]: different print statements
 * hello/print.py
 * hello/print-string.py
