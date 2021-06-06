@@ -3,6 +3,7 @@
 ## Table of Contents
 - [VSCode Tricks](#vscode-tricks)
   - [Table of Contents](#table-of-contents)
+  - [Disable Editor minimap](#disable-editor-minimap)
   - [Define Ke shortcut for clear terminal](#define-ke-shortcut-for-clear-terminal)
   - [Move Terminal window to right](#move-terminal-window-to-right)
   - [Key shortcut](#key-shortcut)
@@ -15,6 +16,10 @@
   - [Check in GitHub](#check-in-github)
   - [Increase/decrease window characters](#increasedecrease-window-characters)
 
+## Disable Editor minimap
+
+Gear > settings > Editor: minimap: Enable > uncheck
+ 
 ## Define Ke shortcut for clear terminal
 Right-click > Command palette > Terminal: clear > click the gear > click +
 
