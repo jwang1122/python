@@ -3,6 +3,8 @@
 username: wangchar@gmail.com
 password: Asdfjkl1Ude
 
+👍👎✔️❌❓💾🗑📝📓📒💡⚠️😄😢✉️♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+
 ## Table of Contents
 - [Python level-I](#python-level-i)
   - [Table of Contents](#table-of-contents)

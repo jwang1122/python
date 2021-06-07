@@ -1,5 +1,7 @@
 # Python level-I
 
+👍👎✔️❌❓💾🗑📝📓📒💡⚠️😄😢✉️♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+
 ## Class record
 * 星期日 2:00 - 4:00 PM Terry 1-on-1 start from 2021/04/18
     1. 2021-04-18
@@ -12,18 +14,18 @@
 - [Python level-I](#python-level-i)
   - [Class record](#class-record)
   - [Table of Contents](#table-of-contents)
-  - [Familiar with your keyboard](#familiar-with-your-keyboard)
-  - [Using Markdown](#using-markdown)
-  - [Getting start](#getting-start)
-  - [playground and help document](#playground-and-help-document)
-  - [print](#print)
-  - [Data Type](#data-type)
-  - [Operators](#operators)
-  - [If-Else Execution Control](#if-else-execution-control)
-  - [Loop](#loop)
-  - [turtle](#turtle)
-  - [draw snow man](#draw-snow-man)
-  - [Function](#function)
+  - [✔️ Familiar with your keyboard](#️-familiar-with-your-keyboard)
+  - [✔️Using Markdown](#️using-markdown)
+  - [✔️Getting start](#️getting-start)
+  - [✔️playground and help document](#️playground-and-help-document)
+  - [✔️print](#️print)
+  - [✔️Data Type](#️data-type)
+  - [✔️Operators](#️operators)
+  - [✔️If-Else Execution Control](#️if-else-execution-control)
+  - [✔️Loop](#️loop)
+  - [✔️turtle](#️turtle)
+  - [✔️draw snow man](#️draw-snow-man)
+  - [💡Function](#function)
   - [ball game](#ball-game)
   - [Simple math](#simple-math)
   - [Dice](#dice)
@@ -51,7 +53,7 @@
 [Table of Contents](#table-of-contents)
 
 
-## Familiar with your keyboard
+## ✔️ Familiar with your keyboard
 ![windows keyboard](./images/keyboard-windows.jpg)
 ![Apple keyboard](./images/keyboard-apple.jpg)
 
@@ -107,7 +109,7 @@
 ---
 [Table of Contents](#table-of-contents)
 
-## Using Markdown 
+## ✔️Using Markdown 
 * turn in homework to GitHub
 * VS Code Extension
     - Markdown All in One
@@ -133,7 +135,7 @@
 ---
 [Table of Contents](#table-of-contents)
 
-## Getting start
+## ✔️Getting start
 * install softwares needed
 
 [refer to ](pythonInstall.md) python installation file.
@@ -182,7 +184,7 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## playground and help document
+## ✔️playground and help document
 * python >>> help(print) (positional arguments, keyword arguments)
 * [Practice]: different print statements
 * hello/print.py
@@ -192,7 +194,7 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## print
+## ✔️print
 * hello.py; getting start with Python > hello.ReadMe.md
 * print.py; hello/print.py
 * helloHim.py; intruduce input() function
@@ -209,7 +211,7 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## Data Type
+## ✔️Data Type
 
 ![Three Basics](./images/LanguageBasics.svg)
 
@@ -298,7 +300,7 @@ pyinstaller --onefile -w 'filename.py'
 ---
 [Table of Contents](#table-of-contents)
 
-## Operators
+## ✔️Operators
 ./operator
 
 * [x] Arithmetic Operators (+, -, *, /, %, **, //)
@@ -419,7 +421,7 @@ min1 = (b, a)[a < b]
 ---
 [Table of Contents](#table-of-contents)
 
-## If-Else Execution Control
+## ✔️If-Else Execution Control
 ![If-Else](./images/IfElse.svg)
 
 ./if-else
@@ -432,7 +434,7 @@ min1 = (b, a)[a < b]
 ---
 [Table of Contents](#table-of-contents)
 
-## Loop
+## ✔️Loop
 ![Loop-Continue-Break](./images/Loop.svg)
 * [ ] forLoop1.py
 * forBreak.py
@@ -463,7 +465,7 @@ min1 = (b, a)[a < b]
 ---
 [Table of Contents](#table-of-contents)
 
-## turtle
+## ✔️turtle
 
 ```
 python -m turtledemo
@@ -486,7 +488,7 @@ python -m turtledemo
 ---
 [Table of Contents](#table-of-contents)
 
-## draw snow man
+## ✔️draw snow man
 * ![Snow Couple](./images/snowCouple.png)
 * demo draw_snowman.py
 * shapes.py
@@ -497,7 +499,7 @@ python -m turtledemo
 ---
 [Table of Contents](#table-of-contents)
 
-## Function
+## 💡Function
 
 ![Built in functions](./images/builtinFunctions.png)
 * define a function

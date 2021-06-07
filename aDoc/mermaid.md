@@ -79,6 +79,8 @@ Dealer o-- Deck
 Student "1" --> "1..*" Course
 ```
 ## Graph Diagram
+* Font Awesome icons
+
 * graph (Left-Right)
 ```mermaid
 graph LR;
@@ -86,9 +88,10 @@ graph LR;
     classDef rect2 fill:#68cdfc,stroke:#333,stroke-width:2px;
     A[fa:fa-twitter student]==> B>store] & C(teacher) & D[(fa:fa-ban parent)];
     B--> A & E[/school/];
-    C--> A & E;
-    D--> A & E;
+    C--fa:fa-twitter--> A & E;
+    D--fa:fa-address-book --> A & E;
     E--> B & C & D;
+    F["fa:fa-address-book addressbook "]
     class A,C,D rect1
     class B,E rect2
 ```

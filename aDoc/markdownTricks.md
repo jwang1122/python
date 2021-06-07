@@ -1,5 +1,7 @@
 # Markdown Cheat Sheet
 
+👍👎✔️❌❓💾🗑📝🐛📓📒💡⚠️😄😢✉️♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+
 Table of Contents
 - [Markdown Cheat Sheet](#markdown-cheat-sheet)
   - [Basic Syntax](#basic-syntax)
@@ -25,7 +27,7 @@ Table of Contents
   - [Center Image](#center-image)
   - [Create Table of contents](#create-table-of-contents)
   - [Markdown emotion icons](#markdown-emotion-icons)
-  - [🔥 insert icon](#-insert-icon)
+  - [insert icon](#insert-icon)
   - [mermaid diagram](#mermaid-diagram)
   - [Udemy](#udemy)
 
@@ -139,38 +141,53 @@ term
 Command Palette... > Markdown All in One: Create Table of Contents
 
 ## Markdown emotion icons
-:+1: [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/)
-:heavy_check_mark: 正确
-:x: 错误
-:+1: 赞美
-:-1: 鄙视
-:smile: 微笑
-:cry: 哭泣
-:rose: 玫瑰
-:heart: 心爱
-:a: 字母
-:ok: 好
-:ballot_box_with_check: 正确
-:white_check_mark: 正确
-:arrow_right: 右箭头
-:arrow_forward: 开始
-:repeat: 反复
-:pushpin:
-:floppy_disk: 储存
-:bulb: 顿悟
-:memo: 记录
-:warning: 警告
-:fast_forward: 快进
-:rewind: 回放
-:copyright: 版权
+:+1: [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/) 这篇文章很棒，很容易使用。
 
-## 🔥 insert icon
+:heavy_check_mark: ✔️正确
+:x: ❌错误
+:+1: 👍 赞美
+:-1: 👎 鄙视
+:smile: 😄 微笑
+:cry: 😢 哭泣
+:rose: 🌹玫瑰
+:heart: ❤️心爱
+:a: 🅰️字母
+:ok: 🆗好
+:ballot_box_with_check: ☑️正确
+:white_check_mark: ✅
+:arrow_right: ➡️右箭头
+:arrow_forward: ▶️开始
+:repeat: 🔁反复
+:floppy_disk: 💾储存
+:pushpin:📌图钉
+:bulb: 💡顿悟
+:memo: 📝记录
+:warning: ⚠️警告
+:fast_forward: ⏩快进
+:rewind: ⏪回放
+:copyright: ©️ 
+:hammer: 🔨榔头
+:butterfly: 🦋
+:triangular_ruler:📐三角尺
+:fire:🔥火焰
+:email:✉️邮件
+:recycle:♻️回收
+:notebook:📓
+:ledger:📒
+:wastebasket:🗑
+:question:❓
+:bug:🐛
 
+👍👎✔️❌❓💾🗑📝🐛📓📒💡⚠️😄😢✉️♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+
+##  insert icon
 ![ad](faicons/svgs/regular/smile.svg)
 <img src="faweb/svgs/regular/address-book.svg" style="background-color:lightblue;" height="20"> reduce the icon size.
 
 ##  mermaid diagram
+
 [Mermaid Samples](mermaid.md)
+
 ```mermaid
 graph TB
     A[Christmas] -->|Get money| B(Go shopping)

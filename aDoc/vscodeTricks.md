@@ -1,31 +1,33 @@
 # VSCode Tricks
 
+👍👎✔️❌❓💾🗑📝📓📒💡⚠️😄😢✉️♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+
 ## Table of Contents
 - [VSCode Tricks](#vscode-tricks)
   - [Table of Contents](#table-of-contents)
-  - [Disable Editor minimap](#disable-editor-minimap)
-  - [Define Ke shortcut for clear terminal](#define-ke-shortcut-for-clear-terminal)
-  - [Move Terminal window to right](#move-terminal-window-to-right)
+  - [😄Disable Editor minimap](#disable-editor-minimap)
+  - [👍Define Key-shortcut for clear terminal](#define-key-shortcut-for-clear-terminal)
+  - [👍Move Terminal window to right](#move-terminal-window-to-right)
   - [Key shortcut](#key-shortcut)
-  - [Command Palette](#command-palette)
+  - [🔥Command Palette](#command-palette)
   - [Convert Markdown to PDF](#convert-markdown-to-pdf)
   - [Disable pylint check](#disable-pylint-check)
   - [Setup Unit test](#setup-unit-test)
-  - [Setup Python Interpretor](#setup-python-interpretor)
+  - [👍 Setup Python Interpretor](#-setup-python-interpretor)
   - [Create Virtual Environment](#create-virtual-environment)
   - [Check in GitHub](#check-in-github)
   - [Increase/decrease window characters](#increasedecrease-window-characters)
 
-## Disable Editor minimap
+## 😄Disable Editor minimap
 
-Gear > settings > Editor: minimap: Enable > uncheck
+Gear(bottom-left) > settings > Text Editor: minimap: Enable > uncheck
  
-## Define Ke shortcut for clear terminal
+## 👍Define Key-shortcut for clear terminal
 Right-click > Command palette > Terminal: clear > click the gear > click +
 
 Shift+ctrl+c
 
-## Move Terminal window to right
+## 👍Move Terminal window to right
 
 Right-click Terminal tab > Move panel right
 
@@ -36,7 +38,7 @@ Right-click Terminal tab > Move panel right
 * Replace String: highlight + Ctrl+Shift+l
 * Change Name: F2
 
-## Command Palette
+## 🔥Command Palette
 * Command Palette...:Ctrl+Shift+p
 * Python Interpreter: CP > Python: Select Interpretor
 * Unit test: CP > Configure Test
@@ -50,7 +52,7 @@ Right-click Terminal tab > Move panel right
 ## Convert Markdown to PDF
 * Extension: Markdown Preview Enhanced
 * Right-click > Chrome (Puppeteer) > PDF
-  
+
 ## Disable pylint check
 Just hit Ctrl+Shift+P > Select linter > Disabled Linter
 
@@ -59,7 +61,6 @@ the result will be written in ./.vscode/settings.json as below
     "python.linting.enabled": false,
 ```
 ---
-[Table of Contents](#Table-of-Contents)
 
 ## Setup Unit test
 * Right-click > Command Palette... 
@@ -81,9 +82,8 @@ the result will be written in ./.vscode/settings.json as below
 
 ```
 ---
-[Table of Contents](#Table-of-Contents)
 
-## Setup Python Interpretor
+## 👍 Setup Python Interpretor
 * Right-click > Command Palette... 
 * Python: Select Interpreter
 * Enter Interpreter path
@@ -97,7 +97,6 @@ the result will be written in ./.vscode/settings.json as below
     "python.pythonPath": "c:\\Users\\12818\\workspace\\python-I\\env\\Scripts\\python.exe",
 ```
 ---
-[Table of Contents](#Table-of-Contents)
 
 ## Create Virtual Environment
 * Terminal > New Terminal
@@ -106,7 +105,6 @@ the result will be written in ./.vscode/settings.json as below
 python -m venv env
 ```
 ---
-[Table of Contents](#Table-of-Contents)
 
 ## Check in GitHub
 * Cannot check in due to configure user.namd and user.email
@@ -133,5 +131,5 @@ git pull
 ctrl +/-
 ```
 ---
-[Table of Contents](#Table-of-Contents)
+
 
