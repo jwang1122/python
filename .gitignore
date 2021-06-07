@@ -4,7 +4,8 @@ out/
 *.pyc
 .DS_Store
 __pycache__/
-
+faweb/
+faicons/
 *.db
 .vscode/
 *.spec
