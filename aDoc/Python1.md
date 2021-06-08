@@ -1,4 +1,7 @@
 # Python level-I
+[Udemy](https://www.udemy.com/)
+username: wangchar@gmail.com
+password: Asdfjkl1Ude
 
 ## Table of Contents
 - [Python level-I](#python-level-i)
@@ -7,6 +10,8 @@
   - [Using Markdown](#using-markdown)
   - [Getting start](#getting-start)
   - [playground and help document](#playground-and-help-document)
+  - [variables](#variables)
+  - [comments](#comments)
   - [print](#print)
   - [Data Type](#data-type)
   - [Operators](#operators)
@@ -209,6 +214,31 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ---
 [Table of Contents](#table-of-contents)
+
+## variables
+Variable Naming Rule
+* A variable name must start with a letter or the underscore character.
+* A variable name cannot start with a number.
+* A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+* Variable names are case-sensitive (name, Name and NAME are three different variables).
+* The reserved words(keywords) cannot be used naming the variable.
+* It is good practice to avoid using the builtin functions name from proventing override existing functionality.
+* Naming convention
+    - all function and variable name start from lower case letter
+    - class name start from Upper case letter
+    - use camel format, for instance, firstName, getAddress()
+    - use snake_case, for instance, first_name, get_address()
+
+## comments
+* single line or to the end of line comment \#, can be used to disable code from running 
+* Multiple line document """, '''
+* comments multiple line at one time
+* continue line \
+
+Practice:
+
+[variablePr1.md](variablePr1.md)
+
 
 ## print
 * hello.py; getting start with Python > hello.ReadMe.md

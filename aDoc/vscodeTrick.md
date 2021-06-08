@@ -3,6 +3,9 @@
 ## Table of Contents
 - [VSCode Tricks](#vscode-tricks)
   - [Table of Contents](#table-of-contents)
+  - [Disable Editor minimap](#disable-editor-minimap)
+  - [Define Ke shortcut for clear terminal](#define-ke-shortcut-for-clear-terminal)
+  - [Move Terminal window to right](#move-terminal-window-to-right)
   - [Key shortcut](#key-shortcut)
   - [Command Palette](#command-palette)
   - [Convert Markdown to PDF](#convert-markdown-to-pdf)
@@ -13,6 +16,18 @@
   - [Check in GitHub](#check-in-github)
   - [Increase/decrease window characters](#increasedecrease-window-characters)
 
+## Disable Editor minimap
+
+Gear > settings > Editor: minimap: Enable > uncheck
+ 
+## Define Ke shortcut for clear terminal
+Right-click > Command palette > Terminal: clear > click the gear > click +
+
+Shift+ctrl+c
+
+## Move Terminal window to right
+
+Right-click Terminal tab > Move panel right
 
 ## Key shortcut
 * Copy/Paste one line: Shift+Alt+Arrow

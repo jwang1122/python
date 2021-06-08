@@ -25,6 +25,7 @@ Table of Contents
   - [Center Image](#center-image)
   - [Create Table of contents](#create-table-of-contents)
   - [Markdown emotion icons](#markdown-emotion-icons)
+  - [🔥 insert icon](#-insert-icon)
   - [mermaid diagram](#mermaid-diagram)
   - [Udemy](#udemy)
 
@@ -163,7 +164,12 @@ Command Palette... > Markdown All in One: Create Table of Contents
 :rewind: 回放
 :copyright: 版权
 
-## mermaid diagram
+## 🔥 insert icon
+
+![ad](faicons/svgs/regular/smile.svg)
+<img src="faweb/svgs/regular/address-book.svg" style="background-color:lightblue;" height="20"> reduce the icon size.
+
+##  mermaid diagram
 [Mermaid Samples](mermaid.md)
 ```mermaid
 graph TB
