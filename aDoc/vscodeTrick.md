@@ -20,6 +20,9 @@
 * Delete one line: Ctrl+Shift+k
 * Replace String: highlight + Ctrl+Shift+l
 * Change Name: F2
+* Pick different open file: Ctrl+tab
+* jump word: ctrl+arrow
+* move window to right: window+arrow
 
 ## Command Palette
 * Command Palette...:Ctrl+Shift+p
@@ -29,6 +32,7 @@
 * Code Snippet: CP > Configure user snippet
 * Search Snippet: Ctrl+Space
 * setting: "editor.tabCompletion": "on"
+* Command Palette > view toggle Zen mode
 * [Python Snippet](/Users/12818/AppData/Roaming/Code/User/snippets/python.json)
 * [create user snippet](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
