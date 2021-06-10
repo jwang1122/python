@@ -237,10 +237,17 @@ Variable Naming Rule
 * comments multiple line at one time
 * continue line \
 
-Practice:
-
+📌Practice:
 [variablePr1.md](variablePr1.md)
 
+## Python syntax
+* python keyword
+  [](images/keywords.png)
+* indentation
+* : for, if-else, function define, try-expect
+* () function call, tuple definition
+* [] list definition
+* ,
 
 ## print
 * hello.py; getting start with Python > hello.ReadMe.md

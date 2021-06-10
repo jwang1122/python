@@ -128,7 +128,7 @@ term
 
 ### Task List
 
-- [x] Write the press release
+- [x]Write the press release
 - [ ] Update the website
 - [ ] Contact the media
 
@@ -141,7 +141,7 @@ term
 Command Palette... > Markdown All in One: Create Table of Contents
 
 ## Markdown emotion icons
-:+1: [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/) 这篇文章很棒，很容易使用。
+👍 [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/) 这篇文章很棒，很容易使用。
 
 :heavy_check_mark: ✔️正确
 :x: ❌错误
@@ -177,8 +177,11 @@ Command Palette... > Markdown All in One: Create Table of Contents
 :wastebasket:🗑
 :question:❓
 :bug:🐛
+:phone:☎️
+:phone-alt:☎
+:exclamation:❗️
 
-👍👎✔️❌❓💾🗑📝🐛📓📒💡⚠️😄😢✉️♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+👍👎✔️❌❓❗️💾🗑📝🐛📓📒💡⚠️😄😢✉️☎️☎♻️🔥☄️🛠⚡️📐🎯📄⏪📌
 
 ##  insert icon
 ![ad](faicons/svgs/regular/smile.svg)

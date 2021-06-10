@@ -80,6 +80,29 @@ Student "1" --> "1..*" Course
 ```
 ## Graph Diagram
 * Font Awesome icons
+[fa website](https://fontawesome.com/v4.7/examples/)
+[gitHub](https://github.com/FortAwesome/Font-Awesome.git)
+
+```mermaid
+graph TB
+A[fa:fa-twitter]
+B[fa:fa-home]
+C[fa:fa-camera]
+D[fa:fa-book]
+E[fa:fa-pencil]
+F[fa:fa-cog]
+G[fa:fa-check-square]
+H[fa:fa-square]
+I[fa:fa-spinner]
+J[fa:fa-envelope]
+K[fa:fa-terminal]
+L["fa:fa-ban"]
+M["fa:fa-trash"]
+
+A-->B-->C-->D
+E-->F-->G-->H
+F-->L-->J-->M
+```
 
 * graph (Left-Right)
 ```mermaid
