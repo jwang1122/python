@@ -4,6 +4,7 @@
   - [Cardinality](#cardinality)
   - [Class Diagram](#class-diagram)
   - [Graph Diagram](#graph-diagram)
+    - [Font Awesome Icons](#font-awesome-icons)
   - [Entity Relational Diagram](#entity-relational-diagram)
   - [Sequence Diagram](#sequence-diagram)
   - [State Diagram](#state-diagram)
@@ -83,6 +84,7 @@ Student "1" --> "1..*" Course
 [fa website](https://fontawesome.com/v4.7/examples/)
 [gitHub](https://github.com/FortAwesome/Font-Awesome.git)
 
+### Font Awesome Icons
 ```mermaid
 graph TB
 A[fa:fa-twitter]
@@ -98,10 +100,14 @@ J[fa:fa-envelope]
 K[fa:fa-terminal]
 L["fa:fa-ban"]
 M["fa:fa-trash"]
+N["fa:fa-shopping-cart"]
+O["fa:fa-copyright"]
+P["fa:fa-cut"]
 
-A-->B-->C-->D
-E-->F-->G-->H
+A-->B-->C-->D-->I
+E-->F-->G-->H-->K
 F-->L-->J-->M
+N-->O-->P
 ```
 
 * graph (Left-Right)
@@ -127,7 +133,7 @@ graph TB
     B --> G[/Another/]
     C ==>|One| D[Laptop]
     C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
+    C -->|Three| F["fa:fa-car Car"]
     style D fill:#4adff6,stroke:#333,stroke-width:2px
     style E fill:#4adff6,stroke:#333,stroke-width:2px
     style F fill:#4adff6,stroke:#333,stroke-width:2px

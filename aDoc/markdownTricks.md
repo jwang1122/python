@@ -29,7 +29,6 @@ Table of Contents
   - [Markdown emotion icons](#markdown-emotion-icons)
   - [insert icon](#insert-icon)
   - [mermaid diagram](#mermaid-diagram)
-  - [Udemy](#udemy)
 
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
@@ -180,8 +179,11 @@ Command Palette... > Markdown All in One: Create Table of Contents
 :phone:☎️
 :phone-alt:☎
 :exclamation:❗️
+:point_up:☝️
+:point_right:👉
+:ok_hand:👌
 
-👍👎✔️❌❓❗️💾🗑📝🐛📓📒💡⚠️😄😢✉️☎️☎♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️
 
 ##  insert icon
 ![ad](faicons/svgs/regular/smile.svg)
@@ -212,7 +214,3 @@ graph TB
         G
     end
 ```
-## Udemy
-[Udemy](https://www.udemy.com/)
-username: wangchar@gmail.com
-password: Asdfjkl1Ude

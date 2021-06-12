@@ -1,9 +1,7 @@
 # Python level-I
-[Udemy](https://www.udemy.com/)
-username: wangchar@gmail.com
-password: Asdfjkl1Ude
 
-👍👎✔️❌❓💾🗑📝📓📒💡⚠️😄😢✉️♻️🔥☄️🛠⚡️📐🎯📄⏪📌
+
+⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️
 
 ## Table of Contents
 - [Python level-I](#python-level-i)
@@ -14,6 +12,7 @@ password: Asdfjkl1Ude
   - [playground and help document](#playground-and-help-document)
   - [variables](#variables)
   - [comments](#comments)
+  - [Python syntax](#python-syntax)
   - [print](#print)
   - [Data Type](#data-type)
   - [Operators](#operators)
