@@ -1,14 +1,14 @@
 # Getting Familiar with Your Keyboard
 
 1. [Key name web link](https://www.computerhope.com/keys.htm)
-
-1. Keyboard Name in our Python class
+2. ![](images/keyboard-apple.jpg)
+3. ![](images/keyboard-windows.jpg) 
+4. Keyboard Name in our Python class
 
     Key | Name
     |---|---|
     space | space, empty space in editor
-    Enter | return, enter, new line in editor
-    :  | colon, key:value separator in dict
+    Enter | return, enter, new line in :  | colon, key:value separator in dict
     ,  | comma, list or tuple item separator, delimiter in csv file
     .  | dot, period, instance function call()
     \# | pound, hashtag, number, hold shift key click number 3, comments the line

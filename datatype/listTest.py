@@ -19,6 +19,36 @@ print(type(l))
 l = list()
 print(len(l))
 
+# list slicing
+myList = [6, 7, 8, 9, 10]
+l1 = myList[1]
+l1 = myList[0:2]
+l1 = myList[2:10]
+l1= myList[:10]
+l1 = myList[0:4:2] #increament by 2
+print(l1)
+
+# list - Add, Delete and sort
+myList = [6, 3, 1, 19, 10]
+print(myList)
+myList.append(11)
+myList.insert(3, 11)
+myList.remove(11) # where 11 is the value of the element
+v = myList.pop(2) # where 2 is index
+print(v)
+
+# mixed datatype in a list
+student1=[1234, 'Amy', "Liu", 13]
+print(student1)
+student1[3]=11
+
+# nested list
+l = [[1,2],[3,4,5],[6,7,8,9]]
+print(l)
+print(len(l))
+print(len(l[0]))
+
+
 # Create list
 l = [1,2,3,4,5]
 print(l)

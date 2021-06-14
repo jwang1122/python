@@ -8,3 +8,6 @@ print(l)
 
 l = aList[::-1]
 print(l)
+
+aList.reverse()
+print(aList)
