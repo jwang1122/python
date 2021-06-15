@@ -91,11 +91,17 @@ xuewang@mdanderson.org;
 ke2006ly@hotmail.com;
 huangmr@yahoo.com;
 
+
 You received this email is because you registered a Python class in Huaxia Chinese school. Welcome to Huaxia Chinese school Python class. In order to save some class time, we need parent's help to download and install the following softwares which will be used in our class.
 
 1. Visual Studio Code (for programming)
 2. Python Interpreter (for running and debugging Python)
 3. Git (for download teacher's sample code and turn in homework)
+
+Here is website links for the downloads
+1. https://code.visualstudio.com/Download
+2. https://www.python.org/downloads/
+3. https://git-scm.com/downloads
 
 It is better that every student has two monitors, one for showing teacher's screen, one for writing program by student. One monitor will really hard to follow the class activities. One laptop for programming and one ipad for showing teacher's screen is acceptable.
 
@@ -126,6 +132,11 @@ You received this email is because you registered a Java class in Huaxia Chinese
 1. JDK 1.8 or later
 2. Eclipse IDE
 3. Git
+
+Here is the website links for the downloads
+1. https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+2. https://www.eclipse.org/downloads/
+3. https://git-scm.com/downloads
 
 It is better that every student has two monitors, one for showing teacher's screen, one for writing program by student. One monitor will really hard to follow the class activities. One laptop for programming and one ipad for showing teacher's screen is acceptable.
 

@@ -2,12 +2,17 @@
 
 ⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️
 ---
+Guaranteed course, if you think you have not learned Python after this class finished, you can always join my next class section for free.
+
+上课要带着孩子们动手编写，不能让单独的孩子分享视频。因为，如果一个孩子分享，其他孩子会认为和他没有关系，并不动手照做。
+
+[]()
 ## Table of Contents
 - [⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️](#️️️️️️️️)
 - [Table of Contents](#table-of-contents)
+- [Getting start](#getting-start)
 - [Familiar with your keyboard](#familiar-with-your-keyboard)
 - [Using Markdown](#using-markdown)
-- [Getting start](#getting-start)
 - [playground and help document](#playground-and-help-document)
 - [variables](#variables)
 - [comments](#comments)
@@ -47,6 +52,56 @@
   - [Advantages](#advantages)
   - [Disadvantages](#disadvantages)
   - [Recommendations](#recommendations)
+
+---
+[Table of Contents](#table-of-contents)
+
+## Getting start
+* install softwares needed
+
+[refer to ](pythonInstall.md) python installation file.
+
+上课要带着孩子们动手编写，不能让单独的孩子分享视频。因为，如果一个孩子分享，其他孩子会认为和他没有关系，并不动手照做。
+* build up wechat group
+* installation check
+```sh
+python --version
+git --version
+code --version
+```
+* build working folders
+```
+mkdir workspace
+cd workspace
+mkdir python1
+```
+use text editor: NotePad.exe
+```py
+print("Hello, world!")
+a = 4
+b = 5
+print(a+b)
+```
+save to first.py
+```
+python first.py
+```
+* build virtual environment
+
+```
+python -m venv env
+```
+
+![Virtual Environment](./images/virtualEnvironment.png)
+
+* familiar with VSCode.
+    [VS code](vscode.md)
+
+* convert python script to exe
+```
+pip install pyinstaller
+pyinstaller --onefile -w 'filename.py'
+```
 
 ---
 [Table of Contents](#table-of-contents)
@@ -124,61 +179,15 @@
     - 显示链接
 
 ![磨刀不误砍柴工](./images/磨刀.jpeg)
-* [Markdown Cheat Sheet](markdown-cheat-sheet.md)
+* [Markdown Cheat Sheet](markdownTricks.md)
 * [Reference to pythonInstall.md](pythonInstall.md)
 * Install Greenshot
 
     installation file name: Greenshot-INSTALLER-1.2.10.6-RELEASE.exe
 * Basic operation    
 
----
-[Table of Contents](#table-of-contents)
-
-## Getting start
-* install softwares needed
-
-[refer to ](pythonInstall.md) python installation file.
-
-* check installation
-* installation check
-```sh
-python --version
-git --version
-code --version
-```
-* build working folders
-```
-mkdir workspace
-cd workspace
-mkdir python1
-```
-use text editor: NotePad.exe
-```py
-print("Hello, world!")
-a = 4
-b = 5
-print(a+b)
-```
-save to first.py
-```
-python first.py
-```
-* build virtual environment
-
-```
-python -m venv env
-```
-
-![Virtual Environment](./images/virtualEnvironment.png)
-
-* familiar with VSCode.
-    [VS code](vscode.md)
-
-* convert python script to exe
-```
-pip install pyinstaller
-pyinstaller --onefile -w 'filename.py'
-```
+![Mistakes of mine](./images/MistakesMine.jpeg)
+![Minstakes of his](images/MistakesHis.jpeg)
 
 ---
 [Table of Contents](#table-of-contents)
