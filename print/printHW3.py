@@ -1,19 +1,5 @@
-a = 15
-b = 21
-c = a + b
-print(f"{a} + {b} = {c}")
-
-a = 2020
-b = 20
-c = a - b
-print(f"{a} - {b} = {c}")
-
-a = 32
-b = 2
-c = a * b
-print(f"{a} x {b} = {c}")
-
-a = 342
-b = 18
-c = int(a / b)
-print(f"{a} \u00F7 {b} = {c}")
+n = 5
+for i in range(1, n + 1):
+    print(f"%d x %d = %d" %(i, n, i*n))
+for i in range(n+1, 10):
+    print(f"%d x %d = %d" %(n, i, i*n))

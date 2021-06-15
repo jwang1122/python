@@ -1,14 +1,12 @@
 <h1> Python level-I</h1>
 
-⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️
----
 Guaranteed course, if you think you have not learned Python after this class finished, you can always join my next class section for free.
 
 上课要带着孩子们动手编写，不能让单独的孩子分享视频。因为，如果一个孩子分享，其他孩子会认为和他没有关系，并不动手照做。
 
-[]()
+[My Icons](myIcons.md)
+
 ## Table of Contents
-- [⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️](#️️️️️️️️)
 - [Table of Contents](#table-of-contents)
 - [Getting start](#getting-start)
 - [Familiar with your keyboard](#familiar-with-your-keyboard)

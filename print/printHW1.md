@@ -1,13 +1,6 @@
-* Write python program to print out the following pattern on terminal.
+* Write python program which calculate simple math and print the result with following format:
 
-Expected output:
-
-1 
-2 2 
-3 3 3
-4 4 4 4
-5 5 5 5 5
-6 6 6 6 6 6
-7 7 7 7 7 7 7
-8 8 8 8 8 8 8 8
-9 9 9 9 9 9 9 9 9
+15 + 21 = 36
+2020 - 20 = 2000
+32 x 2 = 64     
+342 ÷ 18 = 19 
