@@ -247,7 +247,7 @@ Variable Naming Rule
 
 ## Python syntax
 * python keyword
-  [](images/keywords.png)
+  ![](images/keywords.png)
 * indentation
 * : for, if-else, function define, try-expect
 * () function call, tuple definition

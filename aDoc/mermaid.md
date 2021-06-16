@@ -87,7 +87,7 @@ Student "1" --> "1..*" Course
 ### Font Awesome Icons
 ```mermaid
 graph TB
-A[fa:fa-twitter]
+A["fa:fa-twitter 中文可以吗"]
 B[fa:fa-home]
 C[fa:fa-camera]
 D[fa:fa-book]
