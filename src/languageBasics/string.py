@@ -45,3 +45,8 @@ n="2"
 s = n*5
 print(type(s))
 print(n*5)
+
+#sort string
+s = "this is a test"
+s1 = sorted(s)
+print(s1)

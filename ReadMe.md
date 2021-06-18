@@ -4,10 +4,11 @@
   - [Markdown](#markdown)
   - [Language Basics](#language-basics)
     - [Data Type](#data-type)
-    - [Loop](#loop)
     - [Operator](#operator)
     - [Execution Control](#execution-control)
-    - [Loop](#loop-1)
+    - [Loop](#loop)
+  - [Function](#function)
+  - [Class](#class)
   - [References](#references)
 
 
@@ -53,26 +54,32 @@
   - Homeworks
     [list-01](homeworks/list01.md)
     [list-02](homeworks/list02.md)
-    
-### Loop
-  - Homeworks
-    [loop-01](homeworks/loop01.md)
-    [loop-02](homeworks/loop02.md)
 
 * Set
+[set.py](src/languageBasics/set.py)
 
 * Dictionary
+[dictionary.py](src/languageBasics/dictionary.py)
 
 ### Operator
-
+  - Homeworks
+    []()
 ### Execution Control
   - Homeworks
     [ifelss-01](homeworks/ifelse01.md)
+    [ifelss-02](homeworks/ifelse02.md)
     
 ### Loop
   - Homeworks
     [loop-01](homeworks/loop01.md)
     [loop-02](homeworks/loop02.md)
+    [loop-03](homeworks/loop03.md)
+    [loop-04](homeworks/loop04.md)
+    [loop-05](homeworks/loop05.md)
+
+## Function
+
+## Class
 
 ## References
 
