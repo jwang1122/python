@@ -1,19 +1,26 @@
-a,b=10,20
+"""
+Logical Operator: 
 
-# Logical Operator: and; or; not
-c = (a==60) and b==13
-print("47:",c)
-c = (a==60) and b<13
-print("49:",c)
-c = (a==60) or (b>15)
-print("51:", c)
-c = (a<60) or (b>15)
-print("53:", c)
-c = a and b
-print("59:",c)  # Strange result
-min1 = a<b and a or b # find which one is smaller
-print("61:",min1)
-max1 = a>b and a or b # find which one is smaller
-print("63:",max1)
-c = a or b
-print("65:",c)  # Strange result
+and: return True only both sides are True, return False otherwise  
+or : return False only both sides are False, return True otherwise
+not: return True two sides are not the same, return False otherwise
+"""
+
+a, b = 10, 20
+
+c = (a == 60) and b == 13
+print("12:", c)
+c = (a == 60) and b < 13
+print("14:", c)
+c = (a == 60) or (b > 15)
+print("16:", c)
+c = (a < 60) or (b > 15)
+print("18:", c)
+min1 = a < b and a or b  # find which one is smaller
+print("20:", min1)
+max1 = a > b and a or b  # find which one is smaller
+print("22:", max1)
+c = a and b      # return b if a!=0, return 0 otherwise
+print("24:", c)  # Strange result? c = a and b or a
+c = a or b       # return a if a!=0, return b otherwise
+print("26:", c)  # Strange result? c = a and a or b

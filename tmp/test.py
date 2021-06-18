@@ -1,2 +1,2 @@
 # math operation priority (*,/) (+,-)
-print((3+2)*(2-1))
+print(20*30.4)
