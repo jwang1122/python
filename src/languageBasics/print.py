@@ -7,6 +7,8 @@ print(circleArea)
 variable name cannot start with number
 1width=14
 # variable can be combination of letters and numbers _, a~z, A~Z, 0~9, no other special characters
+# cannot use python reserved keywords as variable name
+# avoid using existing built in function name as variable name
 """
 '''
 firstName="John"
@@ -16,21 +18,25 @@ print(10)
 '''
 print('John said:"Hello world!"')
 print("John said: \"It's really nice feature.\"")
+
 # calculate rectagle area 
-# width=14
-# length=6
-# area = width * length
-# print("The area of rectangle with width=%d and length=%d is %d." %(width,length,area))
+width=14
+length=6
+area = width * length
+# %s: string place holder
+# %d: integer place holder
+# %5.2f: floating-point number place holder
+print("The area of rectangle with width=%d and length=%d is %d." %(width,length,area))
 
-# a, b = 5, 9
-# c = a + b
-# print("%d + %d = %d" %(b, a, c))
+a, b = 5, 9
+c = a + b
+print("%d + %d = %d" %(b, a, c))
 
-# x=2020
-# y=20
-# z=2020-20
-# print("Problem 01: %d - %d = %d" %(x, y, z))
-# print("Problem 02: %d - %d = %d" %(x, y, z))
-# print("Problem 03: I don't know how to do it.")
+x=2020
+y=20
+z=2020-20
+print("Problem 01: %d - %d = %d" %(x, y, z))
+print("Problem 02: %d - %d = %d" %(x, y, z))
+print("Problem 03: I don't know how to do it.")
 
 print(4/3.0*pi*6**3)
