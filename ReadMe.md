@@ -9,6 +9,7 @@
 - [Function](#function)
   - [define function in function](#define-function-in-function)
   - [pass function as argument](#pass-function-as-argument)
+  - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
 - [Class](#class)
 - [References](#references)
@@ -148,6 +149,28 @@ class IF if
 * [innerFunction02.py](src/function/innerFunction02.py)
 ### pass function as argument
 * [passFuncAsArg.py](src/function/passFuncAsArg.py)
+### recursive function
+* [](src/algorithms/recursiveBinarySearch.py)
+* 
+  ```mermaid
+  graph TB
+  START((find answer))
+  END[end]
+  B[add 10 to<br>the answer of<br>problem 52]
+  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
+  D[Problem 85:<br>10]
+  
+  START-->B-->C-->D
+  D--10+12-->C--22+10-->B--32-->END
+
+  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
+  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
+  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
+  class START start
+  class B,C,D html
+  class END end1
+  ```
 ### function decorator
 * [my_timer.py](src/function/my_timer.py)
 
