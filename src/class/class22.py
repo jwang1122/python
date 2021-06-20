@@ -1,31 +1,37 @@
 """
-@classmethod vs. @staticmethod
-A class method takes cls as first parameter while a 
-static method needs no specific parameters. 
+__init__()
+__call__()
 """
-class C:
-    classAttribute = 10
-    @classmethod
-    def f1(cls, *args):
-        print(cls.classAttribute)
-        for i in args:
-            print(i, end=", ")
-        print()
 
-    @staticmethod
-    def f2(**kwargs):
-        print(C.classAttribute)
-        print(kwargs)
+class Class1:
+    def __init__(self, a, b, c): # always return an instance
+        self.x=a
+        self.y=b
+        self.z=c
 
-if __name__ == '__main__':
-    C.f1(1,2,3,4)
-    C.f2(name="John", occupation="teacher")
+    def __call__(self, a): # make instance callable
+        print(a)
+        print(self.x,self.y,self.z)
+        return self.x + self.y + self.z
 
-    c1 = C()
-    c1.classAttribute = 111 # it is not a good idea to allow instance modify class level attribute
-    c1.f1(5,6,7,8)
-    c1.f2(ssn="123456789")
+class Class2:
+    def __call__(self, a): # make the instance callable
+        return a + 10
 
-    c2 = C()
-    c2.f1(5,6,7,8)
-    c2.f2(ssn="123456789")
+class Class3:   
+    def __init__(self):
+        pass
+
+x = Class1(11, 2, 3)
+y = x(10)
+print(y)
+
+print()
+print("Class2()")
+x = Class2()
+y = x(11)
+print(y)
+
+print()
+x = Class3()
+x() # TypeError: 'Class3' object is not callable

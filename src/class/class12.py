@@ -1,19 +1,21 @@
-""" 
-Function defined outside the class
 """
-def f1(self, x, y): # it has self argument
-    return min(x, x+y)
-            
-class C:
-    f = f1
-    def g(self):
-        return 'hello world'
+Different object can have differente attribute value.
+"""
+class Dog:
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []
 
-    h = g
-        
+    def add_trick(self, trick):
+        self.tricks.append(trick)
 
-x = C()
-y = x.f(3,-2)
-print(y)
-print(x.h())
-print(f1(None, 2, 3))
+
+if __name__ == "__main__":
+    fido = Dog("Fido")
+    buddy = Dog("Buddy")
+    fido.add_trick("rool over")
+    buddy.add_trick("play dead")
+    fido.add_trick("bark")
+    buddy.add_trick("bark")
+    print(f"what fido can do: {fido.tricks}")
+    print(f"what buddy can do: {buddy.tricks}")

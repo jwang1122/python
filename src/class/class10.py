@@ -1,31 +1,22 @@
 """
-Don't use class level variables for instance attributes.
+override __new__()
 """
-class Dog:
-    tricks = [] # class level attribute
+class Sample(object):
+    def __str__(self):
+        return "SAMPLE"
 
-    def __init__(self, name):
-        self.name = name
+class A(object):
+    def __new__(cls):
+        return Sample()
 
-    def add_trick(self, trick):
-        self.tricks.append(trick)
+class B(object): # different way to write __new__()
+    def __new__(cls):
+        return super(B, cls).__new__(Sample)
 
-class Student:
-    name = None # confuse yourself, name_
-
-    def __init__(self, name):
-        self.name = name # self.__name
-
-    def __srt__(self):
-        return self.name
-
-if __name__ == "__main__":
-    fido = Dog("Fido")
-    buddy = Dog("Buddy")
-    fido.add_trick("rool over") # modify same class level attribute
-    buddy.add_trick("play dead") # modify same class level attribute
-    print(f"what fido can do: {fido.tricks}")
-
-    s1 = Student("Amy")
-    print(s1)
-    print(Student.name)
+if __name__ == '__main__':
+    a = A()
+    print(a)
+    print(type(a))
+    b = B()
+    print(b)
+    print(type(b))

@@ -16,4 +16,3 @@ if __name__ == '__main__':
     print(f"{a} + {b} = {c}")
     c=div(a,b)
     print(f"{a} \u00F7 {b} = {c:.3f}")    
-    print(f"{a} \u00F6 {b} = {c:.3f}")

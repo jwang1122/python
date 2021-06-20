@@ -1,22 +1,17 @@
 """
-override __next__() function
+class internal function call another internal function
 """
-class Reverse:
-    """Iterator for looping over a sequence backwards."""
-    def __init__(self, data):
-        self.data = data
-        self.index = len(data)
+class Bag:
+    def __init__(self):
+        self.data = []
 
-    def __iter__(self):
-        return self
+    def add(self, x):
+        self.data.append(x)
 
-    def __next__(self):
-        if self.index == 0:
-            raise StopIteration
-        self.index = self.index - 1
-        return self.data[self.index]
+    def addtwice(self, x):
+        self.add(x)
+        self.add(x)
 
-if __name__ == '__main__':
-    rev = Reverse('international')
-    for char in rev:
-        print(char, end='')
+x = Bag()
+x.addtwice("apple")
+print(x.data)

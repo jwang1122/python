@@ -436,7 +436,7 @@ Variable Naming Rule
 
 * Identity Operators
 
-[Identity Sample Code](../operator/identity.py)
+[Identity Sample Code](../src/languageBasics/operator/identity.py)
 
 | Operator | Description  | Example    |
 |--------  |------------- | ---------- |
@@ -445,7 +445,7 @@ Variable Naming Rule
 
 * Membership Operators
 
-[Membership Sample Code](../operator/membership.py)
+[Membership Sample Code](../src/languageBasics/operator/membership.py)
 
 | Operator |Description    | Example    |
 | -------- | ------------- | ---------- |

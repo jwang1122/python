@@ -1,17 +1,19 @@
+""" 
+Function defined outside the class
 """
-class internal function call another internal function
-"""
-class Bag:
-    def __init__(self):
-        self.data = []
+def f1(self, x, y): # it has self argument
+    return min(x, x+y)
+            
+class C:
+    f = f1
+    def g(self):
+        return 'hello world'
 
-    def add(self, x):
-        self.data.append(x)
+    h = g
+        
 
-    def addtwice(self, x):
-        self.add(x)
-        self.add(x)
-
-x = Bag()
-x.addtwice("apple")
-print(x.data)
+x = C()
+y = x.f(3,-2)
+print(y)
+print(x.h())
+print(f1(None, 2, 3))

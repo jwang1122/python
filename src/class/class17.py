@@ -1,34 +1,36 @@
-from enum import Enum
 """
-class Inheritance
-Class level function
-Class level attribute
+class inheritence, review class level attribute
 """
-
-class Mood(Enum): # Mood class inherites from Enum class
-    FUNKY = 1
-    HAPPY = 3
-
-    def describe(self):
-        return self.name, self.value
-
-    @classmethod
-    def favorite_mood(cls):
-        return cls.HAPPY
-
-if __name__ == '__main__':
-    print(Mood.favorite_mood()) # use class name call function
-    print(Mood.FUNKY.value) # use class name access attribute
-
-    mood1 = Mood(1)
-    print(f"mood1: {mood1}")
-    print(f"mood1.FUNKY: {mood1.FUNKY}")
-    print(f"call mood1.favorite_mood(): {mood1.favorite_mood()}")
-    print()
-
-    mood2 = Mood(3)
-    print(f"mood2: {mood2}")
-    print(f"mood2.FUNKY: {mood2.FUNKY}")
-    print(f"call mood2.favorite_mood(): {mood2.favorite_mood()}")
+class SuperClass:
+    classAttribute = 1
+    def __init__(self, a):
+        self.instance = a
     
-    mood3 = Mood()
+    def __repr__(self):
+        return self.instance
+
+    def superFunc(self):
+        SuperClass.classAttribute *=10
+        print(self.classAttribute)
+
+class SubClass(SuperClass):
+    def subFunc(self):
+        print(SuperClass.classAttribute)
+
+obj1 = SuperClass("Super1")
+print(obj1)
+obj1.superFunc()
+
+obj2 = SuperClass("Super2")
+print(obj2)
+obj2.superFunc()
+
+obj3 = SubClass("Sub3")
+print(obj3)
+obj3.subFunc()
+obj3.superFunc()
+
+obj4 = SubClass("Sub4")
+print(obj4)
+obj4.subFunc()
+obj4.superFunc()

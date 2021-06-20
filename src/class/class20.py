@@ -1,21 +1,20 @@
-class Car:
-    def __init__(self, model, manufacture, makeYear) -> None:
-        self.model = model
-        self.manufacture = manufacture
-        self.makeYear = makeYear
-        self.engine = self.Engine('5.1li')
+"""
+Inner or Nested Classes
+Composition vs. Inheritance
+1. Every car need engine, and engine won't be used without car
+    make Engine a inner class of Car class.
+2. Hiding code Engine for outside use.
+3. Easy to understand the relation of classes.
+"""
+
+class Outer:
+    class Inner:
+        pass
+        class InnerInner:
+            pass
     
-    def __repr__(self) -> str:
-        return ': '.join((self.manufacture, self.model))
+    class _Inner:
+        pass
 
-    class Engine:
-        def __init__(self, size) -> None:
-            self.size = size
-        
-        def __repr__(self) -> str:
-            return "Engin size: "+self.size
-
-
-car = Car("Cameray","Toyota", 2009)
-print(car)
-print(car.engine)
+print(dir(Outer))
+print(type(Outer.Inner))

@@ -1,36 +1,19 @@
 """
-class inheritence, review class level attribute
+class internal function call another internal function
 """
-class SuperClass:
-    classAttribute = 1
-    def __init__(self, a):
-        self.instance = a
-    
-    def __repr__(self):
-        return self.instance
+class Bag:
+    def __init__(self):
+        self.data = []
 
-    def superFunc(self):
-        SuperClass.classAttribute *=10
-        print(self.classAttribute)
+    def add(self, x):
+        self.data.append(x)
 
-class SubClass(SuperClass):
-    def subFunc(self):
-        print(SuperClass.classAttribute)
+    def addtwice(self, x):
+        self.add(x)
+        self.add(x)
 
-obj1 = SuperClass("Super1")
-print(obj1)
-obj1.superFunc()
+x = Bag()
+x.addtwice("apple")
+print(x.data)
 
-obj2 = SuperClass("Super2")
-print(obj2)
-obj2.superFunc()
-
-obj3 = SubClass("Sub3")
-print(obj3)
-obj3.subFunc()
-obj3.superFunc()
-
-obj4 = SubClass("Sub4")
-print(obj4)
-obj4.subFunc()
-obj4.superFunc()
+x.add()

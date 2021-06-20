@@ -5,6 +5,7 @@ def isPrime(x):
     else: # use for-else syntax
         return x>1
 
-for i in range(25, 51):
-    if isPrime(i):
-        print(i)
+if __name__ == '__main__':
+    for i in range(40, 51):
+        if isPrime(i):
+            print(i, end=' ')

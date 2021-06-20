@@ -1,20 +1,16 @@
 """
-Inner or Nested Classes
-Composition vs. Inheritance
-1. Every car need engine, and engine won't be used without car
-    make Engine a inner class of Car class.
-2. Hiding code Engine for outside use.
-3. Easy to understand the relation of classes.
+Python supports a form of multiple inheritanc.
 """
+class Base1:
+    def __init__(self, name):
+        self.name = name
 
-class Outer:
-    class Inner:
-        pass
-        class InnerInner:
-            pass
-    
-    class _Inner:
-        pass
+class Base2:
+    def __repr__(self):
+        return self.name
 
-print(dir(Outer))
-print(type(Outer.Inner))
+class Subclass(Base1, Base2):
+    pass
+
+x = Subclass("Sub class")
+print(x)

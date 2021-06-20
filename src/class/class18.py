@@ -1,16 +1,34 @@
+from enum import Enum
 """
-Python supports a form of multiple inheritanc.
+class Inheritance
+Class level function
+Class level attribute
 """
-class Base1:
-    def __init__(self, name):
-        self.name = name
 
-class Base2:
-    def __repr__(self):
-        return self.name
+class Mood(Enum): # Mood class inherites from Enum class
+    FUNKY = 1
+    HAPPY = 3
 
-class Subclass(Base1, Base2):
-    pass
+    def describe(self):
+        return self.name, self.value
 
-x = Subclass("Sub class")
-print(x)
+    @classmethod
+    def favorite_mood(cls):
+        return cls.HAPPY
+
+if __name__ == '__main__':
+    print(Mood.favorite_mood()) # use class name call function
+    print(Mood.FUNKY.value) # use class name access attribute
+
+    mood1 = Mood(1)
+    print(f"mood1: {mood1}")
+    print(f"mood1.FUNKY: {mood1.FUNKY}")
+    print(f"call mood1.favorite_mood(): {mood1.favorite_mood()}")
+    print()
+
+    mood2 = Mood(3)
+    print(f"mood2: {mood2}")
+    print(f"mood2.FUNKY: {mood2.FUNKY}")
+    print(f"call mood2.favorite_mood(): {mood2.favorite_mood()}")
+    
+    mood3 = Mood()

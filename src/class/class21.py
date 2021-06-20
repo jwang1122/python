@@ -1,37 +1,21 @@
-"""
-__init__()
-__call__()
-"""
+class Car:
+    def __init__(self, model, manufacture, makeYear) -> None:
+        self.model = model
+        self.manufacture = manufacture
+        self.makeYear = makeYear
+        self.engine = self.Engine('5.1li')
+    
+    def __repr__(self) -> str:
+        return ': '.join((self.manufacture, self.model))
 
-class Class1:
-    def __init__(self, a, b, c): # always return an instance
-        self.x=a
-        self.y=b
-        self.z=c
+    class Engine:
+        def __init__(self, size) -> None:
+            self.size = size
+        
+        def __repr__(self) -> str:
+            return "Engin size: "+self.size
 
-    def __call__(self, a): # make instance callable
-        print(a)
-        print(self.x,self.y,self.z)
-        return self.x + self.y + self.z
 
-class Class2:
-    def __call__(self, a): # make the instance callable
-        return a + 10
-
-class Class3:   
-    def __init__(self):
-        pass
-
-x = Class1(11, 2, 3)
-y = x(10)
-print(y)
-
-print()
-print("Class2()")
-x = Class2()
-y = x(11)
-print(y)
-
-print()
-x = Class3()
-x() # TypeError: 'Class3' object is not callable
+car = Car("Cameray","Toyota", 2009)
+print(car)
+print(car.engine)
