@@ -12,6 +12,7 @@
   - [function decorator](#function-decorator)
 - [Class](#class)
 - [References](#references)
+  - [YouTube Tutorial](#youtube-tutorial)
 
 
 ## Markdown 
@@ -183,3 +184,6 @@ class IF if
 * [Keyboard](aDoc/keyboard.md)
 * [Excercise](https://pynative.com/python-exercises-with-solutions/)
 * [Function Excercises](https://pynative.com/python-functions-exercise-with-solutions/)
+
+### YouTube Tutorial
+* [Algorithms and Data Structure](https://www.youtube.com/watch?v=8hly31xKli0)
