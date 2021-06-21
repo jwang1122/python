@@ -8,6 +8,7 @@
   - [Loop](#loop)
 - [Function](#function)
   - [define function in function](#define-function-in-function)
+  - [return function from function](#return-function-from-function)
   - [pass function as argument](#pass-function-as-argument)
   - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
@@ -131,24 +132,26 @@ class IF if
     [loop-05](homeworks/loop05.md)
 
 ## Function
-* [defineFunction.py](src/function/defineFunction.py)
+* [function arguments](src/function/defineFunction.py)
 
-```output
+```use python playground
 >>> from src.function.defineFunction import *
 >>> help(f)
 ```
-* [circle.py](src/function/circle.py)
-* [defaultValue.py](src/function/defaultValue.py)
+* [One time assign default value](src/function/defaultValue.py)
+* [Simple math function](src/function/circle.py)
 * [collision.py](src/function/collision.py)
-* [ask.py](src/function/ask.py)
-* [attribute.py](src/function/attribute.py)
-* [math1.py](src/function/math1.py)
+* [check user input](src/function/ask.py)
+* [access function attribute](src/function/attribute.py)
+* [simple math function](src/function/math1.py)
 * [optionalKeywordArgs.py](src/function/optionalKeywordArgs.py)
 * [optionalPositionalArgs.py](src/function/optionalPositionalArgs.py)
 ### define function in function
 * [funcInFunc.py](src/function/funcInFunc.py)
 * [innerFunction01.py](src/function/innerFunction01.py)
 * [innerFunction02.py](src/function/innerFunction02.py)
+### return function from function
+* [dynamicall generated quadratic function](src/function/returnFunction.py)
 ### pass function as argument
 * [passFuncAsArg.py](src/function/passFuncAsArg.py)
 ### recursive function
@@ -199,10 +202,10 @@ Operations on Data Structure
 
 ## Class
 4 Features of OOP
-1. Abstraction（抽象==》模拟）
-2. Inheritance（继承==》）
-3. Polymorphism（多样性==》功能分类，same function behavior differently by different object type）
-4. Encapsulation (封装==》自我保护)
+1. Abstraction（抽象性==》实体模拟）
+2. Inheritance（继承性==》属性及功能的继承）
+3. Polymorphism（多样性==》多类型同功能调用，same function behavior differently by different object type）
+4. Encapsulation (封装性==》属性自我保护)
 
 
 * [class01.py](src/class/class01.py)
@@ -229,6 +232,7 @@ Operations on Data Structure
 * [class22.py](src/class/class22.py)
 * [class23.py](src/class/class23.py)
 ### Python Interface
+[@abstractmethod](https://docs.python.org/3/library/abc.html)
 [interface.py](src/class/interface.py)
 
 ```mermaid

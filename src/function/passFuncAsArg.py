@@ -1,8 +1,11 @@
 """
 定义简单的一元一次函数
 """
-def f(x):
+def f1(x):
     return 3*x + 2
+
+def f2(x):
+    return 2*x**2+4*x-2
 
 # 类似于中央作五年计划，要求GDP翻两翻，但是靠干什么来翻翻，不确定，走着瞧
 def ff(f, x):
@@ -11,8 +14,24 @@ def ff(f, x):
     """
     return f(x)
 
+y = ff(f1, 3)
+print(y)
+y = ff(f2, 3)
+print(y)
 
+# function goal, 应对变化，搞活一盘棋
+def userValidate(f, name, password):
+    return f(name, password)
 
+# different way to validate user
+def validate1(name, password):
+    pass
+
+# different way to validate user
+def validate2(name, password):
+    pass
+
+# define general function pass two arguments
 def ff2(f, x,y):
     return f(x,y)
 

@@ -24,6 +24,7 @@ def parent():
     first_child()
     second_child()
 
+# function return a function
 def quadratic(a,b,c):
     def f(x):
         return a*x*x + b*x + c

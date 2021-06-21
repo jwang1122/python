@@ -56,4 +56,4 @@ if __name__ == '__main__':
     print("t1 is instance of Person:",isinstance(t1, Person))    
     print("t1 is instance of Teacher:",isinstance(t1, Teacher))
     print("t1 is instance of Engineer:",isinstance(t1, Engineer))
-    print("s1 is instance of Person:",isinstance(s1, Student))
+    print("s1 is instance of Person:",isinstance(s1, Person))

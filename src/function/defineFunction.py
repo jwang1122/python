@@ -8,6 +8,12 @@ def f(a, b, /, c, d, *, e, f):
     dir(__builtins__)
     help(list)
     help(sorted)
+
+    1. no call no action
+    2. can be called as many times as you like
+    3. return value if has return, or None otherwise
+    4. define function in function
+    5. return function
     """
     print(a, b, c, d, e, f)
 
