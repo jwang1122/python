@@ -11,7 +11,9 @@
   - [pass function as argument](#pass-function-as-argument)
   - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
+  - [algorithms](#algorithms)
 - [Class](#class)
+  - [Python Interface](#python-interface)
 - [References](#references)
   - [YouTube Tutorial](#youtube-tutorial)
 
@@ -150,8 +152,16 @@ class IF if
 ### pass function as argument
 * [passFuncAsArg.py](src/function/passFuncAsArg.py)
 ### recursive function
-* [](src/algorithms/recursiveBinarySearch.py)
-* 
+A function is recursive if it calls itself.
+  1. termination condition.
+  2. adjust status for each call.
+  3. Python stops the cunction calls after a depth of 1000 calls.
+* [factoria.py](src/function/factorial.py)
+$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
+![](aDoc/images/recursiveFactorial.jfif)
+* [recursiveBinarySearch.py](src/algorithms/recursiveBinarySearch.py)
+
+* Understand recursive find.
   ```mermaid
   graph TB
   START((find answer))
@@ -173,8 +183,28 @@ class IF if
   ```
 ### function decorator
 * [my_timer.py](src/function/my_timer.py)
+### algorithms
+Big O
+* O(n)
+* O(log n)
+* [linearSearch.py](src/algorithms/linearSearch.py)
+* [binarySearch.py](src/algorithms/binarySearch.py)
+  
+Operations on Data Structure
+1. Access and read values
+2. Search for an arbitrary values
+3. Insert values at any point into the structure
+4. Delete the value in the Data Structure
+* [arrays.py](src/algorithms/arrays.py)
 
 ## Class
+4 Features of OOP
+1. Abstraction（抽象==》模拟）
+2. Inheritance（继承==》）
+3. Polymorphism（多样性==》功能分类，same function behavior differently by different object type）
+4. Encapsulation (封装==》自我保护)
+
+
 * [class01.py](src/class/class01.py)
 * [class02.py](src/class/class02.py)
 * [class03.py](src/class/class03.py)
@@ -198,7 +228,38 @@ class IF if
 * [class21.py](src/class/class21.py)
 * [class22.py](src/class/class22.py)
 * [class23.py](src/class/class23.py)
-* 
+### Python Interface
+[interface.py](src/class/interface.py)
+
+```mermaid
+classDiagram
+
+class Person {
+  getOccupation():str
+}
+
+<<interface>> Person
+
+class Teacher {
+  name: str
+  getOccupation()
+}
+
+class Engineer {
+  name: str
+  getOccupation()
+}
+
+class Student{
+  name: str
+  getOccupation()
+}
+
+Person<|--Teacher:Teach is Person
+Person<|--Engineer:Engineer is Person
+```
+* @abstractmethod decorator from abc
+* __subclasshook__(), __subclasscheck__(), issubclass(), isinstance()
 
 ## References
 * [python.md](aDoc/python.md)

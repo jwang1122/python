@@ -54,7 +54,9 @@ print("Student with ID:%d, first name '%s', last name '%s' is %d years old." %tu
 # list - Add, Delete and sort
 myList = [6, 3, 1, 19, 10]
 print(myList)
+print(myList*2)
 myList.append(11)
+myList.extend([6,7,8])
 myList.insert(3, 11)
 myList.remove(11) # where 11 is the value of the element
 v = myList.pop(2) # where 2 is index

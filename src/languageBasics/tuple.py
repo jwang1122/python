@@ -11,6 +11,9 @@ t = (1,2,3,4,5,6,3,4,5,)
 print(t)
 print(type(t))
 print(len(t))
+t = 1,2,3,4,"John","Terry"
+print(t)
+print(type(t))
 
 t1 = tuple(i for i in range(10))
 print(t1)
