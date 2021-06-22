@@ -1,5 +1,7 @@
 <h1> Python Class Notes</h1>
 
+[Shared Markdown Library](aDoc/myIcons.md)
+
 - [Markdown](#markdown)
 - [Language Basics](#language-basics)
   - [Data Type](#data-type)
@@ -26,20 +28,20 @@
   - [markdown-02](homeworks/markdown02.md)
   
 ## Language Basics
-![](aDoc/images/LanguageBasics.svg)
-
-* Print
-[print.py](src/languageBasics/print.py)
+* [print.py](src/languageBasics/print.py)
   - Homeworks
     [print-01](homeworks/print01.md)
     [print-02](homeworks/print02.md)
 
-* Variable
-[variable.py](src/languageBasics/print.py)
+* [variable.py](src/languageBasics/print.py)
+![](images/chineseMedicine.jpg)
+![](images/memory.gif)
   - Homeworks
     [variable-01](homeworks/variable01.md)
     [variable-02](homeworks/variable02.md)
     [variable-03](homeworks/variable03.md)
+
+![](aDoc/images/LanguageBasics.svg)
 
 ### Data Type
 * Number (int, float, complex)
@@ -81,6 +83,7 @@
 * [others.py](src/languageBasics/operator/others.py)
   - Homeworks
     []()
+
 ### Execution Control
 * [if](src/languageBasics/if-else/if-else01.py)
 * [if-else, if-elif-else](src/languageBasics/if-else/if-else02.py)

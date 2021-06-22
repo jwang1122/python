@@ -1,7 +1,6 @@
-<h1> Python Language Basic </h1>
+<h1>Python Language</h1>
 
 [Interesting Icons](myIcons.md)
-
 
 - [My First python program](#my-first-python-program)
 - [print(with variable)](#printwith-variable)
@@ -14,13 +13,13 @@
 
 
 ## My First python program
-```py
-print("Hello, world!")
-```
+[hello world](../src/languageBasics/hello.py)
 
 ## print(with variable)
+[print](../src/languageBasics/print.py)
 
 ## comment (single line, multiple line)
+[comment](../src/languageBasics/../comment.py)
 
 ## Variable Naming
 1. variable name cannot start with number
@@ -40,6 +39,16 @@ otherwise, your python builtins functions no longer works the way you expected.
 * [Tuple](../src/tuple.py)
 
 ## Operator 
+[operator](../src/languageBasics/operator.py)
+* [arithmatic](../src/languageBasics/operator/arithmatic.py)
+* [assignment](../src/languageBasics/operator/assignment.py)
+* [bitwise](../src/languageBasics/operator/bitwise.py)
+* [comparison](../src/languageBasics/operator/comparison.py)
+* [identity](../src/languageBasics/operator/identity.py)
+* [logical](../src/languageBasics/operator/logical.py)
+* [membership](../src/languageBasics/operator/membership.py)
+* [others](../src/languageBasics/operator/others.py)
+* [ternary](../src/languageBasics/operator/ternary.py)
 
 ## Execution Control
 * **if-elif-else** statement Syntax

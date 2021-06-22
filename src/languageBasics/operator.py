@@ -44,7 +44,7 @@ t1 = Turtle()
 t2 = Turtle()
 print(t1 is t2)
 
-# other operator: **
+# other operator: **, *
 date_info = {'year': "2020", 'month': "01", 'day': "01"}
 track_info = {'artist': "Beethoven", 'title': 'Symphony No 5'}
 filename = "{year}-{month}-{day}-{artist}-{title}.txt".format(**date_info, **track_info,)

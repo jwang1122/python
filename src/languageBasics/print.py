@@ -39,4 +39,8 @@ print("Problem 01: %d - %d = %d" %(x, y, z))
 print("Problem 02: %d - %d = %d" %(x, y, z))
 print("Problem 03: I don't know how to do it.")
 
+# Sphere volumn
 print(4/3.0*pi*6**3)
+r = 6
+v =4/3.0*pi*r**3
+print(f"The volumn of a sphere with radius={r:.2f} is {v:.2f}")

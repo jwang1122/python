@@ -1,4 +1,4 @@
-* define a function named "findMom() by given name list of child and mom, and child name, find who is his/her mom.
+* define a function named findMom() by given name list of child and mom, and child name you are looking for, find who is his/her mom.
 
 Sample name list:
 ```py
