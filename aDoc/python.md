@@ -1,6 +1,7 @@
-<h1>Python Language Basics</h1>
+<h1> Python Language Basic </h1>
 
-[Interesting Icons and common copy/paste contents](myIcons.md)
+[Interesting Icons](myIcons.md)
+
 
 - [My First python program](#my-first-python-program)
 - [print(with variable)](#printwith-variable)
@@ -13,16 +14,13 @@
 
 
 ## My First python program
-
 ```py
 print("Hello, world!")
 ```
 
 ## print(with variable)
-[print.py](../src/languageBasics/print.py)
 
 ## comment (single line, multiple line)
-[comment.py](../src/languageBasics/../comment.py)
 
 ## Variable Naming
 1. variable name cannot start with number
@@ -34,15 +32,14 @@ print("Hello, world!")
 otherwise, your python builtins functions no longer works the way you expected.
 
 ## Data Type
-* [Number: int, float, complex](../src/languageBasics/number.py)
-* [String: str"something"](../src/languageBasics/string.py)
-* [Tuple: tuple(1,2,3)](../src/languageBasics/tuple.py)
-* [List: list[1,2,3]](../src/languageBasics/list.py)
-* [Set: set{1,2,3}](../src/languageBasics/set.py)
-* [Dictionary: dict{key:value}](../src/languageBasics/dictionary.py)
+* [Numbers](../src/number.py)
+    - int
+    - float
+    - str
+* [String](../src/string.py)
+* [Tuple](../src/tuple.py)
 
-## Operator
-* 
+## Operator 
 
 ## Execution Control
 * **if-elif-else** statement Syntax
@@ -55,7 +52,7 @@ else:
     #else code block here
 # code continue ...
 ```
-
+* Mermaid Diagram for if-else statement
 ```mermaid
 graph TB
 A((start))

@@ -82,3 +82,15 @@ for i in range(11):
     sum1 = sum1 + i
 
 print(sum1) # for loop does NOT block the sum1 variable.
+
+nameList = [
+    ('james', 'mary'),
+    ('john', 'patricia'),
+    ('michael', 'jennifer'),
+    ('david', 'linda'),
+    ('sucan', 'elizabeth'),
+    ('nancy', 'barbara'),
+]
+
+for child, mom in nameList:
+    print(f"{child}'s mom is {mom}.")
