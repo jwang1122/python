@@ -3,8 +3,8 @@
 [Interesting Icons](myIcons.md)
 
 - [My First python program](#my-first-python-program)
-- [print(with variable)](#printwith-variable)
-- [comment (single line, multiple line)](#comment-single-line-multiple-line)
+- [print](#print)
+- [comment](#comment)
 - [Variable Naming](#variable-naming)
 - [Data Type](#data-type)
 - [Operator](#operator)
@@ -15,11 +15,16 @@
 ## My First python program
 [hello world](../src/languageBasics/hello.py)
 
-## print(with variable)
+## print
 [print](../src/languageBasics/print.py)
+- place holder (%s, %d, %f)
+- print with tuple
+- formated print: print(f"x={x}") 
 
-## comment (single line, multiple line)
+## comment 
 [comment](../src/languageBasics/../comment.py)
+* single line comment: #
+* multiple lines comment: """, '''
 
 ## Variable Naming
 1. variable name cannot start with number
