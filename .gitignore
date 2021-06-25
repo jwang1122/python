@@ -9,3 +9,5 @@ faicons/
 *.db
 .vscode/
 *.spec
+.mypy_cache/
+.ipynb_checkpoints/
