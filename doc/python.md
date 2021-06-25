@@ -66,7 +66,7 @@ otherwise, your python builtins functions no longer works the way you expected.
     - float: a=3.4
     - complex: c=4-3j
   - Homeworks
-    [number-01](homeworks/number01.md)
+    [number-01](../homeworks/basics/datatype/number01.md)
 * [String](../src/languageBasics/string.py)
     - string is iterable
     - string slicing: [[start]:[end]:[step]]
@@ -74,9 +74,9 @@ otherwise, your python builtins functions no longer works the way you expected.
     - as function str(object)
     - string functions
   - Homeworks
-    [string-01](homeworks/string01.md)
-    [string-02](homeworks/string02.md)
-    [string-03](homeworks/string03.md)
+    [string-01](../homeworks/string/string01.md)
+    [string-02](../homeworks/string/string02.md)
+    [string-03](../homeworks/string/string03.md)
 * [Tuple](../src/languageBasics/tuple.py)
     - tuple is iterable
     - tuple is immutable
@@ -93,8 +93,8 @@ otherwise, your python builtins functions no longer works the way you expected.
     - as function: list(iterable)
     - list functions (append, insert)
   - Homeworks
-    [list-01](homeworks/list01.md)
-    [list-02](homeworks/list02.md)
+    [list-01](../homeworks/basics/datatype/list01.md)
+    [list-02](../homeworks/basics/datatype/list02.md)
 * [Set](../src/languageBasics/set.py)
     - set is iterable
     - set is mutable
@@ -168,60 +168,66 @@ class A,A1 start
 class B,B1,B2 html
 class E,E1 end1
 ```
-* [User input](src/languageBasics/if-else/if-else03.py)
+* [User input](../src/languageBasics/if-else/if-else03.py)
   - Homeworks
-    [ifelss-01](homeworks/ifelse01.md)
-    [ifelss-02](homeworks/ifelse02.md)
+    [ifelss-01](../homeworks/basics/flowcontrol/ifelse01.md)
+    [ifelss-02](../homeworks/basics/flowcontrol/ifelse02.md)
+    [ifelss-03](../homeworks/basics/flowcontrol/ifelse03.md)
 
 ## Loop
-* [for1.py](src/languageBasics/loop/for1.py)
-* [for2.py](src/languageBasics/loop/for2.py)
-* [forBreak.py](src/languageBasics/loop/forBreak.py)
-* [forContinue.py](src/languageBasics/loop/forContinue.py)
-  ![](./aDoc/images/Loop.svg)
+* [for1.py](../src/languageBasics/loop/for1.py)
+* [for2.py](../src/languageBasics/loop/for2.py)
+* [forBreak.py](../src/languageBasics/loop/forBreak.py)
+* [forContinue.py](../src/languageBasics/loop/forContinue.py)
+  ![](images/Loop.svg)
 
 * [while.py]()
   ![](./aDoc/images/while.svg)
   ![](./aDoc/images/doWhile.svg)
-  - Homeworks
-    [loop-01](homeworks/loop01.md)
-    [loop-02](homeworks/loop02.md)
-    [loop-03](homeworks/loop03.md)
-    [loop-04](homeworks/loop04.md)
-    [loop-05](homeworks/loop05.md)
+* Homeworks
+  - [loop-01](../homeworks/basics/loop/loop01.md)
+  - [loop-02](../homeworks/basics/loop/loop02.md)
+  - [loop-03](../homeworks/basics/loop/loop03.md)
+  - [loop-04](../homeworks/basics/loop/loop04.md)
+  - [loop-05](../homeworks/basics/loop/loop05.md)
+
 
 ## Function
-* [function arguments](src/function/defineFunction.py)
+* [function arguments](../src/function/defineFunction.py)
 
 ```use python playground
 >>> from src.function.defineFunction import *
 >>> help(f)
 ```
-* [One time assign default value](src/function/defaultValue.py)
-* [Simple math function](src/function/circle.py)
-* [collision.py](src/function/collision.py)
-* [check user input](src/function/ask.py)
-* [access function attribute](src/function/attribute.py)
-* [simple math function](src/function/math1.py)
-* [optionalKeywordArgs.py](src/function/optionalKeywordArgs.py)
-* [optionalPositionalArgs.py](src/function/optionalPositionalArgs.py)
+* [One time assign default value](../src/function/defaultValue.py)
+* [Simple math function](../src/function/circle.py)
+* [collision.py](../src/function/collision.py)
+* [check user input](../src/function/ask.py)
+* [access function attribute](../src/function/attribute.py)
+* [simple math function](../src/function/math1.py)
+* [optionalKeywordArgs.py](../src/function/optionalKeywordArgs.py)
+* [optionalPositionalArgs.py](../src/function/optionalPositionalArgs.py)
+
 ### define function in function
-* [funcInFunc.py](src/function/funcInFunc.py)
-* [innerFunction01.py](src/function/innerFunction01.py)
-* [innerFunction02.py](src/function/innerFunction02.py)
+* [funcInFunc.py](../src/function/funcInFunc.py)
+* [innerFunction01.py](../src/function/innerFunction01.py)
+* [innerFunction02.py](../src/function/innerFunction02.py)
+
 ### return function from function
-* [dynamicall generated quadratic function](src/function/returnFunction.py)
+* [dynamicall generated quadratic function](../src/function/returnFunction.py)
+
 ### pass function as argument
-* [passFuncAsArg.py](src/function/passFuncAsArg.py)
+* [passFuncAsArg.py](../src/function/passFuncAsArg.py)
+
 ### recursive function
 A function is recursive if it calls itself.
   1. termination condition.
   2. adjust status for each call.
   3. Python stops the cunction calls after a depth of 1000 calls.
-* [factoria.py](src/function/factorial.py)
+* [factoria.py](../src/function/factorial.py)
 $$ f(n) = n! = n (n-1) (n-2)\cdots1$$
 ![](aDoc/images/recursiveFactorial.jfif)
-* [recursiveBinarySearch.py](src/algorithms/recursiveBinarySearch.py)
+* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
 
 * Understand recursive find.
   ```mermaid
@@ -244,20 +250,20 @@ $$ f(n) = n! = n (n-1) (n-2)\cdots1$$
   class END end1
   ```
 ### function decorator
-* [my_timer.py](src/function/my_timer.py)
+* [my_timer.py](../src/function/my_timer.py)
 ### algorithms
 Big O
 * O(n)
 * O(log n)
-* [linearSearch.py](src/algorithms/linearSearch.py)
-* [binarySearch.py](src/algorithms/binarySearch.py)
+* [linearSearch.py](../src/algorithms/linearSearch.py)
+* [binarySearch.py](../src/algorithms/binarySearch.py)
   
 Operations on Data Structure
 1. Access and read values
 2. Search for an arbitrary values
 3. Insert values at any point into the structure
 4. Delete the value in the Data Structure
-* [arrays.py](src/algorithms/arrays.py)
+* [arrays.py](../src/algorithms/arrays.py)
 
 ## Class
 4 Features of OOP
@@ -267,32 +273,33 @@ Operations on Data Structure
 4. Encapsulation (封装性==》属性自我保护)
 
 
-* [class01.py](src/class/class01.py)
-* [class02.py](src/class/class02.py)
-* [class03.py](src/class/class03.py)
-* [class04.py](src/class/class04.py)
-* [class05.py](src/class/class05.py)
-* [class06.py](src/class/class06.py)
-* [class07.py](src/class/class07.py)
-* [class08.py](src/class/class08.py)
-* [class09.py](src/class/class09.py)
-* [class10.py](src/class/class10.py)
-* [class11.py](src/class/class11.py)
-* [class12.py](src/class/class12.py)
-* [class13.py](src/class/class13.py)
-* [class14.py](src/class/class14.py)
-* [class15.py](src/class/class15.py)
-* [class16.py](src/class/class16.py)
-* [class17.py](src/class/class17.py)
-* [class18.py](src/class/class18.py)
-* [class19.py](src/class/class19.py)
-* [class20.py](src/class/class20.py)
-* [class21.py](src/class/class21.py)
-* [class22.py](src/class/class22.py)
-* [class23.py](src/class/class23.py)
+* [class01.py](../src/class/class01.py)
+* [class02.py](../src/class/class02.py)
+* [class03.py](../src/class/class03.py)
+* [class04.py](../src/class/class04.py)
+* [class05.py](../src/class/class05.py)
+* [class06.py](../src/class/class06.py)
+* [class07.py](../src/class/class07.py)
+* [class08.py](../src/class/class08.py)
+* [class09.py](../src/class/class09.py)
+* [class10.py](../src/class/class10.py)
+* [class11.py](../src/class/class11.py)
+* [class12.py](../src/class/class12.py)
+* [class13.py](../src/class/class13.py)
+* [class14.py](../src/class/class14.py)
+* [class15.py](../src/class/class15.py)
+* [class16.py](../src/class/class16.py)
+* [class17.py](../src/class/class17.py)
+* [class18.py](../src/class/class18.py)
+* [class19.py](../src/class/class19.py)
+* [class20.py](../src/class/class20.py)
+* [class21.py](../src/class/class21.py)
+* [class22.py](../src/class/class22.py)
+* [class23.py](../src/class/class23.py)
+
 ### Python Interface
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
-[interface.py](src/class/interface.py)
+[interface.py](../src/class/interface.py)
 
 ```mermaid
 classDiagram
