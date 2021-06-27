@@ -193,7 +193,25 @@ class E,E1 end1
   - [loop-04](../homeworks/basics/loop/loop04.md)
   - [loop-05](../homeworks/basics/loop/loop05.md)
 
+```mermaid
+graph TB
 
+B([Python Program])
+C[Python function]
+D[Python class]
+
+B-->C
+B-->D
+
+classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
+classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
+
+class START start
+class C,D html
+class END end1
+```
 ## Function
 * [function basic](../src/function/function.py)
   - define a function
