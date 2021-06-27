@@ -103,8 +103,10 @@ otherwise, your python builtins functions no longer works the way you expected.
     - as function: set(iterable)
     - set functions ()
 * [Dictionary](../src/languageBasics/dictionary.py)
-    - dict is iterable
+    - dict is iterable: only iterate key
     - dict is mutable
+    - dict modify==>CRUD
+    - 
 
 
 ## Operator 
@@ -193,7 +195,23 @@ class E,E1 end1
 
 
 ## Function
+* [function basic](../src/function/function.py)
+  - define a function
+$$
+\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol}
+$$
+  - def: Python reserved keyword
+  - name: could be overriden
+  - (): must have, no matter has arguments or not
+  - arguments: positional, keyword
+  - : must end with colon
+  - ❗️⚡️function can be overridden
+  - 😄return more than one value
+  - 💡single response
 * [function arguments](../src/function/defineFunction.py)
+![Circle](images/circle.svg)
+
+Circle area formula: $ A=\pi r^2 $
 
 ```use python playground
 >>> from src.function.defineFunction import *
