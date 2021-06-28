@@ -49,6 +49,11 @@ print(x)
 x = d1.get('8') # key does NOT exist
 print(f"d1 does not contain key='8': {x}")
 
+# check existence of a key before you get the value
+if '5' in d1:
+    print('5 is', d1['5'])
+
+
 # dict slicing
 # x = d1[1:4] # dict is unordered cannot be sliced 
 
@@ -74,7 +79,7 @@ d2 = {'key2':'value2'}
 d1['key3'] = d2
 print(d1)
 
-# dict functions (items, keys,pop)
+# dict functions (items, keys, pop)
 x = d1.items()
 print("79:",x)
 

@@ -53,9 +53,9 @@ def getName():
     lastName = input("Enter your last name: ")
     return firstName, lastName
 
-x = getName()
-print(x)
-print(f"Your first name: {x[0]}, and last name: {x[1]}")
+# x = getName()
+# print(x)
+# print(f"Your first name: {x[0]}, and last name: {x[1]}")
 
 # it works, but not single response function which is a bad design
 def area(x):
@@ -66,3 +66,9 @@ def area(x):
 y = area(4)
 print(y)
 
+def printCountry(country="unknown contry"): # give a default value
+    print(country)
+
+printCountry('China')
+printCountry('United States')
+printCountry()
