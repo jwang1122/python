@@ -3,7 +3,7 @@ Logical Operator:
 
 and: return True only both sides are True, return False otherwise  
 or : return False only both sides are False, return True otherwise
-not: return True two sides are not the same, return False otherwise
+not: return reverse of comparison result
 """
 
 a, b = 10, 20

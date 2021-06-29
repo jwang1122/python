@@ -106,20 +106,18 @@ otherwise, your python builtins functions no longer works the way you expected.
     - dict is iterable: only iterate key
     - dict is mutable
     - dict modify==>CRUD
-    - 
-
 
 ## Operator 
 [operator](../src/languageBasics/operator.py)
 * [arithmatic](../src/languageBasics/operator/arithmatic.py)
 * [assignment](../src/languageBasics/operator/assignment.py)
-* [bitwise](../src/languageBasics/operator/bitwise.py)
 * [comparison](../src/languageBasics/operator/comparison.py)
 * [identity](../src/languageBasics/operator/identity.py)
 * [logical](../src/languageBasics/operator/logical.py)
 * [membership](../src/languageBasics/operator/membership.py)
 * [others](../src/languageBasics/operator/others.py)
 * [ternary](../src/languageBasics/operator/ternary.py)
+* [bitwise](../src/languageBasics/operator/bitwise.py)
 
 ## Execution Control
 * **if-elif-else** statement Syntax
