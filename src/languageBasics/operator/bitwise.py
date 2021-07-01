@@ -1,14 +1,62 @@
-# Bitwise Operator
-a = 0b00111100
-b = 0b00001101
+"""
+Bitwise Operator: 
+& : bit and
+| : bit or
+^ : bit xor
+<<: left shift
+>>: right shift
+"""
+def binFormat(num):
+    s = str(bin(num))
+    s1 = s[:2] + s[2:].zfill(8)
+    return s1
+
+# one byte have 8 bit, bit is single binary digit, switch on/off
+a = 0b00111100 # 1 byte which has 8 bits.
+print(binFormat(a))
+
+# left shift
+b = a<<1 # move all bits to the left on 1 position
+print(binFormat(b))
+print()
+
+# right shift
+b = a>>3
+print(binFormat(a))
+print(binFormat(b))
+
+# left shift 1 is equivalent to multiply by 2
 print(a)
+print(a<<1) # a*2
+print(a>>1) # a/2
+
+b = 0b00001111
 print(b)
-print(bin(a))  # print in binary
-a = 0x3c
-print(hex(a))  
-c = a & b     # 0011 1100   AND
-print("39:",bin(c)) # 0000 1101
-c = a | b     # OR
-print("41:",bin(c))
-c = a ^ b     # XOR
-print("43:",bin(c))
+
+# & operator return 1 onless both are 1, otherwise 0
+c = a & b
+print(binFormat(a))
+print('&')
+print(binFormat(b))
+print(binFormat(c))
+print(c)
+
+# | operator
+a = 0b00001100
+b = 0b00101110
+c = a | b
+print(binFormat(a))
+print('|')
+print(binFormat(b))
+print(binFormat(c))
+print(c)
+
+# ^ operator
+a = 0b00001100
+b = 0b00101110
+c = a ^ b
+print(binFormat(a))
+print('^')
+print(binFormat(b))
+print(binFormat(c))
+print(c)
