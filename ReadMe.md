@@ -2,6 +2,8 @@
 
 [Markdown Shared Library](doc/myIcons.md)
 
+---
+
 * [Python Programming](doc/python.md)  
 * [Markdown Tricks](doc/markdownTricks.md)
   - [markdown-01](homeworks/markdown01.md)
