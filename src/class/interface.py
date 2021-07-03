@@ -34,14 +34,14 @@ class Teacher(Person):
     def getOccupation(self):
         return "Teacher"
 
-class Student():
+class Student(): #Python doesn't care if the Student inherits from  Person or not
     def __init__(self, name):
         self.name = name
 
     def getOccupation(self):
         return "Student"
 
-def occupation(person):
+def occupation(person): # polymophism(异类同功)
     print(person.getOccupation())
 
 if __name__ == '__main__':    

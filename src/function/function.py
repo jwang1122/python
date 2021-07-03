@@ -1,13 +1,19 @@
 """
 A function is a block of organized, reusable code 
 that is used to perform a single, related action.
+* function name
+* argument list
+* function do nothing till you call it.
 
 1. Python built-in functions
 print()
 len()
 sum()
 2. User defined function
-circleArea()
+
+def <functionName>(arguments):
+    pass
+
 """
 
 # define a function, single responsibility?

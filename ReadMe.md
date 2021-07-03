@@ -11,3 +11,4 @@
 * [Software Installation](doc/pythonInstall.md)
 * [Mistakes](doc/mistakes.md)
 * [Visual Studio Code Tricks](doc/vscodeTricks.md)
+* [Mermaid](doc/mermaid.md)

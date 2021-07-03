@@ -20,6 +20,10 @@
   - [algorithms](#algorithms)
 - [Class](#class)
   - [Python Interface](#python-interface)
+- [File](#file)
+- [Plot](#plot)
+- [Turtle](#turtle)
+- [MongoDB](#mongodb)
 - [References](#references)
   - [YouTube Tutorial](#youtube-tutorial)
 
@@ -182,8 +186,8 @@ class E,E1 end1
   ![](images/Loop.svg)
 
 * [while.py]()
-  ![](./aDoc/images/while.svg)
-  ![](./aDoc/images/doWhile.svg)
+  ![](images/while.svg)
+  ![](images/doWhile.svg)
 * Homeworks
   - [loop-01](../homeworks/basics/loop/loop01.md)
   - [loop-02](../homeworks/basics/loop/loop02.md)
@@ -225,6 +229,7 @@ $$
   - 😄return more than one value
   - 💡single response
 * [function arguments](../src/function/defineFunction.py)
+
 ![Circle](images/circle.svg)
 
 Circle area formula: $ A=\pi r^2 $
@@ -300,13 +305,64 @@ Operations on Data Structure
 * [arrays.py](../src/algorithms/arrays.py)
 
 ## Class
+>Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.
+
 4 Features of OOP
-1. Abstraction（抽象性==》实体模拟）
-2. Inheritance（继承性==》属性及功能的继承）
-3. Polymorphism（多样性==》多类型同功能调用，same function behavior differently by different object type）
-4. Encapsulation (封装性==》属性自我保护)
+1. Abstraction:class is a abstraction of object in real world to python program object type.（实体模拟）
+2. Inheritance: a class can inherit from multiple other class to increase code reusability.（共性继承）
+3. Polymorphism:same function behavior differently by different object type.（异类同功）
+4. Encapsulation：avoid data or function being called outside the class unintentionally（自我保护)
 
+* Robot from real world
+```mermaid
+classDiagram
+class Robot {
+  name:str
+  year:int
+  energy:int
+  sayHello(name):void
+  doMath(x,y):tuple
+  getEnergy():int
+  setEnergy(int):void
+}
+```
 
+```mermaid
+classDiagram
+class Person {
+  name:str
+  ssn:str
+  id: str
+  gender:str
+  age:int
+  getOccupation()
+}
+
+class Employee{
+  employeeID: str
+  department: str
+  salary:float
+  jobTitle:str
+}
+
+class Engineer{
+  report()
+  getOccupation()
+}
+
+class Manager{
+  assignJob()
+}
+
+class Teacher{
+  getOccupation()
+}
+
+Person<|--Employee:is
+Employee<|--Engineer:is
+Employee<|--Manager:is
+Person<|--Teacher:is
+```
 * [class01.py](../src/class/class01.py)
 * [class02.py](../src/class/class02.py)
 * [class03.py](../src/class/class03.py)
@@ -330,10 +386,22 @@ Operations on Data Structure
 * [class21.py](../src/class/class21.py)
 * [class22.py](../src/class/class22.py)
 * [class23.py](../src/class/class23.py)
-
 ### Python Interface
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
 [interface.py](../src/class/interface.py)
+
+## File
+* [plain text read/write](../src/file/file0.py)
+* csv file read/write
+* json file read/write
+* 
+
+## Plot
+
+## Turtle
+
+## MongoDB
+
 
 ```mermaid
 classDiagram

@@ -1,5 +1,21 @@
-"""minimum class definition"""
+"""
+a Python class is for defining a particular type of 
+object abstracted from real world.
 
+Python classes define data to represent object state and 
+functions used to change the state of an object.
+
+1. class name
+2. data
+3. function
+
+the data and function also indicate as object attribute of the class.
+
+class <className>:
+    pass
+"""
+
+# minimum class definition
 class Robot:
     pass
 
@@ -31,3 +47,10 @@ print(getattr(x, 'name','John')) # call built-in function __getAttribute__()
 
 z = getattr(x,'energy', 1000) # without default value, will raise Error
 print(z)
+
+z = getattr(x, 'energy', 100)
+print(z)
+
+x.energy = 120
+z1 = getattr(x, 'energy')
+print(z1)
