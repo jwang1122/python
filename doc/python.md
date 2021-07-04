@@ -28,8 +28,6 @@
 - [Plot](#plot)
 - [Turtle](#turtle)
 - [MongoDB](#mongodb)
-- [References](#references)
-  - [YouTube Tutorial](#youtube-tutorial)
 
 
 ## My First python program
@@ -480,19 +478,6 @@ Person<|--Teacher:is
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
 [interface.py](../src/class/interface.py)
 
-## File
-* [plain text read/write](../src/file/file0.py)
-* csv file read/write
-* json file read/write
-* 
-
-## Plot
-
-## Turtle
-
-## MongoDB
-
-
 ```mermaid
 classDiagram
 
@@ -523,13 +508,17 @@ Person<|--Engineer:Engineer is Person
 * @abstractmethod decorator from abc
 * __subclasshook__(), __subclasscheck__(), issubclass(), isinstance()
 
-## References
-* [python.md](aDoc/python.md)
-* [VS Code Tricks](aDoc/vscodeTricks.md)
-* [Markdown Tricks](aDoc/markdownTricks.md)
-* [Keyboard](aDoc/keyboard.md)
-* [Excercise](https://pynative.com/python-exercises-with-solutions/)
-* [Function Excercises](https://pynative.com/python-functions-exercise-with-solutions/)
 
-### YouTube Tutorial
-* [Algorithms and Data Structure](https://www.youtube.com/watch?v=8hly31xKli0)
+## File
+* [write plain text to file Hello.txt](../src/file/file0.py)
+* [read/append plain text from/fo file](../src/file/file1.py)
+* csv file read/write
+* json file read/write
+* 
+
+## Plot
+
+## Turtle
+
+## MongoDB
+

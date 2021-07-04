@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("data/pokemon.csv")
+df = pd.read_csv("src/data/pokemon.csv")
 print(df.head(3))
 print(df)
 print(df.columns)
