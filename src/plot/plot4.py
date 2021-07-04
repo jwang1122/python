@@ -21,7 +21,7 @@ a = f.add_subplot(111)
 
 
 def animate(i):
-    pullData = open("plot/stock.txt","r").read()
+    pullData = open("src/plot/stock.txt","r").read()
     dataList = pullData.split('\n')
     xList = []
     yList = []
@@ -34,16 +34,13 @@ def animate(i):
     a.clear()
     a.plot(xList, yList)
 
-    
-            
-
 class SeaofBTCapp(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         
         tk.Tk.__init__(self, *args, **kwargs)
 
-        tk.Tk.iconbitmap(self, default="tkinter/clienticon.ico")
+        tk.Tk.iconbitmap(self, default="src/tkinter/clienticon.ico")
         tk.Tk.wm_title(self, "Sea of BTC client")
         
         

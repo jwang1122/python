@@ -529,6 +529,13 @@ Person<|--Engineer:Engineer is Person
 * [plot list](../src/plot/plot0.py)
 * [plot sine wave](../src/plot/plot1.py)
 * [plot 3 functions in one chart](../src/plot/plot2.py)
+* [plot 6 lines in one chart with legend](../src/plot/plot3.py)
+* [multiple pages with title icon](../src/plot/plot4.py)
+* [stack plot with custom color](../src/plot/plot5.py)
+* [box plot with data list](../src/plot/plot6.py)
+* [box plot with random data](../src/plot/plot7.py)
+* [errorbar plot](../src/plot/plot8.py)
+
 
 ## Turtle
 
