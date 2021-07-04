@@ -1,6 +1,6 @@
 import json
 
-with open('data/student.json') as f:
+with open('src/data/student.json') as f:
   students = json.load(f)
 
 print(type(students))

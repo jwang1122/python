@@ -510,11 +510,16 @@ Person<|--Engineer:Engineer is Person
 
 
 ## File
+![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
 * [read/append plain text from/fo file](../src/file/file1.py)
+* [with open](../src/file/file2.py)
+* [write json file](../src/file/file3.py)
+* [read json file](../src/file/file3a.py)
+* [load json string as dict](../src/file/file3b.py)
+* [use pandas read json file](../src/file/file4.py)
+* [plot student score](../src/file/file5.py)
 * csv file read/write
-* json file read/write
-* 
 
 ## Plot
 
