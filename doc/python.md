@@ -528,6 +528,7 @@ Person<|--Engineer:Engineer is Person
 ## Plot
 * [plot list](../src/plot/plot0.py)
 * [plot sine wave](../src/plot/plot1.py)
+* [plot both sine and cosine wave](../src/plot/sin-cos.py)
 * [plot 3 functions in one chart](../src/plot/plot2.py)
 * [plot 6 lines in one chart with legend](../src/plot/plot3.py)
 * [multiple pages with title icon](../src/plot/plot4.py)
@@ -535,6 +536,23 @@ Person<|--Engineer:Engineer is Person
 * [box plot with data list](../src/plot/plot6.py)
 * [box plot with random data](../src/plot/plot7.py)
 * [errorbar plot](../src/plot/plot8.py)
+* [circle pie chart](../src/plot/plot9.py)
+* [3D pie chart](../src/plot/plot10.py)
+* [4 sub plots in one page](../src/plot/plot11.py)
+* [4 sub plots with each lenged](../src/plot/plot12.py)
+* [adjust plot programtically](../src/plot/plot13.py)
+* [math symbol in legend](../src/plot/plot14.py)
+* [custom tick label](../src/plot/plot15.py)
+* [custom tick for sine wave](../src/plot/plot16.py)
+* [color ticks](../src/plot/plot17.py)
+* [remove chart box lines](../src/plot/plot18.py)
+* [add grid to chart](../src/plot/plot19.py)
+* [curve fit](../src/plot/plot20.py)
+* [change background to dark](../src/plot/plot21.py)
+* [log style](../src/plot/plot22.py)
+* [generate animated sine wave](../src/plot/movingSinWave.py)
+* [3D animation generator](../src/plot/3dAnimation.py)
+
 
 
 ## Turtle

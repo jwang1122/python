@@ -13,6 +13,7 @@
 ± | pm
 ° | degree
 ϕ | phi
+Φ | Phi
 θ | theta
 α | alpha
 γ | gamma

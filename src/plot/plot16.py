@@ -2,12 +2,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-x = np.linspace(0, 10, 1000)
+x = np.arange(0.0, 4*np.pi+0.1, 0.1)
 y = np.sin(x)
 
 plt.xticks(
-    ticks = np.arange(0, 10, np.pi),
-    labels = [0, '$\pi$', '$2\pi$', '$3\pi$'])
+    ticks = np.arange(0, 4*np.pi+0.1, np.pi),
+    labels = [0, 'π', '2π', '3π', '4π'])
 
 plt.tick_params(
     top=False,
@@ -17,6 +17,6 @@ plt.tick_params(
     labelleft=False,
     labelbottom=True)
 
-plt.plot(x, y, label='sin($\phi$)')
+plt.plot(x, y, label='sin(θ)')
 plt.legend()
 plt.show()

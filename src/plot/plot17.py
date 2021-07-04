@@ -4,7 +4,7 @@ import numpy as np
 
 x = np.linspace(0, 10, 1000)
 y = np.sin(x)
-labels = [0, '$\pi$', '$2\pi$', '$3\pi$']
+labels = [0, 'π', '2π', '3π']
 major_ticks = np.arange(0, 10, np.pi)
 minor_ticks = np.arange(0, 10, 1)
 
@@ -18,7 +18,7 @@ ax.tick_params(which='major', width=2, length=8, color='red')
 ax.tick_params(which='minor', width=0.5, length=4, color='#00000088')
 ax.set_xlim(-0.0, 10.0)
 ax.set_ylim(-2, 2)
-ax.set_xlabel('$\phi$')
-plt.plot(x, y, label='sin($\phi$)')
+ax.set_xlabel('ϕ')
+plt.plot(x, y, label='sin(ϕ)')
 plt.legend(loc=3)
 plt.show()

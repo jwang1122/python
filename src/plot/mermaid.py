@@ -1,41 +1,25 @@
-import base64
-import requests, io
-from PIL import Image
-import matplotlib.pyplot as plt
+import markdown
 
-# graph = """
-# graph LR;
-#     A--> B & C & D;
-#     B--> A & E;
-#     C--> A & E;
-#     D--> A & E;
-#     E--> B & C & D;
-# """
+text = """
+# Title
 
-graph = """
-classDiagram
-class Card{;
-    face:str;
-    suit:str;
-}
-class Deck{;
-    cards: Card[];
-    shuffle();
-    getCard();
-}
-class Player{;
-    name:str;
-    hand: Card[];
-    hit();
-    getValue();
-}
-Player <|-- Dealer
-Deck o-- Card
-Dealer o-- Deck
+Some text.
+
+​~~~mermaid
+graph TB
+A --> B
+B --> C
+​~~~
+
+Some other text.
+
+​~~~mermaid
+graph TB
+D --> E
+E --> F
+​~~~
 """
-graphbytes = graph.encode("ascii")
-base64_bytes = base64.b64encode(graphbytes)
-base64_string = base64_bytes.decode("ascii")
-img = Image.open(io.BytesIO(requests.get('https://mermaid.ink/img/' + base64_string).content))
-plt.imshow(img)
-plt.show()
+
+html = markdown.markdown(text, extensions=['md_mermaid'])
+
+print(html)

@@ -16,7 +16,7 @@ texasConfirmed = []
 texasDeath = []
 
 first = True
-with open('./data/data_minimal.csv', 'r') as covid_19:
+with open('src/data/data_minimal.csv', 'r') as covid_19:
     for row in covid_19:
         if first: # Skip first header line
             first = False

@@ -22,3 +22,5 @@ anim = FuncAnimation(fig, animate, init_func=init,
 
 
 anim.save('sine_wave.gif', writer='imagemagick')
+
+plt.show()
