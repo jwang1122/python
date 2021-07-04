@@ -1,4 +1,6 @@
-"""Define a function outside of a class"""
+"""
+Define a function outside of a class
+"""
 
 def hi(obj):
     print("Hi, I am " + obj.name + "!")

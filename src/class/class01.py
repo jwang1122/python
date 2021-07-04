@@ -51,6 +51,6 @@ print(z)
 z = getattr(x, 'energy', 100)
 print(z)
 
-x.energy = 120
-z1 = getattr(x, 'energy')
+x.energy = 120 # create new data attribute
+z1 = getattr(x, 'energy') # no need default value
 print(z1)
