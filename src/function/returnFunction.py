@@ -1,5 +1,5 @@
 """
-a function can return a function
+🔥a function can return a function
 """
 # function return a function
 def quadratic(a,b,c):

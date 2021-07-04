@@ -238,14 +238,12 @@ Circle area formula: $ A=\pi r^2 $
 * [function arguments](../src/function/defineFunction.py)
 * [understand __name__](../src/function/circle.py)
 * [](../src/function/useCircle.py)
-
-
+* Python document
 ```use python playground
 >>> from src.function.defineFunction import *
 >>> help(f)
 ```
 * [One time assign default value](../src/function/defaultValue.py)
-* [Simple math function](../src/function/circle.py)
 * [collision.py](../src/function/collision.py)
 * [check user input](../src/function/ask.py)
 * [access function attribute](../src/function/attribute.py)
@@ -254,9 +252,10 @@ Circle area formula: $ A=\pi r^2 $
 * [optionalPositionalArgs.py](../src/function/optionalPositionalArgs.py)
 
 ### define function in function
-* [funcInFunc.py](../src/function/funcInFunc.py)
 * [innerFunction01.py](../src/function/innerFunction01.py)
 * [innerFunction02.py](../src/function/innerFunction02.py)
+* [define function in another function](../src/function/functionInFunction.py)
+* [function In Function](../src/function/funcInFunc.py)
 
 ### return function from function
 * [dynamicall generated quadratic function](../src/function/returnFunction.py)
