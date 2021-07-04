@@ -513,15 +513,22 @@ Person<|--Engineer:Engineer is Person
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
 * [read/append plain text from/fo file](../src/file/file1.py)
+* [read text file](../src/file/file7.py)
 * [with open](../src/file/file2.py)
+* [read CSV file using csv module](../src/file/csvReader1.py)
+* [read CSV file using pandas](../src/file/csvReader2.py)
+* [read large CSV file pokemon.csv](../src/file/csvReader3.py)
+* [write dict to CSV file](../src/file/file6.py)
 * [write json file](../src/file/file3.py)
 * [read json file](../src/file/file3a.py)
 * [load json string as dict](../src/file/file3b.py)
 * [use pandas read json file](../src/file/file4.py)
 * [plot student score](../src/file/file5.py)
-* csv file read/write
-
+* 
 ## Plot
+* [plot list](../src/plot/plot0.py)
+* [plot sine wave](../src/plot/plot1.py)
+* [plot 3 functions in one chart](../src/plot/plot2.py)
 
 ## Turtle
 
