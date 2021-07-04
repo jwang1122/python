@@ -181,8 +181,12 @@ Command Palette... > Markdown All in One: Create Table of Contents
 :point_up:☝️
 :point_right:👉
 :ok_hand:👌
+:hand:✋
+:construction:🚧
 
-⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️
+
+
+❓✔️❌⚡️📄📝❗️📌🔨💡✋☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️
 
 ##  insert icon
 ![ad](faicons/svgs/regular/smile.svg)

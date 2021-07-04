@@ -1,6 +1,6 @@
 ## Useful Icons
 
-❓✔️❌❗️📌⚡️💡📄📝🔨c☝️👉👇☝️👍👎👌🔥💾🗑🐛📒⚠️😄😢♻️🛠📐🎯✉️☎️
+❓✔️❌❗️📌⚡️💡📄📝🔨✋🚧☝️👉👇☝️👍👎👌🔥💾🗑🐛📒⚠️😄😢♻️🛠📐🎯✉️☎️
 
 ## Color picker
 [Color Picker Website](https://www.webfx.com/web-design/color-picker/)

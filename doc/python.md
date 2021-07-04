@@ -15,6 +15,10 @@
   - [define function in function](#define-function-in-function)
   - [return function from function](#return-function-from-function)
   - [pass function as argument](#pass-function-as-argument)
+  - [raise Error and Try-Except](#raise-error-and-try-except)
+  - [function annotation](#function-annotation)
+  - [Unit Test](#unit-test)
+  - [loggin](#loggin)
   - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
   - [algorithms](#algorithms)
@@ -262,6 +266,86 @@ Circle area formula: $ A=\pi r^2 $
 
 ### pass function as argument
 * [passFuncAsArg.py](../src/function/passFuncAsArg.py)
+
+
+### raise Error and Try-Except
+* [❓what's wrongh?](../src/function/circle1.py)
+* [✋Raise TypeError](../src/function/raise.py)
+* [👌👎catch Error](../src/function/tryexcept.py)
+
+✔️Better solution is solve the issue at compiling time.
+
+### function annotation
+👍Avoid unexpected function call with wrong data type arguments.
+
+👍Find out calling error before runtime.
+
+* [❓what's wrongh?](../src/function/circle1.py)
+
+```DOS
+mypy <filename.py>
+```
+
+![❌👍](images/annotation.png)
+
+* [annotation1.py](../src/function/annotation1.py)
+* [annotation2.py](../src/function/annotation2.py)
+* [annotation3.py](../src/function/annotation3.py)
+
+```mermaid
+graph LR
+A([Software Project])
+D[User Interface]
+E[Business Logic]
+F[Database]
+G["No SQL(MongoDB)"]
+H["SQLite RelastionalDB"]
+I[Window Based]
+J[Web Based]
+K[ReactJS]
+L[Angular]
+M[DJango]
+N[Unit Test]
+O[Logging]
+
+
+A-->N & O & E & D & F
+D-->G & H
+E-->I & J
+J-->K & L & M
+
+classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+classDef js fill:#98CAF5,stroke:#98CAF5,stroke-width:2px;
+
+class D,E,F html
+class N,O js
+```
+### Unit Test
+>A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
+
+Right-Click > Command Palette... >Python Cofigure Tests > unittest > src > test_*.py
+```
+[project root]
+    ├── 📝doc/
+    |    ├── mistakes.md 
+    |    ├── vscodeTrics.md 
+    |    └── python.md 
+    ├── 🔨homeworks/
+    |       └── <filenameXX.md>
+    ├── 🔥src/
+    |    ├── function/ 
+    |    |     ├── circle3.py
+    |    |     └── circle.py
+    |    └── 🚧test_circleArea.py 
+    └── 👉ReadMe.md
+```
+* To find test program
+    1. test file name match the pattern
+    2. rest file located on right folder
+    3. module and function can be found in the module
+
+### loggin
+* [logging1.py](../src/logging/logging1.py)
 
 ### recursive function
 A function is recursive if it calls itself.
