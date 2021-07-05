@@ -1,24 +1,16 @@
-"""
-❗️⚡️User may pass wrong argument to function.
-✋raise Error when bad thing happens.
-👌👎catch the Error while calling the function
-"""
 from math import pi
 
-def circle_area(r):
-    if type(r) in [int, float]:
-        return r * r * pi
-    raise TypeError("Please check radius data type.")
-
+def circleArea(radius):
+    if radius<0:
+        raise ValueError(f"the radius must be positive number. You give {radius}")
+    return pi*radius**2
 
 if __name__ == '__main__':
     try:
-        x = circle_area(2)
-        print(f"the circle area of radius=2 is {x}.")
-        x = circle_area(-2)
-        print(f"the circle area of radius=-2 is {x}.")
-        x = circle_area(2-3j) 
-        print(x)
+        a = circleArea(1)
+        print(a)
+        a = circleArea(-2) # this block of code is your test area
+        print(a)
     except Exception as error:
         print(error)
     print("Done.")
