@@ -223,14 +223,16 @@ $$
 \underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol}
 $$
 
-  - def: Python reserved keyword
-  - name: could be overriden
-  - (): must have, no matter has arguments or not
-  - arguments: positional, keyword
-  - : must end with colon
-  - ❗️⚡️function can be overridden
-  - 😄return more than one value
-  - 💡single response
+    - def, Python reserved keyword
+    - function name, anything you want, but need follow the naming rules
+    - (), must have open/close parenthesis pair, no matter it has arguments or not
+    - arguments, positional or keyword arguments separated by comma ,
+    - :, must end with colon
+    - the function body must indent
+    - ❗️⚡️function can be overridden
+    - 😄return more than one value
+    - 💡single response
+    - call a function by function name and (), and arguments if there is any
 
 ![Circle](images/circle.svg)
 
