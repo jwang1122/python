@@ -2,6 +2,7 @@
 __new__(cls): construct the object
 __init__(self): initializing the object 
 """
+
 class A:
     def __new__(cls):
         print("A.__new__() is called.")
@@ -37,3 +38,4 @@ if __name__ == '__main__':
     print(x)
     print(type(x))
     # x = E()
+

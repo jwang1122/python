@@ -12,7 +12,7 @@ class Class1:
     def __call__(self, a): # make instance callable
         print(a)
         print(self.x,self.y,self.z)
-        return self.x + self.y + self.z
+        return self.x + self.y + self.z + a
 
 class Class2:
     def __call__(self, a): # make the instance callable
@@ -23,7 +23,7 @@ class Class3:
         pass
 
 x = Class1(11, 2, 3)
-y = x(10)
+y = x(10) # __call__ make object callable
 print(y)
 
 print()
@@ -34,4 +34,6 @@ print(y)
 
 print()
 x = Class3()
-x() # TypeError: 'Class3' object is not callable
+# x() # TypeError: 'Class3' object is not callable
+
+print('Done')

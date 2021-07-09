@@ -27,8 +27,11 @@
   - [dunder functions](#dunder-functions)
   - [attribute scope](#attribute-scope)
   - [class tricks](#class-tricks)
-  - [inheritance](#inheritance)
+  - [class inheritance](#class-inheritance)
   - [Python Interface](#python-interface)
+- [Blackjack Game](#blackjack-game)
+  - [Blackjack Rules](#blackjack-rules)
+  - [Object relationship](#object-relationship)
 - [File](#file)
 - [Plot](#plot)
 - [Turtle](#turtle)
@@ -450,19 +453,29 @@ class Robot {
 * [__init__(self, inputName=None)](../src/class/class05.py)
 * [private attribute __energy](../src/class/class07.py)
 * [getter, setter, property](../src/class/class08.py)
+
 ### dunder functions
 * [__repr__(good enough) vs. __str__](../src/class/class06.py)
 * [__init__(good enough) vs. __new__](../src/class/class09.py)
-* [override __new__, return other class instance](../src/class/class10.py)
-* [override __next__](../src/class/class15.py)
+* [❓override __new__, return other class instance](../src/class/class10.py)
+* [override __iter__, __next__, create iterable](../src/class/class15.py) 
+* [range1 start from 1, include stop](../src/class/range1.py)
+* [__call__() make object callable](../src/class/class22.py)
+* [__equal__(check if same), __add__](../src/class/class24.py)
+
 ### attribute scope
 * [class level attribute](../src/class/class11.py)
 * [instance level attribute](../src/class/class12.py)
+
 ### class tricks
 * [override __new__, return other class instance](../src/class/class10.py)
 * [pass outside function to class](../src/class/class13.py)
 * [internal function call another internal](../src/class/class14.py)
-### inheritance
+* [nested class](../src/class/class20.py)
+* [composition vs. inheritance](../src/class/class21.py)
+* [class method, static method](../src/class/class23.py)
+
+### class inheritance
 ```mermaid
 classDiagram
 class Person {
@@ -499,13 +512,10 @@ Employee<|--Engineer:is
 Employee<|--Manager:is
 Person<|--Teacher:is
 ```
-* [class inheritance](../src/class/class17.py)
+* [class inheritance, isinstance(obj, class)](../src/class/class16.py)
+* [advatage of inheritance, inherite from Enum](../src/class/class17.py)
 * [inherit from Enum](../src/class/class18.py)
-* [class19.py](../src/class/class19.py)
-* [class20.py](../src/class/class20.py)
-* [class21.py](../src/class/class21.py)
-* [class22.py](../src/class/class22.py)
-* [class23.py](../src/class/class23.py)
+* [multiple inheritance](../src/class/class19.py)
 
 ### Python Interface
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
@@ -541,6 +551,79 @@ Person<|--Engineer:Engineer is Person
 * @abstractmethod decorator from abc
 * __subclasshook__(), __subclasscheck__(), issubclass(), isinstance()
 
+## Blackjack Game
+### Blackjack Rules
+* [Black Jack Rules](https://bicyclecards.com/how-to-play/blackjack/)
+1. Object of the game: 
+>beat the dealer by getting a count as close to 21 as possible, without going over 21
+2. Card Values 
+>ace is worth 1 or 11, J,Q,K are 10, other card is its pip value
+3. Betting
+>for simplicity, we don't bet.
+4. Shuffle and cut
+>the dealer shuffles the pack of card, no need player cut
+5. Deal
+>dealer gives one card face up to each player, and one card face up for himself. Another round of cards is then dealt face up to each player, but the dealer takes the second card face down.
+6. Naturals
+>If a player's first two cards are an ace and a "ten-card" (a picture card or 10), giving a count of 21 in two cards, this is a natural or "blackjack." If any player has a natural and the dealer does not, the dealer lose.  If the dealer has a natural, other doesn't, dealer win. If both dealer and player have natural, no body wins.
+7. The Play
+>any player on his turn must decide whether to "stand" (not ask for another card) or "hit" (ask for another card in an attempt to get closer to a count of 21, or even hit 21 exactly). Thus, a player may stand on the two cards originally dealt to them, or they may ask the dealer for additional cards, one at a time, until deciding to stand on the total (if it is 21 or under), or goes "bust" (if it is over 21). In the latter case, play loses the game. The dealer then turns to the next player and serves them in the same manner. The combination of an ace with a card other than a ten-card is known as a "soft hand," because the player can count the ace as a 1 or 11, and either draw cards or not. For example with a "soft 17" (an ace and a 6), the total is 7 or 17. While a count of 17 is a good hand, the player may wish to draw for a higher total. If the draw creates a bust hand by counting the ace as an 11, the player simply counts the ace as a 1 and continues playing by standing or "hitting" (asking the dealer for additional cards, one at a time).
+8. The Dealer's Play
+>When the dealer has served every player, the dealers face-down card is turned up. If the total is 17 or more, it must stand. If the total is 16 or under, they must take a card. The dealer must continue to take cards until the total is 17 or more, at which point the dealer must stand. If the dealer has an ace, and counting it as 11 would bring the total to 17 or more (but not over 21), the dealer must count the ace as 11 and stand. The dealer's decisions, then, are automatic on all plays, whereas the player always has the option of taking one or more cards.
+9. No Splitting Pairs
+10. No Doubing Down
+11. No Insurance
+12. Reshuffling when start new game.
+
+### Object relationship
+  
+```mermaid
+classDiagram
+class Card {
+  face:str
+  suit:str
+  getValue()
+}
+
+class BlackjackCard{
+  getValue()
+}
+
+class Deck{
+  topCardIndex:int
+  stackOfCards:BlackjackCard
+  shuffle()
+  getCard()
+  nextCard()
+}
+
+class Player{
+  name:str
+  hand:[]
+  win:int
+  addCardToHand()
+  cleanHand()
+  getHandValue()
+  getHandSize()
+  hit()
+  showHand()
+}
+
+class Dealer {
+  deck:Deck
+  hand:[]
+  win:int
+  shuffle()
+  deal()
+  hit()
+  showHand()
+}
+
+Player<|--Dealer:dealer is player
+Dealer *--Deck:dealer own the deck
+Card<|--BlackjackCard
+Deck o--BlackjackCard:stack of Cards
+```
 
 ## File
 ![](images/filemode.jpeg)

@@ -1,3 +1,6 @@
+"""
+composition vs. inheritance
+"""
 class Car:
     def __init__(self, model, manufacture, makeYear) -> None:
         self.model = model

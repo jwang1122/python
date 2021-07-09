@@ -14,7 +14,7 @@ d = {}
 print(type(d))
 print(len(d))
 
-d1 = {
+days = {
     '1': "Monday",
     '2': "Tuesday",
     '3': "Wendsday",
@@ -23,7 +23,7 @@ d1 = {
     '6': "Saturday",
     '7': "Sunday",
 }
-print(d1)
+print(days)
 
 post = dict(
     message="SS Cotopaxi", language="English"
@@ -63,8 +63,8 @@ for i in days: # return key and value
 print()
 
 # check existence of a key before you get the value
-if '5' in d1:
-    print('5 is', d1['5'])
+if '5' in days:
+    print('5 is', days['5'])
 
 
 # dict slicing
@@ -93,13 +93,14 @@ d2 = {'key2':'value2'}
 d1['key3'] = d2
 print(d1)
 
-# operator on dict **
+# operator on dict **, ==
 # d3 = d1 + d2
 # d3 = d1 * 2
 d1 = {1:'one', 2:'two'}
 d2 = {2:'2', 3:'three'}
 d3 = {**d1, **d2} # merge two dict to one dict without duplication
 print(91, d3)
+print("103: ",d1=={1:'one', 2:'two'})
 
 # dict function(items, keys, pop, values, clear)
 x = d1.items()
