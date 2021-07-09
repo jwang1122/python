@@ -7,7 +7,7 @@ Class level attribute
 
 class Mood(Enum): # Mood class inherites from Enum class
     FUNKY = 1
-    HAPPY = 3
+    HAPPY = 3 #
 
     def describe(self):
         return self.name, self.value

@@ -1,4 +1,6 @@
-"""define a function inside the class"""
+"""
+define a function inside the class
+"""
 class Robot:
     i = 12345
     def say_hi(self):

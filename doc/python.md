@@ -23,6 +23,11 @@
   - [function decorator](#function-decorator)
   - [algorithms](#algorithms)
 - [Class](#class)
+  - [class basic](#class-basic)
+  - [dunder functions](#dunder-functions)
+  - [attribute scope](#attribute-scope)
+  - [class tricks](#class-tricks)
+  - [inheritance](#inheritance)
   - [Python Interface](#python-interface)
 - [File](#file)
 - [Plot](#plot)
@@ -436,6 +441,28 @@ class Robot {
 }
 ```
 
+### class basic
+* [add attribute dynamically](../src/class/class01.py)
+* [everythin in Python is class](../src/class/testRobot.py)
+* [define function outside of class](../src/class/class02.py)
+* [define function inside class](../src/class/class03.py)
+* [define __init__()](../src/class/class04.py)
+* [__init__(self, inputName=None)](../src/class/class05.py)
+* [private attribute __energy](../src/class/class07.py)
+* [getter, setter, property](../src/class/class08.py)
+### dunder functions
+* [__repr__(good enough) vs. __str__](../src/class/class06.py)
+* [__init__(good enough) vs. __new__](../src/class/class09.py)
+* [override __new__, return other class instance](../src/class/class10.py)
+* [override __next__](../src/class/class15.py)
+### attribute scope
+* [class level attribute](../src/class/class11.py)
+* [instance level attribute](../src/class/class12.py)
+### class tricks
+* [override __new__, return other class instance](../src/class/class10.py)
+* [pass outside function to class](../src/class/class13.py)
+* [internal function call another internal](../src/class/class14.py)
+### inheritance
 ```mermaid
 classDiagram
 class Person {
@@ -472,29 +499,14 @@ Employee<|--Engineer:is
 Employee<|--Manager:is
 Person<|--Teacher:is
 ```
-* [class01.py](../src/class/class01.py)
-* [class02.py](../src/class/class02.py)
-* [class03.py](../src/class/class03.py)
-* [class04.py](../src/class/class04.py)
-* [class05.py](../src/class/class05.py)
-* [class06.py](../src/class/class06.py)
-* [class07.py](../src/class/class07.py)
-* [class08.py](../src/class/class08.py)
-* [class09.py](../src/class/class09.py)
-* [class10.py](../src/class/class10.py)
-* [class11.py](../src/class/class11.py)
-* [class12.py](../src/class/class12.py)
-* [class13.py](../src/class/class13.py)
-* [class14.py](../src/class/class14.py)
-* [class15.py](../src/class/class15.py)
-* [class16.py](../src/class/class16.py)
-* [class17.py](../src/class/class17.py)
-* [class18.py](../src/class/class18.py)
+* [class inheritance](../src/class/class17.py)
+* [inherit from Enum](../src/class/class18.py)
 * [class19.py](../src/class/class19.py)
 * [class20.py](../src/class/class20.py)
 * [class21.py](../src/class/class21.py)
 * [class22.py](../src/class/class22.py)
 * [class23.py](../src/class/class23.py)
+
 ### Python Interface
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
 [interface.py](../src/class/interface.py)

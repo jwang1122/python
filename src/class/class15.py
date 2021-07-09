@@ -20,3 +20,4 @@ if __name__ == '__main__':
     rev = Reverse('international')
     for char in rev:
         print(char, end='')
+    print()
