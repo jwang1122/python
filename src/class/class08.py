@@ -45,7 +45,7 @@ if __name__ == '__main__':
     # x.say_hi()
 
     print("39:",x._name)    # Protected attribute
-    # print("35:",x.__energy) # Private attribute
+    #print("35:",x.__energy) # Private attribute
 
     print("42:",x.getName())
     print("43:", x.getEnerge())

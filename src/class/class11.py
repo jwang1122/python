@@ -16,13 +16,13 @@ class Student:
     def __init__(self, name):
         self.name = name # self.__name
 
-    def __srt__(self):
+    def __str__(self):
         return self.name
 
 if __name__ == "__main__":
     fido = Dog("Fido")
     buddy = Dog("Buddy")
-    fido.add_trick("rool over") # modify same class level attribute
+    fido.add_trick("roll over") # modify same class level attribute
     buddy.add_trick("play dead") # modify same class level attribute
     print(f"what fido can do: {fido.tricks}")
 

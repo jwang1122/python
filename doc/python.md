@@ -114,16 +114,35 @@ otherwise, your python builtins functions no longer works the way you expected.
     - dict modify==>CRUD
 
 ## Operator 
-[operator](../src/languageBasics/operator.py)
-* [arithmatic](../src/languageBasics/operator/arithmatic.py)
-* [assignment](../src/languageBasics/operator/assignment.py)
-* [comparison](../src/languageBasics/operator/comparison.py)
-* [identity](../src/languageBasics/operator/identity.py)
-* [logical](../src/languageBasics/operator/logical.py)
-* [membership](../src/languageBasics/operator/membership.py)
-* [others](../src/languageBasics/operator/others.py)
-* [ternary](../src/languageBasics/operator/ternary.py)
-* [bitwise](../src/languageBasics/operator/bitwise.py)
+* [operator](../src/languageBasics/operator.py)
+* Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
+  
+  [arithmatic](../src/languageBasics/operator/arithmatic.py)
+* Assignment Operators: =; +=; -=; *=; /=; %=; **=; //=
+  
+  [assignment](../src/languageBasics/operator/assignment.py)
+* Comparison Operators: ==, !=, <, >, <=, >=
+  
+  [comparison](../src/languageBasics/operator/comparison.py)
+* Identity Operator: is, is not
+
+  [identity](../src/languageBasics/operator/identity.py)
+
+* Logical Operator: and, or, not
+
+  [logical](../src/languageBasics/operator/logical.py)
+* Membership Operator: in, not in
+
+  [membership](../src/languageBasics/operator/membership.py)
+* Multiple times operator: **
+  
+  [others](../src/languageBasics/operator/others.py)
+* Ternary operator: if-else, and-or
+
+  [ternary](../src/languageBasics/operator/ternary.py)
+* Bitwise Operator: &, |, ^, <<, >>
+  
+  [bitwise](../src/languageBasics/operator/bitwise.py)
 
 ## Execution Control
 * **if-elif-else** statement Syntax
