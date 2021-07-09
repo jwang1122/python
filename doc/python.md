@@ -32,6 +32,7 @@
 - [Blackjack Game](#blackjack-game)
   - [Blackjack Rules](#blackjack-rules)
   - [Object relationship](#object-relationship)
+  - [Unit Test](#unit-test-1)
 - [File](#file)
 - [Plot](#plot)
 - [Turtle](#turtle)
@@ -293,6 +294,7 @@ Circle area formula: $ A=\pi r^2 $
 
 ### pass function as argument
 * [passFuncAsArg.py](../src/function/passFuncAsArg.py)
+* 👍[function as dictionary value](../src/function/dictFunction.py)
 
 
 ### raise Error and Try-Except
@@ -350,7 +352,7 @@ class N,O js
 ### Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
 
-Right-Click > Command Palette... >Python Cofigure Tests > unittest > src > test_*.py
+Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ src ⟹ test_*.py
 ```
 [project root]
     ├── 📝doc/
@@ -624,7 +626,13 @@ Dealer *--Deck:dealer own the deck
 Card<|--BlackjackCard
 Deck o--BlackjackCard:stack of Cards
 ```
+* []
+### Unit Test
+>A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
 
+Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ src ⟹ test_*.py
+* [Test circleArea](../tests/test_circleArea.py)
+* 
 ## File
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
