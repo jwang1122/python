@@ -424,6 +424,7 @@ class Robot {
 
 ### class basic
 * [add attribute dynamically](../src/class/class01.py)
+* [everythin in Python is class](../src/class/testRobot.py)
 * [define function outside of class](../src/class/class02.py)
 * [define function inside class](../src/class/class03.py)
 * [define __init__()](../src/class/class04.py)
@@ -486,6 +487,7 @@ Person<|--Teacher:is
 * [class21.py](../src/class/class21.py)
 * [class22.py](../src/class/class22.py)
 * [class23.py](../src/class/class23.py)
+
 ### Python Interface
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
 [interface.py](../src/class/interface.py)
