@@ -299,8 +299,45 @@ Circle area formula: $ A=\pi r^2 $
 
 ### raise Error and Try-Except
 * [❓what's wrongh?](../src/function/circle1.py)
+* [✔️Assert check before calculation](../src/function/assert.py)
+
+```syntax
+assert <condition>,<error message>
+```
+
+```mermaid
+graph TB
+START((start))
+END[end]
+B{Assertion<br>condition}
+C[Continue]
+D[Terminate Execution<br>gives AssertionError]
+
+START-->B
+B--True-->C
+B--False-->D-->END
+
+classDef html fill:#12DBE2,stroke:#12DBE2,stroke-width:4px,color:#E21912;
+classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
+classDef start fill:#299F30,stroke:#0B7111,stroke-width:2px;
+classDef if fill:#EFAE58,stroke:#EFAE58,color:#5899EF;
+classDef end1 fill:#F46661,stroke:#F12D26,stroke-width:2px;
+
+class START start
+class C,D html
+class B if
+class END end1
+```
+
 * [✋Raise TypeError](../src/function/raise.py)
-* [👌👎catch Error](../src/function/tryexcept.py)
+The difference between raise and assert:
+1. assert: I swear this must be true, in case it happens, let me know. ❌❗️You have big problem! Debug aid for developer find root cause, not for handling run-time error. only give you one kind of error which is AssertionError.
+2. raise: Try to catch run-time error. Developer sometimes use raise for execution control.
+
+>👌💡[define isFloat(str) function](../src/function/checkFloat.py)
+
+* [👌👎catch Assertion Error](../src/function/tryexcept1.py)
+* [👌👎catch Different Error](../src/function/tryexcept2.py)
 
 ✔️Better solution is solve the issue at compiling time.
 

@@ -12,3 +12,6 @@
 
 ## Don't learn Python
 [Mark said: don't learn Python](https://www.youtube.com/watch?v=sO1ctUNQ1k8)
+
+## Python project Structure
+[Project Structure](https://iq-inc.com/importerror-attempted-relative-import/#common-project-structures)

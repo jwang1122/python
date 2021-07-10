@@ -90,7 +90,7 @@ the result will be written in ./.vscode/settings.json as below
 }
 ```
 
-👎Python unittest uses root folder to find test code, but if you import one module1 from another module2, unittest would **NOT** be able to find the module2, you need to use absolute file path, or relative file path showing below<font color="red">👇</font>
+👎😢❌Python unittest uses root folder to find test code, but if you import one module1 from another module2, unittest would **NOT** be able to find the module2, you need to use absolute file path, or relative file path showing below👇
 
 ```py
 from .card import Card # use this line for unit test
@@ -102,6 +102,35 @@ class BlackjackCard(Card):
         if self.face.isdigit():
             return int(self.face)
         return switch.get(self.face)
+```
+❌❗️📌⚡️Unfortunatly, this make unittest work, but python code no longer works.
+```output
+Traceback (most recent call last):
+  File "c:\Users\12818\workspace\python-I\src\blackjack\blackjackcard.py", line 1, in <module>ne 1, in <module>
+    from .card import Card # use this line for unit test
+😢ImportError: attempted relative import with no known parent package
+```
+
+```output
+<project root>
+    ├── 🔥src/
+    └── blackjack/
+          ├── card.py 
+          └── blackjackcard.py (import card) 
+```
+
+```<project root>
+👌python -m src.blackjack.card
+👌python -m src.blackjack.blackjackcard
+❌❗️python ./src/blackjack/blackjackcard.py
+```
+❌❗️Directly run blackjackcard.py from root project folder cause the following error:
+```output
+(env) C:\Users\12818\workspace\python-I>python ./src/blackjack/blackjackcard.py
+Traceback (most recent call last):
+  File "C:\Users\12818\workspace\python-I\src\blackjack\blackjackcard.py", line 1, in <module>
+    from .card import Card # use this line for unit test
+ImportError: attempted relative import with no known parent package
 ```
 ---
 
