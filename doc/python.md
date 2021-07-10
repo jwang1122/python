@@ -447,35 +447,35 @@ class Robot {
 ```
 
 ### class basic
-* [add attribute dynamically](../src/class/class01.py)
-* [everythin in Python is class](../src/class/testRobot.py)
-* [define function outside of class](../src/class/class02.py)
-* [define function inside class](../src/class/class03.py)
-* [define __init__()](../src/class/class04.py)
-* [__init__(self, inputName=None)](../src/class/class05.py)
-* [private attribute __energy](../src/class/class07.py)
-* [getter, setter, property](../src/class/class08.py)
+* [add attribute dynamically](../src/myclass/class01.py)
+* [everythin in Python is class](../src/myclass/testRobot.py)
+* [define function outside of class](../src/myclass/class02.py)
+* [define function inside class](../src/myclass/class03.py)
+* [define __init__()](../src/myclass/class04.py)
+* [__init__(self, inputName=None)](../src/myclass/class05.py)
+* [private attribute __energy](../src/myclass/class07.py)
+* [getter, setter, property](../src/myclass/class08.py)
 
 ### dunder functions
-* [__repr__(good enough) vs. __str__](../src/class/class06.py)
-* [__init__(good enough) vs. __new__](../src/class/class09.py)
-* [❓override __new__, return other class instance](../src/class/class10.py)
-* [override __iter__, __next__, create iterable](../src/class/class15.py) 
-* [range1 start from 1, include stop](../src/class/range1.py)
-* [__call__() make object callable](../src/class/class22.py)
-* [__equal__(check if same), __add__](../src/class/class24.py)
+* [__repr__(good enough) vs. __str__](../src/myclass/class06.py)
+* [__init__(good enough) vs. __new__](../src/myclass/class09.py)
+* [❓override __new__, return other class instance](../src/myclass/class10.py)
+* [override __iter__, __next__, create iterable](../src/myclass/class15.py) 
+* [range1 start from 1, include stop](../src/myclass/range1.py)
+* [__call__() make object callable](../src/myclass/class22.py)
+* [__equal__(check if same), __add__](../src/myclass/class24.py)
 
 ### attribute scope
-* [class level attribute](../src/class/class11.py)
-* [instance level attribute](../src/class/class12.py)
+* [class level attribute](../src/myclass/class11.py)
+* [instance level attribute](../src/myclass/class12.py)
 
 ### class tricks
-* [override __new__, return other class instance](../src/class/class10.py)
-* [pass outside function to class](../src/class/class13.py)
-* [internal function call another internal](../src/class/class14.py)
-* [nested class](../src/class/class20.py)
-* [composition vs. inheritance](../src/class/class21.py)
-* [class method, static method](../src/class/class23.py)
+* [override __new__, return other class instance](../src/myclass/class10.py)
+* [pass outside function to class](../src/myclass/class13.py)
+* [internal function call another internal](../src/myclass/class14.py)
+* [nested class](../src/myclass/class20.py)
+* [composition vs. inheritance](../src/myclass/class21.py)
+* [class method, static method](../src/myclass/class23.py)
 
 ### class inheritance
 ```mermaid
@@ -514,14 +514,14 @@ Employee<|--Engineer:is
 Employee<|--Manager:is
 Person<|--Teacher:is
 ```
-* [class inheritance, isinstance(obj, class)](../src/class/class16.py)
-* [advatage of inheritance, inherite from Enum](../src/class/class17.py)
-* [inherit from Enum](../src/class/class18.py)
-* [multiple inheritance](../src/class/class19.py)
+* [class inheritance, isinstance(obj, class)](../src/myclass/class16.py)
+* [advatage of inheritance, inherite from Enum](../src/myclass/class17.py)
+* [inherit from Enum](../src/myclass/class18.py)
+* [multiple inheritance](../src/myclass/class19.py)
 
 ### Python Interface
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
-[interface.py](../src/class/interface.py)
+[interface.py](../src/myclass/interface.py)
 
 ```mermaid
 classDiagram
