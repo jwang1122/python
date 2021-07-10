@@ -93,7 +93,15 @@ the result will be written in ./.vscode/settings.json as below
 👎Python unittest uses root folder to find test code, but if you import one module1 from another module2, unittest would **NOT** be able to find the module2, you need to use absolute file path, or relative file path showing below<font color="red">👇</font>
 
 ```py
+from .card import Card # use this line for unit test
+# from card import Card # use this line for product
 
+class BlackjackCard(Card):
+    def getValue(self):
+        switch = {"A":11,"J":10,"Q":10,"K":10}
+        if self.face.isdigit():
+            return int(self.face)
+        return switch.get(self.face)
 ```
 ---
 
