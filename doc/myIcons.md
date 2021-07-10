@@ -25,7 +25,7 @@
 λ | lambda
 ω | omega
 ⇒ | Rightarrow
-⟹| Longrightarrow
+<font color="red">⟹</font>| Longrightarrow
 ⇓ | Downarrow
 
 ## Sample File Structure:

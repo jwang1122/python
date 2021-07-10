@@ -19,45 +19,45 @@
 
 ## Disable Editor minimap
 
-😄Gear(bottom-left) > settings > Text Editor: minimap: Enable > uncheck
+😄Gear(bottom-left) ⟹ settings ⟹ Text Editor: minimap: Enable ⟹ uncheck
  
 ## Define Key-shortcut for clear terminal
-Right-click > Command palette > Terminal: clear > click the gear > click +
+Right-click ⟹ Command palettes ⟹ Terminal: clear ⟹ click the gear ⟹ click +
 
 👍Shift+ctrl+c
 
 ## Move Terminal window to right
 
-👍Right-click Terminal tab > Move panel right
+👍Right-click Terminal tab ⟹ Move panel right
 
 ## Key shortcut
 * Copy/Paste one line: Shift+Alt+Arrow
-* Copy/Paste multiple lines: highlight > Shift+Alt+Arrow
+* Copy/Paste multiple lines: highlight ⟹ Shift+Alt+Arrow
 * Delete one line: Ctrl+Shift+k
 * Replace String: highlight + Ctrl+Shift+l
-* Change Name: F2
+* Change File Name: F2
 * Pick different open file: Ctrl+tab
 * jump word: ctrl+arrow
 * move window to right: window+arrow
 
 ## Command Palette
-* 🔥Command Palette...:Ctrl+Shift+p
-* Python Interpreter: CP > Python: Select Interpretor
-* Unit test: CP > Configure Test
-* Table of Contents: CP > Markdown All in one: Table of contents
-* Code Snippet: CP > Configure user snippet
+* 🔥Command Palette...(CP):Ctrl+Shift+p
+* Python Interpreter: CP ⟹ Python: Select Interpretor
+* Unit test: CP ⟹ Configure Test
+* Table of Contents: CP ⟹ Markdown All in one: Table of contents
+* Code Snippet: CP ⟹ Configure user snippet
 * Search Snippet: Ctrl+Space
 * setting: "editor.tabCompletion": "on"
-* Command Palette > view toggle Zen mode
+* Zen mode: Command Palette ⟹ view toggle Zen mode
 * [Python Snippet](/Users/12818/AppData/Roaming/Code/User/snippets/python.json)
 * [create user snippet](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
 ## Convert Markdown to PDF
 * Extension: Markdown Preview Enhanced
-* Right-click > Chrome (Puppeteer) > PDF
+* Right-click ⟹ Chrome (Puppeteer) ⟹ PDF
 
 ## Disable pylint check
-Just hit Ctrl+Shift+P > Select linter > Disabled Linter
+Just hit Ctrl+Shift+P ⟹ Select linter ⟹ Disabled Linter
 
 the result will be written in ./.vscode/settings.json as below
 ```json
@@ -66,7 +66,7 @@ the result will be written in ./.vscode/settings.json as below
 ---
 
 ## Setup Unit test
-* Right-click > Command Palette... 
+* Right-click ⟹ Command Palette... 
 * Python: Configure Tests
 * unittest Standard Python test framework
 * . Root Directory
@@ -75,13 +75,24 @@ the result will be written in ./.vscode/settings.json as below
 
 the result will be written in ./.vscode/settings.json as below
 ```json
+{
+    "python.linting.enabled": false,
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        ".",
+        "./tests",
         "-p",
         "test_*.py"
     ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}
+```
+
+👎Python unittest uses root folder to find test code, but if you import one module1 from another module2, unittest would **NOT** be able to find the module2, you need to use absolute file path, or relative file path showing below<font color="red">👇</font>
+
+```py
 
 ```
 ---
