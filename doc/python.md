@@ -632,7 +632,27 @@ Deck o--BlackjackCard:stack of Cards
 
 Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ src ⟹ test_*.py
 * [Test circleArea](../tests/test_circleArea.py)
-* 
+```py
+# tests/test_basics.py
+
+import unittest
+from mycoolproject import my_module_1
+from mycoolproject import my_module_2
+
+class TestMe(unittest.TestCase):
+    def test_stuff(self):
+        assert my_module_1.my_string == 'whoa, this is so kewl'
+
+    def test_other_stuff(self):
+        assert my_module_2.my_new_string == 'carl said: whoa, this is so kewl'
+ 
+if __name__ == '__main__':
+    unittest.main()
+```
+C:\Users\12818\workspace\python1-2>python -m unittest tests/test_basics.py
+```DOS
+
+```
 ## File
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
