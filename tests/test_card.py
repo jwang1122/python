@@ -1,10 +1,10 @@
 import unittest
-from src.myclass.card import Card
+from src.blackjack.card import Card
 """
 1. Suit ignore upper and lower case
 2. Could create wrong card
 """
-class TestBlackJackCard(unittest.TestCase):
+class TestCard(unittest.TestCase):
     def test_faces(self):
         diamondsA = Card("A", "DIAMONDS")
         self.assertEqual(diamondsA.getValue(), 1)

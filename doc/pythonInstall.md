@@ -159,6 +159,9 @@ python --version
 python -m venv env
 ./env/bin/activate.bat
 ```
+python [-bBdEhiIOqsSuvVWx?] [-c command | -m module-name | script | - ] [args]
+
+where -m stands for module-name
 
 ```MACOS
 python3 -m venv env
