@@ -1,6 +1,6 @@
-# 2021 Summer Computer Language Classes
+# 2021 Summer-I Computer Language Classes
 
-⚡️📄📝✔️❌❓❗️📌🔨💡☝️👉👍👎👌💾🗑🐛📒⚠️😄😢♻️🔥🛠📐🎯✉️☎️
+[](../../doc/myIcons.md)
 
 🔥[学校网站](http://houstonhuaxia.org/)
 user name: 281-818-2512t
