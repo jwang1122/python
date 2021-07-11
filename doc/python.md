@@ -332,6 +332,8 @@ class END end1
 * [✋Raise TypeError](../src/function/raise.py)
 The difference between raise and assert:
 1. assert: I swear this must be true, in case it happens, let me know. ❌❗️You have big problem! Debug aid for developer find root cause, not for handling run-time error. only give you one kind of error which is AssertionError.
+>💡[I swear int('1')==1](../src/function/asInt.py)
+
 2. raise: Try to catch run-time error. Developer sometimes use raise for execution control.
 
 >👌💡[define isFloat(str) function](../src/function/checkFloat.py)
@@ -392,23 +394,51 @@ class N,O js
 Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ src ⟹ test_*.py
 ```
 [project root]
-    ├── 📝doc/
-    |    ├── mistakes.md 
-    |    ├── vscodeTrics.md 
-    |    └── python.md 
-    ├── 🔨homeworks/
-    |       └── <filenameXX.md>
     ├── 🔥src/
-    |    ├── function/ 
-    |    |     ├── circle3.py
-    |    |     └── circle.py
+    |    └── function/ 
+    |           ├── circle3.py
+    |           └── circle.py
+    ├── tests/
     |    └── 🚧test_circleArea.py 
     └── 👉ReadMe.md
 ```
-* To find test program
+* 😢👎unittest cannot find the file unless
     1. test file name match the pattern
-    2. rest file located on right folder
-    3. module and function can be found in the module
+    2. test file located on right folder
+    3. 👎module and function can be found in the module
+
+😄✔️👍所有的错误，都是因为vscode Python Extension中的python执行命令。
+Python永远都是从根上查找所有的module。Python本身并没有错。大部分网上的解释都没有切中要害。要害是python的执行命令与python的设计相违背。
+```DOS
+(env) C:\Users\12818\workspace\python-I>c:/Users/12818/workspace/python-I/env/Scripts/python.exe 
+👎❌❗️c:/Users/12818/workspace/python-I/src/blackjack/blackjackcard.py
+Traceback (most recent call last):
+  File "c:\Users\12818\workspace\python-I\src\blackjack\blackjackcard.py", line 1, in 
+<module>
+    from src.blackjack.card import Card # use this line for unit test
+ModuleNotFoundError: No module named 'src'
+
+(env) C:\Users\12818\workspace\python-I>
+```
+从命令行看出，命令是从project根目录发出（C:\Users\12818\workspace\python-I>），直接运行该文件（c:/Users/12818/workspace/python-I/src/blackjack/blackjackcard.py）
+```py
+# blackjackcard.py
+
+# from src.blackjack.card import Card # use this line for unit test
+from .card import Card # use relative path
+# from card import Card # use this line for product
+```
+如果程序使用第三行，python当然知道从当前目录下寻找card module，所以直接运行该文件没有任何的问题。但是当使用unittest的时候，unittest就找不到card module了。（😄当然如果unittest也像python一样聪明，在相同文件夹中寻找，就更好了。目前想让unittest找当前文件夹下的module文件，必须使用相对路径，即第二行的 from .card， 又或者第一行的绝对路径）。unittest总是从绝对路径开始查找，所以第一行对unittest和python来说是轻车熟路。但是第一行和第二行对于命令行直接运行都是大问题，因为在该文件所在的文件夹中，根本不存在src或者.card的文件夹，所以相应的module当然也找不到。解决的办法是修改命令行命令。
+```DOS
+✔️😄python -m src.blackjack.blackjackcard
+```
+这样一来，第一行和第二行都可以直接运行，也同时能够让unittest找到。
+网上很多解释说，你一定要在package文件夹中加入__init__.py的文件云云，其实没有一毛钱的关系。
+
+❗️❗️😢👎可惜的是，没有人修改执行命令❗️❗️
+
+👌Work around: it is hard to type in -m command, butter way to do this is add two line for the import, one for unittest, one for local run. switch the comment when you do different thing.
+
 
 ### loggin
 * [logging1.py](../src/logging/logging1.py)

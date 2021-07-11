@@ -1,4 +1,5 @@
-from .card import Card # use this line for unit test
+from src.blackjack.card import Card # use this line for unit test
+# from .card import Card # use relative path
 # from card import Card # use this line for product
 
 class BlackjackCard(Card):
