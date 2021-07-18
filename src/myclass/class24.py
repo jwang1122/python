@@ -14,6 +14,12 @@ class Card:
     def __eq__(self, other):
         return self.getValue() == other.getValue()
 
+    def __gt__(self, other):
+        return self.getValue() > other.getValue()
+
+    def __lt__(self, other):
+        return self.getValue() < other.getValue()
+            
     def __add__(self, other):
         return self.getValue() + other.getValue()
 

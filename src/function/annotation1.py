@@ -11,5 +11,5 @@ def circle_area(radius:'float', output:'float'=0.0) -> float:
     return pi * radius * radius
 
 if __name__ == '__main__':    
-    a = circle_area(2+4j)
+    a = circle_area(2.4)
     print(a)

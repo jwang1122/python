@@ -37,8 +37,6 @@
 - [Plot](#plot)
 - [Turtle](#turtle)
 - [MongoDB](#mongodb)
-
-
 ## My First python program
 [hello world](../src/languageBasics/hello.py)
 
@@ -56,6 +54,8 @@
 [comment](../src/languageBasics/../comment.py)
 * single line comment: #
 * multiple lines comment: """, '''
+❓Why I need use comment?
+✔️
 
 ## Variable Naming
 1. variable name cannot start with number
@@ -76,6 +76,8 @@ otherwise, your python builtins functions no longer works the way you expected.
 ![](images/LanguageBasics.svg)
 
 ## Data Type
+![](images/DataType.png)
+
 * [Numbers](../src/languageBasics/number.py)
     - int: a=4
     - float: a=3.4
@@ -329,7 +331,9 @@ class B if
 class END end1
 ```
 
-* [✋Raise TypeError](../src/function/raise.py)
+* [✋Raise TypeError](../src/function/raiseError.py)
+* [assert](../src/function/assertCheck.py)
+  
 The difference between raise and assert:
 1. assert: I swear this must be true, in case it happens, let me know. ❌❗️You have big problem! Debug aid for developer find root cause, not for handling run-time error. only give you one kind of error which is AssertionError.
 >💡[I swear int('1')==1](../src/function/asInt.py)
@@ -373,13 +377,13 @@ J[Web Based]
 K[ReactJS]
 L[Angular]
 M[DJango]
-N[Unit Test]
+N[Unit Test<br>TDD]
 O[Logging]
 
 
-A-->N & O & E & D & F
-D-->G & H
-E-->I & J
+A--> D & E & F & N & O
+D-->I & J
+F-->G & H
 J-->K & L & M
 
 classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
@@ -388,10 +392,11 @@ classDef js fill:#98CAF5,stroke:#98CAF5,stroke-width:2px;
 class D,E,F html
 class N,O js
 ```
+
 ### Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
 
-Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ src ⟹ test_*.py
+Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ test ⟹ test_*.py
 ```
 [project root]
     ├── 🔥src/

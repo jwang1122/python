@@ -1,3 +1,22 @@
+"""
+str: python use '', or "" for string variable assignment
+"""
+
+s = "Meet me at Python class."
+print("Double quota", type(s))
+s = 'Meet me at Python class.'
+print("Single quote",type(s))
+s = """Meet me at Python class.""" # triple double quotation
+print(type(s))
+s = '''Meet me at Python class.''' # triple single quotation
+print(type(s))
+s = "John said: 'I like Python.'"
+print(s)
+s = 'John said: "I like Python."'
+print(s)
+s = '''john said: "I'm Python developer."''' # use escape squence, \'
+print("18: "+s)
+
 s = 'meet me at python class.' # single or double quote are equivalent
 print(type(s))
 print(s)

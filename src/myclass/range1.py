@@ -1,3 +1,6 @@
+"""
+Create a range1 class which iterate start from index 1, include stop.
+"""
 class range1:
     def __init__(self, *args):
         self.start = 1
