@@ -10,32 +10,32 @@ if __name__ == '__main__':
     c = conn.cursor()
     try:
         projects = [
-            (111, 'project-111', '2020-03-28', '2020-04-28'),
-            (222, 'project-222', '2020-05-01', '2020-08-31'),
-            (333, 'project-333', '2020-07-06', '2020-07-30'),
+            (1, 'project-1', '2020-03-28', '2020-04-28'),
+            (2, 'project-2', '2020-05-01', '2020-08-31'),
+            (3, 'project-3', '2020-07-06', '2020-07-30'),
         ]
         c.executemany('INSERT INTO projects VALUES (?,?,?,?)', projects)
         conn.commit()
         tasks = [
-            (11101, 'task-1111', 10, 111, '2020-03-28', '2020-04-28'),
-            (22202, 'task-2222', 5, 111, '2020-04-01', '2020-04-10'),
-            (33303, 'task-3333', 5, 111, '2020-04-10', '2020-04-15'),
+            (11, 'task-11', 10, 1, '2020-03-28', '2020-04-28'),
+            (12, 'task-12', 5, 1, '2020-04-01', '2020-04-10'),
+            (13, 'task-13', 5, 1, '2020-04-10', '2020-04-15'),
         ]
         c.executemany('INSERT INTO tasks VALUES (?,?,?,?,?,?)', tasks)
         # the following is very important statement, otherwise no data will be stored into database
         conn.commit()
         tasks = [
-            (11104, 'task-11104', 5, 222, '2020-05-28', '2020-05-28'),
-            (22205, 'task-22205', 9, 222, '2020-05-01', '2020-05-10'),
-            (33306, 'task-33306', 9, 222, '2020-05-10', '2020-08-15'),
+            (21, 'task-21', 5, 2, '2020-05-28', '2020-05-28'),
+            (22, 'task-22', 9, 2, '2020-05-01', '2020-05-10'),
+            (23, 'task-23', 9, 2, '2020-05-10', '2020-08-15'),
         ]
         c.executemany('INSERT INTO tasks VALUES (?,?,?,?,?,?)', tasks)
         # the following is very important statement, otherwise no data will be stored into database
         conn.commit()
         tasks = [
-            (11107, 'task-11107', 5, 333, '2020-04-10', '2020-04-12'),
-            (22208, 'task-22208', 9, 333, '2020-04-13', '2020-04-14'),
-            (33309, 'task-33309', 9, 333, '2020-05-15', '2020-04-15'),
+            (31, 'task-31', 5, 3, '2020-04-10', '2020-04-12'),
+            (32, 'task-32', 9, 3, '2020-04-13', '2020-04-14'),
+            (33, 'task-33', 9, 3, '2020-05-15', '2020-04-15'),
         ]
         c.executemany('INSERT INTO tasks VALUES (?,?,?,?,?,?)', tasks)
         # the following is very important statement, otherwise no data will be stored into database

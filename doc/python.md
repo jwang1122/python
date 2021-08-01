@@ -29,14 +29,22 @@
   - [class tricks](#class-tricks)
   - [class inheritance](#class-inheritance)
   - [Python Interface](#python-interface)
+  - [Unit Test](#unit-test-1)
 - [Blackjack Game](#blackjack-game)
   - [Blackjack Rules](#blackjack-rules)
   - [Object relationship](#object-relationship)
-  - [Unit Test](#unit-test-1)
+  - [Game logic](#game-logic)
+  - [Code Optimization](#code-optimization)
+  - [Integration Test](#integration-test)
+  - [Documentation](#documentation)
+  - [Software development life cycle](#software-development-life-cycle)
 - [File](#file)
 - [Plot](#plot)
 - [Turtle](#turtle)
+- [SQLite](#sqlite)
 - [MongoDB](#mongodb)
+
+
 ## My First python program
 [hello world](../src/languageBasics/hello.py)
 
@@ -215,7 +223,61 @@ class E,E1 end1
 * [for2.py](../src/languageBasics/loop/for2.py)
 * [forBreak.py](../src/languageBasics/loop/forBreak.py)
 * [forContinue.py](../src/languageBasics/loop/forContinue.py)
-  ![](images/Loop.svg)
+
+* Break on for-loop
+  
+```mermaid
+graph TB
+
+A([Loop])
+B{loop<br>condition<br>i<=10}
+C[code block 1<br>line-51]
+D{break<br>condition<br>line-52}
+F[code block 2<br>line-55]
+E[END<br>line-57]
+
+A-->B
+B--false-->E
+B--true-->C-->D
+D--true-->E
+D--false-->F-->B
+
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class B,D if
+class E end1
+class A start
+```
+
+* continue on for-loop
+  
+```mermaid
+graph TB
+
+A([Loop])
+B{loop<br>condition<br>i<=10}
+C[code block 1<br>line-41]
+D{continue<br>condition<br>line-42}
+F[code block 2<br>line-45]
+E[END<br>line-47]
+
+A-->B
+B--false-->E
+B--true-->C-->D
+D--true-->B
+D--false-->F-->B
+
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class B,D if
+class E end1
+class A start
+
+```
 
 * [while.py]()
   ![](images/while.svg)
@@ -366,31 +428,35 @@ mypy <filename.py>
 
 ```mermaid
 graph LR
+
 A([Software Project])
-D[User Interface]
-E[Business Logic]
-F[Database]
-G["No SQL(MongoDB)"]
-H["SQLite RelastionalDB"]
-I[Window Based]
-J[Web Based]
-K[ReactJS]
-L[Angular]
-M[DJango]
-N[Unit Test<br>TDD]
-O[Logging]
+B[User Interface<br>GUI Front End]
+C[Business Logic<br>middle tier]
+D[Database<br>Back End]
+E(Unit test)
+F(Logging)
+K(Documentation)
+L(Integration Test)
+G[Window Based<br>Eclipse IDE]
+H[Web Based<br>Google, Amazon]
+I[MongoDB]
+J[SQL Server]
+REACT[ReactJS]
+ANGULAR[Angular]
+DJANGO[DJango]
+GIT(Source Control)
 
-
-A--> D & E & F & N & O
+A-->B & C & D 
+A--tools--> E & F & K & L & GIT
+B-->H & G
 D-->I & J
-F-->G & H
-J-->K & L & M
+H-->REACT & ANGULAR & DJANGO
 
-classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-classDef js fill:#98CAF5,stroke:#98CAF5,stroke-width:2px;
+classDef block1 fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 
-class D,E,F html
-class N,O js
+class A start
+class C,E,F,D,J,GIT block1
 ```
 
 ### Unit Test
@@ -443,6 +509,28 @@ from .card import Card # use relative path
 ❗️❗️😢👎可惜的是，没有人修改执行命令❗️❗️
 
 👌Work around: it is hard to type in -m command, butter way to do this is add two line for the import, one for unittest, one for local run. switch the comment when you do different thing.
+
+```py
+# tests/test_basics.py
+
+import unittest
+from mycoolproject import my_module_1
+from mycoolproject import my_module_2
+
+class TestMe(unittest.TestCase):
+    def test_stuff(self):
+        assert my_module_1.my_string == 'whoa, this is so kewl'
+
+    def test_other_stuff(self):
+        assert my_module_2.my_new_string == 'carl said: whoa, this is so kewl'
+ 
+if __name__ == '__main__':
+    unittest.main()
+```
+C:\Users\12818\workspace\python1-2>python -m unittest tests/test_basics.py
+```DOS
+
+```
 
 
 ### loggin
@@ -625,6 +713,10 @@ Person<|--Engineer:Engineer is Person
 * @abstractmethod decorator from abc
 * __subclasshook__(), __subclasscheck__(), issubclass(), isinstance()
 
+### Unit Test
+>A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
+
+
 ## Blackjack Game
 ### Blackjack Rules
 * [Black Jack Rules](https://bicyclecards.com/how-to-play/blackjack/)
@@ -685,46 +777,190 @@ class Player{
 
 class Dealer {
   deck:Deck
-  hand:[]
-  win:int
   shuffle()
   deal()
   hit()
   showHand()
 }
 
+class Game{
+  playerList:ArrayList<Player>
+  dealer:Dealer
+  determineWinner()
+  play()
+}
+
 Player<|--Dealer:dealer is player
 Dealer *--Deck:dealer own the deck
 Card<|--BlackjackCard
 Deck o--BlackjackCard:stack of Cards
+Game *-- Dealer
+Game *-- Player
 ```
-* []
-### Unit Test
->A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
+[blackjack](../src/blackjack.py)
+[Unit test](../test/test_blackjack.py)
 
-Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ src ⟹ test_*.py
-* [Test circleArea](../tests/test_circleArea.py)
-```py
-# tests/test_basics.py
+### Game logic
+```mermaid
+graph TB
+A([start])
+INIT["init()"]
+B[Deal cards]
+C[Show hands]
+D{hit?}
+F[determine winner<br>show result]
+END[end]
+AGAIN{more game?}
+S[Shuffule, clean hand]
 
-import unittest
-from mycoolproject import my_module_1
-from mycoolproject import my_module_2
+A-->INIT-->B-->C-->D
+D--true-->B
+D--false-->F-->AGAIN
+AGAIN--false-->END
+AGAIN--true-->S-->B
 
-class TestMe(unittest.TestCase):
-    def test_stuff(self):
-        assert my_module_1.my_string == 'whoa, this is so kewl'
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
 
-    def test_other_stuff(self):
-        assert my_module_2.my_new_string == 'carl said: whoa, this is so kewl'
- 
-if __name__ == '__main__':
-    unittest.main()
+class A start
+class END end1
+class D,AGAIN if
 ```
-C:\Users\12818\workspace\python1-2>python -m unittest tests/test_basics.py
-```DOS
+### Code Optimization
+```mermaid
+graph TB
+START([start])
+PLAYER[player win]
+DEALER[dealer win]
+TIED[tied]
+
+A{player>21}
+C{dealer>21}
+D{player==dealer}
+E{player>dealer}
+
+START-->A
+A--false-->C
+A--true-->DEALER
+C--true-->PLAYER
+C--false-->
+D--true-->TIED
+D--false-->E
+E--true-->PLAYER
+E--false-->DEALER
+
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+
+class A,D,C,E if
+```
+
+* player get 4 Ace
+* player get 3 Ace
+* player get 2 Ace
+
+### Integration Test
+❓What is Integration Test?
+>✔️INTEGRATION TESTING is defined as a type of testing where software modules are integrated logically and tested as a group. A typical software project consists of multiple software modules, coded by different programmers. The purpose of this level of testing is to expose defects in the interaction between these software modules when they are integrated.
+
+[Integration test](https://www.guru99.com/integration-testing.html)
+
+✔️Play the Blackjack game by running Game class.
+
+### Documentation
+❓How to document Python code?
+✔️
+
+❓How to read Python code?
+✔️
+
+### Software development life cycle
+* Test Driven Development (TDD)
+```mermaid
+graph TB
+START([start])
+C[Create Base class]
+UT[unit test]
+F[fix code pass test]
+DONE{Done all classes}
+INT[integration test]
+ERROR{error or <br>improvement?}
+FIX[fix issue, make better]
+PROD([production])
+
+START-->C-->UT-->F-->DONE
+DONE--true-->INT-->ERROR
+DONE--false, dev cycle-->C
+ERROR--true-->FIX--integration cycle-->UT
+ERROR--false-->PROD
+
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class ERROR,DONE if
+class START,PROD start
+```
+* After integration test, we find
+❗️missing test of 2,3,4 Ace?
+✔️modify getHandValue() method defined in Player class, put if condition in for loop.
+[test2Ace(),test3Ace(),test4Ace()](../test/com/huaxia/blackjack/PlayerTest.java)
+❌we treat one Ace more than one time!
+✔️
+```java
+	public int getHandValue() {
+		int value = 0;
+		for (Card card : hand) {
+			value += card.getValue();
+		}
+		int c = countAceInHand();
+		while (value > 21 && c>0) { // bust 3, 10, A, Q
+			value -= 10; // correct my Ace from 11 to 1
+			c--;
+		}
+		return value;
+	}
+
+  	private int countAceInHand() {
+		int count = 0; // assume there is no Ace in my hand
+		for (Card card : hand) {
+			if (card.face.equals("A")) {
+				count++; // find Ace in hand
+			}
+		}
+		return count;
+	}
 
 ```
+❗️the determineWinner() method looks ugly
+```mermaid
+graph TB
+
+START([start])
+A{player>21}
+DEALER[dealer win]
+B{dealer>21}
+PLAYER[player win]
+C{player==dealer}
+TIED[tied up]
+D{player>dealer}
+
+START-->A--true-->DEALER
+A--false-->B
+B--false-->C
+B--true-->PLAYER
+C--true-->TIED
+C--false-->D
+D--false-->DEALER
+D--true-->PLAYER
+
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef db fill:#BEBDB7,stroke:black,stroke-width:2px;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class START start
+class A,B,C,D if
+```
+
 ## File
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
@@ -773,5 +1009,48 @@ C:\Users\12818\workspace\python1-2>python -m unittest tests/test_basics.py
 
 ## Turtle
 
-## MongoDB
+## SQLite
+CRUD: Create, Retrieve, Update, Delete
 
+* [Create database, table](../src/sqlite/sqlite01.py)
+* [Insert many rows](../src/sqlite/sqlite02.py)
+* [Retrive data](../src/sqlite/sqlite03.py)
+* [Update data](../src/sqlite/sqlite04.py)
+* [Delete data](../src/sqlite/sqlite05.py)
+* [One-to-Many Create table](../src/sqlite/sqlite06.py)
+
+```mermaid
+
+```
+* [Create one-to-many data](../src/sqlite/sqlite07.py)
+* [Retrieve one-to-many data](../src/sqlite/sqlite08.py)
+* 
+## MongoDB
+❓What is MongoDB?
+✔️One of NoSQL database application written in C++.
+1. stores data in JSON-like documents that can have various structures
+2. uses dynamic schemas, which means that we can create records without predefining structure such as SQL relational database table.
+3. the structure of a record can be changed simply by adding new fields or deleting existing ones.
+
+```mermaid
+graph LR
+
+MONGO(mongo DB)
+D[database]
+C[collection]
+DOC[document]
+COL[collection]
+
+MONGO-->D-->C-->DOC & COL
+```
+4. document database
+5. key-value database 
+
+![](images/NoSQL.png)
+
+❓What is NoSQL database?
+✔️NoSQL databases (aka "not only SQL") are non tabular, and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
+
+❓What is SQL?
+✔️SQL stands for Structured Query Language specially for relational database.
+SQLite: Python built in SQL database.

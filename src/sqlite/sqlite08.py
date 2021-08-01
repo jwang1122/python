@@ -1,15 +1,15 @@
-import sqlite3
-from sqlite2 import create_connection
 """
 Retrieve relational data from projects and tasks tables
 """
+import sqlite3
+from sqlite2 import create_connection
 
 if __name__ == '__main__':
     database = "pythonsqlite.db"
     conn = create_connection(database)
     c = conn.cursor()
     try:
-        t = (333,) # find all tasks related to this project.
+        t = (3,) # find all tasks related to this project.
         for row in c.execute('select * from projects where id=?',t):
             print(row)
 
