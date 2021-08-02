@@ -40,9 +40,11 @@
   - [Software development life cycle](#software-development-life-cycle)
 - [File](#file)
 - [Plot](#plot)
+- [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
+- [Functional Programing](#functional-programing)
 
 
 ## My First python program
@@ -1006,7 +1008,17 @@ class A,B,C,D if
 * [3D animation generator](../src/plot/3dAnimation.py)
 [padans DataFrame](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
 
+## Design Principles SOLID
+1. Single Responsibility principle
+  >A class should have one, and only one, reason to change. You need to change your class as soon as one of its responsibilities changes. it makes your software easier to implement and prevents unexpected side-effects of future changes.
+2. Open/Close Pricinple
+3. Liskov Substitution Principle
+4. Interface Segregation Principle
+5. Dependency Inversion
 
+应变（requirements change over time. least change on requirement changes.）
+
+[SOLIS website](https://stackify.com/solid-design-principles/)
 ## Turtle
 
 ## SQLite
@@ -1020,11 +1032,28 @@ CRUD: Create, Retrieve, Update, Delete
 * [One-to-Many Create table](../src/sqlite/sqlite06.py)
 
 ```mermaid
-
+ erDiagram
+    PROJECT ||--o{ TASK : contains
+    PROJECT {
+        int id
+        string name
+        date begineDate
+        date endDate
+    }
+    TASK {
+        int id
+        string name
+        date beginDate
+        date endDate
+    }
 ```
 * [Create one-to-many data](../src/sqlite/sqlite07.py)
 * [Retrieve one-to-many data](../src/sqlite/sqlite08.py)
-* 
+* [Create books table](../src/sqlite/sqlite9.py)
+* [insert sample books](../src/sqlite/sqlite10.py)
+* [CRUD for books](../src/sqlite/sqlitebookdb.py)
+
+
 ## MongoDB
 ❓What is MongoDB?
 ✔️One of NoSQL database application written in C++.
@@ -1054,3 +1083,10 @@ MONGO-->D-->C-->DOC & COL
 ❓What is SQL?
 ✔️SQL stands for Structured Query Language specially for relational database.
 SQLite: Python built in SQL database.
+
+## Functional Programing
+* [Understand my wrapper function](../src/timerDecorator/my_timer1.py)
+* [add decorator to any function](../src/timerDecorator/my_timer2.py)
+* [pass function to class](../src/timerDecorator/my_timer3.py)
+* [timer](../src/timerDecorator/my_timer.py)
+

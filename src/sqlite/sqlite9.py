@@ -1,4 +1,4 @@
-from sqlite6 import create_connection, create_table
+from sqlitehelper import create_connection, create_table
 """
 Create books table in sqlitebook.db database
 """
@@ -16,10 +16,11 @@ def main():
 
     conn = create_connection(database)
     if conn is not None:
-        # create projects table
-        create_table(conn, sql_create_books_table)
-    else:
-        print("Error! cannot create the database connection.")
+        try:
+            # create projects table
+            create_table(conn, sql_create_books_table)
+        except Exception as error:
+            print(f"Error: {error}" )
 
 if __name__ == '__main__':
     main()

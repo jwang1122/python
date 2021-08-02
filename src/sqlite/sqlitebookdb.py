@@ -121,10 +121,10 @@ class BookDB:
 
 
 if __name__ == '__main__':
-    bookdb = BookDB("book.db")
+    bookdb = BookDB("sqlitebook.db")
     # test retrieve many
-    books = bookdb.getBooks()
-    pprint(books)
+    # books = bookdb.getBooks()
+    # pprint(books)
 
     # test create one
     book = {
@@ -133,11 +133,12 @@ if __name__ == '__main__':
         "price": 12.69,
         "author": "John Wang",
         "read": False,
+        "rating":5,
     }
     # bookdb.create(book)
 
     # test retrieve one
-    book = bookdb.getBook('f93aae2f45c14da093f45e02c2837857')
+    book = bookdb.getBook('a854d87491f849f4b56421fe55fb0f08')
     pprint(book)
     
     # test delete one
@@ -146,6 +147,7 @@ if __name__ == '__main__':
 
     # test update
     book['author'] = 'Ailian Wang'
-    # bookdb.update('f93aae2f45c14da093f45e02c2837857', book)
+    book["title"] = 'ReactX in Python'
+    bookdb.update('a854d87491f849f4b56421fe55fb0f08', book)
 
     print("Done.")
