@@ -44,6 +44,7 @@
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
+- [Window Based GUI](#window-based-gui)
 - [Functional Programing](#functional-programing)
 
 
@@ -908,29 +909,23 @@ class START,PROD start
 [test2Ace(),test3Ace(),test4Ace()](../test/com/huaxia/blackjack/PlayerTest.java)
 ❌we treat one Ace more than one time!
 ✔️
-```java
-	public int getHandValue() {
-		int value = 0;
-		for (Card card : hand) {
-			value += card.getValue();
-		}
-		int c = countAceInHand();
-		while (value > 21 && c>0) { // bust 3, 10, A, Q
-			value -= 10; // correct my Ace from 11 to 1
-			c--;
-		}
-		return value;
-	}
+```py
+    def getHandValue(self):
+        value = 0
+        for card in self.hand:
+            value += card.getValue()
+        a = self.numberAce()
+        while value > 21 and a>0: # A=11,
+            value -= 10 # change A=1
+            a -= 1
+        return value
 
-  	private int countAceInHand() {
-		int count = 0; // assume there is no Ace in my hand
-		for (Card card : hand) {
-			if (card.face.equals("A")) {
-				count++; // find Ace in hand
-			}
-		}
-		return count;
-	}
+    def numberAce(self):
+        count = 0; 
+        for card in self.hand:
+            if card.face == 'A':
+                count += 1
+        return count # return number of Ace in hand
 
 ```
 ❗️the determineWinner() method looks ugly
@@ -1012,10 +1007,38 @@ class A,B,C,D if
 1. Single Responsibility principle
   >A class should have one, and only one, reason to change. You need to change your class as soon as one of its responsibilities changes. it makes your software easier to implement and prevents unexpected side-effects of future changes.
 2. Open/Close Pricinple
+  >Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
 3. Liskov Substitution Principle
-4. Interface Segregation Principle
-5. Dependency Inversion
+   >Let Φ(x) be a property provable about objects x of type T. Then Φ(y) should be true for objects y of type S where S is a subtype of T.
 
+```mermaid
+
+classDiagram
+
+class T{
+  field:str
+}
+
+class S{
+  field:str
+}
+
+T<|--S
+```
+
+$$ \phi (x) = \phi (y) $$
+where 
+
+```py
+x = T()
+y = S()
+```
+
+4. Interface Segregation Principle
+  >Clients should not be forced to depend upon interfaces that they do not use.”
+5. Dependency Inversion
+  >High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. 
+  
 应变（requirements change over time. least change on requirement changes.）
 
 [SOLIS website](https://stackify.com/solid-design-principles/)
@@ -1083,6 +1106,11 @@ MONGO-->D-->C-->DOC & COL
 ❓What is SQL?
 ✔️SQL stands for Structured Query Language specially for relational database.
 SQLite: Python built in SQL database.
+
+## Window Based GUI
+❓What is tkinter?
+>✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
+
 
 ## Functional Programing
 * [Understand my wrapper function](../src/timerDecorator/my_timer1.py)

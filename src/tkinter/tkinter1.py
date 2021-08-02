@@ -4,6 +4,6 @@ import tkinter as tk
 parent = tk.Tk()
 # Add a title
 parent.title("-Welcome to Python tkinter")
-parent.geometry('600x300')
+parent.geometry('600x600')
 # Start GUI
 parent.mainloop()
