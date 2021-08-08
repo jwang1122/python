@@ -2,6 +2,7 @@
 sqlite helper for build sqlite database connection, and create table by
 given database file name and sql string for creating table.
 """
+import sqlite3
 
 def create_connection(db_file):
     """ create a database connection to a SQLite database """
@@ -9,7 +10,7 @@ def create_connection(db_file):
     try:
         conn = sqlite3.connect(db_file)
         print(sqlite3.version)
-    except Error as e:
+    except Exception as e:
         print(e)
     return conn
 
@@ -22,6 +23,6 @@ def create_table(conn, create_table_sql):
     try:
         c = conn.cursor()
         c.execute(create_table_sql)
-    except Error as e:
+    except Exception as e:
         print(e)
 

@@ -1,3 +1,6 @@
+"""
+draw snowman by using class Snowman
+"""
 from turtle import *
 from snowman import *
 

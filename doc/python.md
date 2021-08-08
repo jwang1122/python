@@ -17,11 +17,11 @@
   - [pass function as argument](#pass-function-as-argument)
   - [raise Error and Try-Except](#raise-error-and-try-except)
   - [function annotation](#function-annotation)
-  - [Unit Test](#unit-test)
-  - [loggin](#loggin)
   - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
-  - [algorithms](#algorithms)
+- [Unit Test](#unit-test)
+- [Logging](#logging)
+- [algorithms](#algorithms)
 - [Class](#class)
   - [class basic](#class-basic)
   - [dunder functions](#dunder-functions)
@@ -35,16 +35,23 @@
   - [Object relationship](#object-relationship)
   - [Game logic](#game-logic)
   - [Code Optimization](#code-optimization)
+  - [missing unit tests](#missing-unit-tests)
   - [Integration Test](#integration-test)
   - [Documentation](#documentation)
   - [Software development life cycle](#software-development-life-cycle)
-- [File](#file)
+- [File Access](#file-access)
+- [nmpy](#nmpy)
+- [pandas](#pandas)
 - [Plot](#plot)
 - [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
 - [Window Based GUI](#window-based-gui)
+- [Data Structure](#data-structure)
+  - [stack](#stack)
+  - [queue](#queue)
+  - [Linked list](#linked-list)
 - [Functional Programing](#functional-programing)
 
 
@@ -462,7 +469,41 @@ class A start
 class C,E,F,D,J,GIT block1
 ```
 
-### Unit Test
+
+### recursive function
+A function is recursive if it calls itself.
+  1. termination condition.
+  2. adjust status for each call.
+  3. Python stops the cunction calls after a depth of 1000 calls.
+* [factoria.py](../src/function/factorial.py)
+$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
+![](aDoc/images/recursiveFactorial.jfif)
+* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
+
+* Understand recursive find.
+  ```mermaid
+  graph TB
+  START((find answer))
+  END[end]
+  B[add 10 to<br>the answer of<br>problem 52]
+  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
+  D[Problem 85:<br>10]
+  
+  START-->B-->C-->D
+  D--10+12-->C--22+10-->B--32-->END
+
+  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
+  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
+  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
+  class START start
+  class B,C,D html
+  class END end1
+  ```
+### function decorator
+* [my_timer.py](../src/function/my_timer.py)
+
+## Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
 
 Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ test ⟹ test_*.py
@@ -472,17 +513,19 @@ Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Test
     |    └── function/ 
     |           ├── circle3.py
     |           └── circle.py
-    ├── tests/
+    ├── test/
     |    └── 🚧test_circleArea.py 
     └── 👉ReadMe.md
 ```
 * 😢👎unittest cannot find the file unless
     1. test file name match the pattern
     2. test file located on right folder
-    3. 👎module and function can be found in the module
+    3. unittest always find test file from current running folder
+    4. 👎module and function can be found in the module
+    5. 👎module must be no compiler error
 
 😄✔️👍所有的错误，都是因为vscode Python Extension中的python执行命令。
-Python永远都是从根上查找所有的module。Python本身并没有错。大部分网上的解释都没有切中要害。要害是python的执行命令与python的设计相违背。
+Python永远都是从当前文件夹开始查找所有的module。Python本身并没有错。大部分网上的解释都没有切中要害。要害是python的执行命令与python的设计相违背。
 ```DOS
 (env) C:\Users\12818\workspace\python-I>c:/Users/12818/workspace/python-I/env/Scripts/python.exe 
 👎❌❗️c:/Users/12818/workspace/python-I/src/blackjack/blackjackcard.py
@@ -530,49 +573,21 @@ class TestMe(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-C:\Users\12818\workspace\python1-2>python -m unittest tests/test_basics.py
+C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
 ```DOS
 
 ```
 
+[unit test for circleArea](../test/test_circleArea.py)
 
-### loggin
-* [logging1.py](../src/logging/logging1.py)
+## Logging
+❓What is logging?
+✔️write software execution record to console, file or database used for application analysis.
+there are at least 5 level of logging: Debug, Info, Warning, Error, Fatal
 
-### recursive function
-A function is recursive if it calls itself.
-  1. termination condition.
-  2. adjust status for each call.
-  3. Python stops the cunction calls after a depth of 1000 calls.
-* [factoria.py](../src/function/factorial.py)
-$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
-![](aDoc/images/recursiveFactorial.jfif)
-* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
+* [send log message to a file](../src/logging/logging1.py)
 
-* Understand recursive find.
-  ```mermaid
-  graph TB
-  START((find answer))
-  END[end]
-  B[add 10 to<br>the answer of<br>problem 52]
-  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
-  D[Problem 85:<br>10]
-  
-  START-->B-->C-->D
-  D--10+12-->C--22+10-->B--32-->END
-
-  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
-  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
-  class START start
-  class B,C,D html
-  class END end1
-  ```
-### function decorator
-* [my_timer.py](../src/function/my_timer.py)
-
-### algorithms
+## algorithms
 Big O
 * O(n)
 * O(log n)
@@ -790,7 +805,7 @@ class Game{
   playerList:ArrayList<Player>
   dealer:Dealer
   determineWinner()
-  play()
+  play(winner:function)
 }
 
 Player<|--Dealer:dealer is player
@@ -857,7 +872,7 @@ classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
 
 class A,D,C,E if
 ```
-
+### missing unit tests
 * player get 4 Ace
 * player get 3 Ace
 * player get 2 Ace
@@ -958,7 +973,7 @@ class START start
 class A,B,C,D if
 ```
 
-## File
+## File Access
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
 * [read/append plain text from/fo file](../src/file/file1.py)
@@ -973,7 +988,11 @@ class A,B,C,D if
 * [load json string as dict](../src/file/file3b.py)
 * [use pandas read json file](../src/file/file4.py)
 * [plot student score](../src/file/file5.py)
-* 
+
+## nmpy
+
+## pandas
+
 ## Plot
 * [plot list](../src/plot/plot0.py)
 * [plot sine wave](../src/plot/plot1.py)
@@ -1004,6 +1023,9 @@ class A,B,C,D if
 [padans DataFrame](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
 
 ## Design Principles SOLID
+
+[SOLIS website](https://stackify.com/solid-design-principles/)
+
 1. Single Responsibility principle
   >A class should have one, and only one, reason to change. You need to change your class as soon as one of its responsibilities changes. it makes your software easier to implement and prevents unexpected side-effects of future changes.
 2. Open/Close Pricinple
@@ -1041,8 +1063,25 @@ y = S()
   
 应变（requirements change over time. least change on requirement changes.）
 
-[SOLIS website](https://stackify.com/solid-design-principles/)
 ## Turtle
+[turtle document](https://docs.python.org/3/library/turtle.html)
+
+* [Open window](../src/myturtle/turtle1.py)
+* [move turtle](../src/myturtle/turtle2.py)
+* [mouse click move turtle](../src/myturtle/turtle3.py)
+* [Randomly moving turtle on mouse click.](../src/myturtle/turtle4.py)
+* [limit the turtle within window bounds](../src/myturtle/turtle5.py)
+* [turtle moving within certain area.](../src/myturtle/turtle6.py)
+* [Display cards on turtle screen](../src/myturtle/turtle7.py)
+* [draw star](../src/myturtle/turtle8.py)
+* [draw half circle](../src/myturtle/turtle9.py)
+* [draw spiral turtle](../src/myturtle/turtle10.py)
+* [draw dragon curve](../src/myturtle/dragonCurve.py)
+* [draw sun and house](../src/snowman/drawSun.py)
+* [draw snowman by using class Snowman](../src/myclass/drawSnowMan.py)
+* [draw ellipse](../src/myturtle/ellipse.py)
+* [define functions for line, triangle, circle and rectangle](../src/myturtle/shapes.py)
+
 
 ## SQLite
 CRUD: Create, Retrieve, Update, Delete
@@ -1110,6 +1149,50 @@ SQLite: Python built in SQL database.
 ## Window Based GUI
 ❓What is tkinter?
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
+
+## Data Structure
+### stack
+❓What is stack?
+✔️a stack is an abstract data type that serves as a collection of elements, with two main principal operations: (LIFO) last in first out.
+
+1. Push(), which adds an element to the collection, and
+2. Pop(), which removes the most recently added element that was not yet removed.
+you have list of element, stack each other.
+3. empty(), returns whether the stack is empty
+4. size(), returns the size of the stack
+5. top(), returns a reference to the top most element of the stack
+
+
+* [stack.py](../src/structure/stack.py)
+
+![](images/stack.png)
+
+### queue
+❓What is queue?
+✔️A Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO).
+
+![](images/queue.png)
+
+1. Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition – Time Complexity : O(1)
+2. Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition – Time Complexity : O(1)
+3. Front: Get the front item from queue – Time Complexity : O(1)
+4. Rear: Get the last item from queue – Time Complexity : O(1)
+
+1. push(): insert a new data into the queue
+2. pop(): return the front data in the queue, and remove it from the queue
+3. peek()/top(): return the front data in the queue without remove it
+ 
+### Linked list
+❓What is linked list?
+✔️A linked list is a sequence of data elements, which are connected together via links.
+
+![](images/linkedlist.png)
+
+[Linked list](../src/structure/linkedlist.py)
+
+❓Why do I need use linked list?
+✔️Insert new node in list is expensive because all elements on right-hand side need to be shifted.
+
 
 
 ## Functional Programing
