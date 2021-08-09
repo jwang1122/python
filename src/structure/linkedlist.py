@@ -1,3 +1,6 @@
+"""
+Implement Node class for linked list
+"""
 class Node:
     def __init__(self, data=None):
         self.data = data
@@ -7,9 +10,14 @@ class Node:
         return self.data
 
     def insert(self, obj):
-        print(type(obj))
-        obj.next = self.data.next
-        self.data.next = obj
+        obj.next = self.next
+        self.next = obj
+
+    @staticmethod
+    def traverse(node):
+        while node is not None:
+            print(node.data)
+            node = node.next
 
 class Linkedlist:
     def __init__(self):
@@ -35,17 +43,11 @@ if __name__ == '__main__':
     sat.next = sun
 
     obj = list1.head
-    print(obj)
-    for i in range(6):
-        obj = obj.next
-        print(obj)
+    Node.traverse(obj)
 
     print()
     n = Node("No such day")
-    wed.next = n
-    n.next = thu
+    wed.insert(n)
+
     obj = list1.head
-    print(obj)
-    for i in range(6):
-        obj = obj.next
-        print(obj)
+    Node.traverse(obj)

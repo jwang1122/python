@@ -51,8 +51,16 @@
 - [Data Structure](#data-structure)
   - [stack](#stack)
   - [queue](#queue)
+  - [Priority Queue](#priority-queue)
   - [Linked list](#linked-list)
+  - [doubly linked list](#doubly-linked-list)
 - [Functional Programing](#functional-programing)
+  - [Function decorator(timer)](#function-decoratortimer)
+  - [Lambda expression](#lambda-expression)
+  - [map() function](#map-function)
+  - [filter() function](#filter-function)
+  - [reduce() function](#reduce-function)
+  - [sort() function](#sort-function)
 
 
 ## My First python program
@@ -107,7 +115,8 @@ otherwise, your python builtins functions no longer works the way you expected.
     - string slicing: [[start]:[end]:[step]]
     - String operator +, *
     - as function str(object)
-    - string functions
+    - string functions (isdigit(), strip(), split(), lower(), upper(), startswith(), endswith(), ...)
+    - 
   - Homeworks
     [string-01](../homeworks/string/string01.md)
     [string-02](../homeworks/string/string02.md)
@@ -1182,6 +1191,19 @@ you have list of element, stack each other.
 2. pop(): return the front data in the queue, and remove it from the queue
 3. peek()/top(): return the front data in the queue without remove it
  
+### Priority Queue
+❓What is priority queue?
+
+✔️Priority Queue is an extension of queue with following properties.
+
+1. Every item has a priority associated with it.
+2. An element with high priority is dequeued before an element with low priority.
+3. If two elements have the same priority, they are served according to their order in the queue.
+
+* [priorityqueue.py](../src/structure/priorityqueue.py)
+* [priorityqueue2.py](../src/structure/priorityqueue2.py)
+* [priorityqueue3.py](../src/structure/priorityqueue3.py)
+
 ### Linked list
 ❓What is linked list?
 ✔️A linked list is a sequence of data elements, which are connected together via links.
@@ -1194,10 +1216,72 @@ you have list of element, stack each other.
 ✔️Insert new node in list is expensive because all elements on right-hand side need to be shifted.
 
 
+### doubly linked list
+[doubly linked data list](../src/structure/doubleLinkedList.py)
 
 ## Functional Programing
+### Function decorator(timer)
 * [Understand my wrapper function](../src/timerDecorator/my_timer1.py)
 * [add decorator to any function](../src/timerDecorator/my_timer2.py)
 * [pass function to class](../src/timerDecorator/my_timer3.py)
 * [timer](../src/timerDecorator/my_timer.py)
 
+
+### Lambda expression
+❓What is lambda function?
+✔️A Lambda Function in Python programming is an anonymous function or a function having no name.
+
+* Syntax
+```py
+lambda <variable list separated by comma>: expression
+print(lambda x, y: x + y)
+```
+![](images/lambda.png)
+
+* [map ](../src/functional/lambda01.py)
+
+### map() function
+❓What is map() function?
+>✔️ the map() function is processing iterables without loop.
+![](images/map.png)
+
+```
+map(func, *iterables) --> map object
+map(lambda x:x*x, list1)
+map(lambda x,y:x+y, tuple1, tuple2)
+```
+1. map() takes two argument, a function and an iterable data
+2. map() applys the given function to each element in the iterable
+3. map() return a map object which is iterable and can be converted to list or tuple
+
+[map 2 list to one](../src/functional/map0.py)
+[convert temperature](../src/functional/map1.py)
+### filter() function
+❓What is filter() function?
+✔️Return an iterator yielding those items of iterable for which function(item) |  is true. If function is None, return the items that are true.
+
+```
+filter(function or None, iterable) --> filter object
+filter(lambda x:x%2==0, list1)
+```
+* filter object is iterable and can be converted to list or tuple
+[get all prime number from 2 to n](../src/functional/prime.py)
+[func.py](../src/functional/func.py)
+[lambda02.py](../src/functional/lambda02.py)
+
+### reduce() function
+❓What is reduce() function?
+✔️The reduce(fun,seq) function is used to apply a particular function passed in its argument to all of the list elements
+
+* [sum over iterable](../src/functional/reduce01.py)
+* [find max and min](../src/functional/reduce02.py)
+* [multiply all elements](../src/functional/reduce03.py)
+
+### sort() function
+❓How to use sort function?
+
+✔️sort dict
+* [sort car dict by year](../src/functional/sort0.py)
+
+✔️sort list by lambda expression
+* [sort temperature by city](../src/functional/sort1.py)
