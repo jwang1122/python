@@ -12,6 +12,3 @@ t = tuple(map(lambda x, y: x*y, t1, t2))
 print(t)
 l = list(map(lambda x,y:x*y, t1, t2))
 print(l)
-
-l = list(filter(lambda x: x<42, l))
-print(l)

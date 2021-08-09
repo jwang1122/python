@@ -7,13 +7,20 @@ def test():
     x = list(map(c2f, temps))
     print(x)
 
-def mymap(data):
+def mymap(f, data): # simulate how map works
     result = []
     for d in data:
-        x = c2f(d)
+        x = f(d)
         result.append(x)
     return result
 
 def test1():
-    z = mymap(temps)
+    z = mymap(c2f, temps)
     print(z)
+
+if __name__ == '__main__':
+    print(temps)
+    print()
+    test()
+    print()
+    test1()

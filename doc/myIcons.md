@@ -65,12 +65,12 @@ START-->IF
 IF--True-->DB-->END
 IF--False-->B-->END
 
-classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-classDef js fill:yellow,stroke:black,stroke-width:2px;
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
-classDef db fill:#BEBDB7,stroke:black,stroke-width:2px;
 classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
 classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef js fill:yellow,stroke:black,stroke-width:2px;
+classDef db fill:#BEBDB7,stroke:black,stroke-width:2px;
 
 class START start
 class B,D,E js

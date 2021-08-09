@@ -8,4 +8,5 @@ def test():
     temps.sort(reverse=True, key=lambda data:data[1])
     print(temps)
 
-test()
+if __name__ == '__main__':    
+    test()

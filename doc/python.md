@@ -61,6 +61,8 @@
   - [filter() function](#filter-function)
   - [reduce() function](#reduce-function)
   - [sort() function](#sort-function)
+  - [monad](#monad)
+  - [Either](#either)
 
 
 ## My First python program
@@ -1256,6 +1258,12 @@ map(lambda x,y:x+y, tuple1, tuple2)
 
 [map 2 list to one](../src/functional/map0.py)
 [convert temperature](../src/functional/map1.py)
+[understand map() function](../src/functional/map2.py)
+[map with multiple iterables](../src/functional/map3.py)
+[convert temperature](../src/functional/map4.py)
+[map with multiple iterables](../src/functional/map5.py)
+[map vs. for-loop](../src/functional/map6.py)
+
 ### filter() function
 ❓What is filter() function?
 ✔️Return an iterator yielding those items of iterable for which function(item) |  is true. If function is None, return the items that are true.
@@ -1285,3 +1293,72 @@ filter(lambda x:x%2==0, list1)
 
 ✔️sort list by lambda expression
 * [sort temperature by city](../src/functional/sort1.py)
+* [reverse sort by temperature](../src/functional/sort2.py)
+
+✔️sort list with tuple element
+* [sort list](../src/functional/sort3.py)
+
+### monad
+❓What is monad?
+✔️a monad is an abstraction that allows structuring programs generically. 
+
+✔️Unit, one; Atom sence; 
+✔️an elementary individual substance which reflects the order of the world and from which material properties are derived
+
+[Definition of Monad](https://www.merriam-webster.com/dictionary/monad)
+
+✔️Wrapper Class type with implementation of fmap(), amap() and bind() functions. 
+
+* One to wrap values of any basic type within the monad (yielding a monadic value);
+* Another to compose functions that output monadic values (called monadic functions).
+
+![](images/monad.png)
+
+❓ What is functors?
+✔️you apply a function to a wrapped value using map
+
+❓what is applicatives?
+✔️you apply a wrapped function to a wrapped value using apply, if defined
+
+❓what is monads
+✔️you apply a function that returns a wrapped value, to a wrapped value using flatMap.
+
+❓what is flatmap?
+✔️A flatMap is a transformation operation. It applies to each element of RDD and it returns the result as new RDD. It is similar to Map, but FlatMap allows returning 0, 1 or more elements from map function.
+
+* [Functor](../src/functional/math1.py)
+* [ReactiveX](../src/functional/math2.py)
+* [monad01.py](../src/functional/monad01.py)
+* [](../src/functional/monad02.py)
+
+❓ What is ReactiveX?
+✔️
+![](images/ReactiveAction.gif)
+
+```mermaid
+graph LR
+
+H(Software history)
+A[Pointer execution<br>Assembly]
+FORTRAN[Function block<br>Fortran]
+C[Object Oriented<br>C++ class]
+FUNC[Functional Programming<br>ReactiveX]
+COMP[Component Oriented<br>Windows]
+SERV[Service Oriented<br>microservices]
+CLOUDS[Clouds Deploy]
+
+H --> A & FORTRAN & C & COMP & FUNC & SERV & CLOUDS
+
+A-->FORTRAN-->C -->COMP-->FUNC-->SERV-->CLOUDS
+
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class H start
+```
+### Either
+❓ Any application service
+✔️
+* [check a even number](../src/functional/either1.py)
+* [return Right/Left](../src/functional/either2.py)
+* [bind functions](../src/functional/either3.py)
+

@@ -1,3 +1,6 @@
+"""
+Functor: apply a function to a wrapped value
+"""
 from pymonad.operators.maybe import Just, Nothing
 
 def add3(x):
@@ -12,6 +15,7 @@ def mul7(x):
 def div9(x):
     return Just(x / 9)
 
-f = lambda x: Just(x) >> add3 >> sub5 >> mul7 >> div9
-
-print(f(20))
+if __name__ == '__main__':
+    f = lambda x: Just(x) >> add3 >> sub5 >> mul7 >> div9
+    print(f(20)) # return boxed value
+    print(f(20).value) # open box
