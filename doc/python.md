@@ -153,6 +153,7 @@ otherwise, your python builtins functions no longer works the way you expected.
     - dict is mutable
     - dict modify==>CRUD
 
+* [date/time](../src/languageBasics/datatype/datetime1.py)
 ## Operator 
 * [operator](../src/languageBasics/operator.py)
 * Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
@@ -1160,7 +1161,31 @@ SQLite: Python built in SQL database.
 ## Window Based GUI
 ❓What is tkinter?
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
+[](https://www.youtube.com/watch?v=YXPyB4XeYLA)
+in tkinter everyting is widget
 
+* [open window with title](../src/tkinter/tkinter1.py)
+* [Add label to window](../src/tkinter/tkinter2.py)
+* [Use grid system, change font of the label](../src/tkinter/tkinter3.py)
+  - 💡Find available font: ✔️Control Panel ⇒ Apperance and Personalization ⇒ Fonts
+  - [](C:\Windows\Fonts)
+* [add button](../src/tkinter/tkinter4.py)
+* [draw line in canvas](../src/tkinter/tkinter5.py)
+* [button action > print text on console](../src/tkinter/tkinter6.py)
+* [using Combox](../src/tkinter/tkinter7.py)
+* [using checkbox](../src/tkinter/tkinter8.py)
+* [using spinbox](../src/tkinter/tkinter9.py)
+* [using text field](../src/tkinter/tkinter10.py)
+* [using form](../src/tkinter/tkinter11.py)
+* [using radio button and message box](../src/tkinter/tkinter12.py)
+* [Same as above, use pack instead of grid](../src/tkinter/tkinter13.py)
+* [using scrolled text](../src/tkinter/tkinter14.py)
+* [using progress bar](../src/tkinter/tkinter15.py)
+* [enable/disable button](../src/tkinter/tkinter16.py)
+* [using list box](../src/tkinter/tkinter17.py)
+* [same as above with multiple selection](../src/tkinter/tkinter18.py)
+
+[隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
 ## Data Structure
 ### stack
 ❓What is stack?
@@ -1329,7 +1354,13 @@ filter(lambda x:x%2==0, list1)
 * [Functor](../src/functional/math1.py)
 * [ReactiveX](../src/functional/math2.py)
 * [monad01.py](../src/functional/monad01.py)
-* [](../src/functional/monad02.py)
+* [Understand Functor](../src/functional/monad02.py)
+  
+❓ what is amap?
+✔️
+
+❓ what is fmap?
+✔️
 
 ❓ What is ReactiveX?
 ✔️
@@ -1361,4 +1392,5 @@ class H start
 * [check a even number](../src/functional/either1.py)
 * [return Right/Left](../src/functional/either2.py)
 * [bind functions](../src/functional/either3.py)
+* [simulate aireline tickets](../src/functional/airlineticket.py)
 

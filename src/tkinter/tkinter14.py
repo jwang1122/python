@@ -1,3 +1,6 @@
+"""
+using scrolled text
+"""
 import tkinter as tk
 import tkinter.scrolledtext as tkst
 parent = tk.Tk()

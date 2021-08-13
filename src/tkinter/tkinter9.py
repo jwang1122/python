@@ -1,4 +1,8 @@
+"""
+using spinbox
+"""
 import tkinter as tk
+
 root = tk.Tk()
 root.geometry('600x300')
 text_var = tk.DoubleVar()

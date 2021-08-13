@@ -1,9 +1,11 @@
-import tkinter as tk
-from tkinter import ttk
+"""
+using checkbox
+"""
+from tkinter import *
 
-root = tk.Tk()
+root = Tk()
 root.geometry('600x300')
-my_boolean_var = tk.BooleanVar()
+my_boolean_var = BooleanVar()
 
 def cmd():
     if my_boolean_var.get():
@@ -11,7 +13,7 @@ def cmd():
     else:
         print("The check box is not selected.")
 
-my_checkbutton = ttk.Checkbutton(
+my_checkbutton = Checkbutton(
     text="Check when selected",
     variable=my_boolean_var,command=cmd
 )
