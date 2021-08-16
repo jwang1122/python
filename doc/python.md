@@ -1247,6 +1247,9 @@ you have list of element, stack each other.
 [doubly linked data list](../src/structure/doubleLinkedList.py)
 
 ## Functional Programing
+❓What is functional programming?
+✔️ functional programming is a programming paradigm where programs are constructed by applying and composing functions. functional programming is a programming paradigm where programs are constructed by applying and composing functions. Goal oriented
+
 ### Function decorator(timer)
 * [Understand my wrapper function](../src/timerDecorator/my_timer1.py)
 * [add decorator to any function](../src/timerDecorator/my_timer2.py)
@@ -1270,6 +1273,7 @@ print(lambda x, y: x + y)
 ### map() function
 ❓What is map() function?
 >✔️ the map() function is processing iterables without loop.
+
 ![](images/map.png)
 
 ```
