@@ -48,6 +48,14 @@
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
 - [Window Based GUI](#window-based-gui)
+  - [layout pack](#layout-pack)
+  - [color](#color)
+  - [mouse](#mouse)
+  - [table](#table)
+  - [canvas](#canvas)
+  - [tab window frame](#tab-window-frame)
+  - [titled frame](#titled-frame)
+  - [plot chart in tkinter](#plot-chart-in-tkinter)
 - [Data Structure](#data-structure)
   - [stack](#stack)
   - [queue](#queue)
@@ -1184,6 +1192,36 @@ in tkinter everyting is widget
 * [enable/disable button](../src/tkinter/tkinter16.py)
 * [using list box](../src/tkinter/tkinter17.py)
 * [same as above with multiple selection](../src/tkinter/tkinter18.py)
+* [using dialog](../src/tkinter/tkinter19.py)
+* [using tk.Frame](../src/tkinter/tkinter20.py)
+* [close window call back](../src/tkinter/tkinter21.py)
+* [using filedialog](../src/tkinter/tkinter22.py)
+* [better version of tkinter22](../src/tkinter/tkinter23.py)
+* [using save file dialog](../src/tkinter/tkinter24.py)
+* [manubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
+### layout pack
+* [GUI Layout Management>pack](../src/tkinter/tkinter26.py)
+* [pack(fill=tk.X)](../src/tkinter/tkinter27.py)
+* [w.pack(fill=tk.X, padx=10, pady=5)](../src/tkinter/tkinter28.py)
+* ☝️[pack(fill=tk.X, pady=10)](../src/tkinter/tkinter29.py)
+* [pack(padx=5, pady=10, side=tk.LEFT)](../src/tkinter/tkinter30.py)
+### color
+* [random background color](../src/tkinter/tkinter31.py)
+* [built in color list](../src/tkinter/tkinter32.py)
+### mouse 
+* [mouse double click](../src/tkinter/tkinter33.py)
+* [mouse position](../src/tkinter/tkinter34.py)
+### table
+* [create a table](../src/tkinter/tkinter35.py)
+### canvas
+* [using canvas draw pie chart](../src/tkinter/tkinter36.py)
+* 👎😢[data not available](../src/tkinter/tkinter37.py)
+### tab window frame
+* [tab window](../src/tkinter/tkinter38.py)
+### titled frame
+* [titled frame](../src/tkinter/tkinter39.py)
+### plot chart in tkinter
+* [canvas.draw() chart on canvas](../src/tkinter/tkinter40.py)
 
 [隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
 ## Data Structure

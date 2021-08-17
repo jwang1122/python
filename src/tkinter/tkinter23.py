@@ -1,3 +1,6 @@
+"""
+better version of tkinter22
+"""
 import tkinter as tk
 from tkinter import filedialog as fd
 from tkinter import messagebox

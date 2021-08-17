@@ -43,7 +43,8 @@ def popupmsg(msg):
 
 
 def animate(i):
-    dataLink = 'https://btc-e.com/api/3/trades/btc_usd?limit=2000'
+    # dataLink = 'https://btc-e.com/api/3/trades/btc_usd?limit=2000'
+    dataLink = 'https://btc-e.com/api/2/ltc_usd/ticker'
     data = urllib.request.urlopen(dataLink)
     data = data.readall().decode("utf-8")
     data = json.loads(data)
@@ -72,21 +73,13 @@ def animate(i):
     title = "BTC-e BTCUSD Prices\nLast Price: "+str(data["price"][1999])
     a.set_title(title)
 
-    
-    
-    
-
-
-    
-            
-
 class SeaofBTCapp(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         
         tk.Tk.__init__(self, *args, **kwargs)
 
-        tk.Tk.iconbitmap(self, default="tkinter/clienticon.ico")
+        tk.Tk.iconbitmap(self, default="src/tkinter/clienticon.ico")
         tk.Tk.wm_title(self, "Sea of BTC client")
         
         

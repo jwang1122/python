@@ -1,3 +1,6 @@
+'''
+w.pack(padx=5, pady=10, side=tk.LEFT)
+'''
 import tkinter as tk
 
 root = tk.Tk()

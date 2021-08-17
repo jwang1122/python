@@ -1,3 +1,6 @@
+"""
+mouse position
+"""
 from tkinter import *
 
 def motion(event):

@@ -1,5 +1,6 @@
-# Python program to create a table
-
+'''
+Python program to create a table
+'''
 from tkinter import *
 
 

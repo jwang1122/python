@@ -1,3 +1,6 @@
+'''
+titled frame
+'''
 from tkinter import *
 screen = Tk()
 screen.title("Titled Frame")
