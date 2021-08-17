@@ -58,6 +58,7 @@
   - [titled frame](#titled-frame)
   - [plot chart in tkinter](#plot-chart-in-tkinter)
   - [display image](#display-image)
+  - [card game GUI](#card-game-gui)
 - [Data Structure](#data-structure)
   - [stack](#stack)
   - [queue](#queue)
@@ -1239,7 +1240,10 @@ in tkinter everyting is widget
 ### display image
 * [display image on frame](../src/tkinter/tkinter42.py)
 * [deal cards in window](../src/tkinter/tkinter43.py)
-* 
+### card game GUI
+* [card game gui](../src/tkinter/tkinter44.py)
+
+
 [隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
 ## Data Structure
 ### stack
