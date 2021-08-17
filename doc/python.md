@@ -15,6 +15,7 @@
   - [define function in function](#define-function-in-function)
   - [return function from function](#return-function-from-function)
   - [pass function as argument](#pass-function-as-argument)
+  - [global variable](#global-variable)
   - [raise Error and Try-Except](#raise-error-and-try-except)
   - [function annotation](#function-annotation)
   - [recursive function](#recursive-function)
@@ -47,7 +48,7 @@
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
-- [Window Based GUI](#window-based-gui)
+- [tkinter(windows based GUI)](#tkinterwindows-based-gui)
   - [layout pack](#layout-pack)
   - [color](#color)
   - [mouse](#mouse)
@@ -56,6 +57,7 @@
   - [tab window frame](#tab-window-frame)
   - [titled frame](#titled-frame)
   - [plot chart in tkinter](#plot-chart-in-tkinter)
+  - [display image](#display-image)
 - [Data Structure](#data-structure)
   - [stack](#stack)
   - [queue](#queue)
@@ -110,6 +112,7 @@ otherwise, your python builtins functions no longer works the way you expected.
 [variable-03](../homeworks/variable03.md)
 
 ![](images/LanguageBasics.svg)
+
 
 ## Data Type
 ![](images/DataType.png)
@@ -389,6 +392,16 @@ Circle area formula: $ A=\pi r^2 $
 ### pass function as argument
 * [passFuncAsArg.py](../src/function/passFuncAsArg.py)
 * 👍[function as dictionary value](../src/function/dictFunction.py)
+
+### global variable
+❓ What is global variable?
+>✔️global keyword allows you to modify the variable outside of the current scope. It is used to create a global variable and make changes to the variable in a local context.
+[](../src/function/globalVariable.py)
+1. When we create a variable inside a function, it is local by default.
+2. When we define a variable outside of a function, it is global by default. You don't have to use global keyword.
+3. We use global keyword to read and write a global variable inside a function.
+4. Use of global keyword outside a function has no effect.
+5. It is not necessary to declare global variable outside function
 
 
 ### raise Error and Try-Except
@@ -1166,7 +1179,7 @@ MONGO-->D-->C-->DOC & COL
 ✔️SQL stands for Structured Query Language specially for relational database.
 SQLite: Python built in SQL database.
 
-## Window Based GUI
+## tkinter(windows based GUI)
 ❓What is tkinter?
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
 [](https://www.youtube.com/watch?v=YXPyB4XeYLA)
@@ -1178,7 +1191,6 @@ in tkinter everyting is widget
   - 💡Find available font: ✔️Control Panel ⇒ Apperance and Personalization ⇒ Fonts
   - [](C:\Windows\Fonts)
 * [add button](../src/tkinter/tkinter4.py)
-* [draw line in canvas](../src/tkinter/tkinter5.py)
 * [button action > print text on console](../src/tkinter/tkinter6.py)
 * [using Combox](../src/tkinter/tkinter7.py)
 * [using checkbox](../src/tkinter/tkinter8.py)
@@ -1194,7 +1206,7 @@ in tkinter everyting is widget
 * [same as above with multiple selection](../src/tkinter/tkinter18.py)
 * [using dialog](../src/tkinter/tkinter19.py)
 * [using tk.Frame](../src/tkinter/tkinter20.py)
-* [close window call back](../src/tkinter/tkinter21.py)
+* [close window call back, display image](../src/tkinter/tkinter21.py)
 * [using filedialog](../src/tkinter/tkinter22.py)
 * [better version of tkinter22](../src/tkinter/tkinter23.py)
 * [using save file dialog](../src/tkinter/tkinter24.py)
@@ -1215,6 +1227,7 @@ in tkinter everyting is widget
 * [create a table](../src/tkinter/tkinter35.py)
 ### canvas
 * [using canvas draw pie chart](../src/tkinter/tkinter36.py)
+* [draw line in canvas](../src/tkinter/tkinter5.py)
 * 👎😢[data not available](../src/tkinter/tkinter37.py)
 ### tab window frame
 * [tab window](../src/tkinter/tkinter38.py)
@@ -1222,7 +1235,11 @@ in tkinter everyting is widget
 * [titled frame](../src/tkinter/tkinter39.py)
 ### plot chart in tkinter
 * [canvas.draw() chart on canvas](../src/tkinter/tkinter40.py)
-
+* [plot chart dynamically](../src/tkinter/tkinter41.py)
+### display image
+* [display image on frame](../src/tkinter/tkinter42.py)
+* [deal cards in window](../src/tkinter/tkinter43.py)
+* 
 [隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
 ## Data Structure
 ### stack
