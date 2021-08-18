@@ -49,6 +49,8 @@
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
 - [tkinter(windows based GUI)](#tkinterwindows-based-gui)
+  - [open window](#open-window)
+  - [tkinter widgets](#tkinter-widgets)
   - [layout pack](#layout-pack)
   - [color](#color)
   - [mouse](#mouse)
@@ -58,6 +60,7 @@
   - [titled frame](#titled-frame)
   - [plot chart in tkinter](#plot-chart-in-tkinter)
   - [display image](#display-image)
+  - [popup window](#popup-window)
   - [card game GUI](#card-game-gui)
 - [Data Structure](#data-structure)
   - [stack](#stack)
@@ -1183,16 +1186,21 @@ SQLite: Python built in SQL database.
 ## tkinter(windows based GUI)
 ❓What is tkinter?
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
-[](https://www.youtube.com/watch?v=YXPyB4XeYLA)
+[YouTube tutorial](https://www.youtube.com/watch?v=YXPyB4XeYLA)
 in tkinter everyting is widget
 
+### open window
 * [open window with title](../src/tkinter/tkinter1.py)
+
+### tkinter widgets
 * [Add label to window](../src/tkinter/tkinter2.py)
+* [dynamically change label text](../src/tkinter/tkinter46.py)
 * [Use grid system, change font of the label](../src/tkinter/tkinter3.py)
   - 💡Find available font: ✔️Control Panel ⇒ Apperance and Personalization ⇒ Fonts
-  - [](C:\Windows\Fonts)
+  - [font folder location](C:\Windows\Fonts)
 * [add button](../src/tkinter/tkinter4.py)
 * [button action > print text on console](../src/tkinter/tkinter6.py)
+* [use tkinter Entry](../src/tkinter/tkinter47.py)
 * [using Combox](../src/tkinter/tkinter7.py)
 * [using checkbox](../src/tkinter/tkinter8.py)
 * [using spinbox](../src/tkinter/tkinter9.py)
@@ -1211,35 +1219,48 @@ in tkinter everyting is widget
 * [using filedialog](../src/tkinter/tkinter22.py)
 * [better version of tkinter22](../src/tkinter/tkinter23.py)
 * [using save file dialog](../src/tkinter/tkinter24.py)
-* [manubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
+* [menubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
+
 ### layout pack
 * [GUI Layout Management>pack](../src/tkinter/tkinter26.py)
 * [pack(fill=tk.X)](../src/tkinter/tkinter27.py)
 * [w.pack(fill=tk.X, padx=10, pady=5)](../src/tkinter/tkinter28.py)
 * ☝️[pack(fill=tk.X, pady=10)](../src/tkinter/tkinter29.py)
 * [pack(padx=5, pady=10, side=tk.LEFT)](../src/tkinter/tkinter30.py)
+
 ### color
 * [random background color](../src/tkinter/tkinter31.py)
 * [built in color list](../src/tkinter/tkinter32.py)
+
 ### mouse 
 * [mouse double click](../src/tkinter/tkinter33.py)
 * [mouse position](../src/tkinter/tkinter34.py)
+
 ### table
 * [create a table](../src/tkinter/tkinter35.py)
+
 ### canvas
 * [using canvas draw pie chart](../src/tkinter/tkinter36.py)
 * [draw line in canvas](../src/tkinter/tkinter5.py)
 * 👎😢[data not available](../src/tkinter/tkinter37.py)
+
 ### tab window frame
 * [tab window](../src/tkinter/tkinter38.py)
+
 ### titled frame
 * [titled frame](../src/tkinter/tkinter39.py)
+
 ### plot chart in tkinter
 * [canvas.draw() chart on canvas](../src/tkinter/tkinter40.py)
 * [plot chart dynamically](../src/tkinter/tkinter41.py)
+
 ### display image
 * [display image on frame](../src/tkinter/tkinter42.py)
 * [deal cards in window](../src/tkinter/tkinter43.py)
+
+### popup window
+* [popup window](../src/tkinter/tkinter45.py)
+
 ### card game GUI
 * [card game gui](../src/tkinter/tkinter44.py)
 

@@ -1,3 +1,6 @@
+"""
+dynamically change label text
+"""
 import tkinter as tk
 
 class Test():

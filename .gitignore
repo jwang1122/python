@@ -11,3 +11,4 @@ faicons/
 *.spec
 .mypy_cache/
 .ipynb_checkpoints/
+important.md
