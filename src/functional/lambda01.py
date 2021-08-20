@@ -65,3 +65,9 @@ print(list2)
 # # calculate circle area
 # for i in range(5):
 #     print(foo(a, i))
+
+def add(n):
+    return n + 10
+
+f = lambda: add(5) # provide value at function define
+print(f()) # run the function later, refer to 

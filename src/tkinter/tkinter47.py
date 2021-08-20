@@ -22,4 +22,5 @@ clearBtn = tk.Button(root, text='Clear', command=clear)
 clearBtn.place(x=180, y=30)
 text = tk.Text(root, height=3, width=35)
 text.place(x=10, y=50)
+
 root.mainloop()

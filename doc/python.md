@@ -50,8 +50,12 @@
 - [MongoDB](#mongodb)
 - [tkinter(windows based GUI)](#tkinterwindows-based-gui)
   - [open window](#open-window)
-  - [tkinter widgets](#tkinter-widgets)
-  - [layout pack](#layout-pack)
+  - [Label, Button, Entry widgets](#label-button-entry-widgets)
+    - [pack attributes](#pack-attributes)
+  - [pack layout](#pack-layout)
+  - [grid layout](#grid-layout)
+  - [place layout](#place-layout)
+  - [Other widgets](#other-widgets)
   - [color](#color)
   - [mouse](#mouse)
   - [table](#table)
@@ -62,6 +66,7 @@
   - [display image](#display-image)
   - [popup window](#popup-window)
   - [card game GUI](#card-game-gui)
+  - [Application](#application)
 - [Data Structure](#data-structure)
   - [stack](#stack)
   - [queue](#queue)
@@ -1192,15 +1197,40 @@ in tkinter everyting is widget
 ### open window
 * [open window with title](../src/tkinter/tkinter1.py)
 
-### tkinter widgets
+### Label, Button, Entry widgets
 * [Add label to window](../src/tkinter/tkinter2.py)
+#### pack attributes
+  * after=widget1 - pack this widget after widget1
+  * before=widget1 - pack this widget before widget1
+  * anchor='border' - where **border** must be n, ne, e, se, s, sw, w, nw, or center 
+  * fill=NONE, or X, Y, BOTH
+  * padx, pady
+  * ipadx, ipady
+  * side='top', 'left', 'right', 'bottom'
 * [dynamically change label text](../src/tkinter/tkinter46.py)
-* [Use grid system, change font of the label](../src/tkinter/tkinter3.py)
+* [change font of the label](../src/tkinter/tkinter3.py)
   - 💡Find available font: ✔️Control Panel ⇒ Apperance and Personalization ⇒ Fonts
   - [font folder location](C:\Windows\Fonts)
 * [add button](../src/tkinter/tkinter4.py)
 * [button action > print text on console](../src/tkinter/tkinter6.py)
+* [lambda expression on button action](../src/tkinter/tkinter48.py)
 * [use tkinter Entry](../src/tkinter/tkinter47.py)
+
+### pack layout
+* [GUI Layout Management>pack](../src/tkinter/tkinter26.py)
+* [pack(fill=tk.X)](../src/tkinter/tkinter27.py)
+* [w.pack(fill=tk.X, padx=10, pady=5)](../src/tkinter/tkinter28.py)
+* ☝️[pack(fill=tk.X, pady=10)](../src/tkinter/tkinter29.py)
+* [pack(padx=5, pady=10, side=tk.LEFT)](../src/tkinter/tkinter30.py)
+
+### grid layout
+* [Grid system](../src/tkinter/tkinter50.py)
+
+### place layout
+
+
+
+### Other widgets
 * [using Combox](../src/tkinter/tkinter7.py)
 * [using checkbox](../src/tkinter/tkinter8.py)
 * [using spinbox](../src/tkinter/tkinter9.py)
@@ -1221,12 +1251,6 @@ in tkinter everyting is widget
 * [using save file dialog](../src/tkinter/tkinter24.py)
 * [menubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
 
-### layout pack
-* [GUI Layout Management>pack](../src/tkinter/tkinter26.py)
-* [pack(fill=tk.X)](../src/tkinter/tkinter27.py)
-* [w.pack(fill=tk.X, padx=10, pady=5)](../src/tkinter/tkinter28.py)
-* ☝️[pack(fill=tk.X, pady=10)](../src/tkinter/tkinter29.py)
-* [pack(padx=5, pady=10, side=tk.LEFT)](../src/tkinter/tkinter30.py)
 
 ### color
 * [random background color](../src/tkinter/tkinter31.py)
@@ -1264,6 +1288,9 @@ in tkinter everyting is widget
 ### card game GUI
 * [card game gui](../src/tkinter/tkinter44.py)
 
+### Application
+* [calculator](../src/tkinter/calculator.py)
+* [tic tac toe](../src/tkinter/tictaktoe.py)
 
 [隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
 ## Data Structure
