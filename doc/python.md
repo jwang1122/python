@@ -1509,3 +1509,4 @@ class H start
 * [bind functions](../src/functional/either3.py)
 * [simulate aireline tickets](../src/functional/airlineticket.py)
 
+![](downloadFromChatbox.mp4)
