@@ -31,6 +31,8 @@
   - [class inheritance](#class-inheritance)
   - [Python Interface](#python-interface)
   - [Unit Test](#unit-test-1)
+  - [Dunder Variables](#dunder-variables)
+  - [Global Variables](#global-variables)
 - [Blackjack Game](#blackjack-game)
   - [Blackjack Rules](#blackjack-rules)
   - [Object relationship](#object-relationship)
@@ -40,11 +42,13 @@
   - [Integration Test](#integration-test)
   - [Documentation](#documentation)
   - [Software development life cycle](#software-development-life-cycle)
+- [Yahtzee Dice Game](#yahtzee-dice-game)
 - [File Access](#file-access)
 - [nmpy](#nmpy)
 - [pandas](#pandas)
 - [Plot](#plot)
-- [Design Principles SOLID](#design-principles-solid)
+- [Clean Code](#clean-code)
+  - [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
@@ -81,8 +85,12 @@
   - [filter() function](#filter-function)
   - [reduce() function](#reduce-function)
   - [sort() function](#sort-function)
+  - [Calculate Square root](#calculate-square-root)
+  - [Non-strict evaluation](#non-strict-evaluation)
   - [monad](#monad)
   - [Either](#either)
+- [Design pattern](#design-pattern)
+  - [Reactivex design pattern](#reactivex-design-pattern)
 
 
 ## My First python program
@@ -352,6 +360,8 @@ class C,D html
 class END end1
 ```
 ## Function
+❓What is function?
+>✔️A block of code defined by name and arguments, can be used by calling the name many times repeatedly. In Python, functions are first-class citizens. That means functions have the same characteristics as values like other data type such as strings and numbers. Anything you would expect to be able to do with a string or number you can do with a function as well.
 * [function basic](../src/function/function.py)
 * define a function
 $$
@@ -684,7 +694,8 @@ class Robot {
 * [override __iter__, __next__, create iterable](../src/myclass/class15.py) 
 * [range1 start from 1, include stop](../src/myclass/range1.py)
 * [__call__() make object callable](../src/myclass/class22.py)
-* [__equal__(check if same), __add__](../src/myclass/class24.py)
+* [__eq__(check if same), __add__](../src/myclass/class24.py)
+* [__eq__(), == vs is ](../src/myclass/class25.py)
 
 ### attribute scope
 * [class level attribute](../src/myclass/class11.py)
@@ -777,6 +788,13 @@ Person<|--Engineer:Engineer is Person
 ### Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
 
+### Dunder Variables
+* __doc__
+* __name__
+* __code__
+
+
+### Global Variables
 
 ## Blackjack Game
 ### Blackjack Rules
@@ -1015,6 +1033,8 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 class START start
 class A,B,C,D if
 ```
+## Yahtzee Dice Game
+[Yahtzee Dice Game](https://www.dicegamedepot.com/yahtzee-rules/)
 
 ## File Access
 ![](images/filemode.jpeg)
@@ -1063,9 +1083,13 @@ class A,B,C,D if
 * [log style](../src/plot/plot22.py)
 * [generate animated sine wave](../src/plot/movingSinWave.py)
 * [3D animation generator](../src/plot/3dAnimation.py)
+
 [padans DataFrame](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
 
-## Design Principles SOLID
+## Clean Code
+[Clean code](Clean-Code.pdf")
+
+### Design Principles SOLID
 
 [SOLIS website](https://stackify.com/solid-design-principles/)
 
@@ -1104,7 +1128,7 @@ y = S()
 5. Dependency Inversion
   >High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. 
   
-应变（requirements change over time. least change on requirement changes.）
+应变（requirements change over time. least code change on requirement changes.）
 
 ## Turtle
 [turtle document](https://docs.python.org/3/library/turtle.html)
@@ -1297,6 +1321,7 @@ in tkinter everyting is widget
 * [Temperature Converter](../src/tkinter/temperatureConverter.py)
 
 [隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
+
 ## Data Structure
 ### stack
 ❓What is stack?
@@ -1357,6 +1382,7 @@ you have list of element, stack each other.
 ### doubly linked list
 [doubly linked data list](../src/structure/doubleLinkedList.py)
 
+
 ## Functional Programing
 ❓What is functional programming?
 ✔️ functional programming is a programming paradigm where programs are constructed by applying and composing functions. functional programming is a programming paradigm where programs are constructed by applying and composing functions. Goal oriented
@@ -1412,6 +1438,10 @@ map(lambda x,y:x+y, tuple1, tuple2)
 filter(function or None, iterable) --> filter object
 filter(lambda x:x%2==0, list1)
 ```
+* [](../src/functional/filter0.py)
+* [](../src/functional/filter1.py)
+* [](../src/functional/filter2.py)
+
 * filter object is iterable and can be converted to list or tuple
 [get all prime number from 2 to n](../src/functional/prime.py)
 [func.py](../src/functional/func.py)
@@ -1438,12 +1468,86 @@ filter(lambda x:x%2==0, list1)
 ✔️sort list with tuple element
 * [sort list](../src/functional/sort3.py)
 
+
+### Calculate Square root
+
+$$ a_{i+1} = \frac {(a_i + \frac n {a_i})} 2 $$
+$$ a_1 = f(a_0) $$
+$$ a_2 = f(f(a_0)) $$
+
+* [Function chain](../src/functional/squareRoot.py)
+
+### Non-strict evaluation
+* [Lasy or non-strict evaluation](../src/languageBasics/operator/logical.py)
+* [pure function](../src/functional/pureFunction.py)
+❓ What is a pure function?
+>✔️A pure function is a function whose output value follows solely from its input values, without any observable **side effects**.
+
+❓ Why use functional programming?
+✔️ The functional paradigm is popular because it offers several advantages over other programming paradigms.
+1. **High level**: You’re describing the result you want rather than explicitly specifying the steps required to get there. Single statements tend to be concise but pack a lot of punch.
+2. **Transparent**: The behavior of a pure function depends only on its inputs and outputs, without intermediary values. That eliminates the possibility of side effects, which facilitates debugging.
+3. **Parallelizable**: Routines that don’t cause side effects can more easily run in parallel with one another.
+
+❓ How Python support functional programming?
+✔️two features:
+1. To take another function as an argument
+2. To return another function to its caller
+
 ### monad
+❓ Why use monad?
+✔️ to solve very common program issues
+1. Null pointer exception.
+2. function call failure.
+
+```mermaid
+graph TB
+
+A(Input or Ouput<br>value)
+B[Good value<br>Just]
+C[Bad value<br>Nothing]
+
+A-->B & C
+
+D(function)
+E[Successful<br>Right]
+F[Failed<br>Left]
+
+D-->E & F
+
+classDef good fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef bad fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class B,E good
+class C,F bad
+```
+
+```py
+def neg(num):
+  return -num
+
+x = 10
+y = str(neg(int(x)))
+```
+![](images/ReactiveAction.gif)
+
+if x is not an intege string, cause software blows up.
+* [avoid function call failure](../src/functional/whyMonad1.py)
+* [blows up](../src/functional/whyMonad2.py)
+* [List monad](../src/functioal/../functional/whyMonad3.py)
+
 ❓What is monad?
+>✔️ A monad is a design pattern that allows us to add a context to data values, and also allows us to easily compose existing functions so that they execute in a context aware manner.
 ✔️a monad is an abstraction that allows structuring programs generically. 
 
+* In English dictionary, monad is
 ✔️Unit, one; Atom sence; 
 ✔️an elementary individual substance which reflects the order of the world and from which material properties are derived
+
+❓ How does the monad solve those two issues?
+✔️ box value, return either
+
+* [kleisli Compose](../src/functional/kleisliCompose.py)
 
 [Definition of Monad](https://www.merriam-webster.com/dictionary/monad)
 
@@ -1453,33 +1557,72 @@ filter(lambda x:x%2==0, list1)
 * Another to compose functions that output monadic values (called monadic functions).
 
 ![](images/monad.png)
+```mermaid
+classDiagram
 
+class Container{
+  value:any
+}
+class Functor{
+  value:any
+  fmap(function)
+}
+class Applicative{
+  amap(functorValue)
+}
+class Monad{
+  bind(function)
+  __rshift__(function)
+}
+
+Container<|--Functor
+Functor<|--Applicative
+Applicative<|--Monad
+Monad<|--Maybe
+Maybe<|--Just
+Maybe<|--Nothing
+```
+* [Functor.py](../src/functional/functor.py)
+  
 ❓ What is functors?
 ✔️you apply a function to a wrapped value using map
+implement fmap() function: functor map
 
 ❓what is applicatives?
 ✔️you apply a wrapped function to a wrapped value using apply, if defined
+implement amap() function: applicative map
 
 ❓what is monads
 ✔️you apply a function that returns a wrapped value, to a wrapped value using flatMap.
+implement bind() function: binding function
+✔️ Override binding operator (*, >>)
 
-❓what is flatmap?
-✔️A flatMap is a transformation operation. It applies to each element of RDD and it returns the result as new RDD. It is similar to Map, but FlatMap allows returning 0, 1 or more elements from map function.
-
-* [Functor](../src/functional/math1.py)
+* [Understand functor, applicative, monad](../src/functional/box.py) 
+* [Functor >> bind](../src/functional/math1.py)
+* [Applicative](../src/functional/monad2.py)
+* [Applicative](../src/functional/applicative.py)
+* [Applicative](../src/functional/monad3.py)
 * [ReactiveX](../src/functional/math2.py)
-* [monad01.py](../src/functional/monad01.py)
-* [Understand Functor](../src/functional/monad02.py)
+* 😢[monad01.py](../src/functional/monad01.py)
+* [Understand Functor, applicative, monad](../src/functional/monad02.py)
+* [Monad >> bind](../src/functional/monad03.py)
+* [Compose funtion chain](../src/functional/monad4.py)
+* [Compose function chain head tail](../src/functional/monad5.py)
+* [Shopping function list](../src/functional/shoppingMonad1.py)
+* [observer pattern](../src/functional/shoppingMonad2.py)
+* [map shopping functions](../src/functional/shoppingMonad3.py)
   
-❓ what is amap?
-✔️
-
 ❓ what is fmap?
-✔️
+>✔️Applies 'function' to the wrapper box value and returns a new wrapper box value
+✔️We have a polymorphic type f, and fmap gives us the ability to:
+1. Liberate a pure value from the type constructor that refers to it
+2. Call a function on it, which could return a result of a different type
+3. Have the type constructor refer to the type of the result
 
-❓ What is ReactiveX?
-✔️
-![](images/ReactiveAction.gif)
+❓ what is amap?
+>✔️Applies the function stored in the functor to the value of 'functorValue',
+		returning a new wrapper box value.
+
 
 ```mermaid
 graph LR
@@ -1501,12 +1644,86 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 
 class H start
 ```
+
 ### Either
 ❓ Any application service
 ✔️
+* [](../src/functional/either0.py)
 * [check a even number](../src/functional/either1.py)
 * [return Right/Left](../src/functional/either2.py)
 * [bind functions](../src/functional/either3.py)
+* [circle area Either](../src/functional/circle3.py)
 * [simulate aireline tickets](../src/functional/airlineticket.py)
 
-![](downloadFromChatbox.mp4)
+![](downloadFromChatbox.gif)
+
+## Design pattern
+
+### Reactivex design pattern
+❓ What is ReactiveX?
+✔️Reactive programming is a programming paradigm, that deals with data flow and the propagation of change. It means that, when a data flow is emitted by one component, the change will be propagated to other components by a reactive programming library. The propagation of change will continue until it reaches the final receiver.
+
+[ReactiveX design pattern](https://www.tutorialspoint.com/rxpy/rxpy_examples.htm)
+![](images/ReactiveAction.gif)
+
+![](images/observable.jpg)
+
+```mermaid
+graph TB
+
+Obs[Observable]
+Op[Operator]
+Ob[Observer]
+Sub[Subscriber]
+Func["on_next(v)<br>on_error(e)<br>on_completed()"]
+
+Obs-->Op-->Ob
+Sub-->Ob
+Ob---Func
+```
+* [use 'of' to create observable](../src/designPattern/rx01.py)
+* [use 'create' to create observable](../src/designPattern/rx02.py)
+* [use 'pipe' function and operator](../src/designPattern/rx03.py)
+* [Define processor first, pass data later](../src/designPattern/rx04.py)
+  
+where RxPY offers operators such as
+* Mathematical operators (average, concat, count, max, min, reduce,sum)
+* Transformation operators (buffer, ground_by, map, scan)
+* Filtering operators (distinct, element_at, filter, first, ignore_element, last, skip, take)
+* Error handling operators (catch, retry)
+* Utility operators (delay, time_interval, timeout, timestamp)
+* Conditional operators
+* Creation operators
+* Connectable operators
+* Combining Operators
+
+❓What is Observable?
+>✔️ An observable is a function that creates an observer and attaches it to the source having data streams that are expected from, for example, Tweets, computer−related events, etc.
+✔️ Data Stream
+
+❓ What is Observer?
+✔️ It is an object with on_next(), on_error() and on_completed() methods, that will get called when there is interaction with the observable i.e. the source interacts for an example incoming Tweets, etc.
+✔️ Who process Data Stream
+
+❓ What is Subscription?
+✔️ When the observable is created, to execute the observable we need to subscribe to it.
+✔️ trigger above process
+
+❓ What are Operators?
+✔️ An operator is a pure function that takes in observable as input and the output is also an observable. You can use multiple operators on an observable data by using the pipe operator.
+
+❓ What is Subject?
+✔️ A subject is an observable sequence as well as an observer that can multicast, i.e. talk to many observers that have subscribed. The subject is a cold observable, i.e. the values will be shared between the observers that have been subscribed.
+
+❓ What is Subscription?
+✔️ When the observable is created, to execute the observable we need to subscribe to it.
+
+❓ Advantages of using RxPy?
+✔️the following
+* RxPY is an awesome library when it comes to the handling of async data streams and events. RxPY uses observables to work with reactive programming that deals with asynchronous data calls, callbacks and event-based programs.
+* RxPY offers a huge collection of operators in mathematical, transformation, filtering, utility, conditional, error handling, join categories that makes life easy when used with reactive programming.
+* Concurrency i.e. working of multiple tasks together is achieved using schedulers in RxPY.
+* The performance is improved using RxPY as handling of async task and parallel processing is made easy.
+
+❓ Disadvantage of using RxPY
+✔️ Debugging the code with observables is a little difficult.

@@ -19,3 +19,9 @@
 
 ### YouTube Tutorial
 * [Algorithms and Data Structure](https://www.youtube.com/watch?v=8hly31xKli0)
+
+Terry:
+1. clean code
+2. link source for map, filter, reduce
+3. sort
+4. data structure

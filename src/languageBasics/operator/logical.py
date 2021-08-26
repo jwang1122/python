@@ -27,3 +27,15 @@ print(c)
 
 c = a or b # c = a==0 and b or a; return a if a!=0, return b otherwise
 print(c)
+
+# Lazy or non-strict evaluation
+x = True and "right"
+print(x)
+x = False and "left"
+print(x)
+a,b = 5,10
+x = a<b and "right"
+print(x)
+x = a>b and "right"
+print(x)
+

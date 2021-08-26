@@ -1,4 +1,8 @@
+"""
+combination of OOP and Functional programming
+"""
 from pymonad.either import Left, Right
+from pymonad.operators.maybe import Just, Nothing
 from datetime import *
 
 class Agent:
@@ -116,3 +120,4 @@ if __name__ == '__main__':
     print(process) # get boxed values
     print(process.value) # open box
     print(process.value[0].response)
+

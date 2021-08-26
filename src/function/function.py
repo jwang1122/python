@@ -78,3 +78,8 @@ def printCountry(country="unknown contry"): # give a default value
 printCountry('China')
 printCountry('United States')
 printCountry()
+
+functions = [printCountry, area, getName, circleArea] # use function list
+print(functions)
+functions[0]("USA")
+

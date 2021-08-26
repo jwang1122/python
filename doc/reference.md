@@ -15,3 +15,7 @@
 
 ## Python project Structure
 [Project Structure](https://iq-inc.com/importerror-attempted-relative-import/#common-project-structures)
+
+## Monad and ReactiveX
+[monad function failure](https://medium.com/swlh/monads-in-python-e3c9592285d6)
+[list of monad](https://medium.com/swlh/more-monads-in-python-178492f482f6)

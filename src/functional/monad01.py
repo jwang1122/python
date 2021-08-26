@@ -15,4 +15,4 @@ def with_maybe(first_divisor):
     return(val3)
 
 x = with_maybe(12)
-print(x)
+print(type(x))

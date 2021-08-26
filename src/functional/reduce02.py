@@ -19,5 +19,5 @@ print(x)
 x = reduce(lambda x, y: x+y, list1)
 print(x)
 
-x = reduce(lambda x, y: x+y, list1, 10)
+x = reduce(lambda x, y: x+y, list1, 10) # initial value =0 by default
 print(x)

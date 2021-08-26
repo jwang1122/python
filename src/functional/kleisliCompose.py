@@ -10,7 +10,7 @@ def add1(x):
     return Just(x + 1)
 
 if __name__ == '__main__':
-    new_function = kleisli_compose(add1, fail_if_zero)
+    new_function = kleisli_compose(add1, fail_if_zero) # run first function pass result to second function
     print(new_function(0)) # returns Just(1)
     print(new_function(-1)) # returns Nothing
 

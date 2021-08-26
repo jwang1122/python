@@ -12,5 +12,10 @@ def add(x, y):
 x = reduce(add, range1(100))
 print(x)
 
-x = reduce(lambda x, y: x + y, [47,11,42,13])
-print(x)
+list1 = [47,11,42,13]
+x = reduce(lambda x, y: x + y, list1)
+print(f"the sum of list1 is {x}")
+print(f"the average of list1 is {x/len(list1)}")
+
+
+
