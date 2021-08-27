@@ -46,7 +46,7 @@ print("40:", Right(10).bind(isEven).bind(sub4).bind(add5))
 def f1(x):  
     # define all things need to do in a chain, if-else still in place of each function
     return isEven(x).bind(sub4).bind(add5).bind(sub4).bind(add5)
-
+    
 print("47:", f1(2.3+4j))
 print("48:", f1(11).value)
 print("49:", f1(12))

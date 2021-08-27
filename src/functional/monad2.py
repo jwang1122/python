@@ -16,6 +16,10 @@ print(mul(2,3))
 add2 = add * Just(2) & Just(8) # Applicative
 print(add2)
 
+x = add * Just(2)
+x = x & Just(8)
+print(x)
+
 mul2 = mul * Just(5) & Just(9)
 print(mul2)
 

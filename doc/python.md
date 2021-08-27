@@ -708,6 +708,7 @@ class Robot {
 * [nested class](../src/myclass/class20.py)
 * [composition vs. inheritance](../src/myclass/class21.py)
 * [class method, static method](../src/myclass/class23.py)
+* [define a class as default value](../src/myclass/class26.py)
 
 ### class inheritance
 ```mermaid
@@ -1521,7 +1522,7 @@ classDef bad fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
 class B,E good
 class C,F bad
 ```
-
+* [None value and function failure](../src/functional/whyWrapperBox.py)
 ```py
 def neg(num):
   return -num
@@ -1529,7 +1530,6 @@ def neg(num):
 x = 10
 y = str(neg(int(x)))
 ```
-![](images/ReactiveAction.gif)
 
 if x is not an intege string, cause software blows up.
 * [avoid function call failure](../src/functional/whyMonad1.py)
@@ -1602,12 +1602,14 @@ implement bind() function: binding function
 * [Applicative](../src/functional/monad2.py)
 * [Applicative](../src/functional/applicative.py)
 * [Applicative](../src/functional/monad3.py)
+* [.then() fuction chain for applicative](../src/functional/monad13.py)
 * [ReactiveX](../src/functional/math2.py)
 * 😢[monad01.py](../src/functional/monad01.py)
 * [Understand Functor, applicative, monad](../src/functional/monad02.py)
 * [Monad >> bind](../src/functional/monad03.py)
 * [Compose funtion chain](../src/functional/monad4.py)
 * [Compose function chain head tail](../src/functional/monad5.py)
+* [@curry function decorator](../src/functional/monad6.py)
 * [Shopping function list](../src/functional/shoppingMonad1.py)
 * [observer pattern](../src/functional/shoppingMonad2.py)
 * [map shopping functions](../src/functional/shoppingMonad3.py)

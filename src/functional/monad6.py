@@ -1,4 +1,6 @@
 """
+@curry function decorator define number of arguments, wrapper result to Just.
+
 为什么我们要把变量打包，
 其中原因之一，就是避免未定义的变量导致程序运行终止（blow up）。
 另一个原因，就是希望能够完成功能块链式运作的过程，
@@ -16,7 +18,7 @@ def add(x, y):
 a = Just(6) 
 #a = Nothing # instead of using None, we use Maybe.Nothing(wrapper None)
 x = add * a & Just(9) #Applicative
-print(x)
+print(f"19: {x}")
 
 # 正常情况下，如果有一个输入变量没有定义，则整个程序爆掉中断。
 # a = None
