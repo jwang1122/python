@@ -1,6 +1,8 @@
-# Python3 code to demonstrate working of  
-# Tuple to Dictionary Summation conversion 
-# Using defaultdict() + loop 
+"""
+Python3 code to demonstrate working of  
+Tuple to Dictionary Summation conversion 
+Using defaultdict() + loop 
+"""
 from collections import defaultdict 
   
 # initializing list 

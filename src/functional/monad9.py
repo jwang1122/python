@@ -1,3 +1,6 @@
+"""
+ListMode and monad bind()
+"""
 from pymonad.tools import curry
 from pymonad.operators.maybe import Just, Nothing
 from pymonad.list import *

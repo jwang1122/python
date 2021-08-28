@@ -6,9 +6,9 @@ from pymonad.tools import curry
 
 
 def div(x, y):
-    if x is Nothing or y is Nothing:
-        return Just(Nothing)
-    return Just(x / y) if y else Just(Nothing)
+    if x is Nothing or y is Nothing or x is None or y is None:
+        return Nothing
+    return Just(x / y) if y else Nothing
 
 
 x = div(10, 0)
@@ -21,4 +21,4 @@ x = div(10, 4)
 print("18:", x.value)
 
 x = div(10, None)
-print("24:", x.value)
+print("24:", x.value) # open box

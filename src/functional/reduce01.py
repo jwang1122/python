@@ -13,6 +13,9 @@ x = reduce(add, range1(100))
 print(x)
 
 list1 = [47,11,42,13]
+f = lambda x, y: x+0
+x = reduce(f, list1)
+print(x)
 x = reduce(lambda x, y: x + y, list1)
 print(f"the sum of list1 is {x}")
 print(f"the average of list1 is {x/len(list1)}")

@@ -1,7 +1,7 @@
 from pymonad.tools import curry
-from pymonad.operators.maybe import Just
+from pymonad.operators.maybe import Just, Maybe
 
-@curry(2)
+@curry(2) # 1. tell how many arguments; 2. unbox value; 3. box result
 def add(x, y):
     return x + y
 
@@ -17,9 +17,12 @@ add2 = add * Just(2) & Just(8) # Applicative
 print(add2)
 
 x = add * Just(2)
-x = x & Just(8)
-print(x)
+print(f"20: {x}") # print functor
+x = x & Just(8) # Just(8) is an applicative which can be applyed by functor
+print(f"22: {x}")
 
 mul2 = mul * Just(5) & Just(9)
 print(mul2)
 
+x = Maybe.apply(add).to_arguments(Just(3),Just(5)) # store function > then add arguments
+print(x)

@@ -1,4 +1,7 @@
-from mymonad import Monad
+"""
+Understand Either and flat_map
+"""
+from mymonad import Monad, Some, nil
 
 class Either(Monad):
   # pure :: a -> Either a
@@ -22,3 +25,5 @@ class Right(Either):
   def __init__(self, value):
     self.value = value
     self.is_left = False
+
+

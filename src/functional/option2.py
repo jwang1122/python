@@ -1,3 +1,6 @@
+"""
+pymonad implementation
+"""
 from pymonad.operators.maybe import *
 from pymonad.tools import curry
 

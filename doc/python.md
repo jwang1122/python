@@ -85,6 +85,7 @@
   - [filter() function](#filter-function)
   - [reduce() function](#reduce-function)
   - [sort() function](#sort-function)
+  - [zip() function](#zip-function)
   - [Calculate Square root](#calculate-square-root)
   - [Non-strict evaluation](#non-strict-evaluation)
   - [monad](#monad)
@@ -1469,6 +1470,12 @@ filter(lambda x:x%2==0, list1)
 ✔️sort list with tuple element
 * [sort list](../src/functional/sort3.py)
 
+### zip() function
+* [Combine city with temperatur](../src/functional/zip1.py)
+* [combine list](../src/functional/zip2.py)
+* [matrix operation](../src/functional/zip3.py)
+* [understand zip() function](../src/functional/zip4.py)
+
 
 ### Calculate Square root
 
@@ -1560,7 +1567,7 @@ if x is not an intege string, cause software blows up.
 ```mermaid
 classDiagram
 
-class Container{
+class Box{
   value:any
 }
 class Functor{
@@ -1574,13 +1581,15 @@ class Monad{
   bind(function)
   __rshift__(function)
 }
-
-Container<|--Functor
-Functor<|--Applicative
-Applicative<|--Monad
+Container<|--Functor:is box
+Functor<|--Applicative: is Functor
+Applicative<|--Monad: is Applicative
 Monad<|--Maybe
-Maybe<|--Just
-Maybe<|--Nothing
+Maybe<|--Just:is monad
+Maybe<|--Nothing: is monad
+
+<<abstract>> Maybe
+
 ```
 * [Functor.py](../src/functional/functor.py)
   
@@ -1605,11 +1614,20 @@ implement bind() function: binding function
 * [.then() fuction chain for applicative](../src/functional/monad13.py)
 * [ReactiveX](../src/functional/math2.py)
 * 😢[monad01.py](../src/functional/monad01.py)
+* ✔️[operate a founction to a boxed value](../src/functional/monad1.py)
 * [Understand Functor, applicative, monad](../src/functional/monad02.py)
 * [Monad >> bind](../src/functional/monad03.py)
 * [Compose funtion chain](../src/functional/monad4.py)
 * [Compose function chain head tail](../src/functional/monad5.py)
 * [@curry function decorator](../src/functional/monad6.py)
+* [Use ListMonad create list, then do then() or map()](../src/functional/monad7.py)
+* [applicative handle error](../src/functional/monad8.py)
+* [ListMode and monad bind()](../src/functional/monad9.py)
+* [Monad bind](../src/functional/monad10.py)
+* [Use Maybe solve the None issue](../src/functional/monad11.py)
+* [Maybe.maybe() function](../src/functional/monad12.py)
+* [How applicative works](../src/functional/monad13.py)
+* [process to write code in VSCode](../src/functional/writePythonMonad.py)
 * [Shopping function list](../src/functional/shoppingMonad1.py)
 * [observer pattern](../src/functional/shoppingMonad2.py)
 * [map shopping functions](../src/functional/shoppingMonad3.py)
@@ -1655,6 +1673,16 @@ class H start
 * [return Right/Left](../src/functional/either2.py)
 * [bind functions](../src/functional/either3.py)
 * [circle area Either](../src/functional/circle3.py)
+
+❓ what is flatmap?
+✔️FlatMap differs from Map in a key way. Instead of the Map operation returning an Option automatically, it instead requires that the function passed to it return an Option type result itself. That is, while Map returns an Option, FlatMap returns a value (or None value) for each option, regardless of whether it is a “something” or a “nothing” and requires that the input method applied return an Option type response.
+
+* 👎[Understnd map vs flatmap](../src/functional/mymonad0.py)
+* [Understand monad map vs flatmap](../src/functional/mymonad.py)
+* [mymonad: Some or Nil](../src/functional/option1.py)
+* [pymonad implementation](../src/functional/option2.py)
+* [map() function as Functor](../src/functional/mymonad1.py)
+* [Understand Either and flat_map](../src/functional/myeither.py)
 * [simulate aireline tickets](../src/functional/airlineticket.py)
 
 ![](downloadFromChatbox.gif)
