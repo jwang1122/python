@@ -4,7 +4,7 @@ CRUD: Create, Retreive, Update, Delete
 Insert many data row at once
 """
 
-conn = sqlite3.connect("pythonsqlite.db")
+conn = sqlite3.connect("mydb.db")
 c = conn.cursor()
 # Never do this -- insecure!
 # symbol = 'RHAT'

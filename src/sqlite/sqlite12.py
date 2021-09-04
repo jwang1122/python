@@ -5,11 +5,12 @@ product-to-provider
 import uuid
 
 class Product:
-    def __init__(self, name, series=None, price=0.0):
+    def __init__(self, name, series=None, model=None, price=0.0):
         self.name = name
         self.id = uuid.uuid4().hex
         self.provider = []
         self.series = series
+        self.model = model
         self.price = price
 
     def __repr__(self):

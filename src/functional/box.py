@@ -80,9 +80,9 @@ if __name__ == '__main__':
     x = Just(10) # any object can be Just or Nothing
     print(x)
     y = x.fmap(add3)
-    print(f"72: {y}")
+    print(f"83: {y}")
     y = x * add3
-    print(f"74: {y}")
+    print(f"85: {y}")
 
     x=Nothing_()
     y = x.fmap(add3) # any object can be Just or Nothing, any function apply on Nothing return Nothing.

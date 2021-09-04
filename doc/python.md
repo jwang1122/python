@@ -7,6 +7,7 @@
 - [comment](#comment)
 - [Variable Naming](#variable-naming)
   - [Variable and memory](#variable-and-memory)
+  - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
 - [Data Type](#data-type)
 - [Operator](#operator)
 - [Execution Control](#execution-control)
@@ -129,6 +130,9 @@ otherwise, your python builtins functions no longer works the way you expected.
 [variable-01](../homeworks/variable01.md)
 [variable-02](../homeworks/variable02.md)
 [variable-03](../homeworks/variable03.md)
+
+### getting formiliar your keyboard
+[Keyboard](keyboard.md)
 
 ![](images/LanguageBasics.svg)
 
@@ -1182,6 +1186,8 @@ CRUD: Create, Retrieve, Update, Delete
 * [Retrieve one-to-many data](../src/sqlite/sqlite08.py)
 * [Create books table](../src/sqlite/sqlite9.py)
 * [insert sample books](../src/sqlite/sqlite10.py)
+* [many-to-many relationship](../src/sqlite/sqlite11.py)
+* [](../src/sqlite/sqlite12.py)
 * [CRUD for books](../src/sqlite/sqlitebookdb.py)
 
 
