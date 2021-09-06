@@ -5,101 +5,111 @@ product-to-provider
 
 from sqlitehelper import *
 from sqlite12 import *
+class ProductDB:
+    def __init__(self, db="mydb.db"):
+        self.conn = create_connection(db)
 
-def createProductTable(conn):
-    try:
-        sql = "CREATE TABLE product (id text, name text, series text, description text, price real)"
-        create_table(conn, sql)
-    except Exception as e:
-        print(e)
+    def createProductTable(self):
+        try:
+            sql = "CREATE TABLE product (id text, name text, series text, description text, price real)"
+            create_table(self.__dict__conn, sql)
+        except Exception as e:
+            print(e)
 
-def createProviderTable(conn):
-    try:
-        sql = "CREATE TABLE provider (id text, name text, address text, contact text)"
-        create_table(conn, sql)
-    except Exception as e:
-        print(e)
+    def createProviderTable(self):
+        try:
+            sql = "CREATE TABLE provider (id text, name text, address text, contact text)"
+            create_table(self.conn, sql)
+        except Exception as e:
+            print(e)
 
-def createProdProviderTable(conn):
-    try:
-        sql = "CREATE TABLE prod_prov(prodid text, providerid text)"
-        create_table(conn, sql)
-    except Exception as e:
-        print(e)
+    def createProdProviderTable(self):
+        try:
+            sql = "CREATE TABLE prod_prov(prodid text, providerid text)"
+            create_table(self.conn, sql)
+        except Exception as e:
+            print(e)
 
-def insertProduct(product, conn):
-    try:
-        c = conn.cursor()
-        values = (product.id,product.name,product.series,product.model,product.price)
-        c.execute('INSERT INTO product VALUES (?,?,?,?,?)', values)
-        conn.commit()
-    except Exception as error:
-        print("Error:",error)
+    def insertProduct(self, product):
+        try:
+            c = self.conn.cursor()
+            values = (product.id,product.name,product.series,product.model,product.price)
+            c.execute('INSERT INTO product VALUES (?,?,?,?,?)', values)
+            self.conn.commit()
+        except Exception as error:
+            print("Error:",error)
 
-def insertProvider(provider, conn):
-    try:
-        c = conn.cursor()
-        values = (provider.id,provider.name,provider.address,provider.contact)
-        c.execute('INSERT INTO provider VALUES (?,?,?,?)', values)
-        conn.commit()
-    except Exception as error:
-        print("Error:",error)
+    def insertProvider(self,provider):
+        try:
+            c = conn.cursor()
+            values = (provider.id,provider.name,provider.address,provider.contact)
+            c.execute('INSERT INTO provider VALUES (?,?,?,?)', values)
+            self.conn.commit()
+        except Exception as error:
+            print("Error:",error)
 
-def buildRelation(productid, providerid, conn):
-    try:
-        c = conn.cursor()
-        values = (productid, providerid)
-        c.execute('INSERT INTO prod_prov VALUES (?,?)', values)
-        conn.commit()
-    except Exception as error:
-        print("Error:",error)
+    def buildRelation(self, productid, providerid):
+        try:
+            c = self.conn.cursor()
+            values = (productid, providerid)
+            c.execute('INSERT INTO prod_prov VALUES (?,?)', values)
+            self.conn.commit()
+        except Exception as error:
+            print("Error:",error)
 
-def findProvider(productid, conn):
-    try:
-        c = conn.cursor()
-        result = c.execute('select * from prod_prov where prodid=?',(productid,))
-        for x in result:
-            getProviderById(x[1], conn)
-        conn.commit()
-    except Exception as error:
-        print("Error:",error)
+    def findProvider(self, productid):
+        try:
+            providers = []
+            c = self.conn.cursor()
+            result = c.execute('select * from prod_prov where prodid=?',(productid,))
+            for x in result:
+                providers.append(self.getProviderById(x[1]))
+            self.conn.commit()
+            return providers
+        except Exception as error:
+            print("Error:",error)
 
-def getProviderById(providerid, conn):
-    try:
-        c = conn.cursor()
-        result = c.execute('select * from provider where id=?',(providerid,))
-        prov = result.fetchone()
-        provider = Provider(prov[1],prov[2],prov[3])
-        provider.id = prov[0]
-        print(provider)
-        conn.commit()
-    except Exception as error:
-        print("Error:",error)
+    def getProviderById(self,providerid):
+        try:
+            c = self.conn.cursor()
+            result = c.execute('select * from provider where id=?',(providerid,))
+            prov = result.fetchone()
+            provider = Provider(prov[1],prov[2],prov[3])
+            provider.id = prov[0]
+            self.conn.commit()
+            return provider
+        except Exception as error:
+            print("Error:",error)
 
-def findProduct(providerid, conn):
-    try:
-        c = conn.cursor()
-        result = c.execute('select * from prod_prov where providerid=?',(providerid,))
-        for x in result:
-            getProductById(x[0], conn)
-        conn.commit()
-    except Exception as error:
-        print("Error:",error)
+    def findProduct(self, providerid):
+        try:
+            products = []
+            c = self.conn.cursor()
+            result = c.execute('select * from prod_prov where providerid=?',(providerid,))
+            for x in result:
+                products.append(self.getProductById(x[0]))
+            self.conn.commit()
+            return products
+        except Exception as error:
+            print("Error:",error)
 
-def getProductById(productid, conn):
-    try:
-        c = conn.cursor()
-        result = c.execute('select * from product where id=?',(productid,))
-        prod = result.fetchone()
-        product = Product(prod[1],prod[2],prod[3], prod[4])
-        product.id = prod[0]
-        print(product)
-        conn.commit()
-    except Exception as error:
-        print("Error:",error)
+    def getProductById(self,productid):
+        try:
+            c = self.conn.cursor()
+            result = c.execute('select * from product where id=?',(productid,))
+            prod = result.fetchone()
+            product = Product(prod[1],prod[2],prod[3], prod[4])
+            product.id = prod[0]
+            return product
+            self.conn.commit()
+        except Exception as error:
+            print("Error:",error)
+
+    def closeDB(self):
+        self.conn.close()
 
 if __name__ == '__main__':
-    conn = create_connection("mydb.db")
+    # conn = create_connection("mydb.db")
     # createProductTable(conn)
     # createProviderTable(conn)
     # createProdProviderTable(conn)
@@ -128,9 +138,9 @@ if __name__ == '__main__':
     # insertProvider(provider, conn)
     # buildRelation("86d5721ac10e41d3a02c93d62ef9ebe8", "45671d9ddf92419ebd4adf1bf0cd9a1a",conn)
 
-    findProvider("86d5721ac10e41d3a02c93d62ef9ebe8", conn)
-    findProduct("45671d9ddf92419ebd4adf1bf0cd9a1a",conn)
+    # findProvider("86d5721ac10e41d3a02c93d62ef9ebe8", conn)
+    # findProduct("45671d9ddf92419ebd4adf1bf0cd9a1a",conn)
 
 
-    conn.close()
+    # conn.close()
     print("Done.")
