@@ -1062,8 +1062,18 @@ class A,B,C,D if
 * [load json string as dict](../src/file/file3b.py)
 * [use pandas read json file](../src/file/file4.py)
 * [plot student score](../src/file/file5.py)
-
+* [list all files in directory](../src/file/dir.py)
+  
 ## nmpy
+❓ What is numpy module in python?
+>✔️NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
+
+![](images/numpyArrays.png)
+
+* Mathematics(MATLAB Replacement)
+* Plotting (Matplotlib)
+* Backend(Pandas, Connect 4, Digital Photography)
+* Machine Learning
 
 ## pandas
 
@@ -1227,6 +1237,9 @@ MONGO-->D-->C-->DOC & COL
 SQLite: Python built in SQL database.
 
 ## tkinter(windows based GUI)
+
+[image converter, mp4>gif, png>ico](https://cloudconvert.com/)
+
 ❓What is tkinter?
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
 [YouTube tutorial](https://www.youtube.com/watch?v=YXPyB4XeYLA)
@@ -1281,7 +1294,9 @@ pip install Pillow
 * [using spinbox](../src/tkinter/tkinter9.py)
 * [using text field](../src/tkinter/tkinter10.py)
 * [using form](../src/tkinter/tkinter11.py)
+* [radio button](../src/tkinter/tkinter55.py)
 * [using radio button and message box](../src/tkinter/tkinter12.py)
+* [using yes/no, ok/cancel message](../src/tkinter/tkinter57.py)
 * [Same as above, use pack instead of grid](../src/tkinter/tkinter13.py)
 * [using scrolled text](../src/tkinter/tkinter14.py)
 * [using progress bar](../src/tkinter/tkinter15.py)
@@ -1295,7 +1310,6 @@ pip install Pillow
 * [better version of tkinter22](../src/tkinter/tkinter23.py)
 * [using save file dialog](../src/tkinter/tkinter24.py)
 * [menubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
-
 
 ### color
 * [random background color](../src/tkinter/tkinter31.py)
@@ -1318,6 +1332,8 @@ pip install Pillow
 
 ### titled frame
 * [titled frame](../src/tkinter/tkinter39.py)
+* [using frame](../src/tkinter/tkinter56.py)
+* [open more than one window](../src/tkinter/tkinter58.py)
 
 ### plot chart in tkinter
 * [canvas.draw() chart on canvas](../src/tkinter/tkinter40.py)

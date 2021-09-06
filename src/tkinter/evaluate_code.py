@@ -31,7 +31,7 @@ class ManualPlayer:
 	def __init__(self):
 		pass
 	def move(self, temp_board, temp_block, old_move, flag):
-		print 'Enter your move: <format:row column> (you\'re playing with', flag + ")"
+		print ('Enter your move: <format:row column> (you\'re playing with', flag + ")")
 		mvp = raw_input()
 		mvp = mvp.split()
 		return (int(mvp[0]), int(mvp[1]))
@@ -262,24 +262,24 @@ def decide_winner_and_get_message(player,status, message):
 
 
 def print_lists(gb, bs):
-	print '=========== Game Board ==========='
+	print ('=========== Game Board ===========')
 	for i in range(9):
 		if i > 0 and i % 3 == 0:
 			print
 		for j in range(9):
 			if j > 0 and j % 3 == 0:
-				print " " + gb[i][j],
+				print (" " + gb[i][j] + ',')
 			else:
-				print gb[i][j],
+				print (gb[i][j]) + ','
 
-		print
-	print "=================================="
+		print()
+	print ("==================================")
 
-	print "=========== Block Status ========="
+	print ("=========== Block Status =========")
 	for i in range(0, 9, 3):
-		print bs[i] + " " + bs[i+1] + " " + bs[i+2]
-	print "=================================="
-	print
+		print( bs[i] + " " + bs[i+1] + " " + bs[i+2])
+	print ("==================================")
+	print()
 
 
 def simulate(obj1,obj2):
@@ -332,7 +332,7 @@ def simulate(obj1,obj2):
 			break
 
 
-		print "Player 1 made the move:", ret_move_pl1, 'with', pl1_fl
+		print ("Player 1 made the move:", ret_move_pl1, 'with', pl1_fl)
 		# Update the 'game_board' and 'block_stat' move
 		p1_pts += update_lists(game_board, block_stat, ret_move_pl1, pl1_fl)
 
@@ -345,55 +345,55 @@ def simulate(obj1,obj2):
 
 		old_move = ret_move_pl1
 		print_lists(game_board, block_stat)
-       		print "aftr Pla1"
+		print ("aftr Pla1")
 
-        	temp_board_state = game_board[:]
-        	temp_block_stat = block_stat[:]
+		temp_board_state = game_board[:]
+		temp_block_stat = block_stat[:]
 
-        	signal.signal(signal.SIGALRM, handler)
-        	signal.alarm(TIMEALLOWED)
+		signal.signal(signal.SIGALRM, handler)
+		signal.alarm(TIMEALLOWED)
 
-        	try:
-           		ret_move_pl2 = pl2.move(temp_board_state, temp_block_stat, old_move, pl2_fl)
-        	except:
+		try:
+			ret_move_pl2 = pl2.move(temp_board_state, temp_block_stat, old_move, pl2_fl)
+		except:
 			WINNER, MESSAGE = decide_winner_and_get_message('P2', 'L',   'TIMED OUT')
 			break
-        	signal.alarm(0)
+		signal.alarm(0)
 
-        	if not (verification_fails_board(game_board, temp_board_state) and verification_fails_block(block_stat, temp_block_stat)):
+		if not (verification_fails_board(game_board, temp_board_state) and verification_fails_block(block_stat, temp_block_stat)):
 			WINNER, MESSAGE = decide_winner_and_get_message('P2', 'L',   'MODIFIED CONTENTS OF LISTS')
 			break
 
-        	if not check_valid_move(game_board, block_stat, ret_move_pl2, old_move):
+		if not check_valid_move(game_board, block_stat, ret_move_pl2, old_move):
 			WINNER, MESSAGE = decide_winner_and_get_message('P2', 'L',   'MADE AN INVALID MOVE')
 			break
 
-        	print "Player 2 made the move:", ret_move_pl2, 'with', pl2_fl
+		print ("Player 2 made the move:", ret_move_pl2, 'with', pl2_fl)
 
-        	p2_pts += update_lists(game_board, block_stat, ret_move_pl2, pl2_fl)
+		p2_pts += update_lists(game_board, block_stat, ret_move_pl2, pl2_fl)
 
-        	# Now check if the last move resulted in a terminal state
-        	gamestatus, mesg =  terminal_state_reached(game_board, block_stat,p1_pts,p2_pts)
-        	if gamestatus == True:
+		# Now check if the last move resulted in a terminal state
+		gamestatus, mesg =  terminal_state_reached(game_board, block_stat,p1_pts,p2_pts)
+		if gamestatus == True:
 			print_lists(game_board, block_stat)
 			WINNER, MESSAGE = decide_winner_and_get_message('P2', mesg,  'COMPLETE' )
 			break
-        	else:
+		else:
 			old_move = ret_move_pl2
 			print_lists(game_board, block_stat)
-           		print "AfterPrint_PL2"
+	print ("AfterPrint_PL2")
 
-	print WINNER
-	print MESSAGE
+	print( WINNER)
+	print (MESSAGE)
 
 if __name__ == '__main__':
 	## get game playing objects
 
 	if len(sys.argv) != 2:
-		print 'Usage: python simulator.py <option>'
-		print '<option> can be 1 => Random player vs. Random player'
-		print '                2 => Human vs. Random Player'
-		print '                3 => Human vs. Human'
+		print ('Usage: python simulator.py <option>')
+		print ('<option> can be 1 => Random player vs. Random player')
+		print ('                2 => Human vs. Random Player')
+		print ('                3 => Human vs. Human')
 		sys.exit(1)
 
 	obj1 = ''
@@ -410,7 +410,7 @@ if __name__ == '__main__':
 		obj1 = ManualPlayer()
 		obj2 = ManualPlayer()
 	else:
-		print 'Invalid option'
+		print ('Invalid option')
 		sys.exit(1)
 
 	num = random.uniform(0,1)
