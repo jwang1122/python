@@ -1075,7 +1075,15 @@ class A,B,C,D if
 * Backend(Pandas, Connect 4, Digital Photography)
 * Machine Learning
 
+* [array basics](../src/numpy/numpy01.py)
+* [Homework 01](../src/numpy/numpyHW01.md)
+* [Homework 01 solution](../src/numpy/numpyHW01.py)
+* [linear algebra](../src/numpy/numpy02.py)
+* [read data from file](../src/numpy/numpy03.py)
+
 ## pandas
+* [simple curves](../src/datavisualization/dataanalysis01.py)
+* [Covid-19](../src/datavisualization/dataanalysis02.py)
 
 ## Plot
 * [plot list](../src/plot/plot0.py)
