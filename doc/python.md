@@ -374,10 +374,6 @@ class END end1
 >✔️A block of code defined by name and arguments, can be used by calling the name many times repeatedly. In Python, functions are first-class citizens. That means functions have the same characteristics as values like other data type such as strings and numbers. Anything you would expect to be able to do with a string or number you can do with a function as well.
 * [function basic](../src/function/function.py)
 * define a function
-$$
-\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol}
-$$
-
     - def, Python reserved keyword
     - function name, anything you want, but need follow the naming rules
     - (), must have open/close parenthesis pair, no matter it has arguments or not
@@ -389,6 +385,8 @@ $$
     - 💡single response
     - call a function by function name and (), and arguments if there is any
 
+$$ \underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol} $$
+
 ![Circle](images/circle.svg)
 
 Circle area formula: $ A=\pi r^2 $
@@ -396,7 +394,7 @@ Circle area formula: $ A=\pi r^2 $
 * [circleArea](../src/function/function.py)
 * [function arguments](../src/function/defineFunction.py)
 * [understand __name__](../src/function/circle.py)
-* [](../src/function/useCircle.py)
+* [understand if __name__=='__main__':](../src/function/useCircle.py)
 * Python document
 ```use python playground
 >>> from src.function.defineFunction import *
@@ -426,7 +424,7 @@ Circle area formula: $ A=\pi r^2 $
 ### global variable
 ❓ What is global variable?
 >✔️global keyword allows you to modify the variable outside of the current scope. It is used to create a global variable and make changes to the variable in a local context.
-[](../src/function/globalVariable.py)
+[use global variable](../src/function/globalVariable.py)
 1. When we create a variable inside a function, it is local by default.
 2. When we define a variable outside of a function, it is global by default. You don't have to use global keyword.
 3. We use global keyword to read and write a global variable inside a function.
@@ -1318,6 +1316,7 @@ pip install Pillow
 * [better version of tkinter22](../src/tkinter/tkinter23.py)
 * [using save file dialog](../src/tkinter/tkinter24.py)
 * [menubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
+* 
 
 ### color
 * [random background color](../src/tkinter/tkinter31.py)

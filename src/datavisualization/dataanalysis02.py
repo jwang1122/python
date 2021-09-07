@@ -3,6 +3,8 @@ from matplotlib import pyplot as plt
 
 covid19 = pd.read_csv("src/data/data_minimal.csv")
 print(covid19.shape)
+print(covid19.head())
+print(covid19.info())
 print(type(covid19)) # <class 'pandas.core.frame.DataFrame'>
 print(covid19.columns)
 x = covid19.Key # get column 'Key' data: 
@@ -29,6 +31,8 @@ plt.show()
 
 texas_deaths = texas[['Date','Deaths']] # grab only deaths column
 # print(texas_deaths)
+texas_deaths.loc[:,'Date'] = pd.to_datetime(texas_deaths.loc['Date'])
+print(texas_deaths.info())
 texas_deaths.plot(x='Date')
 plt.legend(['Texas Deaths'])
 plt.show()
@@ -38,6 +42,7 @@ plt.show()
 # plt.show()
 
 # compare New York Death with Texas Death
+newyork_deaths['Date'] = pd.to_datetime(newyork_deaths['Date'])
 ax = newyork_deaths.plot(x='Date', )
 texas_deaths.plot(x='Date',ax=ax)
 plt.legend(['New York Deaths', 'Texas Deaths'])
