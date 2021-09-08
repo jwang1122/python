@@ -1082,6 +1082,12 @@ class A,B,C,D if
 * [Homework 01 solution](../src/numpy/numpyHW01.py)
 * [linear algebra](../src/numpy/numpy02.py)
 * [read data from file](../src/numpy/numpy03.py)
+* [matrix dot product](../src/numpy/numpy04.py)
+* [Weighted average](../src/numpy/numpy05.py)
+$$W=\frac {\sum_{i=1}^n w_i X_i} {\sum_{i=1}^n w_i}$$
+* [standard mean sqrt标准均方差](../src/numpy/numpy06.py)
+* [linear algebra几个老头几个梨](../src/numpy/numpy07.py)
+$$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}x \\y \\z \end{bmatrix} = \begin{bmatrix}6 \\-4 \\27 \end{bmatrix}$$
 
 ## pandas
 * [simple curves](../src/datavisualization/dataanalysis01.py)

@@ -12,10 +12,15 @@ x - y = -1
 2x -y = 2
 """
 import numpy as np
-import scipy.linalg as la
+# import scipy.linalg as la
 
 a = np.array([[1, -1], [2, -1]])
 b = np.array([[-1],[2]])
-x = la.solve(a, b)
+x = np.linalg.solve(a, b)
 print(x)
 print(f"There are {x[0][0]:.0f} old man and {x[1][0]:.0f} pears.")
+
+a = np.array([[1,1,1],[0,2,5],[2,5,-1]])
+b = np.array([[6],[-4],[27]])
+x = np.linalg.solve(a, b)
+print(x)
