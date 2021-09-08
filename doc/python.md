@@ -73,6 +73,8 @@
   - [display image](#display-image)
   - [popup window](#popup-window)
   - [card game GUI](#card-game-gui)
+  - [sqlite DB](#sqlite-db)
+  - [Web Service API](#web-service-api)
   - [Application](#application)
 - [Data Structure](#data-structure)
   - [stack](#stack)
@@ -1066,6 +1068,8 @@ class A,B,C,D if
 ❓ What is numpy module in python?
 >✔️NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
 
+[website](https://www.tutorialspoint.com/numpy/numpy_dot.htm)
+
 ![](images/numpyArrays.png)
 
 * Mathematics(MATLAB Replacement)
@@ -1248,7 +1252,9 @@ SQLite: Python built in SQL database.
 
 ❓What is tkinter?
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
-[YouTube tutorial](https://www.youtube.com/watch?v=YXPyB4XeYLA)
+* [Good tkinter document online](https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/scale.html)
+* [YouTube tutorial](https://www.youtube.com/watch?v=YXPyB4XeYLA)
+
 in tkinter everyting is widget
 
 ### open window
@@ -1295,7 +1301,7 @@ pip install Pillow
 * [Place system](../src/tkinter/tkinter52.py)
 * 
 ### Other widgets
-* [using Combox](../src/tkinter/tkinter7.py)
+* [using Combox, dropdown box](../src/tkinter/tkinter7.py)
 * [using checkbox](../src/tkinter/tkinter8.py)
 * [using spinbox](../src/tkinter/tkinter9.py)
 * [using text field](../src/tkinter/tkinter10.py)
@@ -1316,7 +1322,9 @@ pip install Pillow
 * [better version of tkinter22](../src/tkinter/tkinter23.py)
 * [using save file dialog](../src/tkinter/tkinter24.py)
 * [menubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
-* 
+* [slider (Scale)](../src/tkinter/tkinter59.py)
+* [Scale: command](../src/tkinter/tkinter60.py)
+  😄👍[Good website](https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/scale.html)
 
 ### color
 * [random background color](../src/tkinter/tkinter31.py)
@@ -1355,6 +1363,18 @@ pip install Pillow
 
 ### card game GUI
 * [card game gui](../src/tkinter/tkinter44.py)
+
+### sqlite DB
+DB basic operations >> CRUD: Create, Retrieve, Update, Delete
+* [Add record to DB >> Create](../src/tkinter/tkinter61.py)
+* [Load records from DB >> Retrieve](../src/tkinter/tkinter62.py)
+* [Modify record >> Update](../src/tkinter/tkinter63.py)
+* [Delete record >> Delete](../src/tkinter/tkinter64.py)
+
+### Web Service API
+[Air Now Login](https://docs.airnowapi.org/login?index=)
+wangqianjiang/Qianjiang1122
+API Key: 84B7917D-C980-407F-ACBC-B29E3D2E4458
 
 ### Application
 * [calculator](../src/tkinter/calculator.py)

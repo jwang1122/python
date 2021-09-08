@@ -13,9 +13,9 @@ def cmd():
     else:
         print("The check box is not selected.")
 
-my_checkbutton = Checkbutton(
+Checkbutton(
     text="Check when selected",
     variable=my_boolean_var,command=cmd
-)
-my_checkbutton.pack()
+).pack()
+
 root.mainloop()
