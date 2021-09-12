@@ -38,6 +38,7 @@ class Dice{
 }
 class Player{
     name:string
+    card:ScoreCard
     roll()
     addScore()
     keep()
@@ -48,6 +49,13 @@ class Game{
     playerList:list
     dices:Dice
     score()
+}
+class ScoreCard{
+    categories:list
+}
+class Category{
+    uppersection:int
+    lowersection:int
 }
 
 Game *-- Player

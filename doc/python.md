@@ -1090,8 +1090,10 @@ $$W=\frac {\sum_{i=1}^n w_i X_i} {\sum_{i=1}^n w_i}$$
 $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}x \\y \\z \end{bmatrix} = \begin{bmatrix}6 \\-4 \\27 \end{bmatrix}$$
 
 ## pandas
+[Document website](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
 * [simple curves](../src/datavisualization/dataanalysis01.py)
 * [Covid-19](../src/datavisualization/dataanalysis02.py)
+* [Create a instance of DataFrame](../src/pandas/pandas01.py)
 
 ## Plot
 * [plot list](../src/plot/plot0.py)
