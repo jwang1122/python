@@ -219,7 +219,7 @@ def determineWinner(dealer, player):
 if __name__ == '__main__':
     john = Player("John")
     game = Game(john)
-    game.play(winner1)
+    game.play(winner)
     
     # heartsA = Card("A", "HEARTS")
     # print(heartsA)

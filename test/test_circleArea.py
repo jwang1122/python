@@ -1,5 +1,5 @@
 import unittest
-from src.function.circle1 import circleArea
+from circle import *
 from math import pi
 
 class TestCircleArea(unittest.TestCase):
