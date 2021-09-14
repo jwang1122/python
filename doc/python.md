@@ -1300,7 +1300,11 @@ pip install Pillow
 * [pack(padx=5, pady=10, side=tk.LEFT)](../src/tkinter/tkinter30.py)
 
 ### grid layout
+* [grid()](../src/tkinter/tkinter06.py)
 * [Grid system](../src/tkinter/tkinter50.py)
+  - pack() and place() can be used together
+  - grid() and place() can be used together
+  - pack() and grid() cannot be used same time.
 
 ### place layout
 * [Place system](../src/tkinter/tkinter51.py)
@@ -1365,12 +1369,15 @@ pip install Pillow
 ### display image
 * [display image on frame](../src/tkinter/tkinter42.py)
 * [deal cards in window](../src/tkinter/tkinter43.py)
+* [class MyFrame basic](../src/tkinter/tkinter44.py)
+* [put image in frame](../src/tkinter/tkinter44a.py)
+* [Calculator button on frame](../src/tkinter/tkinter44b.py)
 
 ### popup window
 * [popup window](../src/tkinter/tkinter45.py)
 
 ### card game GUI
-* [card game gui](../src/tkinter/tkinter44.py)
+* [card game gui](../src/tkinter/tkinter44c.py)
 
 ### sqlite DB
 DB basic operations >> CRUD: Create, Retrieve, Update, Delete

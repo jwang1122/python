@@ -184,6 +184,23 @@ graph TB
 erDiagram
     Customer }|--|{ Address:has
 ```
+
+```mermaid
+ erDiagram
+    PROJECT ||--o{ TASK : contains
+    PROJECT {
+        int id
+        string name
+        date begineDate
+        date endDate
+    }
+    TASK {
+        int id
+        string name
+        date beginDate
+        date endDate
+    }
+```
 ## Sequence Diagram
 ```mermaid
 sequenceDiagram

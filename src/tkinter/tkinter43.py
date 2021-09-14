@@ -1,58 +1,55 @@
-"""
-deal cards in window
-"""
 import tkinter as tk
-from PIL import Image, ImageTk
 import random
 
-class Card:
-    suits = ["spade","club","diamond","heart"]
-    faces = ["A",'2','3','4','5','6','7','8','9','10','J',"Q",'K']
+root = tk.Tk()
+root.geometry('1024x768')
+x = 10
+step = 30
 
+def deal():
+    global x
+    card = deck.next()
+    img = card.getImage()
+    lbl = tk.Label(root, image=img)
+    lbl.configure(image=img)
+    lbl.image = img
+    x += step
+    lbl.place(x = x , y = 10)
+
+dealBtn = tk.Button(root, text="Deal Card", command=deal).place(x=5, y=300) 
+
+class Deck:
+    suits = ['spade','club','diamond','heart']
+    faces = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
+
+    def __init__(self):
+        self.stackOfCards = [Card(face, suit) for face in self.faces for suit in self.suits]
+        random.shuffle(self.stackOfCards)
+        self.currentIndex = 52
+
+    def next(self):
+        self.currentIndex -= 1
+        return self.stackOfCards[self.currentIndex]
+
+class Card:
     def __init__(self, face, suit):
         self.face = face
         self.suit = suit
-    
+
     def __repr__(self):
         return '('+self.face+', '+self.suit+')'
-    
+
     def getImage(self):
-        filename = "images/"+self.suit+self.face+".gif"
-        image = ImageTk.PhotoImage(file=filename)
+        filename = 'images/' + self.suit + self.face+'.gif'
+        image = tk.PhotoImage(file=filename)
         return image
-    
 
-def init():
-    global root
-    global frame
-    global cards
-    global x1,y1
-    root = tk.Tk()
-    root.geometry("1024x768")
-    root.resizable(0, 0)
-    root.title("tkinter42")
-    frame = tk.Frame(root, width = 1024, height = 768)
-    frame.grid()
-    x1=130
-    y1=100
-    dealBut = tk.Button(root, text="Deal Card", command=deal).place(x=5, y=5)
+deck = Deck()
 
-    cards = [Card(face, suit) for face in Card.faces for suit in Card.suits]
+card = deck.next()
+img = card.getImage()
+lbl1 = tk.Label(root, image=img)
+lbl1.place(x = x, y = 10)
 
-def deal():
-    global x1, y1
-    index = random.randint(0,51)
-    card = cards[index]
-    img = card.getImage()
-    label = tk.Label(frame)
-    label.configure(image=img)
-    label.image = img
-    label.place(x=x1, y=y1)
-    x1 += 30
 
-if __name__ == '__main__':
-    init()
-    heartQ = ImageTk.PhotoImage(file="images/heartQ.gif")
-    tk.Label(frame, image = heartQ).place(x=100, y=100)
-
-    root.mainloop()
+root.mainloop()

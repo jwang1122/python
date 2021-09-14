@@ -3,7 +3,7 @@ popup windows
 """
 #Import the required library
 from tkinter import*
- text = ""
+text = ""
 
 #Define a function to close the popup window
 def close_win(top):
