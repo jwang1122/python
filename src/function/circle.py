@@ -1,4 +1,5 @@
 from math import pi
+import pretty_errors
 
 def add(x, y):
     return x + y
@@ -11,6 +12,6 @@ def circleArea(radius):
     return pi*radius**2
 
 # if __name__ == '__main__':
-a = circleArea(2) # this block of code is your test area
+a = circleArea(-2) # this block of code is your test area
 print(a)
 print("Done.")

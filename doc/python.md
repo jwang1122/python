@@ -158,7 +158,7 @@ otherwise, your python builtins functions no longer works the way you expected.
     - string slicing: [[start]:[end]:[step]]
     - String operator +, *
     - as function str(object)
-    - string functions (isdigit(), strip(), split(), lower(), upper(), startswith(), endswith(), ...)
+    - string functions (isalnum(), isdigit(), strip(), split(), lower(), upper(), startswith(), endswith(), ...)
     - 
   - Homeworks
     [string-01](../homeworks/string/string01.md)

@@ -31,7 +31,7 @@ class Player:
         self.cardY = seats[seat][1]
 
     def __repr__(self):
-        return name
+        return self.name
 
     def getCardX(self):
         self.cardX += 30
