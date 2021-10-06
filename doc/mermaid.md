@@ -29,6 +29,17 @@ o-- - Aggregation
 
 .. - Link (Dashed)
 
+```mermaid
+classDiagram
+classA --|> classB : Inheritance
+classC --* classD : Composition
+classE --o classF : Aggregation
+classG --> classH : Association
+classI -- classJ : Link(Solid)
+classK ..> classL : Dependency
+classM ..|> classN : Realization
+classO .. classP : Link(Dashed)
+```
 ## Cardinality
 0..1 - Zero or one
 
@@ -46,7 +57,12 @@ o-- - Aggregation
 
 n..n - {where n>1}
 
-
+```mermaid
+classDiagram
+    Customer "1" --> "*" Ticket
+    Student "1" --> "1..*" Course
+    Galaxy --> "many" Star : Contains
+```
 ## Class Diagram
 ```html
 <style>
@@ -78,6 +94,35 @@ Player <|-- Dealer:Dealer is a player
 Deck "1" o-- "*" Card
 Dealer o-- Deck
 Student "1" --> "1..*" Course
+```
+
+```mermaid
+classDiagram
+class Shape
+<<interface>> Shape
+Shape : draw()
+```
+
+```mermaid
+classDiagram
+
+class Occupation{
+  Occupation: +getOccupation() String
+}
+<<interface>> Occupation
+
+class Person{
+  #name: String
+  #ssn: String
+  #age: int
+  #gender: String
+}
+<<abstract>> Person
+
+Occupation <|-- Person
+Person <|-- Teacher
+Person <|-- Doctor
+Person <|-- Developer
 ```
 ## Graph Diagram
 * Font Awesome icons

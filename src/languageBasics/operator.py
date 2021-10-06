@@ -1,3 +1,5 @@
+from turtle import *
+
 # Arithmatic Operator: +, -, *, /, %, //, **
 
 a,b=30,20
@@ -54,3 +56,12 @@ x = {"a": 1, "b": 2}
 y = {"b": 3, "c": 4}
 z = {**x, **y}
 print(z)
+
+# precendence
+x = 3 + 4 * 3
+print(x)
+
+unitPrice = 2.99
+quantity = 12
+total = unitPrice * quantity
+print(f"the total for {quantity} items with unit price of {unitPrice} will be ${total}.")

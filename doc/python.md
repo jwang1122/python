@@ -1,6 +1,6 @@
 <h1>Python Language</h1>
 
-[Markdown Shared Library](myIcons.md)
+[Markdown Shared Library](myIcons.md)f
 
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
@@ -226,6 +226,9 @@ otherwise, your python builtins functions no longer works the way you expected.
   
   [bitwise](../src/languageBasics/operator/bitwise.py)
 
+* operator precendence: *, /; +, -; 
+  multiply has higher precendence than +, -, use () to change precendence
+  
 ## Execution Control
 * **if-elif-else** statement Syntax
 ```py
@@ -1484,6 +1487,8 @@ print(lambda x, y: x + y)
 ![](images/lambda.png)
 
 * [map ](../src/functional/lambda01.py)
+* [](../src/functional/lambda02.py)
+* [](../src/functional/lambda03.py)
 
 ### map() function
 ❓What is map() function?
