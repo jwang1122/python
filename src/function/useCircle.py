@@ -9,7 +9,16 @@ Done.
 
 this is due to the import line.
 """
-from circle import circle_area
+from circle import circleArea # load whole module, only circleArea can be used
 
-area = circle_area(3.2)
+area = circleArea(3.2)
 print(area)
+
+import circle # same module only load one time
+
+r = 6.1
+area = circle.circleArea(r)
+print(f"The circle area with radius={r} is {area:.3f}.")
+
+a = circle.add(4,5)
+print(a)

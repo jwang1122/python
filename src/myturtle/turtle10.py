@@ -4,7 +4,7 @@ import time
 screen=turtle.Screen()
 trtl=turtle.Turtle()
 screen.setup(420,320)
-screen.bgpic('./images/grassField.gif')
+screen.bgpic('src/myturtle/images/grassField.gif')
 trtl.shape('turtle')
 trtl.color('darkgoldenrod','black')
 s=10

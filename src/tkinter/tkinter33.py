@@ -1,3 +1,6 @@
+"""
+mouse double click
+"""
 from tkinter import *
 
 def hello(event):

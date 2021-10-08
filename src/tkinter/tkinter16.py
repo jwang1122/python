@@ -1,3 +1,6 @@
+"""
+enable/disable button
+"""
 from tkinter import *
 
 fenster = Tk()

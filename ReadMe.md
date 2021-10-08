@@ -15,5 +15,13 @@
 * [Excercise](https://pynative.com/python-exercises-with-solutions/)
 * [Function Excercises](https://pynative.com/python-functions-exercise-with-solutions/)
 
+![Download file from Zoom chat box](downloadFromChatbox.gif)
+
 ### YouTube Tutorial
 * [Algorithms and Data Structure](https://www.youtube.com/watch?v=8hly31xKli0)
+
+Terry:
+1. clean code
+2. link source for map, filter, reduce
+3. sort
+4. data structure

@@ -1,4 +1,4 @@
-from sqlite2 import create_connection
+from sqlite03 import create_connection
 
 """
 Update record in database

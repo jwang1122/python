@@ -1,3 +1,6 @@
+"""
+using dialog
+"""
 from tkinter.simpledialog import *
 import tkinter as tk
 

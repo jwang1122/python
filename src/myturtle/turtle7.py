@@ -4,9 +4,9 @@ Display cards on turtle screen
 from turtle import *
 
 screen = Screen()
-imgClub2 = r"images/club2.gif"
+imgClub2 = r"src/myturtle/images/club2.gif"
 screen.addshape(imgClub2)
-imgheartQ = r"images/heartQ.gif"
+imgheartQ = r"src/myturtle/images/heartQ.gif"
 screen.addshape(imgheartQ)
 clubK = Turtle()
 clubK.shape(imgClub2)

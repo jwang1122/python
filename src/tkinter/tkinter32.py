@@ -1,3 +1,6 @@
+"""
+built in color list
+"""
 import tkinter as tk
 
 colours = ['red','green','orange','white','yellow','blue']

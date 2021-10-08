@@ -1,11 +1,13 @@
 <h1>Python Language</h1>
 
-[Markdown Shared Library](myIcons.md)
+[Markdown Shared Library](myIcons.md)f
 
-- [My First python program](#my-first-python-program)
-- [print](#print)
-- [comment](#comment)
-- [Variable Naming](#variable-naming)
+- [Getting Start](#getting-start)
+  - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
+  - [My First python program](#my-first-python-program)
+  - [print](#print)
+  - [comment](#comment)
+  - [Variable Naming](#variable-naming)
   - [Variable and memory](#variable-and-memory)
 - [Data Type](#data-type)
 - [Operator](#operator)
@@ -15,13 +17,14 @@
   - [define function in function](#define-function-in-function)
   - [return function from function](#return-function-from-function)
   - [pass function as argument](#pass-function-as-argument)
+  - [global variable](#global-variable)
   - [raise Error and Try-Except](#raise-error-and-try-except)
   - [function annotation](#function-annotation)
-  - [Unit Test](#unit-test)
-  - [loggin](#loggin)
   - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
-  - [algorithms](#algorithms)
+- [Unit Test](#unit-test)
+- [Logging](#logging)
+- [algorithms](#algorithms)
 - [Class](#class)
   - [class basic](#class-basic)
   - [dunder functions](#dunder-functions)
@@ -30,29 +33,83 @@
   - [class inheritance](#class-inheritance)
   - [Python Interface](#python-interface)
   - [Unit Test](#unit-test-1)
+  - [Dunder Variables](#dunder-variables)
+  - [Global Variables](#global-variables)
 - [Blackjack Game](#blackjack-game)
   - [Blackjack Rules](#blackjack-rules)
   - [Object relationship](#object-relationship)
   - [Game logic](#game-logic)
   - [Code Optimization](#code-optimization)
+  - [missing unit tests](#missing-unit-tests)
   - [Integration Test](#integration-test)
   - [Documentation](#documentation)
   - [Software development life cycle](#software-development-life-cycle)
+<<<<<<< HEAD
 - [Deployment](#deployment)
 - [File](#file)
+=======
+- [Yahtzee Dice Game](#yahtzee-dice-game)
+- [File Access](#file-access)
+- [nmpy](#nmpy)
+- [pandas](#pandas)
+>>>>>>> 850fd9fc3eebdb9ac3dc7eebb36bd50dcc28fb8e
 - [Plot](#plot)
-- [Design Principles SOLID](#design-principles-solid)
+- [Clean Code](#clean-code)
+  - [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
 - [MongoDB](#mongodb)
-- [Window Based GUI](#window-based-gui)
+- [tkinter(windows based GUI)](#tkinterwindows-based-gui)
+  - [open window](#open-window)
+  - [Label, Button, Entry widgets](#label-button-entry-widgets)
+    - [pack attributes](#pack-attributes)
+  - [pack layout](#pack-layout)
+  - [grid layout](#grid-layout)
+  - [place layout](#place-layout)
+  - [icon and title](#icon-and-title)
+  - [Other widgets](#other-widgets)
+  - [color](#color)
+  - [mouse](#mouse)
+  - [table](#table)
+  - [canvas](#canvas)
+  - [tab window frame](#tab-window-frame)
+  - [titled frame](#titled-frame)
+  - [plot chart in tkinter](#plot-chart-in-tkinter)
+  - [display image](#display-image)
+  - [popup window](#popup-window)
+  - [card game GUI](#card-game-gui)
+  - [sqlite DB](#sqlite-db)
+  - [Web Service API](#web-service-api)
+  - [Application](#application)
+- [Data Structure](#data-structure)
+  - [stack](#stack)
+  - [queue](#queue)
+  - [Priority Queue](#priority-queue)
+  - [Linked list](#linked-list)
+  - [doubly linked list](#doubly-linked-list)
 - [Functional Programing](#functional-programing)
+  - [Function decorator(timer)](#function-decoratortimer)
+  - [Lambda expression](#lambda-expression)
+  - [map() function](#map-function)
+  - [filter() function](#filter-function)
+  - [reduce() function](#reduce-function)
+  - [sort() function](#sort-function)
+  - [zip() function](#zip-function)
+  - [Calculate Square root](#calculate-square-root)
+  - [Non-strict evaluation](#non-strict-evaluation)
+  - [monad](#monad)
+  - [Either](#either)
+- [Design pattern](#design-pattern)
+  - [Reactivex design pattern](#reactivex-design-pattern)
 
+## Getting Start
+### getting formiliar your keyboard
+[Keyboard](keyboard.md)
 
-## My First python program
+### My First python program
 [hello world](../src/languageBasics/hello.py)
 
-## print
+### print
 [print](../src/languageBasics/print.py)
 * place holder (%s, %d, %f)
 * print with tuple
@@ -62,21 +119,24 @@
     - [print-01](homeworks/print01.md)
     - [print-02](homeworks/print02.md)
 
-## comment 
+### comment 
 [comment](../src/languageBasics/../comment.py)
 * single line comment: #
 * multiple lines comment: """, '''
 ❓Why I need use comment?
 ✔️
 
-## Variable Naming
+### Variable Naming
 1. variable name cannot start with number
 2. variable can be combination of letters and numbers _, a~z, A~Z, 0~9, no other special characters
 3. don't use reserved keywords as variable name
 ![](images/python-keywords.png)
+
 [Python Keywords](https://realpython.com/python-keywords/#:~:text=%20Python%20Keywords%20and%20Their%20Usage%20%201,are%20used%20for%20control%20flow%3A%20if%2C...%20More%20)
+
 4. Avoid using existing function name as your variable name.
 otherwise, your python builtins functions no longer works the way you expected.
+
 ### Variable and memory
 ![](images/chineseMedicine.jpg)
 ![](images/memory.gif)
@@ -85,7 +145,9 @@ otherwise, your python builtins functions no longer works the way you expected.
 [variable-02](../homeworks/variable02.md)
 [variable-03](../homeworks/variable03.md)
 
+
 ![](images/LanguageBasics.svg)
+
 
 ## Data Type
 ![](images/DataType.png)
@@ -101,7 +163,8 @@ otherwise, your python builtins functions no longer works the way you expected.
     - string slicing: [[start]:[end]:[step]]
     - String operator +, *
     - as function str(object)
-    - string functions
+    - string functions (isalnum(), isdigit(), strip(), split(), lower(), upper(), startswith(), endswith(), ...)
+    - 
   - Homeworks
     [string-01](../homeworks/string/string01.md)
     [string-02](../homeworks/string/string02.md)
@@ -136,6 +199,7 @@ otherwise, your python builtins functions no longer works the way you expected.
     - dict is mutable
     - dict modify==>CRUD
 
+* [date/time](../src/languageBasics/datatype/datetime1.py)
 ## Operator 
 * [operator](../src/languageBasics/operator.py)
 * Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
@@ -167,6 +231,9 @@ otherwise, your python builtins functions no longer works the way you expected.
   
   [bitwise](../src/languageBasics/operator/bitwise.py)
 
+* operator precendence: *, /; +, -; 
+  multiply has higher precendence than +, -, use () to change precendence
+  
 ## Execution Control
 * **if-elif-else** statement Syntax
 ```py
@@ -313,12 +380,10 @@ class C,D html
 class END end1
 ```
 ## Function
+❓What is function?
+>✔️A block of code defined by name and arguments, can be used by calling the name many times repeatedly. In Python, functions are first-class citizens. That means functions have the same characteristics as values like other data type such as strings and numbers. Anything you would expect to be able to do with a string or number you can do with a function as well.
 * [function basic](../src/function/function.py)
 * define a function
-$$
-\underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol}
-$$
-
     - def, Python reserved keyword
     - function name, anything you want, but need follow the naming rules
     - (), must have open/close parenthesis pair, no matter it has arguments or not
@@ -330,6 +395,8 @@ $$
     - 💡single response
     - call a function by function name and (), and arguments if there is any
 
+$$ \underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol} $$
+
 ![Circle](images/circle.svg)
 
 Circle area formula: $ A=\pi r^2 $
@@ -337,7 +404,7 @@ Circle area formula: $ A=\pi r^2 $
 * [circleArea](../src/function/function.py)
 * [function arguments](../src/function/defineFunction.py)
 * [understand __name__](../src/function/circle.py)
-* [](../src/function/useCircle.py)
+* [understand if __name__=='__main__':](../src/function/useCircle.py)
 * Python document
 ```use python playground
 >>> from src.function.defineFunction import *
@@ -363,6 +430,16 @@ Circle area formula: $ A=\pi r^2 $
 ### pass function as argument
 * [passFuncAsArg.py](../src/function/passFuncAsArg.py)
 * 👍[function as dictionary value](../src/function/dictFunction.py)
+
+### global variable
+❓ What is global variable?
+>✔️global keyword allows you to modify the variable outside of the current scope. It is used to create a global variable and make changes to the variable in a local context.
+[use global variable](../src/function/globalVariable.py)
+1. When we create a variable inside a function, it is local by default.
+2. When we define a variable outside of a function, it is global by default. You don't have to use global keyword.
+3. We use global keyword to read and write a global variable inside a function.
+4. Use of global keyword outside a function has no effect.
+5. It is not necessary to declare global variable outside function
 
 
 ### raise Error and Try-Except
@@ -463,7 +540,41 @@ class A start
 class C,E,F,D,J,GIT block1
 ```
 
-### Unit Test
+
+### recursive function
+A function is recursive if it calls itself.
+  1. termination condition.
+  2. adjust status for each call.
+  3. Python stops the cunction calls after a depth of 1000 calls.
+* [factoria.py](../src/function/factorial.py)
+$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
+![](aDoc/images/recursiveFactorial.jfif)
+* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
+
+* Understand recursive find.
+  ```mermaid
+  graph TB
+  START((find answer))
+  END[end]
+  B[add 10 to<br>the answer of<br>problem 52]
+  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
+  D[Problem 85:<br>10]
+  
+  START-->B-->C-->D
+  D--10+12-->C--22+10-->B--32-->END
+
+  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
+  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
+  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
+  class START start
+  class B,C,D html
+  class END end1
+  ```
+### function decorator
+* [my_timer.py](../src/function/my_timer.py)
+
+## Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
 
 Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Tests ⟹ unittest ⟹ test ⟹ test_*.py
@@ -473,17 +584,19 @@ Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Test
     |    └── function/ 
     |           ├── circle3.py
     |           └── circle.py
-    ├── tests/
+    ├── test/
     |    └── 🚧test_circleArea.py 
     └── 👉ReadMe.md
 ```
 * 😢👎unittest cannot find the file unless
     1. test file name match the pattern
     2. test file located on right folder
-    3. 👎module and function can be found in the module
+    3. unittest always find test file from current running folder
+    4. 👎module and function can be found in the module
+    5. 👎module must be no compiler error
 
 😄✔️👍所有的错误，都是因为vscode Python Extension中的python执行命令。
-Python永远都是从根上查找所有的module。Python本身并没有错。大部分网上的解释都没有切中要害。要害是python的执行命令与python的设计相违背。
+Python永远都是从当前文件夹开始查找所有的module。Python本身并没有错。大部分网上的解释都没有切中要害。要害是python的执行命令与python的设计相违背。
 ```DOS
 (env) C:\Users\12818\workspace\python-I>c:/Users/12818/workspace/python-I/env/Scripts/python.exe 
 👎❌❗️c:/Users/12818/workspace/python-I/src/blackjack/blackjackcard.py
@@ -531,49 +644,21 @@ class TestMe(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-C:\Users\12818\workspace\python1-2>python -m unittest tests/test_basics.py
+C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
 ```DOS
 
 ```
 
+[unit test for circleArea](../test/test_circleArea.py)
 
-### loggin
-* [logging1.py](../src/logging/logging1.py)
+## Logging
+❓What is logging?
+✔️write software execution record to console, file or database used for application analysis.
+there are at least 5 level of logging: Debug, Info, Warning, Error, Fatal
 
-### recursive function
-A function is recursive if it calls itself.
-  1. termination condition.
-  2. adjust status for each call.
-  3. Python stops the cunction calls after a depth of 1000 calls.
-* [factoria.py](../src/function/factorial.py)
-$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
-![](aDoc/images/recursiveFactorial.jfif)
-* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
+* [send log message to a file](../src/logging/logging1.py)
 
-* Understand recursive find.
-  ```mermaid
-  graph TB
-  START((find answer))
-  END[end]
-  B[add 10 to<br>the answer of<br>problem 52]
-  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
-  D[Problem 85:<br>10]
-  
-  START-->B-->C-->D
-  D--10+12-->C--22+10-->B--32-->END
-
-  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
-  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
-  class START start
-  class B,C,D html
-  class END end1
-  ```
-### function decorator
-* [my_timer.py](../src/function/my_timer.py)
-
-### algorithms
+## algorithms
 Big O
 * O(n)
 * O(log n)
@@ -627,7 +712,8 @@ class Robot {
 * [override __iter__, __next__, create iterable](../src/myclass/class15.py) 
 * [range1 start from 1, include stop](../src/myclass/range1.py)
 * [__call__() make object callable](../src/myclass/class22.py)
-* [__equal__(check if same), __add__](../src/myclass/class24.py)
+* [__eq__(check if same), __add__](../src/myclass/class24.py)
+* [__eq__(), == vs is ](../src/myclass/class25.py)
 
 ### attribute scope
 * [class level attribute](../src/myclass/class11.py)
@@ -640,6 +726,7 @@ class Robot {
 * [nested class](../src/myclass/class20.py)
 * [composition vs. inheritance](../src/myclass/class21.py)
 * [class method, static method](../src/myclass/class23.py)
+* [define a class as default value](../src/myclass/class26.py)
 
 ### class inheritance
 ```mermaid
@@ -720,6 +807,13 @@ Person<|--Engineer:Engineer is Person
 ### Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
 
+### Dunder Variables
+* __doc__
+* __name__
+* __code__
+
+
+### Global Variables
 
 ## Blackjack Game
 ### Blackjack Rules
@@ -791,7 +885,7 @@ class Game{
   playerList:ArrayList<Player>
   dealer:Dealer
   determineWinner()
-  play()
+  play(winner:function)
 }
 
 Player<|--Dealer:dealer is player
@@ -858,7 +952,7 @@ classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
 
 class A,D,C,E if
 ```
-
+### missing unit tests
 * player get 4 Ace
 * player get 3 Ace
 * player get 2 Ace
@@ -958,9 +1052,16 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 class START start
 class A,B,C,D if
 ```
+<<<<<<< HEAD
 ## Deployment
 [python deployment](https://www.nylas.com/blog/packaging-deploying-python/)
 ## File
+=======
+## Yahtzee Dice Game
+[Yahtzee Dice Game](https://www.dicegamedepot.com/yahtzee-rules/)
+
+## File Access
+>>>>>>> 850fd9fc3eebdb9ac3dc7eebb36bd50dcc28fb8e
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
 * [read/append plain text from/fo file](../src/file/file1.py)
@@ -975,7 +1076,39 @@ class A,B,C,D if
 * [load json string as dict](../src/file/file3b.py)
 * [use pandas read json file](../src/file/file4.py)
 * [plot student score](../src/file/file5.py)
-* 
+* [list all files in directory](../src/file/dir.py)
+  
+## nmpy
+❓ What is numpy module in python?
+>✔️NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
+
+[website](https://www.tutorialspoint.com/numpy/numpy_dot.htm)
+
+![](images/numpyArrays.png)
+
+* Mathematics(MATLAB Replacement)
+* Plotting (Matplotlib)
+* Backend(Pandas, Connect 4, Digital Photography)
+* Machine Learning
+
+* [array basics](../src/numpy/numpy01.py)
+* [Homework 01](../src/numpy/numpyHW01.md)
+* [Homework 01 solution](../src/numpy/numpyHW01.py)
+* [linear algebra](../src/numpy/numpy02.py)
+* [read data from file](../src/numpy/numpy03.py)
+* [matrix dot product](../src/numpy/numpy04.py)
+* [Weighted average](../src/numpy/numpy05.py)
+$$W=\frac {\sum_{i=1}^n w_i X_i} {\sum_{i=1}^n w_i}$$
+* [standard mean sqrt标准均方差](../src/numpy/numpy06.py)
+* [linear algebra几个老头几个梨](../src/numpy/numpy07.py)
+$$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}x \\y \\z \end{bmatrix} = \begin{bmatrix}6 \\-4 \\27 \end{bmatrix}$$
+
+## pandas
+[Document website](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
+* [simple curves](../src/datavisualization/dataanalysis01.py)
+* [Covid-19](../src/datavisualization/dataanalysis02.py)
+* [Create a instance of DataFrame](../src/pandas/pandas01.py)
+
 ## Plot
 * [plot list](../src/plot/plot0.py)
 * [plot sine wave](../src/plot/plot1.py)
@@ -1003,9 +1136,16 @@ class A,B,C,D if
 * [log style](../src/plot/plot22.py)
 * [generate animated sine wave](../src/plot/movingSinWave.py)
 * [3D animation generator](../src/plot/3dAnimation.py)
+
 [padans DataFrame](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
 
-## Design Principles SOLID
+## Clean Code
+[Clean code](Clean-Code.pdf")
+
+### Design Principles SOLID
+
+[SOLIS website](https://stackify.com/solid-design-principles/)
+
 1. Single Responsibility principle
   >A class should have one, and only one, reason to change. You need to change your class as soon as one of its responsibilities changes. it makes your software easier to implement and prevents unexpected side-effects of future changes.
 2. Open/Close Pricinple
@@ -1041,10 +1181,27 @@ y = S()
 5. Dependency Inversion
   >High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. 
   
-应变（requirements change over time. least change on requirement changes.）
+应变（requirements change over time. least code change on requirement changes.）
 
-[SOLIS website](https://stackify.com/solid-design-principles/)
 ## Turtle
+[turtle document](https://docs.python.org/3/library/turtle.html)
+
+* [Open window](../src/myturtle/turtle1.py)
+* [move turtle](../src/myturtle/turtle2.py)
+* [mouse click move turtle](../src/myturtle/turtle3.py)
+* [Randomly moving turtle on mouse click.](../src/myturtle/turtle4.py)
+* [limit the turtle within window bounds](../src/myturtle/turtle5.py)
+* [turtle moving within certain area.](../src/myturtle/turtle6.py)
+* [Display cards on turtle screen](../src/myturtle/turtle7.py)
+* [draw star](../src/myturtle/turtle8.py)
+* [draw half circle](../src/myturtle/turtle9.py)
+* [draw spiral turtle](../src/myturtle/turtle10.py)
+* [draw dragon curve](../src/myturtle/dragonCurve.py)
+* [draw sun and house](../src/snowman/drawSun.py)
+* [draw snowman by using class Snowman](../src/myclass/drawSnowMan.py)
+* [draw ellipse](../src/myturtle/ellipse.py)
+* [define functions for line, triangle, circle and rectangle](../src/myturtle/shapes.py)
+
 
 ## SQLite
 [](https://www.youtube.com/watch?v=byHcYRpMgI4)
@@ -1077,6 +1234,8 @@ CRUD: Create, Retrieve, Update, Delete
 * [Retrieve one-to-many data](../src/sqlite/sqlite08.py)
 * [Create books table](../src/sqlite/sqlite9.py)
 * [insert sample books](../src/sqlite/sqlite10.py)
+* [many-to-many relationship, DB helper](../src/sqlite/sqlite11.py)
+* [Product, Provider class](../src/sqlite/sqlite12.py)
 * [CRUD for books](../src/sqlite/sqlitebookdb.py)
 
 
@@ -1110,14 +1269,584 @@ MONGO-->D-->C-->DOC & COL
 ✔️SQL stands for Structured Query Language specially for relational database.
 SQLite: Python built in SQL database.
 
-## Window Based GUI
+## tkinter(windows based GUI)
+
+[image converter, mp4>gif, png>ico](https://cloudconvert.com/)
+
 ❓What is tkinter?
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
+* [Good tkinter document online](https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/scale.html)
+* [YouTube tutorial](https://www.youtube.com/watch?v=YXPyB4XeYLA)
+
+in tkinter everyting is widget
+
+### open window
+* [open window with title](../src/tkinter/tkinter1.py)
+
+### Label, Button, Entry widgets
+* [Add label to window](../src/tkinter/tkinter2.py)
+#### pack attributes
+  * after=widget1 - pack this widget after widget1
+  * before=widget1 - pack this widget before widget1
+  * anchor='border' - where **border** must be n, ne, e, se, s, sw, w, nw, or center 
+  * fill=NONE, or X, Y, BOTH
+  * padx, pady
+  * ipadx, ipady
+  * side='top', 'left', 'right', 'bottom'
+* [dynamically change label text](../src/tkinter/tkinter46.py)
+* [change font of the label](../src/tkinter/tkinter3.py)
+  - 💡Find available font: ✔️Control Panel ⇒ Apperance and Personalization ⇒ Fonts
+  - [font folder location](C:\Windows\Fonts)
+* [add button](../src/tkinter/tkinter4.py)
+* [button action > print text on console](../src/tkinter/tkinter6.py)
+* [lambda expression on button action](../src/tkinter/tkinter48.py)
+* [button, quit, icon, image](../src/tkinter/tkinter53.py)
+>In order to use PIL, you need install module Pillow
+```
+pip install Pillow
+```
+* [use tkinter Entry](../src/tkinter/tkinter47.py)
+
+### pack layout
+* [GUI Layout Management>pack](../src/tkinter/tkinter26.py)
+* [pack(fill=tk.X)](../src/tkinter/tkinter27.py)
+* [w.pack(fill=tk.X, padx=10, pady=5)](../src/tkinter/tkinter28.py)
+* ☝️[pack(fill=tk.X, pady=10)](../src/tkinter/tkinter29.py)
+* [pack(padx=5, pady=10, side=tk.LEFT)](../src/tkinter/tkinter30.py)
+
+### grid layout
+* [grid()](../src/tkinter/tkinter06.py)
+* [Grid system](../src/tkinter/tkinter50.py)
+  - pack() and place() can be used together
+  - grid() and place() can be used together
+  - pack() and grid() cannot be used same time.
+
+### place layout
+* [Place system](../src/tkinter/tkinter51.py)
+
+### icon and title
+* [Place system](../src/tkinter/tkinter52.py)
+* 
+### Other widgets
+* [using Combox, dropdown box](../src/tkinter/tkinter7.py)
+* [using checkbox](../src/tkinter/tkinter8.py)
+* [using spinbox](../src/tkinter/tkinter9.py)
+* [using text field](../src/tkinter/tkinter10.py)
+* [using form](../src/tkinter/tkinter11.py)
+* [radio button](../src/tkinter/tkinter55.py)
+* [using radio button and message box](../src/tkinter/tkinter12.py)
+* [using yes/no, ok/cancel message](../src/tkinter/tkinter57.py)
+* [Same as above, use pack instead of grid](../src/tkinter/tkinter13.py)
+* [using scrolled text](../src/tkinter/tkinter14.py)
+* [using progress bar](../src/tkinter/tkinter15.py)
+* [enable/disable button](../src/tkinter/tkinter16.py)
+* [using list box](../src/tkinter/tkinter17.py)
+* [same as above with multiple selection](../src/tkinter/tkinter18.py)
+* [using dialog](../src/tkinter/tkinter19.py)
+* [using tk.Frame](../src/tkinter/tkinter20.py)
+* [close window call back, display image](../src/tkinter/tkinter21.py)
+* [using filedialog](../src/tkinter/tkinter22.py)
+* [better version of tkinter22](../src/tkinter/tkinter23.py)
+* [using save file dialog](../src/tkinter/tkinter24.py)
+* [menubar = tkinter.Menu(root)](../src/tkinter/tkinter25.py)
+* [slider (Scale)](../src/tkinter/tkinter59.py)
+* [Scale: command](../src/tkinter/tkinter60.py)
+  😄👍[Good website](https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/scale.html)
+
+### color
+* [random background color](../src/tkinter/tkinter31.py)
+* [built in color list](../src/tkinter/tkinter32.py)
+
+### mouse 
+* [mouse double click](../src/tkinter/tkinter33.py)
+* [mouse position](../src/tkinter/tkinter34.py)
+
+### table
+* [create a table](../src/tkinter/tkinter35.py)
+
+### canvas
+* [using canvas draw pie chart](../src/tkinter/tkinter36.py)
+* [draw line in canvas](../src/tkinter/tkinter5.py)
+* 👎😢[data not available](../src/tkinter/tkinter37.py)
+
+### tab window frame
+* [tab window](../src/tkinter/tkinter38.py)
+
+### titled frame
+* [titled frame](../src/tkinter/tkinter39.py)
+* [using frame](../src/tkinter/tkinter56.py)
+* [open more than one window](../src/tkinter/tkinter58.py)
+
+### plot chart in tkinter
+* [canvas.draw() chart on canvas](../src/tkinter/tkinter40.py)
+* [plot chart dynamically](../src/tkinter/tkinter41.py)
+
+### display image
+* [display image on frame](../src/tkinter/tkinter42.py)
+* [deal cards in window](../src/tkinter/tkinter43.py)
+* [class MyFrame basic](../src/tkinter/tkinter44.py)
+* [put image in frame](../src/tkinter/tkinter44a.py)
+* [Calculator button on frame](../src/tkinter/tkinter44b.py)
+
+### popup window
+* [popup window](../src/tkinter/tkinter45.py)
+
+### card game GUI
+* [card game gui](../src/tkinter/tkinter44c.py)
+
+### sqlite DB
+DB basic operations >> CRUD: Create, Retrieve, Update, Delete
+* [Add record to DB >> Create](../src/tkinter/tkinter61.py)
+* [Load records from DB >> Retrieve](../src/tkinter/tkinter62.py)
+* [Modify record >> Update](../src/tkinter/tkinter63.py)
+* [Delete record >> Delete](../src/tkinter/tkinter64.py)
+
+### Web Service API
+[Air Now Login](https://docs.airnowapi.org/login?index=)
+wangqianjiang/Qianjiang1122
+API Key: 84B7917D-C980-407F-ACBC-B29E3D2E4458
+
+### Application
+* [calculator](../src/tkinter/calculator.py)
+* [tic tac toe](../src/tkinter/tictaktoe.py)
+* [Temperature Converter](../src/tkinter/temperatureConverter.py)
+* [image viewer](../src/tkinter/imageViewer.py)
+* [Date interval calculator](../src/tkinter/dateInterval.py)
+
+[隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
+
+## Data Structure
+### stack
+❓What is stack?
+✔️a stack is an abstract data type that serves as a collection of elements, with two main principal operations: (LIFO) last in first out.
+
+1. Push(), which adds an element to the collection, and
+2. Pop(), which removes the most recently added element that was not yet removed.
+you have list of element, stack each other.
+3. empty(), returns whether the stack is empty
+4. size(), returns the size of the stack
+5. top(), returns a reference to the top most element of the stack
+
+
+* [stack.py](../src/structure/stack.py)
+
+![](images/stack.png)
+
+### queue
+❓What is queue?
+✔️A Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO).
+
+![](images/queue.png)
+
+1. Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition – Time Complexity : O(1)
+2. Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition – Time Complexity : O(1)
+3. Front: Get the front item from queue – Time Complexity : O(1)
+4. Rear: Get the last item from queue – Time Complexity : O(1)
+
+1. push(): insert a new data into the queue
+2. pop(): return the front data in the queue, and remove it from the queue
+3. peek()/top(): return the front data in the queue without remove it
+ 
+### Priority Queue
+❓What is priority queue?
+
+✔️Priority Queue is an extension of queue with following properties.
+
+1. Every item has a priority associated with it.
+2. An element with high priority is dequeued before an element with low priority.
+3. If two elements have the same priority, they are served according to their order in the queue.
+
+* [priorityqueue.py](../src/structure/priorityqueue.py)
+* [priorityqueue2.py](../src/structure/priorityqueue2.py)
+* [priorityqueue3.py](../src/structure/priorityqueue3.py)
+
+### Linked list
+❓What is linked list?
+✔️A linked list is a sequence of data elements, which are connected together via links.
+
+![](images/linkedlist.png)
+
+[Linked list](../src/structure/linkedlist.py)
+
+❓Why do I need use linked list?
+✔️Insert new node in list is expensive because all elements on right-hand side need to be shifted.
+
+
+### doubly linked list
+[doubly linked data list](../src/structure/doubleLinkedList.py)
 
 
 ## Functional Programing
+❓What is functional programming?
+✔️ functional programming is a programming paradigm where programs are constructed by applying and composing functions. functional programming is a programming paradigm where programs are constructed by applying and composing functions. Goal oriented
+
+### Function decorator(timer)
 * [Understand my wrapper function](../src/timerDecorator/my_timer1.py)
 * [add decorator to any function](../src/timerDecorator/my_timer2.py)
 * [pass function to class](../src/timerDecorator/my_timer3.py)
 * [timer](../src/timerDecorator/my_timer.py)
 
+
+### Lambda expression
+❓What is lambda function?
+✔️A Lambda Function in Python programming is an anonymous function or a function having no name.
+
+* Syntax
+```py
+lambda <variable list separated by comma>: expression
+print(lambda x, y: x + y)
+```
+![](images/lambda.png)
+
+* [map ](../src/functional/lambda01.py)
+* [](../src/functional/lambda02.py)
+* [](../src/functional/lambda03.py)
+
+### map() function
+❓What is map() function?
+>✔️ the map() function is processing iterables without loop.
+
+![](images/map.png)
+
+```
+map(func, *iterables) --> map object
+map(lambda x:x*x, list1)
+map(lambda x,y:x+y, tuple1, tuple2)
+```
+1. map() takes two argument, a function and an iterable data
+2. map() applys the given function to each element in the iterable
+3. map() return a map object which is iterable and can be converted to list or tuple
+
+[map 2 list to one](../src/functional/map0.py)
+[convert temperature](../src/functional/map1.py)
+[understand map() function](../src/functional/map2.py)
+[map with multiple iterables](../src/functional/map3.py)
+[convert temperature](../src/functional/map4.py)
+[map with multiple iterables](../src/functional/map5.py)
+[map vs. for-loop](../src/functional/map6.py)
+
+### filter() function
+❓What is filter() function?
+✔️Return an iterator yielding those items of iterable for which function(item) |  is true. If function is None, return the items that are true.
+
+```
+filter(function or None, iterable) --> filter object
+filter(lambda x:x%2==0, list1)
+```
+* [](../src/functional/filter0.py)
+* [](../src/functional/filter1.py)
+* [](../src/functional/filter2.py)
+
+* filter object is iterable and can be converted to list or tuple
+[get all prime number from 2 to n](../src/functional/prime.py)
+[func.py](../src/functional/func.py)
+[lambda02.py](../src/functional/lambda02.py)
+
+### reduce() function
+❓What is reduce() function?
+✔️The reduce(fun,seq) function is used to apply a particular function passed in its argument to all of the list elements
+
+* [sum over iterable](../src/functional/reduce01.py)
+* [find max and min](../src/functional/reduce02.py)
+* [multiply all elements](../src/functional/reduce03.py)
+
+### sort() function
+❓How to use sort function?
+
+✔️sort dict
+* [sort car dict by year](../src/functional/sort0.py)
+
+✔️sort list by lambda expression
+* [sort temperature by city](../src/functional/sort1.py)
+* [reverse sort by temperature](../src/functional/sort2.py)
+
+✔️sort list with tuple element
+* [sort list](../src/functional/sort3.py)
+
+### zip() function
+* [Combine city with temperatur](../src/functional/zip1.py)
+* [combine list](../src/functional/zip2.py)
+* [matrix operation](../src/functional/zip3.py)
+* [understand zip() function](../src/functional/zip4.py)
+
+
+### Calculate Square root
+
+$$ a_{i+1} = \frac {(a_i + \frac n {a_i})} 2 $$
+$$ a_1 = f(a_0) $$
+$$ a_2 = f(f(a_0)) $$
+
+* [Function chain](../src/functional/squareRoot.py)
+
+### Non-strict evaluation
+* [Lasy or non-strict evaluation](../src/languageBasics/operator/logical.py)
+* [pure function](../src/functional/pureFunction.py)
+❓ What is a pure function?
+>✔️A pure function is a function whose output value follows solely from its input values, without any observable **side effects**.
+
+❓ Why use functional programming?
+✔️ The functional paradigm is popular because it offers several advantages over other programming paradigms.
+1. **High level**: You’re describing the result you want rather than explicitly specifying the steps required to get there. Single statements tend to be concise but pack a lot of punch.
+2. **Transparent**: The behavior of a pure function depends only on its inputs and outputs, without intermediary values. That eliminates the possibility of side effects, which facilitates debugging.
+3. **Parallelizable**: Routines that don’t cause side effects can more easily run in parallel with one another.
+
+❓ How Python support functional programming?
+✔️two features:
+1. To take another function as an argument
+2. To return another function to its caller
+
+### monad
+❓ Why use monad?
+✔️ to solve very common program issues
+1. Null pointer exception.
+2. function call failure.
+
+```mermaid
+graph TB
+
+A(Input or Ouput<br>value)
+B[Good value<br>Just]
+C[Bad value<br>Nothing]
+
+A-->B & C
+
+D(function)
+E[Successful<br>Right]
+F[Failed<br>Left]
+
+D-->E & F
+
+classDef good fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef bad fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class B,E good
+class C,F bad
+```
+* [None value and function failure](../src/functional/whyWrapperBox.py)
+```py
+def neg(num):
+  return -num
+
+x = 10
+y = str(neg(int(x)))
+```
+
+if x is not an intege string, cause software blows up.
+* [avoid function call failure](../src/functional/whyMonad1.py)
+* [blows up](../src/functional/whyMonad2.py)
+* [List monad](../src/functioal/../functional/whyMonad3.py)
+
+❓What is monad?
+>✔️ A monad is a design pattern that allows us to add a context to data values, and also allows us to easily compose existing functions so that they execute in a context aware manner.
+✔️a monad is an abstraction that allows structuring programs generically. 
+
+* In English dictionary, monad is
+✔️Unit, one; Atom sence; 
+✔️an elementary individual substance which reflects the order of the world and from which material properties are derived
+
+❓ How does the monad solve those two issues?
+✔️ box value, return either
+
+* [kleisli Compose](../src/functional/kleisliCompose.py)
+
+[Definition of Monad](https://www.merriam-webster.com/dictionary/monad)
+
+✔️Wrapper Class type with implementation of fmap(), amap() and bind() functions. 
+
+* One to wrap values of any basic type within the monad (yielding a monadic value);
+* Another to compose functions that output monadic values (called monadic functions).
+
+![](images/monad.png)
+```mermaid
+classDiagram
+
+class Box{
+  value:any
+}
+class Functor{
+  value:any
+  fmap(function)
+}
+class Applicative{
+  amap(functorValue)
+}
+class Monad{
+  bind(function)
+  __rshift__(function)
+}
+Container<|--Functor:is box
+Functor<|--Applicative: is Functor
+Applicative<|--Monad: is Applicative
+Monad<|--Maybe
+Maybe<|--Just:is monad
+Maybe<|--Nothing: is monad
+
+<<abstract>> Maybe
+
+```
+* [Functor.py](../src/functional/functor.py)
+  
+❓ What is functors?
+✔️you apply a function to a wrapped value using map
+implement fmap() function: functor map
+
+❓what is applicatives?
+✔️you apply a wrapped function to a wrapped value using apply, if defined
+implement amap() function: applicative map
+
+❓what is monads
+✔️you apply a function that returns a wrapped value, to a wrapped value using flatMap.
+implement bind() function: binding function
+✔️ Override binding operator (*, >>)
+
+* [Understand functor, applicative, monad](../src/functional/box.py) 
+* [Functor >> bind](../src/functional/math1.py)
+* [Applicative](../src/functional/monad2.py)
+* [Applicative](../src/functional/applicative.py)
+* [Applicative](../src/functional/monad3.py)
+* [.then() fuction chain for applicative](../src/functional/monad13.py)
+* [ReactiveX](../src/functional/math2.py)
+* 😢[monad01.py](../src/functional/monad01.py)
+* ✔️[operate a founction to a boxed value](../src/functional/monad1.py)
+* [Understand Functor, applicative, monad](../src/functional/monad02.py)
+* [Monad >> bind](../src/functional/monad03.py)
+* [Compose funtion chain](../src/functional/monad4.py)
+* [Compose function chain head tail](../src/functional/monad5.py)
+* [@curry function decorator](../src/functional/monad6.py)
+* [Use ListMonad create list, then do then() or map()](../src/functional/monad7.py)
+* [applicative handle error](../src/functional/monad8.py)
+* [ListMode and monad bind()](../src/functional/monad9.py)
+* [Monad bind](../src/functional/monad10.py)
+* [Use Maybe solve the None issue](../src/functional/monad11.py)
+* [Maybe.maybe() function](../src/functional/monad12.py)
+* [How applicative works](../src/functional/monad13.py)
+* [process to write code in VSCode](../src/functional/writePythonMonad.py)
+* [Shopping function list](../src/functional/shoppingMonad1.py)
+* [observer pattern](../src/functional/shoppingMonad2.py)
+* [map shopping functions](../src/functional/shoppingMonad3.py)
+  
+❓ what is fmap?
+>✔️Applies 'function' to the wrapper box value and returns a new wrapper box value
+✔️We have a polymorphic type f, and fmap gives us the ability to:
+1. Liberate a pure value from the type constructor that refers to it
+2. Call a function on it, which could return a result of a different type
+3. Have the type constructor refer to the type of the result
+
+❓ what is amap?
+>✔️Applies the function stored in the functor to the value of 'functorValue',
+		returning a new wrapper box value.
+
+
+```mermaid
+graph LR
+
+H(Software history)
+A[Pointer execution<br>Assembly]
+FORTRAN[Function block<br>Fortran]
+C[Object Oriented<br>C++ class]
+FUNC[Functional Programming<br>ReactiveX]
+COMP[Component Oriented<br>Windows]
+SERV[Service Oriented<br>microservices]
+CLOUDS[Clouds Deploy]
+
+H --> A & FORTRAN & C & COMP & FUNC & SERV & CLOUDS
+
+A-->FORTRAN-->C -->COMP-->FUNC-->SERV-->CLOUDS
+
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class H start
+```
+
+### Either
+❓ Any application service
+✔️
+* [](../src/functional/either0.py)
+* [check a even number](../src/functional/either1.py)
+* [return Right/Left](../src/functional/either2.py)
+* [bind functions](../src/functional/either3.py)
+* [circle area Either](../src/functional/circle3.py)
+
+❓ what is flatmap?
+✔️FlatMap differs from Map in a key way. Instead of the Map operation returning an Option automatically, it instead requires that the function passed to it return an Option type result itself. That is, while Map returns an Option, FlatMap returns a value (or None value) for each option, regardless of whether it is a “something” or a “nothing” and requires that the input method applied return an Option type response.
+
+* 👎[Understnd map vs flatmap](../src/functional/mymonad0.py)
+* [Understand monad map vs flatmap](../src/functional/mymonad.py)
+* [mymonad: Some or Nil](../src/functional/option1.py)
+* [pymonad implementation](../src/functional/option2.py)
+* [map() function as Functor](../src/functional/mymonad1.py)
+* [Understand Either and flat_map](../src/functional/myeither.py)
+* [simulate aireline tickets](../src/functional/airlineticket.py)
+
+![](downloadFromChatbox.gif)
+
+## Design pattern
+
+### Reactivex design pattern
+❓ What is ReactiveX?
+✔️Reactive programming is a programming paradigm, that deals with data flow and the propagation of change. It means that, when a data flow is emitted by one component, the change will be propagated to other components by a reactive programming library. The propagation of change will continue until it reaches the final receiver.
+
+[ReactiveX design pattern](https://www.tutorialspoint.com/rxpy/rxpy_examples.htm)
+![](images/ReactiveAction.gif)
+
+![](images/observable.jpg)
+
+```mermaid
+graph TB
+
+Obs[Observable]
+Op[Operator]
+Ob[Observer]
+Sub[Subscriber]
+Func["on_next(v)<br>on_error(e)<br>on_completed()"]
+
+Obs-->Op-->Ob
+Sub-->Ob
+Ob---Func
+```
+* [use 'of' to create observable](../src/designPattern/rx01.py)
+* [use 'create' to create observable](../src/designPattern/rx02.py)
+* [use 'pipe' function and operator](../src/designPattern/rx03.py)
+* [Define processor first, pass data later](../src/designPattern/rx04.py)
+  
+where RxPY offers operators such as
+* Mathematical operators (average, concat, count, max, min, reduce,sum)
+* Transformation operators (buffer, ground_by, map, scan)
+* Filtering operators (distinct, element_at, filter, first, ignore_element, last, skip, take)
+* Error handling operators (catch, retry)
+* Utility operators (delay, time_interval, timeout, timestamp)
+* Conditional operators
+* Creation operators
+* Connectable operators
+* Combining Operators
+
+❓What is Observable?
+>✔️ An observable is a function that creates an observer and attaches it to the source having data streams that are expected from, for example, Tweets, computer−related events, etc.
+✔️ Data Stream
+
+❓ What is Observer?
+✔️ It is an object with on_next(), on_error() and on_completed() methods, that will get called when there is interaction with the observable i.e. the source interacts for an example incoming Tweets, etc.
+✔️ Who process Data Stream
+
+❓ What is Subscription?
+✔️ When the observable is created, to execute the observable we need to subscribe to it.
+✔️ trigger above process
+
+❓ What are Operators?
+✔️ An operator is a pure function that takes in observable as input and the output is also an observable. You can use multiple operators on an observable data by using the pipe operator.
+
+❓ What is Subject?
+✔️ A subject is an observable sequence as well as an observer that can multicast, i.e. talk to many observers that have subscribed. The subject is a cold observable, i.e. the values will be shared between the observers that have been subscribed.
+
+❓ What is Subscription?
+✔️ When the observable is created, to execute the observable we need to subscribe to it.
+
+❓ Advantages of using RxPy?
+✔️the following
+* RxPY is an awesome library when it comes to the handling of async data streams and events. RxPY uses observables to work with reactive programming that deals with asynchronous data calls, callbacks and event-based programs.
+* RxPY offers a huge collection of operators in mathematical, transformation, filtering, utility, conditional, error handling, join categories that makes life easy when used with reactive programming.
+* Concurrency i.e. working of multiple tasks together is achieved using schedulers in RxPY.
+* The performance is improved using RxPY as handling of async task and parallel processing is made easy.
+
+❓ Disadvantage of using RxPY
+✔️ Debugging the code with observables is a little difficult.

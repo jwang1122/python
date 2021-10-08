@@ -1,3 +1,6 @@
+'''
+using canvas draw pie chart
+'''
 from tkinter import *
  
 root = Tk()

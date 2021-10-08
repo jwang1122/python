@@ -1,3 +1,6 @@
+"""
+using list box
+"""
 import tkinter as tk
 
 parent = tk.Tk()
@@ -5,7 +8,7 @@ parent.geometry("250x300")
 label1 = tk.Label(parent,text = "A list of favourite languages...")
 
 listbox = tk.Listbox(parent, width=40, height=10, selectmode=tk.MULTIPLE)
-listbox.insert(1,"PHP")
+listbox.insert(1, "PHP")
 listbox.insert(2, "Python")
 listbox.insert(3, "Java")
 listbox.insert(4, "C#")

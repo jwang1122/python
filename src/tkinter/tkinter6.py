@@ -1,3 +1,6 @@
+"""
+button action > print text on console
+"""
 import tkinter as tk   
 
 def write_text():

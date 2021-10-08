@@ -1,3 +1,6 @@
+"""
+using Combox
+"""
 import tkinter as tk
 from tkinter import ttk
 
@@ -22,7 +25,9 @@ def change(event):
 
 my_combobox.bind("<<ComboboxSelected>>",func=change)
 
-my_combobox.pack()
-my_label.pack()
+# my_combobox.pack()
+# my_label.pack()
+my_combobox.grid(row=0, column=0)
+my_label.grid(row=1, column=0)
 
 root.mainloop()

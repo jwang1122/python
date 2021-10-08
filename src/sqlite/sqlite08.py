@@ -2,7 +2,7 @@
 Retrieve relational data from projects and tasks tables
 """
 import sqlite3
-from sqlite2 import create_connection
+from sqlite06 import create_connection
 
 if __name__ == '__main__':
     database = "pythonsqlite.db"

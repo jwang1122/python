@@ -1,3 +1,6 @@
+"""
+random background color
+"""
 import tkinter as tk
 import random
     
