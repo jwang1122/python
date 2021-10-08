@@ -38,6 +38,7 @@
   - [Integration Test](#integration-test)
   - [Documentation](#documentation)
   - [Software development life cycle](#software-development-life-cycle)
+- [Deployment](#deployment)
 - [File](#file)
 - [Plot](#plot)
 - [Design Principles SOLID](#design-principles-solid)
@@ -957,7 +958,8 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 class START start
 class A,B,C,D if
 ```
-
+## Deployment
+[python deployment](https://www.nylas.com/blog/packaging-deploying-python/)
 ## File
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
@@ -1045,6 +1047,7 @@ y = S()
 ## Turtle
 
 ## SQLite
+[](https://www.youtube.com/watch?v=byHcYRpMgI4)
 CRUD: Create, Retrieve, Update, Delete
 
 * [Create database, table](../src/sqlite/sqlite01.py)
