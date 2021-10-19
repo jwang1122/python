@@ -75,7 +75,9 @@
   - [card game GUI](#card-game-gui)
   - [sqlite DB](#sqlite-db)
   - [Web Service API](#web-service-api)
+  - [practices](#practices)
   - [Application](#application)
+- [PyInstaller](#pyinstaller)
 - [Data Structure](#data-structure)
   - [stack](#stack)
   - [queue](#queue)
@@ -345,9 +347,10 @@ class A start
 
 ```
 
-* [while.py]()
+* [while.py](../src/languageBasics/loop/while.py)
   ![](images/while.svg)
   ![](images/doWhile.svg)
+  
 * Homeworks
   - [loop-01](../homeworks/basics/loop/loop01.md)
   - [loop-02](../homeworks/basics/loop/loop02.md)
@@ -1326,6 +1329,7 @@ pip install Pillow
 * [using yes/no, ok/cancel message](../src/tkinter/tkinter57.py)
 * [Same as above, use pack instead of grid](../src/tkinter/tkinter13.py)
 * [using scrolled text](../src/tkinter/tkinter14.py)
+* [Horizontal scrooled bar]()
 * [using progress bar](../src/tkinter/tkinter15.py)
 * [enable/disable button](../src/tkinter/tkinter16.py)
 * [using list box](../src/tkinter/tkinter17.py)
@@ -1393,13 +1397,30 @@ DB basic operations >> CRUD: Create, Retrieve, Update, Delete
 [Air Now Login](https://docs.airnowapi.org/login?index=)
 wangqianjiang/Qianjiang1122
 API Key: 84B7917D-C980-407F-ACBC-B29E3D2E4458
+* [get all information](../src/tkinter/tkinter65.py)
+* [selected information](../src/tkinter/tkinter66.py)
 
+### practices
+* [do math](tkinter69.py)
+* 
 ### Application
 * [calculator](../src/tkinter/calculator.py)
 * [tic tac toe](../src/tkinter/tictaktoe.py)
 * [Temperature Converter](../src/tkinter/temperatureConverter.py)
 * [image viewer](../src/tkinter/imageViewer.py)
 * [Date interval calculator](../src/tkinter/dateInterval.py)
+* [Note Pad]()
+* [Sticker]()
+
+## PyInstaller
+[Tkinter to Exe]()
+```DOS
+pip install pyinstaller
+mkdir exe
+cd exe
+<copy python file to this folder>
+pyinstaller -F -w temperatureConverter.py
+```
 
 [隶书字体下载网站](https://www.fonts.net.cn/fonts-zh/tag-lishu-1.html)
 

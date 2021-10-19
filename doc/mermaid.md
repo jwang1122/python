@@ -105,6 +105,7 @@ Shape : draw()
 
 ```mermaid
 classDiagram
+direction RL
 
 class Occupation{
   Occupation: +getOccupation() String
@@ -124,6 +125,44 @@ Person <|-- Teacher
 Person <|-- Doctor
 Person <|-- Developer
 ```
+
+* Annotations on classes
+  1. << interface >>
+  2. << abstract >>
+  3. << Service >>
+  4. << enumeration >>
+
+```mermaid
+classDiagram
+%% this is a comments
+class Color{
+  <<enumeration>>
+  RED
+  BLUE
+  GREEN
+  WHITE
+  BLACK
+}
+```
+
+```mermaid
+classDiagram
+  direction RL
+  class Student {
+    -idCard : IdCard
+  }
+  class IdCard{
+    -id : int
+    -name : string
+  }
+  class Bike{
+    -id : int
+    -name : string
+  }
+  Student "1" --o "1" IdCard : carries
+  Student "1" --o "1" Bike : rides
+  ```
+
 ## Graph Diagram
 * Font Awesome icons
 [fa website](https://fontawesome.com/v4.7/examples/)
