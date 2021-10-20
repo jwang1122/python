@@ -3,6 +3,25 @@
 [Markdown Shared Library](doc/myIcons.md)
 
 ---
+## File Structure
+```output
+python-I
+    ├── 📝doc/
+    |    ├── mistakes.md 
+    |    ├── vscodeTrics.md 
+    |    └── python.md 
+    ├── 🔨homeworks/
+    |       └── <filenameXX.md>
+    ├── 🔨solutions/
+    |       └── <filenameXX.py>
+    ├── 🔥src/
+    |      └── hello.py 
+    ├── 🔥test/
+    |      ├── test_circleArea.py 
+    |      ├── test_yahtzee.py 
+    |      └── test_blackjack.py 
+    └── 👉ReadMe.md
+```
 
 * [Python Programming](doc/python.md)  
 * [Markdown Tricks](doc/markdownTricks.md)
