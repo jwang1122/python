@@ -2,6 +2,14 @@
 
 [Markdown Shared Library](doc/myIcons.md)
 
+To-Do List
+1. java1: add more many-to-many sample
+2. python1: add sticker sample app
+3. python1: add notepad app
+4. python1: complete blackjack tkinter game
+5. python1: display image app
+
+
 ---
 ## File Structure
 ```output
