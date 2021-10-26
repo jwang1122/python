@@ -3,7 +3,6 @@
 [Markdown Shared Library](myIcons.md)f
 
 - [- File](#--file)
-- [- Reactivex design pattern](#--reactivex-design-pattern)
   - [Getting Start](#getting-start)
     - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
     - [My First python program](#my-first-python-program)
@@ -112,7 +111,6 @@
 - [pandas](#pandas)
 <<<<<<< HEAD
 - [- File](#--file)
-- [- Reactivex design pattern](#--reactivex-design-pattern)
   - [Getting Start](#getting-start)
     - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
     - [My First python program](#my-first-python-program)
@@ -214,7 +212,6 @@
 =======
 >>>>>>> 850fd9fc3eebdb9ac3dc7eebb36bd50dcc28fb8e
 - [- File](#--file)
-- [- Reactivex design pattern](#--reactivex-design-pattern)
   - [Getting Start](#getting-start)
     - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
     - [My First python program](#my-first-python-program)
@@ -617,6 +614,7 @@ Circle area formula: $ A=\pi r^2 $
 
 * [circleArea](../src/function/function.py)
 * [function arguments](../src/function/defineFunction.py)
+* [function parameters](../src/function/declareArguments.py)
 * [understand __name__](../src/function/circle.py)
 * [understand if __name__=='__main__':](../src/function/useCircle.py)
 * Python document
@@ -1594,11 +1592,12 @@ pip install Pillow
 * [plot chart dynamically](../src/tkinter/tkinter41.py)
 
 ### display image
+* [put image in frame](../src/tkinter/tkinter44a.py)
 * [display image on frame](../src/tkinter/tkinter42.py)
 * [deal cards in window](../src/tkinter/tkinter43.py)
 * [class MyFrame basic](../src/tkinter/tkinter44.py)
-* [put image in frame](../src/tkinter/tkinter44a.py)
 * [Calculator button on frame](../src/tkinter/tkinter44b.py)
+* [delete label](../src/tkinter/tkinter70.py)
 
 ### popup window
 * [popup window](../src/tkinter/tkinter45.py)
