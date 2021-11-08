@@ -10,9 +10,9 @@ def get_multiple(*keys, dictionary, default=None):
 
 def f2(a, b, c=4, *args, **kwargs):
     print("from f2()...")
-    print(a, b, c)
+    print("13:",a, b, c)
     for x in args:
-        print(x)
+        print("15: ",x)
     for x in kwargs:
         print(":".join((x,kwargs.get(x))), end='; ')
     print()

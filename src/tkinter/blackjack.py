@@ -53,10 +53,14 @@ class Player:
     seats = {'W':(70, 300),'N':(300, 30),'S':(300, 500), 'E':(800, 300)}
     def __init__(self, name, seat='W'):
         self.name = name
+        self.winCount = 0
         self.seat = seat
         self.hand = []
         self.cardX = self.seats[seat][0]
         self.cardY = self.seats[seat][1]
+
+    def win(self):
+        self.winCount += 1
 
     def __repr__(self):
         return self.name
@@ -76,6 +80,13 @@ class Player:
         label.configure(image=img)
         label.image = img
         label.place(x=self.getCardX(), y=self.getCardY())
+        if self.name=='Dealer' and len(self.hand)==2: #dealer has 2 card in hand
+            filename = "images/backR.gif"
+            img = ImageTk.PhotoImage(file=filename)
+            self.facedown = tk.Label(frame)
+            self.facedown.configure(image=img)
+            self.facedown.image = img
+            self.facedown.place(x=self.cardX, y=self.getCardY())
 
     def clearHand(self):
         for card in self.hand:
@@ -113,6 +124,7 @@ class Player:
 class Dealer(Player):
     def __init__(self):
         self.name = "Dealer"
+        self.winCount = 0
         self.seat = 'N'
         seats = {'W':(70, 300),'N':(300, 30),'S':(300, 500), 'E':(800, 300)}
         self.cardX = seats[self.seat][0]
@@ -127,6 +139,7 @@ class Dealer(Player):
         self.deck.shuffle()
 
     def hit(self, frame):
+        self.facedown.destroy()
         value = self.getHandValue()
         while value < 17:
             self.addCardToHand(self.deal(), frame)
@@ -135,17 +148,41 @@ class Dealer(Player):
 class Blackjack(TkinterBase):
     def buildWidget(self):
         self.init()
-        tk.Button(self.root, text="Deal Card", command=self.deal).place(x=10, y=50)
+        self.dealBtn = tk.Button(self.root, text="Deal Card", command=self.deal)
+        self.dealBtn.place(x=10, y=50)
         self.addBtn = tk.Button(self.root, text="Add Player", command=self.popupwin)
         self.addBtn.place(x=10, y=20)
         self.collectBtn = tk.Button(self.root, text="Collect", command=self.winner)
         self.collectBtn.place(x=10, y=80)
+        tk.Label(self.root, text="Game result").place(x=900, y=10)
+        tk.Label(self.root, text="Dealer win count: ").place(x=900, y=40)
         self.defaultPlayerList()
         self.initPlayers()
         
     def winner(self):
+        dealerTotal = self.dealer.getHandValue()
         for player in self.playerList:
+            playerTotal = player.getHandValue()
+            if playerTotal>21:
+                self.dealer.win()
+            elif dealerTotal>21:
+                player.win()
+            elif playerTotal==dealerTotal:
+                pass
+            elif playerTotal>dealerTotal:
+                player.win()
+            else:
+                self.dealer.win()
             player.clearHand()
+        self.displayResult()
+        self.dealBtn['state']="normal"
+        self.collectBtn['state']='disabled'
+
+    def displayResult(self):
+        tk.Label(self.root, text=str(self.dealer.winCount)).place(x=1020, y=40)
+        for index in range(3):
+            player = self.playerList[index]
+            tk.Label(self.root, text=str(player.winCount)).place(x=1020, y=70+index*30)
 
     def init(self):
         self.root.title("Blackjack Card Game")
@@ -162,6 +199,10 @@ class Blackjack(TkinterBase):
         self.playerList.append(self.dealer)
         self.addBtn['state']='disabled'
         self.collectBtn['state']='disabled'
+        tk.Label(self.root, text='John win count: ').place(x=900, y=70)
+        tk.Label(self.root, text='Rodney win count: ').place(x=900, y=100)
+        tk.Label(self.root, text='Charles win count: ').place(x=900, y=130)
+        
 
     def deal(self):
         player = self.playerList[self.playerIndex]
@@ -169,6 +210,7 @@ class Blackjack(TkinterBase):
         player.addCardToHand(card, self.root)
         if self.playerIndex==3 and len(player.hand)==2:
             self.playerList[0].enableBtn()
+            self.dealBtn['state']='disabled'
         self.playerIndex += 1
         if self.playerIndex >= len(self.playerList):
             self.playerIndex = 0
@@ -217,12 +259,12 @@ class Blackjack(TkinterBase):
         player.addCardToHand(card, self.root)
 
     def pass_(self, index):
+        player = self.playerList[index]
+        player.disableBtn()
         if index==2:
             self.dealer.hit(self.root)
             self.collectBtn['state']='normal'
             return
-        player = self.playerList[index]
-        player.disableBtn()
         player = self.playerList[index+1]
         player.enableBtn()
         self.playerIndex = 0

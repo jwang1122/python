@@ -1630,6 +1630,7 @@ API Key: 84B7917D-C980-407F-ACBC-B29E3D2E4458
 * [Date interval calculator](../src/tkinter/dateInterval.py)
 * [Note Pad]()
 * [Sticker](../src/tkinter/sticker.py)
+* [Blackjack](../src/tkinter/blackjack.py)
 
 ## PyInstaller
 [Tkinter to Exe]()
