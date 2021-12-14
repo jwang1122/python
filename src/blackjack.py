@@ -60,9 +60,6 @@ class Player:
     def getHandSize(self):
         return len(self.hand)
 
-    def showHand(self):
-        return f"{self.name}: {self.hand}"
-
     def getHandValue(self):
         value = 0
         for card in self.hand:

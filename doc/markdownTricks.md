@@ -1,6 +1,6 @@
 <h1> Markdown Trickes</h1>
 
-[Markdown Shared Library](myIcons.md)
+[Markdown Shared Library](utilities.md)
 
 Table of Contents
 - [Basic Syntax](#basic-syntax)
@@ -141,6 +141,10 @@ Command Palette... > Markdown All in One: Create Table of Contents
 ## Markdown emotion icons
 👍 [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/) 这篇文章很棒，很容易使用。
 
+:pencil2:✏️產生
+:do_not_litter:🚯扔掉
+:shower:🚿清洗
+:scissors:✂️刪除
 :heavy_check_mark: ✔️正确
 :x: ❌错误
 :+1: 👍 赞美

@@ -1,6 +1,8 @@
 ## Useful Icons
 
-❓✔️❌❗️📌⚡️💡📄📝🔨✋🚧☝️👉👇☝️👍👎👌🔥💾🗑🐛📒⚠️😄😢♻️🛠📐🎯✉️☎️
+👍 [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/) 这篇文章很棒，很容易使用。
+
+❓✔️❌❗️📌⚡️💡📄📝✏️🔨✋🚧☝️👉👇☝️👍👎👌🔥💾🗑🐛📒⚠️😄😢♻️🛠📐🎯✉️☎️
 
 ## Color picker
 [Color Picker Website](https://www.webfx.com/web-design/color-picker/)
