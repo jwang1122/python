@@ -87,6 +87,9 @@
   - [Linked list](#linked-list)
   - [doubly linked list](#doubly-linked-list)
   - [binary search](#binary-search)
+  - [insertion sort](#insertion-sort)
+  - [selection sort](#selection-sort)
+- [quick sort](#quick-sort)
 - [Functional Programing](#functional-programing)
   - [Function decorator(timer)](#function-decoratortimer)
   - [Lambda expression](#lambda-expression)
@@ -1415,6 +1418,8 @@ pip install Pillow
 * [class MyFrame basic](../src/tkinter/tkinter44.py)
 * [Calculator button on frame](../src/tkinter/tkinter44b.py)
 * [delete label](../src/tkinter/tkinter70.py)
+* [display animated gif](../src/tkinter/displayGif.py)
+
 
 ### popup window
 * [popup window](../src/tkinter/tkinter45.py)
@@ -1525,6 +1530,15 @@ you have list of element, stack each other.
 ![](images/Binary-Search.png)
 * [binary search recursive](../src/datastructure/binarySearchRecursive.py)
 * [binary search while loop](../src/datastructure/binarySearchWhile.py)
+
+### insertion sort
+[Insertion Sort](../src/datastructure/insertionsort.py)
+
+### selection sort
+[Selection Sort](../src/datastructure/selectionSort.py)
+
+## quick sort
+[quick sort](../src/datastructure/quicksort.py)
 
 ## Functional Programing
 ❓What is functional programming?

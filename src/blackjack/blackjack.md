@@ -1,4 +1,4 @@
-<h1> Blackjack Game</h1>
+<h1> Blackjack Game Specification and Design</h1>
 
 [Black Jack Rules](https://bicyclecards.com/how-to-play/blackjack/)
 
@@ -143,3 +143,15 @@ class A,D,C,E if
 * player get 3 Ace
 * player get 2 Ace
 
+## User Interface
+* Initial window should look like the following:
+![](initialWindow.png)
+where all button should be disabled other than **Deal Card** button.
+
+* after deal two cards to each player, the screen should look like the following:
+![](everyoneGet2Cards.png)
+
+at this moment, Buttons for west player enabled, all other's disabled.
+
+* when everyone passed, the screen should look like the following:
+![](gameOver.png)

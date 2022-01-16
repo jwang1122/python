@@ -1,42 +1,17 @@
 ## Useful Icons
 
-👍 [All icons](https://www.webfx.com/tools/emoji-cheat-sheet/) 这篇文章很棒，很容易使用。
+❓✔️ 👍😄 👎😱 ❌✔️ 💡👉 🔔⚡️ 🔒🔑
+✏️📄✂️♻️
+📌❗️📝🔍🔨☝️👇👈👉👍👎👌👊⭐️😢🌎💾🗑🐛📒⚠️🔥🛠📐🎯✉️☎️
 
-❓✔️❌❗️📌⚡️💡📄📝✏️🔨✋🚧☝️👉👇☝️👍👎👌🔥💾🗑🐛📒⚠️😄😢♻️🛠📐🎯✉️☎️
+:hammer:
 
-## Color picker
-[Color Picker Website](https://www.webfx.com/web-design/color-picker/)
+[](images/bug.png)
+<img src="images/bug.png" width="32"/>
 
-## 汉语拼音声调
-ā á ǎ à
-ō ó ǒ ò
-ē é ě è
-ī í ǐ ì
-ū ú ǔ ù
-ǖ ǘ ǚ ǜ
-
-## math symbols
-|operator | LaTex Symbols |
-|---------|---------------|
-× | times
-÷ | div
-± | pm
-° | degree
-∞ | infty
-ϕ | phi
-Φ | Phi
-θ | theta
-α | alpha
-β | beta
-γ | gamma
-δ | delta
-μ | mu
-π | pi
-λ | lambda
-ω | omega
-⇒ | Rightarrow
-<font color="red">⟹</font>| Longrightarrow
-⇓ | Downarrow
+## references
+* [Color Picker](https://www.webfx.com/web-design/color-picker/)
+* [favorite icon website](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 ## Sample File Structure:
 
@@ -44,22 +19,25 @@
 <project root>
     ├── 📝doc/
     |    ├── mistakes.md 
-    |    ├── vscodeTrics.md 
     |    └── python.md 
     ├── 🔨homeworks/
-    |       └── <filenameXX.md>
+    |       └── filenameXX.md
     ├── 🔥src/
-    |      └── hello.py 
+    |       └── string.py
     └── 👉ReadMe.md
 ```
 
 ## Sample Mermaid Diagram
 
+😄Include frequently used mermaid diagram features below👇
+
 ```mermaid
-graph LR
+graph TB
+
 START((start))
-B[code block]
 END[end]
+B[code block]
+C(["Round box<br>function(arguments)"])
 IF{condition<br> block}
 DB[(database)]
 
@@ -67,13 +45,12 @@ START-->IF
 IF--True-->DB-->END
 IF--False-->B-->END
 
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef start fill:blue,stroke:#DE9E1F,stroke-width:2px,color:white;
 classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
 classDef js fill:yellow,stroke:black,stroke-width:2px;
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
 classDef db fill:#BEBDB7,stroke:black,stroke-width:2px;
+classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
 
 class START start
 class B,D,E js
