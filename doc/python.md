@@ -58,6 +58,7 @@
 - [MongoDB](#mongodb)
 - [tkinter(windows based GUI)](#tkinterwindows-based-gui)
   - [open window](#open-window)
+  - [switch between frame](#switch-between-frame)
   - [Label, Button, Entry widgets](#label-button-entry-widgets)
     - [pack attributes](#pack-attributes)
   - [pack layout](#pack-layout)
@@ -1312,6 +1313,8 @@ in tkinter everyting is widget
 ### open window
 * [open window with title](../src/tkinter/tkinter1.py)
 
+### switch between frame
+
 ### Label, Button, Entry widgets
 * [Add label to window](../src/tkinter/tkinter2.py)
 #### pack attributes
@@ -1426,7 +1429,9 @@ pip install Pillow
 
 ### card game GUI
 * [card game gui](../src/tkinter/tkinter44c.py)
-
+* [Switch between frames](../src/tkinter/tkinter71.py)
+* [use class switch frames](../src/tkinter/tkinter72.py)
+  
 ### sqlite DB
 DB basic operations >> CRUD: Create, Retrieve, Update, Delete
 * [Add record to DB >> Create](../src/tkinter/tkinter61.py)

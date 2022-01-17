@@ -1,10 +1,10 @@
 from tkinter import *
 
 class TkinterBase:
+    root = Tk()
     def __init__(self):
-        self.root = Tk()
         self.root.title("Tkinter Window")
-        self.root.geometry("640x480")
+        self.root.geometry("1024x768")
         self.buildWidget()
         self.root.mainloop()
 
