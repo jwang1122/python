@@ -3,7 +3,7 @@ built in color list
 """
 import tkinter as tk
 
-colours = ['red','green','orange','white','yellow','blue']
+colours = ['#63AFF2','green','orange','white','yellow','blue']
 
 r = 0
 for c in colours:

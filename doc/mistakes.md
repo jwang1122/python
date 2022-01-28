@@ -16,3 +16,22 @@
 git push
 ```
 此时，应该自动打开浏览器，在浏览器中输入密码，确认成功后，就可以上传了。
+
+❌ **Mistake:** Cannot update pip
+<font color='red'>
+ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied: 'C:\\Users\\12818\\AppData\\Local\\Temp\\pip-uninstall-4u2s9lv_\\pip.exe'
+Check the permissions.
+</font>
+
+✔️ **Solution:** Delete the folder by File Explore.
+
+❌ **Mistake:** ModuleNotFoundError: No module named 'PIL'
+
+✔️ **Solution:** 
+1. install Pillow
+2. select python interpreter
+
+```
+C:\Users\12818\workspace\python-I>pip install Pillow
+```
+Command Pallet > Python: Select Interpreter > ./env/Scripts/python.exe

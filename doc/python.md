@@ -2,6 +2,13 @@
 
 [Markdown Shared Library](utilities.md)
 
+## 18 modules
+1. [requests](https://api.github.com/repos/psf/requests)
+2. [django](https://www.djangoproject.com/download/)
+```dos
+pip install django==4.0
+```
+
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
   - [My First python program](#my-first-python-program)
@@ -112,6 +119,8 @@
 
 ### My First python program
 [hello world](../src/languageBasics/hello.py)
+[line plot](../src/plot/plot0.py)
+[x,y plot](../src/plot/plot01.py)
 
 ### print
 [print](../src/languageBasics/print.py)
@@ -145,9 +154,9 @@ otherwise, your python builtins functions no longer works the way you expected.
 ![](images/chineseMedicine.jpg)
 ![](images/memory.gif)
 * Homeworks
-[variable-01](../homeworks/variable01.md)
-[variable-02](../homeworks/variable02.md)
-[variable-03](../homeworks/variable03.md)
+[variable-01](../homeworks/basics/print/variable01.md)
+[variable-02](../homeworks/basics/print/variable02.md)
+[variable-03](../homeworks/basics/print/variable03.md)
 
 
 ![](images/LanguageBasics.svg)
@@ -1140,6 +1149,7 @@ $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}
   File: Anaconda3-5.3.0-Windows-x86_64.exe
 
 ## Plot
+* [covid](../src/plot/covid1.py)
 * [plot list](../src/plot/plot0.py)
 * [plot sine wave](../src/plot/plot1.py)
 * [plot both sine and cosine wave](../src/plot/sin-cos.py)
@@ -1307,6 +1317,8 @@ SQLite: Python built in SQL database.
 >✔️This framework provides Python users with a simple way to create GUI elements using the widgets found in the Tk toolkit. Tk widgets can be used to construct buttons, menus, data fields, etc. in a Python application.
 * [Good tkinter document online](https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/scale.html)
 * [YouTube tutorial](https://www.youtube.com/watch?v=YXPyB4XeYLA)
+* [油管系列讲座](https://www.youtube.com/watch?v=yQSEXcf6s2I&list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV)
+* [atom version](https://www.youtube.com/watch?v=itRLRfuL_PQ) 
 
 in tkinter everyting is widget
 
@@ -1314,6 +1326,7 @@ in tkinter everyting is widget
 * [open window with title](../src/tkinter/tkinter1.py)
 
 ### switch between frame
+* [Switch between two Frames](../src/tkinter/tkinter71.py)
 
 ### Label, Button, Entry widgets
 * [Add label to window](../src/tkinter/tkinter2.py)
@@ -1431,6 +1444,7 @@ pip install Pillow
 * [card game gui](../src/tkinter/tkinter44c.py)
 * [Switch between frames](../src/tkinter/tkinter71.py)
 * [use class switch frames](../src/tkinter/tkinter72.py)
+* [Extends from Frame](../src/tkinter/tkinter73.py)
   
 ### sqlite DB
 DB basic operations >> CRUD: Create, Retrieve, Update, Delete

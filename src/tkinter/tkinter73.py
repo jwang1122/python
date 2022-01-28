@@ -2,8 +2,8 @@ from tkinter import *
 from tkinter import font
 
 class MainFrame():
+    root = Tk()
     def __init__(self):
-        self.root = Tk()
         self.root.title("Blackjack Game")
         self.root.geometry("1024x768")
         self.buildWidget()
@@ -22,19 +22,13 @@ class MainFrame():
         self.boardFrame.pack(fill='both', expand=1)
         self.configFrame.pack_forget()
 
-class ConfigFrame():
+class ConfigFrame(Frame):
     def __init__(self, parent):
         self.parent = parent
-        self.frame = Frame(parent.root)
-        Label(self.frame, text="Configur Frame").pack()
-        Button(self.frame, text="to Board Frame", command=self.switch).pack()
+        Frame.__init__(self, parent.root)
+        Label(self, text="Configur Frame").pack()
+        Button(self, text="to Board Frame", command=self.switch).pack()
     
-    def pack(self, **kwargs):
-        self.frame.pack(kwargs)
-  
-    def pack_forget(self):
-        self.frame.pack_forget()
-
     def switch(self):
         self.parent.switchToBoardFrame()
 
