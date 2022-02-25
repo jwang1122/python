@@ -9,12 +9,13 @@
 pip install django==4.0
 ```
 
+- [18 modules](#18-modules)
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
   - [My First python program](#my-first-python-program)
   - [print](#print)
   - [comment](#comment)
-  - [Variable Naming](#variable-naming)
+  - [Variabls](#variabls)
   - [Variable and memory](#variable-and-memory)
 - [Data Type](#data-type)
 - [Operator](#operator)
@@ -139,7 +140,19 @@ pip install django==4.0
 ❓Why I need use comment?
 ✔️
 
-### Variable Naming
+### Variabls
+❓ What is variable?
+✔️ Contain two parts: 1. variable name; 2. variable value. It is called variable declaration when we assign a value to a variable name.
+
+```py
+width = 10
+name = "John"
+```
+
+❓ Why we use variables?
+✔️ 
+
+* Variable Naming Rules
 1. variable name cannot start with number
 2. variable can be combination of letters and numbers _, a~z, A~Z, 0~9, no other special characters
 3. don't use reserved keywords as variable name
@@ -377,21 +390,22 @@ class A start
 ```mermaid
 graph TB
 
-B([Python Program])
+START([Python Program])
+A[Python Code]
 C[Python function]
 D[Python class]
+E[Attributes]
+F[Functions]
 
-B-->C
-B-->D
+START-->A & C & D
+D-->E & F
 
 classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
 classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
-classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
+classDef start fill:#53DE1F,stroke:#267608,stroke-width:2px;
 
 class START start
-class C,D html
-class END end1
+class A,C,D html
 ```
 ## Function
 ❓What is function?
