@@ -99,16 +99,7 @@ class MainFrame(BaseWindow):
         self.boardFrame.pack(fill='both', expand=1)
         self.configFrame.pack_forget()
 
-class PlayerConfig:
-    def __init__(self, parent):
-        self.parent = parent
-        config = Toplevel(self.parent, width=300, height=200)
-        config.title("Assign Players")
-
-    def getPlayerSeat(self):
-        return "John", "EAST"
-
-class ConfigFrame:
+class ConfigFrame():
     def __init__(self, parent):
         self.parent = parent
         self.frame = Frame(parent.root)
@@ -122,7 +113,7 @@ class ConfigFrame:
         imageLbl.pack()
         buttonFrm = Frame(self.frame)
         buttonFrm.configure(bg='#568568')
-        playerConfigBtn = Button(buttonFrm, text="Configure Player", command=self.configPlayer)
+        playerConfigBtn = Button(buttonFrm, text="Configure Player", command=self.switch)
         playerConfigBtn.grid(row=1, column=1)
         backgroundConfigBtn = Button(buttonFrm, text="Configure background", command=self.switch)
         backgroundConfigBtn.grid(row=1, column=2)
@@ -130,9 +121,6 @@ class ConfigFrame:
         startBtn.grid(row=2, column=1, columnspan=2, pady=10)
         buttonFrm.pack(pady=20)
 
-    def configPlayer(self):
-        config = PlayerConfig(self.frame)
-        print(config.getPlayerSeat())
     
     def pack(self, **kwargs):
         self.frame.pack(kwargs)
