@@ -1324,7 +1324,9 @@ MONGO-->D-->C-->DOC & COL
 SQLite: Python built in SQL database.
 
 ## tkinter(windows based GUI)
-
+```dos
+pip install tk
+```
 [image converter, mp4>gif, png>ico](https://cloudconvert.com/)
 
 ❓What is tkinter?
