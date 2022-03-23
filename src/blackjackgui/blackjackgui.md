@@ -7,6 +7,8 @@
 ## Play Board
 
 [deal 2 cards](tkinter10.py)
+[background color](background.py)
+[play board background color](tkinter11.py)
 
 ## Switch between Frames
 
@@ -16,6 +18,7 @@
 [add board frame to main frame](blackjackmain3.py)
 [add config buttons](blackjackmain4.py)
 
+[Using Frame](frame.py)
 [Using Entry widget](entry.py)
 
 📌❗️ **Knowlodge Base**
@@ -23,6 +26,7 @@
 1. Text
 2. Entry
 3. Change Label text
+
 
 [open popup window](popup.py)
 

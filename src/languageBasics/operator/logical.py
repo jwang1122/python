@@ -30,7 +30,7 @@ print(c)
 
 # Lazy or non-strict evaluation
 x = True and "right"
-print(x)
+print("Line-33:",x)
 x = False and "left"
 print(x)
 a,b = 5,10
