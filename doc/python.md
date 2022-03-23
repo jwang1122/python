@@ -3,6 +3,7 @@
 [Markdown Shared Library](utilities.md)
 
 ## 18 modules
+[](https://www.youtube.com/watch?v=Vi9Y9AL13Rc)
 1. [requests](https://api.github.com/repos/psf/requests)
 2. [django](https://www.djangoproject.com/download/)
 ```dos
@@ -1324,7 +1325,9 @@ MONGO-->D-->C-->DOC & COL
 SQLite: Python built in SQL database.
 
 ## tkinter(windows based GUI)
-
+```dos
+pip install tk
+```
 [image converter, mp4>gif, png>ico](https://cloudconvert.com/)
 
 ❓What is tkinter?
