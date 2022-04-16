@@ -1,6 +1,8 @@
 """
 Other than Python language intrisic data type,
 python also built in a lot of other data type, such as datetime
+
+https://docs.python.org/3/library/datetime.html
 """
 import datetime
 """
@@ -21,3 +23,13 @@ print(type(a)) # both datetime.date and int are Python class, there is no differ
 print(birthday.day)
 print(birthday.month)
 print(birthday.year)
+
+today = datetime.date.today()
+print(today)
+
+# math
+age = today.year - birthday.year
+print(age)
+
+diff = today-birthday
+print(diff.days/365)

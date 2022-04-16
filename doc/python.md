@@ -2,26 +2,29 @@
 
 [Markdown Shared Library](utilities.md)
 
-## 18 modules
-[](https://www.youtube.com/watch?v=Vi9Y9AL13Rc)
-1. [requests](https://api.github.com/repos/psf/requests)
-2. [django](https://www.djangoproject.com/download/)
-```dos
-pip install django==4.0
-```
 
-- [18 modules](#18-modules)
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
   - [My First python program](#my-first-python-program)
   - [print](#print)
   - [comment](#comment)
   - [Variabls](#variabls)
+  - [Python Playground](#python-playground)
   - [Variable and memory](#variable-and-memory)
+  - [Ways to Learn](#ways-to-learn)
+- [Language Basics](#language-basics)
 - [Data Type](#data-type)
+  - [Numbers](#numbers)
+  - [String](#string)
+  - [Tuple](#tuple)
+  - [List](#list)
+  - [Set](#set)
+  - [Dictionary](#dictionary)
+  - [date/time](#datetime)
 - [Operator](#operator)
 - [Execution Control](#execution-control)
 - [Loop](#loop)
+- [How to write Python?](#how-to-write-python)
 - [Function](#function)
   - [define function in function](#define-function-in-function)
   - [return function from function](#return-function-from-function)
@@ -60,6 +63,7 @@ pip install django==4.0
 - [pandas](#pandas)
 - [Data Analysis for Excel Users](#data-analysis-for-excel-users)
 - [Plot](#plot)
+- [Pandas](#pandas-1)
 - [Clean Code](#clean-code)
   - [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
@@ -114,8 +118,12 @@ pip install django==4.0
   - [Either](#either)
 - [Design pattern](#design-pattern)
   - [Reactivex design pattern](#reactivex-design-pattern)
+- [18 modules](#18-modules)
+  - [web development](#web-development)
+  - [Data Science](#data-science)
 
 ## Getting Start
+
 ### getting formiliar your keyboard
 [Keyboard](keyboard.md)
 
@@ -123,6 +131,10 @@ pip install django==4.0
 [hello world](../src/languageBasics/hello.py)
 [line plot](../src/plot/plot0.py)
 [x,y plot](../src/plot/plot01.py)
+
+❓ What is Python?
+> Python is computer programming language.
+✔️ Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. 
 
 ### print
 [print](../src/languageBasics/print.py)
@@ -151,18 +163,48 @@ name = "John"
 ```
 
 ❓ Why we use variables?
-✔️ 
+✔️ I want use same value on many place, so that I can only change one place for all usage of the variable.
+
 
 * Variable Naming Rules
 1. variable name cannot start with number
 2. variable can be combination of letters and numbers _, a~z, A~Z, 0~9, no other special characters
 3. don't use reserved keywords as variable name
+
 ![](images/python-keywords.png)
 
 [Python Keywords](https://realpython.com/python-keywords/#:~:text=%20Python%20Keywords%20and%20Their%20Usage%20%201,are%20used%20for%20control%20flow%3A%20if%2C...%20More%20)
 
 4. Avoid using existing function name as your variable name.
 otherwise, your python builtins functions no longer works the way you expected.
+
+```
+>>> dir(__builtins__)
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 
+'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
+```
+### Python Playground
+❓ How do I get into python playground?
+✔️ type in **python** in command prompt shown below:
+```DOS
+C:\Users\12818\workspace\2021fall\python>python
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+dunder: double underscore (hold shift + -)
+```
+>>> dir(__builtins__)
+```
+1. can execute any python code, it is good for your code testing.
+2. execute multiple line of code.
+3. to find document for all imported modules, and builtin functions.
+
+![](images/chineseMedicine.jpg)
+
+![](images/memory.gif)
+
+> you can define more than one variable to point to same memory location.
 
 ### Variable and memory
 ![](images/chineseMedicine.jpg)
@@ -172,38 +214,91 @@ otherwise, your python builtins functions no longer works the way you expected.
 [variable-02](../homeworks/basics/print/variable02.md)
 [variable-03](../homeworks/basics/print/variable03.md)
 
+### Ways to Learn
+1. learn from teacher;
+2. learn from coding, practice;
+3. learn from python document (help on playground)
+4. learn from mistakes (your own, others)
+5. document (take good note for everything we learn)
 
+## Language Basics
+
+```mermaid
+graph TB
+
+A(Languabe Basics<br>Any Languages)
+B[Data Type]
+C[Operator]
+D[Execution Control]
+E[Loop]
+
+A --> B & C & D & E
+
+classDef start fill:#F24EE3,stroke:black,stroke-width:2px,color:white;
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+
+class A start
+class B,C,D,E if
+```
 ![](images/LanguageBasics.svg)
 
 
 ## Data Type
+
+❓ What is data type in Python?
+✔️ 1. built ins; 2. developer defined;
+* built in data type:
 ![](images/DataType.png)
 
-* [Numbers](../src/languageBasics/number.py)
+### [Numbers](../src/languageBasics/number.py)
+❓ What is number in python?
+✔️ Python supports integers, floating-point numbers and complex numbers. They are defined as int, float, and complex classes in Python.
+
+📌❗️ **Knowlodge Base**
+> python is smart enough so that you don't need difine a variable type, based on the type of value you assigned to the variable, the variable will be that data type.
+
     - int: a=4
     - float: a=3.4
     - complex: c=4-3j
   - Homeworks
     [number-01](../homeworks/basics/datatype/number01.md)
-* [String](../src/languageBasics/string.py)
+### [String](../src/languageBasics/string.py)
+❓ What is a str?
+✔️ str variable is group of letters surounded by ' ', " ", ''' ''', """ """.   
+    - s = 'hello'
+    - single ' double " are no difference, but must to be pair.
+    - ""; """ [put your text here] """; ''; ''' [your text here] '''
     - string is iterable
     - string slicing: [[start]:[end]:[step]]
     - String operator +, *
     - as function str(object)
     - string functions (isalnum(), isdigit(), strip(), split(), lower(), upper(), startswith(), endswith(), ...)
-    - 
+    - use built-in functions: len(), sorted(), reversed()
+  
   - Homeworks
     [string-01](../homeworks/string/string01.md)
     [string-02](../homeworks/string/string02.md)
     [string-03](../homeworks/string/string03.md)
-* [Tuple](../src/languageBasics/tuple.py)
-    - tuple is iterable
-    - tuple is immutable
-    - tuple slicing: tuple1[[start]:[end]:[step]]
-    - tupler operator +, *
-    - as function: tuple(iterable)
-    - tuple functions ()
-* [List](../src/languageBasics/list.py)
+
+### [Tuple](../src/languageBasics/tuple.py)
+❓ What is a tuple?
+✔️ tuple is a set of object element, separate by comma, suround by (). it is immutable once you defind.
+  - (1.5,2,3,4,'hello')
+  - elements can have different data type in tuple
+  - we can use len() built in function to get total number of elements in the tuple
+  - tuple is iterable
+  - tuple is immutable
+  - tuple slicing: tuple1[[start]:[end]:[step]]
+  - tupler operator +, *
+  - as function: tuple(iterable)
+  - tuple() as functions () can be used as function to convert iterable object to tuple.
+
+### [List](../src/languageBasics/list.py)
+❓ What is a list in python?
+✔️ a **list** is a special data type in python. A List is an ordered collection of python objects that is iteralbe,mutable, separated by comma, surrounded by [].
+  - [2, 3, 'hello']
+  - elements can have different data type in tuple
+  - we can use len() built in function to get total number of elements in the list
     - list is iterable
     - list is mutable
     - list slicing: list1[[start]:[end]:[step]]
@@ -214,19 +309,51 @@ otherwise, your python builtins functions no longer works the way you expected.
   - Homeworks
     [list-01](../homeworks/basics/datatype/list01.md)
     [list-02](../homeworks/basics/datatype/list02.md)
-* [Set](../src/languageBasics/set.py)
+
+### [Set](../src/languageBasics/set.py)
+❓ What is set in Python?
+✔️ A Set is an unordered collection pyhton objects that is iterable,
+mutable, and separated by comma, surrounded by {}, has no duplicated elements.
+
+  - {1,2,3}, set(), set(range(5)), set("hello")
+  - elements can have different data type in set
     - set is iterable
     - set is mutable
     - set operators: &, |, <, >, ==
     - modify set
     - as function: set(iterable)
     - set functions ()
-* [Dictionary](../src/languageBasics/dictionary.py)
-    - dict is iterable: only iterate key
-    - dict is mutable
-    - dict modify==>CRUD
 
-* [date/time](../src/languageBasics/datatype/datetime1.py)
+
+### [Dictionary](../src/languageBasics/dictionary.py)
+❓ what is a dictionary data type in Python?
+✔️ A dictionary consists of a collection of key-value pairs.
+It is unordered, iterable, mutable, and each pair separated by comma,
+surrounded by '{}', and no duplicated key. the key-value pair separated by ':'.
+
+  - {1:'Monday', 2:'Tuesday'}
+  - key-value pair can have different data type in dict
+  - dict is iterable: only iterate key
+  - dict cannot be slicing due to unordered key-value pair
+  - dict operators: **, ==
+  - dict is mutable: add, update, delete key-value pair
+  - functions in dict: get(), items(), values(), pop(), ..
+  - dict() can be used as function to convert iterable object to dict (need to be key-value pair).
+  - dict modify==>CRUD
+
+### [date/time](../src/languageBasics/datatype/datetime1.py)
+[Get time interval](../src/languageBasics/datatype/datetime2.py)
+[Date time convertion](../src/languageBasics/datatype/datetime3.py)
+[Date time detail](../src/languageBasics/datatype/datetime4.py)
+
+📌❗️ **Knowlodge Base**
+> the variable value can be reassigned to other data type. Once it is reassigned, the data type changes.
+```py
+i = 5
+i = 'hello'
+i = [1,2,3,4]
+```
+
 ## Operator 
 * [operator](../src/languageBasics/operator.py)
 * Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
@@ -278,7 +405,7 @@ else:
 ```mermaid
 graph TB
 A((start))
-B{if <condition>:}
+B{"if &lt;condition&gt;:"}
 C[if code block]
 D[else code block]
 E[end]
@@ -289,8 +416,8 @@ B--True-->C-->E
 B--False-->D-->E
 
 A1((start))
-B1{if <condition>:}
-B2{elif <condition>:}
+B1{"if &lt;condition&gt;:"}
+B2{"elif &lt;condition&gt;:"}
 C1[if code block]
 D1[elif code block]
 E1[end]
@@ -327,7 +454,7 @@ class E,E1 end1
 ```mermaid
 graph TB
 
-A([Loop])
+A([for-Loop])
 B{loop<br>condition<br>i<=10}
 C[code block 1<br>line-51]
 D{break<br>condition<br>line-52}
@@ -354,7 +481,7 @@ class A start
 ```mermaid
 graph TB
 
-A([Loop])
+A([for-Loop])
 B{loop<br>condition<br>i<=10}
 C[code block 1<br>line-41]
 D{continue<br>condition<br>line-42}
@@ -374,7 +501,6 @@ classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
 class B,D if
 class E end1
 class A start
-
 ```
 
 * [while.py](../src/languageBasics/loop/while.py)
@@ -388,6 +514,10 @@ class A start
   - [loop-04](../homeworks/basics/loop/loop04.md)
   - [loop-05](../homeworks/basics/loop/loop05.md)
 
+📌❗️ **Knowlodge Base**
+> Always adjust the condition variable toward making loop failed.
+
+## How to write Python?
 ```mermaid
 graph TB
 
@@ -1159,6 +1289,7 @@ $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}
 * [simple curves](../src/datavisualization/dataanalysis01.py)
 * [Covid-19](../src/datavisualization/dataanalysis02.py)
 * [Create a instance of DataFrame](../src/pandas/pandas01.py)
+* 
 ## Data Analysis for Excel Users
 * [Anaconda3](https://repo.anaconda.com/archive/) 
   File: Anaconda3-5.3.0-Windows-x86_64.exe
@@ -1192,7 +1323,21 @@ $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}
 * [generate animated sine wave](../src/plot/movingSinWave.py)
 * [3D animation generator](../src/plot/3dAnimation.py)
 
-[padans DataFrame](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+## Pandas
+[padans chart visualization](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+
+[pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
+
+[create a DataFrame](../src/pandas/pandas01.py)
+1. use dict to create a DataFrame, key is column name, value is list
+2. use array to create a DataFrame
+3. use dataclass to create a DataFrame
+4. use df.at(row, column) to get individual value of DataFrame
+5. use df.info() to get definition detail of a DataFrame
+6. use df.values to get all values
+7. use df.axes to get all columns
+
+
 
 ## Clean Code
 [Clean code](Clean-Code.pdf")
@@ -1950,3 +2095,32 @@ where RxPY offers operators such as
 
 ❓ Disadvantage of using RxPY
 ✔️ Debugging the code with observables is a little difficult.
+
+## 18 modules
+[](https://www.youtube.com/watch?v=Vi9Y9AL13Rc)
+### web development
+1. [requests](https://api.github.com/repos/psf/requests)
+2. [flask]
+3. [django](https://www.djangoproject.com/download/)
+
+```dos
+pip install django==4.0
+```
+1. [twisted](realtime game)
+2. [BeautifulSoup]
+3. [selenium]()
+
+### Data Science
+7. [numpy](faster) [YouTube](https://www.youtube.com/watch?v=QUT1VHiLmmI)
+8. [pandas](great for reading data) [YouTube](https://www.youtube.com/watch?v=vmEHCJofslg)
+9. [matpotlib](data visualization)[Matplotlib Tutorial (Part 1)](https://www.youtube.com/watch?v=UO98lJQ3QGI&list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_)
+10. [nltk](natural link tool kit)
+11. [opencv](image data)
+12. [tensorflow]
+13. [keras]
+14. [pytouch]
+15. [scikit]
+16. [kivy](platform independent app)
+17. [pyqt5]
+18. [tkinter]
+19. [pygame]
