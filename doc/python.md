@@ -14,12 +14,12 @@
   - [Ways to Learn](#ways-to-learn)
 - [Language Basics](#language-basics)
 - [Data Type](#data-type)
-  - [Numbers](#numbers)
-  - [String](#string)
-  - [Tuple](#tuple)
-  - [List](#list)
-  - [Set](#set)
-  - [Dictionary](#dictionary)
+  - [number](#number)
+  - [string](#string)
+  - [tuple](#tuple)
+  - [list](#list)
+  - [set](#set)
+  - [dict](#dict)
   - [date/time](#datetime)
 - [Operator](#operator)
 - [Execution Control](#execution-control)
@@ -93,6 +93,7 @@
   - [Web Service API](#web-service-api)
   - [practices](#practices)
   - [Application](#application)
+- [Application Development Process](#application-development-process)
 - [PyInstaller](#pyinstaller)
 - [Data Structure](#data-structure)
   - [stack](#stack)
@@ -121,6 +122,8 @@
 - [18 modules](#18-modules)
   - [web development](#web-development)
   - [Data Science](#data-science)
+- [GUI Window Application](#gui-window-application)
+- [Game](#game)
 
 ## Getting Start
 
@@ -250,7 +253,8 @@ class B,C,D,E if
 * built in data type:
 ![](images/DataType.png)
 
-### [Numbers](../src/languageBasics/number.py)
+### number 
+[Numbers: int, float, complex](../src/languageBasics/number.py)
 ❓ What is number in python?
 ✔️ Python supports integers, floating-point numbers and complex numbers. They are defined as int, float, and complex classes in Python.
 
@@ -262,7 +266,10 @@ class B,C,D,E if
     - complex: c=4-3j
   - Homeworks
     [number-01](../homeworks/basics/datatype/number01.md)
-### [String](../src/languageBasics/string.py)
+
+### string 
+* [String](../src/languageBasics/string.py)
+
 ❓ What is a str?
 ✔️ str variable is group of letters surounded by ' ', " ", ''' ''', """ """.   
     - s = 'hello'
@@ -280,7 +287,8 @@ class B,C,D,E if
     [string-02](../homeworks/string/string02.md)
     [string-03](../homeworks/string/string03.md)
 
-### [Tuple](../src/languageBasics/tuple.py)
+### tuple 
+[Tuple](../src/languageBasics/tuple.py)
 ❓ What is a tuple?
 ✔️ tuple is a set of object element, separate by comma, suround by (). it is immutable once you defind.
   - (1.5,2,3,4,'hello')
@@ -293,7 +301,8 @@ class B,C,D,E if
   - as function: tuple(iterable)
   - tuple() as functions () can be used as function to convert iterable object to tuple.
 
-### [List](../src/languageBasics/list.py)
+### list 
+[List](../src/languageBasics/list.py)
 ❓ What is a list in python?
 ✔️ a **list** is a special data type in python. A List is an ordered collection of python objects that is iteralbe,mutable, separated by comma, surrounded by [].
   - [2, 3, 'hello']
@@ -310,7 +319,8 @@ class B,C,D,E if
     [list-01](../homeworks/basics/datatype/list01.md)
     [list-02](../homeworks/basics/datatype/list02.md)
 
-### [Set](../src/languageBasics/set.py)
+### set 
+[Set](../src/languageBasics/set.py)
 ❓ What is set in Python?
 ✔️ A Set is an unordered collection pyhton objects that is iterable,
 mutable, and separated by comma, surrounded by {}, has no duplicated elements.
@@ -325,7 +335,8 @@ mutable, and separated by comma, surrounded by {}, has no duplicated elements.
     - set functions ()
 
 
-### [Dictionary](../src/languageBasics/dictionary.py)
+### dict 
+[Dictionary](../src/languageBasics/dictionary.py)
 ❓ what is a dictionary data type in Python?
 ✔️ A dictionary consists of a collection of key-value pairs.
 It is unordered, iterable, mutable, and each pair separated by comma,
@@ -341,7 +352,8 @@ surrounded by '{}', and no duplicated key. the key-value pair separated by ':'.
   - dict() can be used as function to convert iterable object to dict (need to be key-value pair).
   - dict modify==>CRUD
 
-### [date/time](../src/languageBasics/datatype/datetime1.py)
+### date/time 
+[date/time](../src/languageBasics/datatype/datetime1.py)
 [Get time interval](../src/languageBasics/datatype/datetime2.py)
 [Date time convertion](../src/languageBasics/datatype/datetime3.py)
 [Date time detail](../src/languageBasics/datatype/datetime4.py)
@@ -655,7 +667,7 @@ The difference between raise and assert:
 
 👍Find out calling error before runtime.
 
-* [❓what's wrongh?](../src/function/circle1.py)
+* [❓what's wrong?](../src/function/circle1.py)
 
 ```DOS
 mypy <filename.py>
@@ -699,7 +711,6 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 class A start
 class C,E,F,D,J,GIT block1
 ```
-
 
 ### recursive function
 A function is recursive if it calls itself.
@@ -1635,6 +1646,8 @@ API Key: 84B7917D-C980-407F-ACBC-B29E3D2E4458
 * [Sticker](../src/tkinter/sticker.py)
 * [Blackjack](../src/tkinter/blackjack.py)
 
+## Application Development Process
+
 ## PyInstaller
 [Tkinter to Exe]()
 ```DOS
@@ -2121,6 +2134,10 @@ pip install django==4.0
 14. [pytouch]
 15. [scikit]
 16. [kivy](platform independent app)
+
+## GUI Window Application
 17. [pyqt5]
 18. [tkinter]
+
+## Game
 19. [pygame]

@@ -4,6 +4,8 @@
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
+- [Virtual Environment](#virtual-environment)
+- [Install PIL](#install-pil)
 - [Disable Editor minimap](#disable-editor-minimap)
 - [Define Key-shortcut for clear terminal](#define-key-shortcut-for-clear-terminal)
 - [Move Terminal window to right](#move-terminal-window-to-right)
@@ -16,6 +18,21 @@
 - [Create Virtual Environment](#create-virtual-environment)
 - [Check in GitHub](#check-in-github)
 - [Increase/decrease window characters](#increasedecrease-window-characters)
+
+## Virtual Environment
+
+```
+python -m venv env
+1. Command Palette... ➡️ Select Interpreter ➡️ Find ➡️ env/Script/python.exe
+2. close terminal, reopen it
+```
+👎😢 there is no indicator on bottom bar; there is no (env) in front of command prompt❗️
+👍😄 close the VS code, reopen it.
+
+## Install PIL
+```dos
+pip install pillow
+```
 
 ## Disable Editor minimap
 

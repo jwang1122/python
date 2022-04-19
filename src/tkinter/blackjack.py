@@ -154,14 +154,15 @@ class Blackjack(TkinterBase):
         self.addBtn.place(x=10, y=20)
         self.collectBtn = tk.Button(self.root, text="Collect", command=self.winner)
         self.collectBtn.place(x=10, y=80)
-        tk.Label(self.root, text="Game result").place(x=900, y=10)
-        tk.Label(self.root, text="Dealer win count: ").place(x=900, y=40)
+        tk.Label(self.root, text="Game result", bg=self.bg).place(x=900, y=10)
+        tk.Label(self.root, text="Dealer win count: ", bg=self.bg).place(x=900, y=40)
         self.defaultPlayerList()
         self.initPlayers()
         
     def winner(self):
         dealerTotal = self.dealer.getHandValue()
-        for player in self.playerList:
+        for i in range(len(self.playerList)-1):
+            player = self.playerList[i]
             playerTotal = player.getHandValue()
             if playerTotal>21:
                 self.dealer.win()
@@ -174,19 +175,22 @@ class Blackjack(TkinterBase):
             else:
                 self.dealer.win()
             player.clearHand()
+        self.dealer.clearHand()
         self.displayResult()
         self.dealBtn['state']="normal"
         self.collectBtn['state']='disabled'
 
     def displayResult(self):
-        tk.Label(self.root, text=str(self.dealer.winCount)).place(x=1020, y=40)
+        tk.Label(self.root, text=str(self.dealer.winCount), bg=self.bg).place(x=1020, y=40)
         for index in range(3):
             player = self.playerList[index]
-            tk.Label(self.root, text=str(player.winCount)).place(x=1020, y=70+index*30)
+            tk.Label(self.root, text=str(player.winCount), bg=self.bg).place(x=1020, y=70+index*30)
 
     def init(self):
         self.root.title("Blackjack Card Game")
+        self.bg = '#00FFFF'
         self.root.geometry('1240x768')
+        self.root.configure(bg=self.bg)
         self.playerList = []
         self.playerIndex = 0
         self.dealer = Dealer()
@@ -199,9 +203,9 @@ class Blackjack(TkinterBase):
         self.playerList.append(self.dealer)
         self.addBtn['state']='disabled'
         self.collectBtn['state']='disabled'
-        tk.Label(self.root, text='John win count: ').place(x=900, y=70)
-        tk.Label(self.root, text='Rodney win count: ').place(x=900, y=100)
-        tk.Label(self.root, text='Charles win count: ').place(x=900, y=130)
+        tk.Label(self.root, text='John win count: ', bg=self.bg).place(x=900, y=70)
+        tk.Label(self.root, text='Rodney win count: ', bg=self.bg).place(x=900, y=100)
+        tk.Label(self.root, text='Charles win count: ', bg=self.bg).place(x=900, y=130)
         
 
     def deal(self):
@@ -225,7 +229,7 @@ class Blackjack(TkinterBase):
 
     def initPlayers(self):
         for player in self.playerList:
-            tk.Label(self.root, text=player.name).place(x=player.cardX-30, y=player.cardY)
+            tk.Label(self.root, text=player.name, bg=self.bg).place(x=player.cardX-30, y=player.cardY)
         player = self.playerList[0]
         hitBtn=tk.Button(self.root, text='Hit', command=lambda: self.hit(0))
         hitBtn.place(x=player.cardX-30, y=player.cardY+30)

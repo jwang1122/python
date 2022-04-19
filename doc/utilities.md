@@ -1,19 +1,33 @@
+<h1>Markdown Document Utilities</h1>
+
+## references
+* [Color Picker](https://www.webfx.com/web-design/color-picker/)
+* [favorite icon website](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
 ## Useful Icons
 
 ❓✔️ 📌❗️ 👍😄 👎😱 👎😢❌✔️ 💡👉 🔔⚡️ 🔒🔑🔥⚡️ ☝️👌
-✏️📄✂️♻️
+✏️📄✂️♻️ ➡️
 📝🔍🔨☝️😢👇👈👉👍👎👌👊⭐️👎😢🌎💾🗑🐛📒⚠️📐🛠🎯✉️☎️
 
 :hammer:
 :department_store:
 
+- [references](#references)
+- [Useful Icons](#useful-icons)
+- [Change image size](#change-image-size)
+- [Notations](#notations)
+- [Fast way to learn something new:](#fast-way-to-learn-something-new)
+- [math symbols](#math-symbols)
+- [Sample File Structure:](#sample-file-structure)
+- [Sample Mermaid Graph Diagram](#sample-mermaid-graph-diagram)
+- [Simple Mermaid Relational Diagram](#simple-mermaid-relational-diagram)
+- [Simple Mermaid Class Diagram](#simple-mermaid-class-diagram)
+
+
 ## Change image size
 <img src="images/bug.png" width="32"/><img src="images/waiting.gif" width="32">
 [](images/bug.png) [](images/waiting.gif)
-
-## references
-* [Color Picker](https://www.webfx.com/web-design/color-picker/)
-* [favorite icon website](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 ## Notations
 📝 **Source Code**
@@ -29,6 +43,30 @@
   3. repeat;
   4. take good note for future review;
   5. teach someone else.
+
+## math symbols
+|operator | LaTex Symbols |
+|---------|---------------|
+× | times
+÷ | div
+± | pm
+° | degree
+∞ | infty
+ϕ | phi
+Φ | Phi
+θ | theta
+α | alpha
+β | beta
+γ | gamma
+δ | delta
+μ | mu
+π | pi
+λ | lambda
+ω | omega
+⇒ | Rightarrow
+⟹| Longrightarrow
+⇓ | Downarrow
+
 
 ## Sample File Structure:
 
