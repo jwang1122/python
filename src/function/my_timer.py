@@ -22,8 +22,10 @@ def display_info(name, age):
 def anotherFunction(todo):
     time.sleep(3)
     print(f"24: anotherFunction()... run with arguments: ({todo})")
+    return 100
 
 if __name__ == '__main__':
     display_info("John", 23)
 
-    anotherFunction("Let's go shopping.")
+    x = anotherFunction("Let's go shopping.")
+    print(x)

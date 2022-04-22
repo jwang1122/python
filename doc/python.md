@@ -25,11 +25,13 @@
 - [Execution Control](#execution-control)
 - [Loop](#loop)
 - [How to write Python?](#how-to-write-python)
+- [direct python code](#direct-python-code)
 - [Function](#function)
   - [define function in function](#define-function-in-function)
   - [return function from function](#return-function-from-function)
   - [pass function as argument](#pass-function-as-argument)
   - [global variable](#global-variable)
+  - [useful functions](#useful-functions)
   - [raise Error and Try-Except](#raise-error-and-try-except)
   - [function annotation](#function-annotation)
   - [recursive function](#recursive-function)
@@ -550,6 +552,12 @@ classDef start fill:#53DE1F,stroke:#267608,stroke-width:2px;
 class START start
 class A,C,D html
 ```
+## direct python code
+* [guess number game](../src/languageBasics/guessNumber.py)
+* [roll two Dices](../src/languageBasics/rollDice1.py)
+* [Probability of rolling dices](../src/languageBasics/rollDice2.py)
+* [small dice game](../src/languageBasics/rollDice3.py)
+
 ## Function
 ❓What is function?
 >✔️A block of code defined by name and arguments, can be used by calling the name many times repeatedly. In Python, functions are first-class citizens. That means functions have the same characteristics as values like other data type such as strings and numbers. Anything you would expect to be able to do with a string or number you can do with a function as well.
@@ -612,6 +620,25 @@ Circle area formula: $ A=\pi r^2 $
 3. We use global keyword to read and write a global variable inside a function.
 4. Use of global keyword outside a function has no effect.
 5. It is not necessary to declare global variable outside function
+
+### useful functions
+* [Circle](../src/../circle.py)
+* [check an number for Prime](../src/prime/prime1.py)
+* [better implementation](../src/prime/prime2.py)
+* [def isPrime() return True or False](../src/prime/prime3.py)
+* [](../src/prime/prime4.py)
+* [def rangePrime()](../src/prime/prime6.py)
+* [use my_timer() check which function run faster](../src/prime/prime7.py)
+> the greatest common divisor (GCD) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers.
+* [Greatest common divisor](../src/gcd.py)
+* [recursive GCD](../src/recursiveGCD.py)
+>the least common multiple, lowest common multiple, or smallest common multiple of two integers a and b,  is the smallest positive integer that is divisible by both a and b.
+* [LCM least common multiple](../src/lcm.py)
+
+$$ lcm(a,b) = \frac {|ab|} {gcd(a,b)}$$
+
+* [use above formula](../src/lcm1.py)
+
 
 
 ### raise Error and Try-Except
@@ -744,6 +771,10 @@ $$ f(n) = n! = n (n-1) (n-2)\cdots1$$
   ```
 ### function decorator
 * [my_timer.py](../src/function/my_timer.py)
+* [make simple job complecated](../src/function/myTimer1.py)
+* [add timer](../src/function/myTimer2.py)
+* [add decorator](../src/function/myTimer3.py)
+* [add user check on function](../src/function/security.py)
 
 ## Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.

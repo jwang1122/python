@@ -4,7 +4,6 @@ Good final example how to use timer decorator
 import time
 
 def my_timer(original):
-    print(original.__name__)
     def wrapper(*args, **kwargs):
         t1 = time.time()
         result = original(*args, **kwargs)
@@ -23,7 +22,7 @@ def anotherFunction(todo):
     time.sleep(3)
     print(f"24: anotherFunction()... run with arguments: ({todo})")
 
-# if __name__ == '__main__':
-#     display_info("John", 23)
+if __name__ == '__main__':
+    display_info("John", 23)
 
-#     anotherFunction("Let's go shopping.")
+    anotherFunction("Let's go shopping.")

@@ -34,9 +34,9 @@ def prime(x):
     return flag and x != 1
 
 @my_timer
-def countPrime():
+def countPrime(n):
     count = 0
-    for n in range(2,100000):
+    for n in range(2,n):
         # if(is_prime(n)):
         if(prime(n)):
         # if(isPrime(n)):
@@ -72,5 +72,5 @@ def SieveOfEratosthenes(n):
             c += 1
     return c 
 
-# print("Total count ", countPrime())
-print(f"Total count of Prime in 100000 is {SieveOfEratosthenes(100000)}")
+print("Total count ", countPrime(100000))
+# print(f"Total count of Prime in 100000 is {SieveOfEratosthenes(100000)}")
