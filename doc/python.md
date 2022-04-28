@@ -30,12 +30,14 @@
   - [define function in function](#define-function-in-function)
   - [return function from function](#return-function-from-function)
   - [pass function as argument](#pass-function-as-argument)
-  - [global variable](#global-variable)
-  - [useful functions](#useful-functions)
-  - [raise Error and Try-Except](#raise-error-and-try-except)
-  - [function annotation](#function-annotation)
-  - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
+  - [global variable](#global-variable)
+  - [recursive function](#recursive-function)
+  - [useful functions](#useful-functions)
+  - [assert error check](#assert-error-check)
+  - [Raise Except](#raise-except)
+  - [catch Except avoid termination](#catch-except-avoid-termination)
+  - [function annotation](#function-annotation)
 - [Unit Test](#unit-test)
 - [Logging](#logging)
 - [algorithms](#algorithms)
@@ -611,9 +613,18 @@ Circle area formula: $ A=\pi r^2 $
 * [passFuncAsArg.py](../src/function/passFuncAsArg.py)
 * 👍[function as dictionary value](../src/function/dictFunction.py)
 
+
+### function decorator
+* [my_timer.py](../src/function/my_timer.py)
+* [make simple job complecated](../src/function/myTimer1.py)
+* [add timer](../src/function/myTimer2.py)
+* [add decorator](../src/function/myTimer3.py)
+* [add user check on function](../src/function/security.py)
+
 ### global variable
 ❓ What is global variable?
 >✔️global keyword allows you to modify the variable outside of the current scope. It is used to create a global variable and make changes to the variable in a local context.
+
 [use global variable](../src/function/globalVariable.py)
 1. When we create a variable inside a function, it is local by default.
 2. When we define a variable outside of a function, it is global by default. You don't have to use global keyword.
@@ -621,8 +632,58 @@ Circle area formula: $ A=\pi r^2 $
 4. Use of global keyword outside a function has no effect.
 5. It is not necessary to declare global variable outside function
 
+### recursive function
+A function is recursive if it calls itself.
+  1. termination condition.
+  2. adjust status for each call.
+  3. Python stops the cunction calls after a depth of 1000 calls.
+* [factoria.py](../src/function/factorial.py)
+$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
+![](aDoc/images/recursiveFactorial.jfif)
+* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
+
+* Understand recursive find.
+  ```mermaid
+  graph TB
+  START((find answer))
+  END[end]
+  B[add 10 to<br>the answer of<br>problem 52]
+  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
+  D[Problem 85:<br>10]
+  
+  START-->B-->C-->D
+  D--10+12-->C--22+10-->B--32-->END
+
+  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
+  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
+  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
+  class START start
+  class B,C,D html
+  class END end1
+  ```
+
 ### useful functions
-* [Circle](../src/../circle.py)
+![](images/circleParts.png)
+
+$$ d = 2 \cdot r $$
+$$ c = d \cdot \pi = 2 \cdot r \cdot \pi$$
+$$ a = \pi r^2 $$
+where r, d, c, a are radius, diameter, circumference and area respectively.
+
+* [Circle](../src/function/circle.py)
+
+![](images/sphere.webp)
+
+* [Sphere volume and surface area](../src/function/sphere.py)
+
+![](images/triangleArea.png)
+
+$$ a = \frac 1 2 b \cdot h $$
+where a, b, h are area, base and height respectively.
+
+* [triangle area](../src/function/triangle.py)
+* 
 * [check an number for Prime](../src/prime/prime1.py)
 * [better implementation](../src/prime/prime2.py)
 * [def isPrime() return True or False](../src/prime/prime3.py)
@@ -630,6 +691,12 @@ Circle area formula: $ A=\pi r^2 $
 * [def rangePrime()](../src/prime/prime6.py)
 * [use my_timer() check which function run faster](../src/prime/prime7.py)
 > the greatest common divisor (GCD) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers.
+
+$$n!=n (n-1) (n-2) ... 1$$
+$$ 4!=4 \cdot 3 \cdot 2 \cdot 1 = 24$$
+$$ 6!=6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 720$$
+
+* [factorial](../src/function/factorial.py)
 * [Greatest common divisor](../src/gcd.py)
 * [recursive GCD](../src/recursiveGCD.py)
 >the least common multiple, lowest common multiple, or smallest common multiple of two integers a and b,  is the smallest positive integer that is divisible by both a and b.
@@ -639,9 +706,7 @@ $$ lcm(a,b) = \frac {|ab|} {gcd(a,b)}$$
 
 * [use above formula](../src/lcm1.py)
 
-
-
-### raise Error and Try-Except
+### assert error check
 * [❓what's wrongh?](../src/function/circle1.py)
 * [✔️Assert check before calculation](../src/function/assert.py)
 
@@ -672,10 +737,13 @@ class C,D html
 class B if
 class END end1
 ```
+### Raise Except
 
 * [✋Raise TypeError](../src/function/raiseError.py)
 * [assert](../src/function/assertCheck.py)
-  
+* [](../src/function/circle1.py)
+* [](../src/function/circle3.py)
+
 The difference between raise and assert:
 1. assert: I swear this must be true, in case it happens, let me know. ❌❗️You have big problem! Debug aid for developer find root cause, not for handling run-time error. only give you one kind of error which is AssertionError.
 >💡[I swear int('1')==1](../src/function/asInt.py)
@@ -688,6 +756,11 @@ The difference between raise and assert:
 * [👌👎catch Different Error](../src/function/tryexcept2.py)
 
 ✔️Better solution is solve the issue at compiling time.
+
+### catch Except avoid termination
+* [catch assert](../src/function/tryexcept1.py)
+* [catch raise](../src/function/tryexcept2.py)
+* [](../src/function/tryexcept3.py)
 
 ### function annotation
 👍Avoid unexpected function call with wrong data type arguments.
@@ -738,43 +811,6 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 class A start
 class C,E,F,D,J,GIT block1
 ```
-
-### recursive function
-A function is recursive if it calls itself.
-  1. termination condition.
-  2. adjust status for each call.
-  3. Python stops the cunction calls after a depth of 1000 calls.
-* [factoria.py](../src/function/factorial.py)
-$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
-![](aDoc/images/recursiveFactorial.jfif)
-* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
-
-* Understand recursive find.
-  ```mermaid
-  graph TB
-  START((find answer))
-  END[end]
-  B[add 10 to<br>the answer of<br>problem 52]
-  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
-  D[Problem 85:<br>10]
-  
-  START-->B-->C-->D
-  D--10+12-->C--22+10-->B--32-->END
-
-  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
-  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
-  class START start
-  class B,C,D html
-  class END end1
-  ```
-### function decorator
-* [my_timer.py](../src/function/my_timer.py)
-* [make simple job complecated](../src/function/myTimer1.py)
-* [add timer](../src/function/myTimer2.py)
-* [add decorator](../src/function/myTimer3.py)
-* [add user check on function](../src/function/security.py)
 
 ## Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
@@ -2114,31 +2150,31 @@ where RxPY offers operators such as
 ✔️ Data Stream
 
 ❓ What is Observer?
-✔️ It is an object with on_next(), on_error() and on_completed() methods, that will get called when there is interaction with the observable i.e. the source interacts for an example incoming Tweets, etc.
+> ✔️ It is an object with on_next(), on_error() and on_completed() methods, that will get called when there is interaction with the observable i.e. the source interacts for an example incoming Tweets, etc.
 ✔️ Who process Data Stream
 
 ❓ What is Subscription?
-✔️ When the observable is created, to execute the observable we need to subscribe to it.
+> ✔️ When the observable is created, to execute the observable we need to subscribe to it.
 ✔️ trigger above process
 
 ❓ What are Operators?
-✔️ An operator is a pure function that takes in observable as input and the output is also an observable. You can use multiple operators on an observable data by using the pipe operator.
+> ✔️ An operator is a pure function that takes in observable as input and the output is also an observable. You can use multiple operators on an observable data by using the pipe operator.
 
 ❓ What is Subject?
-✔️ A subject is an observable sequence as well as an observer that can multicast, i.e. talk to many observers that have subscribed. The subject is a cold observable, i.e. the values will be shared between the observers that have been subscribed.
+> ✔️ A subject is an observable sequence as well as an observer that can multicast, i.e. talk to many observers that have subscribed. The subject is a cold observable, i.e. the values will be shared between the observers that have been subscribed.
 
 ❓ What is Subscription?
-✔️ When the observable is created, to execute the observable we need to subscribe to it.
+> ✔️ When the observable is created, to execute the observable we need to subscribe to it.
 
 ❓ Advantages of using RxPy?
-✔️the following
-* RxPY is an awesome library when it comes to the handling of async data streams and events. RxPY uses observables to work with reactive programming that deals with asynchronous data calls, callbacks and event-based programs.
-* RxPY offers a huge collection of operators in mathematical, transformation, filtering, utility, conditional, error handling, join categories that makes life easy when used with reactive programming.
-* Concurrency i.e. working of multiple tasks together is achieved using schedulers in RxPY.
-* The performance is improved using RxPY as handling of async task and parallel processing is made easy.
+> ✔️the following
+> * RxPY is an awesome library when it comes to the handling of async data streams and events. RxPY uses observables to work with reactive programming that deals with asynchronous data calls, callbacks and event-based programs.
+> * RxPY offers a huge collection of operators in mathematical, transformation, filtering, utility, conditional, error handling, join categories that makes life easy when used with reactive programming.
+> * Concurrency i.e. working of multiple tasks together is achieved using schedulers in RxPY.
+> * The performance is improved using RxPY as handling of async task and parallel processing is made easy.
 
 ❓ Disadvantage of using RxPY
-✔️ Debugging the code with observables is a little difficult.
+> ✔️ Debugging the code with observables is a little difficult.
 
 ## 18 modules
 [](https://www.youtube.com/watch?v=Vi9Y9AL13Rc)
