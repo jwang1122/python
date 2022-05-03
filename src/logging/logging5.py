@@ -4,13 +4,13 @@ import time
 import os
 
 # read initial config file
-logging.config.fileConfig('./logging/logging.conf')
+logging.config.fileConfig('src/logging/logging.conf')
 
 # create and start listener on port 9999
 t = logging.config.listen(9999)
 t.start()
 
-logger = logging.getLogger('JOHN')
+logger = logging.getLogger(__name__)
 
 try:
     # loop through logging calls to see the difference

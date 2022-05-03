@@ -34,7 +34,7 @@
 ❌ **Mistake:**
 👌 **Reasong:**
 ✔️ **Solution:**
-📌❗️ **Knowlodge Base**
+🔑😄 **Knowlodge Base**
 👍😄 **Conclusion**
 
 ## Fast way to learn something new:

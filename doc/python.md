@@ -37,8 +37,11 @@
   - [assert error check](#assert-error-check)
   - [Raise Except](#raise-except)
   - [catch Except avoid termination](#catch-except-avoid-termination)
+  - [Create my own Error Type](#create-my-own-error-type)
   - [function annotation](#function-annotation)
 - [Unit Test](#unit-test)
+- [Physics Unit](#physics-unit)
+- [Regular Expression](#regular-expression)
 - [Logging](#logging)
 - [algorithms](#algorithms)
 - [Class](#class)
@@ -762,6 +765,17 @@ The difference between raise and assert:
 * [catch raise](../src/function/tryexcept2.py)
 * [](../src/function/tryexcept3.py)
 
+### Create my own Error Type
+
+> 1. look for the error type you may need;
+```dos
+>>> dir (__builtins__)
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 
+'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EncodingWarning', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError',
+```
+> 2. create your own error type
+* [create application specific Error](../src/function/myerrortype.py) 
+
 ### function annotation
 👍Avoid unexpected function call with wrong data type arguments.
 
@@ -889,12 +903,61 @@ C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
 
 [unit test for circleArea](../test/test_circleArea.py)
 
+## Physics Unit
+* [physics unit](../src/physics.py)
+
+```mermaid
+classDiagram
+
+class Quantity{
+  vale:[float, int]
+  symble: str
+
+  covert(symble)
+}
+```
+
+
+## Regular Expression
+[](https://www.w3schools.com/python/python_regex.asp)
+
+* search() function
+  
+```py
+import re
+```
+[start with, end with](../src/regularex/regularexp1.py)
+> ^: start with
+> ...$: end with
+> *: Zero or more occurrences
+
+![](images/matchCharacters.png)
+
 ## Logging
 ❓What is logging?
 ✔️write software execution record to console, file or database used for application analysis.
 there are at least 5 level of logging: Debug, Info, Warning, Error, Fatal
 
 * [send log message to a file](../src/logging/logging1.py)
+* [use print do the logging](../src/logging/logging01.py)
+> nothing wrong with it, for small program it is fine. once the program getting bigger, this is no good. you start dealing with complecated problem, you need log level, log analysis, and more
+![](images/debug.png)
+![](images/info.png), 
+![](images/warning.png)
+![](images/error.jpg)
+![](images/critical.png)
+* [import logging](../src/logging/logging02.py)
+> get bunch of function right out of the box.
+🔑😄 **Knowlodge Base**
+> 1. default logging level is "warning"
+> 2. root is the default logger name
+
+* [write logging to a file](../src/logging/logging03.py)
+* [](../src/logging/logging3.py)
+* [use get logger](../src/logging/logging4.py)
+* [use config file](../src/logging/logging5.py)
+
+[Logging configuration](https://docs.python.org/3/library/logging.config.html#configuration-file-format)
 
 ## algorithms
 Big O
@@ -948,6 +1011,24 @@ class Robot {
 * [__init__(good enough) vs. __new__](../src/myclass/class09.py)
 * [❓override __new__, return other class instance](../src/myclass/class10.py)
 * [override __iter__, __next__, create iterable](../src/myclass/class15.py) 
+
+🔑😄 **Knowlodge Base**
+> 1. each iterable object implement __iter__()
+> 2. built-in function: iter() call __iter__()
+> 3. built-in function: next() call __next__()
+
+* [YouTube Itertools](https://www.youtube.com/watch?v=p8FUoSIyIVY)
+* [](https://www.geeksforgeeks.org/python-itertools/)
+* [👍😄 itertools Document](https://docs.python.org/3/library/itertools.html)
+
+* [](../src/myclass/iter01.py)
+
+🔑😄 **Knowlodge Base**
+> 1. everything is iterable it implements __iter__() function;
+> 2. everything is iterator it implements __next__() function;
+> 3. when all elements are iterated, raise StopIteration Error.
+
+
 * [range1 start from 1, include stop](../src/myclass/range1.py)
 * [__call__() make object callable](../src/myclass/class22.py)
 * [__eq__(check if same), __add__](../src/myclass/class24.py)
