@@ -3,7 +3,7 @@
 """
 from math import pi
 
-def circle_area(r):
+def circle_area(r:float):
     return r * r * pi
 
 if __name__ == '__main__': 

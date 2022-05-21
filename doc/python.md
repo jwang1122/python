@@ -21,6 +21,7 @@
   - [set](#set)
   - [dict](#dict)
   - [date/time](#datetime)
+  - [Developer defined data type](#developer-defined-data-type)
 - [Operator](#operator)
 - [Execution Control](#execution-control)
 - [Loop](#loop)
@@ -45,6 +46,7 @@
 - [Logging](#logging)
 - [algorithms](#algorithms)
 - [Class](#class)
+  - [Abstraction](#abstraction)
   - [class basic](#class-basic)
   - [dunder functions](#dunder-functions)
   - [attribute scope](#attribute-scope)
@@ -373,6 +375,15 @@ i = 'hello'
 i = [1,2,3,4]
 ```
 
+### Developer defined data type
+
+```py
+class Student:
+  pass
+
+s = Student()
+print(type(s))
+```
 ## Operator 
 * [operator](../src/languageBasics/operator.py)
 * Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
@@ -407,6 +418,14 @@ i = [1,2,3,4]
 * operator precendence: *, /; +, -; 
   multiply has higher precendence than +, -, use () to change precendence
   
+* . operator
+> in OOP, . operator is used to refer to an attribute of class instance.
+
+```py
+greeting = "Hello"
+print(greeting.upper())
+```
+
 ## Execution Control
 * **if-elif-else** statement Syntax
 ```py
@@ -974,13 +993,75 @@ Operations on Data Structure
 * [arrays.py](../src/algorithms/arrays.py)
 
 ## Class
+❓ what is class?
 >Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.
+
+```mermaid
+graph LR
+
+OOP([Object Oriented Programming])
+ABSTRACT[Abstraction]
+INHERIT[Inheritance]
+POLY[Polymorphism]
+ENCAPS[Encapsulation]
+
+OOP --> ABSTRACT & INHERIT & POLY & ENCAPS
+
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class OOP start
+```
 
 4 Features of OOP
 1. Abstraction:class is a abstraction of object in real world to python program object type.（实体模拟）
 2. Inheritance: a class can inherit from multiple other class to increase code reusability.（共性继承）
 3. Polymorphism:same function behavior differently by different object type.（异类同功）
 4. Encapsulation：avoid data or function being called outside the class unintentionally（自我保护)
+
+❓ How to make it happen?
+> ✔️ build a class.
+
+```mermaid
+classDiagram
+
+class ClassName{
+  attributes
+  functions()
+}
+```
+
+class in python is a definition of group of attributes (class name, variables & functions) which is abstracted from real world to computer world (virtual world), and can be used to create object. those objects can then do something based on its variable attributes.
+
+> Behavior: do something based on what it knows!
+
+in python, both variable and function are treated same as attrubutes.
+
+```py
+class Robot:
+  pass
+
+robot = Robot()
+robot.jump() # AttributeError: 'Robot' object has no attribute 'jump'
+```
+
+```py
+>>> class Robot:
+...     pass
+... 
+>>> r = Robot()
+>>> r.jump()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Robot' object has no attribute 'jump'
+>>>
+```
+
+as you can see, we call jump() function by r.jump(), Python raises a AttributeError. because we never defined a function named jump().
+
+### Abstraction
+
+❓ why abstraction?
+>✔️ because it is impossible to copy every single feature of an object from real world, we can only pick something that we are interested in the virtual world. That is so-called abstraction.
 
 * Robot from real world
 ```mermaid
@@ -998,17 +1079,96 @@ class Robot {
 
 ### class basic
 * [add attribute dynamically](../src/myclass/class01.py)
-* [everythin in Python is class](../src/myclass/testRobot.py)
+
+🔑😄 **Knowlodge Base**
+> define a class means to create a new data type.
+
+
+```dos
+(env) C:\Users\12818\workspace\python>c:/Users/12818/workspace/python/env/Scripts/python.exe c:/Users/12818/workspace/python/src/myclass/class01.py
+<class '__main__.Robot'>
+<class 'object'>
+```
+
+```py
+>>> from src.myclass.class01 import * 
+>>> x = Robot()
+>>> type(x)
+<class 'src.myclass.class01.Robot'>
+>>>
+```
+* [everything in Python is class](../src/myclass/testRobot.py)
 * [define function outside of class](../src/myclass/class02.py)
 * [define function inside class](../src/myclass/class03.py)
 * [define __init__()](../src/myclass/class04.py)
+
+* Excersize:
+
+```mermaid
+class Diagram
+
+class Item{
+  name:str
+  price:float
+  quantity:int
+  getTotal()
+  addDiscount()
+}
+
+class Store{
+  items:[]
+  save()
+  load()
+}
+```
+* [class level attribute vs. instance level attribute](../src/myclass/item.py)
+* [save and load data with file](../src/myclass/item1.py)
+* [use csv DictReader() function](../src/myclass/item2.py)
 * [__init__(self, inputName=None)](../src/myclass/class05.py)
 * [private attribute __energy](../src/myclass/class07.py)
 * [getter, setter, property](../src/myclass/class08.py)
+* [class level attributes](../src/myclass/attributes.py)
+* [related classes](../src/myclass/related.py)
+
+```mermaid
+classDiagram
+
+class Student{
+  name:str
+  age:int
+  grade:int
+  courses:Course[]
+}
+
+class Course{
+  name:str
+  students:Student[]
+}
+
+Course o-- Student:bidirection_connection
+Student o-- Course
+```
+
+* [Why inheritance? ](../src/myclass/inheritence.py)
+  
+🔑😄 **Knowlodge Base**
+> Define a class means to create a new data type.
+> 1. The difference between regular function and instance function is the very first positional argument is always **self** in class function.
+> 2. instance level attributes can be defined in any instance function.
+> 3. class level attributes should be used by class name.
+> 4. static function does NOT use any instance level attribute, so no **self** argument is needed.
+> 5. all class inherits from **object** class.
+> 6. every thing is class instance in python.
+> 7. **self** is the first positional argument of all instance level function, which can be used to access all variable and function attributes, it represents the instance itself, it then can be passed as the instance.
+
+![](images/self.png)
 
 ### dunder functions
 * [__repr__(good enough) vs. __str__](../src/myclass/class06.py)
 * [__init__(good enough) vs. __new__](../src/myclass/class09.py)
+
+![](images/magicDunderInit.png)
+
 * [❓override __new__, return other class instance](../src/myclass/class10.py)
 * [override __iter__, __next__, create iterable](../src/myclass/class15.py) 
 
@@ -1024,8 +1184,8 @@ class Robot {
 * [](../src/myclass/iter01.py)
 
 🔑😄 **Knowlodge Base**
-> 1. everything is iterable it implements __iter__() function;
-> 2. everything is iterator it implements __next__() function;
+> 1. anything is iterable it implements __iter__() function;
+> 2. anything is iterator it implements __next__() function;
 > 3. when all elements are iterated, raise StopIteration Error.
 
 
@@ -1600,7 +1760,7 @@ CRUD: Create, Retrieve, Update, Delete
 
 ## MongoDB
 ❓What is MongoDB?
-✔️One of NoSQL database application written in C++.
+✔️Object-Oriented based One of NoSQL database application written in C++.
 1. stores data in JSON-like documents that can have various structures
 2. uses dynamic schemas, which means that we can create records without predefining structure such as SQL relational database table.
 3. the structure of a record can be changed simply by adding new fields or deleting existing ones.
@@ -1628,6 +1788,10 @@ MONGO-->D-->C-->DOC & COL
 ✔️SQL stands for Structured Query Language specially for relational database.
 SQLite: Python built in SQL database.
 
+* [CRUD, Relationships and More](https://www.youtube.com/watch?v=UpsZDGutpZc)
+* [Schema Validation, Advanced Queries and More](https://www.youtube.com/watch?v=nYNAH8K_UhI)
+* [Full-Text Search with Atlas Search](https://www.youtube.com/watch?v=nc-Kpiq1zLc)
+* 
 ## tkinter(windows based GUI)
 ```dos
 pip install tk

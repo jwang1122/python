@@ -6,7 +6,7 @@
 
 ## Useful Icons
 
-❓✔️ 📌❗️ 👍😄 👎😱 👎😢❌✔️ 💡👉 🔔⚡️ 🔒🔑🔥⚡️ ☝️👌
+❓>✔️ 📌❗️ 👍😄 👎😱 👎😢❌✔️ 💡👉 🔔⚡️ 🔒🔑🔥⚡️ ☝️👌
 ✏️📄✂️♻️ ➡️
 📝🔍🔨☝️😢👇👈👉👍👎👌👊⭐️👎😢🌎💾🗑🐛📒⚠️📐🛠🎯✉️☎️
 
@@ -18,6 +18,7 @@
 - [Change image size](#change-image-size)
 - [Notations](#notations)
 - [Fast way to learn something new:](#fast-way-to-learn-something-new)
+- [汉语拼音韵母声号](#汉语拼音韵母声号)
 - [math symbols](#math-symbols)
 - [Sample File Structure:](#sample-file-structure)
 - [Sample Mermaid Graph Diagram](#sample-mermaid-graph-diagram)
@@ -43,6 +44,18 @@
   3. repeat;
   4. take good note for future review;
   5. teach someone else.
+
+## 汉语拼音韵母声号
+第一声（阴平，或平调，¯）：
+ā (ɑ̄) ē ī ō ū ǖ Ā Ē Ī Ō Ū Ǖ
+第二声（阳平，或升调，ˊ）：
+á (ɑ́) é í ó ú ǘ Á É Í Ó Ú Ǘ
+第三声（上声，或上音，ˇ）：
+ǎ (ɑ̌) ě ǐ ǒ ǔ ǚ Ǎ Ě Ǐ Ǒ Ǔ Ǚ
+第四声（去声，或去音，ˋ）：
+à (ɑ̀) è ì ò ù ǜ À È Ì Ò Ù Ǜ
+轻声，不标符号：
+a (ɑ) e i o u ü A E I O U Ü
 
 ## math symbols
 |operator | LaTex Symbols |
@@ -100,7 +113,7 @@ START-->IF
 IF--True-->DB-->END
 IF--False-->B-->END
 
-classDef start fill:blue,stroke:#DE9E1F,stroke-width:2px,color:white;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
 classDef js fill:yellow,stroke:black,stroke-width:2px;
 classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;

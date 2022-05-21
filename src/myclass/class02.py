@@ -12,3 +12,5 @@ if __name__ ==  '__main__':
     x = Robot()
     x.name = "John"
     hi(x)
+    x.greeting = hi
+    x.greeting(x)

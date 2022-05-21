@@ -6,3 +6,6 @@ def doIt():
         log.debug("Doing stuff...")
         #do stuff...
         raise TypeError("Bogus type error for testing")
+
+if __name__ == '__main__':
+        doIt()
