@@ -41,13 +41,15 @@
   - [Create my own Error Type](#create-my-own-error-type)
   - [function annotation](#function-annotation)
 - [Unit Test](#unit-test)
-- [Physics Unit](#physics-unit)
 - [Regular Expression](#regular-expression)
 - [Logging](#logging)
 - [algorithms](#algorithms)
 - [Class](#class)
+  - [Design](#design)
   - [Abstraction](#abstraction)
   - [class basic](#class-basic)
+  - [Inheritance](#inheritance)
+  - [Polymorphism](#polymorphism)
   - [dunder functions](#dunder-functions)
   - [attribute scope](#attribute-scope)
   - [class tricks](#class-tricks)
@@ -58,6 +60,8 @@
   - [Global Variables](#global-variables)
 - [Blackjack Game](#blackjack-game)
   - [Blackjack Rules](#blackjack-rules)
+- [Physics Unit](#physics-unit)
+- [Blackjack Card Game](#blackjack-card-game)
   - [Object relationship](#object-relationship)
   - [Game logic](#game-logic)
   - [Code Optimization](#code-optimization)
@@ -415,6 +419,16 @@ print(type(s))
   
   [bitwise](../src/languageBasics/operator/bitwise.py)
 
+> ASCII Table: American Standard Code for Information Interchange
+
+![](images/USASCII_code_chart.png)
+
+![](images/ascii.jpg)
+
+[byte for character](../src/languageBasics/ascii.py)
+
+* ![](../python1.png)
+  
 * operator precendence: *, /; +, -; 
   multiply has higher precendence than +, -, use () to change precendence
   
@@ -922,20 +936,6 @@ C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
 
 [unit test for circleArea](../test/test_circleArea.py)
 
-## Physics Unit
-* [physics unit](../src/physics.py)
-
-```mermaid
-classDiagram
-
-class Quantity{
-  vale:[float, int]
-  symble: str
-
-  covert(symble)
-}
-```
-
 
 ## Regular Expression
 [](https://www.w3schools.com/python/python_regex.asp)
@@ -995,6 +995,13 @@ Operations on Data Structure
 ## Class
 ❓ what is class?
 >Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.
+
+### Design
+![](images/engineBlueprint.webp)
+
+![](images/house-blueprint.webp)
+
+![](images/car-blueprint.webp)
 
 ```mermaid
 graph LR
@@ -1077,6 +1084,9 @@ class Robot {
 }
 ```
 
+![](images/abstraction.png)
+
+
 ### class basic
 * [add attribute dynamically](../src/myclass/class01.py)
 
@@ -1102,6 +1112,17 @@ class Robot {
 * [define function inside class](../src/myclass/class03.py)
 * [define __init__()](../src/myclass/class04.py)
 
+🔑😄 **Knowlodge Base**
+> 1. __init__() is called automatically when creating an instance of a class;
+> 2. once __init__() is defined, the __init__() of super class will be overridden with no functioning, unless 
+> 3. __init__() call super().__init__() to reuse whatever defined in super class;
+> 4. __init__() is used to initialize the instance which returns nothing.
+> 5. It is the __init__() makes each instance from the same class different.
+
+![](images/self.png)
+
+![](images/magicDunderInit.png)
+
 * Excersize:
 
 ```mermaid
@@ -1124,6 +1145,7 @@ class Store{
 * [class level attribute vs. instance level attribute](../src/myclass/item.py)
 * [save and load data with file](../src/myclass/item1.py)
 * [use csv DictReader() function](../src/myclass/item2.py)
+* 
 * [__init__(self, inputName=None)](../src/myclass/class05.py)
 * [private attribute __energy](../src/myclass/class07.py)
 * [getter, setter, property](../src/myclass/class08.py)
@@ -1148,9 +1170,26 @@ class Course{
 Course o-- Student:bidirection_connection
 Student o-- Course
 ```
+### Inheritance
 
+```mermaid
+classDiagram
+
+class Pet{
+  name:str
+  age:int
+  speak()
+}
+
+Pet <|-- Dog
+Pet <|-- Cat
+Pet <|-- Fish
+```
 * [Why inheritance? ](../src/myclass/inheritence.py)
-  
+
+### Polymorphism
+* [Polymorphism](../src/myclass/polymorphism.py)  
+
 🔑😄 **Knowlodge Base**
 > Define a class means to create a new data type.
 > 1. The difference between regular function and instance function is the very first positional argument is always **self** in class function.
@@ -1158,7 +1197,7 @@ Student o-- Course
 > 3. class level attributes should be used by class name.
 > 4. static function does NOT use any instance level attribute, so no **self** argument is needed.
 > 5. all class inherits from **object** class.
-> 6. every thing is class instance in python.
+> 6. every thing is class instance in python (such as 3, float, set, [], (), ...).
 > 7. **self** is the first positional argument of all instance level function, which can be used to access all variable and function attributes, it represents the instance itself, it then can be passed as the instance.
 
 ![](images/self.png)
@@ -1318,6 +1357,22 @@ Person<|--Engineer:Engineer is Person
 11. No Insurance
 12. Reshuffling when start new game.
 
+## Physics Unit
+* [physics unit](../src/physics.py)
+
+```mermaid
+classDiagram
+
+class Quantity{
+  vale:[float, int]
+  symble: str
+
+  covert(symble)
+}
+```
+
+## Blackjack Card Game
+
 ### Object relationship
   
 ```mermaid
@@ -1449,7 +1504,7 @@ class A,D,C,E if
 ✔️
 
 ❓How to read Python code?
-✔️
+✔️ [How to read Python code](https://towardsdatascience.com/how-to-read-and-understand-python-code-faster-180ba1ba9445)
 
 ### Software development life cycle
 * Test Driven Development (TDD)
@@ -1535,9 +1590,9 @@ class A,B,C,D if
 [python deployment](https://www.nylas.com/blog/packaging-deploying-python/)
 
 ## Yahtzee Dice Game
-[](../src/yahtzee/yahtzee.md)
+[](../src/yahtzee/yahtzee1.md)
 [Yahtzee Dice Game](https://www.dicegamedepot.com/yahtzee-rules/)
-[Yahtzee Python](../src/yahtzee/ahtzee.py)
+[Yahtzee Python](../src/yahtzee/yahtzee.py)
 ```mermaid
 classDiagram
 class Dices{

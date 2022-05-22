@@ -27,17 +27,11 @@ class Dog(Pet):
 class Fish(Pet):
     pass
 
-def speak(pet):
-    pet.speak()
-
 if __name__ == '__main__':
     c = Cat("bill", 2, 'Black')
     d = Dog("Anglous", 3)
     f = Fish("Jim", 1)
+    
     c.speak()
     d.speak()
     f.speak()
-
-    speak(c) # Polymorphism, one question for different type of object, get different answers
-    speak(f)
-    speak(d)
