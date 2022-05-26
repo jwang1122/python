@@ -39,6 +39,7 @@
   - [Raise Except](#raise-except)
   - [catch Except avoid termination](#catch-except-avoid-termination)
   - [Create my own Error Type](#create-my-own-error-type)
+  - [pass by reference](#pass-by-reference)
   - [function annotation](#function-annotation)
 - [Unit Test](#unit-test)
 - [Regular Expression](#regular-expression)
@@ -48,6 +49,7 @@
   - [Design](#design)
   - [Abstraction](#abstraction)
   - [class basic](#class-basic)
+  - [use type to create class](#use-type-to-create-class)
   - [Inheritance](#inheritance)
   - [Polymorphism](#polymorphism)
   - [dunder functions](#dunder-functions)
@@ -419,6 +421,8 @@ print(type(s))
   
   [bitwise](../src/languageBasics/operator/bitwise.py)
 
+![](images/byte.jpg)
+
 > ASCII Table: American Standard Code for Information Interchange
 
 ![](images/USASCII_code_chart.png)
@@ -427,7 +431,12 @@ print(type(s))
 
 [byte for character](../src/languageBasics/ascii.py)
 
+![](../python.png)
+* [Understand Image Pixel RGBA mode](../src/languageBasics/operator/changeImage.py)
 * ![](../python1.png)
+* ![image file is bit data](images/imageInHex.png)
+* [gunshot sound](whiff.wav)
+![Gunshot in Hex](images/gunshotInHex.png)
   
 * operator precendence: *, /; +, -; 
   multiply has higher precendence than +, -, use () to change precendence
@@ -809,6 +818,11 @@ The difference between raise and assert:
 > 2. create your own error type
 * [create application specific Error](../src/function/myerrortype.py) 
 
+### pass by reference
+* [Understand pass by reference](../src/function/passByReference.py)
+* [Understand pass by value](../src/function/passByValue.py)
+
+
 ### function annotation
 👍Avoid unexpected function call with wrong data type arguments.
 
@@ -1109,19 +1123,26 @@ class Robot {
 ```
 * [everything in Python is class](../src/myclass/testRobot.py)
 * [define function outside of class](../src/myclass/class02.py)
-* [define function inside class](../src/myclass/class03.py)
+* [define function inside class, class level, instance level](../src/myclass/class03.py)
 * [define __init__()](../src/myclass/class04.py)
+* [understand __new__() and __init__()](../src/myclass/class09.py)
 
 🔑😄 **Knowlodge Base**
-> 1. __init__() is called automatically when creating an instance of a class;
-> 2. once __init__() is defined, the __init__() of super class will be overridden with no functioning, unless 
-> 3. __init__() call super().__init__() to reuse whatever defined in super class;
-> 4. __init__() is used to initialize the instance which returns nothing.
-> 5. It is the __init__() makes each instance from the same class different.
-
+> 1. __new__() is constructor which is called when creating an instance of class;
+> 2. __new__() will automatically call __init__() to initialize the instance;
+> 3. create your own __new__() will override the functionality of super class;
+> 4. __init__() is called automatically when creating an instance of a class;
+> 5. once __init__() is defined, the __init__() of super class will be overridden with no functioning, unless 
+> 6. __init__() call super().__init__() to reuse whatever defined in super class;
+> 7. __init__() is used to initialize the instance which returns nothing.
+> 8. It is the __init__() makes each instance from the same class different.
+> 
 ![](images/self.png)
 
 ![](images/magicDunderInit.png)
+
+### use type to create class
+[Use type() to create new class dynamically](../src/myclass/createClass.py)
 
 * Excersize:
 
@@ -1143,8 +1164,9 @@ class Store{
 }
 ```
 * [class level attribute vs. instance level attribute](../src/myclass/item.py)
-* [save and load data with file](../src/myclass/item1.py)
-* [use csv DictReader() function](../src/myclass/item2.py)
+* [dynamically assigned attribute](../src/myclass/item1.py)
+* [save and load data with file](../src/myclass/item2.py)
+* [use csv DictReader() function](../src/myclass/item3.py)
 * 
 * [__init__(self, inputName=None)](../src/myclass/class05.py)
 * [private attribute __energy](../src/myclass/class07.py)
@@ -1622,6 +1644,7 @@ class Game{
 * [read/append plain text from/fo file](../src/file/file1.py)
 * [read text file](../src/file/file7.py)
 * [with open](../src/file/file2.py)
+* [read CSV file](../src/file/csvReader0.py)
 * [read CSV file using csv module](../src/file/csvReader1.py)
 * [read CSV file using pandas](../src/file/csvReader2.py)
 * [read large CSV file pokemon.csv](../src/file/csvReader3.py)

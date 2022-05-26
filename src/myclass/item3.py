@@ -1,4 +1,4 @@
-from pandas import *
+import csv
 
 class Store:
     items = []
@@ -20,13 +20,10 @@ class Store:
 
     @classmethod
     def load(cls, file):
-        with open(file, mode='r') as f:
-            line = f.readline()
-            while line:
-                line = f.readline()
-                itemParts = line.split(",")
-                if len(itemParts)>1:
-                    item = Item(itemParts[0], itemParts[1], itemParts[2][:-1])
+        with open(file, newline='') as f:
+            data = csv.DictReader(f)
+            for item in list(data):
+                Item(item['Name'], item['Price'], item['Quantity'])
 
         print('Load data Successful')
         
@@ -50,7 +47,7 @@ class Item:
 
 
 if __name__ == '__main__':
-    # item1 = Item('iPhone', 1000, 2)
+    item1 = Item('iPhone', 1000, 2)
     # item2 = Item('laptop', 2000, 10)
     # item3 = Item('mouse', 24, 20)
     # item4 = Item('monitor', 100, 15)

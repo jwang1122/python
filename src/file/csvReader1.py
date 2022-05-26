@@ -11,3 +11,8 @@ with open('src/data/students.csv', 'r') as covid19:
     dictReader = csv.DictReader(covid19)
     for row in dictReader:
         print(row["First name"])
+
+with open('src/data/item.csv', 'r') as f:
+    data = csv.reader(f)
+    for row in data:
+        print(row)

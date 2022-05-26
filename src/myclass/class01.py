@@ -29,6 +29,15 @@ if __name__ == "__main__":
     x = Robot()    # default factory to create a Robot instance
     y = Robot()
     print(type(x))
+    print(id(x), id(y)) # take this as memory address, or unique object id
+
+    t1 = (1,2,3) # tuple is immutable
+    t2 = (1,2,3)
+    print(id(t1), id(t2))
+
+    l1 = [1,2,3] # list is mutable
+    l2 = [1,2,3]
+    print(id(l1), id(l2)) 
 
     obj1 = object() # object is the root class of all other class
     print(type(obj1))
