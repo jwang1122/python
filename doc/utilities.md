@@ -12,6 +12,7 @@
 
 :hammer:
 :department_store:
+:gear:
 
 - [references](#references)
 - [Useful Icons](#useful-icons)

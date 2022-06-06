@@ -431,6 +431,8 @@ print(type(s))
 
 [byte for character](../src/languageBasics/ascii.py)
 
+![](images/machineLanguage.png)
+
 ![](../python.png)
 * [Understand Image Pixel RGBA mode](../src/languageBasics/operator/changeImage.py)
 * ![](../python1.png)
@@ -783,6 +785,8 @@ class B if
 class END end1
 ```
 ### Raise Except
+
+![](images/try-except.svg)
 
 * [✋Raise TypeError](../src/function/raiseError.py)
 * [assert](../src/function/assertCheck.py)
@@ -2038,6 +2042,112 @@ API Key: 84B7917D-C980-407F-ACBC-B29E3D2E4458
 
 ## Application Development Process
 
+```mermaid
+graph LR
+
+PYTHON(Python Language)
+BASIC[Language Basics]
+DATA[Data type]
+OP[Operators]
+CTRL{IF-ELSE}
+LOOP([for, while])
+FUNC[Function]
+CLASS[Class]
+
+TKINTER[Tkinter GUI]
+PYGAME[PyGame]
+FUNCTIONAL[Functional Programming]
+DESIGN[Design Pattern]
+DV[Data Visualization]
+MACHINE[Machine Learning]
+DATABASE[(SQL, NOSQL Data base)]
+REACT[ReactJS Web Application]
+DJANGO[DJango Web Application]
+
+PYTHON --> BASIC & FUNC & CLASS & TKINTER & PYGAME & FUNCTIONAL & DESIGN & DV & MACHINE & DATABASE & REACT & DJANGO
+BASIC --> DATA & OP & CTRL & LOOP
+
+classDef start fill:#1bb244,stroke:#074a19,stroke-width:2px,color:white;
+classDef touched fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+classDef js fill:yellow,stroke:black,stroke-width:2px;
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef db fill:#BEBDB7,stroke:black,stroke-width:2px;
+classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class PYTHON start
+class BASIC,DATA,OP,CTRL,LOOP,FUNC,CLASS,TKINTER,PYGAME touched
+
+```
+
+Knowing all python programing basics such as function, class does not make you a good programer.
+
+* [Sample Functional Programing](../src/functional/either3.py)
+* [Shopping actions](../src/functional/shoppingMonad3.py)
+Key point for functional programming is function binding and data wraper.
+
+
+❓ What is design pattern
+>✔️Design patterns can speed up the development process by providing tested, proven development paradigms. Design pattern provides special data type(class), functions and behavior and relations to solve generic problem.
+
+* [Design patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
+* [Design pattern sample](../src/designPattern/observer.py)
+
+```mermaid
+classDiagram
+
+class Subject{
+  notify()
+  attach()
+  detach()
+}
+
+class Observer{
+  update()
+}
+
+class Data{
+  setData()
+}
+
+Subject o-- Observer
+Subject <-- Data
+```
+
+* [Machine Learning Sample](../src/numpy/stockFit.py)
+![](images/AppleStockFit.png)
+
+```mermaid
+graph LR
+
+A([Software Project])
+B[User Interface<br>GUI Front End]
+C[Business Logic<br>middle tier]
+D[Database<br>Back End]
+E(Unit test)
+F(Logging)
+K(Documentation)
+L(Integration Test)
+G[Window Based<br>Eclipse IDE]
+H[Web Based<br>Google, Amazon]
+I[MongoDB]
+J[SQL Server]
+REACT[ReactJS]
+ANGULAR[Angular]
+DJANGO[DJango]
+GIT(Source Control)
+
+A-->B & C & D 
+A--tools--> E & F & K & L & GIT
+B-->H & G
+D-->I & J
+H-->REACT & ANGULAR & DJANGO
+
+classDef block1 fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class A start
+class C,E,F,D,J,GIT block1
+```
 ## PyInstaller
 [Tkinter to Exe]()
 ```DOS
