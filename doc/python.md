@@ -1,7 +1,7 @@
 <h1>Python Language</h1>
 
 [Markdown Shared Library](utilities.md)
-
+[Screen Record output folder](C:\Users\12818\AppData\LocalLow\iTop Screen Recorder\Outputs)
 
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
@@ -150,15 +150,62 @@
 [line plot](../src/plot/plot0.py)
 [x,y plot](../src/plot/plot01.py)
 
+💡🔑 **Knowlodge Base**
+> 1. in order to run python program, we need install python intereter.
+> 2. in order to write python code, we need install VS Code.
+
+
 ❓ What is Python?
 > Python is computer programming language.
 ✔️ Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. 
+
+❓ What is computer?
+>✔️ computer is nothing but CPU and Memory.
+
+![](images/computer.svg)
+
+![](images/punchMachine.webp)
+
+![](images/ppt-roll.jpg)
+
+❓ What is software programing language?
+>✔️ A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output.
+any language can be changed to machine code and then run by computer.
+
+![](images/languageLevel.png)
+
+* [ASCII Table](https://ascii-tables.com/)
+❓ What is ASCII?
+>✔️ASCII stands for American Standard Code for Information Interchange, a set of digital codes representing letters, numerals, and other symbols.
+
+![](images/USASCII_code_chart.png)
+
+❓ Why we need so many different programing language?
+> 1. each language could serve different purpose.
+> 2. some old language still available due to some company still use it. (RPG, FORTRAN)
+
+---
+[Table of Contents](#table-of-contents)
+
 
 ### print
 [print](../src/languageBasics/print.py)
 * place holder (%s, %d, %f)
 * print with tuple
 * formated print: print(f"x={x}") 
+
+❓ What is ASCII code?
+>✔️ASCII Table: American Standard Code for Information Interchange
+
+![](images/USASCII_code_chart.png)
+
+![](images/ascii.jpg)
+![](images/asciiA.png)
+![](images/Papertape-Wikipedia-example-dark1-2000px.png)
+![](images/media-1119679-pp-04.jpg)
+
+[ASCII website](https://ascii-tables.com/)
+
 * Homeworks
     - [Math Competition](../homeworks/12023%20Harmoney%20School%20Houston.pdf)
     - [print-01](homeworks/print01.md)
@@ -291,6 +338,7 @@ class B,C,D,E if
     - single ' double " are no difference, but must to be pair.
     - ""; """ [put your text here] """; ''; ''' [your text here] '''
     - string is iterable
+    - String is immutable
     - string slicing: [[start]:[end]:[step]]
     - String operator +, *
     - as function str(object)
@@ -366,6 +414,9 @@ surrounded by '{}', and no duplicated key. the key-value pair separated by ':'.
   - functions in dict: get(), items(), values(), pop(), ..
   - dict() can be used as function to convert iterable object to dict (need to be key-value pair).
   - dict modify==>CRUD
+
+### developer defined
+[](../src/languageBasics/datatype/myclass.py)
 
 ### date/time 
 [date/time](../src/languageBasics/datatype/datetime1.py)

@@ -17,8 +17,9 @@ print("The rectangle area with width=%d and length=%d is %d." %(width, length, a
 print(f"The rectangle area with width={width} and length={length} is {area}.")
 print(f"6 \u00F7 5 = {6/5}")
 
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
+# name = input("Enter your name: ")
+# age = int(input("Enter your age: "))
+name,age = 'John', 14
 # %d is a second placeholder which holds an integer
 # %s is a first placeholder which holds a string
 print("%s is %d years old." %(name,age))
@@ -31,3 +32,12 @@ z=2020-20
 print("Problem 01: %d - %d = %d" %(x, y, z))
 print("Problem 02: %d + %d = %d" %(494, 18, 494+18))
 print("Problem 03: I don't know how to do it.")
+
+A=65
+print(A)
+print(bin(A))
+print(hex(A))
+print(type(A))
+print(chr(A))
+letter = 'A'
+print(ord(letter))

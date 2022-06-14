@@ -1,5 +1,5 @@
 """
-Other than Python language intrisic data type,
+Other than Python language intrinsic data type,
 python also built in a lot of other data type, such as datetime
 
 https://docs.python.org/3/library/datetime.html
