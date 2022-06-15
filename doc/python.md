@@ -20,6 +20,7 @@
   - [list](#list)
   - [set](#set)
   - [dict](#dict)
+  - [developer defined](#developer-defined)
   - [date/time](#datetime)
   - [Developer defined data type](#developer-defined-data-type)
 - [Operator](#operator)
@@ -274,6 +275,10 @@ dunder: double underscore (hold shift + -)
 ### Variable and memory
 ![](images/chineseMedicine.jpg)
 ![](images/memory.gif)
+![](images/memory.png)
+
+![](images/mailbox.jpg)
+
 * Homeworks
 [variable-01](../homeworks/basics/print/variable01.md)
 [variable-02](../homeworks/basics/print/variable02.md)
@@ -452,9 +457,14 @@ print(type(s))
 * Comparison Operators: ==, !=, <, >, <=, >=
   
   [comparison](../src/languageBasics/operator/comparison.py)
+
+  ![](images/memory.png)
+
 * Identity Operator: is, is not
 
   [identity](../src/languageBasics/operator/identity.py)
+
+
 
 * Logical Operator: and, or, not
 
