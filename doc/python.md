@@ -20,9 +20,9 @@
   - [list](#list)
   - [set](#set)
   - [dict](#dict)
-  - [developer defined](#developer-defined)
-  - [date/time](#datetime)
-  - [Developer defined data type](#developer-defined-data-type)
+  - [bool](#bool)
+  - [Developer desiged data type](#developer-desiged-data-type)
+  - [Python modules date/time](#python-modules-datetime)
 - [Operator](#operator)
 - [Execution Control](#execution-control)
 - [Loop](#loop)
@@ -420,10 +420,37 @@ surrounded by '{}', and no duplicated key. the key-value pair separated by ':'.
   - dict() can be used as function to convert iterable object to dict (need to be key-value pair).
   - dict modify==>CRUD
 
-### developer defined
-[](../src/languageBasics/datatype/myclass.py)
+### bool
+**True** or **False** are python reserved keyword for bool value.
 
-### date/time 
+### Developer desiged data type
+
+```mermaid
+classDiagram
+
+class Dog{
+  name:str
+  color:str
+  edge:int
+  bark()
+}
+
+```
+
+```py
+class Student:
+  pass
+
+s = Student()
+print(type(s))
+```
+
+![](images/studentObject1.svg)
+
+* [Simple user defined data type](../src/basics/dog.py)
+* [class Hello](../src/languageBasics/datatype/myclass.py)
+
+### Python modules date/time 
 [date/time](../src/languageBasics/datatype/datetime1.py)
 [Get time interval](../src/languageBasics/datatype/datetime2.py)
 [Date time convertion](../src/languageBasics/datatype/datetime3.py)
@@ -437,15 +464,6 @@ i = 'hello'
 i = [1,2,3,4]
 ```
 
-### Developer defined data type
-
-```py
-class Student:
-  pass
-
-s = Student()
-print(type(s))
-```
 ## Operator 
 * [operator](../src/languageBasics/operator.py)
 * Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
