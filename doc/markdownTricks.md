@@ -1,6 +1,7 @@
 <h1> Markdown Trickes</h1>
 
 [Markdown Shared Library](utilities.md)
+x$^2$
 
 Table of Contents
 - [Basic Syntax](#basic-syntax)

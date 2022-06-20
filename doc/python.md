@@ -58,6 +58,7 @@ pip install django==4.0
 - [File Access](#file-access)
 - [nmpy](#nmpy)
 - [pandas](#pandas)
+  - [extract table from website](#extract-table-from-website)
 - [Data Analysis for Excel Users](#data-analysis-for-excel-users)
 - [Plot](#plot)
 - [Clean Code](#clean-code)
@@ -1155,6 +1156,8 @@ $$W=\frac {\sum_{i=1}^n w_i X_i} {\sum_{i=1}^n w_i}$$
 $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}x \\y \\z \end{bmatrix} = \begin{bmatrix}6 \\-4 \\27 \end{bmatrix}$$
 
 ## pandas
+### extract table from website
+[YouTube Onlinw](https://www.youtube.com/watch?v=PXMJ6FS7llk)
 [Document website](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
 * [simple curves](../src/datavisualization/dataanalysis01.py)
 * [Covid-19](../src/datavisualization/dataanalysis02.py)
