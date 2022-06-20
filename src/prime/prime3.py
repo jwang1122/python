@@ -1,7 +1,7 @@
 """
 Readability is higher, but more code compare to prime4.py
 """
-def prime(x):
+def isPrime(x):
     flag = True
 
     for i in range(2, (x//2+1)):
@@ -13,4 +13,4 @@ def prime(x):
 
 if __name__ == '__main__':
     for i in range(0, 20):
-        print("prime", i, prime(i)) 
+        print("prime", i, isPrime(i)) 

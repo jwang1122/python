@@ -17,7 +17,7 @@ class C:
 
     def __new__(cls): # override the __new__() function
         print("C.__new__() is called.")
-        # return super(C, cls).__new__(cls)
+        return super(C, cls).__new__(cls)
 
 class D(object):
     def __new__(cls):

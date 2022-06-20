@@ -9,7 +9,7 @@ text = ""
 def close_win(top):
    global entry
    global text
-   text = entry.get()
+   text.set(entry.get())
    top.destroy()
 
 #Define a function to open the Popup Dialogue
@@ -36,14 +36,12 @@ if __name__ == '__main__':
 
     #Create a Label
     label= Label(win, text="Click the Button to Open the Popup Dialogue", font= ('Helvetica 15 bold'))
-    label.pack(pady=20)
+    label.pack()
     text = StringVar()
     label1= Label(win, textvariable=text, font= ('Helvetica 15 bold'))
-    label1.pack(pady=20)
+    label1.pack()
 
-
-   
     #Create a Button
     button= Button(win, text= "Click Me!", command= popupwin, font= ('Helvetica 14 bold'))
-    button.pack(pady=20)
+    button.pack(side=BOTTOM)
     win.mainloop()

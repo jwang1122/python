@@ -13,3 +13,4 @@ faicons/
 .mypy_cache/
 .ipynb_checkpoints/
 important.md
+*.~vsdx

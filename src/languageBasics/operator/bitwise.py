@@ -1,4 +1,9 @@
 """
+the minumun unit of computer memory is byte which has 8 bits. 
+(each bit can be considered as an electric switch which can have only 2 values (1, 0))
+
+all computer calculation, operation, text, image are based on bit operation.
+
 Bitwise Operator: 
 & : bit and
 | : bit or

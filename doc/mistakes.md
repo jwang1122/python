@@ -35,3 +35,14 @@ Check the permissions.
 C:\Users\12818\workspace\python-I>pip install Pillow
 ```
 Command Pallet > Python: Select Interpreter > ./env/Scripts/python.exe
+
+❌ **Mistake:**
+```
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it, Timeout: 30s, Topology Description: <TopologyDescription id: 625f015cf9bcde4ebbe0b01b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it')>]>
+```
+
+![](images/mongoDBError.png)
+
+✔️ **Solution:** 
+From Control Panel Services, start the MoDB service

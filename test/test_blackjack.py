@@ -1,5 +1,5 @@
 import unittest
-from src.blackjack import *
+from src.blackjack.blackjack1 import *
 
 class TestCard(unittest.TestCase):
     heartsA = Card("A", "HEARTS")

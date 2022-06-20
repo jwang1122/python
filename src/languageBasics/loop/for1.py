@@ -42,6 +42,7 @@ freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
 l = [weapon.strip() for weapon in freshfruit] # function call
 print(l)
 
+
 l = [(x, x**2) for x in range(6)] # generate tuple list
 print(l)
 
@@ -94,3 +95,8 @@ nameList = [
 
 for child, mom in nameList:
     print(f"{child}'s mom is {mom}.")
+
+
+l = [(1,2),(3,4),(5,6)]
+l1 = [t[0]+t[1] for t in l]
+print(l1)

@@ -1,7 +1,7 @@
 """
-int: integer number
-float: float number
-complex: complex number
+int: integer number, 5
+float: float number, 5.0
+complex: complex number, 3-4j
 """
 
 a = 4 # int: integer

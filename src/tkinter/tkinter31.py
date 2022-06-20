@@ -7,7 +7,8 @@ import random
 root = tk.Tk()
 # width x height + x_offset + y_offset:
 root.geometry("170x200+30+30") 
-     
+root.configure(bg='#888888')
+
 languages = ['Python','Perl','C++','Java','Tcl/Tk']
 labels = range(5)
 for i in range(5):

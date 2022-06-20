@@ -1,9 +1,17 @@
 """
 Create DataFrame object
+
+pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=None)
+
+data: ndarray (structured or homogeneous), Iterable, dict, or DataFrame
 """
 import pandas as pd
 import numpy as np
 from dataclasses import make_dataclass
+
+l = [i for i in range(0,10,2)]
+df1 = pd.DataFrame(data=l, columns=('even',))
+print(df1)
 
 d = {'col1': [1, 2], 'col2': [3, 4]}
 df1 = pd.DataFrame(data=d, dtype=np.int8)

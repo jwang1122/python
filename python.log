@@ -1,0 +1,15 @@
+2022-04-30 19:09:46,157 - __main__ -    DEBUG - debug message
+2022-04-30 19:09:46,158 - __main__ -     INFO - info message
+2022-04-30 19:09:46,158 - __main__ -  WARNING - warn message
+2022-04-30 19:09:46,159 - __main__ -    ERROR - error message
+2022-04-30 19:09:46,159 - __main__ - CRITICAL - critical message
+2022-04-30 19:09:51,175 - __main__ -    DEBUG - debug message
+2022-04-30 19:09:51,175 - __main__ -     INFO - info message
+2022-04-30 19:09:51,175 - __main__ -  WARNING - warn message
+2022-04-30 19:09:51,175 - __main__ -    ERROR - error message
+2022-04-30 19:09:51,175 - __main__ - CRITICAL - critical message
+2022-04-30 19:09:56,189 - __main__ -    DEBUG - debug message
+2022-04-30 19:09:56,189 - __main__ -     INFO - info message
+2022-04-30 19:09:56,189 - __main__ -  WARNING - warn message
+2022-04-30 19:09:56,189 - __main__ -    ERROR - error message
+2022-04-30 19:09:56,190 - __main__ - CRITICAL - critical message

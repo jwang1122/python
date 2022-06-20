@@ -3,7 +3,7 @@ Any natural number that is not divisible by any other number
 except 1 and itself called Prime Number.
 """
 
-def prime(Number):
+def isPrime(Number):
     flag = True # assume the number is a prime number
 
     for i in range(2, (Number)):
@@ -16,4 +16,5 @@ def prime(Number):
     else:
         print(" %d is not a Prime Number" %Number)
 
-prime(43)
+if __name__ == '__main__':
+    isPrime(43)

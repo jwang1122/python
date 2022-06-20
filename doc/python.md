@@ -1,41 +1,58 @@
 <h1>Python Language</h1>
 
 [Markdown Shared Library](utilities.md)
+[Screen Record output folder](C:\Users\12818\AppData\LocalLow\iTop Screen Recorder\Outputs)
 
-## 18 modules
-[](https://www.youtube.com/watch?v=Vi9Y9AL13Rc)
-1. [requests](https://api.github.com/repos/psf/requests)
-2. [django](https://www.djangoproject.com/download/)
-```dos
-pip install django==4.0
-```
-
-- [18 modules](#18-modules)
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
   - [My First python program](#my-first-python-program)
   - [print](#print)
   - [comment](#comment)
   - [Variabls](#variabls)
+  - [Python Playground](#python-playground)
   - [Variable and memory](#variable-and-memory)
+  - [Ways to Learn](#ways-to-learn)
+- [Language Basics](#language-basics)
 - [Data Type](#data-type)
+  - [number](#number)
+  - [string](#string)
+  - [tuple](#tuple)
+  - [list](#list)
+  - [set](#set)
+  - [dict](#dict)
+  - [bool](#bool)
+  - [Developer desiged data type](#developer-desiged-data-type)
+  - [Python modules date/time](#python-modules-datetime)
 - [Operator](#operator)
 - [Execution Control](#execution-control)
 - [Loop](#loop)
+- [How to write Python?](#how-to-write-python)
+- [direct python code](#direct-python-code)
 - [Function](#function)
   - [define function in function](#define-function-in-function)
   - [return function from function](#return-function-from-function)
   - [pass function as argument](#pass-function-as-argument)
-  - [global variable](#global-variable)
-  - [raise Error and Try-Except](#raise-error-and-try-except)
-  - [function annotation](#function-annotation)
-  - [recursive function](#recursive-function)
   - [function decorator](#function-decorator)
+  - [global variable](#global-variable)
+  - [recursive function](#recursive-function)
+  - [useful functions](#useful-functions)
+  - [assert error check](#assert-error-check)
+  - [Raise Except](#raise-except)
+  - [catch Except avoid termination](#catch-except-avoid-termination)
+  - [Create my own Error Type](#create-my-own-error-type)
+  - [pass by reference](#pass-by-reference)
+  - [function annotation](#function-annotation)
 - [Unit Test](#unit-test)
+- [Regular Expression](#regular-expression)
 - [Logging](#logging)
 - [algorithms](#algorithms)
 - [Class](#class)
+  - [Design](#design)
+  - [Abstraction](#abstraction)
   - [class basic](#class-basic)
+  - [use type to create class](#use-type-to-create-class)
+  - [Inheritance](#inheritance)
+  - [Polymorphism](#polymorphism)
   - [dunder functions](#dunder-functions)
   - [attribute scope](#attribute-scope)
   - [class tricks](#class-tricks)
@@ -46,6 +63,8 @@ pip install django==4.0
   - [Global Variables](#global-variables)
 - [Blackjack Game](#blackjack-game)
   - [Blackjack Rules](#blackjack-rules)
+- [Physics Unit](#physics-unit)
+- [Blackjack Card Game](#blackjack-card-game)
   - [Object relationship](#object-relationship)
   - [Game logic](#game-logic)
   - [Code Optimization](#code-optimization)
@@ -61,6 +80,7 @@ pip install django==4.0
   - [extract table from website](#extract-table-from-website)
 - [Data Analysis for Excel Users](#data-analysis-for-excel-users)
 - [Plot](#plot)
+- [Pandas](#pandas-1)
 - [Clean Code](#clean-code)
   - [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
@@ -90,6 +110,7 @@ pip install django==4.0
   - [Web Service API](#web-service-api)
   - [practices](#practices)
   - [Application](#application)
+- [Application Development Process](#application-development-process)
 - [PyInstaller](#pyinstaller)
 - [Data Structure](#data-structure)
   - [stack](#stack)
@@ -115,8 +136,14 @@ pip install django==4.0
   - [Either](#either)
 - [Design pattern](#design-pattern)
   - [Reactivex design pattern](#reactivex-design-pattern)
+- [18 modules](#18-modules)
+  - [web development](#web-development)
+  - [Data Science](#data-science)
+- [GUI Window Application](#gui-window-application)
+- [Game](#game)
 
 ## Getting Start
+
 ### getting formiliar your keyboard
 [Keyboard](keyboard.md)
 
@@ -125,11 +152,62 @@ pip install django==4.0
 [line plot](../src/plot/plot0.py)
 [x,y plot](../src/plot/plot01.py)
 
+💡🔑 **Knowlodge Base**
+> 1. in order to run python program, we need install python intereter.
+> 2. in order to write python code, we need install VS Code.
+
+
+❓ What is Python?
+> Python is computer programming language.
+✔️ Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. 
+
+❓ What is computer?
+>✔️ computer is nothing but CPU and Memory.
+
+![](images/computer.svg)
+
+![](images/punchMachine.webp)
+
+![](images/ppt-roll.jpg)
+
+❓ What is software programing language?
+>✔️ A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output.
+any language can be changed to machine code and then run by computer.
+
+![](images/languageLevel.png)
+
+* [ASCII Table](https://ascii-tables.com/)
+❓ What is ASCII?
+>✔️ASCII stands for American Standard Code for Information Interchange, a set of digital codes representing letters, numerals, and other symbols.
+
+![](images/USASCII_code_chart.png)
+
+❓ Why we need so many different programing language?
+> 1. each language could serve different purpose.
+> 2. some old language still available due to some company still use it. (RPG, FORTRAN)
+
+---
+[Table of Contents](#table-of-contents)
+
+
 ### print
 [print](../src/languageBasics/print.py)
 * place holder (%s, %d, %f)
 * print with tuple
 * formated print: print(f"x={x}") 
+
+❓ What is ASCII code?
+>✔️ASCII Table: American Standard Code for Information Interchange
+
+![](images/USASCII_code_chart.png)
+
+![](images/ascii.jpg)
+![](images/asciiA.png)
+![](images/Papertape-Wikipedia-example-dark1-2000px.png)
+![](images/media-1119679-pp-04.jpg)
+
+[ASCII website](https://ascii-tables.com/)
+
 * Homeworks
     - [Math Competition](../homeworks/12023%20Harmoney%20School%20Houston.pdf)
     - [print-01](homeworks/print01.md)
@@ -152,12 +230,14 @@ name = "John"
 ```
 
 ❓ Why we use variables?
-✔️ 
+✔️ I want use same value on many place, so that I can only change one place for all usage of the variable.
+
 
 * Variable Naming Rules
 1. variable name cannot start with number
 2. variable can be combination of letters and numbers _, a~z, A~Z, 0~9, no other special characters
 3. don't use reserved keywords as variable name
+
 ![](images/python-keywords.png)
 
 [Python Keywords](https://realpython.com/python-keywords/#:~:text=%20Python%20Keywords%20and%20Their%20Usage%20%201,are%20used%20for%20control%20flow%3A%20if%2C...%20More%20)
@@ -165,46 +245,138 @@ name = "John"
 4. Avoid using existing function name as your variable name.
 otherwise, your python builtins functions no longer works the way you expected.
 
+```
+>>> dir(__builtins__)
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 
+'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
+```
+### Python Playground
+❓ How do I get into python playground?
+✔️ type in **python** in command prompt shown below:
+```DOS
+C:\Users\12818\workspace\2021fall\python>python
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+dunder: double underscore (hold shift + -)
+```
+>>> dir(__builtins__)
+```
+1. can execute any python code, it is good for your code testing.
+2. execute multiple line of code.
+3. to find document for all imported modules, and builtin functions.
+
+![](images/chineseMedicine.jpg)
+
+![](images/memory.gif)
+
+> you can define more than one variable to point to same memory location.
+
 ### Variable and memory
 ![](images/chineseMedicine.jpg)
 ![](images/memory.gif)
+![](images/memory.png)
+
+![](images/mailbox.jpg)
+
 * Homeworks
 [variable-01](../homeworks/basics/print/variable01.md)
 [variable-02](../homeworks/basics/print/variable02.md)
 [variable-03](../homeworks/basics/print/variable03.md)
 
+### Ways to Learn
+1. learn from teacher;
+2. learn from coding, practice;
+3. learn from python document (help on playground)
+4. learn from mistakes (your own, others)
+5. document (take good note for everything we learn)
 
+## Language Basics
+
+```mermaid
+graph TB
+
+A(Languabe Basics<br>Any Languages)
+B[Data Type]
+C[Operator]
+D[Execution Control]
+E[Loop]
+
+A --> B & C & D & E
+
+classDef start fill:#F24EE3,stroke:black,stroke-width:2px,color:white;
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+
+class A start
+class B,C,D,E if
+```
 ![](images/LanguageBasics.svg)
 
 
 ## Data Type
+
+❓ What is data type in Python?
+✔️ 1. built ins; 2. developer defined;
+* built in data type:
 ![](images/DataType.png)
 
-* [Numbers](../src/languageBasics/number.py)
+### number 
+[Numbers: int, float, complex](../src/languageBasics/number.py)
+❓ What is number in python?
+✔️ Python supports integers, floating-point numbers and complex numbers. They are defined as int, float, and complex classes in Python.
+
+📌❗️ **Knowlodge Base**
+> python is smart enough so that you don't need difine a variable type, based on the type of value you assigned to the variable, the variable will be that data type.
+
     - int: a=4
     - float: a=3.4
     - complex: c=4-3j
   - Homeworks
     [number-01](../homeworks/basics/datatype/number01.md)
+
+### string 
 * [String](../src/languageBasics/string.py)
+
+❓ What is a str?
+✔️ str variable is group of letters surounded by ' ', " ", ''' ''', """ """.   
+    - s = 'hello'
+    - single ' double " are no difference, but must to be pair.
+    - ""; """ [put your text here] """; ''; ''' [your text here] '''
     - string is iterable
+    - String is immutable
     - string slicing: [[start]:[end]:[step]]
     - String operator +, *
     - as function str(object)
     - string functions (isalnum(), isdigit(), strip(), split(), lower(), upper(), startswith(), endswith(), ...)
-    - 
+    - use built-in functions: len(), sorted(), reversed()
+  
   - Homeworks
     [string-01](../homeworks/string/string01.md)
     [string-02](../homeworks/string/string02.md)
     [string-03](../homeworks/string/string03.md)
-* [Tuple](../src/languageBasics/tuple.py)
-    - tuple is iterable
-    - tuple is immutable
-    - tuple slicing: tuple1[[start]:[end]:[step]]
-    - tupler operator +, *
-    - as function: tuple(iterable)
-    - tuple functions ()
-* [List](../src/languageBasics/list.py)
+
+### tuple 
+[Tuple](../src/languageBasics/tuple.py)
+❓ What is a tuple?
+✔️ tuple is a set of object element, separate by comma, suround by (). it is immutable once you defind.
+  - (1.5,2,3,4,'hello')
+  - elements can have different data type in tuple
+  - we can use len() built in function to get total number of elements in the tuple
+  - tuple is iterable
+  - tuple is immutable
+  - tuple slicing: tuple1[[start]:[end]:[step]]
+  - tupler operator +, *
+  - as function: tuple(iterable)
+  - tuple() as functions () can be used as function to convert iterable object to tuple.
+
+### list 
+[List](../src/languageBasics/list.py)
+❓ What is a list in python?
+✔️ a **list** is a special data type in python. A List is an ordered collection of python objects that is iteralbe,mutable, separated by comma, surrounded by [].
+  - [2, 3, 'hello']
+  - elements can have different data type in tuple
+  - we can use len() built in function to get total number of elements in the list
     - list is iterable
     - list is mutable
     - list slicing: list1[[start]:[end]:[step]]
@@ -215,19 +387,84 @@ otherwise, your python builtins functions no longer works the way you expected.
   - Homeworks
     [list-01](../homeworks/basics/datatype/list01.md)
     [list-02](../homeworks/basics/datatype/list02.md)
-* [Set](../src/languageBasics/set.py)
+
+### set 
+[Set](../src/languageBasics/set.py)
+❓ What is set in Python?
+✔️ A Set is an unordered collection pyhton objects that is iterable,
+mutable, and separated by comma, surrounded by {}, has no duplicated elements.
+
+  - {1,2,3}, set(), set(range(5)), set("hello")
+  - elements can have different data type in set
     - set is iterable
     - set is mutable
     - set operators: &, |, <, >, ==
     - modify set
     - as function: set(iterable)
     - set functions ()
-* [Dictionary](../src/languageBasics/dictionary.py)
-    - dict is iterable: only iterate key
-    - dict is mutable
-    - dict modify==>CRUD
 
-* [date/time](../src/languageBasics/datatype/datetime1.py)
+
+### dict 
+[Dictionary](../src/languageBasics/dictionary.py)
+❓ what is a dictionary data type in Python?
+✔️ A dictionary consists of a collection of key-value pairs.
+It is unordered, iterable, mutable, and each pair separated by comma,
+surrounded by '{}', and no duplicated key. the key-value pair separated by ':'.
+
+  - {1:'Monday', 2:'Tuesday'}
+  - key-value pair can have different data type in dict
+  - dict is iterable: only iterate key
+  - dict cannot be slicing due to unordered key-value pair
+  - dict operators: **, ==
+  - dict is mutable: add, update, delete key-value pair
+  - functions in dict: get(), items(), values(), pop(), ..
+  - dict() can be used as function to convert iterable object to dict (need to be key-value pair).
+  - dict modify==>CRUD
+
+### bool
+**True** or **False** are python reserved keyword for bool value.
+
+### Developer desiged data type
+
+```mermaid
+classDiagram
+
+class Dog{
+  name:str
+  color:str
+  edge:int
+  bark()
+}
+
+```
+
+```py
+class Student:
+  pass
+
+s = Student()
+print(type(s))
+```
+
+![](images/studentObject1.svg)
+
+* [Simple user defined data type](../src/basics/dog.py)
+* [class Hello](../src/languageBasics/datatype/myclass.py)
+
+### Python modules date/time 
+[date/time](../src/languageBasics/datatype/datetime1.py)
+[Get time interval](../src/languageBasics/datatype/datetime2.py)
+[Date time convertion](../src/languageBasics/datatype/datetime3.py)
+[Date time detail](../src/languageBasics/datatype/datetime4.py)
+
+📌❗️ **Knowlodge Base**
+> the variable value can be reassigned to other data type. Once it is reassigned, the data type changes.
+```py
+i = 5
+i = 'hello'
+i = [1,2,3,4]
+```
+
 ## Operator 
 * [operator](../src/languageBasics/operator.py)
 * Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
@@ -239,9 +476,14 @@ otherwise, your python builtins functions no longer works the way you expected.
 * Comparison Operators: ==, !=, <, >, <=, >=
   
   [comparison](../src/languageBasics/operator/comparison.py)
+
+  ![](images/memory.png)
+
 * Identity Operator: is, is not
 
   [identity](../src/languageBasics/operator/identity.py)
+
+
 
 * Logical Operator: and, or, not
 
@@ -259,9 +501,36 @@ otherwise, your python builtins functions no longer works the way you expected.
   
   [bitwise](../src/languageBasics/operator/bitwise.py)
 
+![](images/byte.jpg)
+
+> ASCII Table: American Standard Code for Information Interchange
+
+![](images/USASCII_code_chart.png)
+
+![](images/ascii.jpg)
+
+[byte for character](../src/languageBasics/ascii.py)
+
+![](images/machineLanguage.png)
+
+![](../python.png)
+* [Understand Image Pixel RGBA mode](../src/languageBasics/operator/changeImage.py)
+* ![](../python1.png)
+* ![image file is bit data](images/imageInHex.png)
+* [gunshot sound](whiff.wav)
+![Gunshot in Hex](images/gunshotInHex.png)
+  
 * operator precendence: *, /; +, -; 
   multiply has higher precendence than +, -, use () to change precendence
   
+* . operator
+> in OOP, . operator is used to refer to an attribute of class instance.
+
+```py
+greeting = "Hello"
+print(greeting.upper())
+```
+
 ## Execution Control
 * **if-elif-else** statement Syntax
 ```py
@@ -279,7 +548,7 @@ else:
 ```mermaid
 graph TB
 A((start))
-B{if <condition>:}
+B{"if &lt;condition&gt;:"}
 C[if code block]
 D[else code block]
 E[end]
@@ -290,8 +559,8 @@ B--True-->C-->E
 B--False-->D-->E
 
 A1((start))
-B1{if <condition>:}
-B2{elif <condition>:}
+B1{"if &lt;condition&gt;:"}
+B2{"elif &lt;condition&gt;:"}
 C1[if code block]
 D1[elif code block]
 E1[end]
@@ -328,7 +597,7 @@ class E,E1 end1
 ```mermaid
 graph TB
 
-A([Loop])
+A([for-Loop])
 B{loop<br>condition<br>i<=10}
 C[code block 1<br>line-51]
 D{break<br>condition<br>line-52}
@@ -355,7 +624,7 @@ class A start
 ```mermaid
 graph TB
 
-A([Loop])
+A([for-Loop])
 B{loop<br>condition<br>i<=10}
 C[code block 1<br>line-41]
 D{continue<br>condition<br>line-42}
@@ -375,7 +644,6 @@ classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
 class B,D if
 class E end1
 class A start
-
 ```
 
 * [while.py](../src/languageBasics/loop/while.py)
@@ -389,6 +657,10 @@ class A start
   - [loop-04](../homeworks/basics/loop/loop04.md)
   - [loop-05](../homeworks/basics/loop/loop05.md)
 
+📌❗️ **Knowlodge Base**
+> Always adjust the condition variable toward making loop failed.
+
+## How to write Python?
 ```mermaid
 graph TB
 
@@ -409,6 +681,12 @@ classDef start fill:#53DE1F,stroke:#267608,stroke-width:2px;
 class START start
 class A,C,D html
 ```
+## direct python code
+* [guess number game](../src/languageBasics/guessNumber.py)
+* [roll two Dices](../src/languageBasics/rollDice1.py)
+* [Probability of rolling dices](../src/languageBasics/rollDice2.py)
+* [small dice game](../src/languageBasics/rollDice3.py)
+
 ## Function
 ❓What is function?
 >✔️A block of code defined by name and arguments, can be used by calling the name many times repeatedly. In Python, functions are first-class citizens. That means functions have the same characteristics as values like other data type such as strings and numbers. Anything you would expect to be able to do with a string or number you can do with a function as well.
@@ -462,9 +740,18 @@ Circle area formula: $ A=\pi r^2 $
 * [passFuncAsArg.py](../src/function/passFuncAsArg.py)
 * 👍[function as dictionary value](../src/function/dictFunction.py)
 
+
+### function decorator
+* [my_timer.py](../src/function/my_timer.py)
+* [make simple job complecated](../src/function/myTimer1.py)
+* [add timer](../src/function/myTimer2.py)
+* [add decorator](../src/function/myTimer3.py)
+* [add user check on function](../src/function/security.py)
+
 ### global variable
 ❓ What is global variable?
 >✔️global keyword allows you to modify the variable outside of the current scope. It is used to create a global variable and make changes to the variable in a local context.
+
 [use global variable](../src/function/globalVariable.py)
 1. When we create a variable inside a function, it is local by default.
 2. When we define a variable outside of a function, it is global by default. You don't have to use global keyword.
@@ -472,8 +759,81 @@ Circle area formula: $ A=\pi r^2 $
 4. Use of global keyword outside a function has no effect.
 5. It is not necessary to declare global variable outside function
 
+### recursive function
+A function is recursive if it calls itself.
+  1. termination condition.
+  2. adjust status for each call.
+  3. Python stops the cunction calls after a depth of 1000 calls.
+* [factoria.py](../src/function/factorial.py)
+$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
+![](aDoc/images/recursiveFactorial.jfif)
+* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
 
-### raise Error and Try-Except
+* Understand recursive find.
+  ```mermaid
+  graph TB
+  START((find answer))
+  END[end]
+  B[add 10 to<br>the answer of<br>problem 52]
+  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
+  D[Problem 85:<br>10]
+  
+  START-->B-->C-->D
+  D--10+12-->C--22+10-->B--32-->END
+
+  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
+  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
+  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
+  class START start
+  class B,C,D html
+  class END end1
+  ```
+
+### useful functions
+![](images/circleParts.png)
+
+$$ d = 2 \cdot r $$
+$$ c = d \cdot \pi = 2 \cdot r \cdot \pi$$
+$$ a = \pi r^2 $$
+where r, d, c, a are radius, diameter, circumference and area respectively.
+
+* [Circle](../src/function/circle.py)
+
+![](images/sphere.webp)
+
+* [Sphere volume and surface area](../src/function/sphere.py)
+
+![](images/triangleArea.png)
+
+$$ a = \frac 1 2 b \cdot h $$
+where a, b, h are area, base and height respectively.
+
+* [triangle area](../src/function/triangle.py)
+* 
+* [check an number for Prime](../src/prime/prime1.py)
+* [better implementation](../src/prime/prime2.py)
+* [def isPrime() return True or False](../src/prime/prime3.py)
+* [](../src/prime/prime4.py)
+* [def rangePrime()](../src/prime/prime6.py)
+* [use my_timer() check which function run faster](../src/prime/prime7.py)
+> the greatest common divisor (GCD) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers.
+
+$$n!=n (n-1) (n-2) ... 1$$
+$$ 4!=4 \cdot 3 \cdot 2 \cdot 1 = 24$$
+$$ 6!=6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 720$$
+
+* [factorial](../src/function/factorial.py)
+* [Greatest common divisor](../src/gcd.py)
+* [recursive GCD](../src/recursiveGCD.py)
+>the least common multiple, lowest common multiple, or smallest common multiple of two integers a and b,  is the smallest positive integer that is divisible by both a and b.
+* [LCM least common multiple](../src/lcm.py)
+
+$$ lcm(a,b) = \frac {|ab|} {gcd(a,b)}$$
+
+* [use above formula](../src/lcm1.py)
+
+### assert error check
 * [❓what's wrongh?](../src/function/circle1.py)
 * [✔️Assert check before calculation](../src/function/assert.py)
 
@@ -504,10 +864,15 @@ class C,D html
 class B if
 class END end1
 ```
+### Raise Except
+
+![](images/try-except.svg)
 
 * [✋Raise TypeError](../src/function/raiseError.py)
 * [assert](../src/function/assertCheck.py)
-  
+* [](../src/function/circle1.py)
+* [](../src/function/circle3.py)
+
 The difference between raise and assert:
 1. assert: I swear this must be true, in case it happens, let me know. ❌❗️You have big problem! Debug aid for developer find root cause, not for handling run-time error. only give you one kind of error which is AssertionError.
 >💡[I swear int('1')==1](../src/function/asInt.py)
@@ -521,12 +886,33 @@ The difference between raise and assert:
 
 ✔️Better solution is solve the issue at compiling time.
 
+### catch Except avoid termination
+* [catch assert](../src/function/tryexcept1.py)
+* [catch raise](../src/function/tryexcept2.py)
+* [](../src/function/tryexcept3.py)
+
+### Create my own Error Type
+
+> 1. look for the error type you may need;
+```dos
+>>> dir (__builtins__)
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 
+'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EncodingWarning', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError',
+```
+> 2. create your own error type
+* [create application specific Error](../src/function/myerrortype.py) 
+
+### pass by reference
+* [Understand pass by reference](../src/function/passByReference.py)
+* [Understand pass by value](../src/function/passByValue.py)
+
+
 ### function annotation
 👍Avoid unexpected function call with wrong data type arguments.
 
 👍Find out calling error before runtime.
 
-* [❓what's wrongh?](../src/function/circle1.py)
+* [❓what's wrong?](../src/function/circle1.py)
 
 ```DOS
 mypy <filename.py>
@@ -570,40 +956,6 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 class A start
 class C,E,F,D,J,GIT block1
 ```
-
-
-### recursive function
-A function is recursive if it calls itself.
-  1. termination condition.
-  2. adjust status for each call.
-  3. Python stops the cunction calls after a depth of 1000 calls.
-* [factoria.py](../src/function/factorial.py)
-$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
-![](aDoc/images/recursiveFactorial.jfif)
-* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
-
-* Understand recursive find.
-  ```mermaid
-  graph TB
-  START((find answer))
-  END[end]
-  B[add 10 to<br>the answer of<br>problem 52]
-  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
-  D[Problem 85:<br>10]
-  
-  START-->B-->C-->D
-  D--10+12-->C--22+10-->B--32-->END
-
-  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
-  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
-  class START start
-  class B,C,D html
-  class END end1
-  ```
-### function decorator
-* [my_timer.py](../src/function/my_timer.py)
 
 ## Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
@@ -682,12 +1034,47 @@ C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
 
 [unit test for circleArea](../test/test_circleArea.py)
 
+
+## Regular Expression
+[](https://www.w3schools.com/python/python_regex.asp)
+
+* search() function
+  
+```py
+import re
+```
+[start with, end with](../src/regularex/regularexp1.py)
+> ^: start with
+> ...$: end with
+> *: Zero or more occurrences
+
+![](images/matchCharacters.png)
+
 ## Logging
 ❓What is logging?
 ✔️write software execution record to console, file or database used for application analysis.
 there are at least 5 level of logging: Debug, Info, Warning, Error, Fatal
 
 * [send log message to a file](../src/logging/logging1.py)
+* [use print do the logging](../src/logging/logging01.py)
+> nothing wrong with it, for small program it is fine. once the program getting bigger, this is no good. you start dealing with complecated problem, you need log level, log analysis, and more
+![](images/debug.png)
+![](images/info.png), 
+![](images/warning.png)
+![](images/error.jpg)
+![](images/critical.png)
+* [import logging](../src/logging/logging02.py)
+> get bunch of function right out of the box.
+🔑😄 **Knowlodge Base**
+> 1. default logging level is "warning"
+> 2. root is the default logger name
+
+* [write logging to a file](../src/logging/logging03.py)
+* [](../src/logging/logging3.py)
+* [use get logger](../src/logging/logging4.py)
+* [use config file](../src/logging/logging5.py)
+
+[Logging configuration](https://docs.python.org/3/library/logging.config.html#configuration-file-format)
 
 ## algorithms
 Big O
@@ -704,13 +1091,82 @@ Operations on Data Structure
 * [arrays.py](../src/algorithms/arrays.py)
 
 ## Class
+❓ what is class?
 >Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.
+
+### Design
+![](images/engineBlueprint.webp)
+
+![](images/house-blueprint.webp)
+
+![](images/car-blueprint.webp)
+
+```mermaid
+graph LR
+
+OOP([Object Oriented Programming])
+ABSTRACT[Abstraction]
+INHERIT[Inheritance]
+POLY[Polymorphism]
+ENCAPS[Encapsulation]
+
+OOP --> ABSTRACT & INHERIT & POLY & ENCAPS
+
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class OOP start
+```
 
 4 Features of OOP
 1. Abstraction:class is a abstraction of object in real world to python program object type.（实体模拟）
 2. Inheritance: a class can inherit from multiple other class to increase code reusability.（共性继承）
 3. Polymorphism:same function behavior differently by different object type.（异类同功）
 4. Encapsulation：avoid data or function being called outside the class unintentionally（自我保护)
+
+❓ How to make it happen?
+> ✔️ build a class.
+
+```mermaid
+classDiagram
+
+class ClassName{
+  attributes
+  functions()
+}
+```
+
+class in python is a definition of group of attributes (class name, variables & functions) which is abstracted from real world to computer world (virtual world), and can be used to create object. those objects can then do something based on its variable attributes.
+
+> Behavior: do something based on what it knows!
+
+in python, both variable and function are treated same as attrubutes.
+
+```py
+class Robot:
+  pass
+
+robot = Robot()
+robot.jump() # AttributeError: 'Robot' object has no attribute 'jump'
+```
+
+```py
+>>> class Robot:
+...     pass
+... 
+>>> r = Robot()
+>>> r.jump()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Robot' object has no attribute 'jump'
+>>>
+```
+
+as you can see, we call jump() function by r.jump(), Python raises a AttributeError. because we never defined a function named jump().
+
+### Abstraction
+
+❓ why abstraction?
+>✔️ because it is impossible to copy every single feature of an object from real world, we can only pick something that we are interested in the virtual world. That is so-called abstraction.
 
 * Robot from real world
 ```mermaid
@@ -726,21 +1182,158 @@ class Robot {
 }
 ```
 
+![](images/abstraction.png)
+
+
 ### class basic
 * [add attribute dynamically](../src/myclass/class01.py)
-* [everythin in Python is class](../src/myclass/testRobot.py)
+
+🔑😄 **Knowlodge Base**
+> define a class means to create a new data type.
+
+
+```dos
+(env) C:\Users\12818\workspace\python>c:/Users/12818/workspace/python/env/Scripts/python.exe c:/Users/12818/workspace/python/src/myclass/class01.py
+<class '__main__.Robot'>
+<class 'object'>
+```
+
+```py
+>>> from src.myclass.class01 import * 
+>>> x = Robot()
+>>> type(x)
+<class 'src.myclass.class01.Robot'>
+>>>
+```
+* [everything in Python is class](../src/myclass/testRobot.py)
 * [define function outside of class](../src/myclass/class02.py)
-* [define function inside class](../src/myclass/class03.py)
+* [define function inside class, class level, instance level](../src/myclass/class03.py)
 * [define __init__()](../src/myclass/class04.py)
+* [understand __new__() and __init__()](../src/myclass/class09.py)
+
+🔑😄 **Knowlodge Base**
+> 1. __new__() is constructor which is called when creating an instance of class;
+> 2. __new__() will automatically call __init__() to initialize the instance;
+> 3. create your own __new__() will override the functionality of super class;
+> 4. __init__() is called automatically when creating an instance of a class;
+> 5. once __init__() is defined, the __init__() of super class will be overridden with no functioning, unless 
+> 6. __init__() call super().__init__() to reuse whatever defined in super class;
+> 7. __init__() is used to initialize the instance which returns nothing.
+> 8. It is the __init__() makes each instance from the same class different.
+> 
+![](images/self.png)
+
+![](images/magicDunderInit.png)
+
+### use type to create class
+[Use type() to create new class dynamically](../src/myclass/createClass.py)
+
+* Excersize:
+
+```mermaid
+class Diagram
+
+class Item{
+  name:str
+  price:float
+  quantity:int
+  getTotal()
+  addDiscount()
+}
+
+class Store{
+  items:[]
+  save()
+  load()
+}
+```
+* [class level attribute vs. instance level attribute](../src/myclass/item.py)
+* [dynamically assigned attribute](../src/myclass/item1.py)
+* [save and load data with file](../src/myclass/item2.py)
+* [use csv DictReader() function](../src/myclass/item3.py)
+* 
 * [__init__(self, inputName=None)](../src/myclass/class05.py)
 * [private attribute __energy](../src/myclass/class07.py)
 * [getter, setter, property](../src/myclass/class08.py)
+* [class level attributes](../src/myclass/attributes.py)
+* [related classes](../src/myclass/related.py)
+
+```mermaid
+classDiagram
+
+class Student{
+  name:str
+  age:int
+  grade:int
+  courses:Course[]
+}
+
+class Course{
+  name:str
+  students:Student[]
+}
+
+Course o-- Student:bidirection_connection
+Student o-- Course
+```
+### Inheritance
+
+```mermaid
+classDiagram
+
+class Pet{
+  name:str
+  age:int
+  speak()
+}
+
+Pet <|-- Dog
+Pet <|-- Cat
+Pet <|-- Fish
+```
+* [Why inheritance? ](../src/myclass/inheritence.py)
+
+### Polymorphism
+* [Polymorphism](../src/myclass/polymorphism.py)  
+
+🔑😄 **Knowlodge Base**
+> Define a class means to create a new data type.
+> 1. The difference between regular function and instance function is the very first positional argument is always **self** in class function.
+> 2. instance level attributes can be defined in any instance function.
+> 3. class level attributes should be used by class name.
+> 4. static function does NOT use any instance level attribute, so no **self** argument is needed.
+> 5. all class inherits from **object** class.
+> 6. every thing is class instance in python (such as 3, float, set, [], (), ...).
+> 7. **self** is the first positional argument of all instance level function, which can be used to access all variable and function attributes, it represents the instance itself, it then can be passed as the instance.
+
+![](images/self.png)
 
 ### dunder functions
 * [__repr__(good enough) vs. __str__](../src/myclass/class06.py)
 * [__init__(good enough) vs. __new__](../src/myclass/class09.py)
+
+![](images/magicDunderInit.png)
+
 * [❓override __new__, return other class instance](../src/myclass/class10.py)
 * [override __iter__, __next__, create iterable](../src/myclass/class15.py) 
+
+🔑😄 **Knowlodge Base**
+> 1. each iterable object implement __iter__()
+> 2. built-in function: iter() call __iter__()
+> 3. built-in function: next() call __next__()
+
+* [YouTube Itertools](https://www.youtube.com/watch?v=p8FUoSIyIVY)
+* [](https://www.geeksforgeeks.org/python-itertools/)
+* [👍😄 itertools Document](https://docs.python.org/3/library/itertools.html)
+
+* [](../src/myclass/iter01.py)
+
+🔑😄 **Knowlodge Base**
+> 1. anything is iterable it implements __iter__() function;
+> 2. anything is iterator it implements __next__() function;
+> 3. when all elements are iterated, raise StopIteration Error.
+
+
 * [range1 start from 1, include stop](../src/myclass/range1.py)
 * [__call__() make object callable](../src/myclass/class22.py)
 * [__eq__(check if same), __add__](../src/myclass/class24.py)
@@ -869,6 +1462,22 @@ Person<|--Engineer:Engineer is Person
 10. No Doubing Down
 11. No Insurance
 12. Reshuffling when start new game.
+
+## Physics Unit
+* [physics unit](../src/physics.py)
+
+```mermaid
+classDiagram
+
+class Quantity{
+  vale:[float, int]
+  symble: str
+
+  covert(symble)
+}
+```
+
+## Blackjack Card Game
 
 ### Object relationship
   
@@ -1001,7 +1610,7 @@ class A,D,C,E if
 ✔️
 
 ❓How to read Python code?
-✔️
+✔️ [How to read Python code](https://towardsdatascience.com/how-to-read-and-understand-python-code-faster-180ba1ba9445)
 
 ### Software development life cycle
 * Test Driven Development (TDD)
@@ -1087,9 +1696,9 @@ class A,B,C,D if
 [python deployment](https://www.nylas.com/blog/packaging-deploying-python/)
 
 ## Yahtzee Dice Game
-[](../src/yahtzee/yahtzee.md)
+[](../src/yahtzee/yahtzee1.md)
 [Yahtzee Dice Game](https://www.dicegamedepot.com/yahtzee-rules/)
-[Yahtzee Python](../src/yahtzee/ahtzee.py)
+[Yahtzee Python](../src/yahtzee/yahtzee.py)
 ```mermaid
 classDiagram
 class Dices{
@@ -1119,6 +1728,7 @@ class Game{
 * [read/append plain text from/fo file](../src/file/file1.py)
 * [read text file](../src/file/file7.py)
 * [with open](../src/file/file2.py)
+* [read CSV file](../src/file/csvReader0.py)
 * [read CSV file using csv module](../src/file/csvReader1.py)
 * [read CSV file using pandas](../src/file/csvReader2.py)
 * [read large CSV file pokemon.csv](../src/file/csvReader3.py)
@@ -1162,6 +1772,7 @@ $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}
 * [simple curves](../src/datavisualization/dataanalysis01.py)
 * [Covid-19](../src/datavisualization/dataanalysis02.py)
 * [Create a instance of DataFrame](../src/pandas/pandas01.py)
+* 
 ## Data Analysis for Excel Users
 * [Anaconda3](https://repo.anaconda.com/archive/) 
   File: Anaconda3-5.3.0-Windows-x86_64.exe
@@ -1195,7 +1806,21 @@ $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}
 * [generate animated sine wave](../src/plot/movingSinWave.py)
 * [3D animation generator](../src/plot/3dAnimation.py)
 
-[padans DataFrame](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+## Pandas
+[padans chart visualization](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+
+[pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
+
+[create a DataFrame](../src/pandas/pandas01.py)
+1. use dict to create a DataFrame, key is column name, value is list
+2. use array to create a DataFrame
+3. use dataclass to create a DataFrame
+4. use df.at(row, column) to get individual value of DataFrame
+5. use df.info() to get definition detail of a DataFrame
+6. use df.values to get all values
+7. use df.axes to get all columns
+
+
 
 ## Clean Code
 [Clean code](Clean-Code.pdf")
@@ -1299,7 +1924,7 @@ CRUD: Create, Retrieve, Update, Delete
 
 ## MongoDB
 ❓What is MongoDB?
-✔️One of NoSQL database application written in C++.
+✔️Object-Oriented based One of NoSQL database application written in C++.
 1. stores data in JSON-like documents that can have various structures
 2. uses dynamic schemas, which means that we can create records without predefining structure such as SQL relational database table.
 3. the structure of a record can be changed simply by adding new fields or deleting existing ones.
@@ -1327,6 +1952,10 @@ MONGO-->D-->C-->DOC & COL
 ✔️SQL stands for Structured Query Language specially for relational database.
 SQLite: Python built in SQL database.
 
+* [CRUD, Relationships and More](https://www.youtube.com/watch?v=UpsZDGutpZc)
+* [Schema Validation, Advanced Queries and More](https://www.youtube.com/watch?v=nYNAH8K_UhI)
+* [Full-Text Search with Atlas Search](https://www.youtube.com/watch?v=nc-Kpiq1zLc)
+* 
 ## tkinter(windows based GUI)
 ```dos
 pip install tk
@@ -1493,6 +2122,114 @@ API Key: 84B7917D-C980-407F-ACBC-B29E3D2E4458
 * [Sticker](../src/tkinter/sticker.py)
 * [Blackjack](../src/tkinter/blackjack.py)
 
+## Application Development Process
+
+```mermaid
+graph LR
+
+PYTHON(Python Language)
+BASIC[Language Basics]
+DATA[Data type]
+OP[Operators]
+CTRL{IF-ELSE}
+LOOP([for, while])
+FUNC[Function]
+CLASS[Class]
+
+TKINTER[Tkinter GUI]
+PYGAME[PyGame]
+FUNCTIONAL[Functional Programming]
+DESIGN[Design Pattern]
+DV[Data Visualization]
+MACHINE[Machine Learning]
+DATABASE[(SQL, NOSQL Data base)]
+REACT[ReactJS Web Application]
+DJANGO[DJango Web Application]
+
+PYTHON --> BASIC & FUNC & CLASS & TKINTER & PYGAME & FUNCTIONAL & DESIGN & DV & MACHINE & DATABASE & REACT & DJANGO
+BASIC --> DATA & OP & CTRL & LOOP
+
+classDef start fill:#1bb244,stroke:#074a19,stroke-width:2px,color:white;
+classDef touched fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+classDef js fill:yellow,stroke:black,stroke-width:2px;
+classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef db fill:#BEBDB7,stroke:black,stroke-width:2px;
+classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class PYTHON start
+class BASIC,DATA,OP,CTRL,LOOP,FUNC,CLASS,TKINTER,PYGAME touched
+
+```
+
+Knowing all python programing basics such as function, class does not make you a good programer.
+
+* [Sample Functional Programing](../src/functional/either3.py)
+* [Shopping actions](../src/functional/shoppingMonad3.py)
+Key point for functional programming is function binding and data wraper.
+
+
+❓ What is design pattern
+>✔️Design patterns can speed up the development process by providing tested, proven development paradigms. Design pattern provides special data type(class), functions and behavior and relations to solve generic problem.
+
+* [Design patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
+* [Design pattern sample](../src/designPattern/observer.py)
+
+```mermaid
+classDiagram
+
+class Subject{
+  notify()
+  attach()
+  detach()
+}
+
+class Observer{
+  update()
+}
+
+class Data{
+  setData()
+}
+
+Subject o-- Observer
+Subject <-- Data
+```
+
+* [Machine Learning Sample](../src/numpy/stockFit.py)
+![](images/AppleStockFit.png)
+
+```mermaid
+graph LR
+
+A([Software Project])
+B[User Interface<br>GUI Front End]
+C[Business Logic<br>middle tier]
+D[Database<br>Back End]
+E(Unit test)
+F(Logging)
+K(Documentation)
+L(Integration Test)
+G[Window Based<br>Eclipse IDE]
+H[Web Based<br>Google, Amazon]
+I[MongoDB]
+J[SQL Server]
+REACT[ReactJS]
+ANGULAR[Angular]
+DJANGO[DJango]
+GIT(Source Control)
+
+A-->B & C & D 
+A--tools--> E & F & K & L & GIT
+B-->H & G
+D-->I & J
+H-->REACT & ANGULAR & DJANGO
+
+classDef block1 fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
+classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
+
+class A start
+class C,E,F,D,J,GIT block1
+```
 ## PyInstaller
 [Tkinter to Exe]()
 ```DOS
@@ -1928,28 +2665,61 @@ where RxPY offers operators such as
 ✔️ Data Stream
 
 ❓ What is Observer?
-✔️ It is an object with on_next(), on_error() and on_completed() methods, that will get called when there is interaction with the observable i.e. the source interacts for an example incoming Tweets, etc.
+> ✔️ It is an object with on_next(), on_error() and on_completed() methods, that will get called when there is interaction with the observable i.e. the source interacts for an example incoming Tweets, etc.
 ✔️ Who process Data Stream
 
 ❓ What is Subscription?
-✔️ When the observable is created, to execute the observable we need to subscribe to it.
+> ✔️ When the observable is created, to execute the observable we need to subscribe to it.
 ✔️ trigger above process
 
 ❓ What are Operators?
-✔️ An operator is a pure function that takes in observable as input and the output is also an observable. You can use multiple operators on an observable data by using the pipe operator.
+> ✔️ An operator is a pure function that takes in observable as input and the output is also an observable. You can use multiple operators on an observable data by using the pipe operator.
 
 ❓ What is Subject?
-✔️ A subject is an observable sequence as well as an observer that can multicast, i.e. talk to many observers that have subscribed. The subject is a cold observable, i.e. the values will be shared between the observers that have been subscribed.
+> ✔️ A subject is an observable sequence as well as an observer that can multicast, i.e. talk to many observers that have subscribed. The subject is a cold observable, i.e. the values will be shared between the observers that have been subscribed.
 
 ❓ What is Subscription?
-✔️ When the observable is created, to execute the observable we need to subscribe to it.
+> ✔️ When the observable is created, to execute the observable we need to subscribe to it.
 
 ❓ Advantages of using RxPy?
-✔️the following
-* RxPY is an awesome library when it comes to the handling of async data streams and events. RxPY uses observables to work with reactive programming that deals with asynchronous data calls, callbacks and event-based programs.
-* RxPY offers a huge collection of operators in mathematical, transformation, filtering, utility, conditional, error handling, join categories that makes life easy when used with reactive programming.
-* Concurrency i.e. working of multiple tasks together is achieved using schedulers in RxPY.
-* The performance is improved using RxPY as handling of async task and parallel processing is made easy.
+> ✔️the following
+> * RxPY is an awesome library when it comes to the handling of async data streams and events. RxPY uses observables to work with reactive programming that deals with asynchronous data calls, callbacks and event-based programs.
+> * RxPY offers a huge collection of operators in mathematical, transformation, filtering, utility, conditional, error handling, join categories that makes life easy when used with reactive programming.
+> * Concurrency i.e. working of multiple tasks together is achieved using schedulers in RxPY.
+> * The performance is improved using RxPY as handling of async task and parallel processing is made easy.
 
 ❓ Disadvantage of using RxPY
-✔️ Debugging the code with observables is a little difficult.
+> ✔️ Debugging the code with observables is a little difficult.
+
+## 18 modules
+[](https://www.youtube.com/watch?v=Vi9Y9AL13Rc)
+### web development
+1. [requests](https://api.github.com/repos/psf/requests)
+2. [flask]
+3. [django](https://www.djangoproject.com/download/)
+
+```dos
+pip install django==4.0
+```
+1. [twisted](realtime game)
+2. [BeautifulSoup]
+3. [selenium]()
+
+### Data Science
+7. [numpy](faster) [YouTube](https://www.youtube.com/watch?v=QUT1VHiLmmI)
+8. [pandas](great for reading data) [YouTube](https://www.youtube.com/watch?v=vmEHCJofslg)
+9. [matpotlib](data visualization)[Matplotlib Tutorial (Part 1)](https://www.youtube.com/watch?v=UO98lJQ3QGI&list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_)
+10. [nltk](natural link tool kit)
+11. [opencv](image data)
+12. [tensorflow]
+13. [keras]
+14. [pytouch]
+15. [scikit]
+16. [kivy](platform independent app)
+
+## GUI Window Application
+17. [pyqt5]
+18. [tkinter]
+
+## Game
+19. [pygame]

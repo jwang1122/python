@@ -1,0 +1,10 @@
+2022-04-30 16:55:41,111    DEBUG - My first debug message
+2022-04-30 16:55:41,126     INFO - My first info message
+2022-04-30 16:55:41,126  WARNING - My first warn message
+2022-04-30 16:55:41,126    ERROR - My first error message
+2022-04-30 16:55:41,126 CRITICAL - My first fatal message
+2022-05-11 18:04:39,460    DEBUG - My first debug message
+2022-05-11 18:04:39,460     INFO - My first info message
+2022-05-11 18:04:39,460  WARNING - My first warn message
+2022-05-11 18:04:39,460    ERROR - My first error message
+2022-05-11 18:04:39,461 CRITICAL - My first fatal message
