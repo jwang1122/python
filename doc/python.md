@@ -661,6 +661,7 @@ class A start
 > Always adjust the condition variable toward making loop failed.
 
 ## How to write Python?
+
 ```mermaid
 graph TB
 
