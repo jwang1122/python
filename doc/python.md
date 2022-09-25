@@ -534,6 +534,7 @@ print(greeting.upper())
 ## Execution Control
 * **if-elif-else** statement Syntax
 ```py
+# code before
 if <condition>:
     # if code block here
 elif <condition>:
@@ -545,6 +546,7 @@ else:
 ![](images/IfElse.svg)
 
 * Mermaid Diagram for if-else statement
+  
 ```mermaid
 graph TB
 A((start))
