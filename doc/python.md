@@ -2,6 +2,16 @@
 
 [Markdown Shared Library](utilities.md)
 [Screen Record output folder](C:\Users\12818\AppData\LocalLow\iTop Screen Recorder\Outputs)
+[codeGPT API Key](https://platform.openai.com/account/api-keys)
+Google
+
+```
+1. type in English sentence for the code requist as above
+2. ctrl+shift+i
+3. generate api code for first time and copy/paste
+```
+![](images/codegptAPK-KEY.png)
+![](images/codegptSetAPI-key.png)
 
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
@@ -2726,3 +2736,7 @@ pip install django==4.0
 
 ## Game
 19. [pygame]
+
+···
+俄乌战争最新消息
+···
