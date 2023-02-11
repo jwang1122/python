@@ -1306,6 +1306,34 @@ Pet <|-- Fish
 ```
 * [Why inheritance? ](../src/myclass/inheritence.py)
 
+```mermaid
+classDiagram
+
+class Point{
+  x
+  y
+  rotate()
+}
+
+class Triangle{
+  p1:Point
+  p2:Point
+  p3:Point
+  rotate()
+  draw()
+}
+
+```
+
+![](images/triangle1.png)
+![](images/triangle2.png)
+* [Create Triangle class with rotate function](../src/myclass/triangle01.py)
+* [add __repr__(self)](../src/myclass/triangle02.py)
+* [ChatGPT generated plot triangle](../src/myclass/triangle03.py)
+![](images/triangle3.png)
+* [Modify triangle2.py based on triangle3](../src/myclass/triangle04.py)
+* [draw two triangle in same chart](../src/myclass/triangle05.py)
+
 ### Polymorphism
 * [Polymorphism](../src/myclass/polymorphism.py)  
 
