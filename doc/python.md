@@ -152,7 +152,6 @@ Google
 - [Understand PYTHONPATH](#understand-pythonpath)
 - [GUI Window Application](#gui-window-application)
 - [Game](#game)
-- [Refrences](#refrences)
 
 ## Getting Start
 
@@ -2817,12 +2816,6 @@ this is because the current working path is under ./src, so the python interpret
 ## Game
 19. [pygame]
 
-<<<<<<< HEAD
-
-## Refrences
-* [Pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html#)
-=======
 ···
 俄乌战争最新消息
 ···
->>>>>>> 091241fc39b08f1d56b728300f2830c8834345ae
