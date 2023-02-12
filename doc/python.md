@@ -2,6 +2,16 @@
 
 [Markdown Shared Library](utilities.md)
 [Screen Record output folder](C:\Users\12818\AppData\LocalLow\iTop Screen Recorder\Outputs)
+[codeGPT API Key](https://platform.openai.com/account/api-keys)
+Google
+
+```
+1. type in English sentence for the code requist as above
+2. ctrl+shift+i
+3. generate api code for first time and copy/paste
+```
+![](images/codegptAPK-KEY.png)
+![](images/codegptSetAPI-key.png)
 
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
@@ -1297,6 +1307,34 @@ Pet <|-- Cat
 Pet <|-- Fish
 ```
 * [Why inheritance? ](../src/myclass/inheritence.py)
+
+```mermaid
+classDiagram
+
+class Point{
+  x
+  y
+  rotate()
+}
+
+class Triangle{
+  p1:Point
+  p2:Point
+  p3:Point
+  rotate()
+  draw()
+}
+
+```
+
+![](images/triangle1.png)
+![](images/triangle2.png)
+* [Create Triangle class with rotate function](../src/myclass/triangle01.py)
+* [add __repr__(self)](../src/myclass/triangle02.py)
+* [ChatGPT generated plot triangle](../src/myclass/triangle03.py)
+![](images/triangle3.png)
+* [Modify triangle2.py based on triangle3](../src/myclass/triangle04.py)
+* [draw two triangle in same chart](../src/myclass/triangle05.py)
 
 ### Polymorphism
 * [Polymorphism](../src/myclass/polymorphism.py)  
@@ -2779,6 +2817,12 @@ this is because the current working path is under ./src, so the python interpret
 ## Game
 19. [pygame]
 
+<<<<<<< HEAD
 
 ## Refrences
 * [Pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html#)
+=======
+···
+俄乌战争最新消息
+···
+>>>>>>> 091241fc39b08f1d56b728300f2830c8834345ae

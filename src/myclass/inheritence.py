@@ -13,7 +13,7 @@ class Pet:
         print("I don't know what to say...")
 
 class Cat(Pet):
-    def __init__(self, name, age, color):
+    def __init__(self, /, name, age, color):
         self.color = color
         super().__init__(name, age)
 
