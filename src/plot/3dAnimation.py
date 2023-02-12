@@ -5,7 +5,7 @@ import pandas as pd
 import seaborn as sns
 
 # Get the data (csv file is hosted on the web)
-with open('plot/volcano.csv') as f:
+with open('src/plot/volcano.csv') as f:
     data = pd.read_csv(f)
 
 # Transform it to a long format
@@ -21,11 +21,12 @@ for angle in range(70,210,2):
 
 # Make the plot
     fig = plt.figure()
-    ax = fig.gca(projection='3d')
+    # ax = fig.gca(projection='3d')
+    ax = fig.gca()
     ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.viridis, linewidth=0.2)
 
     ax.view_init(30,angle)
 
-    filename='plot/Volcano_step'+str(angle)+'.png'
+    filename='src/plot/Volcano_step'+str(angle)+'.png'
     plt.savefig(filename, dpi=96)
     plt.gca()
