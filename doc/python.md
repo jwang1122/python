@@ -152,6 +152,7 @@ Google
 - [18 modules](#18-modules)
   - [web development](#web-development)
   - [Data Science](#data-science)
+- [Understand PYTHONPATH](#understand-pythonpath)
 - [GUI Window Application](#gui-window-application)
 - [Game](#game)
 
@@ -1767,6 +1768,8 @@ class Game{
 ```
 
 ## File Access
+* file path
+* [file path](../src/file/filepath.py)
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
 * [read/append plain text from/fo file](../src/file/file1.py)
@@ -2799,6 +2802,54 @@ pip install django==4.0
 14. [pytouch]
 15. [scikit]
 16. [kivy](platform independent app)
+
+
+## Understand PYTHONPATH
+* [Complete explaination of python search path](https://towardsdatascience.com/understanding-python-imports-init-py-and-pythonpath-once-and-for-all-4c5249ab6355)
+> Module: A single python script.
+> Package: A collection of modules.
+
+```py
+import sys
+
+print(sys.path)
+```
+
+> The output from sys.path will always contain the current directory at index 0! The current directory being the one where the script being run resides.
+
+* [Set sys.path](../src/test/circle.py)
+
+```dos
+echo %PYTHONPATH%
+setx PYTHONPATH=/12818/workspace/python/src
+```
+
+```output
+<project root>
+    ├── 📝src/
+    |    ├── mymath/ 
+    |    |      ├── __init__.py
+    |    |      └── simple.py 
+    |    └── test.py
+```
+
+./mymath/__init__.py
+```py
+from .circle import *
+from .simple import *
+```
+
+./src/test.py
+```py
+from mymath.simple import circleArea
+
+r=1
+area = circleArea(r)
+print(area)
+```
+
+this is because the current working path is under ./src, so the python interpreter can find the module mymath under it.
+
 
 ## GUI Window Application
 17. [pyqt5]

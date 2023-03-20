@@ -1,7 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.animation import FuncAnimation
-plt.style.use('seaborn-pastel')
+# plt.style.use('seaborn-pastel')
 
 
 fig = plt.figure()
