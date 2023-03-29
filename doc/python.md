@@ -2,6 +2,16 @@
 
 [Markdown Shared Library](utilities.md)
 [Screen Record output folder](C:\Users\12818\AppData\LocalLow\iTop Screen Recorder\Outputs)
+[codeGPT API Key](https://platform.openai.com/account/api-keys)
+Google
+
+```
+1. type in English sentence for the code requist as above
+2. ctrl+shift+i
+3. generate api code for first time and copy/paste
+```
+![](images/codegptAPK-KEY.png)
+![](images/codegptSetAPI-key.png)
 
 - [Getting Start](#getting-start)
   - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
@@ -111,6 +121,9 @@
   - [practices](#practices)
   - [Application](#application)
 - [Application Development Process](#application-development-process)
+  - [Creational patterns:](#creational-patterns)
+  - [Structural patterns:](#structural-patterns)
+  - [Behavioral patterns:](#behavioral-patterns)
 - [PyInstaller](#pyinstaller)
 - [Data Structure](#data-structure)
   - [stack](#stack)
@@ -139,6 +152,7 @@
 - [18 modules](#18-modules)
   - [web development](#web-development)
   - [Data Science](#data-science)
+- [Understand PYTHONPATH](#understand-pythonpath)
 - [GUI Window Application](#gui-window-application)
 - [Game](#game)
 
@@ -534,6 +548,7 @@ print(greeting.upper())
 ## Execution Control
 * **if-elif-else** statement Syntax
 ```py
+# code before
 if <condition>:
     # if code block here
 elif <condition>:
@@ -545,6 +560,7 @@ else:
 ![](images/IfElse.svg)
 
 * Mermaid Diagram for if-else statement
+  
 ```mermaid
 graph TB
 A((start))
@@ -661,6 +677,7 @@ class A start
 > Always adjust the condition variable toward making loop failed.
 
 ## How to write Python?
+
 ```mermaid
 graph TB
 
@@ -1293,6 +1310,34 @@ Pet <|-- Fish
 ```
 * [Why inheritance? ](../src/myclass/inheritence.py)
 
+```mermaid
+classDiagram
+
+class Point{
+  x
+  y
+  rotate()
+}
+
+class Triangle{
+  p1:Point
+  p2:Point
+  p3:Point
+  rotate()
+  draw()
+}
+
+```
+
+![](images/triangle1.png)
+![](images/triangle2.png)
+* [Create Triangle class with rotate function](../src/myclass/triangle01.py)
+* [add __repr__(self)](../src/myclass/triangle02.py)
+* [ChatGPT generated plot triangle](../src/myclass/triangle03.py)
+![](images/triangle3.png)
+* [Modify triangle2.py based on triangle3](../src/myclass/triangle04.py)
+* [draw two triangle in same chart](../src/myclass/triangle05.py)
+
 ### Polymorphism
 * [Polymorphism](../src/myclass/polymorphism.py)  
 
@@ -1723,6 +1768,8 @@ class Game{
 ```
 
 ## File Access
+* file path
+* [file path](../src/file/filepath.py)
 ![](images/filemode.jpeg)
 * [write plain text to file Hello.txt](../src/file/file0.py)
 * [read/append plain text from/fo file](../src/file/file1.py)
@@ -2171,6 +2218,37 @@ Key point for functional programming is function binding and data wraper.
 ❓ What is design pattern
 >✔️Design patterns can speed up the development process by providing tested, proven development paradigms. Design pattern provides special data type(class), functions and behavior and relations to solve generic problem.
 
+There are many popular design patterns in programming, but some of the most commonly used ones include:
+
+### Creational patterns:
+* Singleton pattern
+* Factory pattern
+* Abstract factory pattern
+* Builder pattern
+* Prototype pattern
+### Structural patterns:
+* Adapter pattern
+* Bridge pattern
+* Composite pattern
+* Decorator pattern
+* Facade pattern
+* Flyweight pattern
+* Proxy pattern
+### Behavioral patterns:
+* Chain of Responsibility pattern
+* Command pattern
+* Interpreter pattern
+* Iterator pattern
+* Mediator pattern
+* Memento pattern
+* Observer pattern
+* State pattern
+* Strategy pattern
+* Template method pattern
+* Visitor pattern
+
+These patterns provide general solutions to recurring problems in software design and help to promote code reuse, maintainability, and extensibility.
+
 * [Design patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
 * [Design pattern sample](../src/designPattern/observer.py)
 
@@ -2487,6 +2565,7 @@ if x is not an intege string, cause software blows up.
 ❓ How does the monad solve those two issues?
 ✔️ box value, return either
 
+* [](../src/reactiveX/either01.py)
 * [kleisli Compose](../src/functional/kleisliCompose.py)
 
 [Definition of Monad](https://www.merriam-webster.com/dictionary/monad)
@@ -2539,6 +2618,8 @@ implement amap() function: applicative map
 implement bind() function: binding function
 ✔️ Override binding operator (*, >>)
 
+[ReactiveX Programing](https://rxpy.readthedocs.io/en/latest/get_started.html)
+
 * [Understand functor, applicative, monad](../src/functional/box.py) 
 * [Functor >> bind](../src/functional/math1.py)
 * [Applicative](../src/functional/monad2.py)
@@ -2546,6 +2627,11 @@ implement bind() function: binding function
 * [Applicative](../src/functional/monad3.py)
 * [.then() fuction chain for applicative](../src/functional/monad13.py)
 * [ReactiveX](../src/functional/math2.py)
+* [Simple square](../src/reactiveX/reactive01.py)
+* [reactivex create](../src/reactiveX/reactive02.py)
+* [see above](../src/reactiveX/reactivex03.py)
+* [see above](../src/reactiveX/reactivex04.py)
+* [reactivex chain](../src/reactiveX/reactivex05.py)
 * 😢[monad01.py](../src/functional/monad01.py)
 * ✔️[operate a founction to a boxed value](../src/functional/monad1.py)
 * [Understand Functor, applicative, monad](../src/functional/monad02.py)
@@ -2717,9 +2803,61 @@ pip install django==4.0
 15. [scikit]
 16. [kivy](platform independent app)
 
+
+## Understand PYTHONPATH
+* [Complete explaination of python search path](https://towardsdatascience.com/understanding-python-imports-init-py-and-pythonpath-once-and-for-all-4c5249ab6355)
+> Module: A single python script.
+> Package: A collection of modules.
+
+```py
+import sys
+
+print(sys.path)
+```
+
+> The output from sys.path will always contain the current directory at index 0! The current directory being the one where the script being run resides.
+
+* [Set sys.path](../src/test/circle.py)
+
+```dos
+echo %PYTHONPATH%
+setx PYTHONPATH=/12818/workspace/python/src
+```
+
+```output
+<project root>
+    ├── 📝src/
+    |    ├── mymath/ 
+    |    |      ├── __init__.py
+    |    |      └── simple.py 
+    |    └── test.py
+```
+
+./mymath/__init__.py
+```py
+from .circle import *
+from .simple import *
+```
+
+./src/test.py
+```py
+from mymath.simple import circleArea
+
+r=1
+area = circleArea(r)
+print(area)
+```
+
+this is because the current working path is under ./src, so the python interpreter can find the module mymath under it.
+
+
 ## GUI Window Application
 17. [pyqt5]
 18. [tkinter]
 
 ## Game
 19. [pygame]
+
+···
+俄乌战争最新消息
+···

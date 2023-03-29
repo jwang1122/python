@@ -1,2 +1,5 @@
+# mymath/__init__.py
+
 from .circle import *
-from .math10 import *
+from .simple import *
+

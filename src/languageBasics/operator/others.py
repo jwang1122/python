@@ -1,5 +1,7 @@
-# multiple times operator **
-
+"""
+multiple times operator **
+unpack operator *
+"""
 
 date_info = {'year': "2020", 'month': "01", 'day': "01"}
 track_info = {'artist': "Beethoven", 'title': 'Symphony No 5'}
@@ -12,3 +14,14 @@ z = {**x, **y}
 print(z)
 
 options = ["Monday","Tuesday",'Wednesday','Thursday','Friday','Saturday','Sunday']
+
+t = (1,2,3,4)
+print(*t)
+
+def f(a,b,c,d):
+    print(a, b, c, d)
+
+t = (5,6,7,8)
+f(*t)
+
+    
