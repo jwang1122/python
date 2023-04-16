@@ -13,7 +13,7 @@ import datetime
 'datetime', 'datetime_CAPI', 'sys', 'time', 'timedelta', 'timezone', 'tzinfo']
 """
 
-birthday = datetime.date(1956,1,31) # Python creator Guido Van Rossum
+birthday = datetime.date(1958,7,8) # Python creator Guido Van Rossum
 print(birthday)
 print(type(birthday))
 

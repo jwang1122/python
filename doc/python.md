@@ -44,6 +44,7 @@ Google
   - [pass function as argument](#pass-function-as-argument)
   - [function decorator](#function-decorator)
   - [global variable](#global-variable)
+  - [yield keyword](#yield-keyword)
   - [recursive function](#recursive-function)
   - [useful functions](#useful-functions)
   - [assert error check](#assert-error-check)
@@ -775,6 +776,11 @@ Circle area formula: $ A=\pi r^2 $
 3. We use global keyword to read and write a global variable inside a function.
 4. Use of global keyword outside a function has no effect.
 5. It is not necessary to declare global variable outside function
+
+### yield keyword
+* [yield is simillar to return](../src/function/yield1.py)
+* [yield returns value once needed](../src/function/yield2.py)
+* [yield is simillar to return](../src/function/yield3.py)
 
 ### recursive function
 A function is recursive if it calls itself.

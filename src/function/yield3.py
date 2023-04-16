@@ -4,7 +4,7 @@
 # An infinite generator function that prints
 # next square number. It starts with 1
 def nextSquare():
-    i = 1;
+    i = 1
   
     # An Infinite loop to generate squares 
     while True:
