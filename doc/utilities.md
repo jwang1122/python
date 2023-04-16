@@ -25,6 +25,7 @@
 - [Sample Mermaid Graph Diagram](#sample-mermaid-graph-diagram)
 - [Simple Mermaid Relational Diagram](#simple-mermaid-relational-diagram)
 - [Simple Mermaid Class Diagram](#simple-mermaid-class-diagram)
+  - [Flowchart](#flowchart)
 
 
 ## Change image size
@@ -170,4 +171,17 @@ Occupation <|-- Person
 Person <|-- Teacher
 Person <|-- Doctor
 Person <|-- Developer
+```
+
+### Flowchart
+
+```flow
+st=>start: User Login
+op=>operation: Login Operation
+cond=>condition: validate?
+e=>end: Enter
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
 ```
