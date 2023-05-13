@@ -83,6 +83,7 @@ Google
   - [Integration Test](#integration-test)
   - [Documentation](#documentation)
   - [Software development life cycle](#software-development-life-cycle)
+- [Automate](#automate)
 - [Deployment](#deployment)
 - [Yahtzee Dice Game](#yahtzee-dice-game)
 - [File Access](#file-access)
@@ -96,6 +97,12 @@ Google
   - [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
+  - [create a table](#create-a-table)
+  - [Insert data into table](#insert-data-into-table)
+  - [Retrieve data from table](#retrieve-data-from-table)
+  - [Update existing data](#update-existing-data)
+  - [Delete data from table](#delete-data-from-table)
+  - [Relationship between tables](#relationship-between-tables)
 - [MongoDB](#mongodb)
 - [tkinter(windows based GUI)](#tkinterwindows-based-gui)
   - [open window](#open-window)
@@ -156,6 +163,7 @@ Google
 - [Understand PYTHONPATH](#understand-pythonpath)
 - [GUI Window Application](#gui-window-application)
 - [Game](#game)
+- [References](#references)
 
 ## Getting Start
 
@@ -268,6 +276,7 @@ otherwise, your python builtins functions no longer works the way you expected.
 ### Python Playground
 ❓ How do I get into python playground?
 ✔️ type in **python** in command prompt shown below:
+
 ```DOS
 C:\Users\12818\workspace\2021fall\python>python
 Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
@@ -312,20 +321,21 @@ dunder: double underscore (hold shift + -)
 ```mermaid
 graph TB
 
-A(Languabe Basics<br>Any Languages)
-B[Data Type]
-C[Operator]
-D[Execution Control]
-E[Loop]
+PROG(Program Language)
+TYPE["Data Type<br>(int,str,float)"]
+OP[Operator<br>=,>=,is]
+EXEC[Execution Contonl<br>if, if-else]
+LOOP[Loop<br>for, while]
 
-A --> B & C & D & E
+PROG-->TYPE & OP & EXEC & LOOP
 
-classDef start fill:#F24EE3,stroke:black,stroke-width:2px,color:white;
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
+classDef start fill:green,stroke:#0c3f10,stroke-width:2px,color:white;
+classDef process fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
 
-class A start
-class B,C,D,E if
+class PROG start
+class TYPE,OP,EXEC,LOOP process
 ```
+
 ![](images/LanguageBasics.svg)
 
 
@@ -732,7 +742,8 @@ Circle area formula: $ A=\pi r^2 $
 * [function parameters](../src/function/declareArguments.py)
 * [understand __name__](../src/function/circle.py)
 * [understand if __name__=='__main__':](../src/function/useCircle.py)
-* Python document
+
+Python document
 ```use python playground
 >>> from src.function.defineFunction import *
 >>> help(f)
@@ -781,7 +792,8 @@ Circle area formula: $ A=\pi r^2 $
 * [yield is simillar to return](../src/function/yield1.py)
 * [yield returns value once needed](../src/function/yield2.py)
 * [yield is simillar to return](../src/function/yield3.py)
-
+* [async yield，不见不散-死等](../src/function/yield4.py)
+* 
 ### recursive function
 A function is recursive if it calls itself.
   1. termination condition.
@@ -1254,7 +1266,7 @@ class Robot {
 * Excersize:
 
 ```mermaid
-class Diagram
+classDiagram
 
 class Item{
   name:str
@@ -1333,8 +1345,38 @@ class Triangle{
   draw()
 }
 
+Triangle *-- Point
 ```
 
+```mermaid
+classDiagram
+
+class Animal{
+  name:string
+  eat()
+}
+
+class Mammal{
+  walk()
+}
+
+class Bird{
+  fly()
+}
+
+class Bat{
+  name:string
+  walk()
+  fly()
+}
+Mammal <|-- Bat
+Bird <|-- Bat
+Animal <|-- Mammal
+Mammal <|-- Bird
+```
+
+* [Multiple Inheritence](../src/myclass/multipleInheritence.py)
+* 
 ![](images/triangle1.png)
 ![](images/triangle2.png)
 * [Create Triangle class with rotate function](../src/myclass/triangle01.py)
@@ -1743,6 +1785,10 @@ classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
 class START start
 class A,B,C,D if
 ```
+
+## Automate
+* [Automate with Python](https://www.youtube.com/watch?v=PXMJ6FS7llk)
+* 
 ## Deployment
 [python deployment](https://www.nylas.com/blog/packaging-deploying-python/)
 
@@ -1940,14 +1986,59 @@ y = S()
 
 
 ## SQLite
+* [SQL Statement Documentation](https://www.w3schools.com/sql/sql_select.asp)
+
 [](https://www.youtube.com/watch?v=byHcYRpMgI4)
+
 CRUD: Create, Retrieve, Update, Delete
 
+### create a table
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+```
+
+### Insert data into table
+
+```sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+
 * [Create database, table](../src/sqlite/sqlite01.py)
+
+### Retrieve data from table
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
 * [Insert many rows](../src/sqlite/sqlite02.py)
 * [Retrive data](../src/sqlite/sqlite03.py)
+
+### Update existing data
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
 * [Update data](../src/sqlite/sqlite04.py)
+
+### Delete data from table
+
+```sql
+DELETE FROM table_name WHERE condition;
+```
 * [Delete data](../src/sqlite/sqlite05.py)
+
+
+### Relationship between tables
 * [One-to-Many Create table](../src/sqlite/sqlite06.py)
 
 ```mermaid
@@ -1974,6 +2065,24 @@ CRUD: Create, Retrieve, Update, Delete
 * [Product, Provider class](../src/sqlite/sqlite12.py)
 * [CRUD for books](../src/sqlite/sqlitebookdb.py)
 
+Homework
+1. create a database named game, and a table named blackjack to record blackjack game result
+  
+```mermaid
+ erDiagram
+    blackjack {
+        int id
+        string name
+        win
+        loose
+        tie
+    }
+```
+2. add DB operation on blackjack game
+3. do analysis on data to see who will be the winner, players? or dealer?
+
+* [CRUD for blackjack game](../src/sqlite/blackjackdb.py)
+* [Save the game result to SQLite database](../src/blackjack/blackjackSave2DB.py)
 
 ## MongoDB
 ❓What is MongoDB?
@@ -2867,3 +2976,7 @@ this is because the current working path is under ./src, so the python interpret
 ···
 俄乌战争最新消息
 ···
+
+## References
+* [Automate with Python, xpath, selenium, webdriver, chromediver](https://www.youtube.com/watch?v=PXMJ6FS7llk)
+* 

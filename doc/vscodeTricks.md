@@ -6,6 +6,7 @@
 - [Table of Contents](#table-of-contents)
 - [Virtual Environment](#virtual-environment)
 - [Install PIL](#install-pil)
+- [Select column on multiple lines](#select-column-on-multiple-lines)
 - [Disable Editor minimap](#disable-editor-minimap)
 - [Define Key-shortcut for clear terminal](#define-key-shortcut-for-clear-terminal)
 - [Move Terminal window to right](#move-terminal-window-to-right)
@@ -31,8 +32,12 @@ python -m venv env
 
 ## Install PIL
 ```dos
+pip install --upgrade pip
 pip install pillow
 ```
+
+## Select column on multiple lines
+Shift+Ctrl and down arrow
 
 ## Disable Editor minimap
 

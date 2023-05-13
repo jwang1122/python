@@ -1,10 +1,32 @@
 <h1>Blackjack Card Game</h1>
 
-## Start Frame
+## tkinter basics
+* [Open window frame](tkinter01.py)
+* [add button to frame](tkinter02.py)
+* [add label to frame](tkinter03.py)
+* [](checkbox.py)
+* [](frame.py)
+* [](combobox.py)
+* [](comboboxColor.py)
+* [](entry.py)
+* [](list.py)
+* [](popup.py)
+* [](popup1.py)
+* [](radopButtpm.py)
+* [](swich.py)
+* [](swichframe.py)
+* [](titledFrame.py)
+* [](tkinterBase.py)
 
-[Start up Window](tkinter05.py)
+
+* [label and button frame, understand pack() function](tkinter04.py)
+* [display image, create a main window](tkinter05.py)
+* [change label text on button click](tkinter06.py)
 
 ## Play Board
+* [start up for play desk window](tkinter07.py)
+* [build play desk window with users and buttons](tkinter08.py)
+* [put card image on desk window](tkinter09.py)
 
 [deal 2 cards](tkinter10.py)
 [background color](background.py)
