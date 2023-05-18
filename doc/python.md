@@ -1,9 +1,11 @@
 <h1>Python Language</h1>
 
-[Markdown Shared Library](utilities.md)
-[Screen Record output folder](C:\Users\12818\AppData\LocalLow\iTop Screen Recorder\Outputs)
-[codeGPT API Key](https://platform.openai.com/account/api-keys)
-Google
+* [Markdown Shared Library](utilities.md)
+* [codeGPT API Key](https://platform.openai.com/account/api-keys)
+
+```
+[Screen Record output folder](C:/Users/12818/AppData/LocalLow/iTop Screen Recorder/Outputs/)
+```
 
 ```
 1. type in English sentence for the code requist as above
@@ -14,45 +16,14 @@ Google
 ![](images/codegptSetAPI-key.png)
 
 - [Getting Start](#getting-start)
-  - [getting formiliar your keyboard](#getting-formiliar-your-keyboard)
-  - [My First python program](#my-first-python-program)
-  - [print](#print)
-  - [comment](#comment)
-  - [Variabls](#variabls)
-  - [Python Playground](#python-playground)
-  - [Variable and memory](#variable-and-memory)
-  - [Ways to Learn](#ways-to-learn)
 - [Language Basics](#language-basics)
 - [Data Type](#data-type)
-  - [number](#number)
-  - [string](#string)
-  - [tuple](#tuple)
-  - [list](#list)
-  - [set](#set)
-  - [dict](#dict)
-  - [bool](#bool)
-  - [Developer desiged data type](#developer-desiged-data-type)
-  - [Python modules date/time](#python-modules-datetime)
 - [Operator](#operator)
 - [Execution Control](#execution-control)
 - [Loop](#loop)
 - [How to write Python?](#how-to-write-python)
 - [direct python code](#direct-python-code)
 - [Function](#function)
-  - [define function in function](#define-function-in-function)
-  - [return function from function](#return-function-from-function)
-  - [pass function as argument](#pass-function-as-argument)
-  - [function decorator](#function-decorator)
-  - [global variable](#global-variable)
-  - [yield keyword](#yield-keyword)
-  - [recursive function](#recursive-function)
-  - [useful functions](#useful-functions)
-  - [assert error check](#assert-error-check)
-  - [Raise Except](#raise-except)
-  - [catch Except avoid termination](#catch-except-avoid-termination)
-  - [Create my own Error Type](#create-my-own-error-type)
-  - [pass by reference](#pass-by-reference)
-  - [function annotation](#function-annotation)
 - [Unit Test](#unit-test)
 - [Regular Expression](#regular-expression)
 - [Logging](#logging)
@@ -71,7 +42,8 @@ Google
   - [Python Interface](#python-interface)
   - [Unit Test](#unit-test-1)
   - [Dunder Variables](#dunder-variables)
-  - [Global Variables](#global-variables)
+  - [Class level Variables](#class-level-variables)
+  - [class in class](#class-in-class)
 - [Blackjack Game](#blackjack-game)
   - [Blackjack Rules](#blackjack-rules)
 - [Physics Unit](#physics-unit)
@@ -97,12 +69,6 @@ Google
   - [Design Principles SOLID](#design-principles-solid)
 - [Turtle](#turtle)
 - [SQLite](#sqlite)
-  - [create a table](#create-a-table)
-  - [Insert data into table](#insert-data-into-table)
-  - [Retrieve data from table](#retrieve-data-from-table)
-  - [Update existing data](#update-existing-data)
-  - [Delete data from table](#delete-data-from-table)
-  - [Relationship between tables](#relationship-between-tables)
 - [MongoDB](#mongodb)
 - [tkinter(windows based GUI)](#tkinterwindows-based-gui)
   - [open window](#open-window)
@@ -167,154 +133,7 @@ Google
 
 ## Getting Start
 
-### getting formiliar your keyboard
-[Keyboard](keyboard.md)
-
-### My First python program
-[hello world](../src/languageBasics/hello.py)
-[line plot](../src/plot/plot0.py)
-[x,y plot](../src/plot/plot01.py)
-
-💡🔑 **Knowlodge Base**
-> 1. in order to run python program, we need install python intereter.
-> 2. in order to write python code, we need install VS Code.
-
-
-❓ What is Python?
-> Python is computer programming language.
-✔️ Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. 
-
-❓ What is computer?
->✔️ computer is nothing but CPU and Memory.
-
-![](images/computer.svg)
-
-![](images/punchMachine.webp)
-
-![](images/ppt-roll.jpg)
-
-❓ What is software programing language?
->✔️ A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output.
-any language can be changed to machine code and then run by computer.
-
-![](images/languageLevel.png)
-
-* [ASCII Table](https://ascii-tables.com/)
-❓ What is ASCII?
->✔️ASCII stands for American Standard Code for Information Interchange, a set of digital codes representing letters, numerals, and other symbols.
-
-![](images/USASCII_code_chart.png)
-
-❓ Why we need so many different programing language?
-> 1. each language could serve different purpose.
-> 2. some old language still available due to some company still use it. (RPG, FORTRAN)
-
----
-[Table of Contents](#table-of-contents)
-
-
-### print
-[print](../src/languageBasics/print.py)
-* place holder (%s, %d, %f)
-* print with tuple
-* formated print: print(f"x={x}") 
-
-❓ What is ASCII code?
->✔️ASCII Table: American Standard Code for Information Interchange
-
-![](images/USASCII_code_chart.png)
-
-![](images/ascii.jpg)
-![](images/asciiA.png)
-![](images/Papertape-Wikipedia-example-dark1-2000px.png)
-![](images/media-1119679-pp-04.jpg)
-
-[ASCII website](https://ascii-tables.com/)
-
-* Homeworks
-    - [Math Competition](../homeworks/12023%20Harmoney%20School%20Houston.pdf)
-    - [print-01](homeworks/print01.md)
-    - [print-02](homeworks/print02.md)
-
-### comment 
-[comment](../src/languageBasics/../comment.py)
-* single line comment: #
-* multiple lines comment: """, '''
-❓Why I need use comment?
-✔️
-
-### Variabls
-❓ What is variable?
-✔️ Contain two parts: 1. variable name; 2. variable value. It is called variable declaration when we assign a value to a variable name.
-
-```py
-width = 10
-name = "John"
-```
-
-❓ Why we use variables?
-✔️ I want use same value on many place, so that I can only change one place for all usage of the variable.
-
-
-* Variable Naming Rules
-1. variable name cannot start with number
-2. variable can be combination of letters and numbers _, a~z, A~Z, 0~9, no other special characters
-3. don't use reserved keywords as variable name
-
-![](images/python-keywords.png)
-
-[Python Keywords](https://realpython.com/python-keywords/#:~:text=%20Python%20Keywords%20and%20Their%20Usage%20%201,are%20used%20for%20control%20flow%3A%20if%2C...%20More%20)
-
-4. Avoid using existing function name as your variable name.
-otherwise, your python builtins functions no longer works the way you expected.
-
-```
->>> dir(__builtins__)
-['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 
-'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
-```
-### Python Playground
-❓ How do I get into python playground?
-✔️ type in **python** in command prompt shown below:
-
-```DOS
-C:\Users\12818\workspace\2021fall\python>python
-Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
-dunder: double underscore (hold shift + -)
-```
->>> dir(__builtins__)
-```
-1. can execute any python code, it is good for your code testing.
-2. execute multiple line of code.
-3. to find document for all imported modules, and builtin functions.
-
-![](images/chineseMedicine.jpg)
-
-![](images/memory.gif)
-
-> you can define more than one variable to point to same memory location.
-
-### Variable and memory
-![](images/chineseMedicine.jpg)
-![](images/memory.gif)
-![](images/memory.png)
-
-![](images/mailbox.jpg)
-
-* Homeworks
-[variable-01](../homeworks/basics/print/variable01.md)
-[variable-02](../homeworks/basics/print/variable02.md)
-[variable-03](../homeworks/basics/print/variable03.md)
-
-### Ways to Learn
-1. learn from teacher;
-2. learn from coding, practice;
-3. learn from python document (help on playground)
-4. learn from mistakes (your own, others)
-5. document (take good note for everything we learn)
+* [Getting started](computer.md)
 
 ## Language Basics
 
@@ -335,357 +154,20 @@ classDef process fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
 class PROG start
 class TYPE,OP,EXEC,LOOP process
 ```
-
 ![](images/LanguageBasics.svg)
 
 
 ## Data Type
-
-❓ What is data type in Python?
-✔️ 1. built ins; 2. developer defined;
-* built in data type:
-![](images/DataType.png)
-
-### number 
-[Numbers: int, float, complex](../src/languageBasics/number.py)
-❓ What is number in python?
-✔️ Python supports integers, floating-point numbers and complex numbers. They are defined as int, float, and complex classes in Python.
-
-📌❗️ **Knowlodge Base**
-> python is smart enough so that you don't need difine a variable type, based on the type of value you assigned to the variable, the variable will be that data type.
-
-    - int: a=4
-    - float: a=3.4
-    - complex: c=4-3j
-  - Homeworks
-    [number-01](../homeworks/basics/datatype/number01.md)
-
-### string 
-* [String](../src/languageBasics/string.py)
-
-❓ What is a str?
-✔️ str variable is group of letters surounded by ' ', " ", ''' ''', """ """.   
-    - s = 'hello'
-    - single ' double " are no difference, but must to be pair.
-    - ""; """ [put your text here] """; ''; ''' [your text here] '''
-    - string is iterable
-    - String is immutable
-    - string slicing: [[start]:[end]:[step]]
-    - String operator +, *
-    - as function str(object)
-    - string functions (isalnum(), isdigit(), strip(), split(), lower(), upper(), startswith(), endswith(), ...)
-    - use built-in functions: len(), sorted(), reversed()
-  
-  - Homeworks
-    [string-01](../homeworks/string/string01.md)
-    [string-02](../homeworks/string/string02.md)
-    [string-03](../homeworks/string/string03.md)
-
-### tuple 
-[Tuple](../src/languageBasics/tuple.py)
-❓ What is a tuple?
-✔️ tuple is a set of object element, separate by comma, suround by (). it is immutable once you defind.
-  - (1.5,2,3,4,'hello')
-  - elements can have different data type in tuple
-  - we can use len() built in function to get total number of elements in the tuple
-  - tuple is iterable
-  - tuple is immutable
-  - tuple slicing: tuple1[[start]:[end]:[step]]
-  - tupler operator +, *
-  - as function: tuple(iterable)
-  - tuple() as functions () can be used as function to convert iterable object to tuple.
-
-### list 
-[List](../src/languageBasics/list.py)
-❓ What is a list in python?
-✔️ a **list** is a special data type in python. A List is an ordered collection of python objects that is iteralbe,mutable, separated by comma, surrounded by [].
-  - [2, 3, 'hello']
-  - elements can have different data type in tuple
-  - we can use len() built in function to get total number of elements in the list
-    - list is iterable
-    - list is mutable
-    - list slicing: list1[[start]:[end]:[step]]
-    - list operators +, *
-    - modify list
-    - as function: list(iterable)
-    - list functions (append, insert)
-  - Homeworks
-    [list-01](../homeworks/basics/datatype/list01.md)
-    [list-02](../homeworks/basics/datatype/list02.md)
-
-### set 
-[Set](../src/languageBasics/set.py)
-❓ What is set in Python?
-✔️ A Set is an unordered collection pyhton objects that is iterable,
-mutable, and separated by comma, surrounded by {}, has no duplicated elements.
-
-  - {1,2,3}, set(), set(range(5)), set("hello")
-  - elements can have different data type in set
-    - set is iterable
-    - set is mutable
-    - set operators: &, |, <, >, ==
-    - modify set
-    - as function: set(iterable)
-    - set functions ()
-
-
-### dict 
-[Dictionary](../src/languageBasics/dictionary.py)
-❓ what is a dictionary data type in Python?
-✔️ A dictionary consists of a collection of key-value pairs.
-It is unordered, iterable, mutable, and each pair separated by comma,
-surrounded by '{}', and no duplicated key. the key-value pair separated by ':'.
-
-  - {1:'Monday', 2:'Tuesday'}
-  - key-value pair can have different data type in dict
-  - dict is iterable: only iterate key
-  - dict cannot be slicing due to unordered key-value pair
-  - dict operators: **, ==
-  - dict is mutable: add, update, delete key-value pair
-  - functions in dict: get(), items(), values(), pop(), ..
-  - dict() can be used as function to convert iterable object to dict (need to be key-value pair).
-  - dict modify==>CRUD
-
-### bool
-**True** or **False** are python reserved keyword for bool value.
-
-### Developer desiged data type
-
-```mermaid
-classDiagram
-
-class Dog{
-  name:str
-  color:str
-  edge:int
-  bark()
-}
-
-```
-
-```py
-class Student:
-  pass
-
-s = Student()
-print(type(s))
-```
-
-![](images/studentObject1.svg)
-
-* [Simple user defined data type](../src/basics/dog.py)
-* [class Hello](../src/languageBasics/datatype/myclass.py)
-
-### Python modules date/time 
-[date/time](../src/languageBasics/datatype/datetime1.py)
-[Get time interval](../src/languageBasics/datatype/datetime2.py)
-[Date time convertion](../src/languageBasics/datatype/datetime3.py)
-[Date time detail](../src/languageBasics/datatype/datetime4.py)
-
-📌❗️ **Knowlodge Base**
-> the variable value can be reassigned to other data type. Once it is reassigned, the data type changes.
-```py
-i = 5
-i = 'hello'
-i = [1,2,3,4]
-```
+* [data type](01_datatype.md)
 
 ## Operator 
-* [operator](../src/languageBasics/operator.py)
-* Arithmatic Operator: +; -; *; /: %; **;//(floor divisor)
-  
-  [arithmatic](../src/languageBasics/operator/arithmatic.py)
-* Assignment Operators: =; +=; -=; *=; /=; %=; **=; //=
-  
-  [assignment](../src/languageBasics/operator/assignment.py)
-* Comparison Operators: ==, !=, <, >, <=, >=
-  
-  [comparison](../src/languageBasics/operator/comparison.py)
-
-  ![](images/memory.png)
-
-* Identity Operator: is, is not
-
-  [identity](../src/languageBasics/operator/identity.py)
-
-
-
-* Logical Operator: and, or, not
-
-  [logical](../src/languageBasics/operator/logical.py)
-* Membership Operator: in, not in
-
-  [membership](../src/languageBasics/operator/membership.py)
-* Multiple times operator: **
-  
-  [others](../src/languageBasics/operator/others.py)
-* Ternary operator: if-else, and-or
-
-  [ternary](../src/languageBasics/operator/ternary.py)
-* Bitwise Operator: &, |, ^, <<, >>
-  
-  [bitwise](../src/languageBasics/operator/bitwise.py)
-
-![](images/byte.jpg)
-
-> ASCII Table: American Standard Code for Information Interchange
-
-![](images/USASCII_code_chart.png)
-
-![](images/ascii.jpg)
-
-[byte for character](../src/languageBasics/ascii.py)
-
-![](images/machineLanguage.png)
-
-![](../python.png)
-* [Understand Image Pixel RGBA mode](../src/languageBasics/operator/changeImage.py)
-* ![](../python1.png)
-* ![image file is bit data](images/imageInHex.png)
-* [gunshot sound](whiff.wav)
-![Gunshot in Hex](images/gunshotInHex.png)
-  
-* operator precendence: *, /; +, -; 
-  multiply has higher precendence than +, -, use () to change precendence
-  
-* . operator
-> in OOP, . operator is used to refer to an attribute of class instance.
-
-```py
-greeting = "Hello"
-print(greeting.upper())
-```
+* [Operators ](02_operator.md)
 
 ## Execution Control
-* **if-elif-else** statement Syntax
-```py
-# code before
-if <condition>:
-    # if code block here
-elif <condition>:
-    # elif code block here
-else:
-    #else code block here
-# code continue ...
-```
-![](images/IfElse.svg)
-
-* Mermaid Diagram for if-else statement
-  
-```mermaid
-graph TB
-A((start))
-B{"if &lt;condition&gt;:"}
-C[if code block]
-D[else code block]
-E[end]
-
-
-A-->B
-B--True-->C-->E
-B--False-->D-->E
-
-A1((start))
-B1{"if &lt;condition&gt;:"}
-B2{"elif &lt;condition&gt;:"}
-C1[if code block]
-D1[elif code block]
-E1[end]
-F1[else code block]
-
-A1-->B1
-B1--True-->C1-->E1
-B1--False-->B2--True-->D1-->E1
-B2--False-->F1-->E1
-
-
-classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
-classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
-class A,A1 start
-class B,B1,B2 html
-class E,E1 end1
-```
-* [User input](../src/languageBasics/if-else/if-else03.py)
-  - Homeworks
-    [ifelss-01](../homeworks/basics/flowcontrol/ifelse01.md)
-    [ifelss-02](../homeworks/basics/flowcontrol/ifelse02.md)
-    [ifelss-03](../homeworks/basics/flowcontrol/ifelse03.md)
+* [if-elif-else](03_excution.md)
 
 ## Loop
-* [for1.py](../src/languageBasics/loop/for1.py)
-* [for2.py](../src/languageBasics/loop/for2.py)
-* [forBreak.py](../src/languageBasics/loop/forBreak.py)
-* [forContinue.py](../src/languageBasics/loop/forContinue.py)
-
-* Break on for-loop
-  
-```mermaid
-graph TB
-
-A([for-Loop])
-B{loop<br>condition<br>i<=10}
-C[code block 1<br>line-51]
-D{break<br>condition<br>line-52}
-F[code block 2<br>line-55]
-E[END<br>line-57]
-
-A-->B
-B--false-->E
-B--true-->C-->D
-D--true-->E
-D--false-->F-->B
-
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
-
-class B,D if
-class E end1
-class A start
-```
-
-* continue on for-loop
-  
-```mermaid
-graph TB
-
-A([for-Loop])
-B{loop<br>condition<br>i<=10}
-C[code block 1<br>line-41]
-D{continue<br>condition<br>line-42}
-F[code block 2<br>line-45]
-E[END<br>line-47]
-
-A-->B
-B--false-->E
-B--true-->C-->D
-D--true-->B
-D--false-->F-->B
-
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
-
-class B,D if
-class E end1
-class A start
-```
-
-* [while.py](../src/languageBasics/loop/while.py)
-  ![](images/while.svg)
-  ![](images/doWhile.svg)
-  
-* Homeworks
-  - [loop-01](../homeworks/basics/loop/loop01.md)
-  - [loop-02](../homeworks/basics/loop/loop02.md)
-  - [loop-03](../homeworks/basics/loop/loop03.md)
-  - [loop-04](../homeworks/basics/loop/loop04.md)
-  - [loop-05](../homeworks/basics/loop/loop05.md)
-
-📌❗️ **Knowlodge Base**
-> Always adjust the condition variable toward making loop failed.
+* [for loop](04_loop.md)
 
 ## How to write Python?
 
@@ -709,6 +191,7 @@ classDef start fill:#53DE1F,stroke:#267608,stroke-width:2px;
 class START start
 class A,C,D html
 ```
+
 ## direct python code
 * [guess number game](../src/languageBasics/guessNumber.py)
 * [roll two Dices](../src/languageBasics/rollDice1.py)
@@ -716,281 +199,7 @@ class A,C,D html
 * [small dice game](../src/languageBasics/rollDice3.py)
 
 ## Function
-❓What is function?
->✔️A block of code defined by name and arguments, can be used by calling the name many times repeatedly. In Python, functions are first-class citizens. That means functions have the same characteristics as values like other data type such as strings and numbers. Anything you would expect to be able to do with a string or number you can do with a function as well.
-* [function basic](../src/function/function.py)
-* define a function
-    - def, Python reserved keyword
-    - function name, anything you want, but need follow the naming rules
-    - (), must have open/close parenthesis pair, no matter it has arguments or not
-    - arguments, positional or keyword arguments separated by comma ,
-    - :, must end with colon
-    - the function body must indent
-    - ❗️⚡️function can be overridden
-    - 😄return more than one value
-    - 💡single response
-    - call a function by function name and (), and arguments if there is any
-
-$$ \underbrace {def}_{keyword} \underbrace {circle \_area}_{function \space name} \left(\underbrace {a, b,c ...}_{positional\; args} * \underbrace {e=None, f=200}_{keyword\;args}\right) \underbrace {:}_{eol} $$
-
-![Circle](images/circle.svg)
-
-Circle area formula: $ A=\pi r^2 $
-
-* [circleArea](../src/function/function.py)
-* [function arguments](../src/function/defineFunction.py)
-* [function parameters](../src/function/declareArguments.py)
-* [understand __name__](../src/function/circle.py)
-* [understand if __name__=='__main__':](../src/function/useCircle.py)
-
-Python document
-```use python playground
->>> from src.function.defineFunction import *
->>> help(f)
-```
-* [One time assign default value](../src/function/defaultValue.py)
-* [collision.py](../src/function/collision.py)
-* [check user input](../src/function/ask.py)
-* [access function attribute](../src/function/attribute.py)
-* [simple math function](../src/function/math1.py)
-* [optionalKeywordArgs.py](../src/function/optionalKeywordArgs.py)
-* [optionalPositionalArgs.py](../src/function/optionalPositionalArgs.py)
-
-### define function in function
-* [innerFunction01.py](../src/function/innerFunction01.py)
-* [innerFunction02.py](../src/function/innerFunction02.py)
-* [define function in another function](../src/function/functionInFunction.py)
-* [function In Function](../src/function/funcInFunc.py)
-
-### return function from function
-* [dynamicall generated quadratic function](../src/function/returnFunction.py)
-
-### pass function as argument
-* [passFuncAsArg.py](../src/function/passFuncAsArg.py)
-* 👍[function as dictionary value](../src/function/dictFunction.py)
-
-
-### function decorator
-* [my_timer.py](../src/function/my_timer.py)
-* [make simple job complecated](../src/function/myTimer1.py)
-* [add timer](../src/function/myTimer2.py)
-* [add decorator](../src/function/myTimer3.py)
-* [add user check on function](../src/function/security.py)
-
-### global variable
-❓ What is global variable?
->✔️global keyword allows you to modify the variable outside of the current scope. It is used to create a global variable and make changes to the variable in a local context.
-
-[use global variable](../src/function/globalVariable.py)
-1. When we create a variable inside a function, it is local by default.
-2. When we define a variable outside of a function, it is global by default. You don't have to use global keyword.
-3. We use global keyword to read and write a global variable inside a function.
-4. Use of global keyword outside a function has no effect.
-5. It is not necessary to declare global variable outside function
-
-### yield keyword
-* [yield is simillar to return](../src/function/yield1.py)
-* [yield returns value once needed](../src/function/yield2.py)
-* [yield is simillar to return](../src/function/yield3.py)
-* [async yield，不见不散-死等](../src/function/yield4.py)
-* 
-### recursive function
-A function is recursive if it calls itself.
-  1. termination condition.
-  2. adjust status for each call.
-  3. Python stops the cunction calls after a depth of 1000 calls.
-* [factoria.py](../src/function/factorial.py)
-$$ f(n) = n! = n (n-1) (n-2)\cdots1$$
-![](aDoc/images/recursiveFactorial.jfif)
-* [recursiveBinarySearch.py](../src/algorithms/recursiveBinarySearch.py)
-
-* Understand recursive find.
-  ```mermaid
-  graph TB
-  START((find answer))
-  END[end]
-  B[add 10 to<br>the answer of<br>problem 52]
-  C[Problem 52:<br>Add 12 to<br>the answer of<br>problem 85]
-  D[Problem 85:<br>10]
-  
-  START-->B-->C-->D
-  D--10+12-->C--22+10-->B--32-->END
-
-  classDef html fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-  classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-  classDef start fill:green,stroke:#DE9E1F,stroke-width:2px;
-  classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px;
-  class START start
-  class B,C,D html
-  class END end1
-  ```
-
-### useful functions
-![](images/circleParts.png)
-
-$$ d = 2 \cdot r $$
-$$ c = d \cdot \pi = 2 \cdot r \cdot \pi$$
-$$ a = \pi r^2 $$
-where r, d, c, a are radius, diameter, circumference and area respectively.
-
-* [Circle](../src/function/circle.py)
-
-![](images/sphere.webp)
-
-* [Sphere volume and surface area](../src/function/sphere.py)
-
-![](images/triangleArea.png)
-
-$$ a = \frac 1 2 b \cdot h $$
-where a, b, h are area, base and height respectively.
-
-* [triangle area](../src/function/triangle.py)
-* 
-* [check an number for Prime](../src/prime/prime1.py)
-* [better implementation](../src/prime/prime2.py)
-* [def isPrime() return True or False](../src/prime/prime3.py)
-* [](../src/prime/prime4.py)
-* [def rangePrime()](../src/prime/prime6.py)
-* [use my_timer() check which function run faster](../src/prime/prime7.py)
-> the greatest common divisor (GCD) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers.
-
-$$n!=n (n-1) (n-2) ... 1$$
-$$ 4!=4 \cdot 3 \cdot 2 \cdot 1 = 24$$
-$$ 6!=6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 720$$
-
-* [factorial](../src/function/factorial.py)
-* [Greatest common divisor](../src/gcd.py)
-* [recursive GCD](../src/recursiveGCD.py)
->the least common multiple, lowest common multiple, or smallest common multiple of two integers a and b,  is the smallest positive integer that is divisible by both a and b.
-* [LCM least common multiple](../src/lcm.py)
-
-$$ lcm(a,b) = \frac {|ab|} {gcd(a,b)}$$
-
-* [use above formula](../src/lcm1.py)
-
-### assert error check
-* [❓what's wrongh?](../src/function/circle1.py)
-* [✔️Assert check before calculation](../src/function/assert.py)
-
-```syntax
-assert <condition>,<error message>
-```
-
-```mermaid
-graph TB
-START((start))
-END[end]
-B{Assertion<br>condition}
-C[Continue]
-D[Terminate Execution<br>gives AssertionError]
-
-START-->B
-B--True-->C
-B--False-->D-->END
-
-classDef html fill:#12DBE2,stroke:#12DBE2,stroke-width:4px,color:#E21912;
-classDef js fill:yellow,stroke:#DE9E1F,stroke-width:2px;
-classDef start fill:#299F30,stroke:#0B7111,stroke-width:2px;
-classDef if fill:#EFAE58,stroke:#EFAE58,color:#5899EF;
-classDef end1 fill:#F46661,stroke:#F12D26,stroke-width:2px;
-
-class START start
-class C,D html
-class B if
-class END end1
-```
-### Raise Except
-
-![](images/try-except.svg)
-
-* [✋Raise TypeError](../src/function/raiseError.py)
-* [assert](../src/function/assertCheck.py)
-* [](../src/function/circle1.py)
-* [](../src/function/circle3.py)
-
-The difference between raise and assert:
-1. assert: I swear this must be true, in case it happens, let me know. ❌❗️You have big problem! Debug aid for developer find root cause, not for handling run-time error. only give you one kind of error which is AssertionError.
->💡[I swear int('1')==1](../src/function/asInt.py)
-
-2. raise: Try to catch run-time error. Developer sometimes use raise for execution control.
-
->👌💡[define isFloat(str) function](../src/function/checkFloat.py)
-
-* [👌👎catch Assertion Error](../src/function/tryexcept1.py)
-* [👌👎catch Different Error](../src/function/tryexcept2.py)
-
-✔️Better solution is solve the issue at compiling time.
-
-### catch Except avoid termination
-* [catch assert](../src/function/tryexcept1.py)
-* [catch raise](../src/function/tryexcept2.py)
-* [](../src/function/tryexcept3.py)
-
-### Create my own Error Type
-
-> 1. look for the error type you may need;
-```dos
->>> dir (__builtins__)
-['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 
-'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EncodingWarning', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError',
-```
-> 2. create your own error type
-* [create application specific Error](../src/function/myerrortype.py) 
-
-### pass by reference
-* [Understand pass by reference](../src/function/passByReference.py)
-* [Understand pass by value](../src/function/passByValue.py)
-
-
-### function annotation
-👍Avoid unexpected function call with wrong data type arguments.
-
-👍Find out calling error before runtime.
-
-* [❓what's wrong?](../src/function/circle1.py)
-
-```DOS
-mypy <filename.py>
-```
-
-![❌👍](images/annotation.png)
-
-* [annotation1.py](../src/function/annotation1.py)
-* [annotation2.py](../src/function/annotation2.py)
-* [annotation3.py](../src/function/annotation3.py)
-
-```mermaid
-graph LR
-
-A([Software Project])
-B[User Interface<br>GUI Front End]
-C[Business Logic<br>middle tier]
-D[Database<br>Back End]
-E(Unit test)
-F(Logging)
-K(Documentation)
-L(Integration Test)
-G[Window Based<br>Eclipse IDE]
-H[Web Based<br>Google, Amazon]
-I[MongoDB]
-J[SQL Server]
-REACT[ReactJS]
-ANGULAR[Angular]
-DJANGO[DJango]
-GIT(Source Control)
-
-A-->B & C & D 
-A--tools--> E & F & K & L & GIT
-B-->H & G
-D-->I & J
-H-->REACT & ANGULAR & DJANGO
-
-classDef block1 fill:#F46624,stroke:#F46624,stroke-width:4px,color:white;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-
-class A start
-class C,E,F,D,J,GIT block1
-```
+* [Fuction, Exception, assert, raise](05_function.md)
 
 ## Unit Test
 >A unit is a specific piece of code to be tested, such as a function or a class. Unit tests are then other pieces of code that specifically exercise the code unit with a full range of different inputs, including boundary and edge cases.
@@ -1015,6 +224,7 @@ Right-Click inside Editor window ⟹ Command Palette... ⟹ Python Cofigure Test
 
 😄✔️👍所有的错误，都是因为vscode Python Extension中的python执行命令。
 Python永远都是从当前文件夹开始查找所有的module。Python本身并没有错。大部分网上的解释都没有切中要害。要害是python的执行命令与python的设计相违背。
+
 ```DOS
 (env) C:\Users\12818\workspace\python-I>c:/Users/12818/workspace/python-I/env/Scripts/python.exe 
 👎❌❗️c:/Users/12818/workspace/python-I/src/blackjack/blackjackcard.py
@@ -1027,6 +237,7 @@ ModuleNotFoundError: No module named 'src'
 (env) C:\Users\12818\workspace\python-I>
 ```
 从命令行看出，命令是从project根目录发出（C:\Users\12818\workspace\python-I>），直接运行该文件（c:/Users/12818/workspace/python-I/src/blackjack/blackjackcard.py）
+
 ```py
 # blackjackcard.py
 
@@ -1034,7 +245,9 @@ ModuleNotFoundError: No module named 'src'
 from .card import Card # use relative path
 # from card import Card # use this line for product
 ```
+
 如果程序使用第三行，python当然知道从当前目录下寻找card module，所以直接运行该文件没有任何的问题。但是当使用unittest的时候，unittest就找不到card module了。（😄当然如果unittest也像python一样聪明，在相同文件夹中寻找，就更好了。目前想让unittest找当前文件夹下的module文件，必须使用相对路径，即第二行的 from .card， 又或者第一行的绝对路径）。unittest总是从绝对路径开始查找，所以第一行对unittest和python来说是轻车熟路。但是第一行和第二行对于命令行直接运行都是大问题，因为在该文件所在的文件夹中，根本不存在src或者.card的文件夹，所以相应的module当然也找不到。解决的办法是修改命令行命令。
+
 ```DOS
 ✔️😄python -m src.blackjack.blackjackcard
 ```
@@ -1062,9 +275,9 @@ class TestMe(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
-```DOS
 
+```DOS
+C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
 ```
 
 [unit test for circleArea](../test/test_circleArea.py)
@@ -1078,6 +291,7 @@ C:\Users\12818\workspace\python1-2>python -m unittest test/test_basics.py
 ```py
 import re
 ```
+
 [start with, end with](../src/regularex/regularexp1.py)
 > ^: start with
 > ...$: end with
@@ -1129,6 +343,15 @@ Operations on Data Structure
 ❓ what is class?
 >Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.
 
+```mermaid
+classDiagram
+
+class ClassName{
+  attributes
+  functions()
+}
+```
+
 ### Design
 ![](images/engineBlueprint.webp)
 
@@ -1136,21 +359,6 @@ Operations on Data Structure
 
 ![](images/car-blueprint.webp)
 
-```mermaid
-graph LR
-
-OOP([Object Oriented Programming])
-ABSTRACT[Abstraction]
-INHERIT[Inheritance]
-POLY[Polymorphism]
-ENCAPS[Encapsulation]
-
-OOP --> ABSTRACT & INHERIT & POLY & ENCAPS
-
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-
-class OOP start
-```
 
 4 Features of OOP
 1. Abstraction:class is a abstraction of object in real world to python program object type.（实体模拟）
@@ -1161,14 +369,7 @@ class OOP start
 ❓ How to make it happen?
 > ✔️ build a class.
 
-```mermaid
-classDiagram
 
-class ClassName{
-  attributes
-  functions()
-}
-```
 
 class in python is a definition of group of attributes (class name, variables & functions) which is abstracted from real world to computer world (virtual world), and can be used to create object. those objects can then do something based on its variable attributes.
 
@@ -1182,6 +383,19 @@ class Robot:
 
 robot = Robot()
 robot.jump() # AttributeError: 'Robot' object has no attribute 'jump'
+```
+
+```mermaid
+classDiagram
+class Robot {
+  name:str
+  year:int
+  energy:int
+  sayHello(name):void
+  doMath(x,y):tuple
+  getEnergy():int
+  setEnergy(int):void
+}
 ```
 
 ```py
@@ -1204,18 +418,7 @@ as you can see, we call jump() function by r.jump(), Python raises a AttributeEr
 >✔️ because it is impossible to copy every single feature of an object from real world, we can only pick something that we are interested in the virtual world. That is so-called abstraction.
 
 * Robot from real world
-```mermaid
-classDiagram
-class Robot {
-  name:str
-  year:int
-  energy:int
-  sayHello(name):void
-  doMath(x,y):tuple
-  getEnergy():int
-  setEnergy(int):void
-}
-```
+
 
 ![](images/abstraction.png)
 
@@ -1282,6 +485,7 @@ class Store{
   load()
 }
 ```
+
 * [class level attribute vs. instance level attribute](../src/myclass/item.py)
 * [dynamically assigned attribute](../src/myclass/item1.py)
 * [save and load data with file](../src/myclass/item2.py)
@@ -1293,87 +497,13 @@ class Store{
 * [class level attributes](../src/myclass/attributes.py)
 * [related classes](../src/myclass/related.py)
 
-```mermaid
-classDiagram
 
-class Student{
-  name:str
-  age:int
-  grade:int
-  courses:Course[]
-}
-
-class Course{
-  name:str
-  students:Student[]
-}
-
-Course o-- Student:bidirection_connection
-Student o-- Course
-```
 ### Inheritance
 
-```mermaid
-classDiagram
 
-class Pet{
-  name:str
-  age:int
-  speak()
-}
-
-Pet <|-- Dog
-Pet <|-- Cat
-Pet <|-- Fish
-```
 * [Why inheritance? ](../src/myclass/inheritence.py)
 
-```mermaid
-classDiagram
 
-class Point{
-  x
-  y
-  rotate()
-}
-
-class Triangle{
-  p1:Point
-  p2:Point
-  p3:Point
-  rotate()
-  draw()
-}
-
-Triangle *-- Point
-```
-
-```mermaid
-classDiagram
-
-class Animal{
-  name:string
-  eat()
-}
-
-class Mammal{
-  walk()
-}
-
-class Bird{
-  fly()
-}
-
-class Bat{
-  name:string
-  walk()
-  fly()
-}
-Mammal <|-- Bat
-Bird <|-- Bat
-Animal <|-- Mammal
-Mammal <|-- Bird
-```
 
 * [Multiple Inheritence](../src/myclass/multipleInheritence.py)
 * 
@@ -1446,42 +576,7 @@ Mammal <|-- Bird
 * [define a class as default value](../src/myclass/class26.py)
 
 ### class inheritance
-```mermaid
-classDiagram
-class Person {
-  name:str
-  ssn:str
-  id: str
-  gender:str
-  age:int
-  getOccupation()
-}
 
-class Employee{
-  employeeID: str
-  department: str
-  salary:float
-  jobTitle:str
-}
-
-class Engineer{
-  report()
-  getOccupation()
-}
-
-class Manager{
-  assignJob()
-}
-
-class Teacher{
-  getOccupation()
-}
-
-Person<|--Employee:is
-Employee<|--Engineer:is
-Employee<|--Manager:is
-Person<|--Teacher:is
-```
 * [class inheritance, isinstance(obj, class)](../src/myclass/class16.py)
 * [advatage of inheritance, inherite from Enum](../src/myclass/class17.py)
 * [inherit from Enum](../src/myclass/class18.py)
@@ -1491,33 +586,7 @@ Person<|--Teacher:is
 [@abstractmethod](https://docs.python.org/3/library/abc.html)
 [interface.py](../src/myclass/interface.py)
 
-```mermaid
-classDiagram
 
-class Person {
-  getOccupation():str
-}
-
-<<interface>> Person
-
-class Teacher {
-  name: str
-  getOccupation()
-}
-
-class Engineer {
-  name: str
-  getOccupation()
-}
-
-class Student{
-  name: str
-  getOccupation()
-}
-
-Person<|--Teacher:Teach is Person
-Person<|--Engineer:Engineer is Person
-```
 * @abstractmethod decorator from abc
 * __subclasshook__(), __subclasscheck__(), issubclass(), isinstance()
 
@@ -1530,7 +599,11 @@ Person<|--Engineer:Engineer is Person
 * __code__
 
 
-### Global Variables
+### Class level Variables
+* [class level attribute and method](../src/myclass/class27.py)
+
+### class in class
+* [define inner class](../src/myclass/class29.py)
 
 ## Blackjack Game
 ### Blackjack Rules
@@ -1559,132 +632,18 @@ Person<|--Engineer:Engineer is Person
 ## Physics Unit
 * [physics unit](../src/physics.py)
 
-```mermaid
-classDiagram
 
-class Quantity{
-  vale:[float, int]
-  symble: str
-
-  covert(symble)
-}
-```
 
 ## Blackjack Card Game
 
 ### Object relationship
   
-```mermaid
-classDiagram
-class Card {
-  face:str
-  suit:str
-  getValue()
-}
 
-class BlackjackCard{
-  getValue()
-}
-
-class Deck{
-  topCardIndex:int
-  stackOfCards:BlackjackCard
-  shuffle()
-  getCard()
-  nextCard()
-}
-
-class Player{
-  name:str
-  hand:[]
-  win:int
-  addCardToHand()
-  cleanHand()
-  getHandValue()
-  getHandSize()
-  hit()
-  showHand()
-}
-
-class Dealer {
-  deck:Deck
-  shuffle()
-  deal()
-  hit()
-  showHand()
-}
-
-class Game{
-  playerList:ArrayList<Player>
-  dealer:Dealer
-  determineWinner()
-  play(winner:function)
-}
-
-Player<|--Dealer:dealer is player
-Dealer *--Deck:dealer own the deck
-Card<|--BlackjackCard
-Deck o--BlackjackCard:stack of Cards
-Game *-- Dealer
-Game *-- Player
-```
 [blackjack](../src/blackjack.py)
 [Unit test](../test/test_blackjack.py)
 
 ### Game logic
-```mermaid
-graph TB
-A([start])
-INIT["init()"]
-B[Deal cards]
-C[Show hands]
-D{hit?}
-F[determine winner<br>show result]
-END[end]
-AGAIN{more game?}
-S[Shuffule, clean hand]
-
-A-->INIT-->B-->C-->D
-D--true-->B
-D--false-->F-->AGAIN
-AGAIN--false-->END
-AGAIN--true-->S-->B
-
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-classDef end1 fill:red,stroke:#DE9E1F,stroke-width:2px,color:white;
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
-
-class A start
-class END end1
-class D,AGAIN if
-```
 ### Code Optimization
-```mermaid
-graph TB
-START([start])
-PLAYER[player win]
-DEALER[dealer win]
-TIED[tied]
-
-A{player>21}
-C{dealer>21}
-D{player==dealer}
-E{player>dealer}
-
-START-->A
-A--false-->C
-A--true-->DEALER
-C--true-->PLAYER
-C--false-->
-D--true-->TIED
-D--false-->E
-E--true-->PLAYER
-E--false-->DEALER
-
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
-
-class A,D,C,E if
-```
 ### missing unit tests
 * player get 4 Ace
 * player get 3 Ace
@@ -1707,30 +666,7 @@ class A,D,C,E if
 
 ### Software development life cycle
 * Test Driven Development (TDD)
-```mermaid
-graph TB
-START([start])
-C[Create Base class]
-UT[unit test]
-F[fix code pass test]
-DONE{Done all classes}
-INT[integration test]
-ERROR{error or <br>improvement?}
-FIX[fix issue, make better]
-PROD([production])
 
-START-->C-->UT-->F-->DONE
-DONE--true-->INT-->ERROR
-DONE--false, dev cycle-->C
-ERROR--true-->FIX--integration cycle-->UT
-ERROR--false-->PROD
-
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-
-class ERROR,DONE if
-class START,PROD start
-```
 * After integration test, we find
 ❗️missing test of 2,3,4 Ace?
 ✔️modify getHandValue() method defined in Player class, put if condition in for loop.
@@ -1757,35 +693,6 @@ class START,PROD start
 
 ```
 ❗️the determineWinner() method looks ugly
-```mermaid
-graph TB
-
-START([start])
-A{player>21}
-DEALER[dealer win]
-B{dealer>21}
-PLAYER[player win]
-C{player==dealer}
-TIED[tied up]
-D{player>dealer}
-
-START-->A--true-->DEALER
-A--false-->B
-B--false-->C
-B--true-->PLAYER
-C--true-->TIED
-C--false-->D
-D--false-->DEALER
-D--true-->PLAYER
-
-classDef if fill:#EBCD6F,stroke:black,stroke-width:2px;
-classDef db fill:#BEBDB7,stroke:black,stroke-width:2px;
-classDef start fill:green,stroke:#DE9E1F,stroke-width:2px,color:white;
-
-class START start
-class A,B,C,D if
-```
-
 ## Automate
 * [Automate with Python](https://www.youtube.com/watch?v=PXMJ6FS7llk)
 * 
@@ -1796,29 +703,6 @@ class A,B,C,D if
 [](../src/yahtzee/yahtzee1.md)
 [Yahtzee Dice Game](https://www.dicegamedepot.com/yahtzee-rules/)
 [Yahtzee Python](../src/yahtzee/yahtzee.py)
-```mermaid
-classDiagram
-class Dices{
-  numberOfDices:int
-  roll()
-}
-class Player{
-  name:str
-  score:int
-  dices:Dices
-  record:[]
-  roll()
-  keep()
-}
-class Game{
-  round:int
-  playerList:[]
-
-  addPlayer()
-  play()
-}
-```
-
 ## File Access
 * file path
 * [file path](../src/file/filepath.py)
@@ -1935,20 +819,7 @@ $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}
 3. Liskov Substitution Principle
    >Let Φ(x) be a property provable about objects x of type T. Then Φ(y) should be true for objects y of type S where S is a subtype of T.
 
-```mermaid
 
-classDiagram
-
-class T{
-  field:str
-}
-
-class S{
-  field:str
-}
-
-T<|--S
-```
 
 $$ \phi (x) = \phi (y) $$
 where 
@@ -1986,103 +857,7 @@ y = S()
 
 
 ## SQLite
-* [SQL Statement Documentation](https://www.w3schools.com/sql/sql_select.asp)
-
-[](https://www.youtube.com/watch?v=byHcYRpMgI4)
-
-CRUD: Create, Retrieve, Update, Delete
-
-### create a table
-```sql
-CREATE TABLE table_name (
-    column1 datatype,
-    column2 datatype,
-    column3 datatype,
-   ....
-);
-```
-
-### Insert data into table
-
-```sql
-INSERT INTO table_name (column1, column2, column3, ...)
-VALUES (value1, value2, value3, ...);
-```
-
-* [Create database, table](../src/sqlite/sqlite01.py)
-
-### Retrieve data from table
-
-```sql
-SELECT column1, column2, ...
-FROM table_name
-WHERE condition;
-```
-* [Insert many rows](../src/sqlite/sqlite02.py)
-* [Retrive data](../src/sqlite/sqlite03.py)
-
-### Update existing data
-
-```sql
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
-```
-* [Update data](../src/sqlite/sqlite04.py)
-
-### Delete data from table
-
-```sql
-DELETE FROM table_name WHERE condition;
-```
-* [Delete data](../src/sqlite/sqlite05.py)
-
-
-### Relationship between tables
-* [One-to-Many Create table](../src/sqlite/sqlite06.py)
-
-```mermaid
- erDiagram
-    PROJECT ||--o{ TASK : contains
-    PROJECT {
-        int id
-        string name
-        date begineDate
-        date endDate
-    }
-    TASK {
-        int id
-        string name
-        date beginDate
-        date endDate
-    }
-```
-* [Create one-to-many data](../src/sqlite/sqlite07.py)
-* [Retrieve one-to-many data](../src/sqlite/sqlite08.py)
-* [Create books table](../src/sqlite/sqlite9.py)
-* [insert sample books](../src/sqlite/sqlite10.py)
-* [many-to-many relationship, DB helper](../src/sqlite/sqlite11.py)
-* [Product, Provider class](../src/sqlite/sqlite12.py)
-* [CRUD for books](../src/sqlite/sqlitebookdb.py)
-
-Homework
-1. create a database named game, and a table named blackjack to record blackjack game result
-  
-```mermaid
- erDiagram
-    blackjack {
-        int id
-        string name
-        win
-        loose
-        tie
-    }
-```
-2. add DB operation on blackjack game
-3. do analysis on data to see who will be the winner, players? or dealer?
-
-* [CRUD for blackjack game](../src/sqlite/blackjackdb.py)
-* [Save the game result to SQLite database](../src/blackjack/blackjackSave2DB.py)
+* [SQLite Basics, CRUD](09_sqlite.md)
 
 ## MongoDB
 ❓What is MongoDB?
@@ -2691,6 +1466,9 @@ if x is not an intege string, cause software blows up.
 * Another to compose functions that output monadic values (called monadic functions).
 
 ![](images/monad.png)
+
+* [Functor.py](../src/functional/functor.py)
+  
 ```mermaid
 classDiagram
 
@@ -2718,8 +1496,6 @@ Maybe<|--Nothing: is monad
 <<abstract>> Maybe
 
 ```
-* [Functor.py](../src/functional/functor.py)
-  
 ❓ What is functors?
 ✔️you apply a function to a wrapped value using map
 implement fmap() function: functor map

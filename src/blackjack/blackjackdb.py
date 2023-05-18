@@ -111,13 +111,13 @@ if __name__ == '__main__':
 
     db = BlackJackDB("data/blackjack.db")
 
-    # blackjack = {
-    #     "id":uuid.uuid4().hex,
-    #     'name':'John',
-    #     'win':1,
-    #     "loss":0,
-    #     "tie":0,
-    # }
+    blackjack = {
+        "id":uuid.uuid4().hex,
+        'name':'John',
+        'win':1,
+        "loss":0,
+        "tie":0,
+    }
     # db.create(blackjack)
 
     blackjack = {
@@ -127,7 +127,7 @@ if __name__ == '__main__':
         "loss":1,
         "tie":0,
     }
-    db.create(blackjack)
+    # db.create(blackjack)
 
     all = db.getBlackjacks()
     pprint(all)
