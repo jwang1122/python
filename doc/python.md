@@ -1690,7 +1690,7 @@ pip install django==4.0
 11. [opencv](image data)
 12. [tensorflow]
 13. [keras]
-14. [pytouch]
+14. [pytorch](../../pytorch/doc/pytorch.md)
 15. [scikit]
 16. [kivy](platform independent app)
 
