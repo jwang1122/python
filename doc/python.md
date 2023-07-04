@@ -137,6 +137,7 @@
 
 ## Language Basics
 
+* []()
 ```mermaid
 graph TB
 
@@ -760,6 +761,7 @@ $$\begin{bmatrix}1 & 1 & 1 \\0 & 2 & 5 \\2 & 5 & -1\end{bmatrix} \begin{bmatrix}
 * [Anaconda3](https://repo.anaconda.com/archive/) 
   File: Anaconda3-5.3.0-Windows-x86_64.exe
 
+* [](pandas.ipynb)
 ## Plot
 * [covid](../src/plot/covid1.py)
 * [plot list](../src/plot/plot0.py)

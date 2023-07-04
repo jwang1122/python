@@ -3,7 +3,19 @@
 [](https://www.youtube.com/watch?v=byHcYRpMgI4)
 
 CRUD: Create, Retrieve, Update, Delete
+all database need to provide 4 basic operations
 
+```mermaid
+graph LR
+
+BASIC(DB basic operations)
+CREATE[Create record in database table]
+RETRIEVE[Retrive data from Database]
+UPDATE[Update existing record]
+DELETE[remove record from database]
+
+BASIC --> CREATE & RETRIEVE & UPDATE & DELETE
+```
 ### create a table
 ```sql
 CREATE TABLE table_name (
@@ -119,8 +131,9 @@ erDiagram
   CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
-* [Create one-to-many data](../src/sqlite/sqlite07.py)
-* [Retrieve one-to-many data](../src/sqlite/sqlite08.py)
+* [Create one-to-many data, insert project/tasks](../src/sqlite/sqlite07.py)
+* [Retrieve one-to-many data, select project/tasks](../src/sqlite/sqlite08.py)
+* [build class/objects for project and tasks]((../src/sqlite/sqlite08a.py))
 * [Create books table](../src/sqlite/sqlite9.py)
 * [insert sample books](../src/sqlite/sqlite10.py)
 * [many-to-many relationship, DB helper](../src/sqlite/sqlite11.py)
